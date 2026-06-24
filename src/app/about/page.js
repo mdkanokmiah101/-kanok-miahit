@@ -1,0 +1,176 @@
+"use client";
+import { useEffect } from "react";
+import Link from "next/link";
+
+export default function AboutPage() {
+  useEffect(() => {
+    document.title = "About Us — Kanok MiahIT | SEO Agency in Bangladesh";
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-[#0a0a0f] text-white">
+
+      {/* === NAVBAR === */}
+      <nav className="fixed top-0 w-full bg-[#0a0a0f]/90 backdrop-blur-xl border-b border-white/5 z-50">
+        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+          <Link href="/" className="text-xl font-extrabold tracking-tight">
+            <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">Kanok Miah</span>
+            <span className="text-amber-400">IT</span>
+          </Link>
+          <Link href="/" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">← Back to Home</Link>
+        </div>
+      </nav>
+
+      {/* === HERO — COMPANY STORY === */}
+      <section className="relative pt-32 pb-16 px-4 overflow-hidden">
+        <div className="absolute top-1/3 -left-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="relative max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-cyan-300 text-xs font-semibold px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
+            <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+            Our Story
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
+            <span className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-amber-200 bg-clip-text text-transparent">
+              About Kanok MiahIT
+            </span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            Founded in Dhaka, Bangladesh, Kanok MiahIT is a results-driven SEO agency that helps local businesses 
+            dominate search engine rankings. We combine deep local market knowledge with global SEO best practices 
+            to deliver measurable growth for Bangladeshi enterprises.
+          </p>
+        </div>
+      </section>
+
+      {/* === STORY SECTION === */}
+      <section className="relative py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 md:p-10">
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-4">
+              <span className="bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">Our Story</span>
+            </h2>
+            <div className="space-y-4 text-gray-400 leading-relaxed">
+              <p>
+                Kanok MiahIT started with a simple observation: Bangladeshi businesses were struggling to get found 
+                online. Most SEO agencies either offered generic solutions that didn't account for local search behaviour 
+                or were located overseas with no real understanding of the Bangladesh market.
+              </p>
+              <p>
+                Founded by <strong className="text-white">Kanok Miah</strong>, our agency set out to bridge that gap. 
+                With over 6 years of hands-on experience optimising websites for Bangladeshi audiences, we've developed 
+                a proprietary approach that blends technical SEO rigour with deep cultural and linguistic insights.
+              </p>
+              <p>
+                From small local shops in Dhaka to growing e-commerce brands serving customers nationwide, we've helped 
+                over 50 clients achieve first-page rankings on Google. Our strategies account for Bengali-language queries, 
+                mobile-first usage patterns, and the unique competitive landscape of Bangladesh's digital economy.
+              </p>
+              <p>
+                Today, Kanok MiahIT is recognised as one of Bangladesh's most trusted SEO agencies, delivering 
+                transparent, data-driven SEO services that generate real business results — not just vanity metrics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* === MISSION & VISION === */}
+      <section className="relative py-16 px-4">
+        <div className="absolute top-0 right-0 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl" />
+        <div className="relative max-w-4xl mx-auto grid md:grid-cols-2 gap-5">
+          <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:bg-white/[0.06] hover:border-white/20 transition-all">
+            <div className="text-3xl mb-4">🎯</div>
+            <h3 className="font-bold text-xl mb-3 text-white">Our Mission</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              To empower Bangladeshi businesses with world-class SEO strategies that drive real, 
+              measurable growth. We are committed to making quality search engine optimisation 
+              accessible, transparent, and results-focused for every client we serve.
+            </p>
+          </div>
+          <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:bg-white/[0.06] hover:border-white/20 transition-all">
+            <div className="text-3xl mb-4">🔭</div>
+            <h3 className="font-bold text-xl mb-3 text-white">Our Vision</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              To be Bangladesh's most trusted SEO agency — known for integrity, transparency, 
+              and exceptional results. We envision a digital Bangladesh where local businesses 
+              compete and win on the global stage through the power of search.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* === TEAM VALUES === */}
+      <section className="relative py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-cyan-400 text-sm font-semibold tracking-widest uppercase">What We Stand For</span>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4">
+              <span className="bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">Core Values</span>
+            </h2>
+            <p className="text-gray-400 max-w-xl mx-auto">The principles that guide every project and partnership.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-5">
+            {[
+              { icon: "🔍", title: "Transparency First", desc: "No hidden fees, no vanity metrics, no empty promises. Every report shows real KPIs: rankings, traffic, conversions, and ROI." },
+              { icon: "🇧🇩", title: "Local Expertise", desc: "We understand Bangladeshi search behaviour, Bengali + English query patterns, and Dhaka-centric business dynamics inside out." },
+              { icon: "📊", title: "Data-Driven Decisions", desc: "Every strategy starts with thorough keyword research, competitor analysis, and real ranking data — never guesswork." },
+              { icon: "⚡", title: "Results-Oriented", desc: "We target quick wins while building long-term authority. Our processes are designed to compound results over time." },
+              { icon: "🤝", title: "Client Partnership", desc: "We treat your business like ours. Regular communication, collaborative strategy, and shared goals define every engagement." },
+              { icon: "🌱", title: "Continuous Learning", desc: "SEO evolves daily. We invest in ongoing education, testing, and adaptation to stay ahead of every algorithm update." },
+            ].map((v, i) => (
+              <div key={i} className="group bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:bg-white/[0.06] hover:border-white/20 transition-all hover:-translate-y-1">
+                <div className="text-3xl mb-4">{v.icon}</div>
+                <h3 className="font-bold text-lg mb-2 text-white">{v.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{v.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === STATS BAND === */}
+      <section className="relative py-16 border-y border-white/5">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-transparent to-emerald-500/5" />
+        <div className="relative max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            { num: "350+", label: "Projects Done", color: "from-cyan-400 to-cyan-600" },
+            { num: "50+", label: "Happy Clients", color: "from-emerald-400 to-emerald-600" },
+            { num: "95%", label: "Client Retention", color: "from-amber-400 to-amber-600" },
+            { num: "6+", label: "Years Exp.", color: "from-violet-400 to-violet-600" },
+          ].map((stat, i) => (
+            <div key={i}>
+              <div className={`text-4xl md:text-5xl font-extrabold bg-gradient-to-b ${stat.color} bg-clip-text text-transparent`}>{stat.num}</div>
+              <div className="text-gray-500 text-sm mt-1">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* === CTA === */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 via-emerald-600/20 to-amber-600/20" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 rounded-full blur-3xl" />
+        <div className="relative max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-4">Let&apos;s Grow Your <span className="bg-gradient-to-r from-cyan-300 to-emerald-300 bg-clip-text text-transparent">Business</span> Together</h2>
+          <p className="text-gray-400 mb-10 text-lg">Ready to see what a dedicated SEO partnership can do for your Bangladesh business? Get your free audit today.</p>
+          <Link href="/#contact" className="group inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-emerald-500 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:shadow-cyan-500/30 hover:-translate-y-0.5">
+            Get Your Free Audit
+            <span className="group-hover:translate-x-1 transition-transform">→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* === FOOTER === */}
+      <footer className="py-8 border-t border-white/5 text-center text-sm text-gray-600">
+        <p>© 2026 <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent font-bold">Kanok MiahIT</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <div className="mt-3 flex items-center justify-center gap-4 text-xs">
+          <Link href="/about" className="hover:text-cyan-400 transition-colors">About</Link>
+          <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors">Privacy Policy</Link>
+          <Link href="/terms-of-service" className="hover:text-cyan-400 transition-colors">Terms of Service</Link>
+        </div>
+      </footer>
+
+    </div>
+  );
+}

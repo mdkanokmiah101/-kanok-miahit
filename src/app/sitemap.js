@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = "https://kanok-miahit.vercel.app";
+  const baseUrl = "https://kanokmiah.com.bd";
 
   // Industry slugs from data
   const industrySlugs = [

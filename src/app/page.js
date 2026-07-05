@@ -54,20 +54,22 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-cyan-300 text-xs font-semibold px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
             <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-            #1 SEO Agency in Bangladesh
+            #1 SEO Agency in Bangladesh — Best SEO Agency in Dhaka
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] mb-6">
             <span className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-amber-200 bg-clip-text text-transparent">
-              Rank Higher.
+              Best SEO Agency
             </span>
             <br />
-            <span className="text-white">Grow Faster.</span>
+            <span className="text-white">in Dhaka, Bangladesh</span>
             <br />
-            <span className="text-white/70">Dominate Search.</span>
+            <span className="text-white/70">Rank Higher. Grow Faster.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Kanok MiahIT is a <span className="text-white font-semibold">Bangladesh-focused</span> SEO agency that gets local businesses 
-            found on Google, generates qualified leads, and scales revenue — with proven strategies that work.
+            Kanok MiahIT is the <span className="text-white font-semibold">best SEO agency in Dhaka, Bangladesh</span>. We are a 
+            Bangladesh-focused SEO company that gets local businesses found on Google, generates qualified leads, 
+            and scales revenue — with proven strategies that work. Whether you need local SEO in Dhaka or international 
+            rankings, our team delivers measurable results as the <strong>best SEO agency in Dhaka</strong>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#contact" className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-emerald-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:shadow-cyan-500/30 hover:-translate-y-0.5">

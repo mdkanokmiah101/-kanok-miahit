@@ -12,12 +12,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kanok MiahIT — #1 SEO Agency in Bangladesh | Local & International SEO",
+  title: "Best SEO Agency in Dhaka | Kanok MiahIT — #1 SEO in Bangladesh",
   description:
-    "Kanok MiahIT is Bangladesh's top SEO agency. We help local businesses rank higher on Google, generate qualified leads, and scale revenue with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
+    "Looking for the best SEO agency in Dhaka? Kanok MiahIT is Bangladesh's top-rated SEO company. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
   keywords: [
-    "SEO agency Bangladesh",
-    "SEO services Dhaka",
+    "best SEO agency in Dhaka",
+    "SEO agency Dhaka",
+    "SEO company in Bangladesh",
     "local SEO Bangladesh",
     "Bangladesh SEO expert",
     "digital marketing agency Bangladesh",
@@ -34,16 +35,16 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Kanok MiahIT",
-    title: "Kanok MiahIT — #1 SEO Agency in Bangladesh",
+    title: "Best SEO Agency in Dhaka | Kanok MiahIT — #1 SEO in Bangladesh",
     description:
-      "Bangladesh's trusted SEO agency. Rank higher, grow faster, dominate search. Local & international SEO for Bangladeshi businesses.",
-    url: "https://kanok-miahit.vercel.app",
+      "Looking for the best SEO agency in Dhaka? Kanok MiahIT is Bangladesh's top-rated SEO company. Get higher rankings and more traffic with proven SEO strategies.",
+    url: "https://kanokmiah.com.bd",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kanok MiahIT — #1 SEO Agency in Bangladesh",
+    title: "Best SEO Agency in Dhaka | Kanok MiahIT — #1 SEO in Bangladesh",
     description:
-      "Bangladesh's trusted SEO agency. Rank higher, grow faster, dominate search.",
+      "Looking for the best SEO agency in Dhaka? Kanok MiahIT helps businesses rank higher, grow faster, dominate search.",
   },
   robots: {
     index: true,
@@ -64,7 +65,7 @@ export default function RootLayout({ children }) {
     >
       <head>
         {/* Canonical */}
-        <link rel="canonical" href="https://kanok-miahit.vercel.app" />
+        <link rel="canonical" href="https://kanokmiah.com.bd" />
         {/* Schema: Organization + LocalBusiness */}
         <script
           type="application/ld+json"
@@ -73,8 +74,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Kanok MiahIT",
-              url: "https://kanok-miahit.vercel.app",
-              logo: "https://kanok-miahit.vercel.app/favicon.ico",
+              url: "https://kanokmiah.com.bd",
+              logo: "https://kanokmiah.com.bd/favicon.ico",
               description:
                 "Bangladesh-focused SEO agency. Local SEO, technical SEO, link building, and GEO optimization.",
               address: {
@@ -102,10 +103,10 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Kanok MiahIT",
-              url: "https://kanok-miahit.vercel.app",
+              url: "https://kanokmiah.com.bd",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://kanok-miahit.vercel.app/search?q={search_term_string}",
+                target: "https://kanokmiah.com.bd/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),

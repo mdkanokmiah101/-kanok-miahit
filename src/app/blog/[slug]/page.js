@@ -49,7 +49,7 @@ export default function BlogPostPage() {
 
   const shareUrl = typeof window !== "undefined"
     ? window.location.href
-    : `https://kanok-miahit.vercel.app/blog/${post.slug}`;
+    : `https://kanokmiah.com.bd/blog/${post.slug}`;
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(shareUrl).then(() => {

@@ -13,7 +13,7 @@ export default function BlogPage() {
 
   useEffect(() => {
     document.title =
-      "SEO Blog — Kanok MiahIT | Bangladesh Digital Marketing Tips";
+      "SEO Blog — Md Kanok MiahIT | Bangladesh Digital Marketing Tips";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
@@ -29,14 +29,14 @@ export default function BlogPage() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-blue-600">
+            <span className="text-primary">
               Md Kanok Miah
             </span>
             <span className="text-amber-500">IT</span>
           </Link>
           <Link
             href="/"
-            className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
+            className="text-sm text-gray-600 hover:text-primary transition-colors"
           >
             ← Back to Home
           </Link>
@@ -45,15 +45,15 @@ export default function BlogPage() {
 
       {/* Header */}
       <section className="relative pt-32 pb-16 px-4 text-center overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
         <div className="relative max-w-4xl mx-auto">
-          <span className="text-blue-600 text-sm font-semibold tracking-widest uppercase">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase">
             Our Blog
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6">
             SEO Insights for{" "}
-            <span className="text-blue-600">
+            <span className="text-primary">
               Bangladesh
             </span>
           </h1>
@@ -72,20 +72,20 @@ export default function BlogPage() {
             <Link
               key={i}
               href={`/blog/${post.slug}`}
-              className="group bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:bg-gray-100 hover:border-blue-200 hover:-translate-y-1 transition-all flex flex-col"
+              className="group bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:bg-gray-100 hover:border-primary/20 hover:-translate-y-1 transition-all flex flex-col"
             >
               <div className="text-4xl mb-4">{post.imagePlaceholder}</div>
               <div className="flex flex-wrap gap-2 mb-3">
                 {post.tags.slice(0, 2).map((tag, ti) => (
                   <span
                     key={ti}
-                    className="text-xs font-medium text-blue-600/80 bg-blue-500/10 px-2.5 py-1 rounded-full"
+                    className="text-xs font-medium text-primary/80 bg-primary/10 px-2.5 py-1 rounded-full"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-              <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-blue-600 transition-colors leading-tight">
+              <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-primary transition-colors leading-tight">
                 {post.title}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed flex-1">
@@ -93,7 +93,7 @@ export default function BlogPage() {
               </p>
               <div className="mt-4 flex items-center justify-between text-xs text-gray-500">
                 <span>{post.date}</span>
-                <span className="text-blue-600 font-semibold group-hover:translate-x-1 transition-transform">
+                <span className="text-primary font-semibold group-hover:translate-x-1 transition-transform">
                   Read More →
                 </span>
               </div>
@@ -120,7 +120,7 @@ export default function BlogPage() {
                   onClick={() => setCurrentPage(page)}
                   className={`w-10 h-10 rounded-xl text-sm font-semibold transition-all ${
                     page === currentPage
-                      ? "bg-blue-600 text-white"
+                      ? "bg-primary text-white"
                       : "border border-gray-100 text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                   }`}
                 >
@@ -143,7 +143,7 @@ export default function BlogPage() {
 
       {/* CTA */}
       <section className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />
         <div className="relative max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Want to{" "}
@@ -152,13 +152,13 @@ export default function BlogPage() {
             </span>{" "}
             Search?
           </h2>
-          <p className="text-blue-200 mb-8 text-lg">
+          <p className="text-primary/80 mb-8 text-lg">
             Get a free SEO audit for your Bangladesh business. Let us help you
             rank higher and grow faster.
           </p>
           <Link
             href="/#contact"
-            className="group inline-flex items-center gap-2 bg-white text-blue-700 px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
+            className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
           >
             Get Your Free Audit
             <span className="group-hover:translate-x-1 transition-transform">
@@ -172,7 +172,7 @@ export default function BlogPage() {
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
         <p>
           © 2026{" "}
-          <span className="text-blue-600 font-bold">
+          <span className="text-primary font-bold">
             Kanok MiahIT
           </span>{" "}
           — SEO Agency in Bangladesh. All rights reserved.

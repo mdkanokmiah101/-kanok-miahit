@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
-  title: "Best SEO Agency in Dhaka | Kanok MiahIT — #1 SEO in Bangladesh",
+  title: "Best SEO Agency in Dhaka | Md Kanok MiahIT — #1 SEO in Bangladesh",
   description:
     "Looking for the best SEO agency in Dhaka? Kanok MiahIT is Bangladesh's top-rated SEO company. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
   keywords: [
@@ -39,14 +39,14 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Kanok MiahIT",
-    title: "Best SEO Agency in Dhaka | Kanok MiahIT — #1 SEO in Bangladesh",
+    title: "Best SEO Agency in Dhaka | Md Kanok MiahIT — #1 SEO in Bangladesh",
     description:
       "Looking for the best SEO agency in Dhaka? Kanok MiahIT is Bangladesh's top-rated SEO company. Get higher rankings and more traffic with proven SEO strategies.",
     url: "https://kanokmiah.com.bd",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best SEO Agency in Dhaka | Kanok MiahIT — #1 SEO in Bangladesh",
+    title: "Best SEO Agency in Dhaka | Md Kanok MiahIT — #1 SEO in Bangladesh",
     description:
       "Looking for the best SEO agency in Dhaka? Kanok MiahIT helps businesses rank higher, grow faster, dominate search.",
   },

@@ -14,22 +14,22 @@ export default function TermsOfServicePage() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-blue-600">Md Kanok Miah</span>
+            <span className="text-primary">Md Kanok Miah</span>
             <span className="text-amber-500">IT</span>
           </Link>
-          <Link href="/" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">← Back to Home</Link>
+          <Link href="/" className="text-sm text-gray-600 hover:text-primary transition-colors">← Back to Home</Link>
         </div>
       </nav>
 
       {/* === HEADER === */}
       <section className="relative pt-32 pb-12 px-4 text-center overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
         <div className="relative max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-600 text-xs font-semibold px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 bg-primary-light border border-primary/20 text-primary text-xs font-semibold px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
             Legal
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-            <span className="text-blue-600">
+            <span className="text-primary">
               Terms of Service
             </span>
           </h1>
@@ -209,11 +209,11 @@ export default function TermsOfServicePage() {
 
       {/* === FOOTER === */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-blue-600 font-bold">Kanok MiahIT</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Kanok MiahIT</span> — SEO Agency in Bangladesh. All rights reserved.</p>
         <div className="mt-3 flex items-center justify-center gap-4 text-xs">
-          <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-          <Link href="/privacy-policy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link>
-          <Link href="/terms-of-service" className="hover:text-blue-600 transition-colors">Terms of Service</Link>
+          <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+          <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
         </div>
       </footer>
 

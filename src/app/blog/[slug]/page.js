@@ -30,7 +30,7 @@ export default function BlogPostPage() {
         </p>
         <Link
           href="/blog"
-          className="text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+          className="text-primary hover:text-primary-dark font-semibold transition-colors"
         >
           ← Back to Blog
         </Link>
@@ -76,7 +76,7 @@ export default function BlogPostPage() {
         return (
           <h3
             key={i}
-            className="text-xl font-bold mt-8 mb-3 text-blue-600"
+            className="text-xl font-bold mt-8 mb-3 text-primary"
           >
             {line.replace("### ", "")}
           </h3>
@@ -91,7 +91,7 @@ export default function BlogPostPage() {
               key={i}
               className="flex items-start gap-2 text-gray-600 mb-2"
             >
-              <span className="text-blue-400 mt-1.5 shrink-0">•</span>
+              <span className="text-primary mt-1.5 shrink-0">•</span>
               <span>
                 <strong className="text-gray-900">{parts[1]}:</strong>
                 {parts[2]}
@@ -104,7 +104,7 @@ export default function BlogPostPage() {
             key={i}
             className="flex items-start gap-2 text-gray-600 mb-2"
           >
-            <span className="text-blue-400 mt-1.5 shrink-0">•</span>
+            <span className="text-primary mt-1.5 shrink-0">•</span>
             <span>{line.replace(/^- \*\*/, "").replace(/\*\*/, "")}</span>
           </li>
         );
@@ -115,7 +115,7 @@ export default function BlogPostPage() {
             key={i}
             className="flex items-start gap-2 text-gray-600 mb-2"
           >
-            <span className="text-blue-400 mt-1.5 shrink-0">•</span>
+            <span className="text-primary mt-1.5 shrink-0">•</span>
             <span>{line.replace("- ", "")}</span>
           </li>
         );
@@ -138,14 +138,14 @@ export default function BlogPostPage() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-blue-600">
+            <span className="text-primary">
               Md Kanok Miah
             </span>
             <span className="text-amber-500">IT</span>
           </Link>
           <Link
             href="/blog"
-            className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
+            className="text-sm text-gray-600 hover:text-primary transition-colors"
           >
             ← Blog
           </Link>
@@ -154,11 +154,11 @@ export default function BlogPostPage() {
 
       {/* Article Hero */}
       <section className="relative pt-32 pb-12 px-4 overflow-hidden">
-        <div className="absolute top-1/3 -left-32 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/3 -right-32 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/3 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/3 -right-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse delay-1000" />
         <div className="relative max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-600 text-xs font-semibold px-5 py-2 rounded-full mb-6 backdrop-blur-sm">
-            <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-primary-light border border-primary/20 text-primary text-xs font-semibold px-5 py-2 rounded-full mb-6 backdrop-blur-sm">
+            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
             {post.tags[0]}
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
@@ -166,7 +166,7 @@ export default function BlogPostPage() {
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-8">
             <span className="flex items-center gap-2">
-              <span className="w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center text-xs font-bold text-white">
+              <span className="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-xs font-bold text-white">
                 KM
               </span>
               {post.author}
@@ -180,7 +180,7 @@ export default function BlogPostPage() {
             {post.tags.map((tag, ti) => (
               <span
                 key={ti}
-                className="text-xs font-medium text-blue-600/80 bg-blue-500/10 px-3 py-1.5 rounded-full"
+                className="text-xs font-medium text-primary/80 bg-primary/10 px-3 py-1.5 rounded-full"
               >
                 #{tag}
               </span>
@@ -193,7 +193,7 @@ export default function BlogPostPage() {
       <article className="py-8 px-4">
         <div className="max-w-3xl mx-auto">
           {/* Excerpt / Lead */}
-          <div className="text-lg md:text-xl text-gray-600 border-l-4 border-blue-500 pl-5 mb-10 italic leading-relaxed">
+          <div className="text-lg md:text-xl text-gray-600 border-l-4 border-primary pl-5 mb-10 italic leading-relaxed">
             {post.excerpt}
           </div>
 
@@ -210,7 +210,7 @@ export default function BlogPostPage() {
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:border-blue-200 transition-all"
+                className="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:border-primary/20 transition-all"
               >
                 <span>📘</span> Facebook
               </a>
@@ -218,7 +218,7 @@ export default function BlogPostPage() {
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:border-blue-200 transition-all"
+                className="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:border-primary/20 transition-all"
               >
                 <span>🐦</span> X / Twitter
               </a>
@@ -226,13 +226,13 @@ export default function BlogPostPage() {
                 href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:border-blue-200 transition-all"
+                className="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:border-primary/20 transition-all"
               >
                 <span>💼</span> LinkedIn
               </a>
               <button
                 onClick={handleCopyLink}
-                className="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:border-blue-200 transition-all"
+                className="inline-flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5 text-sm text-gray-600 hover:bg-gray-100 hover:border-primary/20 transition-all"
               >
                 <span>{copied ? "✅" : "🔗"}</span>
                 {copied ? "Copied!" : "Copy Link"}
@@ -248,27 +248,27 @@ export default function BlogPostPage() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-extrabold mb-8 text-center">
               Related{" "}
-              <span className="text-blue-600">Articles</span>
+              <span className="text-primary">Articles</span>
             </h2>
             <div className="grid md:grid-cols-3 gap-5">
               {related.map((rp, i) => (
                 <Link
                   key={i}
                   href={`/blog/${rp.slug}`}
-                  className="group bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:bg-gray-100 hover:border-blue-200 hover:-translate-y-1 transition-all"
+                  className="group bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:bg-gray-100 hover:border-primary/20 hover:-translate-y-1 transition-all"
                 >
                   <div className="text-3xl mb-3">{rp.imagePlaceholder}</div>
                   <div className="flex flex-wrap gap-2 mb-2">
                     {rp.tags.slice(0, 2).map((tag, ti) => (
                       <span
                         key={ti}
-                        className="text-xs font-medium text-blue-600/80 bg-blue-500/10 px-2 py-0.5 rounded-full"
+                        className="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-1.5 group-hover:text-blue-600 transition-colors text-sm leading-snug">
+                  <h3 className="font-bold text-gray-900 mb-1.5 group-hover:text-primary transition-colors text-sm leading-snug">
                     {rp.title}
                   </h3>
                   <p className="text-gray-500 text-xs leading-relaxed">
@@ -283,8 +283,8 @@ export default function BlogPostPage() {
 
       {/* CTA */}
       <section className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-blue-500/20 to-blue-500/20 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-primary/20 to-primary/20 rounded-full blur-3xl" />
         <div className="relative max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Let's Grow Your{" "}
@@ -292,13 +292,13 @@ export default function BlogPostPage() {
               Business
             </span>
           </h2>
-          <p className="text-blue-200 mb-8 text-lg">
+          <p className="text-primary/80 mb-8 text-lg">
             Ready to rank higher in Bangladesh search results? Get a free SEO
             audit and discover how we can help.
           </p>
           <Link
             href="/#contact"
-            className="group inline-flex items-center gap-2 bg-white text-blue-700 px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
+            className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
           >
             Get Your Free Audit
             <span className="group-hover:translate-x-1 transition-transform">
@@ -312,7 +312,7 @@ export default function BlogPostPage() {
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
         <p>
           © 2026{" "}
-          <span className="text-blue-600 font-bold">
+          <span className="text-primary font-bold">
             Kanok MiahIT
           </span>{" "}
           — SEO Agency in Bangladesh. All rights reserved.

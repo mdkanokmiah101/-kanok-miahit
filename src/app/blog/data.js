@@ -3,7 +3,7 @@ const posts = [
     slug: "complete-seo-guide-bangladesh-businesses-2026",
     title: "Complete SEO Guide for Bangladesh Businesses in 2026",
     date: "2026-06-15",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "A comprehensive guide to SEO for Bangladeshi businesses in 2026 — covering on-page, local, technical, and AI search optimization strategies that actually work in the Bangladesh market.",
     tags: ["SEO Guide", "Bangladesh SEO", "Digital Marketing", "2026"],
@@ -65,7 +65,7 @@ SEO in Bangladesh for 2026 is about blending fundamental SEO practices with emer
     slug: "local-seo-tips-dhaka-businesses-google-maps",
     title: "Local SEO Tips for Dhaka Businesses: Dominate Google Maps",
     date: "2026-06-10",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "Practical local SEO strategies for Dhaka businesses to dominate Google Maps, attract more local customers, and outrank competitors in Bangladesh's capital city.",
     tags: ["Local SEO", "Dhaka", "Google Maps", "GBP"],
@@ -128,7 +128,7 @@ Dominating Google Maps in Dhaka requires a systematic approach to local SEO. Sta
     slug: "why-ecommerce-store-needs-seo-bangladesh",
     title: "Why Your E-commerce Store Needs SEO in Bangladesh",
     date: "2026-06-05",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "Discover why SEO is essential for e-commerce success in Bangladesh — from Daraz sellers to Shopify stores, learn how organic search drives sustainable growth.",
     tags: ["E-commerce SEO", "Daraz", "Shopify", "Bangladesh"],
@@ -201,7 +201,7 @@ SEO for e-commerce in Bangladesh is not optional — it is the most sustainable 
     slug: "technical-seo-checklist-bangladeshi-websites",
     title: "Technical SEO Checklist for Bangladeshi Websites",
     date: "2026-05-28",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "A complete technical SEO checklist for Bangladeshi websites — covering Core Web Vitals, mobile optimization, site structure, and common issues that hold local sites back.",
     tags: ["Technical SEO", "Core Web Vitals", "Website Optimization", "Bangladesh"],
@@ -290,7 +290,7 @@ Technical SEO is the foundation of every successful SEO strategy. For Bangladesh
     slug: "how-to-choose-right-seo-agency-bangladesh",
     title: "How to Choose the Right SEO Agency in Bangladesh",
     date: "2026-05-20",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "A practical guide to choosing the best SEO agency in Bangladesh — what to look for, red flags to avoid, and questions to ask before signing a contract.",
     tags: ["SEO Agency", "Bangladesh", "Agency Selection", "Digital Marketing"],
@@ -374,7 +374,7 @@ Choosing the right SEO agency in Bangladesh requires due diligence. Focus on tra
     slug: "link-building-strategies-bangladesh-market",
     title: "Link Building Strategies for Bangladesh Market",
     date: "2026-05-15",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "Effective link building strategies tailored for the Bangladesh market — from local directory submissions to guest posting on Bangladeshi websites and international backlink acquisition.",
     tags: ["Link Building", "Backlinks", "SEO Strategy", "Bangladesh"],
@@ -463,7 +463,7 @@ Link building in Bangladesh requires a strategic, patient approach. Focus on ear
     slug: "geo-optimization-prepare-business-ai-search",
     title: "GEO Optimization: Prepare Your Business for AI Search",
     date: "2026-05-08",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "Generative Engine Optimization (GEO) is the next frontier in SEO. Learn how to optimize your Bangladesh business for AI-powered search engines like ChatGPT, Gemini, and Google SGE.",
     tags: ["GEO", "AI Search", "Generative Engine Optimization", "Future of SEO"],
@@ -565,7 +565,7 @@ GEO is not a replacement for traditional SEO — it is an evolution. The fundame
     slug: "seo-garments-textile-industry-b2b-lead-generation",
     title: "SEO for Garments & Textile Industry: B2B Lead Generation",
     date: "2026-05-01",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "How garment manufacturers and textile mills in Bangladesh can leverage SEO for B2B lead generation — attracting international buyers and dominating global search results.",
     tags: ["Garments SEO", "Textile Industry", "B2B SEO", "Bangladesh RMG"],
@@ -679,7 +679,7 @@ SEO for the garments and textile industry in Bangladesh is a powerful B2B lead g
     slug: "google-business-profile-optimization-guide-bangladesh",
     title: "Google Business Profile Optimization Guide for Bangladesh",
     date: "2026-04-22",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "Step-by-step guide to optimizing your Google Business Profile for Bangladesh — from verification to advanced strategies that dominate local search results.",
     tags: ["Google Business Profile", "Local SEO", "Google Maps", "Bangladesh Business"],
@@ -797,7 +797,7 @@ An optimized Google Business Profile is the most powerful local SEO tool for Ban
     slug: "seo-vs-google-ads-whats-best-bangladesh-businesses",
     title: "SEO vs Google Ads: What's Best for Bangladesh Businesses",
     date: "2026-04-15",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "A detailed comparison of SEO and Google Ads for Bangladeshi businesses — costs, timelines, ROI, and which strategy works best for different business types and goals.",
     tags: ["SEO vs Ads", "Google Ads", "PPC", "Bangladesh Digital Marketing"],
@@ -933,7 +933,7 @@ There is no universal "better" choice between SEO and Google Ads for Bangladeshi
     slug: "seo-real-estate-developers-dhaka",
     title: "SEO for Real Estate Developers in Dhaka: Generate More Property Leads",
     date: "2026-06-27",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "A complete SEO strategy for real estate developers in Dhaka — from local property searches to project landing pages and digital lead generation in Bangladesh's booming housing market.",
     tags: ["Real Estate SEO", "Property SEO", "Dhaka Real Estate", "Lead Generation"],
@@ -1132,7 +1132,7 @@ SEO for real estate developers in Dhaka is a long-term investment that delivers 
     slug: "mobile-seo-optimization-bangladesh-mobile-first-era",
     title: "Mobile SEO for Bangladesh: Optimize for the Mobile-First Era",
     date: "2026-06-30",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "A comprehensive mobile SEO guide for Bangladesh — covering mobile-first indexing, Core Web Vitals on mobile, voice search, AMP, and optimization strategies for the 70%+ of Bangladeshi users who search on smartphones.",
     tags: ["Mobile SEO", "Mobile Optimization", "Bangladesh", "Mobile-First Indexing"],
@@ -1261,7 +1261,7 @@ Mobile SEO in Bangladesh is not a separate discipline — it is the core of mode
     slug: "content-marketing-strategy-bangladeshi-brands-seo",
     title: "Content Marketing Strategy for Bangladeshi Brands: Drive SEO Growth",
     date: "2026-07-03",
-    author: "Kanok Miah",
+    author: "Md Kanok Miah",
     excerpt:
       "A complete content marketing strategy for Bangladeshi brands — leveraging blogs, videos, social media, and local storytelling to boost SEO, build authority, and attract customers in Bangladesh's digital landscape.",
     tags: ["Content Marketing", "Bangladesh", "SEO Strategy", "Digital Marketing"],

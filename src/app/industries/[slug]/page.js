@@ -23,7 +23,7 @@ export default function IndustryPage() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-blue-600">Kanok Miah</span>
+            <span className="text-blue-600">Md Kanok Miah</span>
             <span className="text-amber-500">IT</span>
           </Link>
           <div className="flex gap-4 text-sm">

@@ -14,7 +14,7 @@ export default function AboutPage() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-blue-600">Kanok Miah</span>
+            <span className="text-blue-600">Md Kanok Miah</span>
             <span className="text-amber-500">IT</span>
           </Link>
           <Link href="/" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">← Back to Home</Link>
@@ -57,7 +57,7 @@ export default function AboutPage() {
                 or were located overseas with no real understanding of the Bangladesh market.
               </p>
               <p>
-                Founded by <strong className="text-gray-900">Kanok Miah</strong>, our agency set out to bridge that gap. 
+                Founded by <strong className="text-gray-900">Md Kanok Miah</strong>, our agency set out to bridge that gap. 
                 With over 6 years of hands-on experience optimising websites for Bangladeshi audiences, we've developed 
                 a proprietary approach that blends technical SEO rigour with deep cultural and linguistic insights.
               </p>

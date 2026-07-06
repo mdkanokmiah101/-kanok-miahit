@@ -11,7 +11,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <a href="#" className="text-xl font-extrabold tracking-tight">
-            <span className="text-blue-600">Kanok Miah</span>
+            <span className="text-blue-600">Md Kanok Miah</span>
             <span className="text-amber-500">IT</span>
           </a>
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-600">

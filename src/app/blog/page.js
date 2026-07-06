@@ -30,7 +30,7 @@ export default function BlogPage() {
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
             <span className="text-blue-600">
-              Kanok Miah
+              Md Kanok Miah
             </span>
             <span className="text-amber-500">IT</span>
           </Link>

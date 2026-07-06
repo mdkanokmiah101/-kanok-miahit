@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://kanokmiah.com.bd"),
   title: "Best SEO Agency in Dhaka | Kanok MiahIT — #1 SEO in Bangladesh",
   description:
     "Looking for the best SEO agency in Dhaka? Kanok MiahIT is Bangladesh's top-rated SEO company. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
@@ -31,6 +32,9 @@ export const metadata = {
   authors: [{ name: "Kanok MiahIT" }],
   creator: "Kanok MiahIT",
   publisher: "Kanok MiahIT",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -64,9 +68,8 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Canonical */}
-        <link rel="canonical" href="https://kanokmiah.com.bd" />
-        {/* Schema: Organization + LocalBusiness */}
+        {/* Canonical is managed via 'alternates.canonical' in metadata export */}
+        {/* Schema: Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -89,9 +92,7 @@ export default function RootLayout({ children }) {
                 contactType: "customer service",
                 availableLanguage: ["English", "Bengali"],
               },
-              sameAs: [
-                "https://kanokmiah.com",
-              ],
+              sameAs: ["https://kanokmiah.com"],
             }),
           }}
         />
@@ -106,7 +107,8 @@ export default function RootLayout({ children }) {
               url: "https://kanokmiah.com.bd",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://kanokmiah.com.bd/search?q={search_term_string}",
+                target:
+                  "https://kanokmiah.com.bd/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),

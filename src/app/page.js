@@ -396,40 +396,127 @@ export default function Home() {
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="py-12 px-4 border-t border-gray-100 bg-gray-50/50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-10 text-center md:text-left">
-            <div className="md:col-span-2">
-              <a href="/" className="text-xl font-extrabold tracking-tight">
-                <span className="text-primary">Md Kanok Miah</span>
+      <footer className="relative bg-gray-900 text-gray-300 pt-16 pb-0 px-4 overflow-hidden">
+        {/* Top decorative gradient line */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary-dark to-primary" />
+
+        <div className="relative max-w-7xl mx-auto">
+          {/* Main Footer Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+            {/* Column 1 - Brand */}
+            <div className="lg:col-span-1">
+              <a href="/" className="text-2xl font-extrabold tracking-tight text-white">
+                Md <span className="text-primary">Kanok Miah</span>
               </a>
-              <p className="text-gray-500 text-sm mt-2 max-w-sm mx-auto md:mx-0">
-                Bangladesh&apos;s trusted SEO expert. Helping local businesses rank higher, grow faster, and dominate search results.
+              <p className="text-gray-400 text-sm mt-4 leading-relaxed">
+                Bangladesh&apos;s trusted SEO expert with 6+ years of experience. Helping local businesses rank higher,
+                grow faster, and dominate search results with proven SEO strategies.
               </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wider">Quick Links</h4>
-              <div className="space-y-2 text-sm text-gray-500">
-                <a href="/" className="block hover:text-primary">Home</a>
-                <a href="/services" className="block hover:text-primary">Services</a>
-                <a href="/industries" className="block hover:text-primary">Industries</a>
-                <a href="/blog" className="block hover:text-primary">Blog</a>
-                <a href="/about" className="block hover:text-primary">About</a>
-                <a href="/contact" className="block hover:text-primary">Contact</a>
+              {/* Trust Badge */}
+              <div className="flex items-center gap-2 mt-5 bg-gray-800/50 rounded-xl px-4 py-3 inline-flex">
+                <span className="text-yellow-400 text-lg">⭐</span>
+                <span className="text-white text-sm font-semibold">4.9/5</span>
+                <span className="text-gray-400 text-xs">(50+ reviews)</span>
               </div>
             </div>
+
+            {/* Column 2 - Quick Links */}
             <div>
-              <h4 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wider">Legal</h4>
-              <div className="space-y-2 text-sm text-gray-500">
-                <a href="/privacy-policy" className="block hover:text-primary">Privacy Policy</a>
-                <a href="/terms-of-service" className="block hover:text-primary">Terms of Service</a>
-              </div>
+              <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Quick Links</h4>
+              <ul className="space-y-3 text-sm">
+                {[
+                  { name: "Home", path: "/" },
+                  { name: "Services", path: "/services" },
+                  { name: "Industries", path: "/industries" },
+                  { name: "Blog", path: "/blog" },
+                  { name: "About", path: "/about" },
+                  { name: "Contact", path: "/contact" },
+                ].map((link, i) => (
+                  <li key={i}>
+                    <a href={link.path} className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                      <span className="text-primary text-xs">▸</span> {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 3 - Services */}
+            <div>
+              <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">SEO Services</h4>
+              <ul className="space-y-3 text-sm">
+                {[
+                  "Local SEO",
+                  "On-Page SEO",
+                  "Technical SEO",
+                  "Link Building",
+                  "E-commerce SEO",
+                  "GEO / AI Search",
+                ].map((service, i) => (
+                  <li key={i}>
+                    <a href="/services" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                      <span className="text-primary text-xs">▸</span> {service}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 4 - Contact */}
+            <div>
+              <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Contact</h4>
+              <ul className="space-y-4 text-sm">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">📞</span>
+                  <div>
+                    <div className="text-gray-400 text-xs">Phone</div>
+                    <a href="tel:+8801712883101" className="text-white hover:text-primary transition-colors font-medium">+880 1712-883101</a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">📧</span>
+                  <div>
+                    <div className="text-gray-400 text-xs">Email</div>
+                    <a href="mailto:mdkanokmiah232@gmail.com" className="text-white hover:text-primary transition-colors font-medium">mdkanokmiah232@gmail.com</a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">📍</span>
+                  <div>
+                    <div className="text-gray-400 text-xs">Location</div>
+                    <span className="text-white font-medium">Dhaka, Bangladesh</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-0.5">💬</span>
+                  <div>
+                    <div className="text-gray-400 text-xs">WhatsApp</div>
+                    <a href="https://wa.me/8801712883101" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors font-medium">Chat Now</a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="border-t border-gray-200 pt-8 text-center">
-            <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-            <p className="mt-2 text-xs text-gray-400">🇧🇩 Serving Dhaka, Chittagong, Sylhet & all of Bangladesh</p>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-800 pt-8 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-gray-500 text-center md:text-left">
+              © 2026 <span className="text-primary font-semibold">Md Kanok Miah</span>. All rights reserved.
+            </p>
+            <div className="flex items-center gap-6 text-sm">
+              <a href="/privacy-policy" className="text-gray-500 hover:text-primary transition-colors">Privacy Policy</a>
+              <span className="text-gray-700">|</span>
+              <a href="/terms-of-service" className="text-gray-500 hover:text-primary transition-colors">Terms of Service</a>
+              <span className="text-gray-700">|</span>
+              <a href="/sitemap.xml" className="text-gray-500 hover:text-primary transition-colors">Sitemap</a>
+            </div>
           </div>
+        </div>
+
+        {/* Bottom flag line */}
+        <div className="bg-gray-950 py-3 text-center">
+          <p className="text-xs text-gray-600">🇧🇩 Serving Dhaka, Chittagong, Sylhet & all of Bangladesh</p>
         </div>
       </footer>
 

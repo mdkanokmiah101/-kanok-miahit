@@ -56,9 +56,7 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] mb-6">
               <span className="text-primary">Best SEO Expert</span>
               <br />
-              <span className="text-gray-900">in Dhaka,</span>
-              <br />
-              <span className="text-gray-900">Bangladesh</span>
+              <span className="text-gray-900">in Dhaka, Bangladesh</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Md Kanok Miah is the <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong>.

@@ -50,18 +50,18 @@ export default function Home() {
           <div>
             <div className="inline-flex items-center gap-2 bg-primary-light border border-primary/20 text-primary-dark text-xs font-semibold px-5 py-2 rounded-full mb-6">
               <span className="w-2 h-2 bg-primary-light0 rounded-full animate-pulse" />
-              #1 SEO Agency in Bangladesh
+              #1 SEO Expert in Bangladesh
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6">
-              <span className="text-primary">Best SEO Agency</span>
+              <span className="text-primary">Best SEO Expert</span>
               <br />
               <span className="text-gray-900">in Dhaka, Bangladesh</span>
               <br />
               <span className="text-gray-400 text-3xl md:text-4xl font-semibold">Rank Higher. Grow Faster.</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-xl">
-              Md Kanok Miah is the <strong className="text-gray-900">best SEO agency in Dhaka, Bangladesh</strong>. 
-              We help local businesses rank higher on Google, generate qualified leads, and scale revenue — 
+              Md Kanok Miah is the <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong>. 
+              With 6+ years of experience, I help local businesses rank higher on Google, generate qualified leads, and scale revenue — 
               with proven strategies that work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -360,7 +360,7 @@ export default function Home() {
             <a href="/privacy-policy" className="hover:text-primary">Privacy</a>
             <a href="/terms-of-service" className="hover:text-primary">Terms</a>
           </div>
-          <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+          <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
           <p className="mt-2 text-xs text-gray-400">🇧🇩 Serving Dhaka, Chittagong, Sylhet & all of Bangladesh</p>
         </div>
       </footer>

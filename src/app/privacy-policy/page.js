@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
               your information when you visit our website or use our SEO services.
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
-              We are a Bangladesh-based SEO agency. By using our website and services, you agree to the 
+              I am a Bangladesh-based SEO expert. By using my website and services, you agree to the 
               collection and use of information in accordance with this policy.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function PrivacyPolicyPage() {
 
       {/* === FOOTER === */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
         <div className="mt-3 flex items-center justify-center gap-4 text-xs">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

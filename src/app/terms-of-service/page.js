@@ -51,7 +51,7 @@ export default function TermsOfServicePage() {
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
               These terms apply to all visitors, users, and clients of Md Kanok Miah, a Bangladesh-based 
-              SEO agency operating from Dhaka, Bangladesh.
+              SEO expert operating from Dhaka, Bangladesh.
             </p>
           </div>
 
@@ -208,7 +208,7 @@ export default function TermsOfServicePage() {
 
       {/* === FOOTER === */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
         <div className="mt-3 flex items-center justify-center gap-4 text-xs">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

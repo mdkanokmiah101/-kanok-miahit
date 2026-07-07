@@ -13,16 +13,16 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
-  title: "Best SEO Agency in Dhaka | Md Kanok Miah — #1 SEO in Bangladesh",
+  title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
   description:
-    "Looking for the best SEO agency in Dhaka? Md Kanok Miah is Bangladesh's top-rated SEO company. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
+    "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist with 6+ years of experience. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
   keywords: [
-    "best SEO agency in Dhaka",
-    "SEO agency Dhaka",
-    "SEO company in Bangladesh",
+    "best SEO expert in Dhaka",
+    "SEO expert Dhaka",
+    "SEO specialist Bangladesh",
     "local SEO Bangladesh",
     "Bangladesh SEO expert",
-    "digital marketing agency Bangladesh",
+    "SEO consultant Dhaka",
     "on-page SEO",
     "technical SEO",
     "link building Bangladesh",
@@ -39,16 +39,16 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Md Kanok Miah",
-    title: "Best SEO Agency in Dhaka | Md Kanok Miah — #1 SEO in Bangladesh",
+    title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
     description:
-      "Looking for the best SEO agency in Dhaka? Md Kanok Miah is Bangladesh's top-rated SEO company. Get higher rankings and more traffic with proven SEO strategies.",
+      "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist. Get higher rankings and more traffic with proven SEO strategies.",
     url: "https://kanokmiah.com.bd",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best SEO Agency in Dhaka | Md Kanok Miah — #1 SEO in Bangladesh",
+    title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
     description:
-      "Looking for the best SEO agency in Dhaka? Md Kanok Miah helps businesses rank higher, grow faster, dominate search.",
+      "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah helps businesses rank higher, grow faster, dominate search.",
   },
   robots: {
     index: true,
@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
               url: "https://kanokmiah.com.bd",
               logo: "https://kanokmiah.com.bd/favicon.ico",
               description:
-                "Bangladesh-focused SEO agency. Local SEO, technical SEO, link building, and GEO optimization.",
+                "Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, and GEO optimization.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Dhaka",

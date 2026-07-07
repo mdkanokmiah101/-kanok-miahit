@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutPage() {
   useEffect(() => {
-    document.title = "About Us — Md Kanok Miah | SEO Agency in Bangladesh";
+    document.title = "About Me — Md Kanok Miah | SEO Expert in Bangladesh";
   }, []);
 
   return (
@@ -35,8 +35,8 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded in Dhaka, Bangladesh, Md Kanok Miah is a results-driven SEO agency that helps local businesses 
-            dominate search engine rankings. We combine deep local market knowledge with global SEO best practices 
+            Founded in Dhaka, Bangladesh, Md Kanok Miah is a results-driven SEO expert who helps local businesses 
+            dominate search engine rankings. Combining deep local market knowledge with global SEO best practices 
             to deliver measurable growth for Bangladeshi enterprises.
           </p>
         </div>
@@ -56,17 +56,17 @@ export default function AboutPage() {
                 or were located overseas with no real understanding of the Bangladesh market.
               </p>
               <p>
-                Founded by <strong className="text-gray-900">Md Kanok Miah</strong>, our agency set out to bridge that gap. 
-                With over 6 years of hands-on experience optimising websites for Bangladeshi audiences, we've developed 
+                Founded by <strong className="text-gray-900">Md Kanok Miah</strong>, my practice set out to bridge that gap. 
+                With over 6 years of hands-on experience optimising websites for Bangladeshi audiences, I've developed 
                 a proprietary approach that blends technical SEO rigour with deep cultural and linguistic insights.
               </p>
               <p>
-                From small local shops in Dhaka to growing e-commerce brands serving customers nationwide, we've helped 
-                over 50 clients achieve first-page rankings on Google. Our strategies account for Bengali-language queries, 
+                From small local shops in Dhaka to growing e-commerce brands serving customers nationwide, I've helped 
+                over 50 clients achieve first-page rankings on Google. My strategies account for Bengali-language queries, 
                 mobile-first usage patterns, and the unique competitive landscape of Bangladesh's digital economy.
               </p>
               <p>
-                Today, Md Kanok Miah is recognised as one of Bangladesh's most trusted SEO agencies, delivering 
+                Today, Md Kanok Miah is recognised as one of Bangladesh's most trusted SEO experts, delivering 
                 transparent, data-driven SEO services that generate real business results — not just vanity metrics.
               </p>
             </div>
@@ -91,8 +91,8 @@ export default function AboutPage() {
             <div className="text-3xl mb-4">🔭</div>
             <h3 className="font-bold text-xl mb-3 text-gray-900">Our Vision</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              To be Bangladesh's most trusted SEO agency — known for integrity, transparency, 
-              and exceptional results. We envision a digital Bangladesh where local businesses 
+              To be Bangladesh's most trusted SEO expert — known for integrity, transparency, 
+              and exceptional results. I envision a digital Bangladesh where local businesses 
               compete and win on the global stage through the power of search.
             </p>
           </div>
@@ -162,7 +162,7 @@ export default function AboutPage() {
 
       {/* === FOOTER === */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
         <div className="mt-3 flex items-center justify-center gap-4 text-xs">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

@@ -314,7 +314,7 @@ export default function BlogPostPage() {
           <span className="text-primary font-bold">
             Md Kanok Miah
           </span>{" "}
-          — SEO Agency in Bangladesh. All rights reserved.
+          — SEO Expert in Bangladesh. All rights reserved.
         </p>
       </footer>
     </div>

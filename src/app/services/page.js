@@ -1,0 +1,186 @@
+"use client";
+import { useEffect } from "react";
+import Link from "next/link";
+
+const services = [
+  {
+    icon: "🔍",
+    title: "Local SEO",
+    subtitle: "Dominate Google Maps in Dhaka & Across Bangladesh",
+    desc: "Get your business found by customers searching near you. I optimise your Google Business Profile, build local citations, and target location-based keywords so you appear in the local pack and Google Maps.",
+    features: ["Google Business Profile optimisation", "Local citation building (BD directories)", "Near-me keyword targeting", "Google Maps ranking", "Local content strategy", "Review management & response"],
+    slug: "#services"
+  },
+  {
+    icon: "📄",
+    title: "On-Page SEO",
+    subtitle: "Perfect Every Page for Search & Users",
+    desc: "I optimise every page on your site — from title tags and meta descriptions to header structure and internal linking — so Google understands your content and ranks it higher.",
+    features: ["Title tag & meta description optimisation", "Header (H1-H3) structure", "Keyword-optimised content", "Internal linking architecture", "Image alt text & schema markup", "Content gap analysis"],
+    slug: "#services"
+  },
+  {
+    icon: "🔗",
+    title: "Link Building",
+    subtitle: "Build Authority That Ranks",
+    desc: "Quality backlinks from Bangladeshi and international websites. I use ethical, white-hat techniques to build your site's authority and drive referral traffic.",
+    features: ["Guest posting on BD websites", "Local directory submissions", "Niche-relevant backlinks", "Broken link building", "Competitor backlink analysis", "Authority building strategy"],
+    slug: "#services"
+  },
+  {
+    icon: "📊",
+    title: "Technical SEO",
+    subtitle: "Fix the Foundation. Improve Rankings.",
+    desc: "I audit and fix technical issues holding your site back — slow speed, crawl errors, mobile issues, and Core Web Vitals — so search engines can easily find and rank your pages.",
+    features: ["Core Web Vitals optimisation", "Site speed & performance audit", "Mobile-first indexing check", "Crawl budget optimisation", "Structured data / Schema markup", "Sitemap & robots.txt management"],
+    slug: "#services"
+  },
+  {
+    icon: "🤖",
+    title: "GEO & AI Search Optimisation",
+    subtitle: "Get Found in ChatGPT, Gemini & AI Overviews",
+    desc: "Optimise your content for the AI-powered search era. I structure your site so AI systems — Google AI Overviews, ChatGPT, Perplexity — can accurately extract and cite your business.",
+    features: ["Entity-first content structure", "AI-friendly FAQ/QA optimisation", "Semantic topical clustering", "Authority signal building", "Featured snippet targeting", "Generative Engine readiness"],
+    slug: "#services"
+  },
+  {
+    icon: "🛒",
+    title: "E-commerce SEO",
+    subtitle: "Sell More With Organic Search",
+    desc: "From Daraz sellers to Shopify stores, I optimise product pages, category structure, and technical setup so your products rank higher and convert better.",
+    features: ["Product page optimisation", "Category structure & siloing", "Shopify/WooCommerce/Daraz SEO", "Review schema & rich snippets", "E-commerce site speed", "Conversion-focused SEO strategy"],
+    slug: "#services"
+  }
+];
+
+export default function ServicesPage() {
+  useEffect(() => {
+    document.title = "SEO Services — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh";
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      {/* Navbar */}
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
+        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+          <Link href="/" className="text-xl font-extrabold tracking-tight">
+            <span className="text-primary">Md Kanok Miah</span>
+          </Link>
+          <Link href="/" className="text-sm text-gray-600 hover:text-primary transition-colors">← Back to Home</Link>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <section className="relative pt-32 pb-16 px-4 text-center overflow-hidden bg-gradient-to-b from-gray-50 to-white">
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/[0.08] rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/[0.05] rounded-full blur-3xl" />
+        <div className="relative max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase">What I Do</span>
+          <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6">
+            SEO Services for{" "}
+            <span className="text-primary">Bangladesh</span>
+          </h1>
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+            Complete SEO solutions tailored for Bangladeshi businesses — from local Dhaka SEO 
+            to international optimization. Every strategy is data-driven, transparent, and results-focused.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link href="/#contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5">
+              Get Free SEO Audit →
+            </Link>
+            <Link href="/industries" className="inline-flex items-center gap-2 border border-gray-200 text-gray-600 px-6 py-3 rounded-xl font-semibold text-sm hover:border-primary hover:text-primary transition-all">
+              View Industries
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto space-y-10">
+          {services.map((svc, i) => (
+            <div key={i} className="bg-gray-50 border border-gray-100 rounded-2xl p-8 md:p-10 hover:border-primary/20 transition-all">
+              <div className="flex flex-col md:flex-row gap-8">
+                <div className="md:w-1/3">
+                  <div className="text-5xl mb-4">{svc.icon}</div>
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">{svc.title}</h2>
+                  <p className="text-gray-500 text-sm leading-relaxed">{svc.subtitle}</p>
+                </div>
+                <div className="md:w-2/3">
+                  <p className="text-gray-600 leading-relaxed mb-5">{svc.desc}</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {svc.features.map((f, fi) => (
+                      <div key={fi} className="flex items-start gap-2 text-sm text-gray-600">
+                        <span className="text-primary shrink-0 mt-0.5">✓</span>
+                        <span>{f}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
+        <div className="max-w-5xl mx-auto text-center">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase">How I Work</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mt-3 mb-6 text-gray-900">My 5-Step SEO Process</h2>
+          <p className="text-gray-500 max-w-xl mx-auto mb-12">A proven system that delivers measurable SEO results for Bangladeshi businesses.</p>
+          <div className="grid md:grid-cols-5 gap-4">
+            {[
+              { step: "01", title: "Audit", desc: "Full site analysis — technical, content, backlinks, competitors" },
+              { step: "02", title: "Strategy", desc: "Custom SEO plan with Bangladesh keyword targeting" },
+              { step: "03", title: "Execute", desc: "On-page fixes, content, link building, technical SEO" },
+              { step: "04", title: "Monitor", desc: "Track rankings, traffic, and conversions weekly" },
+              { step: "05", title: "Optimize", desc: "Iterate and improve based on real performance data" },
+            ].map((p, pi) => (
+              <div key={pi} className="bg-white border border-gray-100 rounded-2xl p-5 hover:border-primary/20 hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary flex items-center justify-center font-extrabold text-sm text-white">{p.step}</div>
+                <h3 className="font-bold text-gray-900 mb-1">{p.title}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />
+        <div className="relative max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
+            Ready to <span className="text-amber-300">Rank Higher</span>?
+          </h2>
+          <p className="text-primary/80 mb-8 text-lg">
+            Get a free SEO audit and discover exactly what your website needs to grow.
+          </p>
+          <Link
+            href="/contact"
+            className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
+          >
+            Start Your Free Audit
+            <span className="group-hover:translate-x-1 transition-transform">→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-6 mb-4">
+            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+            <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
+            <Link href="/industries" className="hover:text-primary transition-colors">Industries</Link>
+            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
+            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+          </div>
+          <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+}

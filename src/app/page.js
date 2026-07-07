@@ -98,21 +98,15 @@ export default function Home() {
           {/* Right - Visual */}
           <div className="relative hidden lg:block">
             <div className="relative bg-gradient-to-br from-primary to-primary-dark rounded-3xl p-1 shadow-2xl">
-              <div className="bg-white rounded-[22px] p-8">
-                <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { emoji: "🔍", label: "SEO Audit", desc: "Full site analysis", color: "from-primary/20 to-primary/5" },
-                    { emoji: "📊", label: "Rankings", desc: "Track positions", color: "from-primary/20 to-primary/5" },
-                    { emoji: "🎯", label: "Traffic", desc: "Organic growth", color: "from-primary/20 to-primary/5" },
-                    { emoji: "🚀", label: "Results", desc: "Revenue boost", color: "from-primary/20 to-primary/5" },
-                  ].map((item, i) => (
-                    <div key={i} className={`bg-gradient-to-br ${item.color} rounded-2xl p-6 text-center hover:shadow-md transition-all`}>
-                      <div className="text-4xl mb-2">{item.emoji}</div>
-                      <div className="font-bold text-sm text-gray-900">{item.label}</div>
-                      <div className="text-xs text-gray-500">{item.desc}</div>
-                    </div>
-                  ))}
-                </div>
+              <div className="bg-white rounded-[22px] p-6">
+                <img
+                  src="/kanok-miah-profile.webp"
+                  alt="Md Kanok Miah - Best SEO Expert in Dhaka, Bangladesh"
+                  className="w-full h-auto rounded-2xl object-cover"
+                  width="500"
+                  height="500"
+                  loading="eager"
+                />
               </div>
             </div>
             {/* Floating Stats */}

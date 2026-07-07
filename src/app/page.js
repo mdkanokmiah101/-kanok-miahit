@@ -97,14 +97,14 @@ export default function Home() {
 
           {/* Right - Visual */}
           <div className="relative hidden lg:block">
-            <div className="relative bg-gradient-to-br from-primary to-primary-dark rounded-3xl p-1 shadow-2xl">
-              <div className="bg-white rounded-[22px] p-6">
+            <div className="relative bg-gradient-to-br from-primary to-primary-dark rounded-3xl p-1 shadow-2xl max-w-sm mx-auto">
+              <div className="bg-white rounded-[22px] p-4">
                 <img
                   src="/kanok-miah-profile.webp"
                   alt="Md Kanok Miah - Best SEO Expert in Dhaka, Bangladesh"
-                  className="w-full h-auto rounded-2xl object-cover"
-                  width="500"
-                  height="500"
+                  className="w-60 h-60 rounded-2xl object-cover mx-auto"
+                  width="240"
+                  height="240"
                   loading="eager"
                 />
               </div>

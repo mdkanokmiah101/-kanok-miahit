@@ -4,7 +4,13 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = ["Services", "Industries", "Blog", "About", "Contact"];
+  const navItem = [
+    { name: "Services", path: "/services" },
+    { name: "Industries", path: "/industries" },
+    { name: "Blog", path: "/blog" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" }
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -12,23 +18,23 @@ export default function Home() {
       {/* ===== NAVBAR ===== */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <a href="#" className="text-xl font-extrabold tracking-tight">
+          <a href="/" className="text-xl font-extrabold tracking-tight">
             <span className="text-primary">Md Kanok Miah</span>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-            {navItems.map(item => (
-              <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-primary transition-colors">{item}</a>
+            {navItem.map(item => (
+              <a key={item.name} href={item.path} className="hover:text-primary transition-colors">{item.name}</a>
             ))}
-            <a href="#contact" className="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 transition-all">Free Audit</a>
+            <a href="/contact" className="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 transition-all">Free Audit</a>
           </div>
           <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-2xl text-gray-700">☰</button>
         </div>
         {menuOpen && (
           <div className="md:hidden bg-white border-b border-gray-100 px-4 pb-5 flex flex-col gap-3 text-sm font-medium text-gray-600">
-            {navItems.map(item => (
-              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)} className="hover:text-primary transition-colors">{item}</a>
+            {navItem.map(item => (
+              <a key={item.name} href={item.path} onClick={() => setMenuOpen(false)} className="hover:text-primary transition-colors">{item.name}</a>
             ))}
-            <a href="#contact" onClick={() => setMenuOpen(false)} className="bg-primary text-white text-center font-bold px-5 py-2.5 rounded-full">Free Audit</a>
+            <a href="/contact" onClick={() => setMenuOpen(false)} className="bg-primary text-white text-center font-bold px-5 py-2.5 rounded-full">Free Audit</a>
           </div>
         )}
       </nav>
@@ -64,11 +70,11 @@ export default function Home() {
               generate qualified leads, and scale revenue — with proven strategies that work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contact" className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">
+              <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">
                 Get Free SEO Audit
                 <span className="text-lg">→</span>
               </a>
-              <a href="#services" className="inline-flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-primary/30 hover:text-primary transition-all">
+              <a href="/services" className="inline-flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-primary/30 hover:text-primary transition-all">
                 View Services
               </a>
             </div>
@@ -280,7 +286,7 @@ export default function Home() {
             Get a free SEO audit for your Bangladesh business. No commitment. No hidden fees. Just real, actionable insights.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#contact" className="inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
+            <a href="/contact" className="inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
               Get Your Free Audit <span>→</span>
             </a>
             <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20Miah!%20I%20want%20a%20free%20SEO%20audit."
@@ -400,7 +406,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-10 text-center md:text-left">
             <div className="md:col-span-2">
-              <a href="#" className="text-xl font-extrabold tracking-tight">
+              <a href="/" className="text-xl font-extrabold tracking-tight">
                 <span className="text-primary">Md Kanok Miah</span>
               </a>
               <p className="text-gray-500 text-sm mt-2 max-w-sm mx-auto md:mx-0">
@@ -411,9 +417,11 @@ export default function Home() {
               <h4 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-wider">Quick Links</h4>
               <div className="space-y-2 text-sm text-gray-500">
                 <a href="/" className="block hover:text-primary">Home</a>
+                <a href="/services" className="block hover:text-primary">Services</a>
                 <a href="/industries" className="block hover:text-primary">Industries</a>
                 <a href="/blog" className="block hover:text-primary">Blog</a>
                 <a href="/about" className="block hover:text-primary">About</a>
+                <a href="/contact" className="block hover:text-primary">Contact</a>
               </div>
             </div>
             <div>

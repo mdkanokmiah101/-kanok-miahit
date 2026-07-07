@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function TermsOfServicePage() {
   useEffect(() => {
-    document.title = "Terms of Service — Kanok MiahIT";
+    document.title = "Terms of Service — Md Kanok Miah";
   }, []);
 
   return (
@@ -15,7 +15,6 @@ export default function TermsOfServicePage() {
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
             <span className="text-primary">Md Kanok Miah</span>
-            <span className="text-amber-500">IT</span>
           </Link>
           <Link href="/" className="text-sm text-gray-600 hover:text-primary transition-colors">← Back to Home</Link>
         </div>
@@ -46,12 +45,12 @@ export default function TermsOfServicePage() {
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7">
             <h2 className="text-xl font-extrabold text-gray-900 mb-3">1. Acceptance of Terms</h2>
             <p className="text-gray-600 leading-relaxed">
-              By accessing or using the Kanok MiahIT website and services, you agree to be bound by 
+              By accessing or using the Md Kanok Miah website and services, you agree to be bound by 
               these Terms of Service. If you do not agree with any part of these terms, you must not 
               use our website or services.
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
-              These terms apply to all visitors, users, and clients of Kanok MiahIT, a Bangladesh-based 
+              These terms apply to all visitors, users, and clients of Md Kanok Miah, a Bangladesh-based 
               SEO agency operating from Dhaka, Bangladesh.
             </p>
           </div>
@@ -59,7 +58,7 @@ export default function TermsOfServicePage() {
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7">
             <h2 className="text-xl font-extrabold text-gray-900 mb-3">2. Services Description</h2>
             <p className="text-gray-600 leading-relaxed">
-              Kanok MiahIT provides search engine optimisation (SEO) services including but not limited to:
+              Md Kanok Miah provides search engine optimisation (SEO) services including but not limited to:
             </p>
             <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-600 text-sm">
               <li>Local SEO and Google Business Profile optimisation</li>
@@ -109,7 +108,7 @@ export default function TermsOfServicePage() {
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7">
             <h2 className="text-xl font-extrabold text-gray-900 mb-3">5. Intellectual Property</h2>
             <p className="text-gray-600 leading-relaxed">
-              All SEO strategies, methodologies, reports, and deliverables produced by Kanok MiahIT 
+              All SEO strategies, methodologies, reports, and deliverables produced by Md Kanok Miah 
               remain our intellectual property until full payment is received. Upon full payment, 
               the client receives a license to use the deliverables for their business purposes.
             </p>
@@ -134,13 +133,13 @@ export default function TermsOfServicePage() {
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7">
             <h2 className="text-xl font-extrabold text-gray-900 mb-3">7. Limitation of Liability</h2>
             <p className="text-gray-600 leading-relaxed">
-              Kanok MiahIT provides SEO services with reasonable skill and care. However, we cannot 
+              Md Kanok Miah provides SEO services with reasonable skill and care. However, we cannot 
               guarantee specific search engine rankings, traffic levels, or revenue increases, as 
               these are influenced by factors beyond our control including search engine algorithm 
               changes and competitor activity.
             </p>
             <p className="text-gray-600 leading-relaxed mt-3">
-              To the fullest extent permitted by law, Kanok MiahIT shall not be liable for any 
+              To the fullest extent permitted by law, Md Kanok Miah shall not be liable for any 
               indirect, incidental, special, consequential, or punitive damages arising from your 
               use of our services. Our total liability is limited to the amount paid by you for 
               the specific service giving rise to the claim.
@@ -209,7 +208,7 @@ export default function TermsOfServicePage() {
 
       {/* === FOOTER === */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Kanok MiahIT</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
         <div className="mt-3 flex items-center justify-center gap-4 text-xs">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

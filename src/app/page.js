@@ -12,7 +12,6 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <a href="#" className="text-xl font-extrabold tracking-tight">
             <span className="text-primary">Md Kanok Miah</span>
-            <span className="text-amber-500">IT</span>
           </a>
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
             {["Services", "Industries", "Blog", "About", "Contact"].map(item => (
@@ -35,7 +34,7 @@ export default function Home() {
 
       {/* === FLOATING WHATSAPP === */}
       <a
-        href="https://wa.me/8801712883101?text=Hi%20Kanok%20MiahIT!%20I%20need%20SEO%20help%20for%20my%20business."
+        href="https://wa.me/8801712883101?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-emerald-400 hover:scale-110 hover:shadow-emerald-500/40 transition-all animate-bounce"
@@ -61,7 +60,7 @@ export default function Home() {
               <span className="text-gray-400 text-3xl md:text-4xl font-semibold">Rank Higher. Grow Faster.</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-xl">
-              Kanok MiahIT is the <strong className="text-gray-900">best SEO agency in Dhaka, Bangladesh</strong>. 
+              Md Kanok Miah is the <strong className="text-gray-900">best SEO agency in Dhaka, Bangladesh</strong>. 
               We help local businesses rank higher on Google, generate qualified leads, and scale revenue — 
               with proven strategies that work.
             </p>
@@ -195,7 +194,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">Why Choose Us</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4 text-gray-900">Why Kanok MiahIT?</h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4 text-gray-900">Why Md Kanok Miah?</h2>
             <p className="text-gray-500 max-w-xl mx-auto">6+ years mastering SEO for the Bangladesh market. We understand how local businesses rank and grow.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-5">
@@ -256,13 +255,13 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">Get In Touch</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold mt-3 mb-4 text-gray-900">Contact Kanok MiahIT</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-3 mb-4 text-gray-900">Contact Md Kanok Miah</h2>
             <p className="text-gray-500 mb-6">Ready to rank? Fill out the form and we'll get back to you within 24 hours.</p>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
               <a href="tel:+880****3101" className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 px-5 py-2.5 rounded-full font-semibold hover:bg-green-100">
                 📞 <span className="font-bold">+880 1712-883101</span>
               </a>
-              <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20MiahIT!%20I%20need%20SEO%20help%20for%20my%20business."
+              <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business."
                  target="_blank" rel="noopener noreferrer"
                  className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-5 py-2.5 rounded-full font-semibold hover:bg-emerald-100">
                 💬 WhatsApp Us
@@ -298,7 +297,7 @@ export default function Home() {
                   <textarea name="message" required rows="4" placeholder="I need SEO for my e-commerce store in Dhaka..."
                     className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all resize-none"></textarea>
                 </div>
-                <input type="hidden" name="_subject" value="New SEO Lead from Kanok MiahIT Website!" />
+                <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
                 <input type="text" name="_gotcha" style={{display: "none"}} />
                 <button type="submit"
                   className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg transition-all">
@@ -312,13 +311,13 @@ export default function Home() {
             <div className="space-y-6">
               <div className="bg-white border border-gray-200 rounded-2xl p-7 shadow-sm">
                 <h3 className="font-bold text-lg mb-4 text-gray-900">📞 Call Us Directly</h3>
-                <p className="text-gray-500 text-sm mb-3">Speak directly with Kanok MiahIT's SEO team:</p>
+                <p className="text-gray-500 text-sm mb-3">Speak directly with Md Kanok Miah's SEO team:</p>
                 <a href="tel:+880****3101" className="text-2xl font-extrabold text-primary hover:text-primary-dark">+880 1712-883101</a>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl p-7 shadow-sm">
                 <h3 className="font-bold text-lg mb-4 text-gray-900">💬 WhatsApp</h3>
                 <p className="text-gray-500 text-sm mb-3">Quick response on WhatsApp:</p>
-                <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20MiahIT!%20I%20need%20SEO%20help."
+                <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help."
                    target="_blank" rel="noopener noreferrer"
                    className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-5 py-3 rounded-xl font-semibold hover:bg-emerald-100 text-sm">
                   💬 Chat on WhatsApp → <span className="text-xs text-gray-400">(Fastest Response)</span>
@@ -361,7 +360,7 @@ export default function Home() {
             <a href="/privacy-policy" className="hover:text-primary">Privacy</a>
             <a href="/terms-of-service" className="hover:text-primary">Terms</a>
           </div>
-          <p>© 2026 <span className="text-primary font-bold">Kanok MiahIT</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+          <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
           <p className="mt-2 text-xs text-gray-400">🇧🇩 Serving Dhaka, Chittagong, Sylhet & all of Bangladesh</p>
         </div>
       </footer>

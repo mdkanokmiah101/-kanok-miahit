@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutPage() {
   useEffect(() => {
-    document.title = "About Us — Kanok MiahIT | SEO Agency in Bangladesh";
+    document.title = "About Us — Md Kanok Miah | SEO Agency in Bangladesh";
   }, []);
 
   return (
@@ -15,7 +15,6 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
             <span className="text-primary">Md Kanok Miah</span>
-            <span className="text-amber-500">IT</span>
           </Link>
           <Link href="/" className="text-sm text-gray-600 hover:text-primary transition-colors">← Back to Home</Link>
         </div>
@@ -32,11 +31,11 @@ export default function AboutPage() {
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
             <span className="text-primary">
-              About Kanok MiahIT
+              About Md Kanok Miah
             </span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded in Dhaka, Bangladesh, Kanok MiahIT is a results-driven SEO agency that helps local businesses 
+            Founded in Dhaka, Bangladesh, Md Kanok Miah is a results-driven SEO agency that helps local businesses 
             dominate search engine rankings. We combine deep local market knowledge with global SEO best practices 
             to deliver measurable growth for Bangladeshi enterprises.
           </p>
@@ -52,7 +51,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Kanok MiahIT started with a simple observation: Bangladeshi businesses were struggling to get found 
+                Md Kanok Miah started with a simple observation: Bangladeshi businesses were struggling to get found 
                 online. Most SEO agencies either offered generic solutions that didn't account for local search behaviour 
                 or were located overseas with no real understanding of the Bangladesh market.
               </p>
@@ -67,7 +66,7 @@ export default function AboutPage() {
                 mobile-first usage patterns, and the unique competitive landscape of Bangladesh's digital economy.
               </p>
               <p>
-                Today, Kanok MiahIT is recognised as one of Bangladesh's most trusted SEO agencies, delivering 
+                Today, Md Kanok Miah is recognised as one of Bangladesh's most trusted SEO agencies, delivering 
                 transparent, data-driven SEO services that generate real business results — not just vanity metrics.
               </p>
             </div>
@@ -163,7 +162,7 @@ export default function AboutPage() {
 
       {/* === FOOTER === */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Kanok MiahIT</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
         <div className="mt-3 flex items-center justify-center gap-4 text-xs">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

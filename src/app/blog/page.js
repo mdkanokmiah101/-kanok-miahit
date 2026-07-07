@@ -13,12 +13,12 @@ export default function BlogPage() {
 
   useEffect(() => {
     document.title =
-      "SEO Blog — Md Kanok MiahIT | Bangladesh Digital Marketing Tips";
+      "SEO Blog — Md Kanok Miah | Bangladesh Digital Marketing Tips";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, and more from Kanok MiahIT."
+        "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, and more from Md Kanok Miah."
       );
     }
   }, []);
@@ -32,7 +32,6 @@ export default function BlogPage() {
             <span className="text-primary">
               Md Kanok Miah
             </span>
-            <span className="text-amber-500">IT</span>
           </Link>
           <Link
             href="/"
@@ -173,7 +172,7 @@ export default function BlogPage() {
         <p>
           © 2026{" "}
           <span className="text-primary font-bold">
-            Kanok MiahIT
+            Md Kanok Miah
           </span>{" "}
           — SEO Agency in Bangladesh. All rights reserved.
         </p>

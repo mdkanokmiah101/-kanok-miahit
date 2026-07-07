@@ -11,7 +11,7 @@ export default function BlogPostPage() {
 
   useEffect(() => {
     if (!post) return;
-    document.title = `${post.title} — Kanok MiahIT Blog`;
+    document.title = `${post.title} — Md Kanok Miah Blog`;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", post.excerpt);
@@ -141,7 +141,6 @@ export default function BlogPostPage() {
             <span className="text-primary">
               Md Kanok Miah
             </span>
-            <span className="text-amber-500">IT</span>
           </Link>
           <Link
             href="/blog"
@@ -313,7 +312,7 @@ export default function BlogPostPage() {
         <p>
           © 2026{" "}
           <span className="text-primary font-bold">
-            Kanok MiahIT
+            Md Kanok Miah
           </span>{" "}
           — SEO Agency in Bangladesh. All rights reserved.
         </p>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function PrivacyPolicyPage() {
   useEffect(() => {
-    document.title = "Privacy Policy — Kanok MiahIT";
+    document.title = "Privacy Policy — Md Kanok Miah";
   }, []);
 
   return (
@@ -15,7 +15,6 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
             <span className="text-primary">Md Kanok Miah</span>
-            <span className="text-amber-500">IT</span>
           </Link>
           <Link href="/" className="text-sm text-gray-600 hover:text-primary transition-colors">← Back to Home</Link>
         </div>
@@ -46,7 +45,7 @@ export default function PrivacyPolicyPage() {
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7">
             <h2 className="text-xl font-extrabold text-gray-900 mb-3">1. Introduction</h2>
             <p className="text-gray-600 leading-relaxed">
-              Kanok MiahIT (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) respects your privacy and is committed to protecting 
+              Md Kanok Miah (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) respects your privacy and is committed to protecting 
               your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard 
               your information when you visit our website or use our SEO services.
             </p>
@@ -205,7 +204,7 @@ export default function PrivacyPolicyPage() {
 
       {/* === FOOTER === */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Kanok MiahIT</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
         <div className="mt-3 flex items-center justify-center gap-4 text-xs">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

@@ -10,7 +10,6 @@ export default function IndustriesPage() {
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
             <span className="text-primary">Md Kanok Miah</span>
-            <span className="text-amber-500">IT</span>
           </Link>
           <Link href="/" className="text-sm text-gray-600 hover:text-primary transition-colors">← Back to Home</Link>
         </div>
@@ -49,7 +48,7 @@ export default function IndustriesPage() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Kanok MiahIT</span> — SEO Agency in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Agency in Bangladesh. All rights reserved.</p>
       </footer>
     </div>
   );

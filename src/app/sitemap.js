@@ -1,3 +1,5 @@
+import posts from "./blog/data";
+
 export default async function sitemap() {
   const baseUrl = "https://kanokmiah.com.bd";
 
@@ -30,5 +32,12 @@ export default async function sitemap() {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...industriesPages];
+  const blogPages = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...industriesPages, ...blogPages];
 }

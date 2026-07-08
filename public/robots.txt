@@ -3,4 +3,4 @@ Allow: /
 Disallow: /_next/
 Disallow: /api/
 
-Sitemap: https://kanok-miahit.vercel.app/sitemap.xml
+Sitemap: https://kanokmiah.com.bd/sitemap.xml

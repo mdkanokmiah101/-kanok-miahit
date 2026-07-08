@@ -65,7 +65,8 @@ export const metadata = {
     "max-image-preview": "large",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [{ url: "/favicon.ico", sizes: "32x32", type: "image/png" }],
+    apple: "/icon-192.png",
   },
 };
 

@@ -1,6 +1,6 @@
+# robots.txt for kanokmiah.com.bd
 User-agent: *
 Allow: /
-Disallow: /_next/
 Disallow: /api/
 
 Sitemap: https://kanokmiah.com.bd/sitemap.xml

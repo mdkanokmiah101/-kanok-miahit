@@ -2,9 +2,9 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-// Schema components
+// Schema components (page-specific only; global schemas from root layout)
 
-import { OrganizationSchema, FAQSchema, LocalBusinessSchema, BreadcrumbSchema } from "@/components/Schema";
+import { FAQSchema, BreadcrumbSchema } from "@/components/Schema";
 
 const faqs = [
   {
@@ -69,8 +69,6 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
-        <OrganizationSchema />
-        <LocalBusinessSchema />
         <FAQSchema faqs={faqs} />
         {BreadcrumbSchema(breadcrumbItems)}
       </head>

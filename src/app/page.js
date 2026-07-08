@@ -402,7 +402,7 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto">
           {/* Main Footer Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
 
             {/* Column 1 - Brand */}
             <div className="lg:col-span-1">
@@ -463,7 +463,31 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Column 4 - Contact */}
+            {/* Column 4 - Industries */}
+            <div>
+              <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Industries We Serve</h4>
+              <ul className="space-y-3 text-sm">
+                {[
+                  { name: "Garments & Textile", path: "/industries/garments-textile" },
+                  { name: "E-commerce", path: "/industries/ecommerce" },
+                  { name: "SMM Panel", path: "/industries/smm-panel" },
+                  { name: "Real Estate", path: "/industries/real-estate" },
+                  { name: "Cleaning Services", path: "/industries/cleaning" },
+                  { name: "Spa & Salon", path: "/industries/spa-salon" },
+                  { name: "Medical & Healthcare", path: "/industries/medical" },
+                  { name: "Education", path: "/industries/education" },
+                  { name: "Food & Restaurant", path: "/industries/food-restaurant" },
+                ].map((ind, i) => (
+                  <li key={i}>
+                    <a href={ind.path} className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                      <span className="text-primary text-xs">▸</span> {ind.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 5 - Contact */}
             <div>
               <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Contact</h4>
               <ul className="space-y-4 text-sm">

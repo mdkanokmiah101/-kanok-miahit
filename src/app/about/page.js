@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -10,6 +11,12 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <head>
+        {BreadcrumbSchema([
+          { name: "Home", url: "https://kanokmiah.com.bd" },
+          { name: "About", url: "https://kanokmiah.com.bd/about" },
+        ])}
+      </head>
 
       {/* === NAVBAR === */}
       <Navbar />
@@ -186,6 +193,39 @@ export default function AboutPage() {
                   <p className="text-white text-xs font-medium truncate">{img.alt}</p>
                 </div>
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === FAQ === */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          {FAQSchema([
+            { question: "What makes Md Kanok Miah different from other SEO experts?", answer: "Md Kanok Miah combines deep local Bangladesh market knowledge with global SEO best practices. Every strategy is tailored to Bangladeshi search behaviour, bilingual (Bengali + English) queries, and the unique competitive landscape of Dhaka and beyond." },
+            { question: "How many years of experience does Md Kanok Miah have?", answer: "Md Kanok Miah has over 6 years of hands-on SEO experience, helping 50+ Bangladeshi businesses achieve first-page rankings on Google. His expertise spans local SEO, technical SEO, link building, semantic SEO, and GEO/AI search optimization." },
+            { question: "What types of businesses has Md Kanok Miah worked with?", answer: "I have worked with a diverse range of clients including local service businesses, e-commerce stores (Shopify, Daraz), real estate agencies, healthcare providers, educational institutions, and hospitality businesses across Bangladesh." },
+            { question: "Does Md Kanok Miah offer services outside of Dhaka?", answer: "Yes, I provide SEO services for businesses throughout Bangladesh including Chittagong, Sylhet, Khulna, Rajshahi, and all other major cities. My local SEO strategies are customized for each city's specific market." },
+            { question: "How can I schedule a consultation with Md Kanok Miah?", answer: "You can schedule a free consultation by contacting me through the form on this website, calling +880 1712-883101, or sending a WhatsApp message. I typically respond within 24 hours and offer a free SEO audit to get started." },
+          ])}
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "What makes Md Kanok Miah different from other SEO experts?", answer: "Md Kanok Miah combines deep local Bangladesh market knowledge with global SEO best practices. Every strategy is tailored to Bangladeshi search behaviour, bilingual (Bengali + English) queries, and the unique competitive landscape of Dhaka and beyond." },
+              { question: "How many years of experience does Md Kanok Miah have?", answer: "Md Kanok Miah has over 6 years of hands-on SEO experience, helping 50+ Bangladeshi businesses achieve first-page rankings on Google. His expertise spans local SEO, technical SEO, link building, semantic SEO, and GEO/AI search optimization." },
+              { question: "What types of businesses has Md Kanok Miah worked with?", answer: "I have worked with a diverse range of clients including local service businesses, e-commerce stores (Shopify, Daraz), real estate agencies, healthcare providers, educational institutions, and hospitality businesses across Bangladesh." },
+              { question: "Does Md Kanok Miah offer services outside of Dhaka?", answer: "Yes, I provide SEO services for businesses throughout Bangladesh including Chittagong, Sylhet, Khulna, Rajshahi, and all other major cities. My local SEO strategies are customized for each city's specific market." },
+              { question: "How can I schedule a consultation with Md Kanok Miah?", answer: "You can schedule a free consultation by contacting me through the form on this website, calling +880 1712-883101, or sending a WhatsApp message. I typically respond within 24 hours and offer a free SEO audit to get started." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
             ))}
           </div>
         </div>

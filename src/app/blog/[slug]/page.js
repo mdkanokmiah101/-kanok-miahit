@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import { FAQSchema } from "@/components/Schema";
 import posts from "../data";
 
 export default function BlogPostPage() {
@@ -266,6 +267,51 @@ export default function BlogPostPage() {
           </div>
         </section>
       )}
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          {FAQSchema([
+            { question: "How often should I publish blog posts for SEO?", answer: "For best SEO results, publish high-quality blog posts at least 2–4 times per month. Consistency matters more than frequency — Google rewards websites that regularly publish fresh, valuable content that addresses user search intent." },
+            { question: "What topics should I write about for SEO?", answer: "Focus on topics your target audience is actively searching for. Conduct keyword research to identify questions and problems in your industry. Create content that provides comprehensive answers, guides, and insights that demonstrate expertise and authority." },
+            { question: "How long should my blog posts be for SEO?", answer: "There is no ideal word count, but comprehensive content tends to rank better. For most topics, aim for 1,500–2,500 words. However, quality and relevance are far more important than length — a well-written 800-word post can outrank a poorly written 3,000-word post." },
+            { question: "How long does it take for blog posts to rank on Google?", answer: "New blog posts typically take 3–6 months to start ranking on Google, depending on competition and domain authority. Older, established websites may see results faster. Consistent publishing and internal linking can accelerate this timeline." },
+            { question: "Can I repurpose existing content for new blog posts?", answer: "Yes, updating and republishing old content is an excellent SEO strategy. Refresh statistics, add new insights, improve formatting, and update the publication date. Google often gives a ranking boost to recently updated content." },
+          ])}
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "How often should I publish blog posts for SEO?", answer: "For best SEO results, publish high-quality blog posts at least 2–4 times per month. Consistency matters more than frequency — Google rewards websites that regularly publish fresh, valuable content that addresses user search intent." },
+              { question: "What topics should I write about for SEO?", answer: "Focus on topics your target audience is actively searching for. Conduct keyword research to identify questions and problems in your industry. Create content that provides comprehensive answers, guides, and insights that demonstrate expertise and authority." },
+              { question: "How long should my blog posts be for SEO?", answer: "There is no ideal word count, but comprehensive content tends to rank better. For most topics, aim for 1,500–2,500 words. However, quality and relevance are far more important than length — a well-written 800-word post can outrank a poorly written 3,000-word post." },
+              { question: "How long does it take for blog posts to rank on Google?", answer: "New blog posts typically take 3–6 months to start ranking on Google, depending on competition and domain authority. Older, established websites may see results faster. Consistent publishing and internal linking can accelerate this timeline." },
+              { question: "Can I repurpose existing content for new blog posts?", answer: "Yes, updating and republishing old content is an excellent SEO strategy. Refresh statistics, add new insights, improve formatting, and update the publication date. Google often gives a ranking boost to recently updated content." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Author Bio */}
+      <div className="bg-gray-50 border-y border-gray-100 py-12 px-4">
+        <div className="max-w-4xl mx-auto flex items-start gap-6">
+          <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-2xl shrink-0">👤</div>
+          <div>
+            <p className="font-bold text-gray-900">Written by <span className="text-primary">Md Kanok Miah</span></p>
+            <p className="text-sm text-gray-500">SEO Expert with 6+ years of experience helping Bangladeshi businesses rank higher on Google. Google Business Profile certified.</p>
+            <p className="text-xs text-gray-400 mt-2">Last updated: July 2026</p>
+          </div>
+        </div>
+      </div>
 
       {/* CTA */}
       <section className="relative py-24 px-4 overflow-hidden">

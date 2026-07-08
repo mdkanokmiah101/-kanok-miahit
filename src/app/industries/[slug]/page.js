@@ -3,6 +3,7 @@ import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import industries from "../data";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 export default function IndustryPage() {
   const { slug } = useParams();
@@ -20,6 +21,13 @@ export default function IndustryPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <head>
+        {BreadcrumbSchema([
+          { name: "Home", url: "https://kanokmiah.com.bd" },
+          { name: "Industries", url: "https://kanokmiah.com.bd/industries" },
+          { name: ind.title, url: `https://kanokmiah.com.bd/industries/${ind.slug}` },
+        ])}
+      </head>
       {/* Navbar */}
       <Navbar />
 

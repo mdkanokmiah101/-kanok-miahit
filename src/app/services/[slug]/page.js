@@ -4,7 +4,9 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { FAQSchema } from "@/components/Schema";
 import services from "../data";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/Schema";
 
 export default function ServicePage() {
   const { slug } = useParams();
@@ -26,8 +28,86 @@ export default function ServicePage() {
     );
   }
 
+  const breadcrumbItems = [
+    { name: "Home", url: "https://kanokmiah.com.bd" },
+    { name: "Services", url: "https://kanokmiah.com.bd/services" },
+    { name: svc.title, url: `https://kanokmiah.com.bd/services/${svc.slug}` },
+  ];
+
+  const faqs = (() => {
+    const slug = svc.slug;
+    if (slug === "local-seo") return [
+      { question: "How long does local SEO take to show results?", answer: "Most clients see initial improvements in 4–6 weeks, with significant ranking improvements in 3–6 months. Local SEO results depend on competition, your current online presence, and how quickly we can optimize your Google Business Profile and build local citations." },
+      { question: "Do you offer local SEO for Chittagong?", answer: "Yes, I offer local SEO services for all major cities in Bangladesh including Chittagong, Sylhet, Dhaka, and Khulna. My strategies are tailored to each city's local search landscape." },
+      { question: "What is Google Business Profile optimization?", answer: "GBP optimization involves verifying and fully optimizing your Google Business Profile with accurate NAP (Name, Address, Phone), selecting relevant categories, adding photos, collecting reviews, and posting regular updates to improve local pack rankings." },
+      { question: "How do local citations help my business?", answer: "Local citations (mentions of your business name, address, and phone on other websites) help Google verify your business information and improve local search rankings. I build citations on top Bangladeshi directories like Bdshop and Yellow Pages BD." },
+      { question: "Do you target both Bangla and English keywords?", answer: "Absolutely. I research and target both Bengali and English keywords that your local customers are actually searching for. This bilingual approach helps capture the widest possible local audience in Bangladesh." },
+      { question: "Can you help with Google reviews management?", answer: "Yes, I help businesses develop a systematic approach to earn more positive Google reviews, respond to existing reviews professionally, and manage your online reputation effectively to boost local SEO performance." },
+    ];
+    if (slug === "on-page-seo") return [
+      { question: "What is included in on-page SEO?", answer: "My on-page SEO service includes title tag and meta description optimization, header structure improvements, keyword-optimized content, internal linking architecture, image alt text, and schema markup implementation." },
+      { question: "How long does on-page SEO take?", answer: "Initial on-page optimizations can be implemented within 1–2 weeks, but seeing ranking improvements typically takes 4–8 weeks as search engines crawl and re-index your updated pages." },
+      { question: "Do you follow Google's E-E-A-T guidelines?", answer: "Yes, all my on-page SEO work follows Google's Experience, Expertise, Authoritativeness, and Trustworthiness guidelines to ensure long-term ranking stability and protection from algorithm updates." },
+      { question: "What is schema markup and why do I need it?", answer: "Schema markup is structured data added to your website that helps search engines understand your content better. It can enable rich snippets in search results, improving click-through rates and visibility." },
+      { question: "Can you optimize existing content?", answer: "Yes, I audit your existing content and optimize it for both search engines and users. This includes keyword integration, readability improvements, internal linking, and ensuring proper heading hierarchy." },
+      { question: "How do you choose which keywords to target?", answer: "I conduct comprehensive keyword research using tools like Google Keyword Planner, Ahrefs, and local Bangladesh search data to find high-intent, achievable keywords that balance search volume with competition." },
+    ];
+    if (slug === "link-building") return [
+      { question: "What types of backlinks do you build?", answer: "I build high-quality backlinks through guest posting on authoritative Bangladeshi websites, local directory submissions, niche-relevant editorial links, broken link building, and digital PR campaigns." },
+      { question: "Are your link building methods white-hat?", answer: "Absolutely. I only use ethical, white-hat link building techniques that comply with Google's Webmaster Guidelines. No PBNs, paid links, or spammy tactics that could get your site penalized." },
+      { question: "How many backlinks do I need to rank?", answer: "Quality matters far more than quantity. A few high-authority, relevant backlinks from trusted Bangladeshi websites can have more impact than hundreds of low-quality links. I focus on building a natural, diverse backlink profile." },
+      { question: "Do you build links from Bangladeshi websites?", answer: "Yes, I specialize in acquiring backlinks from high-authority Bangladeshi domains including news sites, business directories, educational institutions, and industry-specific platforms relevant to your niche." },
+      { question: "How long does link building take to show results?", answer: "Link building is a long-term strategy. You can expect to see initial ranking improvements within 2–3 months, with significant authority gains accumulating over 6–12 months as Google recognizes your growing backlink profile." },
+      { question: "Can you recover from Google penalties?", answer: "Yes, I offer link audit and recovery services. I identify toxic backlinks, create disavow files, and help you submit reconsideration requests to Google if your site has been manually penalized." },
+    ];
+    if (slug === "technical-seo") return [
+      { question: "What is Core Web Vitals and why does it matter?", answer: "Core Web Vitals are Google's set of metrics measuring real-world user experience — loading speed (LCP), interactivity (FID/INP), and visual stability (CLS). They are ranking factors that directly impact your search positions." },
+      { question: "How do you fix site speed issues?", answer: "I use tools like Google PageSpeed Insights and Lighthouse to diagnose speed bottlenecks, then implement fixes including image optimization, code minification, browser caching, CDN integration, and server response time improvements." },
+      { question: "Do you work with WordPress websites?", answer: "Yes, I have extensive experience optimizing WordPress sites for technical SEO. I can fix plugin conflicts, optimize databases, implement caching solutions, and improve overall WordPress performance." },
+      { question: "What is crawl budget optimization?", answer: "Crawl budget is the number of pages Googlebot crawls on your site within a given timeframe. I optimize it by fixing crawl errors, removing duplicate content, improving internal linking, and managing your sitemap and robots.txt properly." },
+      { question: "How do you implement structured data?", answer: "I implement JSON-LD structured data markup for various schema types including LocalBusiness, Article, Product, FAQ, BreadcrumbList, and Review depending on your site's content and goals." },
+      { question: "Can you fix mobile usability issues?", answer: "Yes, I identify and fix mobile usability issues such as tap targets too small, content wider than screen, viewport configuration problems, and font size issues to ensure your site passes Google's mobile-friendly test." },
+    ];
+    if (slug === "geo-ai-search") return [
+      { question: "What is GEO (Generative Engine Optimization)?", answer: "GEO is the practice of optimizing your content to be accurately cited and referenced by AI-powered search engines like Google AI Overviews, ChatGPT, Perplexity, and Gemini. It focuses on entity-based content and authoritative source building." },
+      { question: "How do I get my business in ChatGPT responses?", answer: "To appear in ChatGPT responses, your website needs strong topical authority, clear entity signals, well-structured FAQ content, and citations from authoritative sources. I implement entity-first SEO strategies to achieve this." },
+      { question: "How is GEO different from traditional SEO?", answer: "Traditional SEO focuses on keyword rankings and backlinks for Google's algorithm. GEO focuses on entity recognition, semantic relevance, and content structured for AI extraction — preparing your site for AI-powered search experiences." },
+      { question: "Do you optimize for Google AI Overviews?", answer: "Yes, I optimize your content to be featured in Google AI Overviews (formerly SGE) by implementing clear entity definitions, authoritative citations, FAQ/QA structures, and comprehensive topical coverage." },
+      { question: "What is entity-first content?", answer: "Entity-first content is structured around real-world entities (people, places, things, concepts) rather than just keywords. It helps AI systems understand your expertise and correctly attribute information to your business." },
+      { question: "How long does GEO take to show results?", answer: "GEO is a forward-looking strategy. Some improvements in AI citation can appear within 2–3 months, but building the level of entity authority needed for consistent AI inclusion typically takes 6–12 months of sustained effort." },
+    ];
+    if (slug === "ecommerce-seo") return [
+      { question: "Do you optimize Daraz seller pages?", answer: "Yes, I optimize Daraz seller pages for better visibility within Daraz's search and for Google. I focus on product titles, descriptions, images, category placement, and review signals to boost rankings." },
+      { question: "How do you handle duplicate content in e-commerce?", answer: "I address duplicate content issues common in e-commerce sites — product variations, faceted navigation, and manufacturer descriptions — using canonical tags, parameter handling, and unique product descriptions." },
+      { question: "Can you work with Shopify stores?", answer: "Yes, I specialize in Shopify SEO including collection page optimization, meta fields management, blog content strategy, URL structure fixes, and Shopify-specific technical SEO improvements." },
+      { question: "How do you optimize product pages for conversions?", answer: "I optimize product pages for both search rankings and conversions by focusing on compelling product titles, detailed unique descriptions, customer review signals, high-quality images with alt text, and clear calls-to-action." },
+      { question: "What is faceted navigation and why is it a problem?", answer: "Faceted navigation creates multiple URL variations for the same products based on filter selections, which can cause massive duplicate content issues. I implement proper canonical tags and noindex strategies to manage this." },
+      { question: "How long does e-commerce SEO take to work?", answer: "E-commerce SEO typically shows initial results in 6–8 weeks for less competitive products. For highly competitive categories, expect 4–6 months to see meaningful ranking improvements and organic traffic growth." },
+    ];
+    if (slug === "semantic-seo") return [
+      { question: "What is semantic SEO and how is it different?", answer: "Semantic SEO goes beyond keywords to optimize for topics, entities, and user intent. It uses topic clusters, entity linking, and co-occurrence patterns to build topical authority that Google rewards with higher rankings." },
+      { question: "What are topic clusters?", answer: "Topic clusters consist of a comprehensive pillar page covering a broad topic, linked to multiple cluster pages that dive deeper into specific subtopics. This structure signals expertise to Google and improves rankings for entire topic families." },
+      { question: "How does entity SEO help my website?", answer: "Entity SEO helps Google understand the real-world entities your business is associated with (people, places, services). This improves your chances of appearing in Knowledge Graphs, rich snippets, and AI search results." },
+      { question: "Do you implement schema markup for entities?", answer: "Yes, I implement Schema.org markup for Person, LocalBusiness, Service, and other entity types to help search engines build a comprehensive understanding of your business and its relationships." },
+      { question: "How long does semantic SEO take to show results?", answer: "Semantic SEO is a medium to long-term strategy. Initial benefits from content restructuring can appear in 2–3 months, but building recognized topical authority typically takes 6–12 months." },
+      { question: "Can semantic SEO help with AI search optimization?", answer: "Absolutely. Semantic SEO's focus on entities, relationships, and topical authority aligns perfectly with how AI search engines understand and cite content. It naturally prepares your site for GEO and AI search." },
+    ];
+    return [
+      { question: `How long does ${svc.title} take to show results?`, answer: `Most ${svc.title.toLowerCase()} efforts show initial improvements within 4–8 weeks, with significant results building over 3–6 months of consistent optimization and strategy execution.` },
+      { question: `Do you offer ${svc.title} for Chittagong?`, answer: `Yes, I provide ${svc.title.toLowerCase()} services for all of Bangladesh including Dhaka, Chittagong, Sylhet, and Khulna with strategies tailored to each market.` },
+      { question: `What is included in your ${svc.title} package?`, answer: `Each ${svc.title.toLowerCase()} package includes a comprehensive audit, custom strategy development, implementation, monthly reporting, and ongoing optimization.` },
+      { question: "Are your SEO methods white-hat and Google-compliant?", answer: "Absolutely. All my SEO strategies strictly follow Google's Webmaster Guidelines. I use only ethical, sustainable techniques that build long-term organic growth." },
+      { question: "Do you provide monthly reports?", answer: "Yes, I provide detailed monthly reports showing keyword rankings, organic traffic, backlink growth, and key performance metrics so you can see exactly how your SEO investment is performing." },
+      { question: "How do I get started?", answer: "Getting started is simple. Contact me for a free SEO audit where I analyze your current website, identify opportunities, and provide a customized strategy proposal with transparent pricing." },
+    ];
+  })();
+
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <head>
+        {BreadcrumbSchema(breadcrumbItems)}
+        {ServiceSchema(svc)}
+      </head>
       <Navbar />
 
       {/* Hero */}
@@ -128,6 +208,39 @@ export default function ServicePage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          {FAQSchema(faqs)}
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {faqs.map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Author Bio */}
+      <div className="bg-gray-50 border-y border-gray-100 py-12 px-4">
+        <div className="max-w-4xl mx-auto flex items-start gap-6">
+          <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-2xl shrink-0">👤</div>
+          <div>
+            <p className="font-bold text-gray-900">Written by <span className="text-primary">Md Kanok Miah</span></p>
+            <p className="text-sm text-gray-500">SEO Expert with 6+ years of experience helping Bangladeshi businesses rank higher on Google. Google Business Profile certified.</p>
+            <p className="text-xs text-gray-400 mt-2">Last updated: July 2026</p>
+          </div>
+        </div>
+      </div>
 
       {/* CTA */}
       <section className="relative py-24 px-4 overflow-hidden">

@@ -1,8 +1,9 @@
 "use client";
 import { useEffect } from "react";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Link from "next/link";
+import { FAQSchema, BreadcrumbSchema } from "@/components/Schema";
 import servicesList from "./data";
 
 export default function ServicesPage() {
@@ -10,8 +11,22 @@ export default function ServicesPage() {
     document.title = "SEO Services — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh";
   }, []);
 
+  const faqs = [
+    { question: "How long does it take to see results from SEO?", answer: "Most clients see initial improvements within 4–8 weeks, with significant ranking gains in 3–6 months. Results depend on your industry competition, current site health, and the scope of work." },
+    { question: "Do you offer SEO services for specific industries?", answer: "Yes, I specialize in SEO for multiple industries including real estate, e-commerce, healthcare, education, hospitality, and local service businesses across Bangladesh." },
+    { question: "How is your SEO different from other agencies?", answer: "I combine deep local Bangladesh market knowledge with global SEO best practices. My strategies are data-driven, transparent, and focused on real business results — not vanity metrics." },
+    { question: "Do you provide monthly SEO reports?", answer: "Absolutely. Every client receives detailed monthly reports showing keyword rankings, organic traffic, backlink growth, conversion data, and actionable recommendations for continued improvement." },
+    { question: "Can I see examples of your past SEO work?", answer: "Yes, I have helped over 50 Bangladeshi businesses achieve first-page rankings. Contact me for a free consultation where I can share case studies relevant to your industry." },
+  ];
+
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <head>
+        {BreadcrumbSchema([
+          { name: "Home", url: "https://kanokmiah.com.bd" },
+          { name: "Services", url: "https://kanokmiah.com.bd/services" },
+        ])}
+      </head>
       <Navbar />
 
       {/* Hero */}
@@ -89,6 +104,27 @@ export default function ServicesPage() {
                 <h3 className="font-bold text-gray-900 mb-1">{p.title}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          {FAQSchema(faqs)}
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {faqs.map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
             ))}
           </div>
         </div>

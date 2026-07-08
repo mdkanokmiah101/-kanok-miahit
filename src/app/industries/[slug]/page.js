@@ -5,21 +5,23 @@ export function generateStaticParams() {
   return industries.map((ind) => ({ slug: ind.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const ind = industries.find((i) => i.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const ind = industries.find((i) => i.slug === slug);
   if (!ind) return {};
   return {
-    title: `${ind.title} — Md Kanok Miah | Industry SEO Expert in Bangladesh`,
+    title: ind.title,
     description: ind.desc,
     alternates: { canonical: `/industries/${ind.slug}` },
     openGraph: {
-      title: `${ind.title} — Md Kanok Miah | Industry SEO Expert in Bangladesh`,
+      title: ind.title,
       description: ind.desc,
       url: `https://kanokmiah.com.bd/industries/${ind.slug}`,
     },
   };
 }
 
-export default function IndustryPage({ params }) {
-  return <IndustryPageClient slug={params.slug} />;
+export default async function IndustryPage({ params }) {
+  const { slug } = await params;
+  return <IndustryPageClient slug={slug} />;
 }

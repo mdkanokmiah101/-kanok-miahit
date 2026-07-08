@@ -39,6 +39,9 @@ export default function BlogPage() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/blog" />
         <meta name="robots" content="index, follow" />
+        <meta property="og:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
       </head>
       {/* Navbar */}
       <Navbar />

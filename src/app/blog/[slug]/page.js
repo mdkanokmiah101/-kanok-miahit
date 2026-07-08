@@ -14,6 +14,7 @@ export async function generateMetadata({ params }) {
       title: fullTitle,
       description: post.excerpt,
       url: `https://kanokmiah.com.bd/blog/${post.slug}`,
+      images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
     },
   };
 }

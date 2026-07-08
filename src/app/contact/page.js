@@ -8,6 +8,7 @@ export const metadata = {
     title: "Contact Me",
     description: "Contact Md Kanok Miah for a free SEO audit. Get expert help for your Bangladesh business.",
     url: "https://kanokmiah.com.bd/contact",
+    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
 };
 

@@ -1,21 +1,7 @@
-import posts from "./blog/data";
-import services from "./services/data";
+import { readFileSync, readdirSync, existsSync } from "fs";
 
 export default async function sitemap() {
   const baseUrl = "https://kanokmiah.com.bd";
-
-  // Industry slugs from data
-  const industrySlugs = [
-    "garments-textile",
-    "ecommerce",
-    "smm-panel",
-    "real-estate",
-    "cleaning",
-    "spa-salon",
-    "medical",
-    "education",
-    "food-restaurant",
-  ];
 
   const staticPages = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },
@@ -31,6 +17,11 @@ export default async function sitemap() {
     { url: `${baseUrl}/portfolio`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
   ];
 
+  const industrySlugs = [
+    "garments-textile", "ecommerce", "smm-panel", "real-estate",
+    "cleaning", "spa-salon", "medical", "education", "food-restaurant",
+  ];
+
   const industriesPages = industrySlugs.map((slug) => ({
     url: `${baseUrl}/industries/${slug}`,
     lastModified: new Date(),
@@ -38,15 +29,7 @@ export default async function sitemap() {
     priority: 0.8,
   }));
 
-  const blogPages = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
-
   const locationSlugs = ["dhaka", "chittagong", "sylhet"];
-
   const locationPages = locationSlugs.map((slug) => ({
     url: `${baseUrl}/locations/${slug}`,
     lastModified: new Date(),
@@ -54,11 +37,44 @@ export default async function sitemap() {
     priority: 0.8,
   }));
 
-  const servicePages = services.map((svc) => ({
-    url: `${baseUrl}/services/${svc.slug}`,
+  // Read services from data file via filesystem
+  let serviceSlugs = [];
+  try {
+    const svcPath = "src/app/services/data.js";
+    if (existsSync(svcPath)) {
+      const svcContent = readFileSync(svcPath, "utf8");
+      const matches = svcContent.matchAll(/slug:\s*"([^"]+)"/g);
+      for (const m of matches) serviceSlugs.push(m[1]);
+    }
+  } catch (e) {
+    // silently fail
+  }
+
+  const servicePages = serviceSlugs.map((slug) => ({
+    url: `${baseUrl}/services/${slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.9,
+  }));
+
+  // Read blog posts from data file via filesystem
+  let blogSlugs = [];
+  try {
+    const blogPath = "src/app/blog/data.js";
+    if (existsSync(blogPath)) {
+      const blogContent = readFileSync(blogPath, "utf8");
+      const matches = blogContent.matchAll(/slug:\s*"([^"]+)"/g);
+      for (const m of matches) blogSlugs.push(m[1]);
+    }
+  } catch (e) {
+    // silently fail
+  }
+
+  const blogPages = blogSlugs.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
   }));
 
   return [...staticPages, ...industriesPages, ...locationPages, ...servicePages, ...blogPages];

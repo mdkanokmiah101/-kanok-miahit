@@ -8,6 +8,8 @@ import industries from "./data";
 export default function IndustriesPage() {
   useEffect(() => {
     document.title = "Industries We Serve — Md Kanok Miah | SEO Expert in Bangladesh";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Industry-specific SEO solutions for Bangladesh — Garments & Textile, E-commerce, Real Estate, Healthcare, Education, Food & Restaurant, and more. Tailored SEO strategies from Md Kanok Miah.");
   }, []);
 
   return (

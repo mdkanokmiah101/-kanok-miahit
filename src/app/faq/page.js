@@ -2,6 +2,8 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+// Schema components
+
 import { OrganizationSchema, FAQSchema, LocalBusinessSchema, BreadcrumbSchema } from "@/components/Schema";
 
 const faqs = [
@@ -65,6 +67,8 @@ export default function FAQPage() {
 
   useEffect(() => {
     document.title = "Frequently Asked Questions — Md Kanok Miah | SEO Expert in Bangladesh";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Frequently asked questions about SEO in Bangladesh — Local SEO, Technical SEO, Link Building, GEO/AI Search, pricing, timelines, and more. Answered by Md Kanok Miah, Dhaka's SEO expert.");
   }, []);
 
   return (

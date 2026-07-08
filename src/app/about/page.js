@@ -7,6 +7,8 @@ import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 export default function AboutPage() {
   useEffect(() => {
     document.title = "About Me — Md Kanok Miah | SEO Expert in Bangladesh";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Learn about Md Kanok Miah — Bangladesh's trusted SEO expert with 6+ years of experience. Helping businesses in Dhaka, Chittagong, and Sylhet rank higher on Google with proven SEO strategies.");
   }, []);
 
   return (

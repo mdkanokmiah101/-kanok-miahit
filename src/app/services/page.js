@@ -9,6 +9,8 @@ import servicesList from "./data";
 export default function ServicesPage() {
   useEffect(() => {
     document.title = "SEO Services — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Complete SEO solutions for Bangladeshi businesses — Local SEO, Technical SEO, Link Building, GEO/AI Search, E-commerce SEO, and more. Get a free SEO audit from Dhaka's trusted SEO expert Md Kanok Miah.");
   }, []);
 
   const faqs = [

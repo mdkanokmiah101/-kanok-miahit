@@ -82,6 +82,8 @@ export default function PortfolioPage() {
 
   useEffect(() => {
     document.title = "SEO Portfolio — Md Kanok Miah | SEO Expert in Bangladesh";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "SEO portfolio of Md Kanok Miah — 350+ projects completed for businesses in Dhaka, Chittagong, and Sylhet. See real results from Local SEO, Technical SEO, and E-commerce SEO campaigns.");
   }, []);
 
   return (

@@ -11,6 +11,8 @@ export default function IndustryPageClient({ slug }) {
   useEffect(() => {
     if (ind) {
       document.title = `${ind.title} SEO — Md Kanok Miah | Industry SEO Expert in Bangladesh`;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute("content", ind.desc);
     }
   }, [ind]);
 

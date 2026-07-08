@@ -12,6 +12,8 @@ export default function ServicePageClient({ slug }) {
   useEffect(() => {
     if (svc) {
       document.title = `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute("content", svc.desc || svc.shortDesc);
     }
   }, [svc]);
 

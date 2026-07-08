@@ -87,6 +87,8 @@ export default function CaseStudiesPage() {
 
   useEffect(() => {
     document.title = "SEO Case Studies — Md Kanok Miah | SEO Expert in Bangladesh";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Real SEO case studies from Bangladesh — see how Md Kanok Miah helped Dhaka businesses rank higher on Google, increase traffic, and generate more leads. Local SEO, Technical SEO, and E-commerce results.");
   }, []);
 
   return (

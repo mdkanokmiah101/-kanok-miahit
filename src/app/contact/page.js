@@ -28,6 +28,8 @@ export default function ContactPage() {
 
   useEffect(() => {
     document.title = "Contact Me — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Contact Md Kanok Miah — the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business. Fill out the form or call +880 1712-883101 for a consultation.");
   }, []);
 
   return (

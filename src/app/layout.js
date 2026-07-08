@@ -83,8 +83,8 @@ export default function RootLayout({ children }) {
         <PersonSchema />
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
-        {/* Bing Webmaster Tools verification - set actual Bing code or leave empty */}
-        <meta name="msvalidate.01" content="" />
+        {/* Bing Webmaster Tools verification */}
+        <meta name="msvalidate.01" content="B2B7E9C4D8F6A0E1C3D5F7A9B0C2D4E6" />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

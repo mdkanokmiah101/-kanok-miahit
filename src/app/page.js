@@ -40,10 +40,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      <head>
-        <link rel="canonical" href="https://kanokmiah.com.bd" />
-        <meta name="robots" content="index, follow" />
-      </head>
 
       {/* ===== NAVBAR ===== */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50">

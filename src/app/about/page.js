@@ -146,6 +146,57 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* === PHOTO GALLERY === */}
+      <section className="relative py-24 px-4 bg-gray-50/80">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent" />
+        <div className="relative max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Our Memories</span>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">
+              Office Tour & <span className="text-primary">Team Moments</span>
+            </h2>
+            <p className="text-gray-500 max-w-xl mx-auto text-lg">
+              A glimpse into our journey — team outings, client meetings, and the people behind the results.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { src: "/images/gallery/gallery-faruk-khan-office-tour.webp", alt: "Kanok Miah with Md Faruk Khan and team during office tour in Gazipur", span: "md:col-span-2 md:row-span-2" },
+              { src: "/images/gallery/gallery-team-office-tour-3.webp", alt: "Kanok Miah with team members during office tour" },
+              { src: "/images/gallery/gallery-pyramid-resort-main.webp", alt: "Kanok Miah office tour with KhanIT team at Pyramid Point Resort" },
+              { src: "/images/gallery/gallery-pyramid-resort-team-1.webp", alt: "Kanok Miah with teammates at Pyramid Point Resort" },
+              { src: "/images/gallery/gallery-pyramid-resort-team-2.webp", alt: "Team photo at Pyramid Point Resort outing" },
+              { src: "/images/gallery/gallery-pyramid-resort-team-4.webp", alt: "Kanok Miah with KhanIT CEO and team at Pyramid Point Resort" },
+              { src: "/images/gallery/gallery-team-office-tour-4.webp", alt: "Kanok Miah with team members during office visit", span: "md:col-span-2" },
+              { src: "/images/gallery/gallery-pyramid-resort-team-5.webp", alt: "Team celebration at Pyramid Point Resort" },
+              { src: "/images/gallery/gallery-pyramid-resort-team-6.webp", alt: "Team bonding at Pyramid Point Resort" },
+            ].map((img, i) => (
+              <a
+                key={i}
+                href={img.src}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group relative overflow-hidden rounded-2xl bg-gray-100 border border-gray-200 ${img.span || ""} transition-all duration-500 hover:shadow-xl hover:-translate-y-1`}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                  <p className="text-white text-xs font-medium truncate">{img.alt}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* === CTA === */}
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />

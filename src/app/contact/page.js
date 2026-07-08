@@ -14,7 +14,8 @@ export default function ContactPage() {
       const form = e.target;
       const data = new FormData(form);
       const res = await fetch("/api/contact", { method: "POST", body: data });
-      if (res.ok || res.redirected) {
+      const result = await res.json();
+      if (result.success) {
         setSubmitted(true);
         form.reset();
       }

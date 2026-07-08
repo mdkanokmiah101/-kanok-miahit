@@ -27,11 +27,6 @@ categories.forEach(cat => {
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("All");
 
-  useEffect(() => {
-    document.title = "SEO Blog — Md Kanok Miah | Bangladesh SEO Tips & Guides";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Expert SEO tips, guides, and strategies for Bangladeshi businesses. Learn Local SEO, Technical SEO, E-commerce SEO, GEO/AI Search optimization, and more from Md Kanok Miah.");
-  }, []);
 
   const filteredPosts = activeCategory === "All"
     ? posts

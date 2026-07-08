@@ -94,9 +94,9 @@ export function LocalBusinessSchema() {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5.0",
+      ratingValue: "4.9",
       bestRating: "5",
-      ratingCount: "108",
+      ratingCount: "50",
     },
   };
   return (
@@ -222,7 +222,7 @@ export function ServiceSchema(service) {
   );
 }
 
-export function FAQSchema(faqs) {
+export function FAQSchema({ faqs }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

@@ -439,13 +439,13 @@ export default function BlogPostClient() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          {FAQSchema([
+          <FAQSchema faqs={[
             { question: "How often should I publish blog posts for SEO?", answer: "For best SEO results, publish high-quality blog posts at least 2–4 times per month. Consistency matters more than frequency — Google rewards websites that regularly publish fresh, valuable content that addresses user search intent." },
             { question: "What topics should I write about for SEO?", answer: "Focus on topics your target audience is actively searching for. Conduct keyword research to identify questions and problems in your industry. Create content that provides comprehensive answers, guides, and insights that demonstrate expertise and authority." },
             { question: "How long should my blog posts be for SEO?", answer: "There is no ideal word count, but comprehensive content tends to rank better. For most topics, aim for 1,500–2,500 words. However, quality and relevance are far more important than length — a well-written 800-word post can outrank a poorly written 3,000-word post." },
             { question: "How long does it take for blog posts to rank on Google?", answer: "New blog posts typically take 3–6 months to start ranking on Google, depending on competition and domain authority. Older, established websites may see results faster. Consistent publishing and internal linking can accelerate this timeline." },
             { question: "Can I repurpose existing content for new blog posts?", answer: "Yes, updating and republishing old content is an excellent SEO strategy. Refresh statistics, add new insights, improve formatting, and update the publication date. Google often gives a ranking boost to recently updated content." },
-          ])}
+          ]} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>

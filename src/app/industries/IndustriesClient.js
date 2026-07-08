@@ -54,13 +54,13 @@ export default function IndustriesClient() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          {FAQSchema([
+          <FAQSchema faqs={[
             { question: "Which industries do you specialize in for SEO?", answer: "I specialize in SEO for a wide range of industries including real estate, e-commerce, healthcare, education, hospitality, local services, and manufacturing. Each industry strategy is tailored to its unique competitive landscape and customer search behaviour." },
             { question: "Do you offer industry-specific SEO strategies?", answer: "Yes, every industry has unique search patterns, customer journeys, and competitive dynamics. I create customized SEO strategies that address the specific challenges and opportunities of each industry sector." },
             { question: "How is SEO different for e-commerce vs local service businesses?", answer: "E-commerce SEO focuses on product page optimization, category structure, faceted navigation, and review signals. Local service SEO emphasizes Google Business Profile optimization, local citations, and near-me keyword targeting. Both require different technical and content approaches." },
             { question: "Can you optimize for both B2B and B2C companies?", answer: "Absolutely. B2B SEO focuses on informational content, long-form guides, and lead generation through thought leadership. B2C SEO targets transactional keywords, local intent, and conversion optimization. I tailor my approach based on your business model." },
             { question: "Do you understand the Bangladesh-specific challenges for each industry?", answer: "Yes, I deeply understand Bangladesh's unique digital landscape — mobile-first usage patterns, bilingual search behaviour (Bengali + English), local competition dynamics, and industry-specific regulations that affect SEO strategies in each sector." },
-          ])}
+          ]} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>

@@ -175,13 +175,13 @@ export default function ContactClient() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          {FAQSchema([
+          <FAQSchema faqs={[
             { question: "How much do your SEO services cost?", answer: "My SEO services are custom-priced based on your project scope, industry competition, and goals. I offer flexible packages starting from affordable rates for Bangladeshi businesses. Contact me for a free consultation and detailed pricing tailored to your needs." },
             { question: "How quickly can you start working on my project?", answer: "I can typically start within 3–5 business days after our initial consultation and agreement. For urgent projects, expedited timelines are available. The free SEO audit helps me hit the ground running." },
             { question: "Do you offer a free SEO audit?", answer: "Yes! I offer a completely free SEO audit worth BDT 5,000. I'll analyze your website's technical health, on-page optimization, current rankings, and provide a roadmap of opportunities — with no obligation to proceed." },
             { question: "What information do you need from me to get started?", answer: "To get started, I need your website URL, a brief overview of your business goals, target keywords if you have them, and access to your Google Search Console and Analytics accounts if available. Everything else I can gather during the audit." },
             { question: "Do you work with clients outside of Dhaka?", answer: "Absolutely. I work with clients throughout Bangladesh and internationally. All consultations can be conducted via phone, WhatsApp, or video call. SEO is a remote-friendly service — I don't need to be physically present to deliver results." },
-          ])}
+          ]} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>

@@ -71,7 +71,7 @@ export default function FAQPage() {
       <head>
         <OrganizationSchema />
         <LocalBusinessSchema />
-        {FAQSchema(faqs)}
+        <FAQSchema faqs={faqs} />
         {BreadcrumbSchema(breadcrumbItems)}
       </head>
 

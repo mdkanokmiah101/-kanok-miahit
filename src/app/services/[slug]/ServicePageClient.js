@@ -177,7 +177,7 @@ export default function ServicePageClient({ slug }) {
 
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          {FAQSchema(faqs)}
+          <FAQSchema faqs={faqs} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>

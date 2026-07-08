@@ -4,6 +4,7 @@ const services = [
     icon: "🔍",
     title: "Local SEO",
     subtitle: "Dominate Google Maps in Dhaka & Across Bangladesh",
+    qa: "Local SEO helps your business appear in Google Maps and local search results when customers near you search for your services. It involves optimizing your Google Business Profile, building local citations on Bangladeshi directories, and targeting location-based keywords like 'SEO near me in Dhaka'. This is essential for brick-and-mortar businesses in Dhaka, Chittagong, Sylhet, and across Bangladesh who want more foot traffic and local calls.",
     shortDesc: "Rank your business on Google Maps across Dhaka, Mirpur, Gulshan, Banani, Uttara, Dhanmondi, Chittagong, Sylhet and beyond. GBP optimization, local citations on BD Yellow Pages, near-me SEO for Bangladeshi audiences searching in Bengali and English.",
     desc: "Get your business found by customers searching near you across Bangladesh. I optimise your Google Business Profile (GBP), build local citations on Bangladeshi directories like BD Yellow Pages and Bdshop, and target location-based keywords so you appear in the local pack and Google Maps. My Local SEO service is specifically designed for Dhaka, Mirpur, Gulshan, Banani, Uttara, Dhanmondi, Chittagong, Sylhet, and all major cities in Bangladesh. I help businesses rank for 'near me' searches, Google Maps queries, and bilingual Bengali + English keywords.",
     features: [
@@ -39,6 +40,7 @@ const services = [
     icon: "📄",
     title: "On-Page SEO",
     subtitle: "Perfect Every Page for Search & Users",
+    qa: "On-Page SEO is the practice of optimizing individual web pages to rank higher on Google by improving content, HTML tags, and site structure. It includes optimizing title tags, meta descriptions, headers, internal links, and images with relevant keywords. For Bangladeshi businesses, this means targeting both Bengali and English search queries to capture the widest possible audience in Dhaka, Chittagong, and Sylhet.",
     shortDesc: "Keyword-optimized content, meta tags, header structure, internal linking, and schema markup crafted for Bangladesh search behavior including Dhaka, Chittagong, and Sylhet audiences.",
     desc: "I optimise every page on your site — from title tags and meta descriptions to header structure and internal linking — so Google understands your content and ranks it higher. My On-Page SEO service follows Google's E-E-A-T guidelines and targets Bangladesh-specific search patterns including Bengali and English keyword queries. I implement schema markup for LocalBusiness, Article, FAQ, and Product entities, and optimize for Google NLP-based ranking factors. This service is ideal for businesses in Dhaka, Chittagong, Sylhet, and all across Bangladesh.",
     features: [
@@ -75,6 +77,7 @@ const services = [
     icon: "🔗",
     title: "Link Building",
     subtitle: "Build Authority That Ranks",
+    qa: "Link Building is the process of acquiring high-quality backlinks from other websites to yours, which signals to Google that your site is authoritative and trustworthy. I use ethical, white-hat techniques like guest posting on Bangladeshi news sites and local directory submissions. Quality backlinks from BD Yellow Pages, Dhaka Tribune, and industry-specific sites help your website rank higher on Google search results.",
     shortDesc: "Quality backlinks from Bangladeshi and international directories like BD Yellow Pages, guest posts on Bangladeshi news sites, and niche-relevant websites that drive real authority gains for Dhaka businesses.",
     desc: "Quality backlinks from Bangladeshi and international websites. I use ethical, white-hat techniques to build your site's authority and drive referral traffic. My link building strategy focuses on acquiring high-authority backlinks from Bangladesh's top business directories including BD Yellow Pages and BdTradeInfo, local news sites like The Daily Star and Dhaka Tribune, and industry-relevant platforms. I also build links from Facebook, YouTube, and other social platforms where Bangladeshi audiences engage. Every strategy complies with Google's Webmaster Guidelines.",
     features: [
@@ -110,6 +113,7 @@ const services = [
     icon: "⚙️",
     title: "Technical SEO",
     subtitle: "Fix the Foundation. Improve Rankings.",
+    qa: "Technical SEO involves optimizing your website's infrastructure so search engines like Google can effectively crawl, index, and rank your pages. It covers site speed optimization, Core Web Vitals improvement, mobile usability fixes, structured data implementation, and crawl budget management. For Bangladesh's mobile-first audience, good technical SEO is the foundation upon which all other SEO efforts are built.",
     shortDesc: "Site speed optimization, Core Web Vitals, mobile-first indexing, crawl budget fixes, and structured data implementation for better rankings on Google in Bangladesh.",
     desc: "I audit and fix technical issues holding your site back — slow speed, crawl errors, mobile issues, and Core Web Vitals — so search engines like Google can easily find and rank your pages. Technical SEO is the foundation upon which all other SEO efforts are built. I optimize for Google's PageSpeed Insights, Lighthouse, and Google Search Console. My service ensures your website performs well on mobile devices used across Dhaka, Chittagong, Sylhet, and all of Bangladesh. I implement JSON-LD structured data for Schema.org entity types including LocalBusiness, Organization, and Article.",
     features: [
@@ -146,6 +150,7 @@ const services = [
     icon: "🤖",
     title: "GEO & AI Search",
     subtitle: "Get Found in ChatGPT, Gemini & AI Overviews",
+    qa: "GEO (Generative Engine Optimization) is the practice of optimizing your content to be cited by AI-powered search engines like ChatGPT, Google AI Overviews, Gemini, and Perplexity. It focuses on entity-based content, structured data, and authoritative citations that AI systems trust. GEO prepares your Bangladesh business for the future of AI-powered search discovery and ensures you appear in AI-generated answers.",
     shortDesc: "Optimize for ChatGPT, Gemini, Perplexity, and Google AI Overviews. Entity-first SEO built for the AI-powered search era targeting Dhaka and Bangladesh businesses.",
     desc: "Optimise your content for the AI-powered search era. I structure your site so AI systems — Google AI Overviews, ChatGPT by OpenAI, Gemini by Google, Perplexity, and Claude — can accurately extract and cite your business. GEO (Generative Engine Optimization) is the future of search, and I prepare your Bangladesh business for it. I implement entity-first content structures, semantic topical clusters, and E-E-A-T signals that AI search engines trust. This service is essential for Dhaka businesses looking to appear in AI-generated answers.",
     features: [
@@ -182,6 +187,7 @@ const services = [
     icon: "🛒",
     title: "E-commerce SEO",
     subtitle: "Sell More With Organic Search",
+    qa: "E-commerce SEO is the process of optimizing your online store — whether on Daraz, Shopify, or WooCommerce — to rank higher in search results and attract more buyers. It includes product page optimization, category structuring, fixing duplicate content from faceted navigation, and implementing product schema markup. For Bangladeshi e-commerce businesses, this means more organic traffic and sales from Google.",
     shortDesc: "Shopify, Daraz, WooCommerce SEO. Product page optimization, category restructuring, and conversion-focused search strategy for Bangladeshi online retailers in Dhaka, Chittagong, and Sylhet.",
     desc: "From Daraz sellers to Shopify and WooCommerce stores, I optimise product pages, category structure, and technical setup so your products rank higher and convert better. My E-commerce SEO service is tailored for Bangladeshi online retailers selling on local platforms like Daraz Bangladesh and international platforms like Shopify. I handle product schema markup, faceted navigation issues, duplicate content from product variations, and optimize for Google Shopping. Whether you're in Dhaka, Chittagong, or Sylhet, I help your e-commerce store capture organic search traffic.",
     features: [
@@ -218,6 +224,7 @@ const services = [
     icon: "🧠",
     title: "Semantic SEO",
     subtitle: "Build Topical Authority That Search Engines Love",
+    qa: "Semantic SEO goes beyond individual keywords to structure your website around topics, entities, and user intent. It uses topic clusters, entity linking via Schema.org, and co-occurrence patterns to build deep topical authority that Google understands. Semantic SEO naturally prepares your site for both traditional search rankings and AI-powered search engines like ChatGPT and Gemini.",
     shortDesc: "Entity-based SEO, topic clusters, semantic relevance optimization. Rank for topic families — not just keywords — with Bangladesh-focused semantic SEO for Dhaka, Chittagong, and Sylhet markets.",
     desc: "I structure your website around topics and entities — not just keywords — so search engines like Google understand your expertise at a deeper level. Semantic SEO uses topic clusters, entity linking via Schema.org, and co-occurrence patterns to build topical authority. This is the most advanced approach for dominating competitive niches in Bangladesh and beyond. I optimize for entity recognition by Google Knowledge Graph, implement LocalBusiness, Person, and Service schema, and build entity relationships that improve your chances of appearing in rich results and AI-powered search.",
     features: [

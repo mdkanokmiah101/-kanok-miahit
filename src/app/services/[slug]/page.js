@@ -43,6 +43,7 @@ export default function ServicePage() {
       { question: "How do local citations help my business?", answer: "Local citations (mentions of your business name, address, and phone on other websites) help Google verify your business information and improve local search rankings. I build citations on top Bangladeshi directories like Bdshop and Yellow Pages BD." },
       { question: "Do you target both Bangla and English keywords?", answer: "Absolutely. I research and target both Bengali and English keywords that your local customers are actually searching for. This bilingual approach helps capture the widest possible local audience in Bangladesh." },
       { question: "Can you help with Google reviews management?", answer: "Yes, I help businesses develop a systematic approach to earn more positive Google reviews, respond to existing reviews professionally, and manage your online reputation effectively to boost local SEO performance." },
+      { question: "How much does local SEO cost for a small business in Dhaka?", answer: "Local SEO packages for small businesses in Dhaka start from BDT 15,000 per month and vary based on competition, number of locations, and scope of citation building. I offer custom plans after a free audit of your current Google Business Profile and local search presence." },
     ];
     if (slug === "on-page-seo") return [
       { question: "What is included in on-page SEO?", answer: "My on-page SEO service includes title tag and meta description optimization, header structure improvements, keyword-optimized content, internal linking architecture, image alt text, and schema markup implementation." },
@@ -51,6 +52,7 @@ export default function ServicePage() {
       { question: "What is schema markup and why do I need it?", answer: "Schema markup is structured data added to your website that helps search engines understand your content better. It can enable rich snippets in search results, improving click-through rates and visibility." },
       { question: "Can you optimize existing content?", answer: "Yes, I audit your existing content and optimize it for both search engines and users. This includes keyword integration, readability improvements, internal linking, and ensuring proper heading hierarchy." },
       { question: "How do you choose which keywords to target?", answer: "I conduct comprehensive keyword research using tools like Google Keyword Planner, Ahrefs, and local Bangladesh search data to find high-intent, achievable keywords that balance search volume with competition." },
+      { question: "How much does on-page SEO cost per page?", answer: "On-page SEO optimization starts from BDT 2,500 per page for basic optimization and goes up to BDT 8,000 per page for comprehensive optimization including schema markup, content rewriting, and internal linking restructuring. I offer discounted packages for 10+ pages." },
     ];
     if (slug === "link-building") return [
       { question: "What types of backlinks do you build?", answer: "I build high-quality backlinks through guest posting on authoritative Bangladeshi websites, local directory submissions, niche-relevant editorial links, broken link building, and digital PR campaigns." },
@@ -59,6 +61,7 @@ export default function ServicePage() {
       { question: "Do you build links from Bangladeshi websites?", answer: "Yes, I specialize in acquiring backlinks from high-authority Bangladeshi domains including news sites, business directories, educational institutions, and industry-specific platforms relevant to your niche." },
       { question: "How long does link building take to show results?", answer: "Link building is a long-term strategy. You can expect to see initial ranking improvements within 2–3 months, with significant authority gains accumulating over 6–12 months as Google recognizes your growing backlink profile." },
       { question: "Can you recover from Google penalties?", answer: "Yes, I offer link audit and recovery services. I identify toxic backlinks, create disavow files, and help you submit reconsideration requests to Google if your site has been manually penalized." },
+      { question: "How much does link building cost per month?", answer: "Monthly link building packages start from BDT 25,000 and include 5-8 high-quality backlinks from authoritative Bangladeshi sources. Each link is earned through guest posting, digital PR, or broken link building — never purchased or PBN-based." },
     ];
     if (slug === "technical-seo") return [
       { question: "What is Core Web Vitals and why does it matter?", answer: "Core Web Vitals are Google's set of metrics measuring real-world user experience — loading speed (LCP), interactivity (FID/INP), and visual stability (CLS). They are ranking factors that directly impact your search positions." },
@@ -67,6 +70,7 @@ export default function ServicePage() {
       { question: "What is crawl budget optimization?", answer: "Crawl budget is the number of pages Googlebot crawls on your site within a given timeframe. I optimize it by fixing crawl errors, removing duplicate content, improving internal linking, and managing your sitemap and robots.txt properly." },
       { question: "How do you implement structured data?", answer: "I implement JSON-LD structured data markup for various schema types including LocalBusiness, Article, Product, FAQ, BreadcrumbList, and Review depending on your site's content and goals." },
       { question: "Can you fix mobile usability issues?", answer: "Yes, I identify and fix mobile usability issues such as tap targets too small, content wider than screen, viewport configuration problems, and font size issues to ensure your site passes Google's mobile-friendly test." },
+      { question: "How much does technical SEO cost for a WordPress site?", answer: "Technical SEO audits start from BDT 10,000 and full optimization packages range from BDT 20,000 to BDT 50,000 depending on your site size and complexity. This includes Core Web Vitals fixes, schema markup, and crawl optimization." },
     ];
     if (slug === "geo-ai-search") return [
       { question: "What is GEO (Generative Engine Optimization)?", answer: "GEO is the practice of optimizing your content to be accurately cited and referenced by AI-powered search engines like Google AI Overviews, ChatGPT, Perplexity, and Gemini. It focuses on entity-based content and authoritative source building." },
@@ -75,6 +79,7 @@ export default function ServicePage() {
       { question: "Do you optimize for Google AI Overviews?", answer: "Yes, I optimize your content to be featured in Google AI Overviews (formerly SGE) by implementing clear entity definitions, authoritative citations, FAQ/QA structures, and comprehensive topical coverage." },
       { question: "What is entity-first content?", answer: "Entity-first content is structured around real-world entities (people, places, things, concepts) rather than just keywords. It helps AI systems understand your expertise and correctly attribute information to your business." },
       { question: "How long does GEO take to show results?", answer: "GEO is a forward-looking strategy. Some improvements in AI citation can appear within 2–3 months, but building the level of entity authority needed for consistent AI inclusion typically takes 6–12 months of sustained effort." },
+      { question: "How much does GEO optimization cost for a Bangladeshi business?", answer: "GEO optimization packages start from BDT 20,000 per month for small businesses and range up to BDT 50,000 for comprehensive entity-first SEO strategies. Every package includes a full AI search readiness audit and entity content restructuring." },
     ];
     if (slug === "ecommerce-seo") return [
       { question: "Do you optimize Daraz seller pages?", answer: "Yes, I optimize Daraz seller pages for better visibility within Daraz's search and for Google. I focus on product titles, descriptions, images, category placement, and review signals to boost rankings." },
@@ -83,6 +88,7 @@ export default function ServicePage() {
       { question: "How do you optimize product pages for conversions?", answer: "I optimize product pages for both search rankings and conversions by focusing on compelling product titles, detailed unique descriptions, customer review signals, high-quality images with alt text, and clear calls-to-action." },
       { question: "What is faceted navigation and why is it a problem?", answer: "Faceted navigation creates multiple URL variations for the same products based on filter selections, which can cause massive duplicate content issues. I implement proper canonical tags and noindex strategies to manage this." },
       { question: "How long does e-commerce SEO take to work?", answer: "E-commerce SEO typically shows initial results in 6–8 weeks for less competitive products. For highly competitive categories, expect 4–6 months to see meaningful ranking improvements and organic traffic growth." },
+      { question: "How much does e-commerce SEO cost for a Daraz store?", answer: "E-commerce SEO for Daraz stores starts from BDT 15,000 per month and includes product title optimization, category restructuring, and review management. Full Shopify or WooCommerce SEO packages start from BDT 30,000 per month." },
     ];
     if (slug === "semantic-seo") return [
       { question: "What is semantic SEO and how is it different?", answer: "Semantic SEO goes beyond keywords to optimize for topics, entities, and user intent. It uses topic clusters, entity linking, and co-occurrence patterns to build topical authority that Google rewards with higher rankings." },
@@ -91,6 +97,7 @@ export default function ServicePage() {
       { question: "Do you implement schema markup for entities?", answer: "Yes, I implement Schema.org markup for Person, LocalBusiness, Service, and other entity types to help search engines build a comprehensive understanding of your business and its relationships." },
       { question: "How long does semantic SEO take to show results?", answer: "Semantic SEO is a medium to long-term strategy. Initial benefits from content restructuring can appear in 2–3 months, but building recognized topical authority typically takes 6–12 months." },
       { question: "Can semantic SEO help with AI search optimization?", answer: "Absolutely. Semantic SEO's focus on entities, relationships, and topical authority aligns perfectly with how AI search engines understand and cite content. It naturally prepares your site for GEO and AI search." },
+      { question: "How much does semantic SEO cost per month?", answer: "Semantic SEO packages start from BDT 25,000 per month and include topical cluster strategy, entity schema implementation, and content restructuring. This advanced SEO approach delivers compounding authority gains over 6-12 months." },
     ];
     return [
       { question: `How long does ${svc.title} take to show results?`, answer: `Most ${svc.title.toLowerCase()} efforts show initial improvements within 4–8 weeks, with significant results building over 3–6 months of consistent optimization and strategy execution.` },
@@ -98,7 +105,8 @@ export default function ServicePage() {
       { question: `What is included in your ${svc.title} package?`, answer: `Each ${svc.title.toLowerCase()} package includes a comprehensive audit, custom strategy development, implementation, monthly reporting, and ongoing optimization.` },
       { question: "Are your SEO methods white-hat and Google-compliant?", answer: "Absolutely. All my SEO strategies strictly follow Google's Webmaster Guidelines. I use only ethical, sustainable techniques that build long-term organic growth." },
       { question: "Do you provide monthly reports?", answer: "Yes, I provide detailed monthly reports showing keyword rankings, organic traffic, backlink growth, and key performance metrics so you can see exactly how your SEO investment is performing." },
-      { question: "How do I get started?", answer: "Getting started is simple. Contact me for a free SEO audit where I analyze your current website, identify opportunities, and provide a customized strategy proposal with transparent pricing." },
+      { question: "How do I get started with SEO for my Bangladesh business?", answer: "Getting started is simple. Contact me for a free SEO audit where I analyze your current website, identify opportunities, and provide a customized strategy proposal with transparent pricing." },
+      { question: "What is the best way to improve my website rankings in Dhaka?", answer: "The best approach is a combination of local SEO (Google Business Profile optimization), on-page SEO (content and meta tags), and technical SEO (site speed and mobile optimization). I create a customized strategy after auditing your specific needs." },
     ];
   })();
 
@@ -152,6 +160,16 @@ export default function ServicePage() {
             <Link href="/services" className="inline-flex items-center gap-2 border border-gray-200 text-gray-600 px-6 py-3 rounded-xl font-semibold text-sm hover:border-primary hover:text-primary transition-all">
               ← All Services
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Answer Box for AEO / GEO */}
+      <section className="px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-primary-light border border-primary/20 rounded-xl p-5 mb-8">
+            <p className="text-sm font-bold text-primary mb-1">⚡ Quick Answer</p>
+            <p className="text-gray-700">{svc.qa || 'Get expert SEO guidance tailored for your Bangladesh business. Contact Md Kanok Miah for a free consultation and audit.'}</p>
           </div>
         </div>
       </section>

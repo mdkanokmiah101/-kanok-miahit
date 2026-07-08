@@ -67,7 +67,7 @@ export function LocalBusinessSchema() {
       longitude: "90.4125",
     },
     priceRange: "$$",
-    areaServed: ["Dhaka", "Chittagong", "Sylhet", "Bangladesh"],
+    areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Chittagong", "Sylhet", "Bangladesh"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "SEO Services",
@@ -87,7 +87,6 @@ export function LocalBusinessSchema() {
       bestRating: "5",
       ratingCount: "108",
     },
-    areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Chittagong", "Sylhet", "Bangladesh"],
   };
   return (
     <script

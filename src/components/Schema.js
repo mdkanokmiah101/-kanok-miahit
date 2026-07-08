@@ -1,0 +1,227 @@
+// Comprehensive Schema Generator for all page types
+
+export function OrganizationSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Md Kanok Miah",
+    url: "https://kanokmiah.com.bd",
+    logo: "https://kanokmiah.com.bd/favicon.ico",
+    description:
+      "Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, semantic SEO, and GEO optimization.",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Dhaka",
+      addressCountry: "BD",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+880-1712-883101",
+      contactType: "customer service",
+      availableLanguage: ["English", "Bengali"],
+    },
+    sameAs: ["https://kanokmiah.com"],
+    foundingDate: "2020",
+    founder: {
+      "@type": "Person",
+      name: "Md Kanok Miah",
+    },
+    knowsAbout: [
+      "Search Engine Optimization",
+      "Local SEO",
+      "Technical SEO",
+      "Link Building",
+      "Semantic SEO",
+      "GEO / AI Search Optimization",
+      "E-commerce SEO",
+      "Content Marketing",
+    ],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function LocalBusinessSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Md Kanok Miah — SEO Expert",
+    url: "https://kanokmiah.com.bd",
+    telephone: "+880-1712-883101",
+    email: "mdkanokmiah232@gmail.com",
+    description:
+      "Best SEO expert in Dhaka, Bangladesh. Specializing in Local SEO, Technical SEO, Link Building, and GEO optimization.",
+    image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Dhaka",
+      addressCountry: "BD",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "23.8103",
+      longitude: "90.4125",
+    },
+    priceRange: "$$",
+    areaServed: ["Dhaka", "Chittagong", "Sylhet", "Bangladesh"],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "SEO Services",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Local SEO" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "On-Page SEO" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Technical SEO" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Link Building" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Semantic SEO" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "GEO / AI Search" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "E-commerce SEO" } },
+      ],
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      bestRating: "5",
+      ratingCount: "50",
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function WebSiteSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Md Kanok Miah",
+    url: "https://kanokmiah.com.bd",
+    description:
+      "Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://kanokmiah.com.bd/search?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+    inLanguage: ["en", "bn"],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function BreadcrumbSchema(items) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function ServiceSchema(service) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.desc,
+    provider: {
+      "@type": "Person",
+      name: "Md Kanok Miah",
+    },
+    areaServed: ["Dhaka", "Chittagong", "Sylhet", "Bangladesh"],
+    serviceType: service.title,
+    offers: {
+      "@type": "Offer",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "BDT",
+        description: "Custom pricing based on project scope",
+      },
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function FAQSchema(faqs) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function ArticleSchema(post) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt || post.desc,
+    author: {
+      "@type": "Person",
+      name: "Md Kanok Miah",
+      url: "https://kanokmiah.com.bd/about",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Md Kanok Miah",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://kanokmiah.com.bd/favicon.ico",
+      },
+    },
+    datePublished: post.date || new Date().toISOString(),
+    dateModified: new Date().toISOString(),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://kanokmiah.com.bd/blog/${post.slug}`,
+    },
+    image: post.image || "https://kanokmiah.com.bd/kanok-miah-profile.webp",
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

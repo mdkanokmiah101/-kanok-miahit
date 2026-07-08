@@ -1,4 +1,5 @@
 import posts from "./blog/data";
+import services from "./services/data";
 
 export default async function sitemap() {
   const baseUrl = "https://kanokmiah.com.bd";
@@ -41,5 +42,12 @@ export default async function sitemap() {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...industriesPages, ...blogPages];
+  const servicePages = services.map((svc) => ({
+    url: `${baseUrl}/services/${svc.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.9,
+  }));
+
+  return [...staticPages, ...industriesPages, ...servicePages, ...blogPages];
 }

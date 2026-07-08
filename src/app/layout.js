@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { OrganizationSchema, LocalBusinessSchema, WebSiteSchema } from "@/components/Schema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
-  title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
+  title: {
+    default: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
+    template: "%s — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+  },
   description:
     "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist with 6+ years of experience. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
   keywords: [
@@ -26,6 +30,7 @@ export const metadata = {
     "on-page SEO",
     "technical SEO",
     "link building Bangladesh",
+    "semantic SEO",
     "GEO optimization",
     "Md Kanok Miah",
   ],
@@ -43,12 +48,14 @@ export const metadata = {
     description:
       "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist. Get higher rankings and more traffic with proven SEO strategies.",
     url: "https://kanokmiah.com.bd",
+    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
     description:
       "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah helps businesses rank higher, grow faster, dominate search.",
+    images: ["/kanok-miah-profile.webp"],
   },
   robots: {
     index: true,
@@ -68,53 +75,10 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Canonical is managed via 'alternates.canonical' in metadata export */}
-        {/* Schema: Organization */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Md Kanok Miah",
-              url: "https://kanokmiah.com.bd",
-              logo: "https://kanokmiah.com.bd/favicon.ico",
-              description:
-                "Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, and GEO optimization.",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Dhaka",
-                addressCountry: "BD",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+880-1313-019160",
-                contactType: "customer service",
-                availableLanguage: ["English", "Bengali"],
-              },
-              sameAs: ["https://kanokmiah.com"],
-            }),
-          }}
-        />
-        {/* Schema: WebSite */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "Md Kanok Miah",
-              url: "https://kanokmiah.com.bd",
-              potentialAction: {
-                "@type": "SearchAction",
-                target:
-                  "https://kanokmiah.com.bd/search?q={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
-        {/* Verification tags placeholder */}
+        <OrganizationSchema />
+        <LocalBusinessSchema />
+        <WebSiteSchema />
+        {/* Verification tags */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
         <meta name="msvalidate.01" content="" />
       </head>

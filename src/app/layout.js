@@ -1,3 +1,8 @@
+/**
+ * Md Kanok Miah — SEO Expert in Dhaka, Bangladesh
+ * Built with Next.js 16
+ * Last deployed: 2026-07-08 (Schema audit fix)
+ */
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { OrganizationSchema, LocalBusinessSchema, WebSiteSchema, PersonSchema } from "@/components/Schema";

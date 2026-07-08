@@ -29,7 +29,7 @@ export default async function sitemap() {
     priority: 0.8,
   }));
 
-  const locationSlugs = ["dhaka", "chittagong", "sylhet"];
+  const locationSlugs = ["dhaka", "chittagong", "sylhet", "khulna", "rajshahi", "barisal", "rangpur", "mymensingh"];
   const locationPages = locationSlugs.map((slug) => ({
     url: `${baseUrl}/locations/${slug}`,
     lastModified: new Date(),

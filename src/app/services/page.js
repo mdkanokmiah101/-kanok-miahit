@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import servicesList from "./data";
 
@@ -111,19 +112,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-6 mb-4">
-            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-            <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
-            <Link href="/industries" className="hover:text-primary transition-colors">Industries</Link>
-            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
-            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-          </div>
-          <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

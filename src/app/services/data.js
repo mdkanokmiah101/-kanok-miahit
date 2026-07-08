@@ -177,6 +177,36 @@ const services = [
       "Monthly performance reporting & optimization",
     ],
   },
+  {
+    slug: "semantic-seo",
+    icon: "🧠",
+    title: "Semantic SEO",
+    subtitle: "Build Topical Authority That Search Engines Love",
+    shortDesc: "Entity-based SEO, topic clusters, semantic relevance optimization. Rank for topic families — not just keywords — with Bangladesh-focused semantic SEO.",
+    desc: "I structure your website around topics and entities — not just keywords — so search engines understand your expertise at a deeper level. Semantic SEO uses topic clusters, entity linking, and co-occurrence patterns to build topical authority. This is the most advanced approach for dominating competitive niches in Bangladesh and beyond.",
+    features: [
+      "Topic cluster & pillar page strategy for authority building",
+      "Entity extraction & semantic relevance optimization",
+      "Co-occurrence & LSI keyword targeting for deep relevance",
+      "Internal linking based on semantic relationships",
+      "Schema.org markup for entities (Person, LocalBusiness, Service)",
+      "Knowledge Graph optimization & entity disambiguation",
+    ],
+    benefits: [
+      "Own topic families — not just isolated keywords",
+      "Build true topical authority Google rewards",
+      "Future-proof your SEO for semantic & AI search",
+      "Get featured in Knowledge Panels & rich results",
+    ],
+    process: [
+      "Semantic gap analysis & entity audit",
+      "Topic cluster architecture design",
+      "Pillar & cluster content development",
+      "Entity linking & co-occurrence optimization",
+      "Schema.org entity markup implementation",
+      "Monthly semantic authority monitoring",
+    ],
+  },
 ];
 
 export default services;

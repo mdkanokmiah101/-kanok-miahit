@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import services from "../data";
 
 export default function ServicePage() {
@@ -116,7 +117,7 @@ export default function ServicePage() {
             Other <span className="text-primary">SEO Services</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
-            {services.filter((s) => s.slug !== svc.slug).slice(0, 3).map((related, i) => (
+            {services.filter((s) => s.slug !== svc.slug).map((related, i) => (
               <Link key={i} href={`/services/${related.slug}`} className="group bg-white border border-gray-100 rounded-2xl p-6 hover:border-primary/20 hover:shadow-lg hover:-translate-y-1 transition-all">
                 <div className="text-4xl mb-3">{related.icon}</div>
                 <h3 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">{related.title}</h3>
@@ -146,9 +147,7 @@ export default function ServicePage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

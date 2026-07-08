@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 export default function PrivacyPolicyPage() {
@@ -11,14 +12,7 @@ export default function PrivacyPolicyPage() {
     <div className="min-h-screen bg-white text-gray-900">
 
       {/* === NAVBAR === */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-primary">Md Kanok Miah</span>
-          </Link>
-          <Link href="/" className="text-sm text-gray-600 hover:text-primary transition-colors">← Back to Home</Link>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* === HEADER === */}
       <section className="relative pt-32 pb-12 px-4 text-center overflow-hidden">

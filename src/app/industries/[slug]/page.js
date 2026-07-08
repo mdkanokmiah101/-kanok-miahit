@@ -1,5 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import industries from "../data";
 
@@ -20,16 +21,7 @@ export default function IndustryPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Navbar */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-primary">Md Kanok Miah</span>
-          </Link>
-          <div className="flex gap-4 text-sm">
-            <Link href="/industries" className="text-gray-600 hover:text-primary transition-colors">← Industries</Link>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero */}
       <section className="relative pt-32 pb-16 px-4 overflow-hidden">

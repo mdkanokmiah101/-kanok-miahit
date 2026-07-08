@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import posts from "../data";
 
@@ -135,21 +136,7 @@ export default function BlogPostPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Navbar */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-primary">
-              Md Kanok Miah
-            </span>
-          </Link>
-          <Link
-            href="/blog"
-            className="text-sm text-gray-600 hover:text-primary transition-colors"
-          >
-            ← Blog
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Article Hero */}
       <section className="relative pt-32 pb-12 px-4 overflow-hidden">

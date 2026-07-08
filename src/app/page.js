@@ -154,18 +154,18 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: "🔍", title: "Local SEO", desc: "Rank your business on Google Maps across Dhaka, Chittagong, Sylhet and beyond. GBP optimization, local citations, near-me SEO for Bangladeshi audiences." },
-              { icon: "📄", title: "On-Page SEO", desc: "Keyword-optimized content, meta tags, header structure, internal linking, and schema markup crafted for Bangladesh search behavior." },
-              { icon: "🔗", title: "Link Building", desc: "Quality backlinks from Bangladeshi and international directories, guest posts, and niche-relevant websites that drive real authority gains." },
-              { icon: "⚙️", title: "Technical SEO", desc: "Site speed optimization, Core Web Vitals, mobile-first indexing, crawl budget fixes, and structured data implementation." },
-              { icon: "🤖", title: "GEO / AI Search", desc: "Optimize for ChatGPT, Gemini, Perplexity, and Google AI Overviews. Entity-first SEO built for the AI-powered search era." },
-              { icon: "🛒", title: "E-commerce SEO", desc: "Shopify, Daraz, WooCommerce SEO. Product page optimization, category restructuring, and conversion-focused search strategy." },
+              { icon: "🔍", title: "Local SEO", desc: "Rank your business on Google Maps across Dhaka, Chittagong, Sylhet and beyond. GBP optimization, local citations, near-me SEO for Bangladeshi audiences.", slug: "local-seo" },
+              { icon: "📄", title: "On-Page SEO", desc: "Keyword-optimized content, meta tags, header structure, internal linking, and schema markup crafted for Bangladesh search behavior.", slug: "on-page-seo" },
+              { icon: "🔗", title: "Link Building", desc: "Quality backlinks from Bangladeshi and international directories, guest posts, and niche-relevant websites that drive real authority gains.", slug: "link-building" },
+              { icon: "⚙️", title: "Technical SEO", desc: "Site speed optimization, Core Web Vitals, mobile-first indexing, crawl budget fixes, and structured data implementation.", slug: "technical-seo" },
+              { icon: "🤖", title: "GEO / AI Search", desc: "Optimize for ChatGPT, Gemini, Perplexity, and Google AI Overviews. Entity-first SEO built for the AI-powered search era.", slug: "geo-ai-search" },
+              { icon: "🛒", title: "E-commerce SEO", desc: "Shopify, Daraz, WooCommerce SEO. Product page optimization, category restructuring, and conversion-focused search strategy.", slug: "ecommerce-seo" },
             ].map((s, i) => (
-              <div key={i} className="group bg-white rounded-2xl p-7 border border-gray-100 hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <Link key={i} href={`/services/${s.slug}`} className="group bg-white rounded-2xl p-7 border border-gray-100 hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-2xl mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">{s.icon}</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">{s.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -447,16 +447,16 @@ export default function Home() {
               <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">SEO Services</h4>
               <ul className="space-y-3 text-sm">
                 {[
-                  "Local SEO",
-                  "On-Page SEO",
-                  "Technical SEO",
-                  "Link Building",
-                  "E-commerce SEO",
-                  "GEO / AI Search",
+                  { name: "Local SEO", slug: "local-seo" },
+                  { name: "On-Page SEO", slug: "on-page-seo" },
+                  { name: "Technical SEO", slug: "technical-seo" },
+                  { name: "Link Building", slug: "link-building" },
+                  { name: "E-commerce SEO", slug: "ecommerce-seo" },
+                  { name: "GEO / AI Search", slug: "geo-ai-search" },
                 ].map((service, i) => (
                   <li key={i}>
-                    <a href="/services" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
-                      <span className="text-primary text-xs">▸</span> {service}
+                    <a href={`/services/${service.slug}`} className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                      <span className="text-primary text-xs">▸</span> {service.name}
                     </a>
                   </li>
                 ))}

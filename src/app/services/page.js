@@ -1,57 +1,8 @@
 "use client";
 import { useEffect } from "react";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
-
-const services = [
-  {
-    icon: "🔍",
-    title: "Local SEO",
-    subtitle: "Dominate Google Maps in Dhaka & Across Bangladesh",
-    desc: "Get your business found by customers searching near you. I optimise your Google Business Profile, build local citations, and target location-based keywords so you appear in the local pack and Google Maps.",
-    features: ["Google Business Profile optimisation", "Local citation building (BD directories)", "Near-me keyword targeting", "Google Maps ranking", "Local content strategy", "Review management & response"],
-    slug: "#services"
-  },
-  {
-    icon: "📄",
-    title: "On-Page SEO",
-    subtitle: "Perfect Every Page for Search & Users",
-    desc: "I optimise every page on your site — from title tags and meta descriptions to header structure and internal linking — so Google understands your content and ranks it higher.",
-    features: ["Title tag & meta description optimisation", "Header (H1-H3) structure", "Keyword-optimised content", "Internal linking architecture", "Image alt text & schema markup", "Content gap analysis"],
-    slug: "#services"
-  },
-  {
-    icon: "🔗",
-    title: "Link Building",
-    subtitle: "Build Authority That Ranks",
-    desc: "Quality backlinks from Bangladeshi and international websites. I use ethical, white-hat techniques to build your site's authority and drive referral traffic.",
-    features: ["Guest posting on BD websites", "Local directory submissions", "Niche-relevant backlinks", "Broken link building", "Competitor backlink analysis", "Authority building strategy"],
-    slug: "#services"
-  },
-  {
-    icon: "📊",
-    title: "Technical SEO",
-    subtitle: "Fix the Foundation. Improve Rankings.",
-    desc: "I audit and fix technical issues holding your site back — slow speed, crawl errors, mobile issues, and Core Web Vitals — so search engines can easily find and rank your pages.",
-    features: ["Core Web Vitals optimisation", "Site speed & performance audit", "Mobile-first indexing check", "Crawl budget optimisation", "Structured data / Schema markup", "Sitemap & robots.txt management"],
-    slug: "#services"
-  },
-  {
-    icon: "🤖",
-    title: "GEO & AI Search Optimisation",
-    subtitle: "Get Found in ChatGPT, Gemini & AI Overviews",
-    desc: "Optimise your content for the AI-powered search era. I structure your site so AI systems — Google AI Overviews, ChatGPT, Perplexity — can accurately extract and cite your business.",
-    features: ["Entity-first content structure", "AI-friendly FAQ/QA optimisation", "Semantic topical clustering", "Authority signal building", "Featured snippet targeting", "Generative Engine readiness"],
-    slug: "#services"
-  },
-  {
-    icon: "🛒",
-    title: "E-commerce SEO",
-    subtitle: "Sell More With Organic Search",
-    desc: "From Daraz sellers to Shopify stores, I optimise product pages, category structure, and technical setup so your products rank higher and convert better.",
-    features: ["Product page optimisation", "Category structure & siloing", "Shopify/WooCommerce/Daraz SEO", "Review schema & rich snippets", "E-commerce site speed", "Conversion-focused SEO strategy"],
-    slug: "#services"
-  }
-];
+import servicesList from "./data";
 
 export default function ServicesPage() {
   useEffect(() => {
@@ -60,15 +11,7 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* Navbar */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-100 z-50">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-primary">Md Kanok Miah</span>
-          </Link>
-          <Link href="/" className="text-sm text-gray-600 hover:text-primary transition-colors">← Back to Home</Link>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero */}
       <section className="relative pt-32 pb-16 px-4 text-center overflow-hidden bg-gradient-to-b from-gray-50 to-white">
@@ -85,7 +28,7 @@ export default function ServicesPage() {
             to international optimization. Every strategy is data-driven, transparent, and results-focused.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link href="/#contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5">
               Get Free SEO Audit →
             </Link>
             <Link href="/industries" className="inline-flex items-center gap-2 border border-gray-200 text-gray-600 px-6 py-3 rounded-xl font-semibold text-sm hover:border-primary hover:text-primary transition-all">
@@ -98,13 +41,16 @@ export default function ServicesPage() {
       {/* Services */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto space-y-10">
-          {services.map((svc, i) => (
+          {servicesList.map((svc, i) => (
             <div key={i} className="bg-gray-50 border border-gray-100 rounded-2xl p-8 md:p-10 hover:border-primary/20 transition-all">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3">
                   <div className="text-5xl mb-4">{svc.icon}</div>
                   <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">{svc.title}</h2>
                   <p className="text-gray-500 text-sm leading-relaxed">{svc.subtitle}</p>
+                  <Link href={`/services/${svc.slug}`} className="inline-flex items-center gap-1 mt-4 text-primary text-sm font-semibold hover:text-primary-dark transition-colors">
+                    Learn More →
+                  </Link>
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-600 leading-relaxed mb-5">{svc.desc}</p>
@@ -157,10 +103,7 @@ export default function ServicesPage() {
           <p className="text-primary/80 mb-8 text-lg">
             Get a free SEO audit and discover exactly what your website needs to grow.
           </p>
-          <Link
-            href="/contact"
-            className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
-          >
+          <Link href="/contact" className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
             Start Your Free Audit
             <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>

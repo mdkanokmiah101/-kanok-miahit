@@ -20,7 +20,16 @@ export function OrganizationSchema() {
       contactType: "customer service",
       availableLanguage: ["English", "Bengali"],
     },
-    sameAs: ["https://kanokmiah.com"],
+    sameAs: [
+      "https://kanokmiah.com",
+      "https://www.facebook.com/mdkanokmiahweb",
+      "https://bd.linkedin.com/in/kanok-miah",
+      "https://www.youtube.com/@kanokmiah",
+      "https://www.pinterest.com/mdkanokmiah",
+      "https://www.instagram.com/kanokmiahbd",
+      "https://www.tiktok.com/@kanokmiahbd",
+      "https://wa.me/8801712883101",
+    ],
     foundingDate: "2020",
     founder: {
       "@type": "Person",
@@ -35,6 +44,8 @@ export function OrganizationSchema() {
       "GEO / AI Search Optimization",
       "E-commerce SEO",
       "Content Marketing",
+      "Google Business Profile Optimization",
+      "Generative Engine Optimization",
     ],
   };
   return (
@@ -132,6 +143,47 @@ export function BreadcrumbSchema(items) {
       name: item.name,
       item: item.url,
     })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function PersonSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Md Kanok Miah",
+    alternateName: "Kanok Miah",
+    givenName: "Kanok",
+    familyName: "Miah",
+    url: "https://kanokmiah.com.bd",
+    sameAs: [
+      "https://kanokmiah.com",
+      "https://www.facebook.com/mdkanokmiahweb",
+      "https://bd.linkedin.com/in/kanok-miah",
+      "https://www.youtube.com/@kanokmiah",
+      "https://www.pinterest.com/mdkanokmiah",
+      "https://www.instagram.com/kanokmiahbd",
+      "https://www.tiktok.com/@kanokmiahbd",
+    ],
+    jobTitle: "SEO Expert & Digital Marketing Specialist",
+    worksFor: {
+      "@type": "Organization",
+      name: "Md Kanok Miah",
+    },
+    knowsAbout: [
+      "Search Engine Optimization",
+      "Local SEO",
+      "Technical SEO",
+      "Link Building",
+      "GEO / AI Search Optimization",
+    ],
+    description:
+      "Best SEO expert in Dhaka, Bangladesh with 6+ years of experience. Specializing in local SEO, technical SEO, link building, and GEO optimization.",
   };
   return (
     <script

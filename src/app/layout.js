@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { OrganizationSchema, LocalBusinessSchema, WebSiteSchema } from "@/components/Schema";
+import { OrganizationSchema, LocalBusinessSchema, WebSiteSchema, PersonSchema } from "@/components/Schema";
 import Link from "next/link";
 
 const geistSans = Geist({
@@ -80,6 +80,7 @@ export default function RootLayout({ children }) {
         <OrganizationSchema />
         <LocalBusinessSchema />
         <WebSiteSchema />
+        <PersonSchema />
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
       </head>

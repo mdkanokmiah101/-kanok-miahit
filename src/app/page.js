@@ -4,6 +4,25 @@ import Link from "next/link";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    try {
+      const form = e.target;
+      const data = new FormData(form);
+      const res = await fetch("/api/contact", { method: "POST", body: data });
+      if (res.ok || res.redirected) {
+        setSubmitted(true);
+        form.reset();
+      }
+    } catch (err) {
+      console.error("Form error:", err);
+    }
+    setSubmitting(false);
+  };
 
   const navItem = [
     { name: "Services", path: "/services" },
@@ -304,11 +323,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             {/* Form */}
             <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all">
-              <form action="https://formsubmit.co/mdkanokmiah101@gmail.com" method="POST" className="space-y-5">
+              <form id="contactForm" onSubmit={handleSubmit} method="POST" className="space-y-5">
                 <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="text" name="_honey" style={{display: "none"}} />
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm text-gray-700 mb-1.5 font-medium">Your Name *</label>
@@ -338,10 +354,15 @@ export default function Home() {
                   <textarea name="message" required rows="4" placeholder="Tell me about your business and SEO goals..."
                     className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"></textarea>
                 </div>
-                <button type="submit"
-                  className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all text-lg">
-                  Get Free SEO Audit →
+                <button type="submit" disabled={submitting}
+                  className="w-full bg-primary hover:bg-primary-dark disabled:bg-primary/50 text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all text-lg">
+                  {submitting ? "Sending..." : "Get Free SEO Audit →"}
                 </button>
+                {submitted && (
+                  <div className="bg-green-50 border border-green-200 text-green-700 rounded-xl px-5 py-3 text-sm text-center font-medium">
+                    ✅ Thank you! Your message has been sent. I'll get back to you within 24 hours.
+                  </div>
+                )}
                 <p className="text-xs text-gray-400 text-center">🔒 Your information is safe. No spam, ever.</p>
               </form>
             </div>

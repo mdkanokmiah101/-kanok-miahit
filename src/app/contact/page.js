@@ -1,9 +1,29 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 export default function ContactPage() {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    try {
+      const form = e.target;
+      const data = new FormData(form);
+      const res = await fetch("/api/contact", { method: "POST", body: data });
+      if (res.ok || res.redirected) {
+        setSubmitted(true);
+        form.reset();
+      }
+    } catch (err) {
+      console.error("Form error:", err);
+    }
+    setSubmitting(false);
+  };
+
   useEffect(() => {
     document.title = "Contact Me — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh";
   }, []);
@@ -35,11 +55,8 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-gray-900 mb-6">Send Me a Message</h2>
-            <form className="space-y-5" action="https://formsubmit.co/mdkanokmiah101@gmail.com" method="POST">
+            <form className="space-y-5" onSubmit={handleSubmit} method="POST">
               <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="text" name="_honey" style={{display: "none"}} />
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1.5">Your Name *</label>
                 <input
@@ -81,11 +98,16 @@ export default function ContactPage() {
                 ></textarea>
               </div>
               <button
-                type="submit"
-                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all"
+                type="submit" disabled={submitting}
+                className="w-full bg-primary hover:bg-primary-dark disabled:bg-primary/50 text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all"
               >
-                Get Free SEO Audit →
+                {submitting ? "Sending..." : "Get Free SEO Audit →"}
               </button>
+              {submitted && (
+                <div className="bg-green-50 border border-green-200 text-green-700 rounded-xl px-5 py-3 text-sm text-center font-medium">
+                  ✅ Thank you! Your message has been sent. I'll get back to you within 24 hours.
+                </div>
+              )}
               <p className="text-xs text-gray-400 text-center">I respect your privacy. No spam, ever.</p>
             </form>
           </div>

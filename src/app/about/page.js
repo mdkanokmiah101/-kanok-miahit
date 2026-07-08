@@ -12,6 +12,8 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
+        <link rel="canonical" href="https://kanokmiah.com.bd/about" />
+        <meta name="robots" content="index, follow" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "About", url: "https://kanokmiah.com.bd/about" },
@@ -75,6 +77,49 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* === CREDENTIALS & CERTIFICATIONS === */}
+      <section className="relative py-16 px-4 bg-gradient-to-b from-white to-gray-50/50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-primary text-sm font-semibold tracking-widest uppercase">Credentials</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-3 mb-4">
+              Trusted <span className="text-primary">Expertise</span> & Certifications
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">Verified credentials that back every SEO strategy I deliver.</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+              <div className="text-3xl mb-3">🏆</div>
+              <div className="text-2xl font-extrabold text-gray-900">6+ Years</div>
+              <div className="text-sm text-gray-500">Experience</div>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+              <div className="text-3xl mb-3">📈</div>
+              <div className="text-2xl font-extrabold text-gray-900">350+</div>
+              <div className="text-sm text-gray-500">Projects Completed</div>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+              <div className="text-3xl mb-3">🤝</div>
+              <div className="text-2xl font-extrabold text-gray-900">50+</div>
+              <div className="text-sm text-gray-500">Clients Served</div>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+              <div className="text-3xl mb-3">⭐</div>
+              <div className="text-2xl font-extrabold text-gray-900">4.9/5</div>
+              <div className="text-sm text-gray-500">Client Rating</div>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            <span className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 text-sm font-semibold px-5 py-3 rounded-xl">
+              ✅ Google Business Profile Certified
+            </span>
+            <span className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold px-5 py-3 rounded-xl">
+              ✅ Google Search Console Certified
+            </span>
+          </div>
+        </div>
+      </section>
+
       {/* === MISSION & VISION === */}
       <section className="relative py-16 px-4">
         <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
@@ -106,7 +151,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">What We Stand For</span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4">
-              <span className="text-primary">Core Values</span>
+              Core <span className="text-primary">Values</span> & SEO Philosophy
             </h2>
             <p className="text-gray-600 max-w-xl mx-auto">The principles that guide every project and partnership.</p>
           </div>

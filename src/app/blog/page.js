@@ -27,6 +27,10 @@ categories.forEach(cat => {
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("All");
 
+  useEffect(() => {
+    document.title = "SEO Blog — Md Kanok Miah | Bangladesh SEO Tips & Guides";
+  }, []);
+
   const filteredPosts = activeCategory === "All"
     ? posts
     : posts.filter(p => p.tags.some(t => t.toLowerCase().includes(activeCategory.toLowerCase())));
@@ -35,6 +39,10 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <head>
+        <link rel="canonical" href="https://kanokmiah.com.bd/blog" />
+        <meta name="robots" content="index, follow" />
+      </head>
       {/* Navbar */}
       <Navbar />
 
@@ -127,6 +135,9 @@ export default function BlogPage() {
 
           {/* Blog Posts */}
           <div className="flex-1 min-w-0">
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-6">
+              Latest <span className="text-primary">Blog Posts</span> & SEO Tips
+            </h2>
             {activeCategory !== "All" && (
               <div className="mb-6">
                 <span className="text-sm text-gray-500">

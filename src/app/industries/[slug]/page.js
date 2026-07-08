@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
@@ -8,6 +9,12 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export default function IndustryPage() {
   const { slug } = useParams();
   const ind = industries.find((i) => i.slug === slug);
+
+  useEffect(() => {
+    if (ind) {
+      document.title = `${ind.title} SEO — Md Kanok Miah | Industry SEO Expert in Bangladesh`;
+    }
+  }, [ind]);
 
   if (!ind) {
     return (
@@ -22,6 +29,8 @@ export default function IndustryPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
+        <link rel="canonical" href={`https://kanokmiah.com.bd/industries/${ind.slug}`} />
+        <meta name="robots" content="index, follow" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Industries", url: "https://kanokmiah.com.bd/industries" },
@@ -73,6 +82,59 @@ export default function IndustryPage() {
                 <span className="w-2 h-2 bg-primary-light0 rounded-full" />
                 <span className="text-gray-600">{s}</span>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold mb-3">
+            My <span className="text-primary">SEO Process</span> for {ind.shortTitle}
+          </h2>
+          <p className="text-gray-500 mb-8">A proven methodology to drive results in the {ind.shortTitle.toLowerCase()} industry.</p>
+          <div className="space-y-4">
+            {[
+              "Audit: Comprehensive analysis of your current website, competitors, and industry keywords",
+              "Strategy: Custom SEO plan tailored to the {ind.shortTitle} industry landscape",
+              "Execution: On-page optimization, content creation, technical fixes, and link building",
+              "Monitoring: Weekly ranking and traffic tracking with detailed performance dashboards",
+              "Optimization: Data-driven refinements to maximize ROI and long-term growth",
+            ].map((step, i) => (
+              <div key={i} className="flex items-start gap-4 bg-gray-50 border border-gray-100 rounded-xl p-5">
+                <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center font-extrabold text-sm text-white shrink-0">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <div>
+                  <p className="text-gray-600">{step}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-gray-50/80 border-y border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span> About {ind.shortTitle} SEO
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100 bg-white rounded-2xl p-6">
+            {[
+              { q: `How long does SEO take for ${ind.shortTitle.toLowerCase()} businesses?`, a: `SEO for the ${ind.shortTitle.toLowerCase()} industry typically shows initial results within 4-8 weeks, with significant ranking improvements in 3-6 months. Timeline depends on competition, current site health, and the scope of optimization needed.` },
+              { q: `What makes ${ind.shortTitle.toLowerCase()} SEO different from general SEO?`, a: `${ind.shortTitle} businesses face unique search patterns, customer behavior, and competitive dynamics. My industry-specific approach addresses these nuances with tailored keyword research, content strategy, and technical optimization that general SEO cannot provide.` },
+              { q: "Do you offer customized SEO packages?", a: "Yes, every SEO package is customized based on your specific business goals, target audience, industry competition, and budget. Contact me for a free consultation and personalized proposal." },
+              { q: "How do you track and report results?", a: "I provide detailed monthly reports showing keyword rankings, organic traffic, conversion metrics, backlink growth, and actionable recommendations. You'll always know exactly how your SEO investment is performing." },
+            ].map((faq, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {faq.q}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{faq.a}</p>
+              </details>
             ))}
           </div>
         </div>

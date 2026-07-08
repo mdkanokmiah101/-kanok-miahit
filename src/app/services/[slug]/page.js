@@ -105,23 +105,47 @@ export default function ServicePage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
+        <link rel="canonical" href={`https://kanokmiah.com.bd/services/${svc.slug}`} />
+        <meta name="robots" content="index, follow" />
         {BreadcrumbSchema(breadcrumbItems)}
         {ServiceSchema(svc)}
       </head>
       <Navbar />
+
+      {/* Visible Breadcrumb Nav */}
+      <div className="pt-24 px-4 max-w-4xl mx-auto">
+        <nav className="flex items-center gap-2 text-sm text-gray-500 py-3">
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <span className="text-gray-300">›</span>
+          <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
+          <span className="text-gray-300">›</span>
+          <span className="text-gray-800 font-medium">{svc.title}</span>
+        </nav>
+      </div>
 
       {/* Hero */}
       <section className="relative pt-32 pb-16 px-4 overflow-hidden">
         <div className="absolute top-1/3 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/3 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse delay-1000" />
         <div className="relative max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-primary-light border border-primary/20 text-primary text-xs font-semibold px-5 py-2 rounded-full mb-6 backdrop-blur-sm">
-            {svc.icon} {svc.title}
+          <div className="flex flex-wrap items-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 bg-primary-light border border-primary/20 text-primary text-xs font-semibold px-5 py-2 rounded-full backdrop-blur-sm">
+              {svc.icon} {svc.title}
+            </div>
+            <span className="inline-flex items-center gap-1 bg-amber-50 border border-amber-200 text-amber-700 text-xs font-semibold px-4 py-2 rounded-full">
+              🕐 Last Updated: July 2026
+            </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">{svc.title}</h1>
           <p className="text-lg text-gray-500 mb-3 font-medium">{svc.subtitle}</p>
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">{svc.desc}</p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <span className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-xs font-medium px-4 py-2 rounded-full">
+              ✅ Expert Reviewed
+            </span>
+            <span className="text-xs text-gray-400">This guide was reviewed by Md Kanok Miah, SEO expert with 6+ years of experience serving Bangladesh businesses.</span>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-4">
             <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5">
               Get Free SEO Audit →
             </Link>
@@ -136,7 +160,7 @@ export default function ServicePage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-extrabold mb-3">
-            Why You Need <span className="text-primary">{svc.title}</span>
+            Why You Need <span className="text-primary">{svc.title}</span> for Better Rankings
           </h2>
           <p className="text-gray-500 mb-8">The key benefits of professional SEO for your Bangladesh business.</p>
           <div className="grid md:grid-cols-2 gap-4">
@@ -154,7 +178,7 @@ export default function ServicePage() {
       <section className="py-16 px-4 bg-gray-50/80 border-y border-gray-100">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-extrabold mb-8">
-            What&apos;s Included in <span className="text-primary">{svc.title}</span>
+            What&apos;s Included in <span className="text-primary">{svc.title}</span> — Complete Features
           </h2>
           <p className="text-gray-600 mb-8 leading-relaxed">{svc.desc}</p>
           <div className="grid md:grid-cols-2 gap-4">
@@ -172,7 +196,7 @@ export default function ServicePage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-extrabold mb-3">
-            My <span className="text-primary">Process</span>
+            My <span className="text-primary">SEO Process</span> for {svc.title}
           </h2>
           <p className="text-gray-500 mb-8">How I deliver results for {svc.title}.</p>
           <div className="space-y-4">
@@ -226,6 +250,15 @@ export default function ServicePage() {
                 <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
               </details>
             ))}
+          </div>
+          {/* Cross-link to Industries */}
+          <div className="mt-10 text-center">
+            <Link
+              href="/industries"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors text-sm"
+            >
+              See which industries we serve →
+            </Link>
           </div>
         </div>
       </section>

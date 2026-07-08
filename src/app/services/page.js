@@ -22,6 +22,8 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
+        <link rel="canonical" href="https://kanokmiah.com.bd/services" />
+        <meta name="robots" content="index, follow" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Services", url: "https://kanokmiah.com.bd/services" },
@@ -89,7 +91,7 @@ export default function ServicesPage() {
       <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
         <div className="max-w-5xl mx-auto text-center">
           <span className="text-primary text-sm font-semibold tracking-widest uppercase">How I Work</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold mt-3 mb-6 text-gray-900">My 5-Step SEO Process</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold mt-3 mb-6 text-gray-900">My 5-Step Professional SEO Process for <span className="text-primary">Bangladesh Websites</span></h2>
           <p className="text-gray-500 max-w-xl mx-auto mb-12">A proven system that delivers measurable SEO results for Bangladeshi businesses.</p>
           <div className="grid md:grid-cols-5 gap-4">
             {[
@@ -104,6 +106,30 @@ export default function ServicesPage() {
                 <h3 className="font-bold text-gray-900 mb-1">{p.title}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">{p.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Links — Explore All Services */}
+      <section className="py-16 px-4 bg-gray-50/80 border-y border-gray-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase">Explore Our Services</span>
+          <h2 className="text-2xl md:text-3xl font-extrabold mt-4 mb-4 text-gray-900">
+            Complete <span className="text-primary">SEO Services</span> for Your Business
+          </h2>
+          <p className="text-gray-500 mb-8 max-w-2xl mx-auto">
+            Explore our specialized SEO services designed to grow your business in Bangladesh:
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {servicesList.map((svc) => (
+              <Link
+                key={svc.slug}
+                href={`/services/${svc.slug}`}
+                className="inline-flex items-center gap-2 bg-white border border-gray-200 text-gray-700 px-5 py-2.5 rounded-xl text-sm font-semibold hover:border-primary hover:text-primary hover:bg-primary-light transition-all"
+              >
+                {svc.icon} {svc.title}
+              </Link>
             ))}
           </div>
         </div>

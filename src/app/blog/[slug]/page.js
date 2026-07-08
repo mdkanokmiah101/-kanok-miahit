@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { FAQSchema } from "@/components/Schema";
+import { FAQSchema, ArticleSchema } from "@/components/Schema";
 import posts from "../data";
+import services from "@/app/services/data";
+import industries from "@/app/industries/data";
 
 export default function BlogPostPage() {
   const { slug } = useParams();
@@ -20,6 +22,118 @@ export default function BlogPostPage() {
     }
     window.scrollTo(0, 0);
   }, [post]);
+
+  // Build contextual internal links based on post tags/content
+  const contextualServices = [];
+  const contextualIndustries = [];
+  const tagKeywordMap = {
+    "local": "local-seo",
+    "gbp": "local-seo",
+    "google maps": "local-seo",
+    "near-me": "local-seo",
+    "on-page": "on-page-seo",
+    "onpage": "on-page-seo",
+    "link building": "link-building",
+    "backlink": "link-building",
+    "technical": "technical-seo",
+    "core web vitals": "technical-seo",
+    "mobile": "technical-seo",
+    "schema": "technical-seo",
+    "semantic": "semantic-seo",
+    "entity": "semantic-seo",
+    "geo": "geo-ai-search",
+    "generative engine": "geo-ai-search",
+    "ai search": "geo-ai-search",
+    "chatgpt": "geo-ai-search",
+    "sge": "geo-ai-search",
+    "ecommerce": "ecommerce-seo",
+    "e-commerce": "ecommerce-seo",
+    "daraz": "ecommerce-seo",
+    "shopify": "ecommerce-seo",
+    "woocommerce": "ecommerce-seo",
+    "seo guide": null,
+    "digital marketing": null,
+    "garments": "garments-textile",
+    "textile": "garments-textile",
+    "rmg": "garments-textile",
+    "real estate": "real-estate",
+    "property": "real-estate",
+    "cleaning": "cleaning",
+    "spa": "spa-salon",
+    "salon": "spa-salon",
+    "beauty": "spa-salon",
+    "medical": "medical",
+    "healthcare": "medical",
+    "education": "education",
+    "training": "education",
+    "restaurant": "food-restaurant",
+    "food": "food-restaurant",
+    "smm": "smm-panel",
+    "social media": "smm-panel"
+  };
+
+  if (post) {
+    // Check all tags
+    post.tags.forEach(tag => {
+      const lowerTag = tag.toLowerCase();
+      // Check service slugs
+      services.forEach(s => {
+        if (lowerTag.includes(s.slug.replace("-seo", "").replace("-", " ")) ||
+            lowerTag.includes(s.title.toLowerCase().split(" ").slice(0, 2).join(" ")) ||
+            (tagKeywordMap[lowerTag] === s.slug)) {
+          if (!contextualServices.find(x => x.slug === s.slug)) {
+            contextualServices.push(s);
+          }
+        }
+      });
+      // Check industry slugs
+      industries.forEach(ind => {
+        const indKeywords = ind.shortTitle.toLowerCase().split(" & ")[0];
+        if (lowerTag.includes(indKeywords) ||
+            lowerTag.includes(ind.slug.replace("-", " "))) {
+          if (!contextualIndustries.find(x => x.slug === ind.slug)) {
+            contextualIndustries.push(ind);
+          }
+        }
+      });
+      // Check keyword map for industry
+      Object.entries(tagKeywordMap).forEach(([keyword, slug]) => {
+        if (lowerTag.includes(keyword) && slug) {
+          const svc = services.find(s => s.slug === slug);
+          if (svc && !contextualServices.find(x => x.slug === svc.slug)) {
+            contextualServices.push(svc);
+          }
+          const indSlug = slug; // could be industry slug
+          const ind = industries.find(i => i.slug === slug);
+          if (ind && !contextualIndustries.find(x => x.slug === ind.slug)) {
+            contextualIndustries.push(ind);
+          }
+        }
+      });
+    });
+
+    // Also check content for keywords
+    const contentLower = post.content.toLowerCase();
+    services.forEach(s => {
+      if (!contextualServices.find(x => x.slug === s.slug)) {
+        const keyword = s.title.toLowerCase();
+        if (contentLower.includes(keyword)) {
+          contextualServices.push(s);
+        }
+      }
+    });
+    industries.forEach(ind => {
+      if (!contextualIndustries.find(x => x.slug === ind.slug)) {
+        const keyword = ind.shortTitle.toLowerCase();
+        const keyword2 = ind.slug.replace("-", " ");
+        if (contentLower.includes(keyword) || contentLower.includes(keyword2)) {
+          contextualIndustries.push(ind);
+        }
+      }
+    });
+  }
+
+  const hasContextualLinks = contextualServices.length > 0 || contextualIndustries.length > 0;
 
   if (!post) {
     return (
@@ -136,6 +250,11 @@ export default function BlogPostPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <head>
+        <link rel="canonical" href={`https://kanokmiah.com.bd/blog/${post.slug}`} />
+        <meta name="robots" content="index, follow" />
+        {ArticleSchema(post)}
+      </head>
       {/* Navbar */}
       <Navbar />
 
@@ -186,6 +305,55 @@ export default function BlogPostPage() {
 
           {/* Content */}
           <div className="prose-custom">{formattedContent}</div>
+
+          {/* Contextual Internal Links */}
+          {hasContextualLinks && (
+            <div className="mt-12 pt-8 border-t border-gray-100">
+              <h3 className="text-lg font-bold mb-4 text-gray-900">
+                Read More About Our Services
+              </h3>
+              {contextualServices.length > 0 && (
+                <div className="mb-5">
+                  <p className="text-sm text-gray-500 mb-3 font-medium">Related SEO Services:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {contextualServices.slice(0, 6).map((svc) => (
+                      <Link
+                        key={svc.slug}
+                        href={`/services/${svc.slug}`}
+                        className="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-100 text-gray-700 px-3.5 py-2 rounded-lg text-xs font-medium hover:border-primary/30 hover:text-primary hover:bg-primary-light transition-all"
+                      >
+                        {svc.icon} {svc.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {contextualIndustries.length > 0 && (
+                <div>
+                  <p className="text-sm text-gray-500 mb-3 font-medium">Industries We Serve:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {contextualIndustries.slice(0, 6).map((ind) => (
+                      <Link
+                        key={ind.slug}
+                        href={`/industries/${ind.slug}`}
+                        className="inline-flex items-center gap-1.5 bg-gray-50 border border-gray-100 text-gray-700 px-3.5 py-2 rounded-lg text-xs font-medium hover:border-primary/30 hover:text-primary hover:bg-primary-light transition-all"
+                      >
+                        {ind.icon} {ind.shortTitle}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <div className="mt-4 pt-3 border-t border-gray-50 flex flex-wrap gap-3 text-sm">
+                <Link href="/services" className="text-primary font-semibold hover:text-primary-dark transition-colors">
+                  View All SEO Services →
+                </Link>
+                <Link href="/industries" className="text-gray-500 font-medium hover:text-primary transition-colors">
+                  Explore All Industries →
+                </Link>
+              </div>
+            </div>
+          )}
 
           {/* Share Section */}
           <div className="mt-16 pt-8 border-t border-gray-100">

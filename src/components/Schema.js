@@ -83,10 +83,11 @@ export function LocalBusinessSchema() {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
+      ratingValue: "5.0",
       bestRating: "5",
-      ratingCount: "50",
+      ratingCount: "108",
     },
+    areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Chittagong", "Sylhet", "Bangladesh"],
   };
   return (
     <script

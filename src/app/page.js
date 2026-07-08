@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
@@ -7,6 +7,10 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    document.title = "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist";
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,27 +40,31 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      <head>
+        <link rel="canonical" href="https://kanokmiah.com.bd" />
+        <meta name="robots" content="index, follow" />
+      </head>
 
       {/* ===== NAVBAR ===== */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <a href="/" className="text-xl font-extrabold tracking-tight">
+          <Link href="/" className="text-xl font-extrabold tracking-tight">
             <span className="text-primary">Md Kanok Miah</span>
-          </a>
+          </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
             {navItem.map(item => (
-              <a key={item.name} href={item.path} className="hover:text-primary transition-colors">{item.name}</a>
+              <Link key={item.name} href={item.path} className="hover:text-primary transition-colors">{item.name}</Link>
             ))}
-            <a href="/contact" className="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 transition-all">Free Audit</a>
+            <Link href="/contact" className="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 transition-all">Free Audit</Link>
           </div>
           <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-2xl text-gray-700">☰</button>
         </div>
         {menuOpen && (
           <div className="md:hidden bg-white border-b border-gray-100 px-4 pb-5 flex flex-col gap-3 text-sm font-medium text-gray-600">
             {navItem.map(item => (
-              <a key={item.name} href={item.path} onClick={() => setMenuOpen(false)} className="hover:text-primary transition-colors">{item.name}</a>
+              <Link key={item.name} href={item.path} onClick={() => setMenuOpen(false)} className="hover:text-primary transition-colors">{item.name}</Link>
             ))}
-            <a href="/contact" onClick={() => setMenuOpen(false)} className="bg-primary text-white text-center font-bold px-5 py-2.5 rounded-full">Free Audit</a>
+            <Link href="/contact" onClick={() => setMenuOpen(false)} className="bg-primary text-white text-center font-bold px-5 py-2.5 rounded-full">Free Audit</Link>
           </div>
         )}
       </nav>
@@ -87,18 +95,26 @@ export default function Home() {
               <span className="text-gray-900">in Dhaka, Bangladesh</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Md Kanok Miah is the <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong>.
+              Md Kanok Miah is the <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong> — serving <strong className="text-gray-900">Mirpur, Gulshan, Banani, Uttara, Dhanmondi</strong> and all across the country.
               With <strong className="text-gray-900">6+ years</strong> of experience, I help local businesses rank higher on Google,
               generate qualified leads, and scale revenue — with proven strategies that work.
             </p>
+            <div className="flex flex-wrap gap-3 mb-8">
+              <span className="inline-flex items-center gap-1.5 bg-green-50 border border-green-200 text-green-700 text-xs font-semibold px-4 py-2 rounded-full">
+                ✅ Google Business Profile verified
+              </span>
+              <span className="inline-flex items-center gap-1.5 bg-amber-50 border border-amber-200 text-amber-700 text-xs font-semibold px-4 py-2 rounded-full">
+                ⭐ 108+ Google reviews, 5.0 stars
+              </span>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">
+              <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">
                 Get Free SEO Audit
                 <span className="text-lg">→</span>
-              </a>
-              <a href="/services" className="inline-flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-primary/30 hover:text-primary transition-all">
+              </Link>
+              <Link href="/services" className="inline-flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-primary/30 hover:text-primary transition-all">
                 View Services
-              </a>
+              </Link>
             </div>
             {/* Trust Badges */}
             <div className="mt-10 flex flex-wrap gap-6">
@@ -171,7 +187,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">What We Do</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">SEO Services for <span className="text-primary">Bangladesh</span></h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">SEO Services for <span className="text-primary">Bangladesh</span> — Local & Technical SEO</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">Complete SEO solutions tailored for the Bangladesh market — from local Dhaka SEO to international optimization.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -198,7 +214,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Industries We Serve</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Industry-Specific <span className="text-primary">SEO</span></h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Industry-Specific <span className="text-primary">SEO Solutions</span> for Bangladesh</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">Every industry has unique SEO challenges. We tailor strategies that work for your specific sector in Bangladesh.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -213,19 +229,19 @@ export default function Home() {
               { icon: "🎓", title: "Education", desc: "Universities, coaching — student inquiry generation", slug: "education" },
               { icon: "🍽️", title: "Food & Restaurant", desc: "Restaurants — Google Maps dominance for dining", slug: "food-restaurant" },
             ].map((ind, i) => (
-              <a key={i} href={`/industries/${ind.slug}`}
+              <Link key={i} href={`/industries/${ind.slug}`}
                 className="group bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-primary/20 hover:bg-primary-light hover:-translate-y-1 transition-all duration-300">
                 <div className="text-3xl mb-3">{ind.icon}</div>
                 <h3 className="font-bold text-gray-900 mb-1.5 group-hover:text-primary transition-colors">{ind.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{ind.desc}</p>
                 <div className="mt-3 text-primary text-xs font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300">Learn More →</div>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="text-center mt-10">
-            <a href="/industries" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors">
+            <Link href="/industries" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors">
               View All Industries <span>→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -302,9 +318,9 @@ export default function Home() {
             Get a free SEO audit for your Bangladesh business. No commitment. No hidden fees. Just real, actionable insights.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="/contact" className="inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
               Get Your Free Audit <span>→</span>
-            </a>
+            </Link>
             <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20Miah!%20I%20want%20a%20free%20SEO%20audit."
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all">

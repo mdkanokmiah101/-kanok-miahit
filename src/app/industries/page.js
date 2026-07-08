@@ -1,12 +1,21 @@
 "use client";
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { FAQSchema } from "@/components/Schema";
 import industries from "./data";
 
 export default function IndustriesPage() {
+  useEffect(() => {
+    document.title = "Industries We Serve — Md Kanok Miah | SEO Expert in Bangladesh";
+  }, []);
+
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      <head>
+        <link rel="canonical" href="https://kanokmiah.com.bd/industries" />
+        <meta name="robots" content="index, follow" />
+      </head>
       {/* Navbar */}
       <Navbar />
 
@@ -16,8 +25,7 @@ export default function IndustriesPage() {
         <div className="relative max-w-4xl mx-auto">
           <span className="text-primary text-sm font-semibold tracking-widest uppercase">Industries We Serve</span>
           <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6">
-            SEO Solutions for{" "}
-            <span className="text-primary">Every Industry</span>
+            Industry-Specific <span className="text-primary">SEO Solutions</span> for Bangladesh
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Tailored SEO strategies for Bangladesh's top industries. Each sector has unique challenges — we solve them.
@@ -27,7 +35,11 @@ export default function IndustriesPage() {
 
       {/* Industry Grid */}
       <section className="pb-24 px-4">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-10">
+            Industries We Serve with <span className="text-primary">Custom SEO Strategies</span>
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {industries.map((ind, i) => (
             <Link key={i} href={`/industries/${ind.slug}`} className="group bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:bg-gray-100 hover:border-primary/20 hover:-translate-y-1 transition-all">
               <div className="text-4xl mb-4">{ind.icon}</div>
@@ -38,6 +50,7 @@ export default function IndustriesPage() {
               </div>
             </Link>
           ))}
+        </div>
         </div>
       </section>
 
@@ -71,6 +84,24 @@ export default function IndustriesPage() {
               </details>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Cross-Link to Services */}
+      <section className="py-16 px-4 bg-gradient-to-r from-primary to-primary-dark">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl md:text-4xl font-extrabold mb-4 text-white">
+            Need SEO Tailored for Your Industry?
+          </h2>
+          <p className="text-primary/80 mb-6 max-w-xl mx-auto">
+            Explore all our SEO services — from local SEO to technical optimization — and find the perfect strategy for your business.
+          </p>
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 bg-white text-primary-dark px-8 py-3.5 rounded-xl font-bold text-base hover:shadow-xl hover:-translate-y-0.5 transition-all"
+          >
+            View All SEO Services →
+          </Link>
         </div>
       </section>
 

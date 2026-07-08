@@ -35,7 +35,11 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-8">
             <h2 className="text-xl font-extrabold text-gray-900 mb-6">Send Me a Message</h2>
-            <form className="space-y-5" action="https://formspree.io/f/xvgkrvrz" method="POST">
+            <form className="space-y-5" action="https://formsubmit.co/mdkanokmiah101@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="text" name="_honey" style={{display: "none"}} />
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1.5">Your Name *</label>
                 <input
@@ -76,8 +80,6 @@ export default function ContactPage() {
                   className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all resize-none"
                 ></textarea>
               </div>
-              <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
-              <input type="text" name="_gotcha" style={{ display: "none" }} />
               <button
                 type="submit"
                 className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all"

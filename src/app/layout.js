@@ -20,6 +20,9 @@ const geistMono = Geist_Mono({
 // Cache-Control (s-maxage=60, must-revalidate) is set via next.config.mjs headers.
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
+  alternates: {
+    canonical: "https://kanokmiah.com.bd",
+  },
   title: {
     default: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah \u2014 #1 SEO Specialist",
     template: "%s \u2014 Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
@@ -175,8 +178,9 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Search Console verification */}
+        {/* Search Console & Bing verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
+        <meta name="msvalidate.01" content="A10B9573E2B9D84E27B9BCE37CCB8B28" />
         {/* JSON-LD Structured Data — all 4 schemas render on every page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

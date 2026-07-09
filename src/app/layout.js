@@ -1,13 +1,12 @@
 /**
  * Md Kanok Miah — SEO Expert in Dhaka, Bangladesh
  * Built with Next.js 16
- * Last deployed: 2026-07-09 (SEO audit fixes)
+ * Last deployed: 2026-07-08 (Schema audit fix)
  */
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-// ISR: revalidate every 60s for CDN freshness (middleware further limits s-maxage)
-export const revalidate = 60;
+import { OrganizationSchema, LocalBusinessSchema, WebSiteSchema, PersonSchema } from "@/components/Schema";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,116 +18,61 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// NO metadata export in root layout — it prevents page-level metadata
-// from appearing in this Next.js version. Each page defines its own
-// metadata via server-component page.js exports.
-// metadataBase and icons are set via hardcoded <link> tags in <head> below.
-
-// JSON-LD schemas defined as objects for reliable SSR rendering
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Md Kanok Miah",
-  url: "https://kanokmiah.com.bd",
-  logo: "https://kanokmiah.com.bd/apple-touch-icon.png",
-  description: "SEO expert since 2019 — 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
-  address: { "@type": "PostalAddress", streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", addressCountry: "BD" },
-  contactPoint: {
-    "@type": "ContactPoint", telephone: "+880-1604-809110", contactType: "customer service",
-    availableLanguage: ["English", "Bengali"],
+export const metadata = {
+  metadataBase: new URL("https://kanokmiah.com.bd"),
+  title: {
+    default: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
+    template: "%s — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
   },
-  sameAs: [
-    "https://kanokmiah.com", "https://www.facebook.com/mdkanokmiahweb",
-    "https://bd.linkedin.com/in/kanok-miah", "https://www.youtube.com/@kanokmiah",
-    "https://www.pinterest.com/mdkanokmiah", "https://www.instagram.com/kanokmiahbd",
-    "https://www.tiktok.com/@kanokmiahbd", "https://wa.me/8801604809110",
+  description:
+    "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist with 6+ years of experience. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
+  keywords: [
+    "best SEO expert in Dhaka",
+    "SEO expert Dhaka",
+    "SEO specialist Bangladesh",
+    "local SEO Bangladesh",
+    "Bangladesh SEO expert",
+    "SEO consultant Dhaka",
+    "on-page SEO",
+    "technical SEO",
+    "link building Bangladesh",
+    "semantic SEO",
+    "GEO optimization",
+    "Md Kanok Miah",
   ],
-  foundingDate: "2020",
-  founder: {
-    "@type": "Person",
-    name: "Md Kanok Miah",
-    url: "https://kanokmiah.com.bd/about",
+  authors: [{ name: "Md Kanok Miah" }],
+  creator: "Md Kanok Miah",
+  publisher: "Md Kanok Miah",
+  alternates: {
+    canonical: "/",
   },
-  knowsAbout: [
-    "Search Engine Optimization", "Local SEO", "Technical SEO", "Link Building",
-    "Semantic SEO", "GEO / AI Search Optimization", "E-commerce SEO",
-    "Content Marketing", "Google Business Profile Optimization", "Generative Engine Optimization",
-  ],
-};
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Md Kanok Miah — SEO Expert",
-  url: "https://kanokmiah.com.bd",
-  telephone: "+880-1604-809110",
-  email: "mdkanokmiah232@gmail.com",
-  description: "SEO expert since 2019 — 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
-  image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
-  address: { "@type": "PostalAddress", streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", addressCountry: "BD" },
-  geo: { "@type": "GeoCoordinates", latitude: "23.8103", longitude: "90.4125" },
-  priceRange: "$$",
-  openingHours: "Mo-Fr 09:00-18:00",
-  areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Chittagong", "Sylhet", "Bangladesh"],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "SEO Services",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Local SEO" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "On-Page SEO" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Technical SEO" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Link Building" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Semantic SEO" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "GEO / AI Search" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "E-commerce SEO" } },
-    ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Md Kanok Miah",
+    title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
+    description:
+      "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist. Get higher rankings and more traffic with proven SEO strategies.",
+    url: "https://kanokmiah.com.bd",
+    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
-};
-
-const webSiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Md Kanok Miah",
-  url: "https://kanokmiah.com.bd",
-  description: "SEO expert since 2019 — 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
-  inLanguage: ["en"],
-  potentialAction: {
-    "@type": "SearchAction",
-    target: { "@type": "EntryPoint", urlTemplate: "https://kanokmiah.com.bd/blog?q={search_term_string}" },
-    "query-input": "required name=search_term_string",
+  twitter: {
+    card: "summary_large_image",
+    title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
+    description:
+      "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah helps businesses rank higher, grow faster, dominate search.",
+    images: ["/kanok-miah-profile.webp"],
   },
-};
-
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Md Kanok Miah",
-  alternateName: "Kanok Miah",
-  givenName: "Kanok",
-  familyName: "Miah",
-  url: "https://kanokmiah.com.bd",
-  sameAs: [
-    "https://kanokmiah.com", "https://www.facebook.com/mdkanokmiahweb",
-    "https://bd.linkedin.com/in/kanok-miah", "https://www.youtube.com/@kanokmiah",
-    "https://www.pinterest.com/mdkanokmiah", "https://www.instagram.com/kanokmiahbd",
-    "https://www.tiktok.com/@kanokmiahbd", "https://wa.me/8801604809110",
-  ],
-  jobTitle: "Founder & SEO Consultant",
-  worksFor: [
-    { "@type": "Organization", name: "kanokmiah.com", url: "https://kanokmiah.com" },
-    { "@type": "Organization", name: "Khan IT" },
-    { "@type": "Organization", name: "CloudMatrix Tech" },
-  ],
-  alumniOf: [
-    { "@type": "Organization", name: "Walton Plaza" },
-    { "@type": "Organization", name: "Solus Corp" },
-  ],
-  knowsAbout: [
-    "Search Engine Optimization", "Local SEO", "Technical SEO", "Link Building",
-    "Semantic SEO", "GEO / AI Search Optimization", "E-commerce SEO",
-    "Content Marketing", "Google Business Profile Optimization", "Generative Engine Optimization",
-  ],
-  description: "SEO expert since 2019 — 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Ex-Walton Plaza, Solus Corp. Local SEO, technical SEO, link building, GEO optimization.",
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+  },
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "32x32", type: "image/png" }],
+    apple: "/icon-192.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -138,45 +82,17 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Hreflang - only English content currently exists */}
-        <link rel="alternate" hrefLang="en" href="https://kanokmiah.com.bd" />
-        <link rel="alternate" hrefLang="x-default" href="https://kanokmiah.com.bd" />
-        {/* Apple Touch Icon for iOS bookmarks */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-        {/* Standard Favicons — multi-size set */}
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/favicons/favicon-512x512.png" />
-        {/* Fallback .ico for legacy browsers */}
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        {/* PWA manifest */}
-        <link rel="manifest" href="/manifest.json" />
-        {/* Force og:image for all pages (critical for client-component pages like homepage) */}
-        <meta property="og:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Md Kanok Miah — SEO Expert Since 2019, 210+ Projects" />
-        {/* Force twitter:image for all pages (critical for client-component pages) */}
-        <meta name="twitter:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
-        <meta name="twitter:card" content="summary_large_image" />
-        {/* Robots fallback for pages without their own robots meta */}
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-        {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-15-v1-geo-faq-fix" />
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
+        {/* Bing Webmaster Tools — add your msvalidate.01 content="" here */}
       </head>
       <body className="min-h-full flex flex-col">
-        {/* JSON-LD Structured Data — sitewide only (Organization, WebSite, Person) */}
-        {/* LocalBusiness is scoped to homepage/contact/locations pages only — prevents manual-action risk */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
-        {children}
-      </body>
+        <OrganizationSchema />
+        <LocalBusinessSchema />
+        <WebSiteSchema />
+        <PersonSchema />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Local SEO","description":"Rank your business on Google Maps across Dhaka, Chittagong, Sylhet and beyond. GBP optimization, local citations, near-me SEO for Bangladeshi audiences.","provider":{"@type":"Person","name":"Md Kanok Miah"},"areaServed":["Dhaka","Chittagong","Sylhet","Bangladesh"],"serviceType":"Local SEO","offers":{"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BDT","description":"Custom pricing based on project scope"}}},{"@type":"Service","name":"On-Page SEO","description":"Keyword-optimized content, meta tags, header structure, internal linking, and schema markup crafted for Bangladesh search behavior.","provider":{"@type":"Person","name":"Md Kanok Miah"},"areaServed":["Dhaka","Chittagong","Sylhet","Bangladesh"],"serviceType":"On-Page SEO","offers":{"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BDT","description":"Custom pricing based on project scope"}}},{"@type":"Service","name":"Link Building","description":"Quality backlinks from Bangladeshi and international directories, guest posts, and niche-relevant websites that drive real authority gains.","provider":{"@type":"Person","name":"Md Kanok Miah"},"areaServed":["Dhaka","Chittagong","Sylhet","Bangladesh"],"serviceType":"Link Building","offers":{"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BDT","description":"Custom pricing based on project scope"}}},{"@type":"Service","name":"Technical SEO","description":"Site speed optimization, Core Web Vitals, mobile-first indexing, crawl budget fixes, and structured data implementation.","provider":{"@type":"Person","name":"Md Kanok Miah"},"areaServed":["Dhaka","Chittagong","Sylhet","Bangladesh"],"serviceType":"Technical SEO","offers":{"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BDT","description":"Custom pricing based on project scope"}}},{"@type":"Service","name":"GEO / AI Search","description":"Optimize for ChatGPT, Gemini, Perplexity, and Google AI Overviews. Entity-first SEO built for the AI-powered search era.","provider":{"@type":"Person","name":"Md Kanok Miah"},"areaServed":["Dhaka","Chittagong","Sylhet","Bangladesh"],"serviceType":"GEO / AI Search","offers":{"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BDT","description":"Custom pricing based on project scope"}}},{"@type":"Service","name":"E-commerce SEO","description":"Shopify, Daraz, WooCommerce SEO. Product page optimization, category restructuring, and conversion-focused search strategy.","provider":{"@type":"Person","name":"Md Kanok Miah"},"areaServed":["Dhaka","Chittagong","Sylhet","Bangladesh"],"serviceType":"E-commerce SEO","offers":{"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BDT","description":"Custom pricing based on project scope"}}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I rank my business on Google Maps in Dhaka?","acceptedAnswer":{"@type":"Answer","text":"To rank your business on Google Maps in Dhaka, start by claiming and verifying your Google Business Profile with accurate NAP (Name, Address, Phone). Choose the most specific category for your business, add 20+ high-quality photos, collect genuine customer reviews, and post weekly updates. I also recommend building local citations on Bangladeshi directories like BD Yellow Pages and BdTradeInfo. Most Dhaka businesses see improved Google Maps visibility within 4-6 weeks of proper optimization."}},{"@type":"Question","name":"What is the best SEO strategy for a new website in Bangladesh?","acceptedAnswer":{"@type":"Answer","text":"For new websites in Bangladesh, the best strategy starts with technical SEO — ensure fast loading speeds, mobile responsiveness, and proper crawl setup. Then focus on keyword research targeting both Bengali and English search terms that your local customers use. Create high-quality content around these keywords, build a Google Business Profile, and start earning backlinks from Bangladeshi news sites and directories. Patience is key — most new sites take 3-6 months to see meaningful ranking improvements on Google Bangladesh."}},{"@type":"Question","name":"Can you help my Daraz store get more sales from Google?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. I optimize Daraz seller pages for both Daraz internal search and Google organic search. This includes optimizing product titles with high-volume keywords in Bengali and English, writing detailed unique product descriptions, optimizing images with descriptive alt text, and encouraging product reviews. I also work on off-page signals like backlinks to your Daraz store. Most Daraz sellers see 50-100% organic traffic growth within 3 months of implementing these strategies."}},{"@type":"Question","name":"How much does SEO cost for small businesses in Bangladesh?","acceptedAnswer":{"@type":"Answer","text":"SEO pricing for small businesses in Bangladesh varies based on competition and scope. Monthly retainers typically range from BDT 15,000 to BDT 50,000. A BDT 15,000-20,000 plan usually includes local SEO (Google Business Profile optimization, citation building) and basic on-page SEO. More comprehensive packages (BDT 30,000-50,000) include technical SEO, link building, content creation, and detailed monthly reporting. I offer a free initial audit to recommend the right plan for your budget and goals."}},{"@type":"Question","name":"What is the difference between GEO and traditional SEO?","acceptedAnswer":{"@type":"Answer","text":"GEO (Generative Engine Optimization) optimizes your content for AI-powered search engines like ChatGPT, Google AI Overviews, Gemini, and Perplexity. Traditional SEO focuses on keyword rankings and backlinks for Google's blue-link search results. GEO uses entity-based content, authoritative citations, and structured data to help AI models accurately extract and cite your information. For Bangladeshi businesses, GEO is emerging as a crucial forward-looking strategy — those who optimize for AI search now will have a significant competitive advantage as growth accelerates."}}]}]})}} />
+        {children}</body>
     </html>
   );
 }

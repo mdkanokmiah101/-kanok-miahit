@@ -258,7 +258,19 @@ export default function BlogPostClient() {
             {post.tags[0]}
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-            {post.title}
+            {(function() {
+              const t = post.title;
+              const parts = t.match(/^(.+?)\s+(SEO|Guide|Tips|Strategy|Services|Marketing|Optimization|Checklist|Tutorial|Bangladesh|for|in|vs|&|ওয়ার্কশপ|ব্লগ|টিপস|স্ট্র্যাটেজি|সার্ভিস)$/i);
+              if (parts && parts[1].length > 3) {
+                return <><span className="text-primary">{parts[1]}</span><br/><span className="text-gray-900">{parts[2]}</span></>;
+              }
+              // Try splitting at last space as fallback
+              const lastSpace = t.lastIndexOf(' ');
+              if (lastSpace > 3 && lastSpace < t.length - 2) {
+                return <><span className="text-primary">{t.substring(0, lastSpace)}</span><br/><span className="text-gray-900">{t.substring(lastSpace + 1)}</span></>;
+              }
+              return <span className="text-primary">{t}</span>;
+            })()}
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-8">
             <span className="flex items-center gap-2">

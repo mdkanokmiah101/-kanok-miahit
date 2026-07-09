@@ -6,6 +6,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// Prevent Hostinger hCDN from caching pages for 1 year
+export const dynamic = "force-dynamic";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

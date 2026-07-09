@@ -58,7 +58,22 @@ export default function ServicePageClient({ slug }) {
               🕐 Last Updated: July 2026
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">{svc.title}</h1>
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            {(function() {
+              const t = svc.title;
+              // Split SEO titles into 2 lines: "Local SEO" → "Local" / "SEO", "On-Page SEO" → "On-Page" / "SEO" etc.
+              const parts = t.match(/^(.+?)\s+(SEO|Building|Search|Optimization)$/i);
+              if (parts) {
+                return <><span className="text-primary">{parts[1]}</span><br/><span className="text-gray-900">{parts[2]}</span></>;
+              }
+              // Default: split at last space
+              const lastSpace = t.lastIndexOf(' ');
+              if (lastSpace > 0) {
+                return <><span className="text-primary">{t.substring(0, lastSpace)}</span><br/><span className="text-gray-900">{t.substring(lastSpace + 1)}</span></>;
+              }
+              return t;
+            })()}
+          </h1>
           {svc.subtitle && <p className="text-lg text-gray-500 mb-3 font-medium">{svc.subtitle}</p>}
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">{svc.desc}</p>
           <div className="mt-4 flex flex-wrap items-center gap-3">

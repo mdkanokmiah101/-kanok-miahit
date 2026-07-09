@@ -7,14 +7,14 @@ export const metadata = {
   description: "Privacy Policy for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh. Learn how we collect, use, and protect your information.",
   alternates: { canonical: "/privacy-policy" },
   openGraph: {
-    title: "Privacy Policy",
+    title: "Privacy Policy — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
     description: "Privacy Policy for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
     url: "https://kanokmiah.com.bd/privacy-policy",
     images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy — Md Kanok Miah",
+    title: "Privacy Policy — Md Kanok Miah | SEO Expert Dhaka",
     description: "Privacy Policy for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
     images: ["/kanok-miah-profile.webp"],
   },

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
     description: metaDesc,
     alternates: { canonical: `/industries/${ind.slug}` },
     openGraph: {
-      title: ind.title,
+      title: `${ind.title} — Md Kanok Miah`,
       description: metaDesc,
       url: `https://kanokmiah.com.bd/industries/${ind.slug}`,
       siteName: "Md Kanok Miah",
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: ind.title,
+      title: `${ind.title} — Md Kanok Miah`,
       description: metaDesc,
       images: ["/kanok-miah-profile.webp"],
     },

@@ -2,7 +2,7 @@ import ChittagongClient from "./ChittagongClient";
 
 export const metadata = {
   title: "Local SEO Services in Chittagong",
-  description: "Professional local SEO services in Chittagong, Bangladesh. Rank higher on Google Maps and attract more customers in Chittagong port city with expert local SEO.",
+  description: "Professional local SEO services in Chittagong, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO.",
   alternates: { canonical: "/locations/chittagong" },
   openGraph: {
     title: "Local SEO Services in Chittagong — Md Kanok Miah",

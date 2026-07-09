@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 const rajshahiBusinesses = [
   { icon: "🥭", name: "Mango & Agri Export", desc: "Dominate agricultural search results for Rajshahi's famous mango and crop exporters targeting local and international buyers." },
@@ -109,6 +109,64 @@ export default function RajshahiClient() {
                 <p className="text-gray-600 text-sm leading-relaxed">{point.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === FAQ === */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FAQSchema faqs={[
+            { question: "How is SEO different for Rajshahi businesses?", answer: "Rajshahi's economy is uniquely driven by agriculture — especially mango export — and education. My SEO strategies for Rajshahi businesses focus on bilingual Bengali + English optimization, Google Maps ranking for local service providers, and targeted keyword strategies for agricultural exporters and educational institutions looking to attract both local and national audiences." },
+            { question: "Do you serve Rajshahi city and surrounding areas?", answer: "Yes, I provide SEO services for Rajshahi city and all surrounding areas including the Rajshahi University area, Kadirganj, Motihar, Shaheb Bazar, and all upazillas across the Rajshahi division. My hyperlocal approach helps businesses attract customers from all over the region." },
+            { question: "What types of Rajshahi businesses benefit most from SEO?", answer: "Mango and crop exporters, coaching centers, local retailers, small manufacturers, hotels, restaurants, and real estate developers all benefit greatly from SEO. I help Rajshahi businesses build their online presence, attract more customers, and compete effectively beyond local boundaries." },
+            { question: "How do I get started with SEO in Rajshahi?", answer: "Getting started is simple. Contact me through this page for a free SEO audit. I will analyze your current online presence, evaluate your competition in the Rajshahi market, and create a customized SEO strategy tailored to your business goals and target audience." },
+          ]} />
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "How is SEO different for Rajshahi businesses?", answer: "Rajshahi's economy is uniquely driven by agriculture — especially mango export — and education. My SEO strategies for Rajshahi businesses focus on bilingual Bengali + English optimization, Google Maps ranking for local service providers, and targeted keyword strategies for agricultural exporters and educational institutions looking to attract both local and national audiences." },
+              { question: "Do you serve Rajshahi city and surrounding areas?", answer: "Yes, I provide SEO services for Rajshahi city and all surrounding areas including the Rajshahi University area, Kadirganj, Motihar, Shaheb Bazar, and all upazillas across the Rajshahi division. My hyperlocal approach helps businesses attract customers from all over the region." },
+              { question: "What types of Rajshahi businesses benefit most from SEO?", answer: "Mango and crop exporters, coaching centers, local retailers, small manufacturers, hotels, restaurants, and real estate developers all benefit greatly from SEO. I help Rajshahi businesses build their online presence, attract more customers, and compete effectively beyond local boundaries." },
+              { question: "How do I get started with SEO in Rajshahi?", answer: "Getting started is simple. Contact me through this page for a free SEO audit. I will analyze your current online presence, evaluate your competition in the Rajshahi market, and create a customized SEO strategy tailored to your business goals and target audience." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">&#9660;</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === DISCOVER OUR SERVICES === */}
+      <section className="py-16 px-4 bg-gray-50/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-extrabold mb-4">
+              Discover Our <span className="text-primary">Services</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Explore our comprehensive SEO services designed to help your business rank higher and grow faster.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/services/local-seo" className="bg-blue-50 text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all text-sm font-medium">Local SEO</Link>
+            <Link href="/services/on-page-seo" className="bg-blue-50 text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all text-sm font-medium">On-Page SEO</Link>
+            <Link href="/services/link-building" className="bg-blue-50 text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all text-sm font-medium">Link Building</Link>
+            <Link href="/services/technical-seo" className="bg-blue-50 text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all text-sm font-medium">Technical SEO</Link>
+            <Link href="/services/geo-ai-search" className="bg-blue-50 text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all text-sm font-medium">GEO/AI Search</Link>
+            <Link href="/services/ecommerce-seo" className="bg-blue-50 text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all text-sm font-medium">E-commerce SEO</Link>
+            <Link href="/services/semantic-seo" className="bg-blue-50 text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all text-sm font-medium">Semantic SEO</Link>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            <Link href="/blog" className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-dark transition-all text-sm">Read Our SEO Blog</Link>
+            <Link href="/industries" className="border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition-all text-sm">See All Industries</Link>
           </div>
         </div>
       </section>

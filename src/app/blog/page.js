@@ -3,6 +3,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
+// ISR: regenerate every hour so new blog posts appear automatically
+export const revalidate = 3600;
+
 export const metadata = {
   title: "SEO Blog",
   description:

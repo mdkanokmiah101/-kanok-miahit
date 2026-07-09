@@ -1,5 +1,6 @@
 import posts from "../data";
 import BlogPostClient from "./BlogPostClient";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/Schema";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -20,6 +21,17 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPostPage({ params }) {
-  await params;
-  return <BlogPostClient />;
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
+  return (
+    <>
+      {BreadcrumbSchema([
+        { name: "Home", url: "https://kanokmiah.com.bd" },
+        { name: "Blog", url: "https://kanokmiah.com.bd/blog" },
+        { name: post?.title || slug, url: `https://kanokmiah.com.bd/blog/${slug}` },
+      ])}
+      {post && ArticleSchema(post)}
+      <BlogPostClient />
+    </>
+  );
 }

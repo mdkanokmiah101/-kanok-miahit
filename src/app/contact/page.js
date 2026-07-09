@@ -1,4 +1,5 @@
 import ContactClient from "./ContactClient";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Contact Me",
@@ -10,8 +11,22 @@ export const metadata = {
     url: "https://kanokmiah.com.bd/contact",
     images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Me — Md Kanok Miah",
+    description: "Contact Md Kanok Miah for a free SEO audit. Get expert help for your Bangladesh business.",
+    images: ["/kanok-miah-profile.webp"],
+  },
 };
 
 export default function ContactPage() {
-  return <ContactClient />;
+  return (
+    <>
+      {BreadcrumbSchema([
+        { name: "Home", url: "https://kanokmiah.com.bd" },
+        { name: "Contact", url: "https://kanokmiah.com.bd/contact" },
+      ])}
+      <ContactClient />
+    </>
+  );
 }

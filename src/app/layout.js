@@ -18,6 +18,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
   title: {

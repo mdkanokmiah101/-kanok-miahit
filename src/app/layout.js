@@ -137,7 +137,7 @@ const localBusinessSchema = {
     ],
   },
   aggregateRating: {
-    "@type": "AggregateRating", ratingValue: "5.0", bestRating: "5", ratingCount: "108",
+    "@type": "AggregateRating", ratingValue: "4.9", bestRating: "5", ratingCount: "50",
   },
 };
 
@@ -147,7 +147,7 @@ const webSiteSchema = {
   name: "Md Kanok Miah",
   url: "https://kanokmiah.com.bd",
   description: "Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
-  inLanguage: ["en", "bn"],
+  inLanguage: ["en"],
   potentialAction: {
     "@type": "SearchAction",
     target: { "@type": "EntryPoint", urlTemplate: "https://kanokmiah.com.bd/blog?q={search_term_string}" },
@@ -206,6 +206,11 @@ export default function RootLayout({ children }) {
         <meta name="deploy-version" content="2026-07-09-v14-schema-fix" />
       </head>
       <body className="min-h-full flex flex-col">
+        {/* JSON-LD Structured Data — in <body> for Next.js SSR compatibility */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
         {children}
       </body>
     </html>

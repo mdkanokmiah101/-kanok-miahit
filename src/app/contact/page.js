@@ -1,5 +1,5 @@
 import ContactClient from "./ContactClient";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Contact Me",
@@ -30,6 +30,7 @@ const contactFaqs = [
 export default function ContactPage() {
   return (
     <>
+      {ContactPageSchema()}
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Contact", url: "https://kanokmiah.com.bd/contact" },

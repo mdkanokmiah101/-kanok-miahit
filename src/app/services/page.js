@@ -1,5 +1,6 @@
 import ServicesClient from "./ServicesClient";
-import { BreadcrumbSchema } from "@/components/Schema";
+import { BreadcrumbSchema, ItemListSchema } from "@/components/Schema";
+import serviceData from "./data";
 
 export const metadata = {
   title: "SEO Services",
@@ -22,6 +23,7 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <>
+      {ItemListSchema({ items: serviceData.map(s => ({ name: s.title, slug: s.slug })) })}
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Services", url: "https://kanokmiah.com.bd/services" },

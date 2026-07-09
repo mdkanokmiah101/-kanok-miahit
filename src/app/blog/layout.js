@@ -1,4 +1,4 @@
-import { BreadcrumbSchema } from "@/components/Schema";
+import { BreadcrumbSchema, CollectionPageSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "SEO Blog | Bangladesh Digital Marketing Tips",
@@ -29,6 +29,11 @@ export const metadata = {
 export default function BlogLayout({ children }) {
   return (
     <>
+      {CollectionPageSchema({
+        name: "SEO Blog | Bangladesh Digital Marketing Tips",
+        description: "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, and more.",
+        url: "https://kanokmiah.com.bd/blog",
+      })}
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Blog", url: "https://kanokmiah.com.bd/blog" },

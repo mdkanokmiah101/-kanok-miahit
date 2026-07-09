@@ -1,5 +1,5 @@
 import AboutClient from "./AboutClient";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema, AboutPageSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "About Me",
@@ -30,6 +30,7 @@ const aboutFaqs = [
 export default function AboutPage() {
   return (
     <>
+      {AboutPageSchema()}
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "About", url: "https://kanokmiah.com.bd/about" },

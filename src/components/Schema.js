@@ -243,6 +243,81 @@ export function FAQSchema({ faqs }) {
   );
 }
 
+export function AboutPageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
+    description: "Learn about Md Kanok Miah, Bangladesh's trusted SEO expert with 6+ years of experience helping businesses rank higher on Google.",
+    url: "https://kanokmiah.com.bd/about",
+    mainEntity: {
+      "@type": "Person",
+      name: "Md Kanok Miah",
+      jobTitle: "SEO Expert & Digital Marketing Specialist",
+      url: "https://kanokmiah.com.bd/about",
+    },
+  };
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  );
+}
+
+export function ContactPageSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Md Kanok Miah — Free SEO Audit",
+    description: "Contact Md Kanok Miah, the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business.",
+    url: "https://kanokmiah.com.bd/contact",
+    mainEntity: {
+      "@type": "Person",
+      name: "Md Kanok Miah",
+      email: "mdkanokmiah232@gmail.com",
+      telephone: "+880-1712-883101",
+    },
+  };
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  );
+}
+
+export function ItemListSchema({ items, itemType }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "SEO Services",
+    description: "Complete SEO solutions for Bangladeshi businesses",
+    url: "https://kanokmiah.com.bd/services",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: `https://kanokmiah.com.bd/services/${item.slug}`,
+    })),
+  };
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  );
+}
+
+export function CollectionPageSchema({ name, description, url }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: name || "SEO Blog | Bangladesh Digital Marketing Tips",
+    description: description || "Expert SEO tips, guides, and strategies for Bangladesh businesses.",
+    url: url || "https://kanokmiah.com.bd/blog",
+    mainEntity: {
+      "@type": "Blog",
+      name: "Md Kanok Miah SEO Blog",
+      description: "Expert SEO tips and strategies for Bangladesh businesses.",
+    },
+  };
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  );
+}
+
 export function ArticleSchema(post) {
   const schema = {
     "@context": "https://schema.org",

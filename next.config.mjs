@@ -3,6 +3,12 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=0, must-revalidate, no-cache, no-store' },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=60, must-revalidate, no-transform' },

@@ -95,6 +95,11 @@ const organizationSchema = {
     "https://www.tiktok.com/@kanokmiahbd", "https://wa.me/8801712883101",
   ],
   foundingDate: "2020",
+  founder: {
+    "@type": "Person",
+    name: "Md Kanok Miah",
+    url: "https://kanokmiah.com.bd/about",
+  },
   knowsAbout: [
     "Search Engine Optimization", "Local SEO", "Technical SEO", "Link Building",
     "Semantic SEO", "GEO / AI Search Optimization", "E-commerce SEO",
@@ -114,6 +119,7 @@ const localBusinessSchema = {
   address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "BD" },
   geo: { "@type": "GeoCoordinates", latitude: "23.8103", longitude: "90.4125" },
   priceRange: "$$",
+  openingHours: "Mo-Fr 09:00-18:00",
   areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Chittagong", "Sylhet", "Bangladesh"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -181,6 +187,8 @@ export default function RootLayout({ children }) {
         {/* Search Console & Bing verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
         <meta name="msvalidate.01" content="A10B9573E2B9D84E27B9BCE37CCB8B28" />
+        {/* Deploy version tag */}
+        <meta name="deploy-version" content="2026-07-09-v2" />
         {/* JSON-LD Structured Data — all 4 schemas render on every page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

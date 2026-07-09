@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 const mymensinghBusinesses = [
   { icon: "🌾", name: "Agriculture & Farming", desc: "Help Mymensingh's agricultural businesses rank higher for local farming and crop-related searches." },
@@ -27,15 +27,11 @@ export default function MymensinghClient() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/locations/mymensingh" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Top SEO services in Mymensingh, Bangladesh. Expert local SEO for shrimp exporters, industrial businesses, agriculture and more. Get found by customers today." />
-        <meta name="keywords" content="SEO services Mymensingh, local SEO Mymensingh, SEO expert Mymensingh, shrimp export SEO, industrial SEO Bangladesh" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
           { name: "Mymensingh", url: "https://kanokmiah.com.bd/locations/mymensingh" },
         ])}
-        {OrganizationSchema()}
-        {LocalBusinessSchema()}
       </head>
 
       {/* === NAVBAR === */}

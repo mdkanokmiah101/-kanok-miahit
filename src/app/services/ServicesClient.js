@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { FAQSchema, BreadcrumbSchema } from "@/components/Schema";
+import { FAQSchema } from "@/components/Schema";
 import servicesList from "./data";
 
 export default function ServicesClient() {
@@ -19,12 +19,6 @@ export default function ServicesClient() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
-        <link rel="canonical" href="https://kanokmiah.com.bd/services" />
-        <meta name="robots" content="index, follow" />
-        {BreadcrumbSchema([
-          { name: "Home", url: "https://kanokmiah.com.bd" },
-          { name: "Services", url: "https://kanokmiah.com.bd/services" },
-        ])}
       </head>
       <Navbar />
 

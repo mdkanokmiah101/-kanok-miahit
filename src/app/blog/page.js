@@ -1,7 +1,7 @@
 import BlogListClient from "./BlogListClient";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema, CollectionPageSchema } from "@/components/Schema";
 
 // ISR: regenerate every hour so new blog posts appear automatically
 export const revalidate = 3600;
@@ -41,6 +41,11 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <>
+      {CollectionPageSchema({
+        name: "SEO Blog | Bangladesh Digital Marketing Tips",
+        description: "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, and more.",
+        url: "https://kanokmiah.com.bd/blog",
+      })}
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Blog", url: "https://kanokmiah.com.bd/blog" },

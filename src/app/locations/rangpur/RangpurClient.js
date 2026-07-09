@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 const rangpurBusinesses = [
   { icon: "🌾", name: "Agriculture & Tobacco", desc: "Dominate local agricultural SEO for Rangpur's tobacco, rice, and potato farming businesses." },
@@ -27,15 +27,11 @@ export default function RangpurClient() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/locations/rangpur" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Top SEO services in Rangpur, Bangladesh. Expert local SEO for shrimp exporters, industrial businesses, agriculture and more. Get found by customers today." />
-        <meta name="keywords" content="SEO services Rangpur, local SEO Rangpur, SEO expert Rangpur, shrimp export SEO, industrial SEO Bangladesh" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
           { name: "Rangpur", url: "https://kanokmiah.com.bd/locations/rangpur" },
         ])}
-        {OrganizationSchema()}
-        {LocalBusinessSchema()}
       </head>
 
       {/* === NAVBAR === */}

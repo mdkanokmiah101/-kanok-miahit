@@ -1,6 +1,6 @@
 import services from "../data";
 import ServicePageClient from "./ServicePageClient";
-import { BreadcrumbSchema } from "@/components/Schema";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
@@ -41,6 +41,7 @@ export default async function ServicePage({ params }) {
         { name: "Services", url: "https://kanokmiah.com.bd/services" },
         { name: svc?.title || slug, url: `https://kanokmiah.com.bd/services/${slug}` },
       ])}
+      {svc && ServiceSchema(svc)}
       <ServicePageClient slug={slug} />
     </>
   );

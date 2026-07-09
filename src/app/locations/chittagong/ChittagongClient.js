@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 const businessTypes = [
   { icon: "🚢", name: "Port & Shipping", desc: "SEO for Chittagong port businesses — attract global trade partners with optimized marine industry content." },
@@ -27,15 +27,11 @@ export default function ChittagongClient() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/locations/chittagong" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Top SEO services in Chittagong, Bangladesh. Expert SEO for port city businesses, import/export, logistics and more. Get found by local customers today." />
-        <meta name="keywords" content="SEO services Chittagong, local SEO Chittagong, SEO expert Chittagong, import export SEO, logistics SEO" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
           { name: "Chittagong", url: "https://kanokmiah.com.bd/locations/chittagong" },
         ])}
-        {OrganizationSchema()}
-        {LocalBusinessSchema()}
       </head>
 
       {/* === NAVBAR === */}

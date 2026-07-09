@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { FAQSchema } from "@/components/Schema";
 
 export default function ContactClient() {
   const [submitting, setSubmitting] = useState(false);
@@ -30,12 +30,6 @@ export default function ContactClient() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
-        <link rel="canonical" href="https://kanokmiah.com.bd/contact" />
-        <meta name="robots" content="index, follow" />
-        {BreadcrumbSchema([
-          { name: "Home", url: "https://kanokmiah.com.bd" },
-          { name: "Contact", url: "https://kanokmiah.com.bd/contact" },
-        ])}
       </head>
       {/* Navbar */}
       <Navbar />

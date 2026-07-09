@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 const barisalBusinesses = [
   { icon: "🌾", name: "Agriculture & Rice", desc: "Dominate local agricultural SEO for Barisal's rice farmers, traders, and agro-processing businesses." },
@@ -27,15 +27,11 @@ export default function BarisalClient() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/locations/barisal" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Top SEO services in Barisal, Bangladesh. Expert local SEO for shrimp exporters, industrial businesses, agriculture and more. Get found by customers today." />
-        <meta name="keywords" content="SEO services Barisal, local SEO Barisal, SEO expert Barisal, shrimp export SEO, industrial SEO Bangladesh" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
           { name: "Barisal", url: "https://kanokmiah.com.bd/locations/barisal" },
         ])}
-        {OrganizationSchema()}
-        {LocalBusinessSchema()}
       </head>
 
       {/* === NAVBAR === */}

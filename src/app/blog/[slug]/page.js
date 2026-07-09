@@ -6,8 +6,8 @@ import { notFound } from "next/navigation";
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
-  if (!post) return { title: "Blog Post Not Found — Md Kanok Miah" };
-  const fullTitle = `${post.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`;
+  if (!post) return { title: "Not Found" };
+  const fullTitle = post.title;
   return {
     title: fullTitle,
     description: post.excerpt || `${post.title} — SEO tips and guide by Md Kanok Miah.`,

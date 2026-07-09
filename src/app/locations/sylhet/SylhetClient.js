@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 const sylhetMarkets = [
   { icon: "🍽️", name: "Restaurants & Cafés", desc: "Dominate local restaurant searches in Sylhet — attract diners searching for the best food in town." },
@@ -27,15 +27,11 @@ export default function SylhetClient() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/locations/sylhet" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Best SEO services in Sylhet, Bangladesh. Local SEO expert for restaurants, hotels, overseas businesses, and more. Dominate Google Maps in Sylhet." />
-        <meta name="keywords" content="SEO services Sylhet, local SEO Sylhet, SEO expert Sylhet, hotel SEO Sylhet, restaurant SEO Sylhet, overseas business SEO" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
           { name: "Sylhet", url: "https://kanokmiah.com.bd/locations/sylhet" },
         ])}
-        {OrganizationSchema()}
-        {LocalBusinessSchema()}
       </head>
 
       {/* === NAVBAR === */}

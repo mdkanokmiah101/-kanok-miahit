@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { FAQSchema, ArticleSchema } from "@/components/Schema";
 import posts from "../data";
 import services from "@/app/services/data";
 import industries from "@/app/industries/data";
@@ -15,11 +14,6 @@ export default function BlogPostClient() {
 
   useEffect(() => {
     if (!post) return;
-    document.title = `${post.title} — Md Kanok Miah Blog`;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", post.excerpt);
-    }
     window.scrollTo(0, 0);
   }, [post]);
 
@@ -250,11 +244,7 @@ export default function BlogPostClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-        <link rel="canonical" href={`https://kanokmiah.com.bd/blog/${post.slug}`} />
-        <meta name="robots" content="index, follow" />
-        {ArticleSchema(post)}
-      </head>
+      
       {/* Navbar */}
       <Navbar />
 
@@ -439,12 +429,7 @@ export default function BlogPostClient() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <FAQSchema faqs={[
-            { question: "How often should I publish blog posts for SEO?", answer: "For best SEO results, publish high-quality blog posts at least 2–4 times per month. Consistency matters more than frequency — Google rewards websites that regularly publish fresh, valuable content that addresses user search intent." },
-            { question: "What topics should I write about?", answer: "Focus on topics your target audience is actively searching for. Conduct keyword research to identify questions and problems in your industry. Create content that provides comprehensive answers, guides, and insights that demonstrate expertise and authority." },
-            { question: "How long should blog posts be?", answer: "There is no ideal word count, but comprehensive content tends to rank better. For most topics, aim for 1,500–2,500 words. However, quality and relevance are far more important than length — a well-written 800-word post can outrank a poorly written 3,000-word post." },
-            { question: "How long does it take for posts to rank?", answer: "New blog posts typically take 3–6 months to start ranking on Google, depending on competition and domain authority. Older, established websites may see results faster. Consistent publishing and internal linking can accelerate this timeline." },
-          ]} />
+          
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>

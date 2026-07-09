@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 const neighborhoods = [
   { icon: "🏘️", name: "Mirpur", desc: "Rank your business in Mirpur's competitive local market with targeted neighborhood SEO." },
@@ -27,15 +27,11 @@ export default function DhakaClient() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/locations/dhaka" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Best SEO services in Dhaka, Bangladesh. Local SEO expert Md Kanok Miah helps businesses in Mirpur, Gulshan, Banani, Uttara, Dhanmondi & Motijheel rank higher on Google." />
-        <meta name="keywords" content="SEO services Dhaka, local SEO Dhaka, SEO expert Dhaka, Google Maps ranking Dhaka" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
           { name: "Dhaka", url: "https://kanokmiah.com.bd/locations/dhaka" },
         ])}
-        {OrganizationSchema()}
-        {LocalBusinessSchema()}
       </head>
 
       {/* === NAVBAR === */}

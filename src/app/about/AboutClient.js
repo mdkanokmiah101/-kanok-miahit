@@ -2,19 +2,13 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { FAQSchema } from "@/components/Schema";
 
 export default function AboutClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
-        <link rel="canonical" href="https://kanokmiah.com.bd/about" />
-        <meta name="robots" content="index, follow" />
-        {BreadcrumbSchema([
-          { name: "Home", url: "https://kanokmiah.com.bd" },
-          { name: "About", url: "https://kanokmiah.com.bd/about" },
-        ])}
       </head>
 
       {/* === NAVBAR === */}

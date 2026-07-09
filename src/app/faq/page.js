@@ -4,6 +4,18 @@ export const metadata = {
   title: "Frequently Asked Questions",
   description: "Frequently asked questions about SEO services in Bangladesh. Learn about Local SEO, Technical SEO, Link Building, GEO/AI Search and more from Md Kanok Miah.",
   alternates: { canonical: "/faq" },
+  openGraph: {
+    title: "Frequently Asked Questions about SEO — Md Kanok Miah",
+    description: "Get answers to common SEO questions for Bangladeshi businesses. Local SEO, Technical SEO, Link Building, GEO/AI Search explained by Md Kanok Miah.",
+    url: "https://kanokmiah.com.bd/faq",
+    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frequently Asked Questions — Md Kanok Miah",
+    description: "Get answers to common SEO questions for Bangladeshi businesses.",
+    images: ["/kanok-miah-profile.webp"],
+  },
 };
 
 export default function FaqPage() {

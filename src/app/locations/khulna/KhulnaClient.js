@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 const khulnaBusinesses = [
   { icon: "🦐", name: "Shrimp & Seafood Export", desc: "Dominate global seafood search results for Khulna-based shrimp and fish exporters targeting international buyers." },
@@ -27,15 +27,11 @@ export default function KhulnaClient() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/locations/khulna" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Top SEO services in Khulna, Bangladesh. Expert local SEO for shrimp exporters, industrial businesses, agriculture and more. Get found by customers today." />
-        <meta name="keywords" content="SEO services Khulna, local SEO Khulna, SEO expert Khulna, shrimp export SEO, industrial SEO Bangladesh" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
           { name: "Khulna", url: "https://kanokmiah.com.bd/locations/khulna" },
         ])}
-        {OrganizationSchema()}
-        {LocalBusinessSchema()}
       </head>
 
       {/* === NAVBAR === */}

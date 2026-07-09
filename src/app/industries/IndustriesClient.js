@@ -10,8 +10,6 @@ export default function IndustriesClient() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <head>
-        <link rel="canonical" href="https://kanokmiah.com.bd/industries" />
-        <meta name="robots" content="index, follow" />
       </head>
       {/* Navbar */}
       <Navbar />

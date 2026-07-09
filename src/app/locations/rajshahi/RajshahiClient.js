@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 const rajshahiBusinesses = [
   { icon: "🥭", name: "Mango & Agri Export", desc: "Dominate agricultural search results for Rajshahi's famous mango and crop exporters targeting local and international buyers." },
@@ -27,15 +27,11 @@ export default function RajshahiClient() {
       <head>
         <link rel="canonical" href="https://kanokmiah.com.bd/locations/rajshahi" />
         <meta name="robots" content="index, follow" />
-        <meta name="description" content="Best SEO services in Rajshahi, Bangladesh. Local SEO expert for mango exporters, educational institutions, retail businesses and more. Dominate Google Maps." />
-        <meta name="keywords" content="SEO services Rajshahi, local SEO Rajshahi, SEO expert Rajshahi, mango export SEO, education SEO Bangladesh" />
         {BreadcrumbSchema([
           { name: "Home", url: "https://kanokmiah.com.bd" },
           { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
           { name: "Rajshahi", url: "https://kanokmiah.com.bd/locations/rajshahi" },
         ])}
-        {OrganizationSchema()}
-        {LocalBusinessSchema()}
       </head>
 
       {/* === NAVBAR === */}

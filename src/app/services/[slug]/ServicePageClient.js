@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import services from "../data";
-import { BreadcrumbSchema, ServiceSchema, FAQSchema } from "@/components/Schema";
+import { FAQSchema } from "@/components/Schema";
 
 export default function ServicePageClient({ slug }) {
   const svc = services.find((s) => s.slug === slug);
@@ -34,12 +34,6 @@ export default function ServicePageClient({ slug }) {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-        <link rel="canonical" href={`https://kanokmiah.com.bd/services/${svc.slug}`} />
-        <meta name="robots" content="index, follow" />
-        {BreadcrumbSchema(breadcrumbItems)}
-        {ServiceSchema(svc)}
-      </head>
       <Navbar />
 
       <div className="pt-24 px-4 max-w-4xl mx-auto">

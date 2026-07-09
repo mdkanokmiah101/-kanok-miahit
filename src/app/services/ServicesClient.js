@@ -18,8 +18,6 @@ export default function ServicesClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-      </head>
       <Navbar />
 
       {/* Hero */}

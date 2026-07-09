@@ -13,7 +13,7 @@ const nextConfig = {
       {
         source: '/(.*)',
         headers: [
-          { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=60, must-revalidate, no-transform' },
+          { key: 'Cache-Control', value: 'private, no-cache, no-store, must-revalidate, max-age=0, s-maxage=0' },
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
           { key: 'X-Content-Type-Options', value: 'nosniff' },

@@ -24,15 +24,13 @@ export default function RajshahiClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-        <link rel="canonical" href="https://kanokmiah.com.bd/locations/rajshahi" />
-        <meta name="robots" content="index, follow" />
-        {BreadcrumbSchema([
-          { name: "Home", url: "https://kanokmiah.com.bd" },
-          { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
-          { name: "Rajshahi", url: "https://kanokmiah.com.bd/locations/rajshahi" },
-        ])}
-      </head>
+      <link rel="canonical" href="https://kanokmiah.com.bd/locations/rajshahi" />
+      <meta name="robots" content="index, follow" />
+      {BreadcrumbSchema([
+        { name: "Home", url: "https://kanokmiah.com.bd" },
+        { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
+        { name: "Rajshahi", url: "https://kanokmiah.com.bd/locations/rajshahi" },
+      ])}
 
       {/* === NAVBAR === */}
       <Navbar />

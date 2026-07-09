@@ -83,9 +83,7 @@ export default function PortfolioClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-        {BreadcrumbSchema(breadcrumbItems)}
-      </head>
+      {BreadcrumbSchema(breadcrumbItems)}
       {/* === NAVBAR === */}
       <Navbar />
 

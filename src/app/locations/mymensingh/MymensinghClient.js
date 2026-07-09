@@ -24,15 +24,13 @@ export default function MymensinghClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-        <link rel="canonical" href="https://kanokmiah.com.bd/locations/mymensingh" />
-        <meta name="robots" content="index, follow" />
-        {BreadcrumbSchema([
-          { name: "Home", url: "https://kanokmiah.com.bd" },
-          { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
-          { name: "Mymensingh", url: "https://kanokmiah.com.bd/locations/mymensingh" },
-        ])}
-      </head>
+      <link rel="canonical" href="https://kanokmiah.com.bd/locations/mymensingh" />
+      <meta name="robots" content="index, follow" />
+      {BreadcrumbSchema([
+        { name: "Home", url: "https://kanokmiah.com.bd" },
+        { name: "Locations", url: "https://kanokmiah.com.bd/locations" },
+        { name: "Mymensingh", url: "https://kanokmiah.com.bd/locations/mymensingh" },
+      ])}
 
       {/* === NAVBAR === */}
       <Navbar />

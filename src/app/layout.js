@@ -16,8 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Fully static — all content is pre-built at deploy time.
-// Cache-Control (s-maxage=60, must-revalidate) is set via next.config.mjs headers.
+// Dynamic rendering removed — static generation enabled for full metadata support
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
   alternates: {
@@ -188,7 +187,7 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
         <meta name="msvalidate.01" content="A10B9573E2B9D84E27B9BCE37CCB8B28" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-09-v2" />
+        <meta name="deploy-version" content="2026-07-09-v3" />
         {/* JSON-LD Structured Data — all 4 schemas render on every page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

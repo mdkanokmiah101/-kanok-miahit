@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { FAQSchema } from "@/components/Schema";
+// FAQSchema rendered server-side in page.js — not duplicated here
 
 export default function ContactClient() {
   const [submitting, setSubmitting] = useState(false);
@@ -29,8 +29,6 @@ export default function ContactClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-      </head>
       {/* Navbar */}
       <Navbar />
 
@@ -169,13 +167,7 @@ export default function ContactClient() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <FAQSchema faqs={[
-            { question: "How quickly do you respond?", answer: "I typically respond to all inquiries within 24 hours. For urgent matters, WhatsApp messages are usually answered within a few hours. I value your time and make prompt communication a priority." },
-            { question: "Do you offer free SEO audit?", answer: "Yes! I offer a completely free SEO audit worth BDT 5,000. I'll analyze your website's technical health, on-page optimization, current rankings, and provide a roadmap of opportunities — with no obligation to proceed." },
-            { question: "What information do you need to start?", answer: "To get started, I need your website URL, a brief overview of your business goals, target keywords if you have them, and access to your Google Search Console and Analytics accounts if available. Everything else I can gather during the audit." },
-            { question: "Can you work with my existing website?", answer: "Absolutely. I can optimize any existing website regardless of its current state — from sites with no SEO foundation to those already ranking but needing improvement. I work with all platforms including WordPress, Shopify, Wix, and custom-built sites." },
-            { question: "What payment methods do you accept?", answer: "I accept multiple payment methods including bank transfer (within Bangladesh), bKash, Nagad, and international payments via PayPal. Payment terms are discussed and agreed upon before any work begins." },
-          ]} />
+          {/* FAQ schema rendered server-side in page.js */}
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>

@@ -2,15 +2,13 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { FAQSchema } from "@/components/Schema";
+// FAQSchema + BreadcrumbSchema rendered server-side in page.js — not duplicated here
 import industries from "./data";
 
 export default function IndustriesClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-      </head>
       {/* Navbar */}
       <Navbar />
 
@@ -52,12 +50,7 @@ export default function IndustriesClient() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <FAQSchema faqs={[
-            { question: "Which industries do you specialize in?", answer: "I specialize in SEO for a wide range of industries including real estate, e-commerce, healthcare, education, hospitality, local services, and manufacturing. Each industry strategy is tailored to its unique competitive landscape and customer search behaviour." },
-            { question: "How is SEO different for each industry?", answer: "Every industry has unique search patterns, customer journeys, and competitive dynamics. For example, e-commerce SEO focuses on product optimization and category structure, while local service SEO emphasizes Google Business Profile and local citations. I create customized strategies for each sector." },
-            { question: "Do you work with B2B companies?", answer: "Absolutely. B2B SEO focuses on informational content, long-form guides, and lead generation through thought leadership. I tailor my approach based on your business model, whether B2B, B2C, or both." },
-            { question: "Can you help my industry rank higher?", answer: "Yes, regardless of your industry, I can help you achieve higher rankings. I start with a thorough analysis of your industry's competitive landscape, identify untapped keyword opportunities, and implement proven SEO strategies that drive measurable results." },
-          ]} />
+          {/* FAQSchema rendered server-side in page.js */}
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>

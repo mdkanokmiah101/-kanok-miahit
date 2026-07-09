@@ -169,6 +169,7 @@ export function PersonSchema() {
       "https://www.pinterest.com/mdkanokmiah",
       "https://www.instagram.com/kanokmiahbd",
       "https://www.tiktok.com/@kanokmiahbd",
+      "https://wa.me/8801712883101",
     ],
     jobTitle: "SEO Expert & Digital Marketing Specialist",
     worksFor: {

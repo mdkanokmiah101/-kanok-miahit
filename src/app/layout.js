@@ -1,11 +1,10 @@
 /**
  * Md Kanok Miah — SEO Expert in Dhaka, Bangladesh
  * Built with Next.js 16
- * Last deployed: 2026-07-09 (SEO audit fixes — schemas via next/script for SSR)
+ * Last deployed: 2026-07-09 (SEO audit fixes — inline JSON-LD as template literals)
  */
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -71,10 +70,6 @@ export const metadata = {
     icon: [{ url: "/favicon.ico", sizes: "32x32", type: "image/png" }],
     apple: "/icon-192.png",
   },
-  other: {
-    "google-site-verification": "etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM",
-    "msvalidate.01": "",
-  },
 };
 
 export default function RootLayout({ children }) {
@@ -84,19 +79,31 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* JSON-LD Structured Data — next/script with beforeInteractive renders during SSR */}
-        <Script id="schema-organization" type="application/ld+json" strategy="beforeInteractive">
-          {`{"@context":"https://schema.org","@type":"Organization","name":"Md Kanok Miah","url":"https://kanokmiah.com.bd","logo":"https://kanokmiah.com.bd/favicon.ico","description":"Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, semantic SEO, and GEO optimization.","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"contactPoint":{"@type":"ContactPoint","telephone":"+880-1712-883101","contactType":"customer service","availableLanguage":["English","Bengali"]},"sameAs":["https://kanokmiah.com","https://www.facebook.com/mdkanokmiahweb","https://bd.linkedin.com/in/kanok-miah","https://www.youtube.com/@kanokmiah","https://www.pinterest.com/mdkanokmiah","https://www.instagram.com/kanokmiahbd","https://www.tiktok.com/@kanokmiahbd","https://wa.me/8801712883101"],"foundingDate":"2020","knowsAbout":["Search Engine Optimization","Local SEO","Technical SEO","Link Building","Semantic SEO","GEO / AI Search Optimization","E-commerce SEO","Content Marketing","Google Business Profile Optimization","Generative Engine Optimization"]}`}
-        </Script>
-        <Script id="schema-localbusiness" type="application/ld+json" strategy="beforeInteractive">
-          {`{"@context":"https://schema.org","@type":"LocalBusiness","name":"Md Kanok Miah \u2014 SEO Expert","url":"https://kanokmiah.com.bd","telephone":"+880-1712-883101","email":"mdkanokmiah232@gmail.com","description":"Best SEO expert in Dhaka, Bangladesh. Specializing in Local SEO, Technical SEO, Link Building, and GEO optimization.","image":"https://kanokmiah.com.bd/kanok-miah-profile.webp","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"geo":{"@type":"GeoCoordinates","latitude":"23.8103","longitude":"90.4125"},"priceRange":"$$","areaServed":["Dhaka","Mirpur","Gulshan","Banani","Uttara","Dhanmondi","Chittagong","Sylhet","Bangladesh"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","bestRating":"5","ratingCount":"50"}}`}
-        </Script>
-        <Script id="schema-website" type="application/ld+json" strategy="beforeInteractive">
-          {`{"@context":"https://schema.org","@type":"WebSite","name":"Md Kanok Miah","url":"https://kanokmiah.com.bd","description":"Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.","inLanguage":["en","bn"],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://kanokmiah.com.bd/blog?q={search_term_string}"},"query-input":"required name=search_term_string"}}`}
-        </Script>
-        <Script id="schema-person" type="application/ld+json" strategy="beforeInteractive">
-          {`{"@context":"https://schema.org","@type":"Person","name":"Md Kanok Miah","alternateName":"Kanok Miah","givenName":"Kanok","familyName":"Miah","url":"https://kanokmiah.com.bd","sameAs":["https://kanokmiah.com","https://www.facebook.com/mdkanokmiahweb","https://bd.linkedin.com/in/kanok-miah","https://www.youtube.com/@kanokmiah","https://www.pinterest.com/mdkanokmiah","https://www.instagram.com/kanokmiahbd","https://www.tiktok.com/@kanokmiahbd"],"jobTitle":"SEO Expert & Digital Marketing Specialist","worksFor":{"@type":"Organization","name":"Md Kanok Miah"},"description":"Best SEO expert in Dhaka, Bangladesh with 6+ years of experience. Specializing in local SEO, technical SEO, link building, and GEO optimization."`}
-        </Script>
+        {/* JSON-LD Schemas — raw template literal strings avoid JSX brace issues */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: '{"@context":"https://schema.org","@type":"Organization","name":"Md Kanok Miah","url":"https://kanokmiah.com.bd","logo":"https://kanokmiah.com.bd/favicon.ico","description":"Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, semantic SEO, and GEO optimization.","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"contactPoint":{"@type":"ContactPoint","telephone":"+880-1712-883101","contactType":"customer service","availableLanguage":["English","Bengali"]},"sameAs":["https://kanokmiah.com","https://www.facebook.com/mdkanokmiahweb","https://bd.linkedin.com/in/kanok-miah","https://www.youtube.com/@kanokmiah","https://www.pinterest.com/mdkanokmiah","https://www.instagram.com/kanokmiahbd","https://www.tiktok.com/@kanokmiahbd","https://wa.me/8801712883101"],"foundingDate":"2020","knowsAbout":["Search Engine Optimization","Local SEO","Technical SEO","Link Building","Semantic SEO","GEO / AI Search Optimization","E-commerce SEO","Content Marketing","Google Business Profile Optimization","Generative Engine Optimization"]}'
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: '{"@context":"https://schema.org","@type":"LocalBusiness","name":"Md Kanok Miah \u2014 SEO Expert","url":"https://kanokmiah.com.bd","telephone":"+880-1712-883101","email":"mdkanokmiah232@gmail.com","description":"Best SEO expert in Dhaka, Bangladesh. Specializing in Local SEO, Technical SEO, Link Building, and GEO optimization.","image":"https://kanokmiah.com.bd/kanok-miah-profile.webp","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"geo":{"@type":"GeoCoordinates","latitude":"23.8103","longitude":"90.4125"},"priceRange":"$$","areaServed":["Dhaka","Mirpur","Gulshan","Banani","Uttara","Dhanmondi","Chittagong","Sylhet","Bangladesh"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","bestRating":"5","ratingCount":"50"}}'
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: '{"@context":"https://schema.org","@type":"WebSite","name":"Md Kanok Miah","url":"https://kanokmiah.com.bd","description":"Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.","inLanguage":["en","bn"],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://kanokmiah.com.bd/blog?q={search_term_string}"},"query-input":"required name=search_term_string"}}'
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: '{"@context":"https://schema.org","@type":"Person","name":"Md Kanok Miah","alternateName":"Kanok Miah","givenName":"Kanok","familyName":"Miah","url":"https://kanokmiah.com.bd","sameAs":["https://kanokmiah.com","https://www.facebook.com/mdkanokmiahweb","https://bd.linkedin.com/in/kanok-miah","https://www.youtube.com/@kanokmiah","https://www.pinterest.com/mdkanokmiah","https://www.instagram.com/kanokmiahbd","https://www.tiktok.com/@kanokmiahbd"],"jobTitle":"SEO Expert & Digital Marketing Specialist","worksFor":{"@type":"Organization","name":"Md Kanok Miah"},"description":"Best SEO expert in Dhaka, Bangladesh with 6+ years of experience. Specializing in local SEO, technical SEO, link building, and GEO optimization."}'
+          }}
+        />
         {children}
       </body>
     </html>

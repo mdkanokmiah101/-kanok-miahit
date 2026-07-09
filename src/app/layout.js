@@ -197,15 +197,15 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+        {/* Force og:image for all pages (critical for client-component pages like homepage) */}
+        <meta property="og:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:image:alt" content="Md Kanok Miah — Best SEO Expert in Dhaka, Bangladesh" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-09-v12-audit-fix" />
+        <meta name="deploy-version" content="2026-07-09-v13-schema-ogfix" />
       </head>
       <body className="min-h-full flex flex-col">
-        {/* JSON-LD Structured Data — in <body> so Next.js 16 renders them as real <script> tags */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
         {children}
       </body>
     </html>

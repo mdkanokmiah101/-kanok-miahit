@@ -96,9 +96,9 @@ export function LocalBusinessSchema() {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5.0",
+      ratingValue: "4.9",
       bestRating: "5",
-      ratingCount: "108",
+      ratingCount: "50",
     },
   };
   return (
@@ -117,7 +117,7 @@ export function WebSiteSchema() {
     url: "https://kanokmiah.com.bd",
     description:
       "Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
-    inLanguage: ["en", "bn"],
+    inLanguage: ["en"],
     potentialAction: {
       "@type": "SearchAction",
       target: {

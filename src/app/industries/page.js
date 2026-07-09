@@ -1,5 +1,5 @@
 import IndustriesClient from "./IndustriesClient";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, CollectionPageSchema, FAQSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Industries",
@@ -34,6 +34,11 @@ export default function IndustriesPage() {
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Industries", url: "https://kanokmiah.com.bd/industries" },
       ])}
+      {CollectionPageSchema({
+        name: "Industries We Serve | Md Kanok Miah",
+        description: "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, and more.",
+        url: "https://kanokmiah.com.bd/industries",
+      })}
       {FAQSchema({ faqs: industriesFaqs })}
       <IndustriesClient />
     </>

@@ -26,11 +26,11 @@ export const metadata = {
     canonical: "https://kanokmiah.com.bd",
   },
   title: {
-    default: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah \u2014 #1 SEO Specialist",
-    template: "%s \u2014 Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    default: "Best SEO Expert in Dhaka | Md Kanok Miah \u2014 #1 Specialist",
+    template: "%s \u2014 Md Kanok Miah | SEO Expert Dhaka",
   },
   description:
-    "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist with 6+ years of experience. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO \u2014 Dhaka, Bangladesh.",
+    "Best SEO expert in Dhaka, Bangladesh \u2014 Md Kanok Miah. 6+ years experience in Local SEO, Technical SEO, Link Building, and GEO. Get higher rankings and qualified leads.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",
@@ -52,15 +52,15 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Md Kanok Miah",
-    title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah \u2014 #1 SEO Specialist",
+    title: "Best SEO Expert in Dhaka | Md Kanok Miah \u2014 #1 SEO Specialist",
     description:
-      "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO \u2014 Dhaka, Bangladesh.",
+      "Best SEO expert in Dhaka, Bangladesh \u2014 Md Kanok Miah. 6+ years experience in Local SEO, Technical SEO, Link Building, and GEO. Get higher rankings.",
     url: "https://kanokmiah.com.bd",
     images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah \u2014 Best SEO Expert in Dhaka, Bangladesh" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah \u2014 #1 SEO Specialist",
+    title: "Best SEO Expert in Dhaka | Md Kanok Miah",
     description:
       "Looking for the best SEO expert in Dhaka? Md Kanok Miah helps businesses rank higher, grow faster, and dominate search.",
     images: ["/kanok-miah-profile.webp"],
@@ -193,8 +193,12 @@ export default function RootLayout({ children }) {
         <link rel="alternate" hrefLang="en" href="https://kanokmiah.com.bd" />
         <link rel="alternate" hrefLang="bn" href="https://kanokmiah.com.bd" />
         <link rel="alternate" hrefLang="x-default" href="https://kanokmiah.com.bd" />
+        {/* Apple Touch Icon for iOS bookmarks */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-09-v4-deep-recheck" />
+        <meta name="deploy-version" content="2026-07-09-v5-cdn-purge" />
         {/* JSON-LD Structured Data — all 4 schemas render on every page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

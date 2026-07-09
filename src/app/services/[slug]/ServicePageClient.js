@@ -50,31 +50,14 @@ export default function ServicePageClient({ slug }) {
         <div className="absolute top-1/3 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/3 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse delay-1000" />
         <div className="relative max-w-4xl mx-auto">
-          <div className="flex flex-wrap items-center gap-3 mb-6">
-            <div className="inline-flex items-center gap-2 bg-primary-light border border-primary/20 text-primary text-xs font-semibold px-5 py-2 rounded-full backdrop-blur-sm">
-              {svc.icon} {svc.title}
-            </div>
-            <span className="inline-flex items-center gap-1 bg-amber-50 border border-amber-200 text-amber-700 text-xs font-semibold px-4 py-2 rounded-full">
-              🕐 Last Updated: July 2026
-            </span>
+          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary text-xs font-semibold px-4 py-2 rounded-full mb-6">
+            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+            {svc.icon} {svc.title}
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-            {(function() {
-              const t = svc.title;
-              // Split SEO titles into 2 lines: "Local SEO" → "Local" / "SEO", "On-Page SEO" → "On-Page" / "SEO" etc.
-              const parts = t.match(/^(.+?)\s+(SEO|Building|Search|Optimization)$/i);
-              if (parts) {
-                return <><span className="text-primary">{parts[1]}</span><br/><span className="text-gray-900">{parts[2]}</span></>;
-              }
-              // Default: split at last space
-              const lastSpace = t.lastIndexOf(' ');
-              if (lastSpace > 0) {
-                return <><span className="text-primary">{t.substring(0, lastSpace)}</span><br/><span className="text-gray-900">{t.substring(lastSpace + 1)}</span></>;
-              }
-              return t;
-            })()}
+            <span className="text-primary">{svc.title}</span><br/>
+            <span className="text-gray-900">in Dhaka, Bangladesh</span>
           </h1>
-          {svc.subtitle && <p className="text-lg text-gray-500 mb-3 font-medium">{svc.subtitle}</p>}
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">{svc.desc}</p>
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-xs font-medium px-4 py-2 rounded-full">✅ Expert Reviewed</span>

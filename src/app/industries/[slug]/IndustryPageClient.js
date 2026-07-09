@@ -39,18 +39,8 @@ export default function IndustryPageClient({ slug }) {
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="text-6xl mb-6">{ind.icon}</div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
-            {(function() {
-              const t = ind.title;
-              const parts = t.match(/^(.+?)\s+(SEO|Services|Solutions|Marketing|Industry|Agency|Panel|Products)$/i);
-              if (parts) {
-                return <><span className="text-primary">{parts[1]}</span><br/><span className="text-gray-900">{parts[2]}</span></>;
-              }
-              const lastSpace = t.lastIndexOf(' ');
-              if (lastSpace > 0) {
-                return <><span className="text-primary">{t.substring(0, lastSpace)}</span><br/><span className="text-gray-900">{t.substring(lastSpace + 1)}</span></>;
-              }
-              return <span className="text-primary">{t}</span>;
-            })()}
+            <span className="text-primary">{ind.title}</span><br/>
+            <span className="text-gray-900">SEO Solutions in Dhaka, Bangladesh</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {ind.desc}

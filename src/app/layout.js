@@ -198,7 +198,7 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-09-v11-schemas-in-body" />
+        <meta name="deploy-version" content="2026-07-09-v12-audit-fix" />
       </head>
       <body className="min-h-full flex flex-col">
         {/* JSON-LD Structured Data — in <body> so Next.js 16 renders them as real <script> tags */}

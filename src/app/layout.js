@@ -189,8 +189,12 @@ export default function RootLayout({ children }) {
         {/* Search Console & Bing verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
         <meta name="msvalidate.01" content="A10B9573E2B9D84E27B9BCE37CCB8B28" />
+        {/* Hreflang for bilingual audience */}
+        <link rel="alternate" hrefLang="en" href="https://kanokmiah.com.bd" />
+        <link rel="alternate" hrefLang="bn" href="https://kanokmiah.com.bd" />
+        <link rel="alternate" hrefLang="x-default" href="https://kanokmiah.com.bd" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-09-v3" />
+        <meta name="deploy-version" content="2026-07-09-v4-deep-recheck" />
         {/* JSON-LD Structured Data — all 4 schemas render on every page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

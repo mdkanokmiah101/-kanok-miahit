@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Terms of Service",
@@ -23,7 +24,12 @@ export default function TermsOfServicePage() {
   const lastUpdated = "January 1, 2026";
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <>
+      {BreadcrumbSchema([
+        { name: "Home", url: "https://kanokmiah.com.bd" },
+        { name: "Terms of Service", url: "https://kanokmiah.com.bd/terms-of-service" },
+      ])}
+      <div className="min-h-screen bg-white text-gray-900">
       <Navbar />
       <main className="pt-32 pb-20 px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-2">Terms of Service</h1>
@@ -127,5 +133,6 @@ export default function TermsOfServicePage() {
       </main>
       <Footer />
     </div>
+    </>
   );
 }

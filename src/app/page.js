@@ -64,7 +64,7 @@ export default function Home() {
             ))}
             <Link href="/contact" className="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 transition-all">Free Audit</Link>
           </div>
-          <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-2xl text-gray-700">☰</button>
+          <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-2xl text-gray-700" aria-label="Toggle menu">☰</button>
         </div>
         {menuOpen && (
           <div className="md:hidden bg-white border-b border-gray-100 px-4 pb-5 flex flex-col gap-3 text-sm font-medium text-gray-600">

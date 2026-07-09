@@ -5,10 +5,10 @@ const nextConfig = {
       {
         source: '/(.*)',
         headers: [
-          // Hostinger hCDN aggressively overrides Cache-Control. Setting private
-          // + no-store is the strongest signal we can send from the application.
-          // The 'private' directive SHOULD prevent shared/CDN caching per HTTP spec.
-          { key: 'Cache-Control', value: 'private, no-cache, no-store, must-revalidate, max-age=0, s-maxage=0, proxy-revalidate' },
+          // Hostinger hCDN — the 'private' directive is meant to prevent shared caching,
+          // but Hostinger hCDN overrides it. Use public + short s-maxage so the CDN
+          // checks with the origin every 60s instead of caching the first response for 1 year.
+          { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=60, must-revalidate' },
           { key: 'Pragma', value: 'no-cache' },
           { key: 'Expires', value: '0' },
           { key: 'Vary', value: 'Accept-Encoding, Cookie, User-Agent' },

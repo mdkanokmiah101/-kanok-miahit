@@ -3,6 +3,10 @@ import BlogPostClient from "./BlogPostClient";
 import { BreadcrumbSchema, ArticleSchema, FAQSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
+export function generateStaticParams() {
+  return posts.map((post) => ({ slug: post.slug }));
+}
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);

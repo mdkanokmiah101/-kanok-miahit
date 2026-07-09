@@ -36,14 +36,6 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <head>
-        <link rel="canonical" href="https://kanokmiah.com.bd/blog" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="400" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kanokmiah.com.bd"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://kanokmiah.com.bd/blog"}]})}} />
-      </head>
       {/* Navbar */}
       <Navbar />
 

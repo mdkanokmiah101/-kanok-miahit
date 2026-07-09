@@ -1,11 +1,12 @@
 import posts from "../data";
 import BlogPostClient from "./BlogPostClient";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/Schema";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
-  if (!post) return {};
+  if (!post) return { title: "Blog Post Not Found — Md Kanok Miah" };
   const fullTitle = `${post.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`;
   return {
     title: fullTitle,
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }) {
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
+  if (!post) notFound();
   return (
     <>
       {BreadcrumbSchema([

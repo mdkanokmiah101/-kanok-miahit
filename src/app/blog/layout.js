@@ -1,3 +1,5 @@
+import { BreadcrumbSchema } from "@/components/Schema";
+
 export const metadata = {
   title: "SEO Blog | Bangladesh Digital Marketing Tips",
   description:
@@ -25,5 +27,13 @@ export const metadata = {
 };
 
 export default function BlogLayout({ children }) {
-  return <>{children}</>;
+  return (
+    <>
+      {BreadcrumbSchema([
+        { name: "Home", url: "https://kanokmiah.com.bd" },
+        { name: "Blog", url: "https://kanokmiah.com.bd/blog" },
+      ])}
+      {children}
+    </>
+  );
 }

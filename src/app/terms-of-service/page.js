@@ -4,6 +4,19 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Terms of Service",
   description: "Terms of Service for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh. Please read these terms carefully before using our services.",
+  alternates: { canonical: "/terms-of-service" },
+  openGraph: {
+    title: "Terms of Service",
+    description: "Terms of Service for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
+    url: "https://kanokmiah.com.bd/terms-of-service",
+    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service — Md Kanok Miah",
+    description: "Terms of Service for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
+    images: ["/kanok-miah-profile.webp"],
+  },
 };
 
 export default function TermsOfServicePage() {

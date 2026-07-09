@@ -1,6 +1,7 @@
 import services from "../data";
 import ServicePageClient from "./ServicePageClient";
 import { BreadcrumbSchema } from "@/components/Schema";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return services.map((svc) => ({ slug: svc.slug }));
@@ -9,7 +10,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const svc = services.find((s) => s.slug === slug);
-  if (!svc) return {};
+  if (!svc) return { title: "Service Not Found — Md Kanok Miah" };
   return {
     title: svc.title,
     description: svc.desc || svc.shortDesc,
@@ -32,6 +33,7 @@ export async function generateMetadata({ params }) {
 export default async function ServicePage({ params }) {
   const { slug } = await params;
   const svc = services.find((s) => s.slug === slug);
+  if (!svc) notFound();
   return (
     <>
       {BreadcrumbSchema([

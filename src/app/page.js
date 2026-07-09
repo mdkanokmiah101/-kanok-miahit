@@ -39,8 +39,18 @@ export default function Home() {
     { name: "Contact", path: "/contact" }
   ];
 
+  const faqs = [
+    { question: "How do I rank my business on Google Maps in Dhaka?", answer: "To rank your business on Google Maps in Dhaka, start by claiming and verifying your Google Business Profile with accurate NAP (Name, Address, Phone). Choose the most specific category for your business, add 20+ high-quality photos, collect genuine customer reviews, and post weekly updates. I also recommend building local citations on Bangladeshi directories like BD Yellow Pages and BdTradeInfo. Most Dhaka businesses see improved Google Maps visibility within 4-6 weeks of proper optimization." },
+    { question: "What is the best SEO strategy for a new website in Bangladesh?", answer: "For new websites in Bangladesh, the best strategy starts with technical SEO — ensure fast loading speeds, mobile responsiveness, and proper crawl setup. Then focus on keyword research targeting both Bengali and English search terms that your local customers use. Create high-quality content around these keywords, build a Google Business Profile, and start earning backlinks from Bangladeshi news sites and directories. Patience is key — most new sites take 3-6 months to see meaningful ranking improvements on Google Bangladesh." },
+    { question: "How long does SEO take to show results?", answer: "SEO typically takes 3-6 months to show meaningful results for most businesses in Bangladesh. However, you may start seeing initial improvements in rankings and traffic within 4-6 weeks for low-competition keywords. Factors that influence the timeline include your website's current state, competition level in your industry, keyword difficulty, content quality, and the aggressiveness of link building efforts. I set realistic expectations and provide monthly progress reports so you can see incremental improvements every step of the way." },
+    { question: "How much does SEO cost for small businesses?", answer: "SEO pricing for small businesses in Bangladesh varies based on competition and scope. Monthly retainers typically range from BDT 15,000 to BDT 50,000. A BDT 15,000-20,000 plan usually includes local SEO (Google Business Profile optimization, citation building) and basic on-page SEO. More comprehensive packages (BDT 30,000-50,000) include technical SEO, link building, content creation, and detailed monthly reporting. I offer a free initial audit to recommend the right plan for your budget and goals." },
+    { question: "What is the difference between GEO and traditional SEO?", answer: "GEO (Generative Engine Optimization) optimizes your content for AI-powered search engines like ChatGPT, Google AI Overviews, Gemini, and Perplexity. Traditional SEO focuses on keyword rankings and backlinks for Google's blue-link search results. GEO uses entity-based content, authoritative citations, and structured data to help AI models accurately extract and cite your information. For Bangladeshi businesses, GEO is emerging as a crucial forward-looking strategy — those who optimize for AI search now will have a significant competitive advantage as AI adoption accelerates." },
+    { question: "Can you help my Daraz store rank higher?", answer: "Absolutely. I optimize Daraz seller pages for both Daraz internal search and Google organic search. This includes optimizing product titles with high-volume keywords in Bengali and English, writing detailed unique product descriptions, optimizing images with descriptive alt text, and encouraging product reviews. I also work on off-page signals like backlinks to your Daraz store. Most Daraz sellers see significant ranking improvements and 50-100% organic traffic growth within 3 months of implementing these strategies." },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
+      {FAQSchema({ faqs })}
 
       {/* ===== NAVBAR ===== */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50">
@@ -330,13 +340,6 @@ export default function Home() {
       {/* ===== PEOPLE ALSO ASK ===== */}
       <section className="py-20 px-4 bg-gray-50/80">
         <div className="max-w-4xl mx-auto">
-          <FAQSchema faqs={[
-            { question: "How do I rank my business on Google Maps in Dhaka?", answer: "To rank your business on Google Maps in Dhaka, start by claiming and verifying your Google Business Profile with accurate NAP (Name, Address, Phone). Choose the most specific category for your business, add 20+ high-quality photos, collect genuine customer reviews, and post weekly updates. I also recommend building local citations on Bangladeshi directories like BD Yellow Pages and BdTradeInfo. Most Dhaka businesses see improved Google Maps visibility within 4-6 weeks of proper optimization." },
-            { question: "What is the best SEO strategy for a new website in Bangladesh?", answer: "For new websites in Bangladesh, the best strategy starts with technical SEO — ensure fast loading speeds, mobile responsiveness, and proper crawl setup. Then focus on keyword research targeting both Bengali and English search terms that your local customers use. Create high-quality content around these keywords, build a Google Business Profile, and start earning backlinks from Bangladeshi news sites and directories. Patience is key — most new sites take 3-6 months to see meaningful ranking improvements on Google Bangladesh." },
-            { question: "Can you help my Daraz store get more sales from Google?", answer: "Absolutely. I optimize Daraz seller pages for both Daraz internal search and Google organic search. This includes optimizing product titles with high-volume keywords in Bengali and English, writing detailed unique product descriptions, optimizing images with descriptive alt text, and encouraging product reviews. I also work on off-page signals like backlinks to your Daraz store. Most Daraz sellers see 50-100% organic traffic growth within 3 months of implementing these strategies." },
-            { question: "How much does SEO cost for small businesses in Bangladesh?", answer: "SEO pricing for small businesses in Bangladesh varies based on competition and scope. Monthly retainers typically range from BDT 15,000 to BDT 50,000. A BDT 15,000-20,000 plan usually includes local SEO (Google Business Profile optimization, citation building) and basic on-page SEO. More comprehensive packages (BDT 30,000-50,000) include technical SEO, link building, content creation, and detailed monthly reporting. I offer a free initial audit to recommend the right plan for your budget and goals." },
-            { question: "What is the difference between GEO and traditional SEO?", answer: "GEO (Generative Engine Optimization) optimizes your content for AI-powered search engines like ChatGPT, Google AI Overviews, Gemini, and Perplexity. Traditional SEO focuses on keyword rankings and backlinks for Google's blue-link search results. GEO uses entity-based content, authoritative citations, and structured data to help AI models accurately extract and cite your information. For Bangladeshi businesses, GEO is emerging as a crucial forward-looking strategy — those who optimize for AI search now will have a significant competitive advantage as growth accelerates." },
-          ]} />
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900">
               People Also Ask About <span className="text-primary">SEO in Bangladesh</span>
@@ -345,35 +348,14 @@ export default function Home() {
               Common questions business owners in Dhaka, Chittagong, and Sylhet ask about search engine optimization.
             </p>
           </div>
-          <div className="space-y-0 divide-y divide-gray-200 bg-white border border-gray-100 rounded-2xl p-4 md:p-6 shadow-sm">
-            {[
-              {
-                q: "How do I rank my business on Google Maps in Dhaka?",
-                a: "To rank your business on Google Maps in Dhaka, start by claiming and verifying your Google Business Profile with accurate NAP (Name, Address, Phone). Choose the most specific category for your business, add 20+ high-quality photos, collect genuine customer reviews, and post weekly updates. I also recommend building local citations on Bangladeshi directories like BD Yellow Pages and BdTradeInfo. Most Dhaka businesses see improved Google Maps visibility within 4-6 weeks of proper optimization."
-              },
-              {
-                q: "What is the best SEO strategy for a new website in Bangladesh?",
-                a: "For new websites in Bangladesh, the best strategy starts with technical SEO — ensure fast loading speeds, mobile responsiveness, and proper crawl setup. Then focus on keyword research targeting both Bengali and English search terms that your local customers use. Create high-quality content around these keywords, build a Google Business Profile, and start earning backlinks from Bangladeshi news sites and directories. Patience is key — most new sites take 3-6 months to see meaningful ranking improvements on Google Bangladesh."
-              },
-              {
-                q: "Can you help my Daraz store get more sales from Google?",
-                a: "Absolutely. I optimize Daraz seller pages for both Daraz internal search and Google organic search. This includes optimizing product titles with high-volume keywords in Bengali and English, writing detailed unique product descriptions, optimizing images with descriptive alt text, and encouraging product reviews. I also work on off-page signals like backlinks to your Daraz store. Most Daraz sellers see 50-100% organic traffic growth within 3 months of implementing these strategies."
-              },
-              {
-                q: "How much does SEO cost for small businesses in Bangladesh?",
-                a: "SEO pricing for small businesses in Bangladesh varies based on competition and scope. Monthly retainers typically range from BDT 15,000 to BDT 50,000. A BDT 15,000-20,000 plan usually includes local SEO (Google Business Profile optimization, citation building) and basic on-page SEO. More comprehensive packages (BDT 30,000-50,000) include technical SEO, link building, content creation, and detailed monthly reporting. I offer a free initial audit to recommend the right plan for your budget and goals."
-              },
-              {
-                q: "What is the difference between GEO and traditional SEO?",
-                a: "GEO (Generative Engine Optimization) optimizes your content for AI-powered search engines like ChatGPT, Google AI Overviews, Gemini, and Perplexity. Traditional SEO focuses on keyword rankings and backlinks for Google's blue-link search results. GEO uses entity-based content, authoritative citations, and structured data to help AI models accurately extract and cite your information. For Bangladeshi businesses, GEO is emerging as a crucial forward-looking strategy — those who optimize for AI search now will have a significant competitive advantage as growth accelerates."
-              },
-            ].map((item, i) => (
+          <div className="divide-y divide-gray-100 bg-white border border-gray-100 rounded-2xl p-4 md:p-6 shadow-sm">
+            {faqs.map((item, i) => (
               <details key={i} className="py-4 group">
-                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
-                  <span>{item.q}</span>
+                <summary className="flex justify-between items-center font-semibold text-gray-900 cursor-pointer list-none">
+                  <span>{item.question}</span>
                   <span className="text-primary transition-transform group-open:rotate-180 shrink-0 ml-4">▼</span>
                 </summary>
-                <p className="text-gray-600 mt-3 leading-relaxed pl-2">{item.a}</p>
+                <p className="text-gray-600 mt-3 pl-2 leading-relaxed">{item.answer}</p>
               </details>
             ))}
           </div>

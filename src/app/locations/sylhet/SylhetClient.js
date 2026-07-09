@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema } from "@/components/Schema";
+import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema, FAQSchema } from "@/components/Schema";
 
 const sylhetMarkets = [
   { icon: "🍽️", name: "Restaurants & Cafés", desc: "Dominate local restaurant searches in Sylhet — attract diners searching for the best food in town." },
@@ -114,6 +114,37 @@ export default function SylhetClient() {
                 <h3 className="font-bold text-lg mb-2 text-gray-900">{point.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{point.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === FAQ === */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FAQSchema faqs={[
+            { question: "Do you serve Sylhet businesses?", answer: "Absolutely. I provide full-service SEO for businesses in Sylhet — from restaurants and hotels to real estate agencies and e-commerce stores. I understand Sylhet's unique business landscape, including the strong overseas diaspora connection, and tailor strategies that work for both local and international audiences." },
+            { question: "How can Sylhet-based businesses rank nationally?", answer: "Sylhet businesses can rank nationally by targeting Bangladesh-wide keywords, creating high-quality content that appeals to a broader audience, building authoritative backlinks from national publications, and optimizing for both Bengali and English search queries. I help Sylhet businesses expand beyond local markets and compete on a national level." },
+            { question: "Do you understand the Sylhet market?", answer: "Yes, I have deep knowledge of Sylhet's distinctive business environment — including the significant overseas diaspora influence, the city's growing hospitality sector, the unique buying patterns of Sylheti consumers, and the competitive dynamics across local industries. This local insight helps me create more effective SEO strategies for Sylhet businesses." },
+            { question: "How do I contact you from Sylhet?", answer: "You can contact me easily through the contact form on this page, send me an email, or give me a call. I typically respond within 24 hours. For Sylhet businesses, I offer both remote consultations and, where feasible, in-person meetings to discuss your SEO needs face-to-face." },
+          ]} />
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "Do you serve Sylhet businesses?", answer: "Absolutely. I provide full-service SEO for businesses in Sylhet — from restaurants and hotels to real estate agencies and e-commerce stores. I understand Sylhet's unique business landscape, including the strong overseas diaspora connection, and tailor strategies that work for both local and international audiences." },
+              { question: "How can Sylhet-based businesses rank nationally?", answer: "Sylhet businesses can rank nationally by targeting Bangladesh-wide keywords, creating high-quality content that appeals to a broader audience, building authoritative backlinks from national publications, and optimizing for both Bengali and English search queries. I help Sylhet businesses expand beyond local markets and compete on a national level." },
+              { question: "Do you understand the Sylhet market?", answer: "Yes, I have deep knowledge of Sylhet's distinctive business environment — including the significant overseas diaspora influence, the city's growing hospitality sector, the unique buying patterns of Sylheti consumers, and the competitive dynamics across local industries. This local insight helps me create more effective SEO strategies for Sylhet businesses." },
+              { question: "How do I contact you from Sylhet?", answer: "You can contact me easily through the contact form on this page, send me an email, or give me a call. I typically respond within 24 hours. For Sylhet businesses, I offer both remote consultations and, where feasible, in-person meetings to discuss your SEO needs face-to-face." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
             ))}
           </div>
         </div>

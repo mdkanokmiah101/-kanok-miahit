@@ -119,6 +119,37 @@ export default function ChittagongClient() {
         </div>
       </section>
 
+      {/* === FAQ === */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FAQSchema faqs={[
+            { question: "What areas of Chittagong do you cover?", answer: "I cover all areas of Chittagong including Agrabad, Halishahar, Nasirabad, Panchlaish, Chandgaon, Patenga, EPZ, Khulshi, Kotwali, and all other commercial and residential neighborhoods. My localized SEO approach targets customers in specific Chittagong areas to maximize local visibility." },
+            { question: "How can Chittagong businesses benefit from SEO?", answer: "Chittagong businesses — especially in port, shipping, logistics, import/export, and manufacturing — can benefit tremendously from SEO by capturing high-intent B2B buyers searching for suppliers in Bangladesh. Local businesses like restaurants, hotels, and retailers also gain significant visibility through Google Maps optimization and local keyword targeting." },
+            { question: "Do you offer on-site consultation in Chittagong?", answer: "Yes, I offer both remote and on-site consultation for Chittagong businesses. While most of my SEO work is delivered remotely with regular progress updates, I am available for in-person meetings in Chittagong to discuss strategy, conduct on-site audits, and provide personalized recommendations." },
+            { question: "What is the first step for Chittagong businesses?", answer: "The first step is to get a free SEO audit. Contact me through this page, and I'll analyze your current online presence — website performance, Google Business Profile, competitor landscape, and keyword opportunities — then provide a clear roadmap tailored to your Chittagong business goals." },
+          ]} />
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "What areas of Chittagong do you cover?", answer: "I cover all areas of Chittagong including Agrabad, Halishahar, Nasirabad, Panchlaish, Chandgaon, Patenga, EPZ, Khulshi, Kotwali, and all other commercial and residential neighborhoods. My localized SEO approach targets customers in specific Chittagong areas to maximize local visibility." },
+              { question: "How can Chittagong businesses benefit from SEO?", answer: "Chittagong businesses — especially in port, shipping, logistics, import/export, and manufacturing — can benefit tremendously from SEO by capturing high-intent B2B buyers searching for suppliers in Bangladesh. Local businesses like restaurants, hotels, and retailers also gain significant visibility through Google Maps optimization and local keyword targeting." },
+              { question: "Do you offer on-site consultation in Chittagong?", answer: "Yes, I offer both remote and on-site consultation for Chittagong businesses. While most of my SEO work is delivered remotely with regular progress updates, I am available for in-person meetings in Chittagong to discuss strategy, conduct on-site audits, and provide personalized recommendations." },
+              { question: "What is the first step for Chittagong businesses?", answer: "The first step is to get a free SEO audit. Contact me through this page, and I'll analyze your current online presence — website performance, Google Business Profile, competitor landscape, and keyword opportunities — then provide a clear roadmap tailored to your Chittagong business goals." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* === CTA === */}
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />

@@ -1,6 +1,6 @@
 import industries from "../data";
 import IndustryPageClient from "./IndustryPageClient";
-import { BreadcrumbSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
@@ -31,6 +31,13 @@ export async function generateMetadata({ params }) {
   };
 }
 
+const industrySlugFaqs = [
+  { question: "How does SEO work for this industry?", answer: "SEO for each industry requires a tailored approach. I analyze industry-specific search patterns, competitor strategies, and customer intent to create a customized optimization plan that targets the right keywords and delivers qualified traffic." },
+  { question: "How long before I see results?", answer: "SEO results typically become visible within 3–6 months, depending on competition, current website state, and the aggressiveness of the strategy. Some improvements, like technical fixes, can show impact sooner — within 4–8 weeks." },
+  { question: "What makes your approach different?", answer: "My approach combines deep local Bangladesh market knowledge with global SEO best practices. I focus on data-driven strategies, transparent reporting, and long-term sustainable growth rather than quick fixes that risk penalties." },
+  { question: "Do you have case studies for this industry?", answer: "Yes, I have successfully worked with clients across various industries. Contact me to discuss case studies relevant to your specific industry. I'm happy to share examples of past results and client testimonials." },
+];
+
 export default async function IndustryPage({ params }) {
   const { slug } = await params;
   const ind = industries.find((i) => i.slug === slug);
@@ -42,6 +49,7 @@ export default async function IndustryPage({ params }) {
         { name: "Industries", url: "https://kanokmiah.com.bd/industries" },
         { name: ind?.title || slug, url: `https://kanokmiah.com.bd/industries/${slug}` },
       ])}
+      {FAQSchema({ faqs: industrySlugFaqs })}
       <IndustryPageClient slug={slug} />
     </>
   );

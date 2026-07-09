@@ -1,6 +1,6 @@
 import posts from "../data";
 import BlogPostClient from "./BlogPostClient";
-import { BreadcrumbSchema, ArticleSchema } from "@/components/Schema";
+import { BreadcrumbSchema, ArticleSchema, FAQSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -21,6 +21,13 @@ export async function generateMetadata({ params }) {
   };
 }
 
+const blogPostFaqs = [
+  { question: "How often should I publish blog posts for SEO?", answer: "For best SEO results, publish high-quality blog posts at least 2–4 times per month. Consistency matters more than frequency — Google rewards websites that regularly publish fresh, valuable content that addresses user search intent." },
+  { question: "What topics should I write about?", answer: "Focus on topics your target audience is actively searching for. Conduct keyword research to identify questions and problems in your industry. Create content that provides comprehensive answers, guides, and insights that demonstrate expertise and authority." },
+  { question: "How long should blog posts be?", answer: "There is no ideal word count, but comprehensive content tends to rank better. For most topics, aim for 1,500–2,500 words. However, quality and relevance are far more important than length — a well-written 800-word post can outrank a poorly written 3,000-word post." },
+  { question: "How long does it take for posts to rank?", answer: "New blog posts typically take 3–6 months to start ranking on Google, depending on competition and domain authority. Older, established websites may see results faster. Consistent publishing and internal linking can accelerate this timeline." },
+];
+
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
@@ -33,6 +40,7 @@ export default async function BlogPostPage({ params }) {
         { name: post?.title || slug, url: `https://kanokmiah.com.bd/blog/${slug}` },
       ])}
       {post && ArticleSchema(post)}
+      {FAQSchema({ faqs: blogPostFaqs })}
       <BlogPostClient />
     </>
   );

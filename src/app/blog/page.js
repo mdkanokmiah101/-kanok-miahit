@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import { FAQSchema } from "@/components/Schema";
 import posts from "./data";
 
 const categories = [
@@ -192,6 +193,37 @@ export default function BlogPage() {
                 ))}
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FAQSchema faqs={[
+            { question: "How often do you publish new blog posts?", answer: "I publish new blog posts regularly, typically 2–4 times per month. Each post is carefully researched and written to provide valuable SEO insights specifically for Bangladeshi businesses and website owners." },
+            { question: "Can I suggest a blog topic?", answer: "Absolutely! I welcome topic suggestions from readers. If there's an SEO topic you'd like me to cover, please contact me through the website and I'll consider it for a future post." },
+            { question: "Are the blog posts available in Bangla?", answer: "Currently, most blog posts are published in English. However, I'm planning to introduce Bangla-language content to better serve Bangladeshi business owners who prefer reading in their native language." },
+            { question: "Can I share your blog content?", answer: "Yes, you're welcome to share my blog posts on social media, with your colleagues, or on your website as long as you provide proper attribution and a link back to the original post." },
+          ]} />
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "How often do you publish new blog posts?", answer: "I publish new blog posts regularly, typically 2–4 times per month. Each post is carefully researched and written to provide valuable SEO insights specifically for Bangladeshi businesses and website owners." },
+              { question: "Can I suggest a blog topic?", answer: "Absolutely! I welcome topic suggestions from readers. If there's an SEO topic you'd like me to cover, please contact me through the website and I'll consider it for a future post." },
+              { question: "Are the blog posts available in Bangla?", answer: "Currently, most blog posts are published in English. However, I'm planning to introduce Bangla-language content to better serve Bangladeshi business owners who prefer reading in their native language." },
+              { question: "Can I share your blog content?", answer: "Yes, you're welcome to share my blog posts on social media, with your colleagues, or on your website as long as you provide proper attribution and a link back to the original post." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

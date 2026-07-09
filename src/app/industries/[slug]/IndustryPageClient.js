@@ -123,6 +123,31 @@ export default function IndustryPageClient({ slug }) {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "How does SEO work for this industry?", answer: "SEO for each industry requires a tailored approach. I analyze industry-specific search patterns, competitor strategies, and customer intent to create a customized optimization plan that targets the right keywords and delivers qualified traffic." },
+              { question: "How long before I see results?", answer: "SEO results typically become visible within 3–6 months, depending on competition, current website state, and the aggressiveness of the strategy. Some improvements, like technical fixes, can show impact sooner — within 4–8 weeks." },
+              { question: "What makes your approach different?", answer: "My approach combines deep local Bangladesh market knowledge with global SEO best practices. I focus on data-driven strategies, transparent reporting, and long-term sustainable growth rather than quick fixes that risk penalties." },
+              { question: "Do you have case studies for this industry?", answer: "Yes, I have successfully worked with clients across various industries. Contact me to discuss case studies relevant to your specific industry. I'm happy to share examples of past results and client testimonials." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />

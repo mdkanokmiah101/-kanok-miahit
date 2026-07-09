@@ -203,7 +203,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="400" />
         <meta property="og:image:alt" content="Md Kanok Miah — Best SEO Expert in Dhaka, Bangladesh" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-09-v13-schema-ogfix" />
+        <meta name="deploy-version" content="2026-07-09-v14-schema-fix" />
       </head>
       <body className="min-h-full flex flex-col">
         {children}

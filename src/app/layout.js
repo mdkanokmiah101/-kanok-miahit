@@ -198,7 +198,7 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-09-v8-schema-fix" />
+        <meta name="deploy-version" content="2026-07-09-v9-collection-fix" />
         {/* JSON-LD Structured Data — all 4 schemas render on every page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

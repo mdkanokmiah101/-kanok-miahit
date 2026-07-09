@@ -1,5 +1,5 @@
 import IndustriesClient from "./IndustriesClient";
-import { BreadcrumbSchema, CollectionPageSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Industries",
@@ -34,11 +34,18 @@ export default function IndustriesPage() {
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Industries", url: "https://kanokmiah.com.bd/industries" },
       ])}
-      {CollectionPageSchema({
-        name: "Industries We Serve | Md Kanok Miah",
-        description: "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, and more.",
-        url: "https://kanokmiah.com.bd/industries",
-      })}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Industries We Serve | Md Kanok Miah",
+        "description": "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, and more.",
+        "url": "https://kanokmiah.com.bd/industries",
+        "mainEntity": {
+          "@type": "Blog",
+          "name": "Md Kanok Miah Industries",
+          "description": "Industry-specific SEO solutions for Bangladeshi businesses."
+        }
+      })}} />
       {FAQSchema({ faqs: industriesFaqs })}
       <IndustriesClient />
     </>

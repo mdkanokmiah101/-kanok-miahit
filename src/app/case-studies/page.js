@@ -1,5 +1,5 @@
 import CaseStudiesClient from "./CaseStudiesClient";
-import { BreadcrumbSchema, CollectionPageSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Case Studies",
@@ -26,11 +26,18 @@ export default function CaseStudiesPage() {
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Case Studies", url: "https://kanokmiah.com.bd/case-studies" },
       ])}
-      {CollectionPageSchema({
-        name: "SEO Case Studies | Md Kanok Miah",
-        description: "Real SEO case studies showing how Bangladeshi businesses achieved first-page rankings.",
-        url: "https://kanokmiah.com.bd/case-studies",
-      })}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "SEO Case Studies | Md Kanok Miah",
+        "description": "Real SEO case studies showing how Bangladeshi businesses achieved first-page rankings.",
+        "url": "https://kanokmiah.com.bd/case-studies",
+        "mainEntity": {
+          "@type": "Blog",
+          "name": "Md Kanok Miah SEO Blog",
+          "description": "Real SEO case studies and results."
+        }
+      })}} />
       <CaseStudiesClient />
     </>
   );

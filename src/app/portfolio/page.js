@@ -1,5 +1,5 @@
 import PortfolioClient from "./PortfolioClient";
-import { BreadcrumbSchema, CollectionPageSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Portfolio",
@@ -26,11 +26,18 @@ export default function PortfolioPage() {
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Portfolio", url: "https://kanokmiah.com.bd/portfolio" },
       ])}
-      {CollectionPageSchema({
-        name: "SEO Portfolio | Md Kanok Miah",
-        description: "SEO portfolio showcasing 350+ projects and 50+ clients across Bangladesh.",
-        url: "https://kanokmiah.com.bd/portfolio",
-      })}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "SEO Portfolio | Md Kanok Miah",
+        "description": "SEO portfolio showcasing 350+ projects and 50+ clients across Bangladesh.",
+        "url": "https://kanokmiah.com.bd/portfolio",
+        "mainEntity": {
+          "@type": "Blog",
+          "name": "Md Kanok Miah SEO Portfolio",
+          "description": "SEO portfolio and case results."
+        }
+      })}} />
       <PortfolioClient />
     </>
   );

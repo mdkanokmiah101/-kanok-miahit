@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { FAQSchema } from "@/components/Schema";
 
 const caseStudies = [
   {
@@ -80,15 +80,10 @@ const caseStudies = [
 ];
 
 export default function CaseStudiesClient() {
-  const breadcrumbItems = [
-    { name: "Home", url: "https://kanokmiah.com.bd" },
-    { name: "Case Studies", url: "https://kanokmiah.com.bd/case-studies" },
-  ];
 
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {BreadcrumbSchema(breadcrumbItems)}
       {/* === NAVBAR === */}
       <Navbar />
 

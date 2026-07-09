@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { FAQSchema } from "@/components/Schema";
 
 const stats = [
   { number: "350+", label: "Projects Completed" },
@@ -75,15 +75,10 @@ const portfolioItems = [
 ];
 
 export default function PortfolioClient() {
-  const breadcrumbItems = [
-    { name: "Home", url: "https://kanokmiah.com.bd" },
-    { name: "Portfolio", url: "https://kanokmiah.com.bd/portfolio" },
-  ];
 
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {BreadcrumbSchema(breadcrumbItems)}
       {/* === NAVBAR === */}
       <Navbar />
 

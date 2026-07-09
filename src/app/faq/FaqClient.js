@@ -2,9 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-// Schema components (page-specific only; global schemas from root layout)
-
-import { FAQSchema, BreadcrumbSchema } from "@/components/Schema";
+// Schema components rendered server-side in page.js — not duplicated here
 
 const faqs = [
   {
@@ -60,16 +58,8 @@ const faqs = [
 ];
 
 export default function FAQPage() {
-  const breadcrumbItems = [
-    { name: "Home", url: "https://kanokmiah.com.bd" },
-    { name: "FAQ", url: "https://kanokmiah.com.bd/faq" },
-  ];
-
-
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <FAQSchema faqs={faqs} />
-      {BreadcrumbSchema(breadcrumbItems)}
       <Navbar />
 
       {/* === HERO === */}

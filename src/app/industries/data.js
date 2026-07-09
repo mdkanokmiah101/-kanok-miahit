@@ -64,7 +64,7 @@ const industries = [
     title: "SEO for Real Estate in Bangladesh",
     shortTitle: "Real Estate",
     icon: "🏢",
-    desc: "Real estate developers and property agents in Bangladesh need local visibility. We help rank for 'apartment in Dhaka', 'plot in Gulshan', and more.",
+    desc: "Real estate developers and property agents in Bangladesh need local visibility. Rankings for apartments and plots in Dhaka and beyond.",
     benefits: [
       "Rank for location-based keywords ('flat in Banani', 'land in Uttara')",
       "Generate qualified buyer inquiries through organic search",

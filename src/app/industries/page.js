@@ -3,7 +3,7 @@ import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Industries",
-  description: "Industry-specific SEO for Bangladesh \u2014 Garments, E-commerce, Real Estate, Healthcare, Education, Food & more. Tailored strategies from Md Kanok Miah.",
+  description: "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, Food and more. Expert strategies from Md Kanok Miah.",
   alternates: { canonical: "/industries" },
   openGraph: {
     title: "Industries",

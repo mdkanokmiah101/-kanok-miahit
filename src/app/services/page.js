@@ -4,7 +4,7 @@ import serviceData from "./data";
 
 export const metadata = {
   title: "SEO Services",
-  description: "Complete SEO solutions for Bangladesh — Local SEO, Technical SEO, Link Building, GEO/AI Search & E-commerce SEO. Free audit from Dhaka's top expert.",
+  description: "Complete SEO solutions for Bangladesh — Local SEO, Technical SEO, Link Building, GEO/AI Search and E-commerce SEO. Free audit from Dhaka, Bangladesh.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "SEO Services — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",

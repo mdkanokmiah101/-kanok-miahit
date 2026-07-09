@@ -1,5 +1,6 @@
 import industries from "../data";
 import IndustryPageClient from "./IndustryPageClient";
+import { BreadcrumbSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
@@ -34,5 +35,14 @@ export default async function IndustryPage({ params }) {
   const { slug } = await params;
   const ind = industries.find((i) => i.slug === slug);
   if (!ind) notFound();
-  return <IndustryPageClient slug={slug} />;
+  return (
+    <>
+      {BreadcrumbSchema([
+        { name: "Home", url: "https://kanokmiah.com.bd" },
+        { name: "Industries", url: "https://kanokmiah.com.bd/industries" },
+        { name: ind?.title || slug, url: `https://kanokmiah.com.bd/industries/${slug}` },
+      ])}
+      <IndustryPageClient slug={slug} />
+    </>
+  );
 }

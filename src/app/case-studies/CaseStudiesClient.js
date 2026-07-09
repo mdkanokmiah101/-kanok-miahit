@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 const caseStudies = [
   {
@@ -163,6 +163,35 @@ export default function CaseStudiesClient() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* === FAQ === */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FAQSchema faqs={[
+            { question: "What types of projects do you showcase?", answer: "I showcase real SEO campaigns I've executed for Bangladeshi businesses across various industries — including restaurant local SEO, e-commerce optimization, real estate keyword ranking, garments export B2B SEO, healthcare visibility, and education sector growth. Each case study includes the challenge, the exact strategy applied, and the measurable results achieved." },
+            { question: "Can I see before-and-after results?", answer: "Absolutely. Every case study on this page includes clear before-and-after metrics — keyword position improvements, organic traffic growth, conversion rate changes, and revenue impact. I believe in transparent, data-backed proof of my SEO work rather than vague claims." },
+            { question: "How do I get a case study for my business?", answer: "Getting your own case study is simple. Start with a free SEO audit where I analyze your current online presence. If we work together, I'll document the entire process — from baseline metrics to final results — and create a detailed case study showcasing your business's SEO transformation." },
+          ]} />
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "What types of projects do you showcase?", answer: "I showcase real SEO campaigns I've executed for Bangladeshi businesses across various industries — including restaurant local SEO, e-commerce optimization, real estate keyword ranking, garments export B2B SEO, healthcare visibility, and education sector growth. Each case study includes the challenge, the exact strategy applied, and the measurable results achieved." },
+              { question: "Can I see before-and-after results?", answer: "Absolutely. Every case study on this page includes clear before-and-after metrics — keyword position improvements, organic traffic growth, conversion rate changes, and revenue impact. I believe in transparent, data-backed proof of my SEO work rather than vague claims." },
+              { question: "How do I get a case study for my business?", answer: "Getting your own case study is simple. Start with a free SEO audit where I analyze your current online presence. If we work together, I'll document the entire process — from baseline metrics to final results — and create a detailed case study showcasing your business's SEO transformation." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -262,8 +262,8 @@ export function ArticleSchema(post) {
         url: "https://kanokmiah.com.bd/favicon.ico",
       },
     },
-    datePublished: post.date || new Date().toISOString(),
-    dateModified: new Date().toISOString(),
+    datePublished: post.date,
+    dateModified: post.date,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://kanokmiah.com.bd/blog/${post.slug}`,

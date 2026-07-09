@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema } from "@/components/Schema";
+import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema, FAQSchema } from "@/components/Schema";
 
 const businessTypes = [
   { icon: "🚢", name: "Port & Shipping", desc: "SEO for Chittagong port businesses — attract global trade partners with optimized marine industry content." },

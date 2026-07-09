@@ -1,4 +1,5 @@
 import IndustriesClient from "./IndustriesClient";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Industries We Serve",
@@ -20,5 +21,13 @@ export const metadata = {
 };
 
 export default function IndustriesPage() {
-  return <IndustriesClient />;
+  return (
+    <>
+      {BreadcrumbSchema([
+        { name: "Home", url: "https://kanokmiah.com.bd" },
+        { name: "Industries", url: "https://kanokmiah.com.bd/industries" },
+      ])}
+      <IndustriesClient />
+    </>
+  );
 }

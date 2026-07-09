@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema } from "@/components/Schema";
+import { BreadcrumbSchema, OrganizationSchema, LocalBusinessSchema, FAQSchema } from "@/components/Schema";
 
 const neighborhoods = [
   { icon: "🏘️", name: "Mirpur", desc: "Rank your business in Mirpur's competitive local market with targeted neighborhood SEO." },
@@ -114,6 +114,37 @@ export default function DhakaClient() {
                 <h3 className="font-bold text-lg mb-2 text-gray-900">{point.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{point.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === FAQ === */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FAQSchema faqs={[
+            { question: "What areas of Dhaka do you cover?", answer: "I provide SEO services across all major areas of Dhaka including Mirpur, Gulshan, Banani, Uttara, Dhanmondi, Motijheel, Old Dhaka, Mohammadpur, Bashundhara R/A, and all other neighborhoods in the capital. My hyperlocal SEO approach targets customers in your specific area to drive foot traffic and local leads." },
+            { question: "How is SEO different for Dhaka businesses?", answer: "SEO for Dhaka businesses requires understanding the unique local search landscape — mobile-first user behaviour, bilingual search queries (Bengali + English), intense competition in key sectors like restaurants and real estate, and the dominance of Google Maps for local discovery. I tailor strategies to these specific Dhaka market dynamics." },
+            { question: "Do you offer local Dhaka SEO services?", answer: "Yes, local SEO is my core specialty. I offer comprehensive local SEO services for Dhaka businesses including Google Business Profile optimization, local citation building, neighborhood-specific keyword targeting, review management, and local content creation — all designed to help you rank in Google Maps and local organic search." },
+            { question: "How do I get a free SEO audit in Dhaka?", answer: "Getting a free SEO audit is simple. Just contact me through the form on this page or visit my contact page. I'll analyze your current online presence — including your website, Google Business Profile, and local competition — and provide a detailed report with actionable recommendations tailored to your Dhaka business." },
+          ]} />
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "What areas of Dhaka do you cover?", answer: "I provide SEO services across all major areas of Dhaka including Mirpur, Gulshan, Banani, Uttara, Dhanmondi, Motijheel, Old Dhaka, Mohammadpur, Bashundhara R/A, and all other neighborhoods in the capital. My hyperlocal SEO approach targets customers in your specific area to drive foot traffic and local leads." },
+              { question: "How is SEO different for Dhaka businesses?", answer: "SEO for Dhaka businesses requires understanding the unique local search landscape — mobile-first user behaviour, bilingual search queries (Bengali + English), intense competition in key sectors like restaurants and real estate, and the dominance of Google Maps for local discovery. I tailor strategies to these specific Dhaka market dynamics." },
+              { question: "Do you offer local Dhaka SEO services?", answer: "Yes, local SEO is my core specialty. I offer comprehensive local SEO services for Dhaka businesses including Google Business Profile optimization, local citation building, neighborhood-specific keyword targeting, review management, and local content creation — all designed to help you rank in Google Maps and local organic search." },
+              { question: "How do I get a free SEO audit in Dhaka?", answer: "Getting a free SEO audit is simple. Just contact me through the form on this page or visit my contact page. I'll analyze your current online presence — including your website, Google Business Profile, and local competition — and provide a detailed report with actionable recommendations tailored to your Dhaka business." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
             ))}
           </div>
         </div>

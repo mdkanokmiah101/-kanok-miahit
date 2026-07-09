@@ -16,9 +16,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ISR: regenerate in background every hour — static delivery for resilience
-export const revalidate = 3600;
-
+// Fully static — all content is pre-built at deploy time.
+// Cache-Control (s-maxage=60, must-revalidate) is set via next.config.mjs headers.
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
   alternates: {

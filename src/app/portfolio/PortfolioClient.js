@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { BreadcrumbSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 const stats = [
   { number: "350+", label: "Projects Completed" },
@@ -174,6 +174,35 @@ export default function PortfolioClient() {
 
                 <p className="text-xs text-gray-500 mt-3 leading-relaxed">{item.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === FAQ === */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FAQSchema faqs={[
+            { question: "How many projects have you completed?", answer: "I have successfully delivered 350+ SEO projects for businesses across Bangladesh, spanning industries such as restaurants, e-commerce, real estate, garments & textiles, healthcare, education, and more. Each project is backed by measurable results and documented ROI." },
+            { question: "What industries do you have experience in?", answer: "I have hands-on SEO experience across a diverse range of industries including food & restaurant, e-commerce (Daraz & Shopify), real estate, garments & textile export, healthcare, education, hospitality, and local services. My approach is tailored to each industry's unique competitive landscape and customer search behaviour." },
+            { question: "How do I view more project details?", answer: "You can explore detailed case studies on my Case Studies page where I break down each project's challenge, the specific strategy applied, and the measurable results achieved. For a more in-depth discussion about how I can help your specific business, feel free to contact me directly for a free consultation." },
+          ]} />
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
+          <div className="space-y-0 divide-y divide-gray-100">
+            {[
+              { question: "How many projects have you completed?", answer: "I have successfully delivered 350+ SEO projects for businesses across Bangladesh, spanning industries such as restaurants, e-commerce, real estate, garments & textiles, healthcare, education, and more. Each project is backed by measurable results and documented ROI." },
+              { question: "What industries do you have experience in?", answer: "I have hands-on SEO experience across a diverse range of industries including food & restaurant, e-commerce (Daraz & Shopify), real estate, garments & textile export, healthcare, education, hospitality, and local services. My approach is tailored to each industry's unique competitive landscape and customer search behaviour." },
+              { question: "How do I view more project details?", answer: "You can explore detailed case studies on my Case Studies page where I break down each project's challenge, the specific strategy applied, and the measurable results achieved. For a more in-depth discussion about how I can help your specific business, feel free to contact me directly for a free consultation." },
+            ].map((f, i) => (
+              <details key={i} className="py-4 group">
+                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                  {f.question}
+                  <span className="text-primary transition-transform group-open:rotate-180">▼</span>
+                </summary>
+                <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
+              </details>
             ))}
           </div>
         </div>

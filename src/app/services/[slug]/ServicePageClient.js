@@ -1,5 +1,4 @@
 "use client";
-import { useEffect } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,14 +7,6 @@ import { BreadcrumbSchema, ServiceSchema, FAQSchema } from "@/components/Schema"
 
 export default function ServicePageClient({ slug }) {
   const svc = services.find((s) => s.slug === slug);
-
-  useEffect(() => {
-    if (svc) {
-      document.title = `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`;
-      const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) metaDesc.setAttribute("content", svc.desc || svc.shortDesc);
-    }
-  }, [svc]);
 
   if (!svc) {
     return (

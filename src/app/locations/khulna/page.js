@@ -2,8 +2,20 @@ import KhulnaClient from "./KhulnaClient";
 
 export const metadata = {
   title: "Local SEO Services in Khulna",
-  description: "Professional local SEO services in Khulna, Bangladesh. Rank your business on Google Maps and attract more customers in Khulna city.",
+  description: "Professional local SEO services in Khulna, Bangladesh. Rank your business on Google Maps and attract more customers in Khulna city with expert local SEO strategies.",
   alternates: { canonical: "/locations/khulna" },
+  openGraph: {
+    title: "Local SEO Services in Khulna — Md Kanok Miah",
+    description: "Professional local SEO services in Khulna, Bangladesh. Rank on Google Maps and attract more customers in Khulna city.",
+    url: "https://kanokmiah.com.bd/locations/khulna",
+    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Local SEO Services in Khulna — Md Kanok Miah",
+    description: "Professional local SEO services in Khulna, Bangladesh.",
+    images: ["/kanok-miah-profile.webp"],
+  },
 };
 
 export default function KhulnaPage() {

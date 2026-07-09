@@ -6,6 +6,9 @@ import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 // ISR: regenerate every hour so new blog posts appear automatically
 export const revalidate = 3600;
 
+// Using ISR instead of SSG to keep blog listings fresh
+// Cache is revalidated hourly; stale-while-revalidate for responsiveness
+
 export const metadata = {
   title: "SEO Blog",
   description:

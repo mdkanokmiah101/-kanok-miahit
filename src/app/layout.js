@@ -45,9 +45,9 @@ export const metadata = {
   authors: [{ name: "Md Kanok Miah" }],
   creator: "Md Kanok Miah",
   publisher: "Md Kanok Miah",
-  alternates: {
-    canonical: "/",
-  },
+  // Each page overrides alternates.canonical individually above the root level.
+  // Setting a default canonical to "/" here would override those page-level values
+  // in Next.js 16's metadata merging. We let pages declare their own canonical.
   openGraph: {
     type: "website",
     locale: "en_US",

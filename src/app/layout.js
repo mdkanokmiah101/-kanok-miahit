@@ -27,7 +27,7 @@ export const metadata = {
     template: "%s — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
   },
   description:
-    "Md Kanok Miah — top SEO expert in Dhaka, Bangladesh with 6+ years of experience. Get higher rankings, more traffic, and qualified leads with Local SEO, Technical SEO, Link Building, and GEO.",
+    "Md Kanok Miah — top SEO expert in Dhaka, Bangladesh. 6+ years experience. Higher rankings, more traffic, qualified leads. Local SEO, Technical SEO, Link Building, GEO.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",
@@ -54,7 +54,7 @@ export const metadata = {
     siteName: "Md Kanok Miah",
     title: "SEO Expert in Dhaka, Bangladesh | Md Kanok Miah",
     description:
-      "Md Kanok Miah — top SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
+      "Md Kanok Miah — top SEO expert in Dhaka, Bangladesh. Higher rankings, more traffic, qualified leads.",
     url: "https://kanokmiah.com.bd",
     images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },

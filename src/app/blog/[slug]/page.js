@@ -3,6 +3,14 @@ import BlogPostClient from "./BlogPostClient";
 import { BreadcrumbSchema, ArticleSchema, FAQSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
+function truncateMeta(str, maxLen = 155) {
+  if (!str) return "";
+  if (str.length <= maxLen) return str;
+  const truncated = str.slice(0, maxLen);
+  const lastSpace = truncated.lastIndexOf(" ");
+  return (lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated) + "…";
+}
+
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
@@ -12,13 +20,14 @@ export async function generateMetadata({ params }) {
   const post = posts.find((p) => p.slug === slug);
   if (!post) return { title: "Not Found" };
   const fullTitle = post.title;
+  const metaDesc = truncateMeta(post.excerpt || `${post.title} — SEO tips and guide by Md Kanok Miah.`);
   return {
     title: fullTitle,
-    description: post.excerpt || `${post.title} — SEO tips and guide by Md Kanok Miah.`,
+    description: metaDesc,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: fullTitle,
-      description: post.excerpt,
+      description: metaDesc,
       url: `https://kanokmiah.com.bd/blog/${post.slug}`,
       images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
     },

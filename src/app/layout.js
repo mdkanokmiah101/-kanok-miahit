@@ -30,7 +30,7 @@ export const metadata = {
     template: "%s \u2014 Md Kanok Miah | SEO Expert Dhaka",
   },
   description:
-    "Best SEO expert in Dhaka, Bangladesh \u2014 Md Kanok Miah. 6+ years experience in Local SEO, Technical SEO, Link Building, and GEO. Get higher rankings and qualified leads.",
+    "Best SEO expert in Dhaka \u2014 Md Kanok Miah. 6+ years in Local SEO, Technical SEO, Link Building & GEO. Get higher rankings and qualified leads.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",
@@ -85,7 +85,7 @@ const organizationSchema = {
   url: "https://kanokmiah.com.bd",
   logo: "https://kanokmiah.com.bd/favicon.ico",
   description: "Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, semantic SEO, and GEO optimization.",
-  address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "BD" },
+  address: { "@type": "PostalAddress", streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", addressCountry: "BD" },
   contactPoint: {
     "@type": "ContactPoint", telephone: "+880-1712-883101", contactType: "customer service",
     availableLanguage: ["English", "Bengali"],
@@ -118,7 +118,7 @@ const localBusinessSchema = {
   email: "mdkanokmiah232@gmail.com",
   description: "Best SEO expert in Dhaka, Bangladesh. Specializing in Local SEO, Technical SEO, Link Building, and GEO optimization.",
   image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
-  address: { "@type": "PostalAddress", addressLocality: "Dhaka", addressCountry: "BD" },
+  address: { "@type": "PostalAddress", streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", addressCountry: "BD" },
   geo: { "@type": "GeoCoordinates", latitude: "23.8103", longitude: "90.4125" },
   priceRange: "$$",
   openingHours: "Mo-Fr 09:00-18:00",
@@ -198,7 +198,7 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-09-v5-cdn-purge" />
+        <meta name="deploy-version" content="2026-07-09-v8-schema-fix" />
         {/* JSON-LD Structured Data — all 4 schemas render on every page */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />

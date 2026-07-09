@@ -11,6 +11,7 @@ export function OrganizationSchema() {
       "Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, semantic SEO, and GEO optimization.",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Mirpur, Dhaka",
       addressLocality: "Dhaka",
       addressCountry: "BD",
     },
@@ -69,6 +70,7 @@ export function LocalBusinessSchema() {
     image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Mirpur, Dhaka",
       addressLocality: "Dhaka",
       addressCountry: "BD",
     },

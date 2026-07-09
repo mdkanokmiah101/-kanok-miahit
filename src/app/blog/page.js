@@ -12,7 +12,7 @@ export const revalidate = 3600;
 export const metadata = {
   title: "SEO Blog",
   description:
-    "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, & more from Md Kanok Miah.",
+    "Expert SEO tips and guides for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, and GEO optimization from Md Kanok Miah.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "SEO Blog | Bangladesh Digital Marketing Tips",

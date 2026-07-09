@@ -2,7 +2,7 @@ import FaqClient from "./FaqClient";
 
 export const metadata = {
   title: "FAQ \u2014 SEO Questions Answered",
-  description: "Frequently asked questions about SEO services in Bangladesh. Learn about Local SEO, Technical SEO, Link Building, GEO/AI Search and more from Md Kanok Miah.",
+  description: "FAQ about SEO services in Bangladesh. Learn about Local SEO, Technical SEO, Link Building, GEO/AI Search and more from Md Kanok Miah.",
   alternates: { canonical: "/faq" },
   openGraph: {
     title: "FAQ \u2014 SEO Questions Answered",

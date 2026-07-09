@@ -4,7 +4,7 @@ const industries = [
     title: "SEO for Garments & Textile Industry in Bangladesh",
     shortTitle: "Garments & Textile",
     icon: "👕",
-    desc: "Bangladesh's RMG sector is the backbone of our economy. We help garment manufacturers, textile mills, and apparel exporters dominate Google search for international buyers and local B2B leads.",
+    desc: "Bangladesh's RMG sector is the backbone of our economy. We help garment manufacturers and textile mills dominate Google for international buyers.",
     benefits: [
       "Rank for high-value B2B keywords like 'readymade garments Bangladesh', 'textile mills in Bangladesh'",
       "Optimize for international buyer search intent (EU, US, UK markets)",
@@ -24,7 +24,7 @@ const industries = [
     title: "SEO for E-commerce Stores in Bangladesh",
     shortTitle: "E-commerce",
     icon: "🛒",
-    desc: "From Daraz sellers to Shopify stores — we optimize e-commerce websites to rank higher, drive organic traffic, and increase conversions for Bangladeshi online retailers.",
+    desc: "From Daraz sellers to Shopify stores — we optimize e-commerce sites to rank higher, drive traffic, and boost sales for Bangladeshi retailers.",
     benefits: [
       "Rank product pages for high-intent purchase keywords",
       "Fix crawl budget, duplicate content, and faceted navigation issues",
@@ -64,7 +64,7 @@ const industries = [
     title: "SEO for Real Estate in Bangladesh",
     shortTitle: "Real Estate",
     icon: "🏢",
-    desc: "Real estate developers, property agents, and housing companies in Bangladesh need local visibility. We help you rank for 'apartment in Dhaka', 'plot in Gulshan', and more.",
+    desc: "Real estate developers and property agents in Bangladesh need local visibility. We help rank for 'apartment in Dhaka', 'plot in Gulshan', and more.",
     benefits: [
       "Rank for location-based keywords ('flat in Banani', 'land in Uttara')",
       "Generate qualified buyer inquiries through organic search",
@@ -84,7 +84,7 @@ const industries = [
     title: "SEO for Cleaning Services in Bangladesh",
     shortTitle: "Cleaning Services",
     icon: "🧹",
-    desc: "Cleaning companies in Bangladesh need local customers searching for office cleaning, home deep cleaning, and industrial cleaning services. We make you found.",
+    desc: "Cleaning companies in Bangladesh need local customers looking for office cleaning, home deep cleaning, and industrial services. We make you found.",
     benefits: [
       "Rank for 'office cleaning service Dhaka', 'home deep cleaning Bangladesh'",
       "Dominate Google Maps for cleaning service keywords",
@@ -104,7 +104,7 @@ const industries = [
     title: "SEO for Spa, Salon & Beauty Parlours in Bangladesh",
     shortTitle: "Spa & Salon",
     icon: "💆",
-    desc: "Spas, salons, and beauty parlours in Dhaka rely on local search and Google Maps to get customers. We optimize your online presence to bring more foot traffic.",
+    desc: "Spas, salons, and beauty parlours in Dhaka rely on local search to get customers. We optimize your online presence to bring more foot traffic.",
     benefits: [
       "Rank for 'spa in Gulshan', 'beauty parlour in Dhanmondi', 'salon near me'",
       "Dominate Google Maps for beauty & wellness keywords",
@@ -124,7 +124,7 @@ const industries = [
     title: "SEO for Medical & Healthcare in Bangladesh",
     shortTitle: "Medical & Healthcare",
     icon: "🏥",
-    desc: "Hospitals, clinics, diagnostic centers, and doctors in Bangladesh need patients searching for healthcare services. We help you rank as the trusted medical choice.",
+    desc: "Hospitals, clinics, and diagnostic centers in Bangladesh need patients searching for healthcare. We help you rank as the trusted medical choice.",
     benefits: [
       "Rank for 'best hospital in Dhaka', 'diagnostic center near me'",
       "Generate patient inquiries through organic healthcare search",
@@ -144,7 +144,7 @@ const industries = [
     title: "SEO for Education & Training Institutes in Bangladesh",
     shortTitle: "Education",
     icon: "🎓",
-    desc: "Universities, coaching centers, training institutes, and online course providers in Bangladesh need students searching for educational programs. We get you found.",
+    desc: "Universities, coaching centers, and training institutes in Bangladesh need students searching for educational programs. We get you found.",
     benefits: [
       "Rank for admission-related keywords ('best university in Bangladesh', 'IELTS coaching Dhaka')",
       "Generate student inquiries through organic search",
@@ -164,7 +164,7 @@ const industries = [
     title: "SEO for Restaurants & Food Business in Bangladesh",
     shortTitle: "Food & Restaurant",
     icon: "🍽️",
-    desc: "Restaurants, cafes, and food delivery businesses in Dhaka need hungry customers searching for places to eat. We optimize your online presence to bring more diners.",
+    desc: "Restaurants, cafes, and food delivery in Dhaka need hungry customers searching for places to eat. We optimize your online presence to bring more diners.",
     benefits: [
       "Rank for 'best restaurant in Gulshan', 'cafe near me', 'restaurant in Dhanmondi'",
       "Dominate Google Maps for food & dining keywords",

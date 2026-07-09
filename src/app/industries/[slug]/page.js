@@ -3,6 +3,14 @@ import IndustryPageClient from "./IndustryPageClient";
 import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
+function truncateMeta(str, maxLen = 155) {
+  if (!str) return "";
+  if (str.length <= maxLen) return str;
+  const truncated = str.slice(0, maxLen);
+  const lastSpace = truncated.lastIndexOf(" ");
+  return (lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated) + "…";
+}
+
 export function generateStaticParams() {
   return industries.map((ind) => ({ slug: ind.slug }));
 }
@@ -11,13 +19,14 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const ind = industries.find((i) => i.slug === slug);
   if (!ind) return { title: "Industry Not Found — Md Kanok Miah" };
+  const metaDesc = truncateMeta(ind.desc);
   return {
     title: ind.title,
-    description: ind.desc,
+    description: metaDesc,
     alternates: { canonical: `/industries/${ind.slug}` },
     openGraph: {
       title: ind.title,
-      description: ind.desc,
+      description: metaDesc,
       url: `https://kanokmiah.com.bd/industries/${ind.slug}`,
       siteName: "Md Kanok Miah",
       images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
@@ -25,7 +34,7 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title: ind.title,
-      description: ind.desc,
+      description: metaDesc,
       images: ["/kanok-miah-profile.webp"],
     },
   };

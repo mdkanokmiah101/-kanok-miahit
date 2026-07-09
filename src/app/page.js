@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import { FAQSchema } from "@/components/Schema";
@@ -9,9 +9,7 @@ export default function Home() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    document.title = "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist";
-  }, []);
+  // Title is set server-side via metadata in layout.js — no client override needed
 
   const handleSubmit = async (e) => {
     e.preventDefault();

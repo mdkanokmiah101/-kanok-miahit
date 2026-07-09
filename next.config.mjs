@@ -6,6 +6,8 @@ const nextConfig = {
         source: '/',
         headers: [
           { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=0, must-revalidate, no-cache, no-store' },
+          { key: 'Vary', value: 'Accept-Encoding, Cookie' },
+          { key: 'Surrogate-Control', value: 'no-store' },
         ],
       },
       {

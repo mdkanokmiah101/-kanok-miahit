@@ -94,7 +94,7 @@ const webSiteSchema = {
   name: "Md Kanok Miah",
   url: "https://kanokmiah.com.bd",
   description: "Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
-  inLanguage: ["en", "bn"],
+  inLanguage: ["en"],
   potentialAction: {
     "@type": "SearchAction",
     target: { "@type": "EntryPoint", urlTemplate: "https://kanokmiah.com.bd/blog?q={search_term_string}" },
@@ -136,9 +136,8 @@ export default function RootLayout({ children }) {
         {/* Search Console & Bing verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
         <meta name="msvalidate.01" content="A10B9573E2B9D84E27B9BCE37CCB8B28" />
-        {/* Hreflang for bilingual audience */}
+        {/* Hreflang - only English content currently exists */}
         <link rel="alternate" hrefLang="en" href="https://kanokmiah.com.bd" />
-        <link rel="alternate" hrefLang="bn" href="https://kanokmiah.com.bd" />
         <link rel="alternate" hrefLang="x-default" href="https://kanokmiah.com.bd" />
         {/* Apple Touch Icon for iOS bookmarks */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

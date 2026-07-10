@@ -413,7 +413,7 @@ export default function HomeClient() {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Call Me Directly</h3>
                   <p className="text-gray-500 text-sm mb-1">Speak with Md Kanok Miah personally:</p>
-                  <a href="tel:+880****3101" className="text-xl font-extrabold text-primary hover:text-primary-dark">+880 1712-883101</a>
+                  <a href="tel:+8801712883101" className="text-xl font-extrabold text-primary hover:text-primary-dark">+880 1712-883101</a>
                 </div>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-md transition-all flex items-start gap-4">

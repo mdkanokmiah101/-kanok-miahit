@@ -21,11 +21,11 @@ export async function generateMetadata({ params }) {
   if (!ind) return { title: "Industry Not Found — Md Kanok Miah" };
   const metaDesc = truncateMeta(ind.desc);
   return {
-    title: `${ind.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+    title: `${ind.title}`,
     description: metaDesc,
     alternates: { canonical: `/industries/${ind.slug}` },
     openGraph: {
-      title: `${ind.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+      title: `${ind.title} — Md Kanok Miah | SEO Expert in Bangladesh`,
       description: metaDesc,
       url: `https://kanokmiah.com.bd/industries/${ind.slug}`,
       siteName: "Md Kanok Miah",
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${ind.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+      title: `${ind.title}`,
       description: metaDesc,
       images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
     },

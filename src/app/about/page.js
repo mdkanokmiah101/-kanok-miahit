@@ -4,7 +4,7 @@ import { BreadcrumbSchema, FAQSchema, AboutPageSchema } from "@/components/Schem
 export const metadata = {
   title: "About Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
   description: "Learn about Md Kanok Miah \u2014 Bangladesh's trusted SEO expert with 6+ years of experience helping Dhaka businesses rank higher on Google.",
-  alternates: { canonical: "/about" },
+  alternates: { canonical: "https://kanokmiah.com.bd/about" },
   openGraph: {
     title: "About Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
     description: "Learn about Md Kanok Miah — Bangladesh's trusted SEO expert with 6+ years of experience.",

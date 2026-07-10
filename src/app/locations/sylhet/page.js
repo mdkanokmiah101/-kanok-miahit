@@ -4,7 +4,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export const metadata = {
   title: "Local SEO Sylhet — Md Kanok Miah | SEO Expert Dhaka",
   description: "Professional local SEO services in Sylhet, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO.",
-  alternates: { canonical: "/locations/sylhet" },
+  alternates: { canonical: "https://kanokmiah.com.bd/locations/sylhet" },
   openGraph: {
     title: "Local SEO Sylhet — Md Kanok Miah | SEO Expert Dhaka",
     description: "Professional local SEO services in Sylhet, Bangladesh. Get found on Google Maps and attract more customers in Sylhet city.",

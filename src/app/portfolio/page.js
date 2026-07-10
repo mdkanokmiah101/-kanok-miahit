@@ -4,7 +4,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export const metadata = {
   title: "SEO Portfolio — Md Kanok Miah | 350+ Projects in Bangladesh",
   description: "View the SEO portfolio of Md Kanok Miah — 350+ projects completed, 50+ happy clients in Dhaka, Chittagong, Sylhet and across Bangladesh.",
-  alternates: { canonical: "/portfolio" },
+  alternates: { canonical: "https://kanokmiah.com.bd/portfolio" },
   openGraph: {
     title: "Portfolio — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "View the SEO portfolio of Md Kanok Miah — 350+ projects completed, 50+ happy clients across Bangladesh.",

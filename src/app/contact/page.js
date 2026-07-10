@@ -4,7 +4,7 @@ import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/Sch
 export const metadata = {
   title: "Contact Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
   description: "Contact Md Kanok Miah — the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business. Call +880 1712-883101 for a consultation.",
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "https://kanokmiah.com.bd/contact" },
   openGraph: {
     title: "Contact Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
     description: "Contact Md Kanok Miah — the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business. Call +880 1712-883101 for a consultation.",

@@ -4,7 +4,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export const metadata = {
   title: "Local SEO Mymensingh — Md Kanok Miah | SEO Expert Dhaka",
   description: "Professional local SEO services in Mymensingh, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO.",
-  alternates: { canonical: "/locations/mymensingh" },
+  alternates: { canonical: "https://kanokmiah.com.bd/locations/mymensingh" },
   openGraph: {
     title: "Local SEO Mymensingh — Md Kanok Miah | SEO Expert Dhaka",
     description: "Professional local SEO services in Mymensingh, Bangladesh. Get found on Google Maps and attract more customers in Mymensingh city.",

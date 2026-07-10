@@ -4,7 +4,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export const metadata = {
   title: "Local SEO Khulna — Md Kanok Miah | SEO Expert Dhaka",
   description: "Professional local SEO services in Khulna, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO.",
-  alternates: { canonical: "/locations/khulna" },
+  alternates: { canonical: "https://kanokmiah.com.bd/locations/khulna" },
   openGraph: {
     title: "Local SEO Khulna — Md Kanok Miah | SEO Expert Dhaka",
     description: "Professional local SEO services in Khulna, Bangladesh. Get found on Google Maps and attract more customers in Khulna city.",

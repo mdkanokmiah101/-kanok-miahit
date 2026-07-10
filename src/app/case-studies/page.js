@@ -4,7 +4,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export const metadata = {
   title: "SEO Case Studies — Md Kanok Miah | Local SEO Expert Dhaka",
   description: "Real SEO case studies from Bangladesh. See how Md Kanok Miah helped Dhaka restaurants, e-commerce stores, and local businesses rank higher on Google.",
-  alternates: { canonical: "/case-studies" },
+  alternates: { canonical: "https://kanokmiah.com.bd/case-studies" },
   openGraph: {
     title: "Case Studies — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Real SEO case studies from Bangladesh. See how local businesses rank higher on Google with proven strategies.",

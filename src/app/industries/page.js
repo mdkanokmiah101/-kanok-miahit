@@ -4,7 +4,7 @@ import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 export const metadata = {
   title: "SEO by Industry — Bangladesh | Md Kanok Miah | SEO Expert",
   description: "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, Food and more. Expert strategies from Md Kanok Miah.",
-  alternates: { canonical: "/industries" },
+  alternates: { canonical: "https://kanokmiah.com.bd/industries" },
   openGraph: {
     title: "Industries — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Industry-specific SEO for Bangladesh from Md Kanok Miah.",

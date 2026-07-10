@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, & more from Md Kanok Miah.",
   alternates: {
-    canonical: "/blog",
+    canonical: "https://kanokmiah.com.bd/blog",
   },
   openGraph: {
     type: "website",

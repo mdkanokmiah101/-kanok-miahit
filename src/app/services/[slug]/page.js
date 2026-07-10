@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${svc.title} Services in Bangladesh — Md Kanok Miah`,
     description: metaDesc,
-    alternates: { canonical: `/services/${svc.slug}` },
+    alternates: { canonical: `https://kanokmiah.com.bd/services/${svc.slug}` },
     openGraph: {
       title: `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,

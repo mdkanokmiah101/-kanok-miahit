@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  metadataBase: new URL('https://kanokmiah.com.bd'),
   async headers() {
     return [
       {

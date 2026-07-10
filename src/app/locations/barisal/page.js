@@ -4,7 +4,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export const metadata = {
   title: "Local SEO Barisal — Md Kanok Miah | SEO Expert Dhaka",
   description: "Professional local SEO services in Barisal, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO.",
-  alternates: { canonical: "/locations/barisal" },
+  alternates: { canonical: "https://kanokmiah.com.bd/locations/barisal" },
   openGraph: {
     title: "Local SEO Barisal — Md Kanok Miah | SEO Expert Dhaka",
     description: "Professional local SEO services in Barisal, Bangladesh. Get found on Google Maps and attract more customers in Barisal city.",

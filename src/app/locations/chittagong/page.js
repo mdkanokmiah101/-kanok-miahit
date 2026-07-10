@@ -4,7 +4,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export const metadata = {
   title: "Local SEO Chittagong — Md Kanok Miah | SEO Expert Dhaka",
   description: "Professional local SEO services in Chittagong, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO.",
-  alternates: { canonical: "/locations/chittagong" },
+  alternates: { canonical: "https://kanokmiah.com.bd/locations/chittagong" },
   openGraph: {
     title: "Local SEO Chittagong — Md Kanok Miah | SEO Expert Dhaka",
     description: "Professional local SEO services in Chittagong, Bangladesh. Get found on Google Maps and attract more customers in Chittagong port city.",

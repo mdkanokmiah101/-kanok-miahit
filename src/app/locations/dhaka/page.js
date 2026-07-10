@@ -4,7 +4,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 export const metadata = {
   title: "Local SEO Services in Dhaka — Md Kanok Miah | SEO Expert",
   description: "Local SEO services in Dhaka, Bangladesh. Rank your business on Google Maps in Mirpur, Gulshan, Banani, Uttara & all Dhaka areas with expert SEO.",
-  alternates: { canonical: "/locations/dhaka" },
+  alternates: { canonical: "https://kanokmiah.com.bd/locations/dhaka" },
   openGraph: {
     title: "Local SEO Dhaka — Md Kanok Miah | SEO Expert Dhaka",
     description: "Local SEO services in Dhaka, Bangladesh. Rank on Google Maps in Mirpur, Gulshan, Banani, Uttara & all Dhaka areas.",

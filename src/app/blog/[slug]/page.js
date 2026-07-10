@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
   return {
     title: fullTitle,
     description: metaDesc,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `https://kanokmiah.com.bd/blog/${post.slug}` },
     openGraph: {
       title: `${fullTitle} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,

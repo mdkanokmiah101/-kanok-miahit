@@ -3,9 +3,9 @@ import Footer from "@/components/Footer";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Privacy Policy — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+  title: "Privacy Policy — Md Kanok Miah — SEO Expert Dhaka",
   description: "Privacy Policy for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh. Learn how we collect, use, and protect your information.",
-  alternates: { canonical: "/privacy-policy" },
+  alternates: { canonical: "https://kanokmiah.com.bd/privacy-policy" },
   openGraph: {
     title: "Privacy Policy — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Privacy Policy for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",

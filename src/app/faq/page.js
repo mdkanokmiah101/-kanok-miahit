@@ -31,7 +31,7 @@ const faqData = [
 export const metadata = {
   title: "SEO FAQ — Common Questions Answered | Md Kanok Miah",
   description: "FAQ about SEO services in Bangladesh. Learn about Local SEO, Technical SEO, Link Building, GEO/AI Search and more from Md Kanok Miah.",
-  alternates: { canonical: "/faq" },
+  alternates: { canonical: "https://kanokmiah.com.bd/faq" },
   openGraph: {
     title: "SEO FAQ — Common Questions Answered | Md Kanok Miah",
     description: "Get answers to common SEO questions for Bangladeshi businesses. Local SEO, Technical SEO, Link Building, GEO/AI Search explained by Md Kanok Miah.",

@@ -24,7 +24,7 @@ export async function generateMetadata() {
   if (!svc) return { title: "Service Not Found — Md Kanok Miah" };
   const metaDesc = truncateMeta(svc.shortDesc);
   return {
-    title: `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+    title: svc.title,
     description: metaDesc,
     alternates: { canonical: `/services/${SLUG}` },
     openGraph: {

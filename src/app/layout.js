@@ -6,8 +6,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// ISR: CDN serves stale-while-revalidate, background refresh hourly
-export const revalidate = 3600;
+// ISR: revalidate every 60s for CDN freshness (middleware further limits s-maxage)
+export const revalidate = 60;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -157,7 +157,7 @@ export default function RootLayout({ children }) {
         {/* Robots fallback for pages without their own robots meta */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-10-v35-cdn-purge" />
+        <meta name="deploy-version" content="2026-07-10-v36-cdn-fix" />
       </head>
       <body className="min-h-full flex flex-col">
         {/* JSON-LD Structured Data — in <body> for Next.js SSR compatibility */}

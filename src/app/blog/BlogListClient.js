@@ -42,7 +42,7 @@ export default function BlogListClient() {
             SEO Insights for <span className="text-primary">Bangladesh</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            Expert SEO tips, guides, and strategies tailored for Bangladeshi businesses.
+            Expert SEO tips, guides, and strategies from the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link> — tailored for Bangladeshi businesses.
           </p>
         </div>
       </section>

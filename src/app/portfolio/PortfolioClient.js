@@ -95,7 +95,7 @@ export default function PortfolioClient() {
             My SEO <span className="text-primary">Portfolio</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A track record of measurable SEO success for Bangladeshi businesses. Every number below 
+            A track record of measurable SEO success from the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>. Every number below 
             represents a real campaign with real results — not vanity metrics.
           </p>
         </div>

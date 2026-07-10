@@ -32,7 +32,7 @@ export default function ServicesClient() {
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
             Complete SEO solutions tailored for Bangladeshi businesses — from local Dhaka SEO 
-            to international optimization. Every strategy is data-driven, transparent, and results-focused.
+            to international optimization. As a <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>, every strategy I create is data-driven, transparent, and results-focused.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5">

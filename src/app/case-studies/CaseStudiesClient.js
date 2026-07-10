@@ -100,7 +100,7 @@ export default function CaseStudiesClient() {
             SEO Case <span className="text-primary">Studies</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Real SEO campaigns for Bangladeshi businesses across industries — from local Dhaka restaurants to 
+            Real SEO campaigns by the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link> — from local Dhaka restaurants to 
             international garments exporters. Each case study shows the exact strategy, execution, and measurable results.
           </p>
         </div>

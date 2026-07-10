@@ -75,7 +75,7 @@ export default function FAQPage() {
             Frequently Asked <span className="text-primary">Questions</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Everything you need to know about SEO for your Bangladesh business — from local rankings to technical audits,
+            Everything you need to know about working with the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link> — from local rankings to technical audits,
             link building to generative engine optimization. Can&apos;t find your question? Reach out for a free consultation.
           </p>
         </div>

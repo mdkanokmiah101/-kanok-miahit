@@ -26,7 +26,7 @@ export default function AboutClient() {
             <span className="text-gray-900">Md Kanok Miah</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded in Dhaka, Bangladesh, Md Kanok Miah is a results-driven SEO expert who helps local businesses 
+            Founded in Dhaka, Bangladesh, Md Kanok Miah — <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link> — is a results-driven SEO professional who helps local businesses 
             dominate search engine rankings. Combining deep local market knowledge with global SEO best practices 
             to deliver measurable growth for Bangladeshi enterprises.
           </p>

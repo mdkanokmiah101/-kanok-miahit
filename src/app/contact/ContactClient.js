@@ -42,8 +42,7 @@ export default function ContactClient() {
             <span className="text-primary">Online Presence</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-            Ready to rank higher, attract more customers, and grow your business? 
-            Fill out the form or reach out directly — I&apos;ll get back to you within 24 hours.
+            Ready to work with the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>? Fill out the form or reach out directly — I&apos;ll get back to you within 24 hours.
           </p>
         </div>
       </section>

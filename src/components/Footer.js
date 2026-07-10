@@ -55,7 +55,6 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               {[
                 { name: "Home", path: "/" },
-                { name: "Best SEO Expert in Dhaka", path: "/" },
                 { name: "Services", path: "/services" },
                 { name: "Industries", path: "/industries" },
                 { name: "Blog", path: "/blog" },

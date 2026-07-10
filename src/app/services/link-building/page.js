@@ -28,21 +28,21 @@ export async function generateMetadata() {
     description: metaDesc,
     alternates: { canonical: `/services/${SLUG}` },
     openGraph: {
-      title: `${svc.title} — Md Kanok Miah`,
+      title: `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
       url: `https://kanokmiah.com.bd/services/${SLUG}`,
       images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${svc.title} — Md Kanok Miah`,
+      title: `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
       images: ["/kanok-miah-profile.webp"],
     },
   };
 }
 
-export default async function LinkBuildingPage() {
+export default function ServicePage() {
   const svc = services.find((s) => s.slug === SLUG);
   if (!svc) notFound();
   return (

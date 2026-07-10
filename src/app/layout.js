@@ -203,7 +203,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="400" />
         <meta property="og:image:alt" content="Md Kanok Miah — Best SEO Expert in Dhaka, Bangladesh" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-10-v16-title-fix" />
+        <meta name="deploy-version" content="2026-07-10-v17-og-title-branding-fix" />
       </head>
       <body className="min-h-full flex flex-col">
         {/* JSON-LD Structured Data — in <body> for Next.js SSR compatibility */}

@@ -26,10 +26,16 @@ export async function generateMetadata({ params }) {
     description: metaDesc,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: fullTitle,
+      title: `${fullTitle} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
       url: `https://kanokmiah.com.bd/blog/${post.slug}`,
       images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${fullTitle} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+      description: metaDesc,
+      images: ["/kanok-miah-profile.webp"],
     },
   };
 }

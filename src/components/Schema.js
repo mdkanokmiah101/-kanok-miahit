@@ -117,7 +117,7 @@ export function WebSiteSchema() {
     url: "https://kanokmiah.com.bd",
     description:
       "Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
-    inLanguage: ["en"],
+    inLanguage: ["en", "bn"],
     potentialAction: {
       "@type": "SearchAction",
       target: {

@@ -22,9 +22,6 @@ const geistMono = Geist_Mono({
 // Dynamic rendering removed — static generation enabled for full metadata support
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
-  alternates: {
-    canonical: "https://kanokmiah.com.bd",
-  },
   title: {
     default: "Best SEO Expert in Dhaka | Md Kanok Miah \u2014 #1 Specialist",
     template: "%s \u2014 Md Kanok Miah | SEO Expert Dhaka",
@@ -147,7 +144,7 @@ const webSiteSchema = {
   name: "Md Kanok Miah",
   url: "https://kanokmiah.com.bd",
   description: "Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
-  inLanguage: ["en"],
+  inLanguage: ["en", "bn"],
   potentialAction: {
     "@type": "SearchAction",
     target: { "@type": "EntryPoint", urlTemplate: "https://kanokmiah.com.bd/blog?q={search_term_string}" },

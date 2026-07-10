@@ -15,7 +15,7 @@ export const metadata = {
     "Expert SEO tips and guides for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, and GEO optimization from Md Kanok Miah.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "SEO Blog — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
+    title: "SEO Blog — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description:
       "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, and more.",
     url: "https://kanokmiah.com.bd/blog",
@@ -31,7 +31,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Blog — Md Kanok Miah | SEO Expert Dhaka",
+    title: "SEO Blog — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description:
       "Expert SEO tips, guides, and strategies for Bangladesh businesses from Md Kanok Miah.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],

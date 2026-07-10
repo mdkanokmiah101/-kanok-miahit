@@ -22,7 +22,7 @@ export const metadata = {
   creator: "Md Kanok Miah",
   publisher: "Md Kanok Miah",
   alternates: {
-    canonical: "/",
+    canonical: "https://kanokmiah.com.bd/",
   },
   openGraph: {
     type: "website",

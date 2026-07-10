@@ -7,7 +7,7 @@ export function generateStaticParams() {
   return services.map((svc) => ({ slug: svc.slug }));
 }
 
-function truncateMeta(str, maxLen = 155) {
+function truncateMeta(str, maxLen = 160) {
   if (!str) return "";
   if (str.length <= maxLen) return str;
   // Truncate at the last space before maxLen

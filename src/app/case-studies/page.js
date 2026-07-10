@@ -6,14 +6,14 @@ export const metadata = {
   description: "Real SEO case studies from Bangladesh. See how Md Kanok Miah helped Dhaka restaurants, e-commerce stores, and local businesses rank higher on Google.",
   alternates: { canonical: "/case-studies" },
   openGraph: {
-    title: "Case Studies — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
+    title: "Case Studies — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Real SEO case studies from Bangladesh. See how local businesses rank higher on Google with proven strategies.",
     url: "https://kanokmiah.com.bd/case-studies",
     images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Case Studies — Md Kanok Miah",
+    title: "Case Studies — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Real SEO case studies from Bangladesh businesses.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },

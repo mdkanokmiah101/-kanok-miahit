@@ -3,7 +3,7 @@ import IndustryPageClient from "./IndustryPageClient";
 import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
-function truncateMeta(str, maxLen = 155) {
+function truncateMeta(str, maxLen = 160) {
   if (!str) return "";
   if (str.length <= maxLen) return str;
   const truncated = str.slice(0, maxLen);
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
   if (!ind) return { title: "Industry Not Found — Md Kanok Miah" };
   const metaDesc = truncateMeta(ind.desc);
   return {
-    title: `${ind.title} — Md Kanok Miah | SEO Expert Dhaka, Bangladesh`,
+    title: `${ind.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
     description: metaDesc,
     alternates: { canonical: `/industries/${ind.slug}` },
     openGraph: {

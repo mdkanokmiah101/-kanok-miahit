@@ -6,14 +6,14 @@ export const metadata = {
   description: "View the SEO portfolio of Md Kanok Miah — 350+ projects completed, 50+ happy clients in Dhaka, Chittagong, Sylhet and across Bangladesh.",
   alternates: { canonical: "/portfolio" },
   openGraph: {
-    title: "Portfolio — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
+    title: "Portfolio — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "View the SEO portfolio of Md Kanok Miah — 350+ projects completed, 50+ happy clients across Bangladesh.",
     url: "https://kanokmiah.com.bd/portfolio",
     images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio — Md Kanok Miah",
+    title: "Portfolio — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "View the SEO portfolio of Md Kanok Miah — 350+ projects, 50+ clients across Bangladesh.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },

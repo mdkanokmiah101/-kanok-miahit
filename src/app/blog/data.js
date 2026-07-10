@@ -16538,7 +16538,519 @@ Your business deserves to be found. Your customers are searching Google right no
 
 **[Get Your Free SEO Audit](/contact)** — No commitment. No hidden fees. Just real, actionable insights that show you exactly how to grow your organic traffic and revenue.
     `,
-  }
+  },
+  {
+    slug: "locksmith-dundee-seo-case-study",
+    title: "Locksmith Dundee SEO Case Study: From Zero Visibility to 1,000+ Monthly Visitors",
+    date: "2026-05-01",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How Locksmith Dundee went from zero organic visibility — no GBP, no citations, no reviews — to 1,000+ monthly visitors and top-3 local rankings in 6 months with zero ad spend.",
+    tags: ["Case Study", "SEO", "Local SEO", "Locksmith"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: Complete Invisibility Online
+
+Locksmith Dundee had years of experience serving the community, yet they were completely invisible on Google. A search for "locksmith Dundee" returned zero results for their business. They had no claimed Google Business Profile, no directory citations, no online reviews, and a single generic page with under 150 words of content. The business did not appear in the top 100 for any relevant keyword — not even branded searches.
+
+Every day, potential customers searching for emergency locksmith services in Dundee found competitors instead. Locksmith Dundee was losing revenue simply because no one could find them online.
+
+## The Solution: Four-Pillar Local SEO Strategy
+
+### Pillar 1: Google Business Profile Optimization
+
+We claimed and fully optimized the GBP listing with 30+ high-quality photos, a detailed service menu with transparent pricing, weekly GBP posts, and precise service areas across Dundee and Tayside. The listing went from completely empty to a comprehensive digital storefront.
+
+### Pillar 2: Dedicated Service Pages
+
+We created six dedicated service pages, each targeting specific high-intent keywords: Emergency Locksmith, Car Locksmith, Lock Installation, Domestic Locksmith, Commercial Locksmith, and Key Cutting. Each page contained 1,000-1,500 words of helpful, authoritative content that addressed real customer questions and concerns.
+
+### Pillar 3: Citation Building
+
+We built 40+ local citations across UK-specific directories, Scottish business directories, and locksmith-specific platforms. Every citation was verified for NAP (Name, Address, Phone) consistency to maximize local ranking signals.
+
+### Pillar 4: Review Generation
+
+A systematic review generation workflow was established. Every satisfied customer was encouraged to leave a Google review, and the business responded professionally to each one, building social proof and strengthening local ranking signals simultaneously.
+
+## The Results
+
+The transformation after six months of consistent local SEO work was remarkable:
+
+- **Monthly Organic Visitors**: 0 to 1,000+
+- **Google Business Profile**: Unclaimed to fully optimized with 30+ photos
+- **Local Citations**: 0 to 40+
+- **Keyword Rankings**: Top 3 for key terms including "emergency locksmith Dundee" and "car locksmith Dundee"
+- **Ad Spend**: $0 — 100% organic growth
+
+## Key Takeaways
+
+This case study proves that local SEO is about doing the fundamentals consistently. For locksmiths and similar service businesses, the four pillars of GBP optimization, service-specific content, citation consistency, and review generation form an unbeatable foundation.
+
+As the **best SEO expert in Dhaka**, I apply these same proven strategies to businesses in Bangladesh and internationally. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how I can help your business achieve similar visibility in local search results.
+
+## Conclusion
+
+Locksmith Dundee's journey from zero visibility to 1,000+ monthly organic visitors demonstrates that any local service business can dominate search with a systematic, well-executed SEO strategy — all with zero ad spend.
+    `,
+  },
+  {
+    slug: "landlord-certificates-seo-case-study",
+    title: "All Landlord Certificates UK: 0 to 200+ Monthly Organic Leads in 5 Months",
+    date: "2026-05-08",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How a UK landlord certification company grew from zero organic visibility to 200+ monthly leads through strategic service pages, local landing pages, and GBP optimization.",
+    tags: ["Case Study", "SEO", "Local SEO", "Property Safety"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: Zero Visibility in a Legally Mandated Market
+
+All Landlord Certificates UK offered essential legally mandated services — gas safety certificates, EICR testing, EPC assessments, and PAT testing — but had zero organic rankings. Despite serving multiple UK cities, there were no local landing pages, generic service descriptions under 200 words, no citation presence on UK property directories, and significant technical SEO gaps.
+
+In a market where landlords are legally required to have these certificates, potential customers were searching for these services daily, but All Landlord Certificates UK was invisible to them.
+
+## The Solution: Three-Pronged SEO Strategy
+
+### Prong 1: Service Page Overhaul
+
+Every service page was completely rewritten to 1,200-1,800 words with FAQ sections, real cost breakdowns, legal requirement explanations, and clear calls-to-action. The content addressed the specific concerns landlords have — legal compliance, cost, speed, and reliability.
+
+### Prong 2: City-Specific Landing Pages
+
+We created dedicated local landing pages for major UK cities including London, Manchester, Birmingham, Glasgow, Leeds, and Liverpool. Each page featured city-specific content, local references, and consistent NAP information to maximize local relevance.
+
+### Prong 3: Citation Building and GBP
+
+The Google Business Profile was fully optimized with accurate categories, photos, and regular posts. We submitted the business to UK property directories and local citation platforms, building a consistent local presence across the web.
+
+## The Results
+
+After five months of consistent SEO work:
+
+- **Monthly Organic Leads**: 0 to 200+
+- **Local Landing Pages**: Multiple UK city-specific pages created and ranking
+- **Service Pages**: Expanded from under 200 words to 1,200-1,800 words each
+- **Citation Presence**: Established on UK property directories
+- **Ad Spend**: 100% organic SEO
+
+## Key Takeaways for Service Businesses
+
+The combination of comprehensive service pages and location-specific content proved incredibly effective. Every UK city has landlords who need certificates — and by having dedicated pages for each city, we captured search traffic from every major market simultaneously.
+
+As the **best SEO expert in Dhaka**, I bring this same multi-location approach to Bangladeshi businesses serving multiple cities. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to see how I can help your service business generate leads from every location you serve.
+
+## Conclusion
+
+All Landlord Certificates UK reached 200+ monthly organic leads in just five months by combining thorough service content with local landing pages and strong citation foundations — proving that even legally mandated service businesses can dominate search with the right SEO strategy.
+    `,
+  },
+  {
+    slug: "das-taxis-scotland-seo-case-study",
+    title: "Das Taxis Scotland SEO: From 15 to 893 Monthly Visitors (+5,853%)",
+    date: "2026-05-15",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How Das Taxis Scotland grew from 15 monthly visitors to 893 (+5,853%), moved from 3 to 636 keywords in the top 100, and generated 5,247 total clicks — all with zero ad spend.",
+    tags: ["Case Study", "SEO", "Local SEO", "Transportation"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: A Taxi Company No One Could Find
+
+Das Taxis Scotland had a basic non-SEO website, no local SEO strategy, an unclaimed Google Business Profile, zero blog content, and only 2 referring domains. The business was generating approximately 15 monthly organic visitors with only 3 keywords in the top 100 and just 7 indexed pages.
+
+In the competitive transportation market of Fife, Scotland, potential passengers searching for taxi services were finding competitors instead. Every day, Das Taxis Scotland was losing fares to taxi companies that had invested even minimal effort in their online presence.
+
+## The Solution: Four-Phase Organic Strategy
+
+### Phase 1: SEO-First Website Rebuild
+
+We rebuilt the website with 12 core service pages, proper schema markup, and Search Console integration. The new structure was designed from the ground up for search engine visibility while maintaining an excellent user experience.
+
+### Phase 2: Comprehensive Keyword Research
+
+We identified 600+ local search terms across Fife with intent-based categorization. This revealed dozens of high-value, low-competition keywords that competitors had overlooked — phrases like "taxi from Dunfermline to Edinburgh" and "airport transfer Rosyth."
+
+### Phase 3: Content Creation
+
+We created 30+ pages of optimized content including local landing pages for Dunfermline, Rosyth, and Kirkcaldy, plus blog posts targeting informational queries about taxi services in Fife.
+
+### Phase 4: Local SEO Foundation
+
+The Google Business Profile was fully optimized, 30+ local citations were built on UK directories, and a review generation system produced 25+ reviews with a 4.7-star average. Local backlinks were earned from community sources.
+
+## The Results
+
+The growth over seven months was extraordinary:
+
+- **Monthly Organic Visitors**: ~15 to 893 (+5,853%)
+- **Keywords in Top 100**: 3 to 636 (+21,100%)
+- **Keywords in Top 10**: 0 to 28
+- **Total Clicks (7 months)**: 5,247
+- **Total Impressions (7 months)**: 48,300
+- **GBP Views**: 0 to 1,200+
+- **Average CTR**: 10.9%
+- **Average Position**: 75+ to 18.3 (improved by 56 positions)
+- **Referring Domains**: 2 to 28 (+1,300%)
+- **Ad Spend**: $0
+
+## Key Takeaways for Transportation Businesses
+
+This case study demonstrates that even in highly competitive local markets, a comprehensive SEO strategy can deliver massive returns. The key was combining technical excellence with deep local keyword research and consistent content creation.
+
+As the **best SEO expert in Dhaka**, I apply this same data-driven approach to transportation businesses in Bangladesh. Whether you run taxis in Dhaka or Scotland, visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can transform your online visibility.
+
+## Conclusion
+
+Das Taxis Scotland 5,853% traffic increase proves that local transportation businesses can achieve remarkable growth through organic SEO. With zero ad spend and a focus on keyword research, content, and local optimization, any taxi company can dominate its local market.
+    `,
+  },
+  {
+    slug: "morethanpanel-seo-case-study",
+    title: "MoreThanPanel SEO Case Study: From 1,700 to 58,466 Daily Visitors in 24 Months",
+    date: "2026-05-22",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How MoreThanPanel scaled from 56 daily organic visitors to 58,466 daily visitors — generating 306,000 total clicks and 6.45 million impressions — through a 3-phase content and technical SEO roadmap.",
+    tags: ["Case Study", "SEO", "SMM Panel", "Content Marketing"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: 227,000 Users But Almost No Organic Traffic
+
+MoreThanPanel had 227,000 registered users but was generating only 1,700 monthly organic visitors. The platform had critical SEO weaknesses: thin templated service pages with minimal differentiation, zero blog or informational content, slow page speeds, duplicate meta data across hundreds of service pages, weak internal linking, and no content topic architecture.
+
+Despite having a decent domain authority of 31, the site was barely visible in search results. The massive user base was being acquired through paid channels and referrals — leaving a fortune of organic search traffic untapped.
+
+## The Solution: Three-Phase Roadmap Over 24 Months
+
+### Phase 1: Technical Stability
+
+First, we addressed the technical foundations: page speed optimization using WebP images and lazy loading, content differentiation across service pages, improved internal linking architecture, URL cleanup, and meta tag standardization. These changes reduced indexing errors by over 60%.
+
+### Phase 2: Structured Content Engine
+
+We launched a blog with topic clusters covering SMM comparisons, algorithm insights, and growth strategies. Service pages were expanded with FAQ sections and semantic keyword integration. Each piece of content was designed to capture search intent at every stage of the customer journey.
+
+### Phase 3: Scaling and Compounding
+
+The final phase focused on performance analysis, quarterly content refresh cycles, meta description optimization for higher CTR, and voice search optimization. We also optimized for conversational AI targeting as Google's Search Generative Experience gained traction.
+
+## The Results
+
+After 24 months of consistent execution:
+
+- **Daily Organic Visitors**: ~56/month (1,700/mo) to 58,466/day
+- **Total Clicks (24 months)**: 306,000
+- **Total Impressions (24 months)**: 6,450,000
+- **Average CTR (Overall)**: 4.7%
+- **Average CTR (Last 3 months)**: 6.2%
+- **Indexing Errors Reduced**: 60%+
+- **Ad Spend**: $0 (100% organic SEO)
+
+## Key Takeaways for Digital Platforms
+
+The key insight from this case study is that technical SEO fixes unlock the foundation, but content is what drives exponential growth. MoreThanPanel's blog became an engine for attracting new users at every stage of their journey — from awareness to purchase.
+
+As the **best SEO expert in Dhaka**, I apply these same content-driven SEO strategies to digital platforms in Bangladesh and globally. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how content SEO can transform your platform's organic growth.
+
+## Conclusion
+
+MoreThanPanel's journey from 1,700 to 58,466 daily visitors proves that even platforms with large user bases have massive untapped organic potential. A phased approach combining technical SEO with structured content marketing can deliver extraordinary, compounding results over 24 months.
+    `,
+  },
+  {
+    slug: "smmgen-seo-case-study",
+    title: "SMMGen SEO Case Study: From 32 to 27,900 Monthly Organic Clicks",
+    date: "2026-05-29",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How SMMGen grew from 32 monthly organic clicks to 27,900, expanded from 4 ranking keywords to 500+, and achieved Good Core Web Vitals — all with zero ad spend over 24 months.",
+    tags: ["Case Study", "SEO", "SMM Panel", "Technical SEO"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: Invisible in a Competitive Market
+
+SMMGen was generating only 32 monthly organic clicks with just 4 ranking keywords. The site suffered from a poor mobile experience (critical since 70% of buyers browse on phones), generic thin content averaging 150-300 words per page, a confusing service structure that mixed platforms together, and zero trust signals — no FAQ, no refund policies, no delivery expectations.
+
+In the fiercely competitive SMM panel industry with hundreds of established competitors, SMMGen was invisible to potential customers searching for social media marketing services.
+
+## The Solution: Three-Phase No-Shortcuts Strategy
+
+### Phase 1: Foundation and Rebuild
+
+We began with a complete technical audit that identified and fixed 47 issues. Top 20 competitors were reverse-engineered to understand what was working in the market. We created an intent-based keyword map covering 500+ terms and completely overhauled the content using a proven template structure: introduction, how it works, delivery details, pricing, FAQ, and call-to-action.
+
+### Phase 2: Content Expansion
+
+We published 28 in-depth buyer guides covering topics like "best SMM panel for Instagram growth" and "how to choose a reliable SMM provider." The site moved from 1 broad service page to 12 individual optimized pages, each with API documentation and comparison tables. Mobile-responsive redesign was implemented along with Redis caching and FAQ plus Product schema markup.
+
+### Phase 3: Authority Building
+
+Ethical link acquisition focused on quality over quantity. Continuous optimization cycles ensured the site maintained and improved its rankings as competitors adjusted their strategies.
+
+## The Results
+
+The 24-month transformation:
+
+- **Monthly Organic Clicks**: 32 to 27,900
+- **Monthly Impressions**: 129,000
+- **Ranking Keywords**: 4 to 500+
+- **Indexed Pages**: 340% increase
+- **Domain Authority Start**: 11
+- **Core Web Vitals**: Poor to Good (all 3 metrics)
+- **Ad Spend**: $0 (100% organic)
+
+## Key Takeaways for SMM Platforms
+
+SMMGen's growth demonstrates that even in crowded markets, a thorough technical and content overhaul can produce dramatic results. The combination of mobile optimization, in-depth buyer guides, and structured service pages created a comprehensive SEO foundation that competitors could not easily replicate.
+
+As the **best SEO expert in Dhaka**, I bring this comprehensive approach to SMM platforms and digital service businesses in Bangladesh. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can scale your organic traffic.
+
+## Conclusion
+
+SMMGen 27,900 monthly clicks represent a 87,000% increase from their starting point. This case study proves that with systematic SEO work — fixing technical issues, creating structured content, and building authority — even the most invisible SMM platform can achieve remarkable organic growth.
+    `,
+  },
+  {
+    slug: "smmsun-seo-case-study",
+    title: "SMMSun SEO Case Study: 15,440% Traffic Growth in 13 Months",
+    date: "2026-06-03",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How SMMSun grew from 50 monthly organic clicks to 7,700+ — a 15,440% increase — by building a content foundation, optimizing technical SEO, and achieving a 14.2% CTR.",
+    tags: ["Case Study", "SEO", "SMM Panel", "Growth Strategy"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: Quality Services, Zero Visibility
+
+SMMSun had quality services, competitive pricing, and fast delivery — but was completely invisible on Google. The site was generating only ~50 monthly organic clicks with just 2 low-value keywords ranking. There were zero organic leads, thin generic content averaging 150-200 words per page, and minimal trust signals in a crowded SMM panel market.
+
+In an industry where hundreds of established competitors compete for the same keywords, SMMSun needed a strategy that would cut through the noise and establish genuine authority.
+
+## The Solution: Four-Phase Growth Strategy
+
+### Phase 1: Content Foundation
+
+We mapped 120+ search terms across 4 intent categories. The homepage was rebuilt around the positioning "Best Affordable SMM Panel in Bangladesh." Dedicated service pages were created for each platform — Instagram, YouTube, Facebook, TikTok — with comprehensive FAQ sections and schema markup.
+
+### Phase 2: On-Page and Technical SEO
+
+A hub-and-spoke internal linking model was implemented to distribute authority throughout the site. Core Web Vitals were optimized, reducing LCP from 4.2 seconds to 1.8 seconds. Mobile-first UX was prioritized, and title and meta descriptions were rewritten for higher CTR.
+
+### Phase 3: Content Expansion
+
+Structured content clusters were built with pillar pages and supporting articles. Each cluster targeted a specific theme — Instagram growth, YouTube marketing, TikTok engagement — creating a comprehensive web of authoritative content.
+
+### Phase 4: E-E-A-T Building
+
+Experience, Expertise, Authoritativeness, and Trustworthiness signals were strengthened through consistent content quality, transparent business information, and genuine customer testimonials.
+
+## The Results
+
+After 13 months of execution:
+
+- **Monthly Organic Clicks**: ~50 to 7,700+
+- **Traffic Growth**: 15,440%
+- **CTR**: 14.2% (double the industry average)
+- **Keywords Mapped**: 120+ across 4 intent categories
+- **Mobile Traffic Share**: 75%+
+- **LCP Improvement**: 4.2s to 1.8s
+- **Ad Spend**: $0
+
+## Key Takeaways
+
+The 14.2% CTR — double the industry average — was achieved through meticulous meta description optimization and compelling title tags. Every search result was crafted to stand out in the crowded SERP.
+
+As the **best SEO expert in Dhaka**, I use these same content-cluster and technical optimization strategies for SMM panels in Bangladesh and beyond. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to discover how we can drive exponential traffic growth for your platform.
+
+## Conclusion
+
+SMMSun 15,440% traffic growth in just 13 months proves that a well-structured content strategy combined with technical excellence can deliver extraordinary results in competitive markets — all without spending a single dollar on advertising.
+    `,
+  },
+  {
+    slug: "mir-cement-seo-case-study",
+    title: "Mir Cement SEO Case Study: 0 to 500+ Monthly Organic Visitors for a B2B Brand",
+    date: "2026-06-08",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How Mir Cement achieved 500+ monthly organic visitors, 12+ top-10 keyword rankings, and reduced bounce rate from 78% to 42% — driving B2B leads with zero ad spend.",
+    tags: ["Case Study", "SEO", "B2B SEO", "Construction"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: Decades of Experience, Zero Online Visibility
+
+Mir Cement had decades of industry experience as a trusted cement brand in Bangladesh, yet the company had zero organic rankings for competitive terms like "cement price Bangladesh" and "best cement in Bangladesh." The website had thin product pages under 150 words, no local landing pages despite nationwide coverage, no B2B citation presence on any Bangladesh directory, no blog or content marketing, and severe technical SEO gaps.
+
+In a market with 30+ established cement brands competing for the same B2B buyers, Mir Cement was invisible during the crucial research phase of the purchasing journey.
+
+## The Solution: Five-Pillar B2B SEO Strategy
+
+### Pillar 1: Comprehensive Keyword Research
+
+We mapped 3 tiers of keywords: transactional (buy cement, cement price), brand/category (best cement brand in Bangladesh, Portland cement), and informational long-tail (cement storage tips, concrete mix ratio guide). This created a complete picture of the B2B buyer journey.
+
+### Pillar 2: Content Strategy
+
+Product pages were rewritten to 1,200-1,500 words with technical specifications and current pricing. Brand comparison guides were created to help buyers evaluate options. Educational blog content was localized for Bangladesh, addressing construction professionals specific needs and questions.
+
+### Pillar 3: On-Page SEO
+
+Every page received comprehensive on-page optimization including title tags, meta descriptions, header structure, image optimization, and internal linking.
+
+### Pillar 4: Technical SEO
+
+Organization, Product, FAQ, Breadcrumb, and LocalBusiness schema markup was implemented. Page speed was reduced from 6.8 seconds to 2.1 seconds through image optimization, caching, and code minification.
+
+### Pillar 5: B2B Citation Building
+
+We built 40+ B2B citations on Bangladesh-specific directories, construction portals, and trade platforms with 100% NAP consistency. This established the brand's authority in the digital B2B ecosystem.
+
+## The Results
+
+The comprehensive strategy delivered impressive results:
+
+- **Monthly Organic Visitors**: 0 to 500+
+- **Keywords in Top 10**: 0 to 12+
+- **Keywords in Top 50**: 0 to 80+
+- **GBP Views**: N/A to 8,000+/month
+- **GBP Enquiries**: 0 to 40+/month
+- **B2B Citations**: 0 to 40+ consistent listings
+- **Page Speed (Mobile)**: 6.8s to 2.1s
+- **Bounce Rate**: 78% to 42%
+- **Ad Spend**: $0
+
+## Key Takeaways for B2B Brands
+
+B2B SEO requires a different approach than B2C. Decision-makers in construction and manufacturing conduct extensive research before purchasing, and being visible at every stage of that research journey is critical.
+
+As the **best SEO expert in Dhaka**, I specialize in B2B SEO strategies that help Bangladeshi manufacturers and suppliers dominate search results. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can transform your B2B brand's online visibility.
+
+## Conclusion
+
+Mir Cement journey from zero visibility to 500+ monthly organic visitors proves that B2B brands in Bangladesh can achieve remarkable SEO results. With comprehensive keyword research, in-depth content, technical optimization, and consistent citations, any B2B brand can dominate its market.
+    `,
+  },
+  {
+    slug: "dhaka-apparels-seo-case-study",
+    title: "Dhaka Apparels SEO Case Study: Zero to #1 Ranking in 90 Days",
+    date: "2026-06-12",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How a brand new domain achieved #1 ranking for 'best stock garments supplier in bd' in just 90 days, generating 14,700 impressions and appearing in Google AI search summaries.",
+    tags: ["Case Study", "SEO", "B2B SEO", "Garments"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: Starting from Absolute Zero
+
+Dhaka Apparels started from absolute zero — a completely new domain with no authority, no indexed pages, no backlinks, no Google Business Profile, and no local search presence. They were competing against established garments suppliers with 5+ years of SEO history, hundreds of indexed pages, and strong backlink profiles.
+
+In Bangladesh $50+ billion RMG (Ready-Made Garments) sector, Dhaka Apparels was entering a market where every competitor had years of head start in online visibility.
+
+## The Solution: Five-Phase Structured Plan
+
+### Phase 1: Foundation
+
+A lead-generation website was built with under 200ms server response time and under 2 seconds mobile load speed. The design was mobile-first with click-to-call functionality, SEO-optimized URL structure, and logical internal linking architecture.
+
+### Phase 2: Content That Converts
+
+Instead of generic descriptions, we addressed real B2B buyer objections: MOQ (Minimum Order Quantity), export documentation, and quality grading. Dedicated pages were created for each service category with depth over volume — preferring comprehensive, authoritative content over thin, keyword-stuffed pages.
+
+### Phase 3: Technical SEO and AI Readiness
+
+Schema markup (Organization and Product) was implemented alongside Core Web Vitals optimization achieving all Good scores. Structured FAQ blocks were designed specifically for AI-generated search summaries — anticipating how Google Search Generative Experience would display content.
+
+### Phase 4: Local SEO
+
+The Google Business Profile was fully optimized with real photos of the facility and products. NAP consistency was ensured across all platforms. Location-targeted keywords were integrated throughout the content.
+
+### Phase 5: Authority Building
+
+Selective, contextual backlinks were earned from trade directories and B2B platforms only. Quality was prioritized over quantity, with every backlink adding genuine value to the site's authority profile.
+
+## The Results
+
+The impact was achieved in just 90 days:
+
+- **Top Keyword Ranking**: #1 for "best stock garments supplier in bd"
+- **Impressions (90 days)**: 14,700
+- **AI Search Appearances**: Featured in Google AI-generated search summaries
+- **Domain Authority**: 0 (started as brand new domain)
+- **Timeline**: 90 days from zero to #1
+- **Ad Spend**: $0
+
+## Key Takeaways for New Domains
+
+This case study proves that new domains can compete and win against established competitors. The key is a strategic, phased approach that prioritizes technical excellence, conversion-focused content, and AI-readiness from day one.
+
+As the **best SEO expert in Dhaka**, I specialize in helping Bangladeshi garment manufacturers and B2B businesses achieve rapid SEO results on new domains. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can take your business from zero to #1 in your market.
+
+## Conclusion
+
+Dhaka Apparels achievement of #1 ranking in 90 days on a brand new domain demonstrates that with the right strategy, new entrants can dominate even competitive B2B markets. Technical excellence, buyer-focused content, and AI readiness are the keys to rapid SEO success.
+    `,
+  },
+  {
+    slug: "stealth-windshield-repairs-seo-case-study",
+    title: "Stealth Windshield Repairs SEO: From 0 to 400+ Monthly Visitors in 6 Months",
+    date: "2026-06-18",
+    author: "Md Kanok Miah",
+    excerpt:
+      "How an auto glass repair business went from zero visibility with 6.2s load time to 400+ monthly visitors, 38 five-star reviews, and top local pack rankings in 6 months.",
+    tags: ["Case Study", "SEO", "Local SEO", "Automotive"],
+    imagePlaceholder: "📊",
+    content: `
+## The Challenge: Invisible with a Broken Website
+
+Stealth Windshield Repairs had years of experience serving Edinburgh, Glasgow, and Fife but was completely invisible in local search. The business had zero organic visitors, an unclaimed GBP, no citations on any directory, zero Google reviews, no location-specific pages, and no content engine whatsoever. The website itself had no SEO foundation — no meta tags, no schema, no local keyword targeting — and took 6.2 seconds to load.
+
+In the competitive auto glass repair market, every driver who needs a windshield replacement searches Google first. Stealth was losing every single one of those potential customers to competitors.
+
+## The Solution: Four-Phase Local SEO Strategy
+
+### Phase 1: Technical Foundation
+
+The website received a complete rebuild with mobile-optimized design, reducing load time from 6.2 seconds to 1.4 seconds. Dedicated location pages were created for Edinburgh, Glasgow, and Fife with unique local content and LocalBusiness schema markup.
+
+### Phase 2: GBP and Citation Building
+
+The Google Business Profile was fully optimized with 35 photos, precise categories, and detailed service area settings. The business was manually submitted to 30+ local citations across UK directories and auto-glass-specific platforms.
+
+### Phase 3: Review Generation
+
+A systematic review generation workflow was deployed using SMS and email follow-up, plus QR codes placed in the service van. This approach achieved 38 reviews with a 4.9-star average — becoming a powerful competitive advantage.
+
+### Phase 4: Local Content
+
+Twelve location-focused blog posts were created targeting long-tail local keywords like "windscreen replacement cost Edinburgh" and "chip repair Glasgow." Service expansion pages covered additional auto glass services.
+
+## The Results
+
+After six months of execution:
+
+- **Monthly Organic Visitors**: 0 to 400+
+- **Google Reviews**: 0 to 38 (4.9-star average)
+- **GBP Impressions**: 0 to 2,800+/month
+- **Page Speed**: 6.2s to 1.4s
+- **Local Citations**: 30+
+- **Local Pack Rankings**: Achieved for "windscreen repair Edinburgh" and "windshield repair Glasgow"
+- **Ad Spend**: £0 (100% organic SEO)
+
+## Key Takeaways for Automotive Service Businesses
+
+For auto glass repair and similar mobile service businesses, local SEO is the single most effective marketing channel. Every driver who needs a windshield repair searches Google first — and being visible at that moment is everything.
+
+The 38 reviews with a 4.9-star average became a powerful competitive advantage, improving local ranking signals while simultaneously convincing potential customers to choose Stealth over competitors. The QR code in the service van was particularly effective, turning every satisfied customer into a marketing asset.
+
+As the **best SEO expert in Dhaka**, I apply the same proven local SEO strategies to auto service businesses in Bangladesh and internationally. Whether you serve Edinburgh or Dhaka, the principles of local search dominance are universal. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how I can help your automotive business achieve the same results.
+
+## Conclusion
+
+Stealth Windshield Repairs transformation from zero visibility to 400+ monthly visitors and 38 five-star reviews proves that a well-executed local SEO strategy delivers real, measurable results for auto service businesses. With zero ad spend and a focus on technical quality, GBP optimization, and review generation, any local service business can achieve similar success.
+    `,
+  },
+
 ];
 
 export default posts;

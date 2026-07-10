@@ -158,7 +158,7 @@ export default function RootLayout({ children }) {
         {/* Robots fallback for pages without their own robots meta */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-10-v21-cdn-cache-purge" />
+        <meta name="deploy-version" content="2026-07-10-v22-fresh-deploy-1783662082" />
       </head>
       <body className="min-h-full flex flex-col">
         {/* JSON-LD Structured Data — in <body> for Next.js SSR compatibility */}

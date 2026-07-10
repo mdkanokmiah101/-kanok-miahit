@@ -37,7 +37,7 @@ const locationSchema = {
 export default function ChittagongPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={ __html: JSON.stringify(locationSchema) } />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }} />
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Locations", url: "https://kanokmiah.com.bd/locations/chittagong" },

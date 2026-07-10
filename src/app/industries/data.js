@@ -1,7 +1,7 @@
 const industries = [
   {
     slug: "garments-textile",
-    title: "SEO for Garments & Textile Industry in Bangladesh",
+    title: "SEO for Garments & Textile in Bangladesh",
     shortTitle: "Garments & Textile",
     icon: "👕",
     desc: "Bangladesh's RMG sector is the backbone of our economy. We help garment manufacturers and textile mills dominate Google for international buyers.",
@@ -41,7 +41,7 @@ const industries = [
   },
   {
     slug: "smm-panel",
-    title: "SEO for SMM Panel & Social Media Marketing Agencies",
+    title: "SEO for SMM Panel & Social Media Agencies",
     shortTitle: "SMM Panel",
     icon: "📱",
     desc: "Social media marketing panels and SMM agencies in Bangladesh need both SEO for their own site + social media optimization for clients. We deliver both.",
@@ -101,7 +101,7 @@ const industries = [
   },
   {
     slug: "spa-salon",
-    title: "SEO for Spa, Salon & Beauty Parlours in Bangladesh",
+    title: "SEO for Spa, Salon & Beauty in Bangladesh",
     shortTitle: "Spa & Salon",
     icon: "💆",
     desc: "Spas, salons, and beauty parlours in Dhaka rely on local search to get customers. We optimize your online presence to bring more foot traffic.",
@@ -141,7 +141,7 @@ const industries = [
   },
   {
     slug: "education",
-    title: "SEO for Education & Training Institutes in Bangladesh",
+    title: "SEO for Education & Training in Bangladesh",
     shortTitle: "Education",
     icon: "🎓",
     desc: "Universities, coaching centers, and training institutes in Bangladesh need students searching for educational programs. We get you found.",
@@ -161,7 +161,7 @@ const industries = [
   },
   {
     slug: "food-restaurant",
-    title: "SEO for Restaurants & Food Business in Bangladesh",
+    title: "SEO for Restaurants & Food in Bangladesh",
     shortTitle: "Food & Restaurant",
     icon: "🍽️",
     desc: "Restaurants, cafes, and food delivery in Dhaka need hungry customers searching for places to eat. We optimize your online presence to bring more diners.",

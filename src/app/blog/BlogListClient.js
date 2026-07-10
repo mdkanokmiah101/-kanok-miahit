@@ -12,6 +12,7 @@ const categories = [
   { name: "GEO & AI Search", icon: "🤖", count: 0 },
   { name: "Digital Marketing", icon: "📈", count: 0 },
   { name: "Industry SEO", icon: "🏭", count: 0 },
+  { name: "SEO Case Studies", icon: "📊", count: 0 },
 ];
 
 // Count posts per category

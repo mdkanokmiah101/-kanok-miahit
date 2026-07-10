@@ -7,6 +7,35 @@ import posts from "../data";
 import services from "@/app/services/data";
 import industries from "@/app/industries/data";
 
+// Helper to render inline markdown links [text](url) as React elements
+function renderInlineContent(text) {
+  if (!text) return text;
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+  let hasLinks = false;
+  while ((match = linkRegex.exec(text)) !== null) {
+    hasLinks = true;
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push(
+      <a key={match.index} href={match[2]} className="service-link" style={{ fontSize: 'inherit' }}>
+        {match[1]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (hasLinks) {
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+    return parts;
+  }
+  return text;
+}
+
 export default function BlogPostClient() {
   const { slug } = useParams();
   const post = posts.find((p) => p.slug === slug);
@@ -203,8 +232,8 @@ export default function BlogPostClient() {
             >
               <span className="text-primary mt-1.5 shrink-0">•</span>
               <span>
-                <strong className="text-gray-900">{parts[1]}:</strong>
-                {parts[2]}
+                <strong className="text-gray-900">{renderInlineContent(parts[1])}:</strong>
+                {renderInlineContent(parts[2])}
               </span>
             </li>
           );
@@ -215,7 +244,7 @@ export default function BlogPostClient() {
             className="flex items-start gap-2 text-gray-600 mb-2"
           >
             <span className="text-primary mt-1.5 shrink-0">•</span>
-            <span>{line.replace(/^- \*\*/, "").replace(/\*\*/, "")}</span>
+            <span>{renderInlineContent(line.replace(/^- \*\*/, "").replace(/\*\*/, ""))}</span>
           </li>
         );
       }
@@ -226,7 +255,7 @@ export default function BlogPostClient() {
             className="flex items-start gap-2 text-gray-600 mb-2"
           >
             <span className="text-primary mt-1.5 shrink-0">•</span>
-            <span>{line.replace("- ", "")}</span>
+            <span>{renderInlineContent(line.replace("- ", ""))}</span>
           </li>
         );
       }
@@ -237,7 +266,7 @@ export default function BlogPostClient() {
       // Regular paragraph
       return (
         <p key={i} className="text-gray-600 leading-relaxed mb-5 text-base">
-          {line}
+          {renderInlineContent(line)}
         </p>
       );
     });

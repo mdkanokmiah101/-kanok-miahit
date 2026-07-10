@@ -19,58 +19,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Dynamic rendering removed — static generation enabled for full metadata support
+// Only metadataBase + icons in root layout — page-specific metadata
+// is set in each page.js. Root layout metadata overrides page metadata
+// in this Next.js version (causes wrong canonicals + duplicate titles).
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
-  title: {
-    default: "Best SEO Expert in Dhaka | Md Kanok Miah \u2014 #1 Specialist",
-    template: "%s \u2014 Md Kanok Miah | SEO Expert Dhaka",
-  },
-  description:
-    "Best SEO expert in Dhaka \u2014 Md Kanok Miah. 6+ years in Local SEO, Technical SEO, Link Building & GEO. Get higher rankings and qualified leads.",
-  keywords: [
-    "best SEO expert in Dhaka",
-    "SEO expert Dhaka",
-    "SEO specialist Bangladesh",
-    "local SEO Bangladesh",
-    "Bangladesh SEO expert",
-    "SEO consultant Dhaka",
-    "on-page SEO",
-    "technical SEO",
-    "link building Bangladesh",
-    "semantic SEO",
-    "GEO optimization",
-    "Md Kanok Miah",
-  ],
-  authors: [{ name: "Md Kanok Miah" }],
-  creator: "Md Kanok Miah",
-  publisher: "Md Kanok Miah",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    siteName: "Md Kanok Miah",
-    title: "Best SEO Expert in Dhaka | Md Kanok Miah \u2014 #1 SEO Specialist",
-    description:
-      "Best SEO expert in Dhaka, Bangladesh \u2014 Md Kanok Miah. 6+ years experience in Local SEO, Technical SEO, Link Building, and GEO. Get higher rankings.",
-    url: "https://kanokmiah.com.bd",
-    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah \u2014 Best SEO Expert in Dhaka, Bangladesh" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Best SEO Expert in Dhaka | Md Kanok Miah",
-    description:
-      "Looking for the best SEO expert in Dhaka? Md Kanok Miah helps businesses rank higher, grow faster, and dominate search.",
-    images: ["/kanok-miah-profile.webp"],
-  },
-  alternates: {
-    canonical: "/",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    "max-snippet": -1,
-    "max-image-preview": "large",
-  },
   icons: {
     icon: [{ url: "/favicon.ico", sizes: "32x32", type: "image/png" }],
     apple: "/icon-192.png",
@@ -203,7 +156,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="400" />
         <meta property="og:image:alt" content="Md Kanok Miah — Best SEO Expert in Dhaka, Bangladesh" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-10-v18-canonical-fix" />
+        <meta name="deploy-version" content="2026-07-10-v19-layout-seo-fix" />
       </head>
       <body className="min-h-full flex flex-col">
         {/* JSON-LD Structured Data — in <body> for Next.js SSR compatibility */}

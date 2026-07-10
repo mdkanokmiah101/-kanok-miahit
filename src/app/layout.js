@@ -133,9 +133,6 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Search Console & Bing verification */}
-        <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
-        <meta name="msvalidate.01" content="A10B9573E2B9D84E27B9BCE37CCB8B28" />
         {/* Hreflang - only English content currently exists */}
         <link rel="alternate" hrefLang="en" href="https://kanokmiah.com.bd" />
         <link rel="alternate" hrefLang="x-default" href="https://kanokmiah.com.bd" />

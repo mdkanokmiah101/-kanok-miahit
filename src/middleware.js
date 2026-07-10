@@ -1,34 +1,46 @@
 /**
- * Middleware — override CDN-friendly cache headers on every response.
- * Next.js ISR sets s-maxage=31536000 (1 year) which tells external CDNs
- * (like Hostinger hCDN) to cache for a full year without re-validation.
- * This middleware forces a short CDN TTL so new deploys propagate quickly.
+ * Md Kanok Miah — Middleware
+ * Purpose: Override cache-control headers for CDN freshness.
+ * Next.js 16 prerendered pages emit s-maxage=31536000 (1 year) by default,
+ * which long-caches at the Hostinger CDN edge.  This middleware shortens
+ * that window so ISR revalidate (60s) is actually honoured by the CDN.
  *
- * Matches: all routes (/, /services/*, /blog/*, /industries/*, etc.)
+ * Pattern: match HTML page requests, set s-maxage to match the ISR window
+ * with a stale-while-revalidate grace period.
  */
-import { NextResponse } from 'next/server';
+
+import { NextResponse } from "next/server";
+
+const PAGE_RE = /\.html$|^\/[^.]*$/;          // bare paths + .html
 
 export function middleware(request) {
+  const { pathname } = request.nextUrl;
+
+  // Only act on HTML page requests
+  if (!PAGE_RE.test(pathname)) {
+    return NextResponse.next();
+  }
+
   const response = NextResponse.next();
 
-  // Override Cache-Control for the outer (CDN) layer.
-  // - s-maxage=60  →  external CDNs cache for 60 seconds only
-  // - stale-while-revalidate=600  →  serve stale up to 10 min while revalidating
-  // - Vercel's own edge cache still honours the ISR revalidate value internally
   response.headers.set(
-    'Cache-Control',
-    'public, s-maxage=60, stale-while-revalidate=600',
+    "Cache-Control",
+    "public, s-maxage=300, stale-while-revalidate=600",
   );
-
-  // Tell Vercel's edge to also respect a short CDN TTL
-  response.headers.set('CDN-Cache-Control', 's-maxage=60, stale-while-revalidate=600');
 
   return response;
 }
 
 export const config = {
   matcher: [
-    // Match all page routes, excluding static assets, _next, and API
-    '/((?!_next/static|_next/image|favicon.ico|apple-touch-icon|android-chrome|favicon-|site\\.webmanifest).*)',
+    /*
+     * Match all request paths except for:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - api (API routes)
+     * - images / fonts / media
+     */
+    "/((?!_next/static|_next/image|favicon\\.ico|api/|[^/]*\\.(?:png|jpg|jpeg|gif|webp|svg|ico|woff2?|css|js)).*)",
   ],
 };

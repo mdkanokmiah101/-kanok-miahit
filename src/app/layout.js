@@ -62,6 +62,9 @@ export const metadata = {
       "Looking for the best SEO expert in Dhaka? Md Kanok Miah helps businesses rank higher, grow faster, and dominate search.",
     images: ["/kanok-miah-profile.webp"],
   },
+  alternates: {
+    canonical: "/",
+  },
   robots: {
     index: true,
     follow: true,

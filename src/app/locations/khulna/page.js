@@ -24,7 +24,7 @@ const locationSchema = {
   "@type": "LocalBusiness",
   name: "Md Kanok Miah — SEO Expert Khulna",
   url: "https://kanokmiah.com.bd/locations/khulna",
-  telephone: "+880-1712-883101",
+  telephone: "+880-1604-809110",
   email: "mdkanokmiah232@gmail.com",
   description: "Local SEO services in Khulna, Bangladesh. Expert SEO solutions for Khulna businesses.",
   image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",

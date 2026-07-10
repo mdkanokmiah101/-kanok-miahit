@@ -24,7 +24,7 @@ const locationSchema = {
   "@type": "LocalBusiness",
   name: "Md Kanok Miah — SEO Expert Sylhet",
   url: "https://kanokmiah.com.bd/locations/sylhet",
-  telephone: "+880-1712-883101",
+  telephone: "+880-1604-809110",
   email: "mdkanokmiah232@gmail.com",
   description: "Local SEO services in Sylhet, Bangladesh. Expert SEO solutions for Sylhet businesses.",
   image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",

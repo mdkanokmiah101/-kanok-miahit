@@ -24,7 +24,7 @@ const locationSchema = {
   "@type": "LocalBusiness",
   name: "Md Kanok Miah — SEO Expert Chittagong",
   url: "https://kanokmiah.com.bd/locations/chittagong",
-  telephone: "+880-1712-883101",
+  telephone: "+880-1604-809110",
   email: "mdkanokmiah232@gmail.com",
   description: "Local SEO services in Chittagong, Bangladesh. Expert SEO solutions for Chittagong businesses.",
   image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",

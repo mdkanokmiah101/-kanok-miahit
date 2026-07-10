@@ -17,7 +17,7 @@ export function OrganizationSchema() {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+880-1712-883101",
+      telephone: "+880-1604-809110",
       contactType: "customer service",
       availableLanguage: ["English", "Bengali"],
     },
@@ -29,7 +29,7 @@ export function OrganizationSchema() {
       "https://www.pinterest.com/mdkanokmiah",
       "https://www.instagram.com/kanokmiahbd",
       "https://www.tiktok.com/@kanokmiahbd",
-      "https://wa.me/8801712883101",
+      "https://wa.me/8801604809110",
     ],
     foundingDate: "2020",
     founder: {
@@ -63,7 +63,7 @@ export function LocalBusinessSchema() {
     "@type": "LocalBusiness",
     name: "Md Kanok Miah — SEO Expert",
     url: "https://kanokmiah.com.bd",
-    telephone: "+880-1712-883101",
+    telephone: "+880-1604-809110",
     email: "mdkanokmiah232@gmail.com",
     description:
       "Best SEO expert in Dhaka, Bangladesh. Specializing in Local SEO, Technical SEO, Link Building, and GEO optimization.",
@@ -171,7 +171,7 @@ export function PersonSchema() {
       "https://www.pinterest.com/mdkanokmiah",
       "https://www.instagram.com/kanokmiahbd",
       "https://www.tiktok.com/@kanokmiahbd",
-      "https://wa.me/8801712883101",
+      "https://wa.me/8801604809110",
     ],
     jobTitle: "SEO Expert & Digital Marketing Specialist",
     worksFor: {
@@ -276,7 +276,7 @@ export function ContactPageSchema() {
       "@type": "Person",
       name: "Md Kanok Miah",
       email: "mdkanokmiah232@gmail.com",
-      telephone: "+880-1712-883101",
+      telephone: "+880-1604-809110",
     },
   };
   return (

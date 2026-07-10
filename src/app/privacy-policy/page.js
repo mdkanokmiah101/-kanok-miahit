@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <div className="mt-2 text-gray-600">
               <p>Email: mdkanokmiah232@gmail.com</p>
-              <p>Phone: +880 1712-883101</p>
+              <p>Phone: +880 1604-809110</p>
               <p>Location: Dhaka, Bangladesh</p>
             </div>
           </section>

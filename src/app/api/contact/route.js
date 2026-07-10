@@ -14,15 +14,23 @@ export async function POST(request) {
     // Log the submission
     console.log(`📬 ${subject}: ${name} / ${email} / ${phone}`);
 
-    // Try Telegram notification (optional)
+    // Log to leads file for cron job processing
+    try {
+      const fs = require("fs");
+      const leadRecord = `[${new Date().toISOString()}] ${name} | ${email} | ${phone} | ${website} | ${subject}\n`;
+      fs.appendFileSync("/root/.hermes/leads.log", leadRecord);
+    } catch(e) {}
+
+    // Try Telegram notification
     const token = process.env.TELEGRAM_BOT_TOKEN;
     if (token) {
-      const text = `🔔 **New SEO Lead**
+      const text = `🔔 **🔴 NEW SEO LEAD — kanokmiah.com.bd**
 👤 Name: ${name}
 📧 Email: ${email}
 📞 Phone: ${phone}
 🌐 Website: ${website}
-💬 ${message}
+💬 Message: ${message}
+📱 WhatsApp: https://wa.me/8801604809110?text=${encodeURIComponent(`New lead: ${name} - ${phone}`)}
 ⏱ ${new Date().toLocaleString("en-BD", { timeZone: "Asia/Dhaka" })}`;
       fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
         method: "POST",
@@ -31,7 +39,11 @@ export async function POST(request) {
       }).catch(() => {});
     }
 
-    return Response.json({ success: true, message: "Thank you! Your message has been sent." });
+    return Response.json({ 
+      success: true, 
+      message: "Thank you! Your message has been sent.",
+      whatsapp: "https://wa.me/8801604809110?text=Hi%20Md%20Kanok%20Miah!%20I%20just%20submitted%20the%20contact%20form%20on%20your%20website.%20Please%20get%20back%20to%20me."
+    });
   } catch (err) {
     console.error("Form error:", err);
     return Response.json({ success: false, message: "Something went wrong. Please try again." }, { status: 500 });

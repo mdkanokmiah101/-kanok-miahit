@@ -110,7 +110,7 @@ export default function Footer() {
                 <span className="text-primary mt-0.5">📞</span>
                 <div>
                   <div className="text-gray-400 text-xs">Phone</div>
-                  <a href="tel:+8801712883101" className="text-white hover:text-primary transition-colors font-medium">+880 1712-883101</a>
+                  <a href="tel:+880****9110" className="text-white hover:text-primary transition-colors font-medium">+880 1604-809110</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -131,7 +131,7 @@ export default function Footer() {
                 <span className="text-primary mt-0.5">💬</span>
                 <div>
                   <div className="text-gray-400 text-xs">WhatsApp</div>
-                  <a href="https://wa.me/8801712883101" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors font-medium">Chat Now</a>
+                  <a href="https://wa.me/8801604809110" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors font-medium">Chat Now</a>
                 </div>
               </li>
             </ul>

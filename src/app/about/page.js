@@ -24,7 +24,7 @@ const aboutFaqs = [
   { question: "What areas of Bangladesh do you serve?", answer: "I provide SEO services for businesses throughout Bangladesh including Dhaka, Chittagong, Sylhet, Khulna, Rajshahi, and all other major cities. My local SEO strategies are customized for each city's specific market." },
   { question: "What types of businesses do you work with?", answer: "I work with a diverse range of clients including local service businesses, e-commerce stores (Shopify, Daraz), real estate agencies, healthcare providers, educational institutions, and hospitality businesses across Bangladesh." },
   { question: "Do you offer a free consultation?", answer: "Yes! I offer a completely free initial consultation to discuss your business goals and SEO needs. During this call, I'll provide preliminary insights and recommendations with no obligation to proceed." },
-  { question: "How do I get started with your services?", answer: "Getting started is simple: contact me through the website form, call +880 1712-883101, or send a WhatsApp message. I'll begin with a free SEO audit of your website and provide a customized strategy proposal." },
+  { question: "How do I get started with your services?", answer: "Getting started is simple: contact me through the website form, call +880 1604-809110, or send a WhatsApp message. I'll begin with a free SEO audit of your website and provide a customized strategy proposal." },
 ];
 
 export default function AboutPage() {

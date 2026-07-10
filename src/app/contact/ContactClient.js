@@ -3,9 +3,9 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
-const WHATSAPP_NUMBER = "01712883101";
-const WHATSAPP_FULL = "+8801712883101";
-const WHATSAPP_URL = "https://wa.me/8801712883101?text=Hi%20Md%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business.";
+const WHATSAPP_NUMBER = "01604809110";
+const WHATSAPP_FULL = "+880****9110";
+const WHATSAPP_URL = "https://wa.me/8801604809110?text=Hi%20Md%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business.";
 
 export default function ContactClient() {
   const [submitting, setSubmitting] = useState(false);
@@ -104,7 +104,7 @@ export default function ContactClient() {
                   <label className="block text-sm font-medium text-gray-700 mb-1.5">Phone Number</label>
                   <input
                     type="tel" name="phone"
-                    placeholder="01712-883101"
+                    placeholder="01604-809110"
                     className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
                   />
                 </div>
@@ -191,8 +191,8 @@ export default function ContactClient() {
             <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:border-primary/20 transition-all">
               <h3 className="font-bold text-lg mb-4 text-gray-900">📞 Call Me Directly</h3>
               <p className="text-gray-500 text-sm mb-3">Speak directly with me about your SEO needs:</p>
-              <a href="tel:+8801712883101" className="text-2xl font-extrabold text-primary hover:text-primary-dark transition-colors">
-                +880 1712-883101
+              <a href="tel:+880****9110" className="text-2xl font-extrabold text-primary hover:text-primary-dark transition-colors">
+                +880 1604-809110
               </a>
             </div>
 

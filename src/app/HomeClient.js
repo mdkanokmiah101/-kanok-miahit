@@ -73,7 +73,7 @@ export default function HomeClient() {
       </nav>
 
       {/* ===== FLOATING WHATSAPP ===== */}
-      <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business."
+      <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business."
         target="_blank" rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-emerald-400 hover:scale-110 hover:shadow-emerald-500/40 transition-all animate-bounce"
         aria-label="Chat on WhatsApp">💬</a>
@@ -159,6 +159,31 @@ export default function HomeClient() {
               <div className="text-white text-sm font-bold">🔥 350+ Projects Done</div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ===== HERO LEAD FORM ===== */}
+      <section className="relative -mt-10 z-10 px-4">
+        <div className="max-w-lg mx-auto bg-white rounded-2xl shadow-2xl border border-gray-100 p-6">
+          <h3 className="text-lg font-bold text-center text-gray-900 mb-3">
+            🚀 Get <span className="text-primary">Free SEO Audit</span> & Proposal
+          </h3>
+          <form onSubmit={handleSubmit} className="space-y-3">
+            <input type="text" name="name" placeholder="Your Name" required
+              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
+            <div className="flex gap-2">
+              <span className="inline-flex items-center bg-gray-100 border border-gray-200 rounded-xl px-3 text-sm text-gray-500">+880</span>
+              <input type="tel" name="phone" placeholder="1XXXXXXXXX" required
+                className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
+            </div>
+            <input type="text" name="website" placeholder="Your Website (optional)"
+              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
+            <input type="hidden" name="source" value="homepage-hero-form" />
+            <button type="submit" disabled={submitting}
+              className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25 disabled:opacity-50">
+              {submitting ? "Sending..." : submitted ? "✅ Sent! I'll WhatsApp you shortly" : "🔍 Get My Free Audit"}
+            </button>
+          </form>
         </div>
       </section>
 
@@ -317,7 +342,7 @@ export default function HomeClient() {
             <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
               Get Your Free Audit <span>→</span>
             </Link>
-            <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20Miah!%20I%20want%20a%20free%20SEO%20audit."
+            <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20want%20a%20free%20SEO%20audit."
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all">
               💬 WhatsApp Me
@@ -379,7 +404,7 @@ export default function HomeClient() {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm text-gray-700 mb-1.5 font-medium">Phone</label>
-                    <input type="tel" name="phone" placeholder="01712-883101"
+                    <input type="tel" name="phone" placeholder="01604-809110"
                       className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
                   </div>
                   <div>
@@ -413,7 +438,7 @@ export default function HomeClient() {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Call Me Directly</h3>
                   <p className="text-gray-500 text-sm mb-1">Speak with Md Kanok Miah personally:</p>
-                  <a href="tel:+8801712883101" className="text-xl font-extrabold text-primary hover:text-primary-dark">+880 1712-883101</a>
+                  <a href="tel:+880****9110" className="text-xl font-extrabold text-primary hover:text-primary-dark">+880 1604-809110</a>
                 </div>
               </div>
               <div className="bg-white border border-gray-200 rounded-2xl p-7 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
@@ -421,7 +446,7 @@ export default function HomeClient() {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">WhatsApp</h3>
                   <p className="text-gray-500 text-sm mb-2">Quickest response on WhatsApp:</p>
-                  <a href="https://wa.me/8801712883101?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help."
+                  <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help."
                     target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-5 py-2.5 rounded-xl font-semibold hover:bg-emerald-100 transition-all text-sm">
                     💬 Chat on WhatsApp <span className="text-xs text-gray-400">(Fastest Response)</span>

@@ -58,7 +58,13 @@ export default function ServicePageClient({ slug }) {
             <span className="text-primary">{svc.title}</span><br/>
             <span className="text-gray-900">in Dhaka, Bangladesh</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">{svc.desc}</p>
+          <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">
+            {svc.desc} As the{" "}
+            <Link href="/" className="text-primary font-semibold hover:underline">
+              best SEO expert in Dhaka
+            </Link>
+            , I deliver tailored strategies that drive real results for your business.
+          </p>
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-xs font-medium px-4 py-2 rounded-full">✅ Expert Reviewed</span>
             <span className="text-xs text-gray-400">This guide was reviewed by Md Kanok Miah, SEO expert with 6+ years of experience.</span>

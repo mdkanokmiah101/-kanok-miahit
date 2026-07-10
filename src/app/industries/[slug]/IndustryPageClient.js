@@ -43,7 +43,7 @@ export default function IndustryPageClient({ slug }) {
             <span className="text-gray-900">SEO Solutions in Dhaka, Bangladesh</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            {ind.desc}
+            {ind.desc} As a <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>, I deliver tailored results for this industry.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
@@ -107,19 +107,35 @@ export default function IndustryPageClient({ slug }) {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
-            {ind.services.map((service, i) => (
-              <div
-                key={i}
-                className="group bg-gray-50 border border-gray-100 rounded-xl px-6 py-5 hover:bg-white hover:border-primary/20 hover:shadow-md hover:-translate-y-0.5 transition-all flex items-center gap-3"
-              >
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-base shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
-                  {i + 1}
-                </div>
-                <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">
-                  {service}
-                </span>
-              </div>
-            ))}
+            {ind.services.map((service, i) => {
+              const slugMap = {
+                "Local SEO": "/services/local-seo",
+                "On-Page SEO": "/services/on-page-seo",
+                "Technical SEO": "/services/technical-seo",
+                "Link Building": "/services/link-building",
+                "GEO / AI Search": "/services/geo-ai-search",
+                "E-commerce SEO": "/services/ecommerce-seo",
+                "Semantic SEO": "/services/semantic-seo",
+              };
+              const match = Object.keys(slugMap).find((k) =>
+                service.toLowerCase().includes(k.toLowerCase())
+              );
+              const href = match ? slugMap[match] : "/services";
+              return (
+                <Link
+                  key={i}
+                  href={href}
+                  className="group bg-gray-50 border border-gray-100 rounded-xl px-6 py-5 hover:bg-white hover:border-primary/20 hover:shadow-md hover:-translate-y-0.5 transition-all flex items-center gap-3"
+                >
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-base shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                    {i + 1}
+                  </div>
+                  <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">
+                    {service}
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
   if (!ind) return { title: "Industry Not Found — Md Kanok Miah" };
   const metaDesc = truncateMeta(ind.desc);
   return {
-    title: ind.title,
+    title: `${ind.title} — Md Kanok Miah | SEO Expert Dhaka, Bangladesh`,
     description: metaDesc,
     alternates: { canonical: `/industries/${ind.slug}` },
     openGraph: {

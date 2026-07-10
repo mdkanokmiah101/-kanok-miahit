@@ -24,7 +24,6 @@ export default function DhakaClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <link rel="canonical" href="https://kanokmiah.com.bd/locations/dhaka" />
       <meta name="robots" content="index, follow" />
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },

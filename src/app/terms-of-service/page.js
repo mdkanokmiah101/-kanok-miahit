@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Terms of Service",
+  title: "Terms of Service — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
   description: "Terms of Service for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh. Please read these terms carefully before using our services.",
   alternates: { canonical: "/terms-of-service" },
   openGraph: {

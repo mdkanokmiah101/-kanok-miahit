@@ -24,7 +24,6 @@ export default function RangpurClient() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <link rel="canonical" href="https://kanokmiah.com.bd/locations/rangpur" />
       <meta name="robots" content="index, follow" />
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },

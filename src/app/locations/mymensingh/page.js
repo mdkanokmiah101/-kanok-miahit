@@ -1,7 +1,7 @@
 import MymensinghClient from "./MymensinghClient";
 
 export const metadata = {
-  title: "Local SEO Services in Mymensingh",
+  title: "Local SEO Services in Mymensingh — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
   description: "Professional local SEO services in Mymensingh, Bangladesh. Rank your business on Google Maps and attract more customers with proven local SEO.",
   alternates: { canonical: "/locations/mymensingh" },
   openGraph: {

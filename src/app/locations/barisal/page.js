@@ -1,7 +1,7 @@
 import BarisalClient from "./BarisalClient";
 
 export const metadata = {
-  title: "Local SEO Services in Barisal",
+  title: "Local SEO Services in Barisal — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
   description: "Professional local SEO services in Barisal, Bangladesh. Rank higher on Google Maps and attract more customers with proven local SEO.",
   alternates: { canonical: "/locations/barisal" },
   openGraph: {

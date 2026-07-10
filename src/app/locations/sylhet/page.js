@@ -1,7 +1,7 @@
 import SylhetClient from "./SylhetClient";
 
 export const metadata = {
-  title: "Local SEO Services in Sylhet",
+  title: "Local SEO Services in Sylhet — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
   description: "Professional local SEO services in Sylhet, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO strategies.",
   alternates: { canonical: "/locations/sylhet" },
   openGraph: {

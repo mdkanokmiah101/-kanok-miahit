@@ -1,7 +1,7 @@
 import KhulnaClient from "./KhulnaClient";
 
 export const metadata = {
-  title: "Local SEO Services in Khulna",
+  title: "Local SEO Services in Khulna — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
   description: "Professional local SEO services in Khulna, Bangladesh. Rank your business on Google Maps and attract more customers with expert local SEO.",
   alternates: { canonical: "/locations/khulna" },
   openGraph: {

@@ -1,7 +1,7 @@
 import RangpurClient from "./RangpurClient";
 
 export const metadata = {
-  title: "Local SEO Services in Rangpur",
+  title: "Local SEO Services in Rangpur — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
   description: "Professional local SEO services in Rangpur, Bangladesh. Dominate Google Maps and attract more customers in Rangpur city with proven local SEO.",
   alternates: { canonical: "/locations/rangpur" },
   openGraph: {

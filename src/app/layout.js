@@ -19,16 +19,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Only metadataBase + icons in root layout — page-specific metadata
-// is set in each page.js. Root layout metadata overrides page metadata
-// in this Next.js version (causes wrong canonicals + duplicate titles).
-export const metadata = {
-  metadataBase: new URL("https://kanokmiah.com.bd"),
-  icons: {
-    icon: [{ url: "/favicon.ico", sizes: "32x32", type: "image/png" }],
-    apple: "/icon-192.png",
-  },
-};
+// NO metadata export in root layout — it prevents page-level metadata
+// from appearing in this Next.js version. Each page defines its own
+// metadata via server-component page.js exports.
+// metadataBase and icons are set via hardcoded <link> tags in <head> below.
 
 // JSON-LD schemas defined as objects for reliable SSR rendering
 const organizationSchema = {
@@ -150,6 +144,9 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+        {/* Fallback favicon for all pages (since root layout has no metadata export) */}
+        <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/png" />
+        <link rel="icon" href="/favicon.ico" />
         {/* Force og:image for all pages (critical for client-component pages like homepage) */}
         <meta property="og:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
         <meta property="og:image:width" content="400" />

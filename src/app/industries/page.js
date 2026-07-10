@@ -2,7 +2,7 @@ import IndustriesClient from "./IndustriesClient";
 import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Industries",
+  title: "SEO by Industry — Bangladesh | Md Kanok Miah | SEO Expert",
   description: "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, Food and more. Expert strategies from Md Kanok Miah.",
   alternates: { canonical: "/industries" },
   openGraph: {

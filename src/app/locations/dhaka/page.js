@@ -1,7 +1,7 @@
 import DhakaClient from "./DhakaClient";
 
 export const metadata = {
-  title: "Local SEO Dhaka",
+  title: "Local SEO Services in Dhaka — Md Kanok Miah | SEO Expert",
   description: "Local SEO services in Dhaka, Bangladesh. Rank your business on Google Maps in Mirpur, Gulshan, Banani, Uttara & all Dhaka areas with expert SEO.",
   alternates: { canonical: "/locations/dhaka" },
   openGraph: {

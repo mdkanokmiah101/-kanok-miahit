@@ -2,7 +2,7 @@ import PortfolioClient from "./PortfolioClient";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Portfolio",
+  title: "SEO Portfolio — Md Kanok Miah | 350+ Projects in Bangladesh",
   description: "View the SEO portfolio of Md Kanok Miah — 350+ projects completed, 50+ happy clients in Dhaka, Chittagong, Sylhet and across Bangladesh.",
   alternates: { canonical: "/portfolio" },
   openGraph: {

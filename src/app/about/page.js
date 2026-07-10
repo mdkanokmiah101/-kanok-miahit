@@ -2,7 +2,7 @@ import AboutClient from "./AboutClient";
 import { BreadcrumbSchema, FAQSchema, AboutPageSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "About Me",
+  title: "About Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
   description: "Learn about Md Kanok Miah \u2014 Bangladesh's trusted SEO expert with 6+ years of experience helping Dhaka businesses rank higher on Google.",
   alternates: { canonical: "/about" },
   openGraph: {

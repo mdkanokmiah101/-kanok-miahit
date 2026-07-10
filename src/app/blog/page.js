@@ -10,7 +10,7 @@ export const revalidate = 3600;
 // Cache is revalidated hourly; stale-while-revalidate for responsiveness
 
 export const metadata = {
-  title: "SEO Blog",
+  title: "SEO Blog — Tips & Guides for Bangladesh | Md Kanok Miah",
   description:
     "Expert SEO tips and guides for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, and GEO optimization from Md Kanok Miah.",
   alternates: { canonical: "/blog" },

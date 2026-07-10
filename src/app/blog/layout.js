@@ -1,7 +1,7 @@
 import { BreadcrumbSchema, CollectionPageSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "SEO Blog | Bangladesh Digital Marketing Tips",
+  title: "SEO Blog — Tips & Guides for Bangladesh | Md Kanok Miah",
   description:
     "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, & more from Md Kanok Miah.",
   alternates: {
@@ -11,7 +11,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Md Kanok Miah",
-    title: "SEO Blog | Bangladesh Digital Marketing Tips",
+    title: "SEO Blog — Tips & Guides for Bangladesh | Md Kanok Miah",
     description:
       "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, and more.",
     url: "https://kanokmiah.com.bd/blog",

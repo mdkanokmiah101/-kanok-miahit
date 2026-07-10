@@ -2,7 +2,7 @@ import CaseStudiesClient from "./CaseStudiesClient";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Case Studies",
+  title: "SEO Case Studies — Md Kanok Miah | Local SEO Expert Dhaka",
   description: "Real SEO case studies from Bangladesh. See how Md Kanok Miah helped Dhaka restaurants, e-commerce stores, and local businesses rank higher on Google.",
   alternates: { canonical: "/case-studies" },
   openGraph: {

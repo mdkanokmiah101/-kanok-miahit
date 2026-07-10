@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "Md Kanok Miah",
     images: [
       {
-        url: "/kanok-miah-profile.webp",
+        url: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
         width: 400,
         height: 400,
         alt: "Md Kanok Miah — SEO Expert Dhaka",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "SEO Blog — Md Kanok Miah | SEO Expert Dhaka",
     description:
       "Expert SEO tips, guides, and strategies for Bangladesh businesses from Md Kanok Miah.",
-    images: ["/kanok-miah-profile.webp"],
+    images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
 

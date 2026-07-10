@@ -9,13 +9,13 @@ export const metadata = {
     title: "About Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
     description: "Learn about Md Kanok Miah — Bangladesh's trusted SEO expert with 6+ years of experience.",
     url: "https://kanokmiah.com.bd/about",
-    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About Me — Md Kanok Miah",
     description: "Learn about Md Kanok Miah — Bangladesh's trusted SEO expert with 6+ years of experience.",
-    images: ["/kanok-miah-profile.webp"],
+    images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
 

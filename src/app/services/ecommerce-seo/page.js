@@ -31,13 +31,13 @@ export async function generateMetadata() {
       title: `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
       url: `https://kanokmiah.com.bd/services/${SLUG}`,
-      images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+      images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
-      images: ["/kanok-miah-profile.webp"],
+      images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
     },
   };
 }

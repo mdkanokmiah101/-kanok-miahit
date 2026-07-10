@@ -6,8 +6,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// Prevent Hostinger hCDN from caching pages for 1 year
-export const dynamic = "force-dynamic";
+// ISR: CDN serves stale-while-revalidate, background refresh hourly
+export const revalidate = 3600;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -152,8 +152,13 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
         <meta property="og:image:alt" content="Md Kanok Miah — Best SEO Expert in Dhaka, Bangladesh" />
+        {/* Force twitter:image for all pages (critical for client-component pages) */}
+        <meta name="twitter:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        {/* Robots fallback for pages without their own robots meta */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         {/* Deploy version tag */}
-        <meta name="deploy-version" content="2026-07-10-v19-layout-seo-fix" />
+        <meta name="deploy-version" content="2026-07-10-v20-twitter-image-fix" />
       </head>
       <body className="min-h-full flex flex-col">
         {/* JSON-LD Structured Data — in <body> for Next.js SSR compatibility */}

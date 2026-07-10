@@ -8,13 +8,13 @@ export const metadata = {
     title: "Local SEO Services in Rajshahi — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Professional local SEO services in Rajshahi, Bangladesh. Get found on Google Maps and attract more customers in Rajshahi city.",
     url: "https://kanokmiah.com.bd/locations/rajshahi",
-    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Local SEO Services in Rajshahi — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Professional local SEO services in Rajshahi, Bangladesh.",
-    images: ["/kanok-miah-profile.webp"],
+    images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
 

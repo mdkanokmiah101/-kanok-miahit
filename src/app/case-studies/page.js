@@ -9,13 +9,13 @@ export const metadata = {
     title: "Case Studies — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
     description: "Real SEO case studies from Bangladesh. See how local businesses rank higher on Google with proven strategies.",
     url: "https://kanokmiah.com.bd/case-studies",
-    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Case Studies — Md Kanok Miah",
     description: "Real SEO case studies from Bangladesh businesses.",
-    images: ["/kanok-miah-profile.webp"],
+    images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
 

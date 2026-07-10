@@ -10,13 +10,13 @@ export const metadata = {
     description: "Industry-specific SEO for Bangladesh from Md Kanok Miah.",
     url: "https://kanokmiah.com.bd/industries",
     siteName: "Md Kanok Miah",
-    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah \u2014 SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah \u2014 SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Industries — Md Kanok Miah | SEO Expert Dhaka",
     description: "Industry-specific SEO for Bangladesh from Md Kanok Miah.",
-    images: ["/kanok-miah-profile.webp"],
+    images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
 

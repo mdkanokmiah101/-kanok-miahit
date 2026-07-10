@@ -9,13 +9,13 @@ export const metadata = {
     title: "Contact Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
     description: "Contact Md Kanok Miah — the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business. Call +880 1712-883101 for a consultation.",
     url: "https://kanokmiah.com.bd/contact",
-    images: [{ url: "/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Me — Md Kanok Miah",
     description: "Contact Md Kanok Miah for a free SEO audit. Get expert help for your Bangladesh business.",
-    images: ["/kanok-miah-profile.webp"],
+    images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
 

@@ -54,6 +54,10 @@ export const metadata = {
     "max-snippet": -1,
     "max-image-preview": "large",
   },
+  verification: {
+    google: "etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM",
+    msvalidate: "A10B9573E2B9D84E27B9BCE37CCB8B28",
+  },
 };
 
 export default function HomePage() {

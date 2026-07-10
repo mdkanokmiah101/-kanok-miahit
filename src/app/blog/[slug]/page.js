@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
   const fullTitle = post.title;
   const metaDesc = truncateMeta(post.excerpt || `${post.title} — SEO tips and guide by Md Kanok Miah.`);
   return {
-    title: fullTitle,
+    title: `${fullTitle} — Md Kanok Miah`,
     description: metaDesc,
     alternates: { canonical: `https://kanokmiah.com.bd/blog/${post.slug}` },
     openGraph: {

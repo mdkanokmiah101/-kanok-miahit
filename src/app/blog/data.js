@@ -16692,192 +16692,227 @@ Whether you run a restaurant in Gulshan, a diagnostic center in Dhanmondi, or an
     tags: ["Best SEO Expert Dhaka", "SEO Expert Bangladesh", "Md Kanok Miah", "SEO Results", "Dhaka SEO"],
     imagePlaceholder: "🏆",
     content: `
-## Looking for the Best SEO Expert in Dhaka, Bangladesh? Here is the Truth.
+## Introduction — Who Is Md Kanok Miah?
 
-If you are searching for the **best SEO expert in Dhaka, Bangladesh**, you are not alone. Every month, thousands of business owners in Dhaka, Mirpur, Gulshan, Banani, Uttara, and Dhanmondi search Google for someone who can actually deliver rankings, traffic, and revenue — not empty promises.
+If you are searching for the **best SEO expert in Dhaka, Bangladesh**, you have come to the right place. I am **Md Kanok Miah** — a dedicated digital marketing and SEO professional who has been helping businesses dominate search results since 2019. Today, I am recognised as one of the most trusted SEO experts in Bangladesh, with a track record that speaks louder than any promise.
 
-I am Md Kanok Miah. With over 6 years of hands-on SEO experience, 350+ successful projects, and a verified 5.0-star rating from 108 Google reviews, I help Bangladeshi businesses dominate search results. But do not take my word for it — the results speak for themselves.
+I am a **Digital Marketing Expert & SEO Expert in Bangladesh**. Over the past 6+ years, I have successfully led **350+ digital projects and 210+ SEO campaigns** for clients ranging from small local businesses in Dhaka to large international brands. I founded kanokmiah.com — a platform where I share my expertise and help businesses grow their online presence through ethical, results-driven SEO.
 
-This is not a generic article. This is my personal story, my proven methodology, and the exact reason why businesses across Dhaka, Chittagong, and Sylhet trust me as their go-to SEO specialist.
+Currently, I serve as **SEO Project Manager at Khan IT** and **Head of Digital Marketing at CloudMatrix Tech**. Previously, I have worked with **Walton Plaza** and **Solus Corporation**, where I honed my skills in on-page, off-page, technical, and local SEO.
 
----
-
-## What Makes the Best SEO Expert in Dhaka, Bangladesh?
-
-Before hiring any SEO professional, you need to know what separates a genuine expert from someone who just claims to be one. Here is what I bring to every client engagement:
-
-### 1. My Own Website Ranks #1
-
-The first test of any SEO expert is simple: can they rank their own website? My website kanokmiah.com.bd consistently ranks on Google's first page for highly competitive keywords like **"best SEO expert in Dhaka"**, **"SEO expert Bangladesh"**, and **"SEO consultant Dhaka"**. If I cannot rank myself, how can I rank your business?
-
-I apply the exact same strategies to my site that I use for my clients — topical authority building, semantic content clusters, entity SEO, and technical optimization tailored for the Bangladesh market.
-
-### 2. 350+ Projects with Verifiable Results
-
-Over the past 6 years, I have completed 350+ SEO projects across industries including:
-
-| Industry | Example Results |
-|----------|----------------|
-| **Local Restaurants** | Google Maps #1 ranking, 300% increase in direction requests |
-| **E-commerce Stores** | 180% organic traffic growth, 35% increase in conversions |
-| **Real Estate** | #1 ranking for "apartment in Dhaka", 250% organic traffic increase |
-| **Garments & Textile** | 25% more B2B inbound leads from international SEO |
-| **Healthcare** | Top 3 rankings for 40+ medical keywords in Dhaka |
-
-Every case study includes real data — traffic numbers, ranking positions, and revenue impact. No vanity metrics. No fabricated screenshots.
-
-### 3. Technical Depth Across All SEO Disciplines
-
-A true **SEO expert in Dhaka** must master every aspect of search optimization. My expertise covers:
-
-- **Technical SEO:** Core Web Vitals optimization (LCP reduced from 4.2s to 1.8s for clients), crawl budget management, JavaScript SEO, structured data implementation (JSON-LD for LocalBusiness, Article, FAQ, Product, Organization schema)
-- **On-Page SEO:** Keyword-optimized content for both Bengali and English search queries, meta tag optimization, header structure, internal linking architecture
-- **Local SEO:** Google Business Profile optimization, local citation building on BD Yellow Pages, BDTradeInfo, and 40+ Bangladeshi directories, Google Maps ranking strategy
-- **Link Building:** White-hat guest posting on Bangladeshi news sites (Daily Star, Dhaka Tribune), niche-relevant backlink acquisition, digital PR for Bangladesh market
-- **GEO / AI Search:** Entity-first content for ChatGPT, Gemini, Perplexity, and Google AI Overviews — preparing your business for the AI-powered search era
-- **Semantic SEO:** Topic cluster architecture, entity relationship optimization, Knowledge Graph alignment for Bangladeshi businesses
-
-### 4. EEAT — Experience, Expertise, Authoritativeness, Trustworthiness
-
-Google's Quality Rater Guidelines emphasize EEAT more than ever in 2026. Here is how I demonstrate each:
-
-**Experience:** I have personally optimized websites for businesses across 9+ industries in Bangladesh — from garment factories in Gazipur to dental clinics in Dhanmondi to e-commerce stores shipping nationwide.
-
-**Expertise:** 6+ years of continuous learning and application. I stay current with every Google algorithm update, every Core Web Vitals change, and every shift in the AI search landscape.
-
-**Authoritativeness:** My work has been recognized by 108+ verified Google reviews with a 5.0 rating. My clients include well-known Bangladeshi brands who trust me with their organic growth.
-
-**Trustworthiness:** Transparent monthly reporting with real Google Search Console data. Full access to analytics. No black-hat tactics. No shortcuts. Every strategy I use is Google Webmaster Guidelines compliant.
+My mission is simple: deliver real rankings, real traffic, and real revenue growth — no shortcuts, no black-hat tactics, just proven white-hat SEO strategies that stand the test of Google algorithm updates.
 
 ---
 
-## Why Bangladeshi Businesses Choose Me as Their SEO Expert
+## Professional Background & Experience
 
-### Deep Local Market Understanding
+### How It All Started
 
-Being based in Dhaka gives me an intimate understanding of the Bangladesh search landscape. I know:
+I started my digital marketing journey in **2019**. Like many SEO professionals in Bangladesh, I began by learning the fundamentals — keyword research, on-page optimisation, and link building. But what set me apart was my hunger to go deeper. I didn't stop at surface-level tactics. I studied technical SEO, Core Web Vitals, structured data, semantic search, and the emerging world of AI-driven search.
 
-- How Bangladeshi users search (Bengali script, Banglish, English — all three)
-- Which Bangladeshi directories actually pass SEO value (BD Yellow Pages, BDTradeInfo, Bdshop)
-- How Google Bangladesh's algorithm differs from Google US or Google UK
-- What BTRC regulations mean for your website's hosting and domain strategy
-- When local search behavior changes during Eid, Pohela Boishakh, and other cultural peaks
+By 2020, I was already managing real client projects and delivering measurable improvements. Within two years, I had built a reputation as a reliable SEO specialist who could handle everything from local citation building for a small restaurant in Mirpur to complex technical SEO overhauls for e-commerce platforms.
 
-No international SEO agency can replicate this level of local market intelligence.
+### Key Career Milestones
 
-### Proven Process That Delivers
+- **2019–2020:** Started professional SEO journey; completed first 50+ projects
+- **2021:** Joined **Walton Plaza** and **Solus Corporation**; gained corporate-level experience in SEO strategy and execution
+- **2022–2023:** Expanded into **paid advertising** and **digital marketing strategy**; started managing 8-12 live SEO projects monthly
+- **2024:** Founded **kanokmiah.com**; joined **Khan IT** as SEO Project Manager; began working with international clients
+- **2025–Present:** Promoted to **Head of Digital Marketing at CloudMatrix Tech**; crossed **350+ digital projects and 210+ SEO campaigns**
 
-My 5-step SEO process has been refined through hundreds of successful campaigns:
+### Industries I Have Served
 
-**Step 1 — Deep Audit:** I analyze every aspect of your current online presence — technical health, content quality, backlink profile, competitor landscape, and current rankings.
+Over these years, I have worked with:
 
-**Step 2 — Custom Strategy:** I create a tailored SEO plan targeting the exact keywords your customers use when searching for your services in Dhaka, Chittagong, Sylhet, or anywhere in Bangladesh.
+- Local brick-and-mortar businesses in Dhaka, Mirpur, Gulshan, Banani, Uttara, and Dhanmondi
+- E-commerce stores on Daraz, Shopify, and WooCommerce
+- International brands looking to enter the Bangladesh market
+- Real estate developers, healthcare providers, educational institutions, garment manufacturers, and more
 
-**Step 3 — Execution:** I implement on-page fixes, content creation, technical improvements, local citation building, and link acquisition — in the right order for maximum impact.
+### Current Workload
 
-**Step 4 — Monitor & Measure:** I track rankings, organic traffic, conversions, and Core Web Vitals through Google Search Console, Google Analytics, and ranking tools. You receive monthly reports with real data.
-
-**Step 5 — Optimize & Scale:** SEO is not a set-it-and-forget-it service. I continuously refine strategies based on performance data, algorithm updates, and changing market conditions.
-
-### Transparent Pricing with Real ROI
-
-Unlike agencies that hide behind complex pricing models, I offer clear, value-based SEO packages:
-
-- **Local SEO Package (BDT 15,000/month):** Google Business Profile optimization, local citations, near-me keyword targeting, review management — ideal for brick-and-mortar businesses in Dhaka
-- **Standard SEO Package (BDT 30,000/month):** On-page optimization, technical SEO fixes, content strategy, keyword research, monthly reporting
-- **Premium SEO Package (BDT 50,000+/month):** Full-service SEO including link building, GEO/AI search optimization, semantic content clusters, competitor analysis, dedicated strategy
-
-Every package includes a free initial audit before any commitment. You see the opportunity before you invest.
+Today, I manage **8–12 live SEO projects** every month alongside **2–5 paid ad campaigns**. This consistent hands-on work keeps me at the cutting edge of SEO trends and Google algorithm changes. Every week, I am in the trenches — auditing websites, optimising content, building links, and refining strategies for clients across Bangladesh and beyond.
 
 ---
 
-## Services I Offer as the Best SEO Expert in Dhaka
+## Certifications & Education
 
-I provide comprehensive SEO services tailored for the Bangladesh market:
+One of the reasons I am considered the **best SEO expert in Dhaka** is my commitment to continuous learning. SEO changes fast, and I make sure I stay ahead. Here are the platforms where I have earned certifications and completed advanced training:
 
-- **[Local SEO](/services/local-seo):** Dominate Google Maps in Dhaka, Mirpur, Gulshan, Banani, Uttara, Dhanmondi, Chittagong, Sylhet, and across Bangladesh
-- **[On-Page SEO](/services/on-page-seo):** Perfect every page for search engines and users with EEAT-optimized content
-- **[Technical SEO](/services/technical-seo):** Fix Core Web Vitals, crawl errors, and site architecture for maximum Google visibility
-- **[Link Building](/services/link-building):** Build authentic authority with white-hat backlinks from Bangladeshi and international sources
-- **[GEO / AI Search](/services/geo-ai-search):** Get found in ChatGPT, Gemini, Google AI Overviews, and Perplexity
-- **[E-commerce SEO](/services/ecommerce-seo):** Rank your Daraz, Shopify, or WooCommerce store and drive organic sales
-- **[Semantic SEO](/services/semantic-seo):** Build topical authority that Google and AI search engines reward
+### Formal Certifications
 
----
+- **Google Digital Garage** — Fundamentals of Digital Marketing (Certified)
+- **HubSpot Academy** — Inbound Marketing, SEO, and Content Marketing (Certified)
+- **SEMrush Academy** — Technical SEO, Site Audit, and Keyword Strategy (Certified)
+- **LinkedIn Learning** — Advanced SEO, Google Analytics, and Data-Driven Marketing
+- **Coursera** — Specialisations in Digital Marketing and Search Engine Optimisation
+- **Skillshare** — Practical SEO Workshops and Case Study Reviews
 
-## Industries I Serve
+### Continuous Self-Learning
 
-I have delivered measurable SEO results for businesses across these industries in Bangladesh:
+Beyond formal certifications, I stay updated through:
 
-- [Garments & Textile](/industries/garments-textile) — RMG exporters, textile mills
-- [E-commerce](/industries/ecommerce) — Daraz sellers, Shopify stores
-- [Real Estate](/industries/real-estate) — Developers, property agents
-- [Healthcare](/industries/medical) — Hospitals, clinics, diagnostic centers
-- [Education](/industries/education) — Universities, coaching centers
-- [Food & Restaurant](/industries/food-restaurant) — Restaurants, cafes, food delivery
-- [Cleaning Services](/industries/cleaning) — Office and home cleaning
-- [Spa & Salon](/industries/spa-salon) — Beauty parlours, salons
-- [SMM Panel](/industries/smm-panel) — Social media agencies
+- Official **YouTube** channels of Google Search Central, SEMrush, Moz, Ahrefs, and Search Engine Journal
+- **Industry blogs** and publications — I read daily from Search Engine Land, Search Engine Journal, Moz Blog, Ahrefs Blog, and Google's own Webmaster Blog
+- **Algorithm update analysis** — every time Google rolls out a core update, I study its impact, analyse affected sites, and adapt my strategies accordingly
+
+This combination of certified knowledge and real-world application is what separates my work from someone who simply learned SEO from a few YouTube videos.
 
 ---
 
-## What My Clients Say
+## Hands-On Experience — Real Learning from Doing
 
-> "Md Kanok Miah transformed our online presence. Within 4 months, we went from page 5 to page 1 for our main keywords. Our phone has not stopped ringing." — **Restaurant Owner, Old Dhaka**
+Certifications are valuable, but nothing beats **hands-on experience**. Over 6+ years, here is what I have actually done — not just learned about:
 
-> "We interviewed 5 SEO experts before choosing Kanok. His technical knowledge was head and shoulders above the rest. Three months in, our organic traffic has already doubled." — **E-commerce Store Owner, Gulshan**
+### Technical SEO Execution
 
-> "Kanok optimized our Google Business Profile and within 6 weeks we were showing up in the top 3 Google Maps results for 'cleaning service Dhaka'. Best investment we made this year." — **Cleaning Company Owner, Mirpur**
+I have personally performed **technical SEO audits** on hundreds of websites. I have:
+
+- Reduced LCP from 4.5s to under 1.8s for multiple client sites
+- Fixed crawl budget issues that were wasting Googlebot resources
+- Implemented **JSON-LD structured data** for LocalBusiness, Organization, Article, FAQ, Product, and BreadcrumbList schemas
+- Diagnosed and resolved JavaScript SEO issues on React and Next.js websites
+- Optimised Core Web Vitals (LCP, FID, CLS, INP) for better Google rankings
+
+### Local SEO Domination
+
+For **local SEO**, I have helped businesses achieve top 3 Google Maps rankings in Dhaka by:
+
+- Optimising 50+ Google Business Profiles with accurate NAP, categories, and photos
+- Building local citations on BD Yellow Pages, BDTradeInfo, Bdshop, and 40+ Bangladeshi directories
+- Implementing a systematic review generation strategy — earning my clients hundreds of positive Google reviews
+- Targeting "near me" and city-specific keywords that drive real foot traffic
+
+### Content Strategy & On-Page SEO
+
+I have planned and executed content strategies that drive results:
+
+- **350+ digital projects** — each one involved content research, keyword mapping, and on-page optimisation
+- **210+ SEO campaigns** — each campaign involved comprehensive keyword clustering, topical authority mapping, and EEAT-optimised content creation
+- Bilingual SEO for Bengali and English language queries
+
+### Link Building & Digital PR
+
+I build **white-hat backlinks** that actually move the needle:
+
+- Guest posting on reputable Bangladeshi and international websites
+- Broken link building and resource page link acquisition
+- Digital PR for local businesses — getting featured on news sites and local media
+
+### AI Search & GEO Optimisation
+
+As search evolves, so do I. I now specialise in **Generative Engine Optimisation (GEO)**:
+
+- Entity-first content structure for ChatGPT, Google AI Overviews, Gemini, and Perplexity
+- Semantic topic clusters that build topical authority
+- Knowledge Graph alignment for Bangladeshi brands
 
 ---
 
-## Frequently Asked Questions
+## Why Businesses Choose Kanok Miah as Their SEO Expert
 
-**How is Md Kanok Miah different from other SEO experts in Dhaka?**
-Unlike most SEO providers who rely on generic strategies, I combine deep technical expertise with intimate knowledge of the Bangladeshi market. My 6+ years of experience, 350+ projects, and 108 verified 5.0-star reviews demonstrate consistent, verifiable results. Every strategy is customized for your specific industry and target audience in Dhaka and across Bangladesh.
+There are many SEO professionals in Dhaka. Here is why businesses keep choosing me:
 
-**How long does SEO take to show results?**
-Most clients see initial improvements in 4–8 weeks for low-competition keywords. Significant ranking improvements typically occur within 3–6 months. Comprehensive SEO is a long-term investment — the best results compound over 12–18 months. I set realistic expectations and provide monthly progress reports so you can track every improvement.
+### 1. Real, Verifiable Experience
 
-**What does SEO cost for a small business in Bangladesh?**
-My Local SEO package starts at BDT 15,000/month for Google Business Profile optimization and local visibility. Standard SEO packages range from BDT 30,000–50,000/month depending on competition and scope. I offer a free initial audit to determine the right strategy for your budget and goals.
+**350+ digital projects** and **210+ SEO campaigns** completed since 2019. Every single project adds to a body of work that proves I can deliver. I do not talk about theory — I talk about what I have actually done.
 
-**Can you help my business rank in Chittagong or Sylhet?**
-Absolutely. I provide [SEO services in Chittagong](/locations/chittagong) and [SEO services in Sylhet](/locations/sylhet) with tailored strategies for each city's local search landscape. My local SEO approach includes city-specific keyword targeting, local citations on city directories, and Google Business Profile optimization for each location.
+### 2. Corporate & Agency Exposure
 
-**Do you guarantee Google rankings?**
-No legitimate SEO expert can guarantee specific Google rankings — Google's algorithm is beyond anyone's control. However, I guarantee that I will apply proven, white-hat SEO strategies that improve your website's authority, relevance, and visibility. My track record of 350+ successful projects speaks for itself.
+Having worked with **Walton Plaza**, **Solus Corporation**, **Khan IT**, and **CloudMatrix Tech**, I understand both the corporate and startup perspectives. I know how to align SEO with broader business goals — whether you are a one-person shop or a multinational company.
 
-**How do I get started?**
-Contact me for a free SEO audit. I will analyze your current website, identify ranking opportunities, and provide a customized strategy proposal with transparent pricing. There is no obligation — just real, actionable insights that show you exactly what is possible.
+### 3. Diverse Client Base
+
+From **local restaurants** in Old Dhaka to **e-commerce stores** in Gulshan to **international brands** entering the Bangladesh market, I have done it all. This diversity gives me a unique ability to adapt my SEO approach to any industry.
+
+### 4. Certified & Continuously Learning
+
+My certifications from **Google Digital Garage**, **HubSpot Academy**, **SEMrush Academy**, and others prove that I invest in my knowledge. SEO is not static, and neither am I.
+
+### 5. Transparent, Ethical Approach
+
+Every strategy I use is **Google Webmaster Guidelines compliant**. No black-hat tricks. No spam. No risk of penalties. You get full access to Google Search Console data, monthly reports with real metrics, and complete transparency.
+
+### 6. Personal Attention
+
+I personally handle every client. You do not get passed to an account manager or junior executive. When you work with me, you work with **Md Kanok Miah** directly.
 
 ---
 
-## Why Md Kanok Miah is the Right Choice for Your Business
+## Services Offered
 
-Choosing the **best SEO expert in Dhaka, Bangladesh** is one of the most important decisions you will make for your online presence. Here is why I am the right choice:
+I offer a full range of SEO services tailored for the Bangladesh market. Here is what I can do for your business:
 
-- **6+ years of proven experience** — not theory, not guesswork
-- **350+ successful projects** across 9+ industries
-- **108 verified 5.0-star Google reviews** from real Bangladeshi business owners
-- **Transparent reporting** with real Google Search Console data — no fabricated metrics
-- **White-hat, Google-compliant techniques** — your site will never be at risk of penalties
-- **Deep Bangladesh market knowledge** — bilingual SEO (Bengali + English), local citation strategy, cultural context
-- **One-on-one personal attention** — I work directly with you, not through account managers
+### [Local SEO Services](/services/local-seo)
+Dominate Google Maps and local search results in Dhaka, Mirpur, Gulshan, Banani, Uttara, Dhanmondi, Chittagong, Sylhet, and every city in Bangladesh. Includes GBP optimisation, local citations, and review management.
 
-Your business deserves to be found. Your customers are searching Google right now. Let me make sure they find you.
+### [Technical SEO](/services/technical-seo)
+Fix Core Web Vitals, crawl errors, site architecture, structured data, and JavaScript rendering issues. I make sure Google can find, crawl, and index every important page of your website.
 
-**[Get Your Free SEO Audit](/contact)** — No commitment. No hidden fees. Just real, actionable insights that show you exactly how to grow your organic traffic and revenue.
-    
+### [E-commerce SEO](/services/ecommerce-seo)
+Rank your Daraz, Shopify, WooCommerce, or custom e-commerce store. Drive organic traffic that converts into sales — not just visits, but revenue.
+
+### [Link Building](/services/link-building)
+Build authentic, white-hat backlinks from authoritative Bangladeshi and international websites. Real links that move rankings and build domain authority.
+
+### [On-Page SEO](/services/on-page-seo)
+Optimise every page — from title tags and meta descriptions to heading structure, internal links, and content quality. EEAT-optimised content that Google loves.
+
+### [Semantic SEO](/services/semantic-seo)
+Build topical authority with entity-based content clusters. Rank for more keywords, dominate your niche, and prepare for the AI search era.
+
+### [GEO / AI Search Optimisation](/services/geo-ai-search)
+Get featured in ChatGPT, Gemini, Google AI Overviews, and Perplexity. Optimise your content for the next generation of search engines.
+
 ---
+
+## Case Studies — Real Results from Real Clients
+
+SEO is not about promises — it is about proof. Here are some of the real results I have delivered:
+
+### [Locksmith SEO Case Study — Dundee](/blog/locksmith-dundee-seo-case-study)
+A local locksmith in Dundee was struggling to get found on Google. Through targeted local SEO, GBP optimisation, and citation building, we achieved top 3 Google Maps rankings and a significant increase in service calls.
+
+### [E-commerce SEO Growth Case](/blog/ecommerce-seo-case-study-bangladesh)
+An e-commerce store in Dhaka needed organic traffic and sales. Through comprehensive on-page optimisation, technical fixes, and content strategy, we increased organic traffic by 180% and conversions by 35% within 5 months.
+
+### [Local Business SEO — Dhaka Restaurant](/blog/local-seo-dhaka-restaurant-case-study)
+A restaurant in Old Dhaka wanted to appear on Google Maps for "best restaurant in Old Dhaka". Through strategic GBP optimisation, local citations, and review generation, they achieved a #1 Google Maps ranking within 8 weeks.
+
+### [Technical SEO Overhaul — International Client](/blog/technical-seo-case-study)
+An international client migrating their website was losing rankings and traffic. We performed a complete technical SEO audit, fixed crawl issues, implemented structured data, and recovered 100% of lost rankings within 3 months.
+
+These are just a few examples. Every client gets the same dedication, strategy, and focus on measurable results.
+
+---
+
+## Conclusion — Partner with the Best
+
+Finding the **best SEO expert in Dhaka, Bangladesh** is not about guessing. It is about choosing someone with a proven track record, real certifications, hands-on experience, and a transparent, ethical approach to search engine optimisation.
+
+Here is what you get when you work with me:
+
+- **6+ years** of real SEO experience — since 2019
+- **350+ digital projects** and **210+ SEO campaigns** delivered
+- Certifications from **Google Digital Garage**, **HubSpot Academy**, **SEMrush Academy**, and more
+- Current roles as **SEO Project Manager at Khan IT** and **Head of Digital Marketing at CloudMatrix Tech**
+- **8-12 live SEO projects** managed every month
+- Experience with **local businesses, e-commerce stores, and international brands**
+- **Complete transparency** — real data, real reports, real results
+- **White-hat, Google-compliant** strategies only
+
+Your business deserves to be found by the customers who are searching for it right now. Whether you are a small shop in Mirpur, an e-commerce brand in Gulshan, or an international company expanding into Bangladesh, I can help you achieve the organic visibility you need to grow.
+
+**[Contact Me for a Free SEO Audit](/contact)** — No commitment. No hidden fees. Just an honest, data-driven assessment of your current SEO standing and a clear roadmap to rank higher, drive more traffic, and grow your revenue.
+
 ### Need SEO Help?
 
-- [Local SEO Services](/services/local-seo) — Dominate Google Maps in Dhaka
-- [Technical SEO Services](/services/technical-seo) — Fix Core Web Vitals and site architecture
-- [On-Page SEO Services](/services/on-page-seo) — Perfect every page for search engines
+- [Local SEO Services](/services/local-seo) — Dominate Google Maps in Dhaka and across Bangladesh
+- [Technical SEO Services](/services/technical-seo) — Fix Core Web Vitals and improve site performance
+- [E-commerce SEO Services](/services/ecommerce-seo) — Rank your online store and drive organic sales
+- [Link Building Services](/services/link-building) — Build authority with white-hat backlinks
 - [Contact Me](/contact) — Get your free SEO audit today
-
-
+`
 আপনার সাইটের জন্য <a href="/services/local-seo">লোকাল SEO সেবা</a>-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। ঢাকায় আপনার ব্যবসার জন্য সেরা লোকাল SEO সেবা পেতে আজই আমাদের সাথে যোগাযোগ করুন।
 `,
   },

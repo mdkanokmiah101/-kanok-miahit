@@ -1,7 +1,7 @@
 import HomeClient from "./HomeClient";
 
 export const metadata = {
-  title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
+  title: "Top SEO Expert in Dhaka | Md Kanok Miah — #1 SEO Specialist",
   description:
     "Top SEO expert in Dhaka, Bangladesh with 6+ years of experience. Md Kanok Miah boosts rankings, traffic & leads — Local SEO, Technical SEO, GEO.",
   keywords: [
@@ -28,7 +28,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Md Kanok Miah",
-    title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
+    title: "Top SEO Expert in Dhaka | Md Kanok Miah — #1 SEO Specialist",
     description:
       "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist. Get higher rankings and more traffic with proven SEO strategies.",
     url: "https://kanokmiah.com.bd",
@@ -43,7 +43,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best SEO Expert in Dhaka, Bangladesh | Md Kanok Miah — #1 SEO Specialist",
+    title: "Top SEO Expert in Dhaka | Md Kanok Miah — #1 SEO Specialist",
     description:
       "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah helps businesses rank higher, grow faster, dominate search.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],

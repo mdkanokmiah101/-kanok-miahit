@@ -2,18 +2,18 @@ import RangpurClient from "./RangpurClient";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Local SEO Services in Rangpur — Md Kanok Miah | SEO Expert Dhaka, Bangladesh",
+  title: "Local SEO Rangpur — Md Kanok Miah | SEO Expert Dhaka",
   description: "Professional local SEO services in Rangpur, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO.",
   alternates: { canonical: "/locations/rangpur" },
   openGraph: {
-    title: "Local SEO Services in Rangpur — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    title: "Local SEO Rangpur — Md Kanok Miah | SEO Expert Dhaka",
     description: "Professional local SEO services in Rangpur, Bangladesh. Get found on Google Maps and attract more customers in Rangpur city.",
     url: "https://kanokmiah.com.bd/locations/rangpur",
     images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO Services in Rangpur — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    title: "Local SEO Rangpur — Md Kanok Miah | SEO Expert Dhaka",
     description: "Professional local SEO services in Rangpur, Bangladesh.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },

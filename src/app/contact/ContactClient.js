@@ -2,7 +2,10 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-// FAQSchema rendered server-side in page.js — not duplicated here
+
+const WHATSAPP_NUMBER = "01712883101";
+const WHATSAPP_FULL = "+8801712883101";
+const WHATSAPP_URL = "https://wa.me/8801712883101?text=Hi%20Md%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business.";
 
 export default function ContactClient() {
   const [submitting, setSubmitting] = useState(false);
@@ -26,7 +29,6 @@ export default function ContactClient() {
     setSubmitting(false);
   };
 
-
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Navbar */}
@@ -42,8 +44,27 @@ export default function ContactClient() {
             <span className="text-primary">Online Presence</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-            Ready to work with the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>? Fill out the form or reach out directly — I&apos;ll get back to you within 24 hours.
+            Ready to work with the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>? Reach out via WhatsApp for the fastest response, or fill out the form below.
           </p>
+        </div>
+      </section>
+
+      {/* WhatsApp Hero Banner */}
+      <section className="-mt-8 px-4 mb-8">
+        <div className="max-w-5xl mx-auto">
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-gradient-to-r from-green-600 to-emerald-500 rounded-2xl p-6 md:p-8 text-white text-center hover:shadow-xl hover:shadow-green-500/25 transition-all group"
+          >
+            <div className="text-4xl mb-3">💬</div>
+            <p className="text-sm font-medium text-green-100 uppercase tracking-wider">Fastest Response — Reply Within Minutes</p>
+            <p className="text-3xl md:text-4xl font-extrabold mt-2 group-hover:scale-105 transition-transform inline-block">
+              {WHATSAPP_NUMBER}
+            </p>
+            <p className="text-green-100 text-sm mt-2">Tap to chat on WhatsApp →</p>
+          </a>
         </div>
       </section>
 
@@ -52,66 +73,121 @@ export default function ContactClient() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
           {/* Contact Form */}
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-8">
-            <h2 className="text-xl font-extrabold text-gray-900 mb-6">Send Me a Message</h2>
-            <form className="space-y-5" onSubmit={handleSubmit} method="POST">
-              <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">Your Name *</label>
-                <input
-                  type="text" name="name" required
-                  placeholder="e.g. Md. Rahim"
-                  className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">Email Address *</label>
-                <input
-                  type="email" name="email" required
-                  placeholder="your@email.com"
-                  className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">Phone Number</label>
-                <input
-                  type="tel" name="phone"
-                  placeholder="01712-883101"
-                  className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">Your Website</label>
-                <input
-                  type="url" name="website"
-                  placeholder="https://yourwebsite.com"
-                  className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">Tell Me About Your Project *</label>
-                <textarea
-                  name="message" required rows="5"
-                  placeholder="I need SEO for my e-commerce store in Dhaka..."
-                  className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all resize-none"
-                ></textarea>
-              </div>
-              <button
-                type="submit" disabled={submitting}
-                className="w-full bg-primary hover:bg-primary-dark disabled:bg-primary/50 text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all"
-              >
-                {submitting ? "Sending..." : "Get Free SEO Audit →"}
-              </button>
-              {submitted && (
-                <div className="bg-green-50 border border-green-200 text-green-700 rounded-xl px-5 py-3 text-sm text-center font-medium">
-                  ✅ Thank you! Your message has been sent. I'll get back to you within 24 hours.
+            <h2 className="text-xl font-extrabold text-gray-900 mb-2">Send Me a Message</h2>
+            <p className="text-gray-400 text-sm mb-6">
+              I&apos;ll get back to you within 24 hours. For immediate help, use{" "}
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-semibold hover:underline">
+                WhatsApp
+              </a>.
+            </p>
+
+            {!submitted ? (
+              <form className="space-y-5" onSubmit={handleSubmit} method="POST">
+                <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">Your Name *</label>
+                  <input
+                    type="text" name="name" required
+                    placeholder="e.g. Md. Rahim"
+                    className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
+                  />
                 </div>
-              )}
-              <p className="text-xs text-gray-400 text-center">I respect your privacy. No spam, ever.</p>
-            </form>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">Email Address *</label>
+                  <input
+                    type="email" name="email" required
+                    placeholder="your@email.com"
+                    className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">Phone Number</label>
+                  <input
+                    type="tel" name="phone"
+                    placeholder="01712-883101"
+                    className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">Your Website</label>
+                  <input
+                    type="url" name="website"
+                    placeholder="https://yourwebsite.com"
+                    className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">Tell Me About Your Project *</label>
+                  <textarea
+                    name="message" required rows="5"
+                    placeholder="I need SEO for my e-commerce store in Dhaka..."
+                    className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all resize-none"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit" disabled={submitting}
+                  className="w-full bg-primary hover:bg-primary-dark disabled:bg-primary/50 text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all"
+                >
+                  {submitting ? "Sending..." : "Get Free SEO Audit →"}
+                </button>
+                <p className="text-xs text-gray-400 text-center">I respect your privacy. No spam, ever.</p>
+              </form>
+            ) : (
+              <div className="text-center py-6 space-y-6">
+                <div className="bg-green-50 border border-green-200 text-green-700 rounded-xl px-5 py-4 text-sm text-center font-medium">
+                  ✅ Thank you! Your message has been logged. I&apos;ll get back to you within 24 hours.
+                </div>
+
+                {/* WhatsApp CTA after submission */}
+                <div className="bg-gradient-to-r from-green-600 to-emerald-500 rounded-xl p-6 text-white">
+                  <p className="text-lg font-bold mb-1">🚀 Need faster help?</p>
+                  <p className="text-white/80 text-sm mb-4">
+                    Get an instant response on WhatsApp — I typically reply within minutes.
+                  </p>
+                  <a
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-white text-emerald-700 px-6 py-3 rounded-xl font-bold hover:bg-green-50 transition-all shadow-lg"
+                  >
+                    💬 Chat Now on {WHATSAPP_NUMBER}
+                  </a>
+                </div>
+
+                <button
+                  onClick={() => setSubmitted(false)}
+                  className="text-gray-500 text-sm hover:text-primary transition-colors underline"
+                >
+                  ← Send another message
+                </button>
+              </div>
+            )}
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info — WhatsApp first, most prominent */}
           <div className="space-y-6">
+            {/* WhatsApp — #1 */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-2xl p-7 hover:shadow-lg hover:shadow-green-500/10 transition-all">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-2xl">💬</span>
+                <h3 className="font-bold text-lg text-gray-900">WhatsApp — Fastest Response</h3>
+              </div>
+              <p className="text-gray-500 text-sm mb-2">Message me directly for an instant reply:</p>
+              <p className="text-3xl font-extrabold text-green-700 mb-3">
+                {WHATSAPP_NUMBER}
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-bold transition-all shadow-md hover:shadow-lg w-full justify-center text-sm"
+              >
+                💬 Chat on WhatsApp Now
+              </a>
+              <p className="text-xs text-green-600/70 mt-2 text-center">Usually replies within minutes</p>
+            </div>
+
+            {/* Phone */}
             <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:border-primary/20 transition-all">
               <h3 className="font-bold text-lg mb-4 text-gray-900">📞 Call Me Directly</h3>
               <p className="text-gray-500 text-sm mb-3">Speak directly with me about your SEO needs:</p>
@@ -120,19 +196,7 @@ export default function ContactClient() {
               </a>
             </div>
 
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:border-primary/20 transition-all">
-              <h3 className="font-bold text-lg mb-4 text-gray-900">💬 WhatsApp</h3>
-              <p className="text-gray-500 text-sm mb-3">Quick response on WhatsApp:</p>
-              <a
-                href="https://wa.me/8801712883101?text=Hi%20Md%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 px-5 py-3 rounded-xl font-semibold hover:bg-emerald-100 transition-all text-sm"
-              >
-                💬 Chat on WhatsApp → <span className="text-xs text-gray-400">(Fastest Response)</span>
-              </a>
-            </div>
-
+            {/* Other Ways to Reach */}
             <div className="bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:border-primary/20 transition-all">
               <h3 className="font-bold text-lg mb-4 text-gray-900">📍 Other Ways to Reach</h3>
               <div className="space-y-3 text-sm">
@@ -155,6 +219,7 @@ export default function ContactClient() {
               </div>
             </div>
 
+            {/* Free SEO Audit CTA */}
             <div className="bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-6 text-center text-white">
               <p className="text-lg font-bold mb-1">⭐ Free SEO Audit</p>
               <p className="text-white/80 text-sm">Worth BDT 5,000 — Get a complete analysis of your website. No commitment required.</p>
@@ -166,7 +231,6 @@ export default function ContactClient() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          {/* FAQ schema rendered server-side in page.js */}
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>

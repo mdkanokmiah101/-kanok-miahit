@@ -21,6 +21,16 @@ export async function POST(request) {
       fs.appendFileSync("/root/.hermes/leads.log", leadRecord);
     } catch(e) {}
 
+    // Try WhatsApp lead notification bot
+    try {
+      fetch("http://127.0.0.1:3099/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, website, subject }),
+        signal: AbortSignal.timeout(3000),
+      }).catch(() => {});
+    } catch(e) {}
+
     // Try Telegram notification
     const token = process.env.TELEGRAM_BOT_TOKEN;
     if (token) {

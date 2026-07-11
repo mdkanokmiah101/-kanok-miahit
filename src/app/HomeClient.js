@@ -179,6 +179,15 @@ export default function HomeClient() {
             <input type="text" name="website" placeholder="Your Website (optional)"
               className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
             <input type="hidden" name="source" value="homepage-hero-form" />
+            {/* WhatsApp Option Inside Form */}
+            <div className="relative my-2">
+              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200"></div></div>
+              <div className="relative flex justify-center text-xs"><span className="bg-white px-2 text-gray-400">OR</span></div>
+            </div>
+            <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business." target="_blank"
+              className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 rounded-xl transition-all text-sm">
+              💬 Chat on WhatsApp <span className="text-green-100">01604809110</span>
+            </a>
             <button type="submit" disabled={submitting}
               className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25 disabled:opacity-50">
               {submitting ? "Sending..." : submitted ? "✅ Sent! I'll WhatsApp you shortly" : "🔍 Get My Free Audit"}
@@ -418,6 +427,15 @@ export default function HomeClient() {
                   <textarea name="message" required rows="4" placeholder="Tell me about your business and SEO goals..."
                     className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"></textarea>
                 </div>
+                {/* WhatsApp Option */}
+                <div className="relative my-2">
+                  <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200"></div></div>
+                  <div className="relative flex justify-center text-xs"><span className="bg-white px-2 text-gray-400">OR</span></div>
+                </div>
+                <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business." target="_blank"
+                  className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition-all">
+                  💬 Chat on WhatsApp <span className="text-green-100">01604809110</span>
+                </a>
                 <button type="submit" disabled={submitting}
                   className="w-full bg-primary hover:bg-primary-dark disabled:bg-primary/50 text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all text-lg">
                   {submitting ? "Sending..." : "Get Free SEO Audit →"}

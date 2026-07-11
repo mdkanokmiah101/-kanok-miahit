@@ -133,6 +133,7 @@ export default function ContactClient() {
                   className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition-all">
                   💬 Chat on WhatsApp <span className="text-green-100">01604809110</span>
                 </a>
+                <p className="text-xs text-gray-400 text-center">📧 Results sent to <strong>mdkanokmiah101@gmail.com</strong></p>
                 <button
                   type="submit" disabled={submitting}
                   className="w-full bg-primary hover:bg-primary-dark disabled:bg-primary/50 text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all"

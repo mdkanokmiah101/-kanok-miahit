@@ -2,22 +2,20 @@
 
 import nodemailer from "nodemailer";
 
-// SMTP config for sending email notifications
 const EMAIL_FROM = "mdkanokmiah232@gmail.com";
 const EMAIL_TO = "mdkanokmiah101@gmail.com";
 const SMTP_USER = "mdkanokmiah232@gmail.com";
 const SMTP_PASS = "akll wbko qtqh sgjc";
 
-// Create transporter
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  auth: { user: SMTP_USER, pass: SMTP_PASS },
-});
-
 async function sendEmail({ name, email, phone, website, message }) {
   try {
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
+      auth: { user: SMTP_USER, pass: SMTP_PASS },
+    });
+
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f9f9f9;">
         <div style="background: #124D1C; color: white; padding: 20px; border-radius: 10px 10px 0 0; text-align: center;">
@@ -32,31 +30,32 @@ async function sendEmail({ name, email, phone, website, message }) {
             <tr style="background: #f5f5f5;"><td style="padding: 8px; font-weight: bold; color: #333;">🌐 Website</td><td style="padding: 8px;">${website}</td></tr>
             <tr><td style="padding: 8px; font-weight: bold; color: #333;">💬 Message</td><td style="padding: 8px;">${message || "—"}</td></tr>
           </table>
-          <div style="margin-top: 20px; padding: 15px; background: #e8f5e9; border-radius: 8px;">
-            <a href="https://wa.me/8801604809110?text=Hi!%20Regarding%20your%20lead%20${name}%20(${phone})" 
-               style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+          <div style="margin-top: 20px; padding: 15px; background: #e8f5e9; border-radius: 8px; text-align: center;">
+            <a href="https://wa.me/8801604809110?text=Hi!%20Regarding%20your%20lead%20${encodeURIComponent(name)}%20(${encodeURIComponent(phone)})" 
+               style="display: inline-block; background: #25D366; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin: 5px;">
               💬 Reply on WhatsApp
             </a>
-            <a href="mailto:${email}" 
-               style="display: inline-block; background: #124D1C; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin-left: 10px;">
-              📧 Reply via Email
+            <a href="tel:${phone}" 
+               style="display: inline-block; background: #124D1C; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin: 5px;">
+              📞 Call Now
             </a>
           </div>
         </div>
       </div>
     `;
 
-    await transporter.sendMail({
+    const info = await transporter.sendMail({
       from: `"Md Kanok Miah - Lead" <${EMAIL_FROM}>`,
       to: EMAIL_TO,
       subject: `🔴 New SEO Lead: ${name} - ${phone}`,
       html,
     });
 
-    console.log(`📧 Email sent to ${EMAIL_TO} for lead: ${name}`);
+    console.log(`📧 Email sent: ${info.messageId}`);
     return true;
   } catch (err) {
     console.error("📧 Email error:", err.message);
+    // Don't throw - just log
     return false;
   }
 }
@@ -64,7 +63,6 @@ async function sendEmail({ name, email, phone, website, message }) {
 export async function POST(request) {
   try {
     const formData = await request.formData();
-
     const name = formData.get("name") || "Not provided";
     const email = formData.get("email") || "Not provided";
     const phone = formData.get("phone") || "Not provided";
@@ -72,30 +70,30 @@ export async function POST(request) {
     const message = formData.get("message") || "Not provided";
     const subject = formData.get("_subject") || "New SEO Lead";
 
-    // Log the submission
     console.log(`📬 ${subject}: ${name} / ${email} / ${phone}`);
 
-    // Log to leads file
+    // Log locally if running in dev mode
     try {
       const fs = require("fs");
-      const leadRecord = `[${new Date().toISOString()}] ${name} | ${email} | ${phone} | ${website} | ${subject}\n`;
-      fs.appendFileSync("/root/.hermes/leads.log", leadRecord);
+      const leadRecord = `[${new Date().toISOString()}] ${name} | ${email} | ${phone} | ${website}\n`;
+      fs.appendFileSync("/tmp/leads.log", leadRecord);
     } catch(e) {}
 
-    // Send Email notification
-    sendEmail({ name, email, phone, website, message }).catch(() => {});
+    // Send Email - AWAITED properly so it completes
+    const emailSent = await sendEmail({ name, email, phone, website, message });
+    console.log(`📧 Email sent to ${EMAIL_TO}: ${emailSent ? "YES" : "FAILED"}`);
 
-    // Try WhatsApp lead notification bot (port 3099)
+    // Try WhatsApp lead notification bot
     try {
       fetch("http://127.0.0.1:3099/send-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, website, subject }),
-        signal: AbortSignal.timeout(3000),
+        signal: AbortSignal.timeout(2000),
       }).catch(() => {});
     } catch(e) {}
 
-    // Telegram notification
+    // Telegram
     const token = process.env.TELEGRAM_BOT_TOKEN;
     if (token) {
       const text = `🔔 **🔴 NEW SEO LEAD — kanokmiah.com.bd**
@@ -103,9 +101,7 @@ export async function POST(request) {
 📧 Email: ${email}
 📞 Phone: ${phone}
 🌐 Website: ${website}
-💬 Message: ${message}
-📧 Email sent to: mdkanokmiah101@gmail.com
-📱 WhatsApp: https://wa.me/8801604809110?text=${encodeURIComponent(`New lead: ${name} - ${phone}`)}
+📧 Email sent: ${emailSent ? "✅ YES" : "❌ FAILED"}
 ⏱ ${new Date().toLocaleString("en-BD", { timeZone: "Asia/Dhaka" })}`;
       fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
         method: "POST",
@@ -114,13 +110,13 @@ export async function POST(request) {
       }).catch(() => {});
     }
 
-    return Response.json({ 
-      success: true, 
+    return Response.json({
+      success: true,
+      email_sent: emailSent,
       message: "Thank you! Your message has been sent.",
-      whatsapp: "https://wa.me/8801604809110?text=Hi%20Md%20Kanok%20Miah!%20I%20just%20submitted%20the%20contact%20form%20on%20your%20website.%20Please%20get%20back%20to%20me."
     });
   } catch (err) {
     console.error("Form error:", err);
-    return Response.json({ success: false, message: "Something went wrong. Please try again." }, { status: 500 });
+    return Response.json({ success: false, message: "Something went wrong." }, { status: 500 });
   }
 }

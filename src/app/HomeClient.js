@@ -133,66 +133,40 @@ export default function HomeClient() {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
-            <div className="relative bg-gradient-to-br from-primary to-primary-dark rounded-3xl p-1 shadow-2xl max-w-sm mx-auto">
-              <div className="bg-white rounded-[22px] p-4">
-                <img
-                  src="/kanok-miah-profile.webp"
-                  alt="Md Kanok Miah - Best SEO Expert in Dhaka, Bangladesh"
-                  className="w-60 h-60 rounded-2xl object-cover mx-auto"
-                  width="240"
-                  height="240"
-                  loading="eager"
-                />
-              </div>
-            </div>
-            <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl px-6 py-4 border border-gray-100">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-xl">⭐</div>
-                <div>
-                  <div className="text-sm font-bold text-gray-900">4.9/5 Client Rating</div>
-                  <div className="text-xs text-gray-500">Trusted by 50+ businesses</div>
+          <div className="relative">
+            {/* ===== LEAD FORM - Replaces Image ===== */}
+            <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 max-w-sm mx-auto">
+              <h3 className="text-lg font-bold text-center text-gray-900 mb-3">
+                🚀 Get <span className="text-primary">Free SEO Audit</span> & Proposal
+              </h3>
+              <form onSubmit={handleSubmit} className="space-y-3">
+                <input type="text" name="name" placeholder="Your Name" required
+                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
+                <div className="flex gap-2">
+                  <span className="inline-flex items-center bg-gray-100 border border-gray-200 rounded-xl px-3 text-sm text-gray-500">+880</span>
+                  <input type="tel" name="phone" placeholder="1XXXXXXXXX" required
+                    className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
                 </div>
+                <input type="text" name="website" placeholder="Your Website (optional)"
+                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
+                <input type="hidden" name="source" value="homepage-hero-form" />
+                <p className="text-[11px] text-gray-400 text-center">📧 We'll send your report to: <strong>mdkanokmiah101@gmail.com</strong></p>
+                <button type="submit" disabled={submitting}
+                  className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25 disabled:opacity-50">
+                  {submitting ? "Sending..." : submitted ? "✅ Sent! I'll WhatsApp you shortly" : "🔍 Get My Free Audit"}
+                </button>
+              </form>
+              {/* WhatsApp Option Inside Form */}
+              <div className="relative my-2">
+                <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200"></div></div>
+                <div className="relative flex justify-center text-xs"><span className="bg-white px-2 text-gray-400">OR</span></div>
               </div>
-            </div>
-            <div className="absolute -top-5 -right-5 bg-primary rounded-2xl shadow-xl px-5 py-3">
-              <div className="text-white text-sm font-bold">🔥 350+ Projects Done</div>
+              <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business." target="_blank"
+                className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 rounded-xl transition-all text-sm">
+                💬 Chat on WhatsApp <span className="text-green-100">01604809110</span>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ===== HERO LEAD FORM ===== */}
-      <section className="relative -mt-10 z-10 px-4">
-        <div className="max-w-lg mx-auto bg-white rounded-2xl shadow-2xl border border-gray-100 p-6">
-          <h3 className="text-lg font-bold text-center text-gray-900 mb-3">
-            🚀 Get <span className="text-primary">Free SEO Audit</span> & Proposal
-          </h3>
-          <form onSubmit={handleSubmit} className="space-y-3">
-            <input type="text" name="name" placeholder="Your Name" required
-              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
-            <div className="flex gap-2">
-              <span className="inline-flex items-center bg-gray-100 border border-gray-200 rounded-xl px-3 text-sm text-gray-500">+880</span>
-              <input type="tel" name="phone" placeholder="1XXXXXXXXX" required
-                className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
-            </div>
-            <input type="text" name="website" placeholder="Your Website (optional)"
-              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
-            <input type="hidden" name="source" value="homepage-hero-form" />
-            {/* WhatsApp Option Inside Form */}
-            <div className="relative my-2">
-              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200"></div></div>
-              <div className="relative flex justify-center text-xs"><span className="bg-white px-2 text-gray-400">OR</span></div>
-            </div>
-            <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business." target="_blank"
-              className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 rounded-xl transition-all text-sm">
-              💬 Chat on WhatsApp <span className="text-green-100">01604809110</span>
-            </a>
-            <button type="submit" disabled={submitting}
-              className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25 disabled:opacity-50">
-              {submitting ? "Sending..." : submitted ? "✅ Sent! I'll WhatsApp you shortly" : "🔍 Get My Free Audit"}
-            </button>
-          </form>
         </div>
       </section>
 
@@ -436,6 +410,7 @@ export default function HomeClient() {
                   className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition-all">
                   💬 Chat on WhatsApp <span className="text-green-100">01604809110</span>
                 </a>
+                <p className="text-xs text-gray-400 text-center">📧 Results sent to <strong>mdkanokmiah101@gmail.com</strong></p>
                 <button type="submit" disabled={submitting}
                   className="w-full bg-primary hover:bg-primary-dark disabled:bg-primary/50 text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all text-lg">
                   {submitting ? "Sending..." : "Get Free SEO Audit →"}

@@ -37,7 +37,7 @@ export default function Footer() {
             <Link href="/" className="text-2xl font-extrabold tracking-tight text-white">
               Md <span className="text-primary">Kanok Miah</span>
             </Link>
-            <p className="text-gray-400 text-sm mt-4 leading-relaxed">
+            <p className="text-gray-300 text-sm mt-4 leading-relaxed">
               Bangladesh&apos;s trusted SEO expert with 6+ years of experience. Helping local businesses rank higher,
               grow faster, and dominate search results with proven SEO strategies.
             </p>
@@ -45,7 +45,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mt-5 bg-gray-800/50 rounded-xl px-4 py-3 inline-flex">
               <span className="text-yellow-400 text-lg">⭐</span>
               <span className="text-white text-sm font-semibold">4.9/5</span>
-              <span className="text-gray-400 text-xs">(50+ reviews)</span>
+              <span className="text-gray-300 text-xs">(50+ reviews)</span>
             </div>
           </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
                 { name: "Contact", path: "/contact" },
               ].map((link, i) => (
                 <li key={i}>
-                  <Link href={link.path} className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                  <Link href={link.path} className="text-gray-300 hover:text-primary transition-colors flex items-center gap-2">
                     <span className="text-primary text-xs">▸</span> {link.name}
                   </Link>
                 </li>
@@ -80,7 +80,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               {services.map((service, i) => (
                 <li key={i}>
-                  <Link href={`/services/${service.slug}`} className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                  <Link href={`/services/${service.slug}`} className="text-gray-300 hover:text-primary transition-colors flex items-center gap-2">
                     <span className="text-primary text-xs">▸</span> {service.name}
                   </Link>
                 </li>
@@ -94,7 +94,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               {industries.map((ind, i) => (
                 <li key={i}>
-                  <Link href={ind.path} className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                  <Link href={ind.path} className="text-gray-300 hover:text-primary transition-colors flex items-center gap-2">
                     <span className="text-primary text-xs">▸</span> {ind.name}
                   </Link>
                 </li>
@@ -109,28 +109,28 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5">📞</span>
                 <div>
-                  <div className="text-gray-400 text-xs">Phone</div>
+                  <div className="text-gray-300 text-xs">Phone</div>
                   <a href="tel:+880****9110" className="text-white hover:text-primary transition-colors font-medium">+880 1604-809110</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5">📧</span>
                 <div>
-                  <div className="text-gray-400 text-xs">Email</div>
+                  <div className="text-gray-300 text-xs">Email</div>
                   <a href="mailto:mdkanokmiah232@gmail.com" className="text-white hover:text-primary transition-colors font-medium">mdkanokmiah232@gmail.com</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5">📍</span>
                 <div>
-                  <div className="text-gray-400 text-xs">Location</div>
+                  <div className="text-gray-300 text-xs">Location</div>
                   <span className="text-white font-medium">Dhaka, Bangladesh</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5">💬</span>
                 <div>
-                  <div className="text-gray-400 text-xs">WhatsApp</div>
+                  <div className="text-gray-300 text-xs">WhatsApp</div>
                   <a href="https://wa.me/8801604809110" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors font-medium">Chat Now</a>
                 </div>
               </li>
@@ -140,17 +140,17 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500 text-center md:text-left">
+          <p className="text-sm text-gray-400 text-center md:text-left">
             © 2026 <span className="text-primary font-semibold">Md Kanok Miah</span>. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm">
             <span className="text-gray-400 text-xs font-medium">🔥 350+ projects completed</span>
             <span className="text-gray-700">|</span>
-            <Link href="/privacy-policy" className="text-gray-500 hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="text-gray-400 hover:text-primary transition-colors">Privacy Policy</Link>
             <span className="text-gray-700">|</span>
-            <Link href="/terms-of-service" className="text-gray-500 hover:text-primary transition-colors">Terms of Service</Link>
+            <Link href="/terms-of-service" className="text-gray-400 hover:text-primary transition-colors">Terms of Service</Link>
             <span className="text-gray-700">|</span>
-            <Link href="/sitemap.xml" className="text-gray-500 hover:text-primary transition-colors">Sitemap</Link>
+            <Link href="/sitemap.xml" className="text-gray-400 hover:text-primary transition-colors">Sitemap</Link>
           </div>
         </div>
       </div>

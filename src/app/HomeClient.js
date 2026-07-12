@@ -95,7 +95,7 @@ export default function HomeClient() {
               <br />
               <span className="text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-gray-700 text-lg mb-8 leading-relaxed">
               Md Kanok Miah is the <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong> — serving <strong className="text-gray-900">Mirpur, Gulshan, Banani, Uttara, Dhanmondi</strong> and all across the country.
               With <strong className="text-gray-900">6+ years</strong> of experience, I help local businesses rank higher on Google,
               generate qualified leads, and scale revenue — with proven strategies that work.
@@ -120,15 +120,15 @@ export default function HomeClient() {
             <div className="mt-10 flex flex-wrap gap-6">
               <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5">
                 <span className="text-2xl">🏆</span>
-                <div><div className="text-sm font-bold text-gray-900">6+ Years</div><div className="text-xs text-gray-500">Experience</div></div>
+                <div><div className="text-sm font-bold text-gray-900">6+ Years</div><div className="text-xs text-gray-600">Experience</div></div>
               </div>
               <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5">
                 <span className="text-2xl">📈</span>
-                <div><div className="text-sm font-bold text-gray-900">350+</div><div className="text-xs text-gray-500">Projects</div></div>
+                <div><div className="text-sm font-bold text-gray-900">350+</div><div className="text-xs text-gray-600">Projects</div></div>
               </div>
               <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5">
                 <span className="text-2xl">⭐</span>
-                <div><div className="text-sm font-bold text-gray-900">4.9/5</div><div className="text-xs text-gray-500">Rating</div></div>
+                <div><div className="text-sm font-bold text-gray-900">4.9/5</div><div className="text-xs text-gray-600">Rating</div></div>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function HomeClient() {
                 <input type="text" name="website" placeholder="Your Website (optional)"
                   className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
                 <input type="hidden" name="source" value="homepage-hero-form" />
-                <p className="text-[11px] text-gray-400 text-center">📧 We'll send your report to: <strong>mdkanokmiah101@gmail.com</strong></p>
+                <p className="text-gray-500 text-[11px] text-center">📧 We'll send your report to: <strong>mdkanokmiah101@gmail.com</strong></p>
                 <button type="submit" disabled={submitting}
                   className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25 disabled:opacity-50">
                   {submitting ? "Sending..." : submitted ? "✅ Sent! I'll WhatsApp you shortly" : "🔍 Get My Free Audit"}
@@ -159,11 +159,11 @@ export default function HomeClient() {
               {/* WhatsApp Option Inside Form */}
               <div className="relative my-2">
                 <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200"></div></div>
-                <div className="relative flex justify-center text-xs"><span className="bg-white px-2 text-gray-400">OR</span></div>
+                <div className="relative flex justify-center text-xs"><span className="bg-white px-2 text-gray-500">OR</span></div>
               </div>
               <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business." target="_blank"
                 className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 rounded-xl transition-all text-sm">
-                💬 Chat on WhatsApp <span className="text-green-100">01604809110</span>
+                💬 Chat on WhatsApp <span className="text-white">01604809110</span>
               </a>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function HomeClient() {
           ].map((stat, i) => (
             <div key={i} className="py-2">
               <div className="text-3xl md:text-5xl font-extrabold text-white">{stat.num}</div>
-              <div className="text-primary/70 text-xs md:text-sm mt-1 font-medium uppercase tracking-wider">{stat.label}</div>
+              <div className="text-white/80 text-xs md:text-sm mt-1 font-medium uppercase tracking-wider">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -207,7 +207,7 @@ export default function HomeClient() {
               <Link key={i} href={`/services/${s.slug}`} className="group bg-white rounded-2xl p-7 border border-gray-100 hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-2xl mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">{s.icon}</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">{s.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
               </Link>
             ))}
           </div>
@@ -238,7 +238,7 @@ export default function HomeClient() {
                 className="group bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-primary/20 hover:bg-primary-light hover:-translate-y-1 transition-all duration-300">
                 <div className="text-3xl mb-3">{ind.icon}</div>
                 <h3 className="font-bold text-gray-900 mb-1.5 group-hover:text-primary transition-colors">{ind.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{ind.desc}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{ind.desc}</p>
                 <div className="mt-3 text-primary text-xs font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300">Learn More →</div>
               </Link>
             ))}
@@ -270,7 +270,7 @@ export default function HomeClient() {
                 <div className="text-4xl shrink-0">{a.icon}</div>
                 <div>
                   <h3 className="font-bold text-lg mb-2 text-gray-900">{a.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{a.desc}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{a.desc}</p>
                 </div>
               </div>
             ))}
@@ -301,7 +301,7 @@ export default function HomeClient() {
                     {p.step}
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2 text-lg">{p.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{p.desc}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{p.desc}</p>
                 </div>
               ))}
             </div>
@@ -318,7 +318,7 @@ export default function HomeClient() {
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Ready to <span className="text-amber-300">Dominate</span> Search Results?
           </h2>
-          <p className="text-primary/80 mb-10 text-lg max-w-xl mx-auto">
+          <p className="text-white/80 mb-10 text-lg max-w-xl mx-auto">
             Get a free SEO audit for your Bangladesh business. No commitment. No hidden fees. Just real, actionable insights.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -404,13 +404,13 @@ export default function HomeClient() {
                 {/* WhatsApp Option */}
                 <div className="relative my-2">
                   <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200"></div></div>
-                  <div className="relative flex justify-center text-xs"><span className="bg-white px-2 text-gray-400">OR</span></div>
+                  <div className="relative flex justify-center text-xs"><span className="bg-white px-2 text-gray-500">OR</span></div>
                 </div>
                 <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business." target="_blank"
                   className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition-all">
-                  💬 Chat on WhatsApp <span className="text-green-100">01604809110</span>
+                  💬 Chat on WhatsApp <span className="text-white">01604809110</span>
                 </a>
-                <p className="text-xs text-gray-400 text-center">📧 Results sent to <strong>mdkanokmiah101@gmail.com</strong></p>
+                <p className="text-gray-500 text-xs text-center">📧 Results sent to <strong>mdkanokmiah101@gmail.com</strong></p>
                 <button type="submit" disabled={submitting}
                   className="w-full bg-primary hover:bg-primary-dark disabled:bg-primary/50 text-white font-bold py-3.5 px-6 rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all text-lg">
                   {submitting ? "Sending..." : "Get Free SEO Audit →"}
@@ -420,7 +420,7 @@ export default function HomeClient() {
                     ✅ Thank you! Your message has been sent. I'll get back to you within 24 hours.
                   </div>
                 )}
-                <p className="text-xs text-gray-400 text-center">🔒 Your information is safe. No spam, ever.</p>
+                <p className="text-gray-500 text-xs text-center">🔒 Your information is safe. No spam, ever.</p>
               </form>
             </div>
 

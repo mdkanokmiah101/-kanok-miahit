@@ -84,16 +84,16 @@ export default function HomeClient() {
         <div className="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-1/4 -right-32 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px]" />
 
-        <div className="relative max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
-          <div className="max-w-xl">
+        <div className="relative max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="lg:max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary text-xs font-semibold px-4 py-2 rounded-full mb-6">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               #1 SEO Expert in Bangladesh
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.08] mb-4 lg:mb-6">
               <span className="text-primary">Best SEO Expert</span>
               <br />
-              <span className="text-gray-900 lg:whitespace-nowrap">in Dhaka, Bangladesh</span>
+              <span className="text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Md Kanok Miah is the <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong> — serving <strong className="text-gray-900">Mirpur, Gulshan, Banani, Uttara, Dhanmondi</strong> and all across the country.

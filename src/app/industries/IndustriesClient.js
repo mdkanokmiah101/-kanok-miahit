@@ -18,7 +18,8 @@ export default function IndustriesClient() {
         <div className="relative max-w-4xl mx-auto">
           <span className="text-primary text-sm font-semibold tracking-widest uppercase">Industries We Serve</span>
           <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6">
-            Industry-Specific <span className="text-primary">SEO Solutions</span> for Bangladesh
+            <span className="text-primary">Industry-Specific SEO</span><br />
+            <span className="text-gray-900">Solutions for Bangladesh</span>
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Tailored SEO strategies for Bangladesh's top industries. As the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>, I solve unique challenges for each sector.

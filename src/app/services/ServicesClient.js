@@ -27,8 +27,8 @@ export default function ServicesClient() {
         <div className="relative max-w-4xl mx-auto">
           <span className="text-primary text-sm font-semibold tracking-widest uppercase">What I Do</span>
           <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6">
-            SEO Services for{" "}
-            <span className="text-primary">Bangladesh</span>
+            <span className="text-primary">Professional SEO Services</span><br />
+            <span className="text-gray-900">for Bangladesh Businesses</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
             Complete SEO solutions tailored for Bangladeshi businesses — from local Dhaka SEO 

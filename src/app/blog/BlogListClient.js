@@ -40,7 +40,8 @@ export default function BlogListClient() {
         <div className="relative max-w-4xl mx-auto">
           <span className="text-primary text-sm font-semibold tracking-widest uppercase">Our Blog</span>
           <h1 className="text-4xl md:text-5xl font-extrabold mt-4 mb-4">
-            SEO Insights for <span className="text-primary">Bangladesh</span>
+            <span className="text-primary">Expert SEO Blog</span><br />
+            <span className="text-gray-900">for Bangladesh Businesses</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Expert SEO tips, guides, and strategies from the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link> — tailored for Bangladeshi businesses.

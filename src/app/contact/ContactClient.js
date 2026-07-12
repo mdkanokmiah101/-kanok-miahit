@@ -40,8 +40,8 @@ export default function ContactClient() {
         <div className="relative max-w-4xl mx-auto">
           <span className="text-primary text-sm font-semibold tracking-widest uppercase">Get In Touch</span>
           <h1 className="text-4xl md:text-6xl font-extrabold mt-4 mb-6">
-            Let&apos;s Grow Your{" "}
-            <span className="text-primary">Online Presence</span>
+            <span className="text-primary">Let's Grow Your</span><br />
+            <span className="text-gray-900">Business Today</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
             Ready to work with the <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>? Reach out via WhatsApp for the fastest response, or fill out the form below.

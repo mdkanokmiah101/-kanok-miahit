@@ -488,8 +488,8 @@ export default function BlogPostClient() {
           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-2xl shrink-0">👤</div>
           <div>
             <p className="font-bold text-gray-900">Written by <span className="text-primary">Md Kanok Miah</span></p>
-            <p className="text-sm text-gray-500">As a <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link> with 6+ years of experience, Md Kanok Miah helps Bangladeshi businesses rank higher on Google. Google Business Profile certified.</p>
-            <p className="text-xs text-gray-400 mt-2">Last updated: July 2026</p>
+            <p className="text-sm text-gray-600">An <Link href="/about" className="text-primary font-semibold hover:underline">SEO expert in Bangladesh since 2019</Link>, Md Kanok Miah has delivered 210+ SEO projects for local businesses, e-commerce stores, and international brands. Currently SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech. Certified: Google Digital Garage, HubSpot Academy, SEMrush Academy.</p>
+            <p className="text-xs text-gray-500 mt-2">Last updated: July 2026</p>
           </div>
         </div>
       </div>

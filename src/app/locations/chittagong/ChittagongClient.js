@@ -16,8 +16,8 @@ const businessTypes = [
 const trustPoints = [
   { icon: "📍", title: "Google Maps Ranking", desc: "Proven strategies to get your Chittagong business to the top of Google Maps." },
   { icon: "📋", title: "GBP Optimization", desc: "Expert Google Business Profile optimization for maximum local visibility in Chittagong." },
-  { icon: "⏳", title: "6+ Years Experience", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market." },
-  { icon: "🚀", title: "350+ Projects", desc: "Successfully delivered 350+ SEO projects for businesses across Bangladesh including Chittagong." },
+  { icon: "⏳", title: "Since 2019", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market." },
+  { icon: "🚀", title: "210+ Projects", desc: "Successfully delivered 210+ SEO projects for businesses across Bangladesh including Chittagong." },
 ];
 
 export default function ChittagongClient() {

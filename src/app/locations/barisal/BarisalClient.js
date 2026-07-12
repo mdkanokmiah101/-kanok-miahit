@@ -16,8 +16,8 @@ const barisalBusinesses = [
 const trustPoints = [
   { icon: "📍", title: "Google Maps Ranking", desc: "Proven strategies to get your Barisal business to the top of Google Maps and local search results." },
   { icon: "📋", title: "GBP Optimization", desc: "Expert Google Business Profile optimization for maximum visibility in Barisal's local market." },
-  { icon: "⏳", title: "6+ Years Experience", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market including Barisal." },
-  { icon: "🚀", title: "350+ Projects", desc: "Successfully delivered 350+ SEO projects for businesses across Bangladesh including Barisal." },
+  { icon: "⏳", title: "Since 2019", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market including Barisal." },
+  { icon: "🚀", title: "210+ Projects", desc: "Successfully delivered 210+ SEO projects for businesses across Bangladesh including Barisal." },
 ];
 
 export default function BarisalClient() {

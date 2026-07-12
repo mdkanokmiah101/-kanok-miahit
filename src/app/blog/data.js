@@ -13,7 +13,7 @@ const posts = [
 
 Bangladesh's digital economy is expanding at an unprecedented pace. With over 130 million internet users and a rapidly growing e-commerce sector worth over $4 billion, the competition for online visibility has never been fiercer. In 2026, search engine optimization is no longer optional — it is a fundamental requirement for any business that wants to be found by customers actively searching for their products or services.
 
-I am Md Kanok Miah, and I have been helping businesses in Dhaka, Chittagong, and Sylhet rank on Google for over a decade. In that time, I have seen firsthand how a well-executed SEO strategy can transform a struggling local business into a market leader. From a small restaurant in Gulshan that doubled its customers through Google Maps optimization, to a garment factory in Chittagong that started receiving international buyer inquiries after implementing technical SEO — the results speak for themselves.
+I am Md Kanok Miah, and I have been helping businesses in Dhaka, Chittagong, and Sylhet rank on Google for 7+ years. In that time, I have seen firsthand how a well-executed SEO strategy can transform a struggling local business into a market leader. From a small restaurant in Gulshan that doubled its customers through Google Maps optimization, to a garment factory in Chittagong that started receiving international buyer inquiries after implementing technical SEO — the results speak for themselves.
 
 ## The Current State of SEO in Bangladesh
 
@@ -282,7 +282,7 @@ I, Md Kanok Miah, have observed a significant increase in AI-generated local bus
 
 ## My Experience as a Local SEO Expert in Dhaka
 
-With over a decade of hands-on experience optimizing Google Business Profiles for Dhaka businesses, I, Md Kanok Miah, have developed a deep understanding of what works in Bangladesh's unique local search landscape. I have personally managed GBP optimization for businesses across all major Dhaka neighborhoods — Gulshan, Banani, Dhanmondi, Uttara, Motijheel, Mirpur, and Farmgate. Each area has distinct competitive dynamics and customer search behaviors that require tailored approaches.
+With 7+ years of hands-on experience optimizing Google Business Profiles for Dhaka businesses, I, Md Kanok Miah, have developed a deep understanding of what works in Bangladesh's unique local search landscape. I have personally managed GBP optimization for businesses across all major Dhaka neighborhoods — Gulshan, Banani, Dhanmondi, Uttara, Motijheel, Mirpur, and Farmgate. Each area has distinct competitive dynamics and customer search behaviors that require tailored approaches.
 
 What sets my local SEO approach apart is real, demonstrable results. I have helped a small beauty salon in Banani increase its Google Maps visibility from page 5 to the top 3 local pack within 3 months. A Gulshan restaurant I worked with saw a 120% increase in direction requests after GBP optimization. These are not theoretical strategies — they are proven methods refined through years of practical experience with Bangladeshi businesses.
 
@@ -721,7 +721,7 @@ For Bangladeshi websites, implementing technical GEO means ensuring your structu
 
 ## My Technical SEO Expertise for Bangladeshi Websites
 
-My technical SEO expertise comes from over a decade of auditing and optimizing websites for the Bangladesh market. I have conducted hundreds of technical SEO audits for Bangladeshi businesses across industries — from small local shops to large e-commerce platforms and enterprise websites. Common issues I consistently find include poor server response times, unoptimized Core Web Vitals, improper canonical implementation, and crawl budget waste.
+My technical SEO expertise comes from 7+ years of auditing and optimizing websites for the Bangladesh market. I have conducted hundreds of technical SEO audits for Bangladeshi businesses across industries — from small local shops to large e-commerce platforms and enterprise websites. Common issues I consistently find include poor server response times, unoptimized Core Web Vitals, improper canonical implementation, and crawl budget waste.
 
 One of my most rewarding technical SEO projects involved a Bangladeshi e-commerce site that was suffering from a 95% crawl budget waste due to filter parameter URLs. After implementing proper canonical tags, consolidating thin content, and restructuring the XML sitemap, their indexed pages grew from 1,200 to 14,000, and organic traffic increased by 175% within 4 months. Technical SEO is not just about checking boxes — it requires understanding how Googlebot interacts with your specific site architecture and fixing the issues that matter most for your business.
 
@@ -959,7 +959,7 @@ An agency that understands both traditional SEO and GEO will help you capture vi
 
 ## My Experience as an SEO Agency Founder in Bangladesh
 
-I founded my SEO agency in Dhaka over a decade ago, and in that time I have worked with hundreds of businesses across Bangladesh — from startups to established enterprises. This experience has given me unique insight into what separates effective SEO agencies from those that deliver poor results. I have seen agencies that overpromise and underdeliver, agencies that use black-hat techniques that ultimately harm clients, and agencies that simply do not understand the Bangladesh market.
+I founded my SEO agency in Dhaka 7+ years ago, and in that time I have worked with hundreds of businesses across Bangladesh — from startups to established enterprises. This experience has given me unique insight into what separates effective SEO agencies from those that deliver poor results. I have seen agencies that overpromise and underdeliver, agencies that use black-hat techniques that ultimately harm clients, and agencies that simply do not understand the Bangladesh market.
 
 My approach to SEO has always been transparent, ethical, and results-driven. I believe in educating my clients so they understand what we are doing and why. Every client receives regular, detailed reporting that connects SEO activities directly to business outcomes. This commitment to transparency and education is why I am recognized as the best SEO expert in Dhaka — my clients trust me because I deliver real, sustainable results and communicate honestly throughout the process.
 
@@ -1385,7 +1385,7 @@ Generative Engine Optimization is particularly impactful for knowledge-intensive
 
 Generative Engine Optimization, or GEO, is the practice of optimizing your online content to be surfaced and cited by AI-powered search engines and chatbots. As platforms like ChatGPT, Google's Search Generative Experience (SGE), Gemini, Perplexity, and Claude become primary information sources — especially for users in Bangladesh who are increasingly adopting AI tools — traditional SEO must evolve to include AI search optimization.
 
-I am Md Kanok Miah, and as the [best SEO expert in Dhaka](/) with over a decade of experience, I have been closely tracking the rise of AI search and its implications for Bangladeshi businesses. The shift from blue links to AI-generated answers represents the most significant change in search since Google's inception. For Bangladeshi businesses, GEO represents both a challenge and an enormous opportunity. Early adopters can capture significant visibility in AI-generated answers before competitors even understand what GEO is.
+I am Md Kanok Miah, and as the [best SEO expert in Dhaka](/) with 7+ years of experience, I have been closely tracking the rise of AI search and its implications for Bangladeshi businesses. The shift from blue links to AI-generated answers represents the most significant change in search since Google's inception. For Bangladeshi businesses, GEO represents both a challenge and an enormous opportunity. Early adopters can capture significant visibility in AI-generated answers before competitors even understand what GEO is.
 
 ## How AI Search Engines Work
 
@@ -2115,7 +2115,7 @@ Encourage detailed customer reviews that mention specific services and experienc
 
 ## My Expertise in Google Business Profile Optimization
 
-Google Business Profile optimization is where my local SEO journey began over a decade ago in Dhaka. I have optimized hundreds of GBP listings for businesses across Bangladesh — from restaurants in Gulshan to clinics in Dhanmondi, from retail stores in Bashundhara City to service providers operating across the entire city. Each industry and location requires a unique approach to GBP optimization.
+Google Business Profile optimization is where my local SEO journey began 7+ years ago in Dhaka. I have optimized hundreds of GBP listings for businesses across Bangladesh — from restaurants in Gulshan to clinics in Dhanmondi, from retail stores in Bashundhara City to service providers operating across the entire city. Each industry and location requires a unique approach to GBP optimization.
 
 What I have learned through years of hands-on work is that GBP optimization is not a one-time task but an ongoing process. The businesses that consistently rank highest in Google Maps are those that regularly post updates, actively manage reviews, update photos, and refine their business information. I have developed systematic approaches to each of these activities that maximize local search visibility while maintaining strict compliance with Google's guidelines.
 
@@ -2467,7 +2467,7 @@ For Bangladeshi businesses with limited budgets, investing in GEO alongside trad
 
 ## My Experience Balancing SEO and Google Ads for Bangladesh Clients
 
-Having managed both SEO and Google Ads campaigns for Bangladeshi businesses for over a decade, I, Md Kanok Miah, have developed a nuanced understanding of when each channel delivers the best results. I typically recommend Google Ads for new businesses that need immediate visibility while their SEO efforts build long-term authority. For established businesses, I usually recommend allocating 70-80% of the digital marketing budget to SEO, with the remainder for strategic paid campaigns targeting high-conversion keywords or seasonal promotions.
+Having managed both SEO and Google Ads campaigns for Bangladeshi businesses for 7+ years, I, Md Kanok Miah, have developed a nuanced understanding of when each channel delivers the best results. I typically recommend Google Ads for new businesses that need immediate visibility while their SEO efforts build long-term authority. For established businesses, I usually recommend allocating 70-80% of the digital marketing budget to SEO, with the remainder for strategic paid campaigns targeting high-conversion keywords or seasonal promotions.
 
 One client case that illustrates this well: a Dhaka-based electronics retailer was spending BDT 80,000 per month on Google Ads with good but declining ROI. We shifted 60% of their budget to SEO while maintaining strategic paid campaigns for competitive product categories. Over 9 months, their total organic traffic grew by 310%, their paid ad cost per acquisition dropped by 40%, and their overall digital marketing ROI improved by 220%. This integrated approach outperforms either channel used in isolation.
 
@@ -2633,10 +2633,10 @@ As [Md Kanok Miah](/) — widely recognized as the [best SEO expert in Dhaka](/)
 
 Dhaka's real estate sector is experiencing unprecedented growth, driven by urbanization, a rising middle class, and a housing deficit estimated at over 5 million units. With hundreds of developers competing for buyers' attention, digital visibility has become the key differentiator. Homebuyers in Dhaka no longer rely solely on newspaper ads and broker referrals — they start their property search on Google. This shift makes SEO the most cost-effective channel for real estate developers to generate qualified leads.
 
-As the **best SEO expert in Dhaka**, **Md Kanok Miah** has been helping businesses across Bangladesh achieve top Google rankings for over a decade. With proven expertise in local SEO, technical optimization, and content strategy, he brings practical, results-driven solutions that deliver measurable growth.
+As the **best SEO expert in Dhaka**, **Md Kanok Miah** has been helping businesses across Bangladesh achieve top Google rankings for 7+ years. With proven expertise in local SEO, technical optimization, and content strategy, he brings practical, results-driven solutions that deliver measurable growth.
 
 
-As **Md Kanok Miah**, an SEO strategist with over a decade of experience helping Dhaka-based real estate developers rank on Google, I have seen firsthand how a well-planned SEO campaign transforms property businesses. From a mid-size developer in Bashundhara that went from zero organic inquiries to over 120 qualified leads per month, to a luxury apartment builder in Gulshan whose project pages consistently rank in the top 3 for high-intent property keywords — the data proves that SEO works for Dhaka real estate.
+As **Md Kanok Miah**, an SEO strategist with 7+ years of experience helping Dhaka-based real estate developers rank on Google, I have seen firsthand how a well-planned SEO campaign transforms property businesses. From a mid-size developer in Bashundhara that went from zero organic inquiries to over 120 qualified leads per month, to a luxury apartment builder in Gulshan whose project pages consistently rank in the top 3 for high-intent property keywords — the data proves that SEO works for Dhaka real estate.
 
 ## Why SEO Matters for Dhaka Real Estate Developers
 
@@ -2944,7 +2944,7 @@ Bangladesh has over 130 million internet users, and more than 70% of them access
 
 Google recognized this shift years ago and moved to mobile-first indexing — meaning Google primarily uses the mobile version of a website's content for indexing and ranking. For Bangladeshi businesses, mobile SEO is no longer an option. It is the foundation upon which all search visibility depends.
 
-As **Md Kanok Miah**, widely recognized as the [best SEO expert in Dhaka](/) with over a decade of experience optimizing Bangladeshi websites, I have seen mobile SEO transform businesses across the country. From a Dhaka-based e-commerce store that saw a 340% increase in mobile organic traffic after implementing AMP and Core Web Vitals fixes, to a restaurant in Gulshan that dominated "near me" searches through GBP mobile optimization — the results consistently prove that mobile-first SEO delivers the highest ROI for Bangladeshi businesses.
+As **Md Kanok Miah**, widely recognized as the [best SEO expert in Dhaka](/) with 7+ years of experience optimizing Bangladeshi websites, I have seen mobile SEO transform businesses across the country. From a Dhaka-based e-commerce store that saw a 340% increase in mobile organic traffic after implementing AMP and Core Web Vitals fixes, to a restaurant in Gulshan that dominated "near me" searches through GBP mobile optimization — the results consistently prove that mobile-first SEO delivers the highest ROI for Bangladeshi businesses.
 
 ### Real-World Impact: A Dhaka E-commerce Case Study
 
@@ -3221,7 +3221,7 @@ In 2026, SEO without content marketing is like a car without an engine. Technica
 
 Bangladesh's digital audience is hungry for information. With over 130 million internet users and rapidly growing online consumption, brands that create valuable, locally-relevant content will dominate search results. Unlike paid advertising, which stops working the moment you stop spending, great content continues to generate traffic, leads, and sales for years.
 
-As **Md Kanok Miah**, recognized as the [best SEO expert in Dhaka](/) with over a decade of experience in Bangladesh's digital marketing landscape, I have built content marketing strategies that transformed businesses across the country. One of my clients — a Dhaka-based fashion brand — was generating zero organic traffic from its blog before our engagement. After implementing a structured content marketing strategy targeting Bengali and English keywords, their blog became the #1 organic traffic source, generating over 15,000 monthly visitors and contributing 40% of total online sales within eight months.
+As **Md Kanok Miah**, recognized as the [best SEO expert in Dhaka](/) with 7+ years of experience in Bangladesh's digital marketing landscape, I have built content marketing strategies that transformed businesses across the country. One of my clients — a Dhaka-based fashion brand — was generating zero organic traffic from its blog before our engagement. After implementing a structured content marketing strategy targeting Bengali and English keywords, their blog became the #1 organic traffic source, generating over 15,000 monthly visitors and contributing 40% of total online sales within eight months.
 
 ### Real-World Case Study: Content Marketing for a Dhaka Startup
 
@@ -3330,7 +3330,7 @@ Track these metrics to measure the effectiveness of your content marketing:
 Google's E-E-A-T framework (Experience, Expertise, Authoritativeness, Trustworthiness) is critical for content marketing success, especially in the age of AI-generated content. To demonstrate E-E-A-T:
 
 - **Experience:** Include real case studies and examples from your work with Bangladeshi clients. Share specific metrics and outcomes that prove your content marketing delivers results.
-- **Expertise:** Publish content authored by recognized industry experts. Each article should include an author bio with credentials, experience, and links to professional profiles. Content authored by **Md Kanok Miah**, for example, carries authority built over a decade in Bangladesh's SEO industry.
+- **Expertise:** Publish content authored by recognized industry experts. Each article should include an author bio with credentials, experience, and links to professional profiles. Content authored by **Md Kanok Miah**, for example, carries authority built 7+ years in Bangladesh's SEO industry.
 - **Authoritativeness:** Earn mentions and backlinks from reputable Bangladeshi publications like The Daily Star, Dhaka Tribune, and industry-specific portals. Citations from authoritative sources signal to Google — and AI models — that your content is trustworthy.
 - **Trustworthiness:** Maintain transparent authorship, cite sources for all data and statistics, and keep content updated with current information. Outdated content with incorrect information damages both user trust and search rankings.
 
@@ -26189,7 +26189,7 @@ Whether you run a restaurant in Gulshan, a diagnostic center in Dhanmondi, or an
     title: "Why Md Kanok Miah is the Best SEO Expert in Dhaka, Bangladesh — Proven Results & Strategy",
     date: "2026-07-09",
     author: "Md Kanok Miah",
-    excerpt: "Looking for the best SEO expert in Dhaka, Bangladesh? Discover why Md Kanok Miah ranks #1 with 6+ years experience, 350+ projects, 108 verified reviews, and proven SEO strategies that deliver real rankings and revenue growth.",
+    excerpt: "Looking for the best SEO expert in Dhaka, Bangladesh? Discover why Md Kanok Miah ranks #1 with experience since 2019, 210+ projects, 108 verified reviews, and proven SEO strategies that deliver real rankings and revenue growth.",
     tags: ["Best SEO Expert Dhaka", "SEO Expert Bangladesh", "Md Kanok Miah", "SEO Results", "Dhaka SEO"],
     imagePlaceholder: "🏆",
     content: `
@@ -26197,7 +26197,7 @@ Whether you run a restaurant in Gulshan, a diagnostic center in Dhanmondi, or an
 
 If you are searching for the **best SEO expert in Dhaka, Bangladesh**, you have come to the right place. I am **Md Kanok Miah** — a dedicated digital marketing and SEO professional who has been helping businesses dominate search results since 2019. Today, I am recognised as one of the most trusted SEO experts in Bangladesh, with a track record that speaks louder than any promise.
 
-I am a **Digital Marketing Expert & SEO Expert in Bangladesh**. Over the past 6+ years, I have successfully led **350+ digital projects and 210+ SEO campaigns** for clients ranging from small local businesses in Dhaka to large international brands. I founded kanokmiah.com — a platform where I share my expertise and help businesses grow their online presence through ethical, results-driven SEO.
+I am a **Digital Marketing Expert & SEO Expert in Bangladesh**. Since 2019, I have successfully led **210+ SEO projects** for clients ranging from small local businesses in Dhaka to large international brands. I founded kanokmiah.com — a platform where I share my expertise and help businesses grow their online presence through ethical, results-driven SEO.
 
 Currently, I serve as **SEO Project Manager at Khan IT** and **Head of Digital Marketing at CloudMatrix Tech**. Previously, I have worked with **Walton Plaza** and **Solus Corporation**, where I honed my skills in on-page, off-page, technical, and local SEO.
 
@@ -26219,7 +26219,7 @@ By 2020, I was already managing real client projects and delivering measurable i
 - **2021:** Joined **Walton Plaza** and **Solus Corporation**; gained corporate-level experience in SEO strategy and execution
 - **2022–2023:** Expanded into **paid advertising** and **digital marketing strategy**; started managing 8-12 live SEO projects monthly
 - **2024:** Founded **kanokmiah.com**; joined **Khan IT** as SEO Project Manager; began working with international clients
-- **2025–Present:** Promoted to **Head of Digital Marketing at CloudMatrix Tech**; crossed **350+ digital projects and 210+ SEO campaigns**
+- **2025–Present:** Promoted to **Head of Digital Marketing at CloudMatrix Tech**; crossed **210+ SEO projects**
 
 ### Industries I Have Served
 
@@ -26263,7 +26263,7 @@ This combination of certified knowledge and real-world application is what separ
 
 ## Hands-On Experience — Real Learning from Doing
 
-Certifications are valuable, but nothing beats **hands-on experience**. Over 6+ years, here is what I have actually done — not just learned about:
+Certifications are valuable, but nothing beats **hands-on experience**. Since 2019, here is what I have actually done — not just learned about:
 
 ### Technical SEO Execution
 
@@ -26288,7 +26288,7 @@ For **local SEO**, I have helped businesses achieve top 3 Google Maps rankings i
 
 I have planned and executed content strategies that drive results:
 
-- **350+ digital projects** — each one involved content research, keyword mapping, and on-page optimisation
+- **210+ SEO projects** — each one involved content research, keyword mapping, and on-page optimisation
 - **210+ SEO campaigns** — each campaign involved comprehensive keyword clustering, topical authority mapping, and EEAT-optimised content creation
 - Bilingual SEO for Bengali and English language queries
 
@@ -26316,7 +26316,7 @@ There are many SEO professionals in Dhaka. Here is why businesses keep choosing 
 
 ### 1. Real, Verifiable Experience
 
-**350+ digital projects** and **210+ SEO campaigns** completed since 2019. Every single project adds to a body of work that proves I can deliver. I do not talk about theory — I talk about what I have actually done.
+**210+ SEO projects** and **210+ SEO campaigns** completed since 2019. Every single project adds to a body of work that proves I can deliver. I do not talk about theory — I talk about what I have actually done.
 
 ### 2. Corporate & Agency Exposure
 
@@ -26393,8 +26393,8 @@ Finding the **best SEO expert in Dhaka, Bangladesh** is not about guessing. It i
 
 Here is what you get when you work with me:
 
-- **6+ years** of real SEO experience — since 2019
-- **350+ digital projects** and **210+ SEO campaigns** delivered
+- **Since 2019** — real SEO experience
+- **210+ SEO projects** and **210+ SEO campaigns** delivered
 - Certifications from **Google Digital Garage**, **HubSpot Academy**, **SEMrush Academy**, and more
 - Current roles as **SEO Project Manager at Khan IT** and **Head of Digital Marketing at CloudMatrix Tech**
 - **8-12 live SEO projects** managed every month

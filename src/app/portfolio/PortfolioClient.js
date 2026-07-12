@@ -5,9 +5,9 @@ import Link from "next/link";
 import { FAQSchema } from "@/components/Schema";
 
 const stats = [
-  { number: "350+", label: "Projects Completed" },
+  { number: "210+", label: "Projects Completed" },
   { number: "50+", label: "Happy Clients" },
-  { number: "6+", label: "Years Experience" },
+  { number: "Since 2019", label: "Years Experience" },
   { number: "4.9/5", label: "Client Rating" },
 ];
 
@@ -176,7 +176,7 @@ export default function PortfolioClient() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <FAQSchema faqs={[
-            { question: "How many projects have you completed?", answer: "I have successfully delivered 350+ SEO projects for businesses across Bangladesh, spanning industries such as restaurants, e-commerce, real estate, garments & textiles, healthcare, education, and more. Each project is backed by measurable results and documented ROI." },
+            { question: "How many projects have you completed?", answer: "I have successfully delivered 210+ SEO projects for businesses across Bangladesh, spanning industries such as restaurants, e-commerce, real estate, garments & textiles, healthcare, education, and more. Each project is backed by measurable results and documented ROI." },
             { question: "What industries do you have experience in?", answer: "I have hands-on SEO experience across a diverse range of industries including food & restaurant, e-commerce (Daraz & Shopify), real estate, garments & textile export, healthcare, education, hospitality, and local services. My approach is tailored to each industry's unique competitive landscape and customer search behaviour." },
             { question: "How do I view more project details?", answer: "You can explore detailed case studies on my Case Studies page where I break down each project's challenge, the specific strategy applied, and the measurable results achieved. For a more in-depth discussion about how I can help your specific business, feel free to contact me directly for a free consultation." },
           ]} />
@@ -185,7 +185,7 @@ export default function PortfolioClient() {
           </h2>
           <div className="space-y-0 divide-y divide-gray-100">
             {[
-              { question: "How many projects have you completed?", answer: "I have successfully delivered 350+ SEO projects for businesses across Bangladesh, spanning industries such as restaurants, e-commerce, real estate, garments & textiles, healthcare, education, and more. Each project is backed by measurable results and documented ROI." },
+              { question: "How many projects have you completed?", answer: "I have successfully delivered 210+ SEO projects for businesses across Bangladesh, spanning industries such as restaurants, e-commerce, real estate, garments & textiles, healthcare, education, and more. Each project is backed by measurable results and documented ROI." },
               { question: "What industries do you have experience in?", answer: "I have hands-on SEO experience across a diverse range of industries including food & restaurant, e-commerce (Daraz & Shopify), real estate, garments & textile export, healthcare, education, hospitality, and local services. My approach is tailored to each industry's unique competitive landscape and customer search behaviour." },
               { question: "How do I view more project details?", answer: "You can explore detailed case studies on my Case Studies page where I break down each project's challenge, the specific strategy applied, and the measurable results achieved. For a more in-depth discussion about how I can help your specific business, feel free to contact me directly for a free consultation." },
             ].map((f, i) => (

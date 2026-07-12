@@ -97,7 +97,7 @@ export default function HomeClient() {
             </h1>
             <p className="text-gray-700 text-lg mb-8 leading-relaxed">
               Md Kanok Miah is the <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong> — serving <strong className="text-gray-900">Mirpur, Gulshan, Banani, Uttara, Dhanmondi</strong> and all across the country.
-              With <strong className="text-gray-900">6+ years</strong> of experience, I help local businesses rank higher on Google,
+              As an SEO expert <strong className="text-gray-900">since 2019</strong>, I help local businesses rank higher on Google,
               generate qualified leads, and scale revenue — with proven strategies that work.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
@@ -120,11 +120,11 @@ export default function HomeClient() {
             <div className="mt-10 flex flex-wrap gap-6">
               <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5">
                 <span className="text-2xl">🏆</span>
-                <div><div className="text-sm font-bold text-gray-900">6+ Years</div><div className="text-xs text-gray-600">Experience</div></div>
+                <div><div className="text-sm font-bold text-gray-900">Since 2019</div><div className="text-xs text-gray-600">Experience</div></div>
               </div>
               <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5">
                 <span className="text-2xl">📈</span>
-                <div><div className="text-sm font-bold text-gray-900">350+</div><div className="text-xs text-gray-600">Projects</div></div>
+                <div><div className="text-sm font-bold text-gray-900">210+</div><div className="text-xs text-gray-600">Projects</div></div>
               </div>
               <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5">
                 <span className="text-2xl">⭐</span>
@@ -174,10 +174,10 @@ export default function HomeClient() {
       <section className="relative py-14 bg-gradient-to-r from-primary to-primary-dark overflow-hidden">
         <div className="relative max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { num: "350+", label: "Projects Done" },
+            { num: "210+", label: "Projects Done" },
             { num: "50+", label: "Happy Clients" },
             { num: "95%", label: "Client Retention" },
-            { num: "6+", label: "Years Experience" },
+            { num: "Since 2019", label: "Experience" },
           ].map((stat, i) => (
             <div key={i} className="py-2">
               <div className="text-3xl md:text-5xl font-extrabold text-white">{stat.num}</div>
@@ -257,7 +257,7 @@ export default function HomeClient() {
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Why Choose Me</span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Why <span className="text-primary">Md Kanok Miah</span>?</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto text-lg">6+ years mastering SEO for the Bangladesh market. Here&apos;s what sets me apart.</p>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg">Since 2019, mastering SEO for the Bangladesh market. Here&apos;s what sets me apart.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {[

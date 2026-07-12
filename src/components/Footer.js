@@ -144,7 +144,7 @@ export default function Footer() {
             © 2026 <span className="text-primary font-semibold">Md Kanok Miah</span>. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm">
-            <span className="text-gray-400 text-xs font-medium">🔥 350+ projects completed</span>
+            <span className="text-gray-400 text-xs font-medium">🔥 210+ projects completed</span>
             <span className="text-gray-700">|</span>
             <Link href="/privacy-policy" className="text-gray-400 hover:text-primary transition-colors">Privacy Policy</Link>
             <span className="text-gray-700">|</span>

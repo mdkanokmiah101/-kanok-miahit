@@ -8,7 +8,7 @@ export function OrganizationSchema() {
     url: "https://kanokmiah.com.bd",
     logo: "https://kanokmiah.com.bd/favicon.ico",
     description:
-      "Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, semantic SEO, and GEO optimization.",
+      "SEO expert since 2019 — 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Mirpur, Dhaka",
@@ -66,7 +66,7 @@ export function LocalBusinessSchema() {
     telephone: "+880-1604-809110",
     email: "mdkanokmiah232@gmail.com",
     description:
-      "Best SEO expert in Dhaka, Bangladesh. Specializing in Local SEO, Technical SEO, Link Building, and GEO optimization.",
+      "SEO expert since 2019 — 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
     image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
     address: {
       "@type": "PostalAddress",
@@ -116,7 +116,7 @@ export function WebSiteSchema() {
     name: "Md Kanok Miah",
     url: "https://kanokmiah.com.bd",
     description:
-      "Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
+      "SEO expert since 2019 — 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
     inLanguage: ["en"],
     potentialAction: {
       "@type": "SearchAction",
@@ -173,11 +173,16 @@ export function PersonSchema() {
       "https://www.tiktok.com/@kanokmiahbd",
       "https://wa.me/8801604809110",
     ],
-    jobTitle: "SEO Expert & Digital Marketing Specialist",
-    worksFor: {
-      "@type": "Organization",
-      name: "Md Kanok Miah",
-    },
+    jobTitle: "Founder & SEO Consultant",
+    worksFor: [
+      { "@type": "Organization", name: "kanokmiah.com", url: "https://kanokmiah.com" },
+      { "@type": "Organization", name: "Khan IT" },
+      { "@type": "Organization", name: "CloudMatrix Tech" },
+    ],
+    alumniOf: [
+      { "@type": "Organization", name: "Walton Plaza" },
+      { "@type": "Organization", name: "Solus Corp" },
+    ],
     knowsAbout: [
       "Search Engine Optimization",
       "Local SEO",
@@ -186,7 +191,7 @@ export function PersonSchema() {
       "GEO / AI Search Optimization",
     ],
     description:
-      "Best SEO expert in Dhaka, Bangladesh with 6+ years of experience. Specializing in local SEO, technical SEO, link building, and GEO optimization.",
+      "SEO expert since 2019 — 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Ex-Walton Plaza, Solus Corp. Local SEO, technical SEO, link building, GEO optimization.",
   };
   return (
     <script
@@ -251,12 +256,12 @@ export function AboutPageSchema() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
-    description: "Learn about Md Kanok Miah, Bangladesh's trusted SEO expert with 6+ years of experience helping businesses rank higher on Google.",
+    description: "Learn about Md Kanok Miah, SEO expert since 2019 with 210+ projects helping businesses rank higher on Google. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech.",
     url: "https://kanokmiah.com.bd/about",
     mainEntity: {
       "@type": "Person",
       name: "Md Kanok Miah",
-      jobTitle: "SEO Expert & Digital Marketing Specialist",
+      jobTitle: "Founder & SEO Consultant",
       url: "https://kanokmiah.com.bd/about",
     },
   };
@@ -270,7 +275,7 @@ export function ContactPageSchema() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Contact Md Kanok Miah — Free SEO Audit",
-    description: "Contact Md Kanok Miah, the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business.",
+    description: "Contact Md Kanok Miah, SEO expert since 2019. Get a free SEO audit for your business.",
     url: "https://kanokmiah.com.bd/contact",
     mainEntity: {
       "@type": "Person",

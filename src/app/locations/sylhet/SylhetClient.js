@@ -16,8 +16,8 @@ const sylhetMarkets = [
 const trustPoints = [
   { icon: "📍", title: "Google Maps Ranking", desc: "Proven strategies to get your Sylhet business to the top of Google Maps and local search results." },
   { icon: "📋", title: "GBP Optimization", desc: "Expert Google Business Profile optimization for maximum visibility in Sylhet's local market." },
-  { icon: "⏳", title: "6+ Years Experience", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market." },
-  { icon: "🚀", title: "350+ Projects", desc: "Successfully delivered 350+ SEO projects for businesses across Bangladesh including Sylhet." },
+  { icon: "⏳", title: "Since 2019", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market." },
+  { icon: "🚀", title: "210+ Projects", desc: "Successfully delivered 210+ SEO projects for businesses across Bangladesh including Sylhet." },
 ];
 
 export default function SylhetClient() {

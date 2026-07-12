@@ -31,7 +31,7 @@ const organizationSchema = {
   name: "Md Kanok Miah",
   url: "https://kanokmiah.com.bd",
   logo: "https://kanokmiah.com.bd/apple-touch-icon.png",
-  description: "Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, semantic SEO, and GEO optimization.",
+  description: "SEO expert since 2019 — 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
   address: { "@type": "PostalAddress", streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", addressCountry: "BD" },
   contactPoint: {
     "@type": "ContactPoint", telephone: "+880-1604-809110", contactType: "customer service",
@@ -63,7 +63,7 @@ const localBusinessSchema = {
   url: "https://kanokmiah.com.bd",
   telephone: "+880-1604-809110",
   email: "mdkanokmiah232@gmail.com",
-  description: "Best SEO expert in Dhaka, Bangladesh. Specializing in Local SEO, Technical SEO, Link Building, and GEO optimization.",
+  description: "SEO expert since 2019 — 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
   image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
   address: { "@type": "PostalAddress", streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", addressCountry: "BD" },
   geo: { "@type": "GeoCoordinates", latitude: "23.8103", longitude: "90.4125" },
@@ -93,7 +93,7 @@ const webSiteSchema = {
   "@type": "WebSite",
   name: "Md Kanok Miah",
   url: "https://kanokmiah.com.bd",
-  description: "Best SEO expert in Dhaka, Bangladesh. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
+  description: "SEO expert since 2019 — 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
   inLanguage: ["en"],
   potentialAction: {
     "@type": "SearchAction",
@@ -116,14 +116,22 @@ const personSchema = {
     "https://www.pinterest.com/mdkanokmiah", "https://www.instagram.com/kanokmiahbd",
     "https://www.tiktok.com/@kanokmiahbd", "https://wa.me/8801604809110",
   ],
-  jobTitle: "SEO Expert & Digital Marketing Specialist",
-  worksFor: { "@type": "Organization", name: "Md Kanok Miah" },
+  jobTitle: "Founder & SEO Consultant",
+  worksFor: [
+    { "@type": "Organization", name: "kanokmiah.com", url: "https://kanokmiah.com" },
+    { "@type": "Organization", name: "Khan IT" },
+    { "@type": "Organization", name: "CloudMatrix Tech" },
+  ],
+  alumniOf: [
+    { "@type": "Organization", name: "Walton Plaza" },
+    { "@type": "Organization", name: "Solus Corp" },
+  ],
   knowsAbout: [
     "Search Engine Optimization", "Local SEO", "Technical SEO", "Link Building",
     "Semantic SEO", "GEO / AI Search Optimization", "E-commerce SEO",
     "Content Marketing", "Google Business Profile Optimization", "Generative Engine Optimization",
   ],
-  description: "Best SEO expert in Dhaka, Bangladesh with 6+ years of experience. Specializing in local SEO, technical SEO, link building, and GEO optimization.",
+  description: "SEO expert since 2019 — 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Ex-Walton Plaza, Solus Corp. Local SEO, technical SEO, link building, GEO optimization.",
 };
 
 export default function RootLayout({ children }) {
@@ -155,7 +163,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
-        <meta property="og:image:alt" content="Md Kanok Miah — Best SEO Expert in Dhaka, Bangladesh" />
+        <meta property="og:image:alt" content="Md Kanok Miah — SEO Expert Since 2019, 210+ Projects" />
         {/* Force twitter:image for all pages (critical for client-component pages) */}
         <meta name="twitter:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
         <meta name="twitter:card" content="summary_large_image" />

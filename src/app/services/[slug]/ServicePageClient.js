@@ -67,7 +67,7 @@ export default function ServicePageClient({ slug }) {
           </p>
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-xs font-medium px-4 py-2 rounded-full">✅ Expert Reviewed</span>
-            <span className="text-xs text-gray-400">This guide was reviewed by Md Kanok Miah, SEO expert with 6+ years of experience.</span>
+            <span className="text-xs text-gray-400">This guide was reviewed by Md Kanok Miah, SEO expert since 2019.</span>
           </div>
           <div className="mt-6 flex flex-wrap gap-4">
             <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5">
@@ -194,7 +194,7 @@ export default function ServicePageClient({ slug }) {
           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-2xl shrink-0">👤</div>
           <div>
             <p className="font-bold text-gray-900">Written by <span className="text-primary">Md Kanok Miah</span></p>
-            <p className="text-sm text-gray-500">SEO Expert with 6+ years of experience helping Bangladeshi businesses rank higher on Google.</p>
+            <p className="text-sm text-gray-500">SEO Expert since 2019, helping Bangladeshi businesses rank higher on Google.</p>
             <p className="text-xs text-gray-400 mt-2">Last updated: July 2026</p>
           </div>
         </div>

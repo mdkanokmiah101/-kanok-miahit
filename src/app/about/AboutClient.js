@@ -48,7 +48,7 @@ export default function AboutClient() {
               </p>
               <p>
                 Founded by <strong className="text-gray-900">Md Kanok Miah</strong>, my practice set out to bridge that gap. 
-                With over 6 years of hands-on experience optimising websites for Bangladeshi audiences, I've developed 
+                Since 2019, I've been delivering hands-on SEO expertise optimising websites for Bangladeshi audiences, developing
                 a proprietary approach that blends technical SEO rigour with deep cultural and linguistic insights.
               </p>
               <p>
@@ -57,8 +57,23 @@ export default function AboutClient() {
                 mobile-first usage patterns, and the unique competitive landscape of Bangladesh's digital economy.
               </p>
               <p>
-                Today, Md Kanok Miah is recognised as one of Bangladesh's most trusted SEO experts, delivering 
+                Today, Md Kanok Miah is recognised as one of Bangladesh's most trusted SEO experts, delivering
                 transparent, data-driven SEO services that generate real business results — not just vanity metrics.
+              </p>
+              <p>
+                As the <strong className="text-gray-900">Founder of kanokmiah.com</strong>, I bring a wealth of
+                professional experience from leadership roles across Bangladesh's digital landscape. I currently serve as
+                <strong className="text-gray-900"> SEO Project Manager at Khan IT</strong> and
+                <strong className="text-gray-900"> Head of Digital Marketing at CloudMatrix Tech</strong>.
+                Previously, I held key positions at <strong className="text-gray-900">Walton Plaza</strong> and
+                <strong className="text-gray-900">Solus Corporation</strong>, where I honed my expertise in
+                search engine optimisation and digital marketing strategy.
+              </p>
+              <p>
+                Today, I manage <strong className="text-gray-900">8–12 SEO projects</strong> and
+                <strong className="text-gray-900"> 2–5 ad campaigns</strong> each month, delivering measurable
+                growth for businesses across Bangladesh. My hands-on approach combines technical SEO rigour with
+                deep market understanding to consistently drive first-page rankings.
               </p>
             </div>
           </div>
@@ -78,12 +93,12 @@ export default function AboutClient() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
               <div className="text-3xl mb-3">🏆</div>
-              <div className="text-2xl font-extrabold text-gray-900">6+ Years</div>
+              <div className="text-2xl font-extrabold text-gray-900">Since 2019</div>
               <div className="text-sm text-gray-500">Experience</div>
             </div>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
               <div className="text-3xl mb-3">📈</div>
-              <div className="text-2xl font-extrabold text-gray-900">350+</div>
+              <div className="text-2xl font-extrabold text-gray-900">210+</div>
               <div className="text-sm text-gray-500">Projects Completed</div>
             </div>
             <div className="bg-white border border-gray-100 rounded-2xl p-6 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
@@ -97,12 +112,24 @@ export default function AboutClient() {
               <div className="text-sm text-gray-500">Client Rating</div>
             </div>
           </div>
-          <div className="flex flex-wrap justify-center gap-4">
-            <span className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 text-sm font-semibold px-5 py-3 rounded-xl">
-              ✅ Google Business Profile Certified
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <span className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 text-sm font-semibold px-4 py-3 rounded-xl">
+              ✅ Google Digital Garage
             </span>
-            <span className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold px-5 py-3 rounded-xl">
-              ✅ Google Search Console Certified
+            <span className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold px-4 py-3 rounded-xl">
+              ✅ HubSpot Academy
+            </span>
+            <span className="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 text-purple-700 text-sm font-semibold px-4 py-3 rounded-xl">
+              ✅ SEMrush Academy
+            </span>
+            <span className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-700 text-sm font-semibold px-4 py-3 rounded-xl">
+              ✅ LinkedIn Learning
+            </span>
+            <span className="inline-flex items-center gap-2 bg-rose-50 border border-rose-200 text-rose-700 text-sm font-semibold px-4 py-3 rounded-xl">
+              ✅ Coursera
+            </span>
+            <span className="inline-flex items-center gap-2 bg-cyan-50 border border-cyan-200 text-cyan-700 text-sm font-semibold px-4 py-3 rounded-xl">
+              ✅ Skillshare
             </span>
           </div>
         </div>
@@ -167,10 +194,10 @@ export default function AboutClient() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
         <div className="relative max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { num: "350+", label: "Projects Done", color: "from-primary to-primary-dark" },
+            { num: "210+", label: "Projects Done", color: "from-primary to-primary-dark" },
             { num: "50+", label: "Happy Clients", color: "from-primary to-primary-dark" },
             { num: "95%", label: "Client Retention", color: "from-primary to-primary-dark" },
-            { num: "6+", label: "Years Exp.", color: "from-primary to-primary-dark" },
+            { num: "Since 2019", label: "Years Exp.", color: "from-primary to-primary-dark" },
           ].map((stat, i) => (
             <div key={i}>
               <div className={`text-4xl md:text-5xl font-extrabold bg-gradient-to-b ${stat.color} bg-clip-text text-transparent`}>{stat.num}</div>
@@ -240,7 +267,7 @@ export default function AboutClient() {
           </h2>
           <div className="space-y-0 divide-y divide-gray-100">
             {[
-              { question: "What experience does Md Kanok Miah have?", answer: "Md Kanok Miah has over 6 years of hands-on SEO experience, helping 50+ Bangladeshi businesses achieve first-page rankings on Google. His expertise spans local SEO, technical SEO, link building, semantic SEO, and GEO/AI search optimization." },
+              { question: "What experience does Md Kanok Miah have?", answer: "Md Kanok Miah has been delivering SEO results since 2019, helping 50+ Bangladeshi businesses achieve first-page rankings on Google. His expertise spans local SEO, technical SEO, link building, semantic SEO, and GEO/AI search optimization." },
               { question: "What areas of Bangladesh do you serve?", answer: "I provide SEO services for businesses throughout Bangladesh including Dhaka, Chittagong, Sylhet, Khulna, Rajshahi, and all other major cities. My local SEO strategies are customized for each city's specific market." },
               { question: "What types of businesses do you work with?", answer: "I work with a diverse range of clients including local service businesses, e-commerce stores (Shopify, Daraz), real estate agencies, healthcare providers, educational institutions, and hospitality businesses across Bangladesh." },
               { question: "Do you offer a free consultation?", answer: "Yes! I offer a completely free initial consultation to discuss your business goals and SEO needs. During this call, I'll provide preliminary insights and recommendations with no obligation to proceed." },

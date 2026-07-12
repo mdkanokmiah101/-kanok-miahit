@@ -16,8 +16,8 @@ const khulnaBusinesses = [
 const trustPoints = [
   { icon: "📍", title: "Google Maps Ranking", desc: "Proven strategies to get your Khulna business to the top of Google Maps and local search results." },
   { icon: "📋", title: "GBP Optimization", desc: "Expert Google Business Profile optimization for maximum visibility in Khulna's local market." },
-  { icon: "⏳", title: "6+ Years Experience", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market including Khulna." },
-  { icon: "🚀", title: "350+ Projects", desc: "Successfully delivered 350+ SEO projects for businesses across Bangladesh including Khulna." },
+  { icon: "⏳", title: "Since 2019", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market including Khulna." },
+  { icon: "🚀", title: "210+ Projects", desc: "Successfully delivered 210+ SEO projects for businesses across Bangladesh including Khulna." },
 ];
 
 export default function KhulnaClient() {

@@ -16,8 +16,8 @@ const neighborhoods = [
 const trustPoints = [
   { icon: "📍", title: "Google Maps Ranking", desc: "Proven strategies to get your business to the top of Google Maps in Dhaka." },
   { icon: "📋", title: "GBP Optimization", desc: "Expert Google Business Profile optimization for maximum local visibility." },
-  { icon: "⏳", title: "6+ Years Experience", desc: "Over half a decade of hands-on SEO experience in the Bangladesh market." },
-  { icon: "🚀", title: "350+ Projects", desc: "Successfully delivered 350+ SEO projects for businesses across Bangladesh." },
+  { icon: "⏳", title: "Since 2019", desc: "Over half a decade of hands-on SEO experience in the Bangladesh market." },
+  { icon: "🚀", title: "210+ Projects", desc: "Successfully delivered 210+ SEO projects for businesses across Bangladesh." },
 ];
 
 export default function DhakaClient() {

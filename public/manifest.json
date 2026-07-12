@@ -1,0 +1,13 @@
+{
+  "name": "Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
+  "short_name": "Md Kanok Miah",
+  "description": "Best SEO expert in Dhaka, Bangladesh. Local SEO, technical SEO, link building, and GEO optimization.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#124D1C",
+  "icons": [
+    { "src": "/favicons/favicon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicons/favicon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

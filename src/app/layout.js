@@ -30,7 +30,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Md Kanok Miah",
   url: "https://kanokmiah.com.bd",
-  logo: "https://kanokmiah.com.bd/favicon.ico",
+  logo: "https://kanokmiah.com.bd/apple-touch-icon.png",
   description: "Bangladesh-focused SEO expert. Local SEO, technical SEO, link building, semantic SEO, and GEO optimization.",
   address: { "@type": "PostalAddress", streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", addressCountry: "BD" },
   contactPoint: {
@@ -140,9 +140,17 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-        {/* Fallback favicon for all pages (since root layout has no metadata export) */}
-        <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/png" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* Standard Favicons — multi-size set */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicons/favicon-512x512.png" />
+        {/* Fallback .ico for legacy browsers */}
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        {/* PWA manifest */}
+        <link rel="manifest" href="/manifest.json" />
         {/* Force og:image for all pages (critical for client-component pages like homepage) */}
         <meta property="og:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
         <meta property="og:image:width" content="400" />

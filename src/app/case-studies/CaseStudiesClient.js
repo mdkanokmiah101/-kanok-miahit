@@ -208,7 +208,7 @@ export default function CaseStudiesClient() {
             SEO Case <span className="text-primary">Studies</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-            Every number tells a story. Explore <strong>9 real SEO campaigns</strong> — from local Dhaka businesses to international brands — with the exact strategies and measurable results.
+            Every number tells a story. Explore our real SEO campaigns — from local Dhaka businesses to international brands — with the exact strategies and measurable results by a proven <Link href="/" className="text-primary font-semibold hover:underline">SEO expert in Bangladesh</Link>.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <span className="bg-primary/10 text-primary font-bold px-5 py-2.5 rounded-full">210+ Projects</span>

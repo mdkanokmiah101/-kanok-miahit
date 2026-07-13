@@ -1,9 +1,9 @@
 import HomeClient from "./HomeClient";
 
 export const metadata = {
-  title: "Top SEO Expert in Dhaka | Md Kanok Miah — #1 SEO Specialist",
+  title: "Best SEO Expert in Dhaka | Md Kanok Miah | 210+ SEO Successes",
   description:
-    "Top SEO expert in Dhaka, Bangladesh with 6+ years of experience. Md Kanok Miah boosts rankings, traffic & leads — Local SEO, Technical SEO, GEO.",
+    "Rank higher on Google & AI Search with Md Kanok Miah, a trusted SEO expert in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",
@@ -28,9 +28,9 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Md Kanok Miah",
-    title: "Top SEO Expert in Dhaka | Md Kanok Miah — #1 SEO Specialist",
+    title: "Best SEO Expert in Dhaka | Md Kanok Miah | 210+ SEO Successes",
     description:
-      "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah is a top-rated SEO specialist. Get higher rankings and more traffic with proven SEO strategies.",
+      "Rank higher on Google & AI Search with Md Kanok Miah, a trusted SEO expert in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
     url: "https://kanokmiah.com.bd",
     images: [
       {
@@ -43,9 +43,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Top SEO Expert in Dhaka | Md Kanok Miah — #1 SEO Specialist",
+    title: "Best SEO Expert in Dhaka | Md Kanok Miah | 210+ SEO Successes",
     description:
-      "Looking for the best SEO expert in Dhaka, Bangladesh? Md Kanok Miah helps businesses rank higher, grow faster, dominate search.",
+      "Rank higher on Google & AI Search with Md Kanok Miah, a trusted SEO expert in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
   robots: {

@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import posts from "../data";
 import services from "@/app/services/data";
@@ -485,10 +486,17 @@ export default function BlogPostClient() {
       {/* Author Bio */}
       <div className="bg-gray-50 border-y border-gray-100 py-12 px-4">
         <div className="max-w-4xl mx-auto flex items-start gap-6">
-          <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-2xl shrink-0">👤</div>
+          <div className="w-16 h-16 rounded-full shrink-0 overflow-hidden border-2 border-primary/20">
+            <img
+              src="/kanok-miah-profile.webp"
+              alt="Md Kanok Miah — SEO Expert in Dhaka, Bangladesh"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <div>
             <p className="font-bold text-gray-900">Written by <span className="text-primary">Md Kanok Miah</span></p>
-            <p className="text-sm text-gray-600">An <Link href="/about" className="text-primary font-semibold hover:underline">SEO expert in Bangladesh since 2019</Link>, Md Kanok Miah has delivered 210+ SEO projects for local businesses, e-commerce stores, and international brands. Currently SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech. Certified: Google Digital Garage, HubSpot Academy, SEMrush Academy.</p>
+            <p className="text-sm text-gray-600">A proven <Link href="/" className="text-primary font-semibold hover:underline">SEO expert in Dhaka</Link>, Bangladesh — <Link href="/about" className="text-primary font-semibold hover:underline">learn more about Md Kanok Miah →</Link></p>
+            <p className="text-sm text-gray-600 mt-2">Since 2019, Md Kanok Miah has delivered 210+ <Link href="/services" className="text-primary font-semibold hover:underline">SEO</Link> projects for local businesses, e-commerce stores, and international brands. Currently SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech. Certified: Google Digital Garage, HubSpot Academy, SEMrush Academy.</p>
             <p className="text-xs text-gray-500 mt-2">Last updated: July 2026</p>
           </div>
         </div>
@@ -499,38 +507,48 @@ export default function BlogPostClient() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-primary/20 to-primary/20 rounded-full blur-3xl" />
         <div className="relative max-w-2xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white border border-white/20 text-xs font-semibold px-4 py-1.5 rounded-full mb-5 backdrop-blur-sm">
+            <span className="w-2 h-2 bg-amber-300 rounded-full animate-pulse" />
+            Available for New Projects
+          </div>
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
-            Let's Grow Your{" "}
+            Hire{' '}
             <span className="text-amber-300">
-              Business
+              Md Kanok Miah
             </span>
           </h2>
-          <p className="text-primary/80 mb-8 text-lg">
-            Ready to rank higher in Bangladesh search results? Get a free SEO
-            audit and discover how we can help.
+          <p className="text-white/80 mb-6 text-lg">
+            Ready to rank #1 on Google? Get a <strong className="text-white">free SEO audit</strong> &amp; custom strategy from Dhaka's top SEO expert with <strong className="text-white">210+ successful projects</strong>.
           </p>
-          <Link
-            href="/#contact"
-            className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
-          >
-            Get Your Free Audit
-            <span className="group-hover:translate-x-1 transition-transform">
-              →
-            </span>
-          </Link>
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
+            <Link
+              href="/contact"
+              className="group inline-flex items-center gap-2 bg-white text-primary-dark px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
+            >
+              📋 Get Free Audit
+              <span className="group-hover:translate-x-1 transition-transform">
+                →
+              </span>
+            </Link>
+            <a
+              href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20need%20SEO%20help."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 bg-amber-300 text-primary-dark px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5"
+            >
+              💬 WhatsApp Now
+            </a>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/70">
+            <span className="flex items-center gap-1.5">📞 +880 1604-809110</span>
+            <span className="flex items-center gap-1.5">⭐ 108+ Verified Reviews</span>
+            <span className="flex items-center gap-1.5">🏆 210+ SEO Projects</span>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>
-          © 2026{" "}
-          <span className="text-primary font-bold">
-            Md Kanok Miah
-          </span>{" "}
-          — SEO Expert in Bangladesh. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

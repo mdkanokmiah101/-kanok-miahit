@@ -152,7 +152,7 @@ export default function ServicesClient() {
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Ready to <span className="text-amber-300">Rank Higher</span>?
           </h2>
-          <p className="text-primary/80 mb-8 text-lg">
+          <p className="text-white/80 mb-8 text-lg">
             Get a free SEO audit and discover exactly what your website needs to grow.
           </p>
           <Link href="/contact" className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">

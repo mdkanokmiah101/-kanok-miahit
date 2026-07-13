@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import { FAQSchema } from "@/components/Schema";
 
@@ -185,7 +186,7 @@ export default function PortfolioClient() {
           </h2>
           <div className="space-y-0 divide-y divide-gray-100">
             {[
-              { question: "How many projects have you completed?", answer: "I have successfully delivered 210+ SEO projects for businesses across Bangladesh, spanning industries such as restaurants, e-commerce, real estate, garments & textiles, healthcare, education, and more. Each project is backed by measurable results and documented ROI." },
+              { question: "How many projects have you completed?", answer: <>I have successfully delivered 210+ <Link href="/services" className="text-primary font-semibold hover:underline">SEO</Link> projects for businesses across Bangladesh, spanning industries such as restaurants, e-commerce, real estate, garments & textiles, healthcare, education, and more. Each project is backed by measurable results and documented ROI.</> },
               { question: "What industries do you have experience in?", answer: "I have hands-on SEO experience across a diverse range of industries including food & restaurant, e-commerce (Daraz & Shopify), real estate, garments & textile export, healthcare, education, hospitality, and local services. My approach is tailored to each industry's unique competitive landscape and customer search behaviour." },
               { question: "How do I view more project details?", answer: "You can explore detailed case studies on my Case Studies page where I break down each project's challenge, the specific strategy applied, and the measurable results achieved. For a more in-depth discussion about how I can help your specific business, feel free to contact me directly for a free consultation." },
             ].map((f, i) => (
@@ -209,7 +210,7 @@ export default function PortfolioClient() {
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Let&apos;s Add Your <span className="text-amber-300">Success Story</span>
           </h2>
-          <p className="text-primary/80 mb-10 text-lg">
+          <p className="text-white/80 mb-10 text-lg">
             Your business could be the next case study. Start with a free SEO audit and discover your growth potential.
           </p>
           <Link
@@ -223,9 +224,7 @@ export default function PortfolioClient() {
       </section>
 
       {/* === FOOTER COPYRIGHT === */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

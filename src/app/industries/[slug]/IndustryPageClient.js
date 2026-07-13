@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import industries from "../data";
 
@@ -174,7 +175,7 @@ export default function IndustryPageClient({ slug }) {
             Ready to Dominate Search Results in{" "}
             <span className="text-amber-300">{ind.shortTitle}</span>?
           </h2>
-          <p className="text-primary/80 mb-8 text-lg max-w-xl mx-auto">
+          <p className="text-white/80 mb-8 text-lg max-w-xl mx-auto">
             Get a free SEO audit for your {ind.shortTitle.toLowerCase()} business. No commitment. Just real, actionable insights.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -195,12 +196,7 @@ export default function IndustryPageClient({ slug }) {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>
-          © 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in
-          Bangladesh. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

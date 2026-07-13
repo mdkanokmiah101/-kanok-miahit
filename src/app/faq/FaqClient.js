@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 // Schema components rendered server-side in page.js — not duplicated here
 
@@ -107,7 +108,7 @@ export default function FAQPage() {
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Still Have <span className="text-amber-300">Questions?</span>
           </h2>
-          <p className="text-primary/80 mb-10 text-lg">
+          <p className="text-white/80 mb-10 text-lg">
             Get a personalised answer for your business. Claim your free SEO audit today — no strings attached.
           </p>
           <Link
@@ -121,9 +122,7 @@ export default function FAQPage() {
       </section>
 
       {/* === FOOTER COPYRIGHT === */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

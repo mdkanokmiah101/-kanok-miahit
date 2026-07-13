@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 // FAQSchema + BreadcrumbSchema rendered server-side in page.js — not duplicated here
 import industries from "./data";
@@ -80,7 +81,7 @@ export default function IndustriesClient() {
           <h2 className="text-2xl md:text-4xl font-extrabold mb-4 text-white">
             Need SEO Tailored for Your Industry?
           </h2>
-          <p className="text-primary/80 mb-6 max-w-xl mx-auto">
+          <p className="text-white/80 mb-6 max-w-xl mx-auto">
             Explore all our SEO services — from local SEO to technical optimization — and find the perfect strategy for your business.
           </p>
           <Link
@@ -93,9 +94,7 @@ export default function IndustriesClient() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

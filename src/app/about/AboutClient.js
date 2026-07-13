@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 // FAQSchema rendered server-side in page.js — not duplicated here
 
@@ -258,6 +259,103 @@ export default function AboutClient() {
         </div>
       </section>
 
+      {/* === MEET THE TEAM === */}
+      <section className="relative py-24 px-4 bg-gray-50/50 overflow-hidden">
+        <div className="relative max-w-5xl mx-auto">
+          {/* HEADING */}
+          <div className="text-center mb-14">
+            <span className="inline-block text-primary text-sm font-semibold tracking-[0.2em] uppercase px-4 py-1.5 bg-primary-light/60 rounded-full border border-primary/10">Our Team</span>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-5 mb-4 text-gray-900">
+              Meet the <span className="text-primary">Experts</span>
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+              The talented people behind every successful SEO campaign — dedicated to growing your business.
+            </p>
+          </div>
+
+          {/* LINE 1: Shazzat — Kanok Miah (center) — Sabbir */}
+          <div className="grid grid-cols-3 gap-5 md:gap-8 items-center mb-6 md:mb-8">
+            {/* Left: Shazzat */}
+            <div className="group text-center">
+              <div className="mx-auto w-24 h-24 md:w-28 md:h-28 mb-3 rounded-full overflow-hidden border-[3px] border-white shadow-md">
+                <img src="/images/team/team-sazzat.webp" alt="Md Shazzat Hossain" width="150" height="150" loading="lazy"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <h3 className="font-bold text-gray-900 text-xs md:text-sm leading-tight">Md Shazzat Hossain</h3>
+              <p className="text-gray-500 text-[10px] md:text-xs mt-0.5">Head of Branding</p>
+            </div>
+
+            {/* Center: Kanok Miah — larger */}
+            <div className="group text-center -mx-2 md:-mx-4">
+              <div className="relative mx-auto w-28 h-28 md:w-36 md:h-36 mb-3">
+                <div className="w-full h-full rounded-full overflow-hidden border-[4px] border-white shadow-lg">
+                  <img src="/images/team/team-kanok-miah.webp" alt="Md Kanok Miah" width="200" height="200"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-primary text-white text-[9px] md:text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-md whitespace-nowrap">
+                  ⭐ Founder
+                </div>
+              </div>
+              <h3 className="font-bold text-gray-900 text-sm md:text-base">Md Kanok Miah</h3>
+              <p className="text-primary text-[11px] md:text-xs font-medium">Founder & Lead SEO Consultant</p>
+              <div className="flex items-center justify-center gap-2 mt-2">
+                <a href="https://www.facebook.com/mdkanokmiahweb" target="_blank" rel="noopener noreferrer"
+                  className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white transition-all"
+                  aria-label="Md Kanok Miah Facebook">
+                  <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://kanokmiah.com" target="_blank" rel="noopener noreferrer"
+                  className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white transition-all"
+                  aria-label="Md Kanok Miah Website">
+                  <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Sabbir */}
+            <div className="group text-center">
+              <div className="mx-auto w-24 h-24 md:w-28 md:h-28 mb-3 rounded-full overflow-hidden border-[3px] border-white shadow-md">
+                <img src="/images/team/team-sabbir.webp" alt="Md Sabbir Hossain" width="150" height="150" loading="lazy"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <h3 className="font-bold text-gray-900 text-xs md:text-sm leading-tight">Md Sabbir Hossain</h3>
+              <p className="text-gray-500 text-[10px] md:text-xs mt-0.5">SEO Executive</p>
+            </div>
+          </div>
+
+          {/* LINE 2: Papon — Sammam — Nusaiba */}
+          <div className="grid grid-cols-3 gap-5 md:gap-8">
+            {[
+              { name: "Papon Hasan", role: "SEO Executive", img: "/images/team/team-papon.webp" },
+              { name: "Sammam Iqbal", role: "SEO & Social Media Manager", img: "/images/team/team-sammam.webp" },
+              { name: "Nusaiba Mim", role: "SEO Executive", img: "/images/team/team-female.webp" },
+            ].map((member, i) => (
+              <div key={i} className="group text-center">
+                <div className="mx-auto w-24 h-24 md:w-28 md:h-28 mb-3 rounded-full overflow-hidden border-[3px] border-white shadow-md">
+                  <img
+                    src={member.img}
+                    alt={member.name}
+                    width="150"
+                    height="150"
+                    loading="lazy"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <h3 className="font-bold text-gray-900 text-xs md:text-sm leading-tight">{member.name}</h3>
+                <p className="text-gray-500 text-[10px] md:text-xs mt-0.5">{member.role}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="text-center mt-12">
+            <p className="text-gray-500 text-sm">
+              Want to work with us? <a href="/contact" className="text-primary font-semibold hover:underline">Get in touch</a> — we'd love to hear from you.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* === FAQ === */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -291,7 +389,7 @@ export default function AboutClient() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-primary/20 to-primary/20 rounded-full blur-3xl" />
         <div className="relative max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">Let&apos;s Grow Your <span className="text-amber-300">Business</span> Together</h2>
-          <p className="text-primary/80 mb-10 text-lg">Ready to see what a dedicated SEO partnership can do for your Bangladesh business? Get your free audit today.</p>
+          <p className="text-white/80 mb-10 text-lg">Ready to see what a dedicated SEO partnership can do for your Bangladesh business? Get your free audit today.</p>
           <Link href="/#contact" className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
             Get Your Free Audit
             <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -299,16 +397,7 @@ export default function AboutClient() {
         </div>
       </section>
 
-      {/* === FOOTER === */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-        <div className="mt-3 flex items-center justify-center gap-4 text-xs">
-          <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-          <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-          <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
-        </div>
-      </footer>
-
+      <Footer />
     </div>
   );
 }

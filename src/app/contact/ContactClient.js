@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 
 const WHATSAPP_NUMBER = "01604809110";
@@ -229,10 +230,25 @@ export default function ContactClient() {
               </div>
             </div>
 
-            {/* Free SEO Audit CTA */}
-            <div className="bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-6 text-center text-white">
-              <p className="text-lg font-bold mb-1">⭐ Free SEO Audit</p>
-              <p className="text-white/80 text-sm">Worth BDT 5,000 — Get a complete analysis of your website. No commitment required.</p>
+            {/* Free SEO Audit CTA — Branded with Md Kanok Miah */}
+            <div className="bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-6 text-center text-white shadow-lg">
+              <p className="text-lg font-bold mb-1">⭐ Free SEO Audit — Worth BDT 5,000</p>
+              <p className="text-white/80 text-sm mb-4">
+                Get a complete analysis of your website from <strong className="text-white">Md Kanok Miah</strong>, Dhaka's top SEO expert with <strong className="text-white">210+ successful projects</strong>.
+              </p>
+              <a
+                href="https://wa.me/8801604809110?text=Hi%20Md%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 bg-amber-300 text-primary-dark px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:shadow-xl hover:bg-amber-400 w-full justify-center"
+              >
+                💬 Claim via WhatsApp Now
+              </a>
+              <div className="flex flex-wrap items-center justify-center gap-3 mt-3 text-[11px] text-white/70">
+                <span>📞 +880 1604-809110</span>
+                <span>⭐ 108+ Reviews</span>
+                <span>🏆 210+ Projects</span>
+              </div>
             </div>
           </div>
         </div>
@@ -264,20 +280,7 @@ export default function ContactClient() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-6 mb-4">
-            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-            <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
-            <Link href="/industries" className="hover:text-primary transition-colors">Industries</Link>
-            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
-            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-          </div>
-          <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

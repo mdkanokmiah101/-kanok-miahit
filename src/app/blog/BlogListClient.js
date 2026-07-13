@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import posts from "./data";
 
@@ -191,6 +193,7 @@ export default function BlogListClient() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

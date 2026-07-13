@@ -17,7 +17,7 @@ const trustPoints = [
   { icon: "📍", title: "Google Maps Ranking", desc: "Proven strategies to get your business to the top of Google Maps in Dhaka." },
   { icon: "📋", title: "GBP Optimization", desc: "Expert Google Business Profile optimization for maximum local visibility." },
   { icon: "⏳", title: "Since 2019", desc: "Over half a decade of hands-on SEO experience in the Bangladesh market." },
-  { icon: "🚀", title: "210+ Projects", desc: "Successfully delivered 210+ SEO projects for businesses across Bangladesh." },
+  { icon: "🚀", title: "210+ Projects", desc: "Successfully delivered 210+ SEO projects for businesses across Bangladesh.", hasLink: true },
 ];
 
 export default function DhakaClient() {
@@ -105,7 +105,7 @@ export default function DhakaClient() {
               <div key={i} className="bg-gray-50 border border-gray-100 rounded-2xl p-6 text-center hover:bg-gray-100 hover:border-gray-200 transition-all hover:-translate-y-1">
                 <div className="text-4xl mb-4">{point.icon}</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">{point.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{point.desc}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{point.hasLink ? <>Successfully delivered 210+ <Link href="/services" className="text-primary font-semibold hover:underline">SEO</Link> projects for businesses across Bangladesh{point.desc.includes("including") ? " including " + point.desc.split("including")[1] : "."}</> : point.desc}</p>
               </div>
             ))}
           </div>
@@ -178,7 +178,7 @@ export default function DhakaClient() {
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Get Free <span className="text-amber-300">Dhaka SEO Audit</span>
           </h2>
-          <p className="text-primary/80 mb-10 text-lg">
+          <p className="text-white/80 mb-10 text-lg">
             Ready to dominate Dhaka&apos;s local search results? Let me analyze your current SEO and show you exactly how to rank higher in your neighborhood.
           </p>
           <Link href="/contact" className="group inline-flex items-center gap-2 bg-white text-primary-dark px-10 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:-translate-y-0.5">

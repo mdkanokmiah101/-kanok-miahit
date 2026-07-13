@@ -8,6 +8,7 @@ export default function HomeClient() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [activeTab, setActiveTab] = useState("reviews");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,6 +30,7 @@ export default function HomeClient() {
 
   const navItem = [
     { name: "Services", path: "/services" },
+    { name: "Case Studies", path: "/case-studies" },
     { name: "Industries", path: "/industries" },
     { name: "Blog", path: "/blog" },
     { name: "About", path: "/about" },
@@ -96,9 +98,7 @@ export default function HomeClient() {
               <span className="text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
             </h1>
             <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-              Md Kanok Miah is the <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong> — serving <strong className="text-gray-900">Mirpur, Gulshan, Banani, Uttara, Dhanmondi</strong> and all across the country.
-              As an SEO expert <strong className="text-gray-900">since 2019</strong>, I help local businesses rank higher on Google,
-              generate qualified leads, and scale revenue — with proven strategies that work.
+              Your competitors are ranking. You&apos;re not. That&apos;s not bad luck — that&apos;s a fixable problem. I&apos;m <strong className="text-gray-900">Md Kanok Miah</strong>, a <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong> who has run <strong className="text-gray-900">210+ SEO campaigns</strong> across e-commerce, local businesses — and I don&apos;t do cookie-cutter strategies. I build what your specific business needs to win on Google, on AI search, and everywhere in between. <strong className="text-gray-900">6 years</strong>. Real results. No vanity metrics. Let&apos;s fix your rankings — starting today.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               <span className="inline-flex items-center gap-1.5 bg-green-50 border border-green-200 text-green-700 text-xs font-semibold px-4 py-2 rounded-full">
@@ -124,7 +124,7 @@ export default function HomeClient() {
               </div>
               <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5">
                 <span className="text-2xl">📈</span>
-                <div><div className="text-sm font-bold text-gray-900">210+</div><div className="text-xs text-gray-600">Projects</div></div>
+                <div><div className="text-sm font-bold text-gray-900">210+</div><div className="text-xs text-gray-600"><Link href="/services" className="text-primary hover:underline font-semibold">SEO</Link> Projects</div></div>
               </div>
               <div className="flex items-center gap-2 bg-gray-50 border border-gray-100 rounded-xl px-4 py-2.5">
                 <span className="text-2xl">⭐</span>
@@ -174,7 +174,7 @@ export default function HomeClient() {
       <section className="relative py-14 bg-gradient-to-r from-primary to-primary-dark overflow-hidden">
         <div className="relative max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { num: "210+", label: "Projects Done" },
+            { num: "210+", label: <><Link href="/services" className="text-white hover:text-amber-300 underline font-semibold">SEO</Link> Projects</> },
             { num: "50+", label: "Happy Clients" },
             { num: "95%", label: "Client Retention" },
             { num: "Since 2019", label: "Experience" },
@@ -184,6 +184,168 @@ export default function HomeClient() {
               <div className="text-white/80 text-xs md:text-sm mt-1 font-medium uppercase tracking-wider">{stat.label}</div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ===== REVIEWS & TRAINING ===== */}
+      <section className="relative py-24 px-4 bg-gray-50/50 overflow-hidden">
+        <div className="absolute top-1/3 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-primary-light/40 rounded-full blur-3xl" />
+        <div className="relative max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-block text-primary text-sm font-semibold tracking-[0.2em] uppercase px-4 py-1.5 bg-primary-light/60 rounded-full border border-primary/10">Social Proof</span>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-5 mb-4 text-gray-900">
+              Reviews & <span className="text-primary">Training</span>
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+              See what clients say about my work and explore free SEO training content.
+            </p>
+          </div>
+
+          {/* Tabs */}
+          <div className="flex justify-center mb-10">
+            <div className="inline-flex bg-white rounded-full p-1 shadow-sm border border-gray-100">
+              <button
+                onClick={() => setActiveTab('reviews')}
+                className={`px-6 md:px-8 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+                  activeTab === 'reviews'
+                    ? 'bg-primary text-white shadow-md'
+                    : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                ⭐ Reviews
+              </button>
+              <button
+                onClick={() => setActiveTab('training')}
+                className={`px-6 md:px-8 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+                  activeTab === 'training'
+                    ? 'bg-primary text-white shadow-md'
+                    : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                🎓 Training
+              </button>
+            </div>
+          </div>
+
+          {/* Reviews Tab Content */}
+          {activeTab === 'reviews' && (
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-lg bg-white">
+                <iframe
+                  src="https://www.youtube.com/embed/eIyD-ugY7_0"
+                  title="Client Review 1"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-lg bg-white">
+                <iframe
+                  src="https://www.youtube.com/embed/hqtG7FM_ZAY"
+                  title="Client Review 2"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Training Tab Content */}
+          {activeTab === 'training' && (
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-lg bg-white">
+                <iframe
+                  src="https://www.youtube.com/embed/yeF59fPBm_I"
+                  title="SEO Training 1"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-lg bg-white">
+                <iframe
+                  src="https://www.youtube.com/embed/TxW-EGH7SAo"
+                  title="SEO Training 2"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* ===== ABOUT ME ===== */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <div className="absolute top-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary-light/50 rounded-full blur-3xl" />
+        <div className="relative max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+            {/* Photo */}
+            <div className="flex justify-center md:justify-end">
+              <div className="relative">
+                <div className="w-full h-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl border-[4px] border-white">
+                  <img
+                    src="/kanok-miah-about.webp"
+                    alt="Md Kanok Miah — SEO Expert in Dhaka, Bangladesh"
+                    width="1024"
+                    height="682"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-xl" />
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 border-2 border-primary/20 rounded-full" />
+                {/* Experience badge */}
+                <div className="absolute -bottom-3 -right-3 bg-primary text-white text-xs font-bold px-4 py-2 rounded-xl shadow-lg">
+                  ⭐ 4.9/5 · 108+ Reviews
+                </div>
+              </div>
+            </div>
+            {/* Content */}
+            <div className="max-w-xl">
+              <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">About Me</span>
+              <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-gray-900">
+                <span className="text-primary">Md Kanok Miah</span><br />
+                SEO Expert Since 2019
+              </h2>
+              <div className="space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  I'm <strong className="text-gray-900">Md Kanok Miah</strong> — a results-driven 
+                  <strong className="text-gray-900"> SEO expert in Bangladesh</strong> who has been helping 
+                  local businesses dominate search rankings <strong className="text-gray-900">since 2019</strong>. 
+                  I've led <strong className="text-gray-900">210+ SEO projects</strong> for clients ranging 
+                  from small local shops in Dhaka to international brands.
+                </p>
+                <p>
+                  Currently serving as <strong className="text-gray-900">SEO Project Manager at <a href="https://www.khanit.com.bd/about/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Khan IT</a></strong> 
+                  and <strong className="text-gray-900">Head of Digital Marketing at <a href="https://cloudmatrixtech.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CloudMatrix Tech</a></strong>. 
+                  Every month I actively manage <strong className="text-gray-900">8–12 live SEO projects</strong> 
+                  and <strong className="text-gray-900">2–5 paid ad campaigns</strong> — running real experiments 
+                  on real websites to discover what actually moves rankings.
+                </p>
+                <p>
+                  Certified by <strong className="text-gray-900">Google Digital Garage, HubSpot Academy, 
+                  <a href="https://www.semrush.com/academy/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SEMrush Academy</a>, 
+                  <a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">LinkedIn Learning</a>, 
+                  Coursera, Skillshare, and <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">YouTube</a></strong> 
+                  — but the real learning came from doing. Every algorithm update, every ranking drop, every unexpected win taught me 
+                  something no course ever could.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3 mt-8">
+                <Link href="/about" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:shadow-lg">
+                  Full Story <span>→</span>
+                </Link>
+                <Link href="/contact" className="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-6 py-3 rounded-xl font-semibold text-sm hover:border-primary/30 hover:text-primary transition-all">
+                  Let's Talk
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -274,6 +436,72 @@ export default function HomeClient() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== CASE STUDIES / SUCCESS STORIES ===== */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <div className="absolute top-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+        <div className="relative max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase px-4 py-1.5 bg-primary-light/60 rounded-full border border-primary/10">Proven Results</span>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-5 mb-4 text-gray-900">
+              SEO <span className="text-primary">Success Stories</span>
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+              Real campaigns. Real numbers. Every result is verified — no fluff, no guesswork.
+            </p>
+          </div>
+
+          {/* Results Gallery Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { name: "Das Taxis Scotland", metric: "893/mo Visitors", growth: "+5,853%", img: "/images/case-studies/Das-Taxi.webp", tag: "Transportation", url: "/case-studies" },
+              { name: "Master Racks", metric: "Top Rankings", growth: "B2B SEO", img: "/images/case-studies/Master-racks.webp", tag: "Industrial", url: "#" },
+              { name: "Allseal Waterproofing", metric: "400+/mo Visitors", growth: "Local SEO", img: "/images/case-studies/Allseal-Waterproofing-.webp", tag: "Construction", url: "/case-studies" },
+              { name: "WatchZoneBD", metric: "Top 10 Rankings", growth: "E-commerce", img: "/images/case-studies/WatchZoneBD-.webp", tag: "E-commerce", url: "/case-studies" },
+              { name: "iTracker", metric: "500+ Keywords", growth: "+21,100%", img: "/images/case-studies/iTracke.webp", tag: "Tech", url: "#" },
+              { name: "SocialPanel Pro", metric: "27,900/mo Clicks", growth: "Organic", img: "/images/case-studies/SocialPanel-pro-1.webp", tag: "SMM Panel", url: "/case-studies" },
+              { name: "SMMRX", metric: "15,440% Growth", growth: "CTR 14.2%", img: "/images/case-studies/SMMRX-2.webp", tag: "SMM Panel", url: "/case-studies" },
+              { name: "SMMSun", metric: "7,700+/mo Clicks", growth: "15,440%", img: "/images/case-studies/SMMSun-2.webp", tag: "SMM Panel", url: "/case-studies" },
+              { name: "SMMGen", metric: "27,900/mo Clicks", growth: "+87,000%", img: "/images/case-studies/SMMGen-2.webp", tag: "SMM Panel", url: "/case-studies" },
+            ].map((item, i) => (
+              <a
+                key={i}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="relative h-[180px] bg-gray-50 flex items-center justify-center overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={`${item.name} — SEO Results`}
+                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <span className="absolute top-3 right-3 bg-primary/85 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">{item.tag}</span>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-bold text-gray-900 mb-2 text-base">{item.name}</h3>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-lg font-extrabold text-primary">{item.metric}</span>
+                    <span className="text-xs font-semibold bg-red-50 text-red-600 px-2.5 py-1 rounded-full">{item.growth}</span>
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm group-hover:gap-2 transition-all">
+                    View Case Study →
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link href="/case-studies" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:shadow-primary/25">
+              View All Case Studies <span>→</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -469,7 +697,7 @@ export default function HomeClient() {
               <div className="bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-6 text-center shadow-md">
                 <div className="text-3xl mb-2">⭐</div>
                 <p className="text-white text-lg font-bold">Free SEO Audit — Worth BDT 5,000</p>
-                <p className="text-primary/70 text-sm mt-1">Complete analysis of your website. No commitment required.</p>
+                <p className="text-white/70 text-sm mt-1">Complete analysis of your website. No commitment required.</p>
               </div>
             </div>
           </div>

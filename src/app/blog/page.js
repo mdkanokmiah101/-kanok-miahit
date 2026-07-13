@@ -124,7 +124,7 @@ export default function BlogPage() {
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3 text-white">
             Want to <span className="text-amber-300">Dominate</span> Search?
           </h2>
-          <p className="text-primary/80 mb-7 text-base">
+          <p className="text-white/80 mb-7 text-base">
             Get a free SEO audit for your Bangladesh business.
           </p>
           <a

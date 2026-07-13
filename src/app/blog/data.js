@@ -522,8 +522,6 @@ When you read my content, you are getting advice backed by real, verifiable resu
 
 ## Frequently Asked Questions
 
-<!-- FAQ is rendered server-side via page.js FAQSchema component -->
-
 ### How long does e-commerce SEO take to show results?
 Typically 3-6 months. Product pages with low competition can rank faster, while competitive categories may take longer. Seasonal products should be optimized at least 3 months before the relevant season begins.
 

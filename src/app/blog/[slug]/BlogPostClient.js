@@ -8,27 +8,36 @@ import posts from "../data";
 import services from "@/app/services/data";
 import industries from "@/app/industries/data";
 
-// Helper to render inline markdown links [text](url) as React elements
+// Helper to render inline markdown: **bold**, [text](url) as React elements
 function renderInlineContent(text) {
   if (!text) return text;
-  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  // Combined regex: **bold** or [text](url)
+  const combinedRegex = /(\*\*(.+?)\*\*)|\[([^\]]+)\]\(([^)]+)\)/g;
   const parts = [];
   let lastIndex = 0;
   let match;
-  let hasLinks = false;
-  while ((match = linkRegex.exec(text)) !== null) {
-    hasLinks = true;
+  let hasMatches = false;
+  while ((match = combinedRegex.exec(text)) !== null) {
+    hasMatches = true;
     if (match.index > lastIndex) {
       parts.push(text.slice(lastIndex, match.index));
     }
-    parts.push(
-      <a key={match.index} href={match[2]} className="service-link" style={{ fontSize: 'inherit' }}>
-        {match[1]}
-      </a>
-    );
+    if (match[1]) {
+      // **bold** pattern
+      parts.push(
+        <strong key={match.index} className="font-semibold text-gray-900">{match[2]}</strong>
+      );
+    } else if (match[3]) {
+      // [text](url) pattern
+      parts.push(
+        <a key={match.index} href={match[4]} className="service-link" style={{ fontSize: 'inherit' }}>
+          {match[3]}
+        </a>
+      );
+    }
     lastIndex = match.index + match[0].length;
   }
-  if (hasLinks) {
+  if (hasMatches) {
     if (lastIndex < text.length) {
       parts.push(text.slice(lastIndex));
     }
@@ -208,7 +217,7 @@ export default function BlogPostClient() {
             key={i}
             className="text-2xl md:text-3xl font-extrabold mt-12 mb-4 text-gray-900"
           >
-            {line.replace("## ", "")}
+            {renderInlineContent(line.replace("## ", ""))}
           </h2>
         );
       }
@@ -218,7 +227,7 @@ export default function BlogPostClient() {
             key={i}
             className="text-xl font-bold mt-8 mb-3 text-primary"
           >
-            {line.replace("### ", "")}
+            {renderInlineContent(line.replace("### ", ""))}
           </h3>
         );
       }
@@ -263,6 +272,10 @@ export default function BlogPostClient() {
       if (line.startsWith("| ")) {
         // Table row — render as simple text
         return null;
+      }
+      if (line.startsWith("---")) {
+        // Horizontal rule
+        return <hr key={i} className="border-t border-gray-200 my-10" />;
       }
       // Regular paragraph
       return (

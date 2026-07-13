@@ -496,7 +496,7 @@ export default function BlogPostClient() {
           <div>
             <p className="font-bold text-gray-900">Written by <span className="text-primary">Md Kanok Miah</span></p>
             <p className="text-sm text-gray-600">A proven <Link href="/" className="text-primary font-semibold hover:underline">SEO expert in Dhaka</Link>, Bangladesh — <Link href="/about" className="text-primary font-semibold hover:underline">learn more about Md Kanok Miah →</Link></p>
-            <p className="text-sm text-gray-600 mt-2">Since 2019, Md Kanok Miah has delivered 210+ <Link href="/services" className="text-primary font-semibold hover:underline">SEO</Link> projects for local businesses, e-commerce stores, and international brands. Currently SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech. Certified: Google Digital Garage, HubSpot Academy, SEMrush Academy.</p>
+            <p className="text-sm text-gray-600 mt-2">Since 2019, Md Kanok Miah has delivered 210+ <Link href="/case-studies" className="text-primary font-semibold hover:underline">SEO projects</Link> for local businesses, e-commerce stores, and international brands. Currently SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech. Certified: Google Digital Garage, HubSpot Academy, SEMrush Academy.</p>
             <p className="text-xs text-gray-500 mt-2">Last updated: July 2026</p>
           </div>
         </div>

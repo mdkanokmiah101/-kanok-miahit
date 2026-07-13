@@ -2644,12 +2644,11 @@ The property buying journey in Dhaka typically begins with searches like "apartm
 
 ### The SEO Advantage Over Traditional Marketing
 
-| Channel | Cost Per Lead | Targeting | Longevity |
-|---|---|---|---|
-| Newspaper Ads | BDT 5,000-15,000 | Mass | 1 day |
-| Billboards | BDT 50,000-200,000/month | Location-based | 30 days |
-| Facebook Ads | BDT 50-200/click | Demographic | During spend |
-| SEO (Organic) | Compounding ROI | Intent-based | Years |
+**Channel:** Cost Per Lead — Targeting — Longevity
+- **Newspaper Ads:** BDT 5,000-15,000 — Mass — 1 day
+- **Billboards:** BDT 50,000-200,000/month — Location-based — 30 days
+- **Facebook Ads:** BDT 50-200/click — Demographic — During spend
+- **SEO (Organic):** Compounding ROI — Intent-based — Years
 
 SEO delivers compounding returns — a project page published today can generate leads for years without additional advertising spend. When you invest in [technical SEO for property websites](/services/technical-seo), every page becomes a long-term lead generation asset.
 
@@ -17961,7 +17960,7 @@ Allow: /admin/
 বাংলাদেশি নিউজ পোর্টালের ট্যাগ পেজ, ক্যাটাগরি পেজ এবং সার্চ রেজাল্ট পেজ robots.txt ব্যবহার করে ব্লক করা উচিত।
 
 - [আপনার সাইটের জন্য](/services/technical-seo) — টেকনিকেল SEO সেবা
-- [XML সাইটম্যাপ](/seo-xml-sitemap-guide-bd) — XML সাইটম্যাপ গাইড
+- [XML সাইটম্যাপ](/blog/seo-xml-sitemap-guide-bd) — XML সাইটম্যাপ গাইড
 
 
 
@@ -18323,7 +18322,7 @@ https://www.google.com/ping?sitemap=https://example.com/sitemap.xml
 **৩. দ্বিভাষিক সাইটম্যাপ:**
 বাংলা এবং ইংরেজি উভয় ভার্সনের জন্য আলাদা সাইটম্যাপ তৈরি করতে পারেন।
 
-- [Robots.txt ফাইল](/seo-robots-txt-guide-bangladesh) — রোবটস.টেক্সট গাইড
+- [Robots.txt ফাইল](/blog/seo-robots-txt-guide-bangladesh) — রোবটস.টেক্সট গাইড
 - [Google Search Console](/services/technical-seo) — টেকনিকেল SEO সেবা
 
 
@@ -18810,8 +18809,8 @@ x-default হিসেবে সাধারণত ইংরেজি ভার�
 **৩. লোকাল সার্চ কন্টেক্সট:**
 বাংলাদেশি সার্চ ইঞ্জিন ব্যবহারকারীদের জন্য hreflang ট্যাগ সঠিকভাবে কনফিগার করে বাংলা এবং ইংরেজি উভয় কন্টেন্ট সঠিকভাবে দেখান।
 
-- [XML সাইটম্যাপ](/seo-xml-sitemap-guide-bd) — XML সাইটম্যাপ গাইড
-- [স্ট্রাকচারড ডাটা](/seo-structured-data-guide-bd) — স্ট্রাকচারড ডাটা গাইড
+- [XML সাইটম্যাপ](/blog/seo-xml-sitemap-guide-bd) — XML সাইটম্যাপ গাইড
+- [স্ট্রাকচারড ডাটা](/blog/seo-structured-data-guide-bd) — স্ট্রাকচারড ডাটা গাইড
 - [অন-পেজ SEO](/services/on-page-seo) — অন-পেজ SEO সেবা
 
 
@@ -19013,8 +19012,8 @@ Schema.org-এর নিজস্ব ভ্যালিডেশন টুল �
 **৩. ই-কমার্স প্রোডাক্ট:**
 বাংলাদেশি ই-কমার্স সাইটের জন্য Product Schema ব্যবহার করে প্রাইস, অ্যাভেইলেবিলিটি এবং রিভিউ তথ্য প্রদান করুন।
 
-- [JSON-LD স্কিমা](/seo-json-ld-schema-bangladesh) — JSON-LD স্কিমা গাইড
-- [FAQ স্কিমা](/seo-faq-schema-bangladesh) — FAQ স্কিমা গাইড
+- [JSON-LD স্কিমা](/blog/seo-json-ld-schema-bangladesh) — JSON-LD স্কিমা গাইড
+- [FAQ স্কিমা](/blog/seo-faq-schema-bangladesh) — FAQ স্কিমা গাইড
 - [টেকনিকেল SEO](/services/technical-seo) — টেকনিকেল SEO সেবা
 
 
@@ -19406,9 +19405,9 @@ LocalBusiness Schema ব্যবহার করে আপনার প্র�
 **৩. ই-কমার্স:**
 প্রোডাক্ট পেজের জন্য Product Schema ব্যবহার করে সঠিক মূল্য এবং প্রাপ্যতা তথ্য দিন।
 
-- [FAQ স্কিমা](/seo-faq-schema-bangladesh) — FAQ স্কিমা গাইড
-- [HowTo স্কিমা](/seo-howto-schema-bangladesh) — HowTo স্কিমা গাইড
-- [ব্রেডক্রাম্ব স্কিমা](/seo-breadcrumb-schema-bd) — ব্রেডক্রাম্ব স্কিমা গাইড
+- [FAQ স্কিমা](/blog/seo-faq-schema-bangladesh) — FAQ স্কিমা গাইড
+- [HowTo স্কিমা](/blog/seo-howto-schema-bangladesh) — HowTo স্কিমা গাইড
+- [ব্রেডক্রাম্ব স্কিমা](/blog/seo-breadcrumb-schema-bd) — ব্রেডক্রাম্ব স্কিমা গাইড
 
 
 
@@ -19772,8 +19771,8 @@ item ফিল্ড ঐচ্ছিক হলেও এটি যোগ কর�
 প্রোডাক্ট পেজের জন্য ক্যাটাগরি ব্রেডক্রাম্ব ব্যবহার করুন:
 \`হোম > ইলেকট্রনিক্স > মোবাইল ফোন > Samsung Galaxy\`
 
-- [স্ট্রাকচারড ডাটা](/seo-structured-data-guide-bd) — স্ট্রাকচারড ডাটা গাইড
-- [FAQ স্কিমা](/seo-faq-schema-bangladesh) — FAQ স্কিমা গাইড
+- [স্ট্রাকচারড ডাটা](/blog/seo-structured-data-guide-bd) — স্ট্রাকচারড ডাটা গাইড
+- [FAQ স্কিমা](/blog/seo-faq-schema-bangladesh) — FAQ স্কিমা গাইড
 - [অন-পেজ SEO](/services/on-page-seo) — অন-পেজ SEO সেবা
 
 
@@ -20132,9 +20131,9 @@ FAQ সেকশন পেজের নিচের দিকে রাখা �
 **৩. দ্বিভাষিক FAQ:**
 বাংলা এবং ইংরেজি উভয় ভাষায় FAQ তৈরি করলে বৃহত্তর অডিয়েন্সে পৌঁছানো যায়।
 
-- [JSON-LD স্কিমা](/seo-json-ld-schema-bangladesh) — JSON-LD স্কিমা গাইড
-- [HowTo স্কিমা](/seo-howto-schema-bangladesh) — HowTo স্কিমা গাইড
-- [GEO অপটিমাইজেশন](/geo-optimization-prepare-business-ai-search) — GEO অপটিমাইজেশন গাইড
+- [JSON-LD স্কিমা](/blog/seo-json-ld-schema-bangladesh) — JSON-LD স্কিমা গাইড
+- [HowTo স্কিমা](/blog/seo-howto-schema-bangladesh) — HowTo স্কিমা গাইড
+- [GEO অপটিমাইজেশন](/blog/geo-optimization-prepare-business-ai-search) — GEO অপটিমাইজেশন গাইড
 
 
 
@@ -20536,9 +20535,9 @@ HowTo স্কিমা GEO-তেও গুরুত্বপূর্ণ ভ�
 **৩. মোবাইল-বন্ধুত্বপূর্ণ:**
 HowTo রিচ রেজাল্ট মোবাইল ডিভাইসে বিশেষভাবে কার্যকর, কারণ ব্যবহারকারীরা সরাসরি SERP-তে স্টেপগুলো দেখতে পায়।
 
-- [FAQ স্কিমা](/seo-faq-schema-bangladesh) — FAQ স্কিমা গাইড
-- [JSON-LD স্কিমা](/seo-json-ld-schema-bangladesh) — JSON-LD স্কিমা গাইড
-- [স্ট্রাকচারড ডাটা](/seo-structured-data-guide-bd) — স্ট্রাকচারড ডাটা গাইড
+- [FAQ স্কিমা](/blog/seo-faq-schema-bangladesh) — FAQ স্কিমা গাইড
+- [JSON-LD স্কিমা](/blog/seo-json-ld-schema-bangladesh) — JSON-LD স্কিমা গাইড
+- [স্ট্রাকচারড ডাটা](/blog/seo-structured-data-guide-bd) — স্ট্রাকচারড ডাটা গাইড
 
 
 
@@ -22149,8 +22148,8 @@ Google Ads provides built-in conversion tracking to measure this precisely.
 
 Most businesses should calculate blended ROI across both channels. For example, a user might first discover you through a PPC ad, leave your site, and later return via organic search to make a purchase. Both channels contributed to the conversion.
 
-- [SEO pricing](/seo-services-cost-bangladesh-pricing-guide) — SEO Pricing Guide
-- [measuring SEO ROI](/how-to-track-measure-seo-roi-bangladesh) — Track SEO ROI Guide
+- [SEO pricing](/blog/seo-services-cost-bangladesh-pricing-guide) — SEO Pricing Guide
+- [measuring SEO ROI](/blog/how-to-track-measure-seo-roi-bangladesh) — Track SEO ROI Guide
 - [on-page SEO](/services/on-page-seo) — On-Page SEO Services
 
 
@@ -23965,7 +23964,7 @@ Track KPIs specific to event management:
 
 - [Local SEO](/services/local-seo) — Local SEO Services
 - [Google Business Profile](/services/local-seo) — Local SEO Services
-- [Wedding & Event Planners guide](/seo-wedding-event-planners-bangladesh) — Wedding Event SEO Guide
+- [Wedding & Event Planners guide](/blog/seo-wedding-event-planners-bangladesh) — Wedding Event SEO Guide
 
 
 
@@ -24741,8 +24740,8 @@ Track location-specific KPIs:
 - **Ignoring local competitors per branch:** Each location may face different local competitors
 
 - [Google Business Profile](/services/local-seo) — Local SEO Services
-- [Landlord Certificates case study](/landlord-certificates-seo-case-study) — Multi-Location SEO Case Study
-- [Enterprise SEO](/enterprise-seo-large-organizations-bangladesh) — Enterprise SEO Guide
+- [Landlord Certificates case study](/blog/landlord-certificates-seo-case-study) — Multi-Location SEO Case Study
+- [Enterprise SEO](/blog/enterprise-seo-large-organizations-bangladesh) — Enterprise SEO Guide
 
 
 ## Conclusion
@@ -24993,7 +24992,7 @@ Large organizations need enterprise-grade SEO tools:
 - Understand how Bangladeshi users search — mix of Bengali and English (Banglish) queries
 
 - [technical SEO](/services/technical-seo) — Technical SEO Services
-- [multi-location SEO](/local-seo-multiple-business-locations-bangladesh) — Multi-Location SEO Guide
+- [multi-location SEO](/blog/local-seo-multiple-business-locations-bangladesh) — Multi-Location SEO Guide
 - [link building](/services/link-building) — Link Building Services
 
 
@@ -25084,7 +25083,7 @@ While social media links are nofollow, they generate engagement signals that ind
 
 - [Local SEO](/services/local-seo) — Local SEO Services
 - [Google Business Profile](/services/local-seo) — Local SEO Services
-- [Wedding & Event Planners guide](/seo-wedding-event-planners-bangladesh) — Wedding SEO Guide
+- [Wedding & Event Planners guide](/blog/seo-wedding-event-planners-bangladesh) — Wedding SEO Guide
 
 
 ## Conclusion
@@ -25189,8 +25188,8 @@ Wedding and event planning is a trust-based business. Encourage clients to leave
 Build relationships with Bangladeshi wedding vendors, venues, and suppliers. Exchange testimonials and case studies that include backlinks to each other's websites. Contribute guest posts to Bangladeshi wedding blogs and lifestyle websites. These local backlinks boost your site's authority and relevance for Bangladeshi search queries.
 
 - [Local SEO](/services/local-seo) — Local SEO Services
-- [Event Management Companies guide](/seo-event-management-companies-bangladesh) — Event Management SEO Guide
-- [Photographers & Videographers guide](/seo-photographers-videographers-bangladesh) — Photography SEO Guide
+- [Event Management Companies guide](/blog/seo-event-management-companies-bangladesh) — Event Management SEO Guide
+- [Photographers & Videographers guide](/blog/seo-photographers-videographers-bangladesh) — Photography SEO Guide
 
 
 ## Conclusion
@@ -25309,8 +25308,8 @@ Track these key metrics to measure your blogging ROI:
 - Conversions from blog readers (form fills, purchases, phone calls)
 
 - [on-page SEO](/services/on-page-seo) — On-Page SEO Services
-- [backlink outreach](/backlink-outreach-templates-strategies-bangladesh) — Backlink Outreach Guide
-- [SEO roadmap](/building-seo-roadmap-bangladesh-business) — SEO Roadmap Guide
+- [backlink outreach](/blog/backlink-outreach-templates-strategies-bangladesh) — Backlink Outreach Guide
+- [SEO roadmap](/blog/building-seo-roadmap-bangladesh-business) — SEO Roadmap Guide
 
 
 ## Conclusion
@@ -25497,8 +25496,8 @@ Track your success rate and refine your approach based on what works best for th
 - **Paid guest posts:** Many Bangladeshi websites sell guest post links; avoid them as they violate Google's guidelines
 
 - [link building](/services/link-building) — Link Building Services
-- [Link Building Strategies](/link-building-strategies-bangladesh-market) — Link Building Strategies Guide
-- [Blogging Strategy](/blogging-strategy-seo-frequency-topics-bangladesh) — Blogging Strategy Guide
+- [Link Building Strategies](/blog/link-building-strategies-bangladesh-market) — Link Building Strategies Guide
+- [Blogging Strategy](/blog/blogging-strategy-seo-frequency-topics-bangladesh) — Blogging Strategy Guide
 
 
 ## Conclusion
@@ -25649,7 +25648,7 @@ Track metrics that align with your mission:
 
 - [on-page SEO](/services/on-page-seo) — On-Page SEO Services
 - [local SEO](/services/local-seo) — Local SEO Services
-- [volunteer and donor content](/blogging-strategy-seo-frequency-topics-bangladesh) — Blogging Strategy Guide
+- [volunteer and donor content](/blog/blogging-strategy-seo-frequency-topics-bangladesh) — Blogging Strategy Guide
 
 
 ## Conclusion
@@ -26004,7 +26003,7 @@ Track SEO ROI by connecting organic traffic to business outcomes:
 
 - [technical SEO](/services/technical-seo) — Technical SEO Services
 - [on-page optimization](/services/on-page-seo) — On-Page SEO Services
-- [Google penalty recovery guide](/recovering-google-penalties-bangladesh-guide) — Google Penalty Recovery Guide
+- [Google penalty recovery guide](/blog/recovering-google-penalties-bangladesh-guide) — Google Penalty Recovery Guide
 
 
 ## Conclusion
@@ -26468,7 +26467,7 @@ As the **best SEO expert in Dhaka**, I apply these same proven strategies to bus
 
 - [local SEO](/services/local-seo) — Local SEO Services
 - [Google Business Profile optimization](/services/local-seo) — Local SEO Services
-- [Landlord Certificates case study](/landlord-certificates-seo-case-study) — Landlord Certificates Case Study
+- [Landlord Certificates case study](/blog/landlord-certificates-seo-case-study) — Landlord Certificates Case Study
 
 
 ## Conclusion
@@ -26525,8 +26524,8 @@ The combination of comprehensive service pages and location-specific content pro
 As the **best SEO expert in Dhaka**, I bring this same multi-location approach to Bangladeshi businesses serving multiple cities. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to see how I can help your service business generate leads from every location you serve.
 
 - [local SEO](/services/local-seo) — Local SEO Services
-- [Das Taxis Scotland case study](/das-taxis-scotland-seo-case-study) — Das Taxis Scotland Case Study
-- [multi-location SEO](/local-seo-multiple-business-locations-bangladesh) — Multi-Location SEO Guide
+- [Das Taxis Scotland case study](/blog/das-taxis-scotland-seo-case-study) — Das Taxis Scotland Case Study
+- [multi-location SEO](/blog/local-seo-multiple-business-locations-bangladesh) — Multi-Location SEO Guide
 
 
 ## Conclusion
@@ -26593,7 +26592,7 @@ As the **best SEO expert in Dhaka**, I apply this same data-driven approach to t
 
 - [local SEO](/services/local-seo) — Local SEO Services
 - [Google Business Profile optimization](/services/local-seo) — Local SEO Services
-- [Locksmith Dundee case study](/locksmith-dundee-seo-case-study) — Locksmith Dundee Case Study
+- [Locksmith Dundee case study](/blog/locksmith-dundee-seo-case-study) — Locksmith Dundee Case Study
 
 
 ## Conclusion
@@ -26653,7 +26652,7 @@ As the **best SEO expert in Dhaka**, I apply these same content-driven SEO strat
 
 - [technical SEO](/services/technical-seo) — Technical SEO Services
 - [on-page SEO](/services/on-page-seo) — On-Page SEO Services
-- [SMMGen case study](/smmgen-seo-case-study) — SMMGen Case Study
+- [SMMGen case study](/blog/smmgen-seo-case-study) — SMMGen Case Study
 
 
 ## Conclusion
@@ -26713,7 +26712,7 @@ As the **best SEO expert in Dhaka**, I bring this comprehensive approach to SMM 
 
 - [technical SEO](/services/technical-seo) — Technical SEO Services
 - [e-commerce SEO](/services/ecommerce-seo) — E-commerce SEO Services
-- [MoreThanPanel case study](/morethanpanel-seo-case-study) — MoreThanPanel Case Study
+- [MoreThanPanel case study](/blog/morethanpanel-seo-case-study) — MoreThanPanel Case Study
 
 
 ## Conclusion
@@ -26777,7 +26776,7 @@ As the **best SEO expert in Dhaka**, I use these same content-cluster and techni
 
 - [content clusters](/services/on-page-seo) — On-Page SEO Services
 - [technical optimization](/services/technical-seo) — Technical SEO Services
-- [SMMGen case study](/smmgen-seo-case-study) — SMMGen Case Study
+- [SMMGen case study](/blog/smmgen-seo-case-study) — SMMGen Case Study
 
 
 ## Conclusion
@@ -26845,7 +26844,7 @@ B2B SEO requires a different approach than B2C. Decision-makers in construction 
 
 As the **best SEO expert in Dhaka**, I specialize in B2B SEO strategies that help Bangladeshi manufacturers and suppliers dominate search results. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can transform your B2B brand's online visibility.
 
-- [B2B SEO](/b2b-lead-generation-seo-bangladesh) — B2B Lead Generation SEO
+- [B2B SEO](/blog/b2b-lead-generation-seo-bangladesh) — B2B Lead Generation SEO
 - [technical SEO](/services/technical-seo) — Technical SEO Services
 - [Garments & Textile industry](/industries/garments-textile) — Garments SEO
 
@@ -26912,9 +26911,9 @@ This case study proves that new domains can compete and win against established 
 
 As the **best SEO expert in Dhaka**, I specialize in helping Bangladeshi garment manufacturers and B2B businesses achieve rapid SEO results on new domains. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can take your business from zero to #1 in your market.
 
-- [B2B SEO](/b2b-lead-generation-seo-bangladesh) — B2B Lead Generation SEO
+- [B2B SEO](/blog/b2b-lead-generation-seo-bangladesh) — B2B Lead Generation SEO
 - [Garments & Textile industry](/industries/garments-textile) — Garments & Textile SEO
-- [Mir Cement case study](/mir-cement-seo-case-study) — Mir Cement Case Study
+- [Mir Cement case study](/blog/mir-cement-seo-case-study) — Mir Cement Case Study
 
 
 ## Conclusion
@@ -26980,7 +26979,7 @@ As the **best SEO expert in Dhaka**, I apply the same proven local SEO strategie
 
 - [local SEO](/services/local-seo) — Local SEO Services
 - [Google Business Profile](/services/local-seo) — Local SEO Services
-- [Locksmith Dundee case study](/locksmith-dundee-seo-case-study) — Locksmith Dundee Case Study
+- [Locksmith Dundee case study](/blog/locksmith-dundee-seo-case-study) — Locksmith Dundee Case Study
 
 
 ## Conclusion

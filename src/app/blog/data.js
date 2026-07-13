@@ -25419,7 +25419,7 @@ Whether you run a restaurant in Gulshan, a diagnostic center in Dhanmondi, or an
   },
   {
     slug: "why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh",
-    title: "Why Md Kanok Miah is the Best SEO Expert in Dhaka, Bangladesh — Proven Results & Strategy",
+    title: "Best SEO Expert in Dhaka — Proven Results Since 2019",
     date: "2026-07-09",
     author: "Md Kanok Miah",
     excerpt: "Looking for the best SEO expert in Dhaka, Bangladesh? Discover why Md Kanok Miah ranks #1 with experience since 2019, 210+ projects, 108 verified reviews, and proven SEO strategies that deliver real rankings and revenue growth.",
@@ -25475,7 +25475,8 @@ By 2020, I was already managing real client projects and delivering measurable i
 - **2021:** Joined **Walton Plaza** and **Solus Corporation**; gained corporate-level experience in SEO strategy and execution
 - **2022–2023:** Expanded into **paid advertising** and **digital marketing strategy**; started managing 8–12 live SEO projects monthly
 - **2024:** Founded **kanokmiah.com**; joined **Khan IT** as SEO Project Manager; began working with international clients
-- **2025–Present:** Promoted to **Head of Digital Marketing at CloudMatrix Tech**; crossed **210+ SEO projects**
+- **2025–Present:** Promoted to **Head of Digital Marketing at CloudMatrix Tech** — leading enterprise digital strategy and managing multi-channel campaigns
+- **Career Total (2019–Present):** **210+ SEO projects** completed across all roles — from local Dhaka businesses to international brands
 
 ### Which Industries Have I Served?
 
@@ -25622,38 +25623,38 @@ A local locksmith in Dundee was invisible on Google — zero GBP presence, no ci
 - **Service calls:** Increased by 200% within 6 months
 - **Method:** GBP optimisation, local citation building, review generation strategy, and targeted local keywords
 
-### [E-commerce SEO Growth Case](/blog/ecommerce-seo-case-study-bangladesh)
+### [Dhaka Apparels — #1 Ranking in 90 Days](/blog/dhaka-apparels-seo-case-study)
 
-An e-commerce store in Dhaka needed organic traffic and sales. Through comprehensive on-page optimisation, technical fixes, and content strategy:
+A brand new garments domain in Dhaka competing against established suppliers with 5+ years of SEO history:
 
-- **Organic traffic:** Increased by **180%** within 5 months
-- **Conversion rate:** Improved by **35%** through UX and content optimisation
-- **Revenue growth:** Directly attributable organic revenue rose by **150%**
-- **Keywords:** Moved from ranking for 45 keywords to 340+ keywords in top 50
-- **Core Web Vitals:** LCP reduced from 3.9s to 1.6s
-- **Method:** Technical SEO audit, product page optimisation, content gap analysis, structured data implementation
+- **Top keyword ranking:** #1 for \"best stock garments supplier in bd\" in just 90 days
+- **Impressions:** 14,700 in 90 days
+- **AI search appearances:** Featured in Google AI-generated search summaries
+- **Domain Authority:** Started from 0 (brand new domain)
+- **Ad Spend:** $0 (100% organic SEO)
+- **Method:** Content strategy, technical SEO, GBP optimization, AI-ready structured data
 
-### [Local Business SEO — Dhaka Restaurant](/blog/local-seo-dhaka-restaurant-case-study)
+### [Stealth Windshield Repairs — Local SEO Growth](/blog/stealth-windshield-repairs-seo-case-study)
 
-A restaurant in Old Dhaka wanted to appear on Google Maps for "best restaurant in Old Dhaka":
+An auto glass repair business went from zero visibility to dominating local search in 6 months:
 
-- **Google Maps ranking:** #1 within **8 weeks**
-- **Local pack appearances:** 15+ "near me" keywords in top 3
-- **Monthly direction requests:** Increased from 20 to 180+
-- **Phone calls from GBP:** Grew from 5/month to 45/month
-- **Revenue impact:** Estimated 40% increase in dine-in customers
-- **Method:** Strategic GBP optimisation, local citations on 40+ Bangladeshi directories, systematic review generation
+- **Google Maps ranking:** Top 3 local pack within 4 months
+- **Monthly visitors:** 0 to 400+ organic visitors
+- **Reviews:** 38 five-star reviews with systematic review generation
+- **Page speed:** Improved from 6.2s to under 2s
+- **Revenue impact:** Estimated 60% increase in service calls
+- **Method:** GBP optimization, local citations, page speed fix, review system
 
-### [Technical SEO Overhaul — International Client](/blog/technical-seo-case-study)
+### [MoreThanPanel — 58,466 Daily Visitors](/blog/morethanpanel-seo-case-study)
 
-An international client migrating their website was losing rankings and traffic:
+A digital platform with 227,000 registered users but almost no organic traffic — scaled to massive daily visitors:
 
-- **Rankings recovered:** **100%** of lost rankings within 3 months
-- **Organic traffic:** Restored and grew by 25% above pre-migration levels
-- **Crawl errors:** Reduced from 340+ to under 10
-- **Indexed pages:** Grew from 120 to 450+
-- **Structured data:** Implemented 5 schema types (LocalBusiness, Article, FAQ, Product, BreadcrumbList)
-- **Method:** Complete technical SEO audit, crawl budget optimisation, redirect mapping, JSON-LD implementation, sitemap restructuring
+- **Daily organic visitors:** 56/day to 58,466/day
+- **Total clicks (24 months):** 306,000
+- **Total impressions (24 months):** 6,450,000
+- **Indexing errors reduced:** 60%+
+- **Average CTR:** 4.7% overall, 6.2% in last 3 months
+- **Method:** Technical SEO foundation, structured content engine, quarterly refresh cycles
 
 These are just a few examples. Every client gets the same dedication, strategy, and focus on measurable results. **[View my full portfolio of case studies](/blog)** for more details.
 

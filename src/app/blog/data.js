@@ -522,71 +522,7 @@ When you read my content, you are getting advice backed by real, verifiable resu
 
 ## Frequently Asked Questions
 
-<!-- FAQ Schema structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How long does e-commerce SEO take to show results?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Typically 3-6 months. Product pages with low competition can rank faster, while competitive categories may take longer. Seasonal products should be optimized at least 3 months before the relevant season begins."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is SEO better than Google Ads for e-commerce?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For long-term sustainable growth, SEO offers better ROI. A combined approach using Google Ads for immediate visibility while building organic authority is most effective. Start with Google Ads to validate demand and generate initial sales, then invest in SEO to reduce your long-term customer acquisition costs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I optimize product pages for multiple variations?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use canonical tags pointing to the main product URL, and manage size and color variations through structured data (Product schema) rather than creating separate URLs for each variation. This prevents duplicate content issues while still showing all options to users."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I use Bengali or English for my e-commerce SEO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A bilingual approach works best. Use Bengali for product descriptions and category content to reach the mass market, while including English keywords in titles and meta descriptions to capture higher-intent searches and international customers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I compete with Daraz as an independent store?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Focus on niche products that Daraz does not specialize in, build a strong brand with excellent customer service, invest in content marketing that establishes your expertise, and leverage email marketing to build direct customer relationships. SEO for niche products is often easier because there is less competition."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the most important technical SEO fixes for e-commerce?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Implement proper canonical tags, optimize page speed, fix broken product links, add structured data (Product, Review, and BreadcrumbList schema), create a clean XML sitemap, and ensure your site is fully crawlable by search engines. Regular technical audits every quarter will catch issues before they impact your rankings. Additionally, monitor Google Search Console for coverage errors and manual actions that could suddenly drop your traffic."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I optimize my e-commerce store for voice search?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "With voice search growing rapidly in Bangladesh \u2014 especially for Bengali queries \u2014 optimize for conversational long-tail phrases. Instead of targeting \"buy kurta dhaka,\" target \"where can I buy a good quality kurta in Dhaka.\" Create FAQ content that directly answers voice queries, as Google often pulls answers for voice search from FAQ sections."
-      }
-    }
-  ]
-}
-</script>
+<!-- FAQ is rendered server-side via page.js FAQSchema component -->
 
 ### How long does e-commerce SEO take to show results?
 Typically 3-6 months. Product pages with low competition can rank faster, while competitive categories may take longer. Seasonal products should be optimized at least 3 months before the relevant season begins.

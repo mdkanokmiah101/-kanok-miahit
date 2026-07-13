@@ -8,42 +8,77 @@ import posts from "../data";
 import services from "@/app/services/data";
 import industries from "@/app/industries/data";
 
-// Helper to render inline markdown: **bold**, [text](url) as React elements
+// Helper to render inline markdown: **bold**, [text](url), and **[bold link](url)** as React elements
+// Two-pass: first **bold**, then [links](url) inside each fragment
 function renderInlineContent(text) {
   if (!text) return text;
-  // Combined regex: **bold** or [text](url)
-  const combinedRegex = /(\*\*(.+?)\*\*)|\[([^\]]+)\]\(([^)]+)\)/g;
-  const parts = [];
-  let lastIndex = 0;
-  let match;
-  let hasMatches = false;
-  while ((match = combinedRegex.exec(text)) !== null) {
-    hasMatches = true;
-    if (match.index > lastIndex) {
-      parts.push(text.slice(lastIndex, match.index));
-    }
-    if (match[1]) {
-      // **bold** pattern
-      parts.push(
-        <strong key={match.index} className="font-semibold text-gray-900">{match[2]}</strong>
-      );
-    } else if (match[3]) {
-      // [text](url) pattern
-      parts.push(
-        <a key={match.index} href={match[4]} className="service-link" style={{ fontSize: 'inherit' }}>
-          {match[3]}
-        </a>
-      );
-    }
-    lastIndex = match.index + match[0].length;
+  
+  // Pass 1: Split by **bold** markers
+  const boldParts = [];
+  let boldRegex = /\*\*(.+?)\*\*/g;
+  let lastIdx = 0;
+  let m;
+  let hasBold = false;
+  while ((m = boldRegex.exec(text)) !== null) {
+    hasBold = true;
+    if (m.index > lastIdx) boldParts.push({ text: text.slice(lastIdx, m.index), bold: false });
+    boldParts.push({ text: m[1], bold: true });
+    lastIdx = m.index + m[0].length;
   }
-  if (hasMatches) {
-    if (lastIndex < text.length) {
-      parts.push(text.slice(lastIndex));
-    }
-    return parts;
+  if (hasBold) {
+    if (lastIdx < text.length) boldParts.push({ text: text.slice(lastIdx), bold: false });
+  } else {
+    boldParts.push({ text, bold: false });
   }
-  return text;
+  
+  // Pass 2: Process [links](url) inside each fragment, then build elements
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const elements = [];
+  
+  boldParts.forEach((part, pi) => {
+    if (part.bold) {
+      // Bold fragment — process links inside it
+      const innerParts = [];
+      let lIdx = 0;
+      let lm;
+      let hasLink = false;
+      while ((lm = linkRegex.exec(part.text)) !== null) {
+        hasLink = true;
+        if (lm.index > lIdx) innerParts.push(part.text.slice(lIdx, lm.index));
+        innerParts.push(<a key={`l${pi}_${lm.index}`} href={lm[2]} className="service-link" style={{ fontSize: 'inherit' }}>{lm[1]}</a>);
+        lIdx = lm.index + lm[0].length;
+      }
+      if (hasLink) {
+        if (lIdx < part.text.length) innerParts.push(part.text.slice(lIdx));
+        elements.push(<strong key={`b${pi}`} className="font-semibold text-gray-900">{innerParts}</strong>);
+      } else {
+        elements.push(<strong key={`b${pi}`} className="font-semibold text-gray-900">{part.text}</strong>);
+      }
+    } else {
+      // Normal fragment — process links inside it
+      const innerParts = [];
+      let lIdx = 0;
+      let lm;
+      let hasLink = false;
+      while ((lm = linkRegex.exec(part.text)) !== null) {
+        hasLink = true;
+        if (lm.index > lIdx) innerParts.push(part.text.slice(lIdx, lm.index));
+        innerParts.push(<a key={`n${pi}_${lm.index}`} href={lm[2]} className="service-link" style={{ fontSize: 'inherit' }}>{lm[1]}</a>);
+        lIdx = lm.index + lm[0].length;
+      }
+      if (hasLink) {
+        if (lIdx < part.text.length) innerParts.push(part.text.slice(lIdx));
+        innerParts.forEach(el => elements.push(el));
+      } else {
+        elements.push(part.text);
+      }
+    }
+  });
+  
+  if (elements.length === 0) return text;
+  // If only one element and it's a string, return it directly
+  if (elements.length === 1 && typeof elements[0] === 'string') return elements[0];
+  return elements;
 }
 
 export default function BlogPostClient() {

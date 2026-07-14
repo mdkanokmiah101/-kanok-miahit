@@ -1,5 +1,5 @@
 import ContactClient from "./ContactClient";
-import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema, ContactPageSchema, LocalBusinessSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Contact Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
@@ -31,6 +31,7 @@ export default function ContactPage() {
   return (
     <>
       {ContactPageSchema()}
+      {LocalBusinessSchema()}
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "Contact", url: "https://kanokmiah.com.bd/contact" },

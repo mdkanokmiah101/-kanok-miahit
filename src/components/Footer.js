@@ -29,8 +29,8 @@ export default function Footer() {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary-dark to-primary" />
 
       <div className="relative max-w-7xl mx-auto">
-        {/* Main Footer Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      {/* Main Footer Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-10 mb-12">
 
           {/* Column 1 - Brand */}
           <div className="lg:col-span-1">
@@ -102,7 +102,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 5 - Contact */}
+          {/* Column 5 - Locations */}
+          <div>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Top Locations</h4>
+            <ul className="space-y-3 text-sm">
+              {[
+                { name: "Dhaka", path: "/locations/dhaka" },
+                { name: "Chittagong", path: "/locations/chittagong" },
+                { name: "Sylhet", path: "/locations/sylhet" },
+                { name: "Khulna", path: "/locations/khulna" },
+                { name: "Rajshahi", path: "/locations/rajshahi" },
+                { name: "Barisal", path: "/locations/barisal" },
+                { name: "Rangpur", path: "/locations/rangpur" },
+                { name: "Mymensingh", path: "/locations/mymensingh" },
+              ].map((loc, i) => (
+                <li key={i}>
+                  <Link href={loc.path} className="text-gray-300 hover:text-primary transition-colors flex items-center gap-2">
+                    <span className="text-primary text-xs">▸</span> {loc.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 6 - Contact */}
           <div>
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Contact</h4>
             <ul className="space-y-4 text-sm">

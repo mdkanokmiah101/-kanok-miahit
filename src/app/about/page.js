@@ -1,5 +1,5 @@
 import AboutClient from "./AboutClient";
-import { BreadcrumbSchema, FAQSchema, AboutPageSchema } from "@/components/Schema";
+import { BreadcrumbSchema, AboutPageSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "About Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
@@ -35,7 +35,6 @@ export default function AboutPage() {
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "About", url: "https://kanokmiah.com.bd/about" },
       ])}
-      {FAQSchema({ faqs: aboutFaqs })}
       <AboutClient />
     </>
   );

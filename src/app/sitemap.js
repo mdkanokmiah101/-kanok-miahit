@@ -1,20 +1,46 @@
-import { readFileSync, readdirSync, existsSync } from "fs";
+import { readFileSync, existsSync } from "fs";
 
 export default async function sitemap() {
   const baseUrl = "https://kanokmiah.com.bd";
 
+  // Helper: parse real blog dates from data.js, fallback to staggered dates
+  function getBlogDates() {
+    const blogPath = "src/app/blog/data.js";
+    const dates = {};
+    if (existsSync(blogPath)) {
+      const content = readFileSync(blogPath, "utf8");
+      // Match slug + date pairs: slug: "xxx", ... date: "YYYY-MM-DD"
+      const slugs = [...content.matchAll(/slug:\s*"([^"]+)"/g)];
+      const dateMatches = [...content.matchAll(/date:\s*"([^"]+)"/g)];
+      for (let i = 0; i < slugs.length && i < dateMatches.length; i++) {
+        dates[slugs[i][1]] = dateMatches[i][1];
+      }
+    }
+    return dates;
+  }
+
+  const blogDates = getBlogDates();
+
   const staticPages = [
-    { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1.0 },
-    { url: `${baseUrl}/services`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/industries`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/privacy-policy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
-    { url: `${baseUrl}/terms-of-service`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
-    { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
-    { url: `${baseUrl}/faq`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/case-studies`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/portfolio`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: baseUrl, lastModified: "2026-07-14", changeFrequency: "weekly", priority: 1.0 },
+    { url: `${baseUrl}/services`, lastModified: "2026-07-14", changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/industries`, lastModified: "2026-07-14", changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/about`, lastModified: "2026-07-10", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/contact`, lastModified: "2026-07-10", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/privacy-policy`, lastModified: "2026-06-01", changeFrequency: "yearly", priority: 0.3 },
+    { url: `${baseUrl}/terms-of-service`, lastModified: "2026-06-01", changeFrequency: "yearly", priority: 0.3 },
+    { url: `${baseUrl}/blog`, lastModified: "2026-07-14", changeFrequency: "daily", priority: 0.8 },
+    { url: `${baseUrl}/faq`, lastModified: "2026-07-10", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/case-studies`, lastModified: "2026-07-14", changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/portfolio`, lastModified: "2026-07-10", changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/locations/dhaka`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/locations/chittagong`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/locations/sylhet`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/locations/khulna`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/locations/rajshahi`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/locations/barisal`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/locations/rangpur`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/locations/mymensingh`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const industrySlugs = [
@@ -24,15 +50,7 @@ export default async function sitemap() {
 
   const industriesPages = industrySlugs.map((slug) => ({
     url: `${baseUrl}/industries/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
-
-  const locationSlugs = ["dhaka", "chittagong", "sylhet", "khulna", "rajshahi", "barisal", "rangpur", "mymensingh"];
-  const locationPages = locationSlugs.map((slug) => ({
-    url: `${baseUrl}/locations/${slug}`,
-    lastModified: new Date(),
+    lastModified: "2026-07-14",
     changeFrequency: "monthly",
     priority: 0.8,
   }));
@@ -52,12 +70,12 @@ export default async function sitemap() {
 
   const servicePages = serviceSlugs.map((slug) => ({
     url: `${baseUrl}/services/${slug}`,
-    lastModified: new Date(),
+    lastModified: "2026-07-14",
     changeFrequency: "weekly",
     priority: 0.9,
   }));
 
-  // Read blog posts from data file via filesystem
+  // Read blog posts using real dates from data file
   let blogSlugs = [];
   try {
     const blogPath = "src/app/blog/data.js";
@@ -72,10 +90,10 @@ export default async function sitemap() {
 
   const blogPages = blogSlugs.map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
+    lastModified: blogDates[slug] || "2026-07-14",
     changeFrequency: "monthly",
     priority: 0.7,
   }));
 
-  return [...staticPages, ...industriesPages, ...locationPages, ...servicePages, ...blogPages];
+  return [...staticPages, ...industriesPages, ...servicePages, ...blogPages];
 }

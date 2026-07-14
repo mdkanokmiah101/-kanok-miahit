@@ -1,4 +1,5 @@
 import HomeClient from "./HomeClient";
+import { LocalBusinessSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "Best SEO Expert in Dhaka | Md Kanok Miah | 210+ SEO Successes",
@@ -63,5 +64,10 @@ export const metadata = {
 };
 
 export default function HomePage() {
-  return <HomeClient />;
+  return (
+    <>
+      {LocalBusinessSchema()}
+      <HomeClient />
+    </>
+  );
 }

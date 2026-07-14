@@ -1,6 +1,6 @@
 import posts from "../data";
 import BlogPostClient from "./BlogPostClient";
-import { BreadcrumbSchema, ArticleSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
 function truncateMeta(str, maxLen = 155) {
@@ -59,7 +59,6 @@ export default async function BlogPostPage({ params }) {
         { name: post?.title || slug, url: `https://kanokmiah.com.bd/blog/${slug}` },
       ])}
       {post && ArticleSchema(post)}
-      {FAQSchema({ faqs: blogPostFaqs })}
       <BlogPostClient />
     </>
   );

@@ -1,6 +1,6 @@
 import industries from "../data";
 import IndustryPageClient from "./IndustryPageClient";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
 function truncateMeta(str, maxLen = 160) {
@@ -58,7 +58,6 @@ export default async function IndustryPage({ params }) {
         { name: "Industries", url: "https://kanokmiah.com.bd/industries" },
         { name: ind?.title || slug, url: `https://kanokmiah.com.bd/industries/${slug}` },
       ])}
-      {FAQSchema({ faqs: industrySlugFaqs })}
       <IndustryPageClient slug={slug} />
     </>
   );

@@ -1,5 +1,5 @@
 import IndustriesClient from "./IndustriesClient";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
   title: "SEO by Industry — Bangladesh | Md Kanok Miah | SEO Expert",
@@ -46,7 +46,6 @@ export default function IndustriesPage() {
           "description": "Industry-specific SEO solutions for Bangladeshi businesses."
         }
       })}} />
-      {FAQSchema({ faqs: industriesFaqs })}
       <IndustriesClient />
     </>
   );

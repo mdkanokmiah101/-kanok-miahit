@@ -83,9 +83,6 @@ const localBusinessSchema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "E-commerce SEO" } },
     ],
   },
-  aggregateRating: {
-    "@type": "AggregateRating", ratingValue: "4.9", bestRating: "5", ratingCount: "50",
-  },
 };
 
 const webSiteSchema = {
@@ -161,8 +158,8 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/manifest.json" />
         {/* Force og:image for all pages (critical for client-component pages like homepage) */}
         <meta property="og:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="400" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Md Kanok Miah — SEO Expert Since 2019, 210+ Projects" />
         {/* Force twitter:image for all pages (critical for client-component pages) */}
         <meta name="twitter:image" content="https://kanokmiah.com.bd/kanok-miah-profile.webp" />
@@ -173,9 +170,9 @@ export default function RootLayout({ children }) {
         <meta name="deploy-version" content="2026-07-10-v36-cdn-fix" />
       </head>
       <body className="min-h-full flex flex-col">
-        {/* JSON-LD Structured Data — in <body> for Next.js SSR compatibility */}
+        {/* JSON-LD Structured Data — sitewide only (Organization, WebSite, Person) */}
+        {/* LocalBusiness is scoped to homepage/contact/locations pages only — prevents manual-action risk */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
         {children}

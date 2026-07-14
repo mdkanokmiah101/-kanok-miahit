@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import { FAQSchema } from "@/components/Schema";
 
 export default function HomeClient() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,7 +47,7 @@ export default function HomeClient() {
 
   return (
     <div className="min-h-screen bg-white">
-      {FAQSchema({ faqs })}
+      
 
       {/* ===== NAVBAR ===== */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50">

@@ -94,12 +94,6 @@ export function LocalBusinessSchema() {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "E-commerce SEO" } },
       ],
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      bestRating: "5",
-      ratingCount: "50",
-    },
   };
   return (
     <script

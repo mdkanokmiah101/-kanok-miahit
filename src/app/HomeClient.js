@@ -97,7 +97,7 @@ export default function HomeClient() {
               <span className="text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
             </h1>
             <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-              Your competitors are ranking. You&apos;re not. That&apos;s not bad luck — that&apos;s a fixable problem. I&apos;m <strong className="text-gray-900">Md Kanok Miah</strong>, a <strong className="text-gray-900">best SEO expert in Dhaka, Bangladesh</strong> who has run <strong className="text-gray-900">210+ SEO campaigns</strong> across e-commerce, local businesses — and I don&apos;t do cookie-cutter strategies. I build what your specific business needs to win on Google, on AI search, and everywhere in between. <strong className="text-gray-900">6 years</strong>. Real results. No vanity metrics. Let&apos;s fix your rankings — starting today.
+              Your competitors are ranking. You&apos;re not. That&apos;s not bad luck — that&apos;s a fixable problem. I&apos;m <strong className="text-gray-900">Md Kanok Miah</strong>, <strong className="text-gray-900">the best SEO expert in Dhaka, Bangladesh</strong> who has run <strong className="text-gray-900">210+ SEO campaigns</strong> across e-commerce, local businesses — and I don&apos;t do cookie-cutter strategies. I build what your specific business needs to win on Google, on AI search, and everywhere in between. <strong className="text-gray-900">6 years</strong>. Real results. No vanity metrics. Let&apos;s fix your rankings — starting today.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               <span className="inline-flex items-center gap-1.5 bg-green-50 border border-green-200 text-green-700 text-xs font-semibold px-4 py-2 rounded-full">
@@ -183,6 +183,20 @@ export default function HomeClient() {
               <div className="text-white/80 text-xs md:text-sm mt-1 font-medium uppercase tracking-wider">{stat.label}</div>
             </div>
           ))}
+        </div>
+        {/* Service Areas — internal links to location pages */}
+        <div className="relative max-w-5xl mx-auto px-4 mt-10 pt-6 border-t border-white/20 text-center">
+          <div className="text-white/60 text-xs font-semibold uppercase tracking-[0.15em] mb-3">📍 Service Areas</div>
+          <div className="flex flex-wrap justify-center gap-2">
+            <Link href="/locations/dhaka" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Dhaka</Link>
+            <Link href="/locations/chittagong" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Chittagong</Link>
+            <Link href="/locations/sylhet" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Sylhet</Link>
+            <Link href="/locations/khulna" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Khulna</Link>
+            <Link href="/locations/rajshahi" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Rajshahi</Link>
+            <Link href="/locations/barisal" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Barisal</Link>
+            <Link href="/locations/rangpur" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Rangpur</Link>
+            <Link href="/locations/mymensingh" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Mymensingh</Link>
+          </div>
         </div>
       </section>
 

@@ -1,0 +1,410 @@
+Found 40 of 40 modified posts
+
+✅ Post: backlink-outreach-templates-strategies-bangladesh — all checks passed
+✅ Post: blogging-strategy-seo-frequency-topics-bangladesh — all checks passed
+
+## Post: building-seo-roadmap-bangladesh-business
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'SEO roadmap' | ✅ | 5 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ✅ | Links to: /services/technical-seo, /services/on-page-seo, /services/on-page-seo |
+| AEO/GEO | ❌ | 1 question headings (Why Your Bangladesh Business Needs an SEO Roadmap) |
+| Internal Links | ✅ | 3 internal links (e.g. /blog/recovering-google-penalties-bangladesh-guide, /services/on-page-seo, /services/technical-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add ≥2 question headings (currently 1)
+
+✅ Post: complete-seo-guide-bangladesh-businesses-2026 — all checks passed
+
+## Post: das-taxis-scotland-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'scotland' | ✅ | 5 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 3 internal links (e.g. /, /blog/locksmith-dundee-seo-case-study, /services/local-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+
+## Post: dhaka-apparels-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'apparels' | ❌ | 3 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 4 internal links (e.g. /, /blog/b2b-lead-generation-seo-bangladesh, /blog/mir-cement-seo-case-study, /industries/garments-textile) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Increase keyword 'apparels' usage (currently 3, need ≥5)
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+
+## Post: enterprise-seo-large-organizations-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'enterprise SEO' | ✅ | 12 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ✅ | Links to: /services/technical-seo, /services/link-building, /services/technical-seo |
+| AEO/GEO | ❌ | 1 question headings (Why Enterprise SEO is Different in Bangladesh) |
+| Internal Links | ✅ | 3 internal links (e.g. /blog/local-seo-multiple-business-locations-bangladesh, /services/link-building, /services/technical-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add ≥2 question headings (currently 1)
+
+✅ Post: geo-optimization-prepare-business-ai-search — all checks passed
+✅ Post: google-business-profile-optimization-guide-bangladesh — all checks passed
+✅ Post: how-to-choose-right-seo-agency-bangladesh — all checks passed
+
+## Post: landlord-certificates-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'landlord certificates' | ❌ | 3 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 4 internal links (e.g. /, /blog/das-taxis-scotland-seo-case-study, /blog/local-seo-multiple-business-locations-bangladesh, /services/local-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Increase keyword 'landlord certificates' usage (currently 3, need ≥5)
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+✅ Post: link-building-strategies-bangladesh-market — all checks passed
+
+## Post: local-seo-multiple-business-locations-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'multi-location' | ✅ | 20 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ✅ | Links to: /services/local-seo, /services/local-seo |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 3 internal links (e.g. /blog/enterprise-seo-large-organizations-bangladesh, /blog/landlord-certificates-seo-case-study, /services/local-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add ≥2 question headings (currently 0)
+
+✅ Post: local-seo-tips-dhaka-businesses-google-maps — all checks passed
+
+## Post: locksmith-dundee-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'locksmith' | ✅ | 12 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 3 internal links (e.g. /, /blog/landlord-certificates-seo-case-study, /services/local-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+
+## Post: mir-cement-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'cement' | ✅ | 12 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 4 internal links (e.g. /, /blog/b2b-lead-generation-seo-bangladesh, /industries/garments-textile, /services/technical-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+✅ Post: mobile-seo-optimization-bangladesh-mobile-first-era — all checks passed
+
+## Post: morethanpanel-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'morethanpanel' | ❌ | 3 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 4 internal links (e.g. /, /blog/smmgen-seo-case-study, /services/on-page-seo, /services/technical-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Increase keyword 'morethanpanel' usage (currently 3, need ≥5)
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+
+## Post: seo-breadcrumb-schema-bd
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'breadcrumb' | ❌ | 1 occurrences |
+| Entities | ❌ | Missing: Location (Dhaka/Bangladesh) |
+| Pillar Link | ❌ | No link to /blog/schema-markup, /blog/seo-structured-data |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 internal links |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Increase keyword 'breadcrumb' usage (currently 1, need ≥5)
+- Add missing entities: Location (Dhaka/Bangladesh)
+- Link to pillar: /blog/schema-markup, /blog/seo-structured-data
+- Add ≥2 question headings (currently 0)
+- Add more internal links (currently 0, need ≥3)
+
+
+## Post: seo-event-management-companies-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'event management' | ✅ | 28 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /industries/event, /blog/seo-event |
+| AEO/GEO | ❌ | 1 question headings (Why SEO Matters for Event Management Companies in Bangladesh) |
+| Internal Links | ❌ | 2 internal links (e.g. /blog/seo-wedding-event-planners-bangladesh, /services/local-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /industries/event, /blog/seo-event
+- Add ≥2 question headings (currently 1)
+- Add more internal links (currently 2, need ≥3)
+
+
+## Post: seo-faq-schema-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'faq' | ✅ | 22 occurrences |
+| Entities | ❌ | Missing: Location (Dhaka/Bangladesh), Service topic (faq schema) |
+| Pillar Link | ❌ | No link to /blog/schema-markup, /blog/seo-structured-data |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 internal links |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add missing entities: Location (Dhaka/Bangladesh), Service topic (faq schema)
+- Link to pillar: /blog/schema-markup, /blog/seo-structured-data
+- Add ≥2 question headings (currently 0)
+- Add more internal links (currently 0, need ≥3)
+
+✅ Post: seo-garments-textile-industry-b2b-lead-generation — all checks passed
+
+## Post: seo-howto-schema-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'howto' | ✅ | 18 occurrences |
+| Entities | ❌ | Missing: Location (Dhaka/Bangladesh) |
+| Pillar Link | ❌ | No link to /blog/schema-markup, /blog/seo-structured-data |
+| AEO/GEO | ✅ | 4 question headings (HowTo স্কিমা: স্টেপ-বাই-স্টেপ গাইড র‍্যাঙ্কিং; HowTo স্কিমা কী?; HowTo স্কিমা কখন ব্যবহার করবেন?) |
+| Internal Links | ❌ | 0 internal links |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add missing entities: Location (Dhaka/Bangladesh)
+- Link to pillar: /blog/schema-markup, /blog/seo-structured-data
+- Add more internal links (currently 0, need ≥3)
+
+
+## Post: seo-hreflang-guide-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'hreflang' | ✅ | 6 occurrences |
+| Entities | ❌ | Missing: Location (Dhaka/Bangladesh) |
+| Pillar Link | ❌ | No link to /blog/international-seo |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 internal links |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add missing entities: Location (Dhaka/Bangladesh)
+- Link to pillar: /blog/international-seo
+- Add ≥2 question headings (currently 0)
+- Add more internal links (currently 0, need ≥3)
+
+
+## Post: seo-json-ld-schema-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'json-ld' | ✅ | 9 occurrences |
+| Entities | ❌ | Missing: Location (Dhaka/Bangladesh) |
+| Pillar Link | ❌ | No link to /blog/schema-markup, /blog/seo-structured-data |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 internal links |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add missing entities: Location (Dhaka/Bangladesh)
+- Link to pillar: /blog/schema-markup, /blog/seo-structured-data
+- Add ≥2 question headings (currently 0)
+- Add more internal links (currently 0, need ≥3)
+
+
+## Post: seo-non-profit-organizations-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'non-profit' | ✅ | 7 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /industries/ |
+| AEO/GEO | ✅ | 3 question headings (Why SEO Matters for Bangladeshi Non-Profits; Donor-Focused Keywords; Donation Page Optimization) |
+| Internal Links | ✅ | 3 internal links (e.g. /blog/blogging-strategy-seo-frequency-topics-bangladesh, /services/local-seo, /services/on-page-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /industries/
+
+
+## Post: seo-photographers-videographers-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'photographer' | ✅ | 8 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /industries/ |
+| AEO/GEO | ❌ | 1 question headings (Why SEO Matters for Photographers in Bangladesh) |
+| Internal Links | ❌ | 2 internal links (e.g. /blog/seo-wedding-event-planners-bangladesh, /services/local-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /industries/
+- Add ≥2 question headings (currently 1)
+- Add more internal links (currently 2, need ≥3)
+
+✅ Post: seo-real-estate-developers-dhaka — all checks passed
+
+## Post: seo-robots-txt-guide-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'robots.txt' | ✅ | 6 occurrences |
+| Entities | ❌ | Missing: Location (Dhaka/Bangladesh) |
+| Pillar Link | ❌ | No link to /services/technical-seo, /blog/technical-seo |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 internal links |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add missing entities: Location (Dhaka/Bangladesh)
+- Link to pillar: /services/technical-seo, /blog/technical-seo
+- Add ≥2 question headings (currently 0)
+- Add more internal links (currently 0, need ≥3)
+
+
+## Post: seo-structured-data-guide-bd
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'schema' | ✅ | 5 occurrences |
+| Entities | ❌ | Missing: Location (Dhaka/Bangladesh) |
+| Pillar Link | ❌ | No link to /blog/schema-markup, /blog/seo-json-ld |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 internal links |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add missing entities: Location (Dhaka/Bangladesh)
+- Link to pillar: /blog/schema-markup, /blog/seo-json-ld
+- Add ≥2 question headings (currently 0)
+- Add more internal links (currently 0, need ≥3)
+
+✅ Post: seo-vs-google-ads-whats-best-bangladesh-businesses — all checks passed
+✅ Post: seo-vs-ppc-advertising-bangladesh — all checks passed
+
+## Post: seo-wedding-event-planners-bangladesh
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'wedding' | ✅ | 28 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /industries/ |
+| AEO/GEO | ❌ | 1 question headings (Why Traditional Marketing Is No Longer Enough) |
+| Internal Links | ✅ | 3 internal links (e.g. /blog/seo-event-management-companies-bangladesh, /blog/seo-photographers-videographers-bangladesh, /services/local-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /industries/
+- Add ≥2 question headings (currently 1)
+
+
+## Post: seo-xml-sitemap-guide-bd
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'xml' | ✅ | 8 occurrences |
+| Entities | ❌ | Missing: Location (Dhaka/Bangladesh), Service topic (xml sitemap) |
+| Pillar Link | ❌ | No link to /services/technical-seo, /blog/technical-seo |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 internal links |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Add missing entities: Location (Dhaka/Bangladesh), Service topic (xml sitemap)
+- Link to pillar: /services/technical-seo, /blog/technical-seo
+- Add ≥2 question headings (currently 0)
+- Add more internal links (currently 0, need ≥3)
+
+
+## Post: smmgen-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'smm' | ✅ | 6 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 4 internal links (e.g. /, /blog/morethanpanel-seo-case-study, /services/ecommerce-seo, /services/technical-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+
+## Post: smmsun-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'smmsun' | ❌ | 3 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 5 internal links (e.g. /, /blog/smmgen-seo-case-study, /services/ecommerce-seo, /services/on-page-seo, /services/technical-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Increase keyword 'smmsun' usage (currently 3, need ≥5)
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+
+## Post: stealth-windshield-repairs-seo-case-study
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: 'windshield' | ✅ | 5 occurrences |
+| Entities | ✅ | All present |
+| Pillar Link | ❌ | No link to /case-studies/ |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 3 internal links (e.g. /, /blog/locksmith-dundee-seo-case-study, /services/local-seo) |
+| Schema Ready | ✅ | All set |
+
+### Fix instructions:
+- Link to pillar: /case-studies/
+- Add ≥2 question headings (currently 0)
+
+✅ Post: technical-seo-checklist-bangladeshi-websites — all checks passed
+✅ Post: why-ecommerce-store-needs-seo-bangladesh — all checks passed
+✅ Post: why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh — all checks passed
+
+## SUMMARY
+Total: 40
+✅ All passed: 16
+❌ Some failed: 24
+Pass rate: 40.0%
+
+### Failures by check:
+  TF-IDF: 5
+  Entities: 8
+  Pillar Link: 21
+  AEO/GEO: 22
+  Internal Links: 10
+  Schema Readiness: 0

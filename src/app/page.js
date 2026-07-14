@@ -2,9 +2,9 @@ import HomeClient from "./HomeClient";
 import { LocalBusinessSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Best SEO Expert in Dhaka | Md Kanok Miah | 210+ SEO Successes",
+  title: "Best SEO Expert in Dhaka & Bangladesh | Md Kanok Miah",
   description:
-    "Rank higher on Google & AI Search with Md Kanok Miah, a trusted SEO expert in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
+    "Rank higher with Md Kanok Miah, the best SEO expert in Dhaka & Bangladesh. 6+ years, 210+ SEO wins. Free SEO audit — Call 01604-809110.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",

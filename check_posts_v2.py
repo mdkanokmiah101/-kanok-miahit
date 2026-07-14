@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Framework check for batch 3 blog posts."""
+"""Fixed framework check for batch 3 blog posts - handles Markdown links."""
 import re
 import sys
 
@@ -23,8 +23,7 @@ slugs_to_check = [
     "seo-healthcare-medical-clinics-bangladesh",
 ]
 
-# Split by post boundaries: pattern is `},\n  {\n    slug:` or `},\n\n{\n    slug:`
-# Actually let's use regex to find each post block
+# Split by post boundaries
 post_pattern = re.compile(
     r'\{\s*\n\s+slug:\s*"([^"]+)"(.*?)\n\s+\},?\s*\n\s*(?=\{\s*\n\s+slug:)',
     re.DOTALL
@@ -40,36 +39,15 @@ for m in post_pattern.finditer(text):
 print(f"Found {len(all_posts)} total posts in file")
 
 def extract_field(block, field_name):
-    """Extract a field value from a post block."""
-    # title: "...", 
-    # excerpt: "...",
-    # excerpt:\n      "...",
-    # date: "...",
-    # tags: [...],
-    # content: `...`
-    
-    if field_name == "content":
-        # Content is a template literal: content: `...` or content: `...\n...\n`
-        m = re.search(r'content:\s*`((?:[^`\\]|\\.)*)`', block, re.DOTALL)
-        if m:
-            return m.group(1)
-        return ""
-    
-    # For title, date, readTime, author - simple quoted string
+    """Extract a simple quoted field from a post block."""
+    # Try same line
     m = re.search(rf'{field_name}:\s*"([^"]*)"', block)
     if m:
         return m.group(1)
-    
-    # For excerpt - could be on same line or next line
-    m = re.search(rf'{field_name}:\s*"((?:[^"\\]|\\.)*)"', block)
-    if m:
-        return m.group(1)
-    
-    # excerpt with newline and indentation
+    # Try next line with indentation
     m = re.search(rf'{field_name}:\s*\n\s+"((?:[^"\\]|\\.)*)"', block)
     if m:
         return m.group(1)
-    
     return ""
 
 def extract_tags(block):
@@ -78,15 +56,38 @@ def extract_tags(block):
     if not m:
         return []
     tags_str = m.group(1)
-    # Extract quoted strings
     return re.findall(r'"([^"]*)"', tags_str)
 
 def get_content_block(block):
-    """Get content template literal."""
-    m = re.search(r'content:\s*`((?:[^`\\]|\\.)*)`', block, re.DOTALL)
-    if m:
-        return m.group(1)
+    """Get content template literal - handles escaped backticks properly."""
+    m = re.search(r'content:\s*`', block)
+    if not m:
+        return ""
+    start = m.end()
+    after = block[start:]
+    # Find unescaped closing backtick
+    i = 0
+    while i < len(after):
+        if after[i] == '\\' and i + 1 < len(after):
+            i += 2  # skip escaped sequence
+        elif after[i] == '`':
+            return after[:i]
+        else:
+            i += 1
     return ""
+
+def extract_primary_kw(title):
+    """Extract primary keyword from title."""
+    title_stripped = title.strip()
+    # Split by common separators
+    first_part = re.split(r'[:—–,-]', title_stripped)[0].strip()
+    words = first_part.split()
+    if len(words) >= 4:
+        return ' '.join(words[:3])
+    elif len(words) >= 2:
+        return ' '.join(words[:2])
+    else:
+        return words[0] if words else title_stripped
 
 # Run checks
 results = []
@@ -100,40 +101,14 @@ for slug in slugs_to_check:
     
     title = extract_field(block, "title")
     date_val = extract_field(block, "date")
-    excerpt = extract_field(block, "excerpt") or extract_field(block, "excerpt")
+    excerpt = extract_field(block, "excerpt")
     tags = extract_tags(block)
     content = get_content_block(block)
     
-    # If excerpt not found by first method, try the second
-    if not excerpt:
-        excerpt = extract_field(block, "excerpt")
-    
     # ---------- Check A: TF-IDF ----------
-    # Extract primary keyword from title (first meaningful noun phrase)
-    # For English titles: first noun-like word or phrase
-    # For Bengali titles: first word group
-    title_stripped = title.strip()
-    
-    # Simple approach: take the first "word group" before any common separators
-    # For English titles like "SEO for Startups in Bangladesh: A Growth-First Approach"
-    # take "SEO for Startups"
-    # For Bengali titles, take first few words
-    
-    # Split by colon, dash, em-dash, comma
-    first_part = re.split(r'[:—–,-]', title_stripped)[0].strip()
-    # Take first 2-4 words as primary keyword
-    words = first_part.split()
-    if len(words) >= 4:
-        primary_kw = ' '.join(words[:3])
-    elif len(words) >= 2:
-        primary_kw = ' '.join(words[:2])
-    else:
-        primary_kw = words[0] if words else title_stripped
-    
-    # Count occurrences in content (case-insensitive)
+    primary_kw = extract_primary_kw(title)
     content_lower = content.lower()
     kw_count = content_lower.count(primary_kw.lower())
-    
     check_a_flag = "PASS" if kw_count >= 5 else f"FAIL (count={kw_count})"
     
     # ---------- Check B: Entities ----------
@@ -142,19 +117,18 @@ for slug in slugs_to_check:
     for ent in entities:
         if ent.lower() not in content_lower:
             missing_entities.append(ent)
-    
     check_b_flag = "PASS" if not missing_entities else f"FAIL (missing: {', '.join(missing_entities)})"
     
     # ---------- Check C: Pillar ----------
-    # Based on tags, check if links to /services/, /industries/, or /blog/ exist
-    pillar_links = re.findall(r'href="(/(?:services|industries|blog)[^"]*)"', content)
+    # Markdown links: [text](/services/...) or [text](/industries/...) or [text](/blog/...)
+    pillar_links = re.findall(r'\]\((/services/[^)]*)\)', content)
+    pillar_links += re.findall(r'\]\((/industries/[^)]*)\)', content)
+    pillar_links += re.findall(r'\]\((/blog/[^)]*)\)', content)
     check_c_flag = "PASS" if pillar_links else "FAIL (no pillar links)"
     pillar_count = len(pillar_links)
     
     # ---------- Check D: AEO/GEO ----------
-    # Count question-based headings (## or ### headings starting with question words)
     question_words = ['How', 'What', 'Why', 'When', 'Where', 'Can', 'Do', 'Is', 'Are']
-    # Also Bengali question words
     bengali_q_words = ['কী', 'কেন', 'কখন', 'কোথায়', 'কিভাবে', 'কি']
     
     headings = re.findall(r'^#{2,3}\s+(.+)', content, re.MULTILINE)
@@ -174,11 +148,16 @@ for slug in slugs_to_check:
     check_d_flag = "PASS" if q_count >= 2 else f"FAIL (count={q_count})"
     
     # ---------- Check E: Internal Links ----------
-    # Count internal links to other posts/services/locations
-    # Internal links start with /
-    internal_links = re.findall(r'href="(/[^"]*)"', content)
-    # Filter to meaningful internal links (not just #)
-    meaningful_links = [l for l in internal_links if l != '/' and not l.startswith('/#')]
+    # Count Markdown links to internal paths
+    internal_links = re.findall(r'\]\((/[^)]*)\)', content)
+    # Filter meaningful internal links (not /, /#, /images, /files, etc.)
+    skip_prefixes = ('/#', '/images/', '/files/', '/assets/', '/fonts/', '/css/', '/js/')
+    meaningful_links = []
+    for link in internal_links:
+        path = link
+        if path == '/' or path.startswith(skip_prefixes):
+            continue
+        meaningful_links.append(path)
     link_count = len(meaningful_links)
     
     check_e_flag = "PASS" if link_count >= 3 else f"FAIL (count={link_count})"
@@ -199,18 +178,18 @@ for slug in slugs_to_check:
                      "D": check_d_flag, "E": check_e_flag, "F": check_f_flag,
                      "kw": primary_kw, "kw_count": kw_count,
                      "q_count": q_count, "link_count": link_count,
-                     "pillar_count": pillar_count},
+                     "pillar_count": pillar_count, "meaningful_links": meaningful_links},
                     {"entities": entities, "missing_entities": missing_entities,
                      "pillar_links": pillar_links}))
 
 # Print results table
-print("\n" + "="*180)
-print(f"{'Slug':<45} {'Check A (TF-IDF)':<25} {'Check B (Entities)':<30} {'Check C (Pillar)':<25} {'Check D (AEO/GEO)':<20} {'Check E (Int. Links)':<22} {'Check F (Schema)':<20}")
-print("="*180)
+print("\n" + "="*190)
+print(f"{'Slug':<48} {'A (TF-IDF)':<22} {'B (Entities)':<30} {'C (Pillar)':<25} {'D (AEO/GEO)':<20} {'E (Int.Links)':<22} {'F (Schema)':<20}")
+print("="*190)
 
 for slug, title, date_val, excerpt, tags, content, flags, extra in results:
     if slug == "NOT FOUND":
-        print(f"{'NOT FOUND':<45} {'N/A':<25} {'N/A':<30} {'N/A':<25} {'N/A':<20} {'N/A':<22} {'N/A':<20}")
+        print(f"{'NOT FOUND':<48} {'N/A':<22} {'N/A':<30} {'N/A':<25} {'N/A':<20} {'N/A':<22} {'N/A':<20}")
         continue
     
     a = flags["A"]
@@ -220,7 +199,7 @@ for slug, title, date_val, excerpt, tags, content, flags, extra in results:
     e = flags["E"]
     f = flags["F"]
     
-    print(f"{slug:<45} {a:<25} {b:<30} {c:<25} {d:<20} {e:<22} {f:<20}")
+    print(f"{slug:<48} {a:<22} {b:<30} {c:<25} {d:<20} {e:<22} {f:<20}")
 
 print("\n\n========== DETAILED RESULTS ==========\n")
 for slug, title, date_val, excerpt, tags, content, flags, extra in results:
@@ -243,7 +222,7 @@ for slug, title, date_val, excerpt, tags, content, flags, extra in results:
     if extra['missing_entities']:
         print(f"    Missing: {extra['missing_entities']}")
     else:
-        print(f"    All present: {extra['entities']}")
+        print(f"    All present")
     
     print(f"  Check C (Pillar): {flags['C']}")
     print(f"    Pillar links found: {flags['pillar_count']}")
@@ -256,5 +235,8 @@ for slug, title, date_val, excerpt, tags, content, flags, extra in results:
     
     print(f"  Check E (Internal Links): {flags['E']}")
     print(f"    Internal links count: {flags['link_count']}")
+    if flags['meaningful_links']:
+        print(f"    Links: {flags['meaningful_links'][:10]}")
     
     print(f"  Check F (Schema): {flags['F']}")
+    print(f"    title={bool(title)}, excerpt={bool(excerpt)}, date={bool(date_val)}")

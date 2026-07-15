@@ -23,6 +23,7 @@ const caseStudies = [
       "$0 ad spend (100% Organic SEO)",
     ],
     url: "/blog/morethanpanel-seo-case-study",
+    website: "https://morethanpanel.com",
     emoji: "🚀",
   },
   {
@@ -42,6 +43,7 @@ const caseStudies = [
       "$0 ad spend (100% Organic SEO)",
     ],
     url: "/blog/smmgen-seo-case-study",
+    website: "https://smmgen.com",
     emoji: "📈",
   },
   {
@@ -78,6 +80,7 @@ const caseStudies = [
       "$0 ad spend",
     ],
     url: "/blog/smmsun-seo-case-study",
+    website: "https://smmsun.com",
     emoji: "🔥",
   },
   {
@@ -97,6 +100,7 @@ const caseStudies = [
       "Average position: 75+ → 18.3",
     ],
     url: "/blog/das-taxis-scotland-seo-case-study",
+    website: "https://www.dastaxis.co.uk/",
     emoji: "💪",
   },
   {
@@ -115,6 +119,7 @@ const caseStudies = [
       "$0 ad spend",
     ],
     url: "/blog/locksmith-dundee-seo-case-study",
+    website: "https://locksmithdundee.scot/",
     emoji: "🎯",
   },
   {
@@ -153,6 +158,7 @@ const caseStudies = [
       "£0 ad spend (100% Organic SEO)",
     ],
     url: "/blog/stealth-windshield-repairs-seo-case-study",
+    website: "https://stealthwindshieldrepairs.com/",
     emoji: "🚗",
   },
   {
@@ -180,8 +186,8 @@ const results = [
   { name: "WatchZoneBD", img: "/images/case-studies/WatchZoneBD-.webp", industry: "E-commerce", url: "https://watchzonebd.com" },
   { name: "SMMGen", img: "/images/case-studies/SMMGen-2.webp", industry: "SMM Panel", url: "https://smmgen.com" },
   { name: "SMMSun", img: "/images/case-studies/SMMSun-2.webp", industry: "SMM Panel", url: "https://smmsun.com" },
-  { name: "Allseal Waterproofing", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Construction", url: "https://allsealwaterproofing.com.sg/" },
-  { name: "Stealth Windshield Repairs", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Auto Glass", url: "https://stealthwindshieldrepairs.com/" },
+  { name: "Allseal Waterproofing Pte Ltd.", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Construction", url: "https://allsealwaterproofing.com.sg/" },
+  { name: "Stealth Windshield Repairs", img: "/images/case-studies/stealth-windshield.webp", industry: "Auto Glass", url: "https://stealthwindshieldrepairs.com/" },
   { name: "Locksmith Dundee", img: "/images/case-studies/Das-Taxi.webp", industry: "Locksmith", url: "https://locksmithdundee.scot/" },
   { name: "MoreThanPanel", img: "/images/case-studies/SMMGen-2.webp", industry: "SMM Panel", url: "https://morethanpanel.com" },
   { name: "Master Racks Limited", img: "/images/case-studies/Master-racks.webp", industry: "Industrial", url: "https://masterracksltd.com/" },
@@ -235,7 +241,7 @@ export default function CaseStudiesClient() {
                   <span className="absolute top-3 right-3 bg-primary/85 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">{r.industry}</span>
                 </div>
                 <div className="p-5">
-                  <h3 className="font-bold text-primary mb-1 text-base">{r.name}</h3>
+                  <a href={r.url} target="_blank" rel="noopener noreferrer" className="font-bold text-primary mb-1 text-base hover:underline inline-block">{r.name}</a>
                   <span className="text-xs text-gray-400">Visit Website →</span>
                 </div>
               </a>
@@ -257,7 +263,7 @@ export default function CaseStudiesClient() {
               <div>
                 <div className="text-4xl md:text-5xl font-extrabold text-primary">{featured.metric}</div>
                 <div className="text-gray-500 text-sm font-medium mb-3">{featured.label} · {featured.name}</div>
-                <h3 className="text-2xl font-extrabold mb-4">{featured.emoji} {featured.name} — {featured.industry}</h3>
+                <h3 className="text-2xl font-extrabold mb-4">{featured.emoji} {featured.website ? <a href={featured.website} target="_blank" rel="noopener noreferrer" className="hover:underline text-primary">{featured.name}</a> : featured.name} — {featured.industry}</h3>
                 <div className="mb-4">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-primary mb-1">📋 The Challenge</h4>
                   <p className="text-gray-600 text-sm leading-relaxed break-words">{featured.challenge}</p>
@@ -304,7 +310,7 @@ export default function CaseStudiesClient() {
                   <span className="text-2xl font-extrabold text-primary">{cs.metric}</span>
                   <span className="text-xs text-gray-500 uppercase tracking-wider">{cs.label}</span>
                 </div>
-                <h3 className="font-bold text-lg mb-1">{cs.emoji} {cs.name}</h3>
+                <h3 className="font-bold text-lg mb-1">{cs.emoji} {cs.website ? <a href={cs.website} target="_blank" rel="noopener noreferrer" className="hover:underline text-primary">{cs.name}</a> : cs.name}</h3>
                 <span className="text-xs font-semibold bg-red-50 text-red-600 px-3 py-1 rounded-full inline-block mb-3 w-fit">{cs.industry}</span>
                 <div className="mb-3">
                   <h4 className="text-[11px] font-bold uppercase tracking-wider text-primary mb-0.5">📋 Challenge</h4>

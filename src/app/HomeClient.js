@@ -472,12 +472,12 @@ export default function HomeClient() {
           {/* Case Study Cards Grid — No Images, Real Links */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { name: "Das Taxis Scotland", metric: "893/mo", label: "Organic Visitors", growth: "+5,853%", tag: "Transportation", url: "/blog/das-taxis-scotland-seo-case-study" },
-              { name: "Locksmith Dundee", metric: "1.4K/mo", label: "Organic Traffic", growth: "+6,919%", tag: "Local Services", url: "/blog/locksmith-dundee-seo-case-study" },
-              { name: "WatchZoneBD", metric: "46K+/mo", label: "Organic Traffic", growth: "3,883%", tag: "E-commerce", url: "/blog/watchzonebd-seo-case-study" },
-              { name: "Dhaka Apparels", metric: "8K/mo", label: "Organic Traffic", growth: "+3,000%", tag: "Garments", url: "/blog/dhaka-apparels-seo-case-study" },
-              { name: "SMMGen", metric: "27.9K/mo", label: "Organic Clicks", growth: "+87,000%", tag: "SMM Panel", url: "/blog/smmgen-seo-case-study" },
-              { name: "SMMSun", metric: "7.7K/mo", label: "Organic Clicks", growth: "+15,440%", tag: "SMM Panel", url: "/blog/smmsun-seo-case-study" },
+              { name: "Das Taxis Scotland", website: "https://www.dastaxis.co.uk/", metric: "893/mo", label: "Organic Visitors", growth: "+5,853%", tag: "Transportation", url: "/blog/das-taxis-scotland-seo-case-study" },
+              { name: "Locksmith Dundee", website: "https://locksmithdundee.scot/", metric: "1.4K/mo", label: "Organic Traffic", growth: "+6,919%", tag: "Local Services", url: "/blog/locksmith-dundee-seo-case-study" },
+              { name: "WatchZoneBD", website: "https://watchzonebd.com", metric: "46K+/mo", label: "Organic Traffic", growth: "3,883%", tag: "E-commerce", url: "/blog/watchzonebd-seo-case-study" },
+              { name: "Dhaka Apparels", website: null, metric: "8K/mo", label: "Organic Traffic", growth: "+3,000%", tag: "Garments", url: "/blog/dhaka-apparels-seo-case-study" },
+              { name: "SMMGen", website: "https://smmgen.com", metric: "27.9K/mo", label: "Organic Clicks", growth: "+87,000%", tag: "SMM Panel", url: "/blog/smmgen-seo-case-study" },
+              { name: "SMMSun", website: "https://smmsun.com", metric: "7.7K/mo", label: "Organic Clicks", growth: "+15,440%", tag: "SMM Panel", url: "/blog/smmsun-seo-case-study" },
             ].map((item, i) => (
               <a
                 key={i}
@@ -492,7 +492,7 @@ export default function HomeClient() {
                     <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ color: '#E8F5E9', backgroundColor: 'rgba(232,245,233,0.1)' }}>{item.tag}</span>
                     <span className="text-xs font-extrabold px-2.5 py-1 rounded-full" style={{ color: '#FFD230', backgroundColor: 'rgba(255,210,48,0.15)' }}>{item.growth}</span>
                   </div>
-                  <h3 className="font-bold text-lg mb-1" style={{ color: '#FFFFFF' }}>{item.name}</h3>
+                  {item.website ? <a href={item.website} target="_blank" className="font-bold text-lg" style={{color:'#FFFFFF'}}>{item.name}</a> : <h3 className="font-bold text-lg mb-1" style={{color:'#FFFFFF'}}>{item.name}</h3>}
                   <div className="mb-4">
                     <span className="text-2xl font-extrabold" style={{ color: '#81C784' }}>{item.metric}</span>
                     <span className="block text-xs mt-0.5" style={{ color: '#FFFFFF' }}>{item.label}</span>

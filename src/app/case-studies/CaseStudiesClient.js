@@ -176,15 +176,15 @@ const caseStudies = [
 ];
 
 const results = [
-  { name: "Das Taxis Scotland", img: "/images/case-studies/Das-Taxi.webp", industry: "Transportation", url: "https://dastaxisscotland.co.uk" },
+  { name: "Das Taxis", img: "/images/case-studies/Das-Taxi.webp", industry: "Transportation", url: "https://www.dastaxis.co.uk/" },
   { name: "WatchZoneBD", img: "/images/case-studies/WatchZoneBD-.webp", industry: "E-commerce", url: "https://watchzonebd.com" },
   { name: "SMMGen", img: "/images/case-studies/SMMGen-2.webp", industry: "SMM Panel", url: "https://smmgen.com" },
   { name: "SMMSun", img: "/images/case-studies/SMMSun-2.webp", industry: "SMM Panel", url: "https://smmsun.com" },
+  { name: "Allseal Waterproofing", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Construction", url: "https://allsealwaterproofing.com.sg/" },
+  { name: "Stealth Windshield Repairs", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Auto Glass", url: "https://stealthwindshieldrepairs.com/" },
+  { name: "Locksmith Dundee", img: "/images/case-studies/Das-Taxi.webp", industry: "Locksmith", url: "https://locksmithdundee.scot/" },
   { name: "MoreThanPanel", img: "/images/case-studies/SMMGen-2.webp", industry: "SMM Panel", url: "https://morethanpanel.com" },
   { name: "Mir Cement", img: "/images/case-studies/Master-racks.webp", industry: "Construction", url: "https://mircement.com" },
-  { name: "Stealth Windshield Repairs", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Auto Glass", url: "https://stealthwindshieldrepairs.co.uk" },
-  { name: "All Landlord Certificates UK", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Property Safety", url: "https://alllandlordcertificates.co.uk" },
-  { name: "Locksmith Dundee", img: "/images/case-studies/Das-Taxi.webp", industry: "Locksmith", url: "https://locksmithdundee.com" },
 ];
 
 export default function CaseStudiesClient() {

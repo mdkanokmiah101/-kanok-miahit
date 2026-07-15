@@ -452,68 +452,65 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* ===== CASE STUDIES / SUCCESS STORIES ===== */}
-      <section className="relative py-24 px-4 overflow-hidden">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+      {/* ===== CASE STUDIES / SUCCESS STORIES (Dark Theme) ===== */}
+      <section className="relative py-24 px-4 overflow-hidden" style={{ backgroundColor: '#15181E' }}>
+        <div className="absolute top-0 right-0 w-96 h-96" style={{ backgroundColor: '#00BEFF', opacity: '0.03', borderRadius: '50%', filter: 'blur(80px)' }} />
+        <div className="absolute bottom-0 left-0 w-80 h-80" style={{ backgroundColor: '#00BEFF', opacity: '0.04', borderRadius: '50%', filter: 'blur(100px)' }} />
         <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase px-4 py-1.5 bg-primary-light/60 rounded-full border border-primary/10">Proven Results</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-5 mb-4 text-gray-900">
-              SEO <span className="text-primary">Success Stories</span>
+            <span className="inline-block text-[#00BEFF] text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 rounded-full border" style={{ borderColor: 'rgba(0,190,255,0.2)', backgroundColor: 'rgba(0,190,255,0.06)' }}>
+              Proven Results
+            </span>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-5 mb-4" style={{ color: '#FFFFFF' }}>
+              SEO <span style={{ color: '#00BEFF' }}>Success Stories</span>
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto text-lg">
-              Real campaigns. Real numbers. Every result is verified — no fluff, no guesswork.
+            <p className="max-w-2xl mx-auto text-lg" style={{ color: 'rgba(255,255,255,0.5)' }}>
+              Real campaigns with verified numbers — no fluff, no guesswork.
             </p>
           </div>
 
-          {/* Results Gallery Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {/* Case Study Cards Grid — No Images */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { name: "Das Taxis Scotland", metric: "893/mo Visitors", growth: "+5,853%", img: "/images/case-studies/Das-Taxi.webp", tag: "Transportation", url: "/blog/das-taxis-scotland-seo-case-study" },
-              { name: "Master Racks", metric: "Top Rankings", growth: "B2B SEO", img: "/images/case-studies/Master-racks.webp", tag: "Industrial", url: "/case-studies" },
-              { name: "Allseal Waterproofing", metric: "400+/mo Visitors", growth: "Local SEO", img: "/images/case-studies/Allseal-Waterproofing-.webp", tag: "Construction", url: "/case-studies" },
-              { name: "WatchZoneBD", metric: "Top 10 Rankings", growth: "E-commerce", img: "/images/case-studies/WatchZoneBD-.webp", tag: "E-commerce", url: "/blog/watchzonebd-seo-case-study" },
-              { name: "iTracker", metric: "500+ Keywords", growth: "+21,100%", img: "/images/case-studies/iTracke.webp", tag: "Tech", url: "/case-studies" },
-              { name: "SocialPanel Pro", metric: "27,900/mo Clicks", growth: "Organic", img: "/images/case-studies/SocialPanel-pro-1.webp", tag: "SMM Panel", url: "/blog/smmgen-seo-case-study" },
-              { name: "SMMRX", metric: "15,440% Growth", growth: "CTR 14.2%", img: "/images/case-studies/SMMRX-2.webp", tag: "SMM Panel", url: "/blog/smmsun-seo-case-study" },
-              { name: "SMMSun", metric: "7,700+/mo Clicks", growth: "15,440%", img: "/images/case-studies/SMMSun-2.webp", tag: "SMM Panel", url: "/blog/smmsun-seo-case-study" },
-              { name: "SMMGen", metric: "27,900/mo Clicks", growth: "+87,000%", img: "/images/case-studies/SMMGen-2.webp", tag: "SMM Panel", url: "/blog/smmgen-seo-case-study" },
+              { name: "Das Taxis Scotland", metric: "893/mo", label: "Organic Visitors", growth: "+5,853%", tag: "Transportation", url: "/blog/das-taxis-scotland-seo-case-study" },
+              { name: "Master Racks", metric: "Top 3", label: "Google Rankings", growth: "B2B SEO", tag: "Industrial", url: "/case-studies" },
+              { name: "Allseal Waterproofing", metric: "400+/mo", label: "Organic Visitors", growth: "Local SEO", tag: "Construction", url: "/case-studies" },
+              { name: "WatchZoneBD", metric: "46K+/mo", label: "Organic Traffic", growth: "3,883%", tag: "E-commerce", url: "/blog/watchzonebd-seo-case-study" },
+              { name: "iTracker", metric: "500+", label: "Keywords in Top 10", growth: "+21,100%", tag: "Tech", url: "/case-studies" },
+              { name: "SMMGen", metric: "27.9K/mo", label: "Organic Clicks", growth: "+87,000%", tag: "SMM Panel", url: "/blog/smmgen-seo-case-study" },
             ].map((item, i) => (
               <a
                 key={i}
                 href={item.url}
+                className="group rounded-xl border overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                style={{ backgroundColor: '#1C1F26', borderColor: 'rgba(255,255,255,0.06)' }}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative h-[180px] bg-gray-50 flex items-center justify-center overflow-hidden">
-                  <img
-                    src={item.img}
-                    alt={`${item.name} — SEO Results`}
-                    className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <span className="absolute top-3 right-3 bg-primary/85 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">{item.tag}</span>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-bold text-gray-900 mb-2 text-base">{item.name}</h3>
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-lg font-extrabold text-primary">{item.metric}</span>
-                    <span className="text-xs font-semibold bg-red-50 text-red-600 px-2.5 py-1 rounded-full">{item.growth}</span>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ color: '#00BEFF', backgroundColor: 'rgba(0,190,255,0.1)' }}>{item.tag}</span>
+                    <span className="text-xs font-extrabold px-2.5 py-1 rounded-full" style={{ color: '#00BEFF', backgroundColor: 'rgba(0,190,255,0.08)' }}>{item.growth}</span>
                   </div>
-                  <span className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm group-hover:gap-2 transition-all">
-                    View Case Study →
-                  </span>
+                  <h3 className="font-bold text-lg mb-1" style={{ color: '#FFFFFF' }}>{item.name}</h3>
+                  <div className="mb-4">
+                    <span className="text-2xl font-extrabold" style={{ color: '#00BEFF' }}>{item.metric}</span>
+                    <span className="block text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.4)' }}>{item.label}</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-sm font-semibold transition-all group-hover:gap-2.5" style={{ color: '#00BEFF' }}>
+                    View Case Study
+                    <span className="text-base">→</span>
+                  </div>
                 </div>
+                <div className="h-[3px] w-0 group-hover:w-full transition-all duration-500" style={{ backgroundColor: '#00BEFF' }} />
               </a>
             ))}
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/case-studies" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:shadow-primary/25">
+            <a href="/case-studies" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg" style={{ backgroundColor: '#00BEFF', color: '#15181E' }}>
               View All Case Studies <span>→</span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

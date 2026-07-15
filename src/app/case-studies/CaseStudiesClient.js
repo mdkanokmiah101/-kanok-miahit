@@ -241,7 +241,7 @@ export default function CaseStudiesClient() {
                   <span className="absolute top-3 right-3 bg-primary/85 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">{r.industry}</span>
                 </div>
                 <div className="p-5">
-                  <a href={r.url} target="_blank" rel="noopener noreferrer" className="font-bold text-primary mb-1 text-base hover:underline inline-block">{r.name}</a>
+                  <div className="font-bold text-primary mb-1 text-base">{r.name}</div>
                   <span className="text-xs text-gray-400">Visit Website →</span>
                 </div>
               </a>

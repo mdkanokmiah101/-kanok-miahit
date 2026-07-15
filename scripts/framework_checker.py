@@ -120,8 +120,6 @@ def extract_keywords(title):
     # For Bengali titles, extract individual meaningful words
     # For English titles, extract bigrams/trigrams
     
-    import unicodedata
-    
     def is_bengali_char(c):
         """Check if a character is Bengali."""
         try:

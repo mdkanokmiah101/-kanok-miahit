@@ -55,7 +55,12 @@ def extract_post(raw, slug):
     # Posts are in format: { slug: "...", title: "...", ..., content: `...`, }
     
     # Find the opening brace before slug
-    brace_start = raw.rfind('{', m.start() - 200, m.start())
+    search_start = max(0, m.start() - 200)
+    brace_start = raw.rfind('{', search_start, m.start())
+    if brace_start == -1:
+        # Look even further back
+        search_start = max(0, m.start() - 500)
+        brace_start = raw.rfind('{', search_start, m.start())
     if brace_start == -1:
         return None
     
@@ -188,16 +193,21 @@ def count_keyword(content, keywords):
     return (best_phrase, best_count)
 
 def count_question_headings(content):
-    """Count question-based headings (How, What, Why, When, Where, Can, Do, Is, Are)."""
+    """Count question-based headings (English + Bengali question words)."""
     if not content:
         return 0
-    question_words = ['How', 'What', 'Why', 'When', 'Where', 'Can', 'Do', 'Is', 'Are', 'Does', 'Which', 'Who']
+    # English question words
+    eng_qw = ['How', 'What', 'Why', 'When', 'Where', 'Can', 'Do', 'Is', 'Are', 'Does', 'Which', 'Who']
+    # Bengali question words
+    ben_qw = ['কীভাবে', 'কী', 'কেন', 'কখন', 'কোথায়', 'কি', 'কেমন', 'কোন', 'কার', 'কত']
     count = 0
     for line in content.split('\n'):
         line = line.strip()
         if re.match(r'^#{1,4}\s+', line):
             heading_text = re.sub(r'^#+\s*', '', line).strip()
-            if any(heading_text.startswith(qw) for qw in question_words):
+            if any(heading_text.startswith(qw) for qw in eng_qw):
+                count += 1
+            elif any(heading_text.startswith(qw) for qw in ben_qw):
                 count += 1
     return count
 
@@ -394,7 +404,7 @@ for r in results:
         print(f"- **Missing pillar link:** Add a link to the pillar page (complete-seo-guide, /services/, or /industries/). This \"{r['pillar']}\" post should reference its pillar topic.")
     if not c['aeo']['pass']:
         has_fixes = True
-        print(f"- **AEO/GEO under-optimized:** Add {2 - c['aeo']['count']} more question-based headings (starting with How/What/Why/When/Where/Can/Do/Is/Are).")
+        print(f"- **AEO/GEO under-optimized:** Add {2 - c['aeo']['count']} more question-based headings (starting with How/What/Why/When/Where for English, or কীভাবে/কী/কেন/কখন for Bengali).")
     if not c['internal_links']['pass']:
         has_fixes = True
         print(f"- **Too few internal links:** Add {3 - c['internal_links']['count']} more internal links to related blog posts, services, or location pages.")

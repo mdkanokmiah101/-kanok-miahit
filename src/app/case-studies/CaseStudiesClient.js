@@ -184,7 +184,7 @@ const results = [
   { name: "Stealth Windshield Repairs", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Auto Glass", url: "https://stealthwindshieldrepairs.com/" },
   { name: "Locksmith Dundee", img: "/images/case-studies/Das-Taxi.webp", industry: "Locksmith", url: "https://locksmithdundee.scot/" },
   { name: "MoreThanPanel", img: "/images/case-studies/SMMGen-2.webp", industry: "SMM Panel", url: "https://morethanpanel.com" },
-  { name: "Mir Cement", img: "/images/case-studies/Master-racks.webp", industry: "Construction", url: "https://mircement.com" },
+  { name: "Master Racks Limited", img: "/images/case-studies/Master-racks.webp", industry: "Industrial", url: "https://masterracksltd.com/" },
 ];
 
 export default function CaseStudiesClient() {

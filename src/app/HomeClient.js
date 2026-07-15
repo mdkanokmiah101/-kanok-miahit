@@ -53,7 +53,7 @@ export default function HomeClient() {
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-primary">Md Kanok Miah</span>
+            <span className="text-primary">Kanok Miah</span>
           </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
             {navItem.map(item => (
@@ -96,7 +96,7 @@ export default function HomeClient() {
               <span className="block text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
             </h1>
             <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-              Your competitors are ranking. You&apos;re not. That&apos;s not bad luck — that&apos;s a fixable problem. I&apos;m <strong className="text-gray-900">Md Kanok Miah</strong>, <strong className="text-gray-900">the best SEO expert in Dhaka, Bangladesh</strong> who has run <strong className="text-gray-900">210+ SEO campaigns</strong> across e-commerce, local businesses — and I don&apos;t do cookie-cutter strategies. I build what your specific business needs to win on Google, on AI search, and everywhere in between. <strong className="text-gray-900">6 years</strong>. Real results. No vanity metrics. Let&apos;s fix your rankings — starting today.
+              Your competitors are ranking. You&apos;re not. That&apos;s not bad luck — that&apos;s a fixable problem. I&apos;m <strong className="text-gray-900">Kanok Miah</strong>, <strong className="text-gray-900">the best SEO expert in Dhaka, Bangladesh</strong> who has run <strong className="text-gray-900">210+ SEO campaigns</strong> across e-commerce, local businesses — and I don&apos;t do cookie-cutter strategies. I build what your specific business needs to win on Google, on AI search, and everywhere in between. <strong className="text-gray-900">6 years</strong>. Real results. No vanity metrics. Let&apos;s fix your rankings — starting today.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               <span className="inline-flex items-center gap-1.5 bg-green-50 border border-green-200 text-green-700 text-xs font-semibold px-4 py-2 rounded-full">
@@ -302,7 +302,7 @@ export default function HomeClient() {
                 <div className="w-full h-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl border-[4px] border-white">
                   <img
                     src="/kanok-miah-about.webp"
-                    alt="Md Kanok Miah — SEO Expert in Dhaka, Bangladesh"
+                    alt="Kanok Miah — SEO Expert in Dhaka, Bangladesh"
                     width="1024"
                     height="682"
                     className="w-full h-full object-cover"
@@ -321,12 +321,12 @@ export default function HomeClient() {
             <div className="max-w-xl">
               <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">About Me</span>
               <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-gray-900">
-                <span className="text-primary">Md Kanok Miah</span><br />
+                <span className="text-primary">Kanok Miah</span><br />
                 SEO Expert Since 2019
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  I'm <strong className="text-gray-900">Md Kanok Miah</strong> — a results-driven 
+                  I'm <strong className="text-gray-900">Kanok Miah</strong> — a results-driven 
                   <strong className="text-gray-900"> SEO expert in Bangladesh</strong> who has been helping 
                   local businesses dominate <a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">search rankings</a> <strong className="text-gray-900">since 2019</strong>. 
                   I've led <strong className="text-gray-900">210+ SEO projects</strong> for clients ranging 
@@ -608,7 +608,7 @@ export default function HomeClient() {
             {/* Form */}
             <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all">
               <form id="contactForm" onSubmit={handleSubmit} method="POST" className="space-y-5">
-                <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
+                <input type="hidden" name="_subject" value="New SEO Lead from Kanok Miah Website!" />
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm text-gray-700 mb-1.5 font-medium">Your Name *</label>
@@ -667,7 +667,7 @@ export default function HomeClient() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-xl shrink-0">📞</div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Call Me Directly</h3>
-                  <p className="text-gray-500 text-sm mb-1">Speak with Md Kanok Miah personally:</p>
+                  <p className="text-gray-500 text-sm mb-1">Speak with Kanok Miah personally:</p>
                   <a href="tel:+880****9110" className="text-xl font-extrabold text-primary hover:text-primary-dark">+880 1604-809110</a>
                 </div>
               </div>

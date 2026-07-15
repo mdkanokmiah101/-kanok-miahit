@@ -1,5 +1,5 @@
 /**
- * Md Kanok Miah — Middleware
+ * Kanok Miah — Middleware
  * Purpose: Override cache-control headers for CDN freshness.
  * Next.js 16 prerendered pages emit s-maxage=31536000 (1 year) by default,
  * which long-caches at the Hostinger CDN edge.  This middleware shortens

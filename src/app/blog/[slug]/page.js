@@ -20,20 +20,20 @@ export async function generateMetadata({ params }) {
   const post = posts.find((p) => p.slug === slug);
   if (!post) return { title: "Not Found" };
   const fullTitle = post.title;
-  const metaDesc = truncateMeta(post.excerpt || `${post.title} — SEO tips and guide by Md Kanok Miah.`);
+  const metaDesc = truncateMeta(post.excerpt || `${post.title} — SEO tips and guide by Kanok Miah.`);
   return {
-    title: `${fullTitle} — Md Kanok Miah`,
+    title: `${fullTitle} — Kanok Miah`,
     description: metaDesc,
     alternates: { canonical: `https://kanokmiah.com.bd/blog/${post.slug}` },
     openGraph: {
-      title: `${fullTitle} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+      title: `${fullTitle} — Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
       url: `https://kanokmiah.com.bd/blog/${post.slug}`,
-      images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+      images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Kanok Miah — SEO Expert Dhaka" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${fullTitle} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+      title: `${fullTitle} — Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
       images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
     },

@@ -3,18 +3,18 @@ import { BreadcrumbSchema, ItemListSchema } from "@/components/Schema";
 import serviceData from "./data";
 
 export const metadata = {
-  title: "SEO Services Bangladesh — Md Kanok Miah | SEO Expert Dhaka",
+  title: "SEO Services Bangladesh — Kanok Miah | SEO Expert Dhaka",
   description: "Complete SEO solutions for Bangladesh — Local SEO, Technical SEO, Link Building, GEO/AI Search and E-commerce SEO. Free audit from Dhaka, Bangladesh.",
   alternates: { canonical: "https://kanokmiah.com.bd/services" },
   openGraph: {
-    title: "SEO Services — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    title: "SEO Services — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Complete SEO solutions for Bangladeshi businesses — Local SEO, Technical SEO, Link Building, GEO/AI Search, E-commerce SEO.",
     url: "https://kanokmiah.com.bd/services",
-    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Services — Md Kanok Miah",
+    title: "SEO Services — Kanok Miah",
     description: "Complete SEO solutions for Bangladeshi businesses — Local SEO, Technical SEO, Link Building, GEO/AI Search, E-commerce SEO.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },

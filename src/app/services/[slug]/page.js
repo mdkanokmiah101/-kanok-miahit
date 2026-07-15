@@ -19,21 +19,21 @@ function truncateMeta(str, maxLen = 160) {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const svc = services.find((s) => s.slug === slug);
-  if (!svc) return { title: "Service Not Found — Md Kanok Miah" };
+  if (!svc) return { title: "Service Not Found — Kanok Miah" };
   const metaDesc = truncateMeta(svc.shortDesc);
   return {
-    title: `${svc.title} Services in Bangladesh — Md Kanok Miah`,
+    title: `${svc.title} Services in Bangladesh — Kanok Miah`,
     description: metaDesc,
     alternates: { canonical: `https://kanokmiah.com.bd/services/${svc.slug}` },
     openGraph: {
-      title: `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+      title: `${svc.title} — Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
       url: `https://kanokmiah.com.bd/services/${svc.slug}`,
-      images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+      images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Kanok Miah — SEO Expert Dhaka" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${svc.title} — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
+      title: `${svc.title} — Kanok Miah | SEO Expert in Dhaka, Bangladesh`,
       description: metaDesc,
       images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
     },

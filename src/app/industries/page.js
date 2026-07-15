@@ -2,20 +2,20 @@ import IndustriesClient from "./IndustriesClient";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "SEO by Industry — Bangladesh | Md Kanok Miah | SEO Expert",
-  description: "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, Food and more. Expert strategies from Md Kanok Miah.",
+  title: "SEO by Industry — Bangladesh | Kanok Miah | SEO Expert",
+  description: "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, Food and more. Expert strategies from Kanok Miah.",
   alternates: { canonical: "https://kanokmiah.com.bd/industries" },
   openGraph: {
-    title: "Industries — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
-    description: "Industry-specific SEO for Bangladesh from Md Kanok Miah.",
+    title: "Industries — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    description: "Industry-specific SEO for Bangladesh from Kanok Miah.",
     url: "https://kanokmiah.com.bd/industries",
-    siteName: "Md Kanok Miah",
-    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah \u2014 SEO Expert Dhaka" }],
+    siteName: "Kanok Miah",
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Kanok Miah \u2014 SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Industries — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
-    description: "Industry-specific SEO for Bangladesh from Md Kanok Miah.",
+    title: "Industries — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    description: "Industry-specific SEO for Bangladesh from Kanok Miah.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
@@ -37,12 +37,12 @@ export default function IndustriesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Industries We Serve | Md Kanok Miah",
+        "name": "Industries We Serve | Kanok Miah",
         "description": "Industry-specific SEO for Bangladesh — Garments, E-commerce, Real Estate, Healthcare, Education, and more.",
         "url": "https://kanokmiah.com.bd/industries",
         "mainEntity": {
           "@type": "Blog",
-          "name": "Md Kanok Miah Industries",
+          "name": "Kanok Miah Industries",
           "description": "Industry-specific SEO solutions for Bangladeshi businesses."
         }
       })}} />

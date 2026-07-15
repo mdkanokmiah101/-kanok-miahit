@@ -3,19 +3,19 @@ import Footer from "@/components/Footer";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Terms of Service — Md Kanok Miah — SEO Expert Dhaka",
-  description: "Terms of Service for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh. Please read these terms carefully before using our services.",
+  title: "Terms of Service — Kanok Miah — SEO Expert Dhaka",
+  description: "Terms of Service for Kanok Miah — SEO Expert in Dhaka, Bangladesh. Please read these terms carefully before using our services.",
   alternates: { canonical: "https://kanokmiah.com.bd/terms-of-service" },
   openGraph: {
-    title: "Terms of Service — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
-    description: "Terms of Service for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
+    title: "Terms of Service — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    description: "Terms of Service for Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
     url: "https://kanokmiah.com.bd/terms-of-service",
-    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms of Service — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
-    description: "Terms of Service for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
+    title: "Terms of Service — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    description: "Terms of Service for Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
@@ -47,7 +47,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-3">2. Services</h2>
             <p className="text-gray-600 leading-relaxed">
-              Md Kanok Miah provides SEO consulting and digital marketing services including but not limited to:
+              Kanok Miah provides SEO consulting and digital marketing services including but not limited to:
               Local SEO, On-Page SEO, Technical SEO, Link Building, Semantic SEO, GEO/AI Search Optimization,
               and E-commerce SEO. All services are provided on a best-effort basis with the goal of improving
               search engine rankings and online visibility.
@@ -88,7 +88,7 @@ export default function TermsOfServicePage() {
             <h2 className="text-2xl font-bold mt-8 mb-3">6. Intellectual Property</h2>
             <p className="text-gray-600 leading-relaxed">
               All content, strategies, and materials created during the engagement remain the intellectual property
-              of Md Kanok Miah until full payment is received. Upon payment, clients receive full rights to the
+              of Kanok Miah until full payment is received. Upon payment, clients receive full rights to the
               deliverables created specifically for them.
             </p>
           </section>
@@ -96,7 +96,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-3">7. Limitation of Liability</h2>
             <p className="text-gray-600 leading-relaxed">
-              Md Kanok Miah shall not be liable for any indirect, incidental, special, consequential, or punitive
+              Kanok Miah shall not be liable for any indirect, incidental, special, consequential, or punitive
               damages resulting from your use of our services. Our total liability is limited to the amount paid
               by you for the services in question.
             </p>

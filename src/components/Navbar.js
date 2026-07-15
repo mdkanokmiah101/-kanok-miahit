@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-extrabold tracking-tight">
-          <span className="text-primary">Md Kanok Miah</span>
+          <span className="text-primary">Kanok Miah</span>
         </Link>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
           {navItem.map(item => (

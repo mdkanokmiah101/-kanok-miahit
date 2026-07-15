@@ -235,7 +235,7 @@ export default function SylhetClient() {
 
       {/* === FOOTER === */}
       <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Md Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
+        <p>© 2026 <span className="text-primary font-bold">Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
         <div className="mt-3 flex items-center justify-center gap-4 text-xs">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

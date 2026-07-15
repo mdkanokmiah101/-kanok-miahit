@@ -24,10 +24,10 @@ export default function AboutClient() {
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
             <span className="text-primary">About</span><br/>
-            <span className="text-gray-900">Md Kanok Miah</span>
+            <span className="text-gray-900">Kanok Miah</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded in Dhaka, Bangladesh, Md Kanok Miah — <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link> — is a results-driven SEO professional who helps local businesses 
+            Founded in Dhaka, Bangladesh, Kanok Miah — <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link> — is a results-driven SEO professional who helps local businesses 
             dominate search engine rankings. Combining deep local market knowledge with global SEO best practices 
             to deliver measurable growth for Bangladeshi enterprises.
           </p>
@@ -43,12 +43,12 @@ export default function AboutClient() {
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Md Kanok Miah started with a simple observation: Bangladeshi businesses were struggling to get found 
+                Kanok Miah started with a simple observation: Bangladeshi businesses were struggling to get found 
                 online. Most SEO agencies either offered generic solutions that didn't account for local search behaviour 
                 or were located overseas with no real understanding of the Bangladesh market.
               </p>
               <p>
-                Founded by <strong className="text-gray-900">Md Kanok Miah</strong>, my practice set out to bridge that gap. 
+                Founded by <strong className="text-gray-900">Kanok Miah</strong>, my practice set out to bridge that gap. 
                 Since 2019, I've been delivering hands-on SEO expertise optimising websites for Bangladeshi audiences, developing
                 a proprietary approach that blends technical SEO rigour with deep cultural and linguistic insights.
               </p>
@@ -58,7 +58,7 @@ export default function AboutClient() {
                 mobile-first usage patterns, and the unique competitive landscape of Bangladesh's digital economy.
               </p>
               <p>
-                Today, Md Kanok Miah is recognised as one of Bangladesh's most trusted SEO experts, delivering
+                Today, Kanok Miah is recognised as one of Bangladesh's most trusted SEO experts, delivering
                 transparent, data-driven SEO services that generate real business results — not just vanity metrics.
               </p>
               <p>
@@ -289,24 +289,24 @@ export default function AboutClient() {
             <div className="group text-center -mx-2 md:-mx-4">
               <div className="relative mx-auto w-28 h-28 md:w-36 md:h-36 mb-3">
                 <div className="w-full h-full rounded-full overflow-hidden border-[4px] border-white shadow-lg">
-                  <img src="/images/team/team-kanok-miah.webp" alt="Md Kanok Miah" width="200" height="200"
+                  <img src="/images/team/team-kanok-miah.webp" alt="Kanok Miah" width="200" height="200"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-primary text-white text-[9px] md:text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-md whitespace-nowrap">
                   ⭐ Founder
                 </div>
               </div>
-              <h3 className="font-bold text-gray-900 text-sm md:text-base">Md Kanok Miah</h3>
+              <h3 className="font-bold text-gray-900 text-sm md:text-base">Kanok Miah</h3>
               <p className="text-primary text-[11px] md:text-xs font-medium">Founder & Lead SEO Consultant</p>
               <div className="flex items-center justify-center gap-2 mt-2">
                 <a href="https://www.facebook.com/mdkanokmiahweb" target="_blank" rel="noopener noreferrer"
                   className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white transition-all"
-                  aria-label="Md Kanok Miah Facebook">
+                  aria-label="Kanok Miah Facebook">
                   <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 </a>
                 <a href="https://kanokmiah.com" target="_blank" rel="noopener noreferrer"
                   className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 hover:bg-primary hover:text-white transition-all"
-                  aria-label="Md Kanok Miah Website">
+                  aria-label="Kanok Miah Website">
                   <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
                 </a>
               </div>
@@ -365,7 +365,7 @@ export default function AboutClient() {
           </h2>
           <div className="space-y-0 divide-y divide-gray-100">
             {[
-              { question: "What experience does Md Kanok Miah have?", answer: "Md Kanok Miah has been delivering SEO results since 2019, helping 50+ Bangladeshi businesses achieve first-page rankings on Google. His expertise spans local SEO, technical SEO, link building, semantic SEO, and GEO/AI search optimization." },
+              { question: "What experience does Kanok Miah have?", answer: "Kanok Miah has been delivering SEO results since 2019, helping 50+ Bangladeshi businesses achieve first-page rankings on Google. His expertise spans local SEO, technical SEO, link building, semantic SEO, and GEO/AI search optimization." },
               { question: "What areas of Bangladesh do you serve?", answer: "I provide SEO services for businesses throughout Bangladesh including Dhaka, Chittagong, Sylhet, Khulna, Rajshahi, and all other major cities. My local SEO strategies are customized for each city's specific market." },
               { question: "What types of businesses do you work with?", answer: "I work with a diverse range of clients including local service businesses, e-commerce stores (Shopify, Daraz), real estate agencies, healthcare providers, educational institutions, and hospitality businesses across Bangladesh." },
               { question: "Do you offer a free consultation?", answer: "Yes! I offer a completely free initial consultation to discuss your business goals and SEO needs. During this call, I'll provide preliminary insights and recommendations with no obligation to proceed." },

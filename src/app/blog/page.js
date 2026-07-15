@@ -10,30 +10,30 @@ export const revalidate = 3600;
 // Cache is revalidated hourly; stale-while-revalidate for responsiveness
 
 export const metadata = {
-  title: "SEO Blog — Tips & Guides for Bangladesh | Md Kanok Miah",
+  title: "SEO Blog — Tips & Guides for Bangladesh | Kanok Miah",
   description:
-    "Expert SEO tips and guides for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, and GEO optimization from Md Kanok Miah.",
+    "Expert SEO tips and guides for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, and GEO optimization from Kanok Miah.",
   alternates: { canonical: "https://kanokmiah.com.bd/blog" },
   openGraph: {
-    title: "SEO Blog — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    title: "SEO Blog — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description:
       "Expert SEO tips, guides, and strategies for Bangladesh businesses. Learn local SEO, technical SEO, e-commerce SEO, GEO optimization, and more.",
     url: "https://kanokmiah.com.bd/blog",
-    siteName: "Md Kanok Miah",
+    siteName: "Kanok Miah",
     images: [
       {
         url: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
         width: 400,
         height: 400,
-        alt: "Md Kanok Miah — SEO Expert Dhaka",
+        alt: "Kanok Miah — SEO Expert Dhaka",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Blog — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    title: "SEO Blog — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description:
-      "Expert SEO tips, guides, and strategies for Bangladesh businesses from Md Kanok Miah.",
+      "Expert SEO tips, guides, and strategies for Bangladesh businesses from Kanok Miah.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };

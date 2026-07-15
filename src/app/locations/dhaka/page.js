@@ -2,18 +2,18 @@ import DhakaClient from "./DhakaClient";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Local SEO Dhaka — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+  title: "Local SEO Dhaka — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
   description: "Professional local SEO services across all Dhaka neighborhoods — Mirpur, Gulshan, Banani, Uttara, Dhanmondi & more. Rank on Google Maps and attract customers in Dhaka with expert local SEO.",
   alternates: { canonical: "https://kanokmiah.com.bd/locations/dhaka" },
   openGraph: {
-    title: "Local SEO Dhaka — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    title: "Local SEO Dhaka — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
     description: "Local SEO services in Dhaka, Bangladesh. Rank on Google Maps in Mirpur, Gulshan, Banani, Uttara & all Dhaka areas with proven SEO strategies.",
     url: "https://kanokmiah.com.bd/locations/dhaka",
-    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 1200, height: 630, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 1200, height: 630, alt: "Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO Dhaka — Md Kanok Miah | SEO Expert in Dhaka",
+    title: "Local SEO Dhaka — Kanok Miah | SEO Expert in Dhaka",
     description: "Local SEO services in Dhaka, Bangladesh.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
@@ -22,7 +22,7 @@ export const metadata = {
 const locationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Md Kanok Miah — SEO Expert Dhaka",
+  name: "Kanok Miah — SEO Expert Dhaka",
   url: "https://kanokmiah.com.bd/locations/dhaka",
   telephone: "+880-1604-809110",
   email: "mdkanokmiah232@gmail.com",

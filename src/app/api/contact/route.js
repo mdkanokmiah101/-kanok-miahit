@@ -45,7 +45,7 @@ async function sendEmail({ name, email, phone, website, message }) {
     `;
 
     const info = await transporter.sendMail({
-      from: `"Md Kanok Miah - Lead" <${EMAIL_FROM}>`,
+      from: `"Kanok Miah - Lead" <${EMAIL_FROM}>`,
       to: EMAIL_TO,
       subject: `🔴 New SEO Lead: ${name} - ${phone}`,
       html,

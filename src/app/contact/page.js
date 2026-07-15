@@ -2,19 +2,19 @@ import ContactClient from "./ContactClient";
 import { BreadcrumbSchema, FAQSchema, ContactPageSchema, LocalBusinessSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Contact Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
-  description: "Contact Md Kanok Miah — the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business. Call +880 1604-809110 for a consultation.",
+  title: "Contact Kanok Miah — SEO Expert in Dhaka, Bangladesh",
+  description: "Contact Kanok Miah — the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business. Call +880 1604-809110 for a consultation.",
   alternates: { canonical: "https://kanokmiah.com.bd/contact" },
   openGraph: {
-    title: "Contact Md Kanok Miah — SEO Expert in Dhaka, Bangladesh",
-    description: "Contact Md Kanok Miah — the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business. Call +880 1604-809110 for a consultation.",
+    title: "Contact Kanok Miah — SEO Expert in Dhaka, Bangladesh",
+    description: "Contact Kanok Miah — the best SEO expert in Dhaka, Bangladesh. Get a free SEO audit for your business. Call +880 1604-809110 for a consultation.",
     url: "https://kanokmiah.com.bd/contact",
-    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Me — Md Kanok Miah",
-    description: "Contact Md Kanok Miah for a free SEO audit. Get expert help for your Bangladesh business.",
+    title: "Contact Me — Kanok Miah",
+    description: "Contact Kanok Miah for a free SEO audit. Get expert help for your Bangladesh business.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };

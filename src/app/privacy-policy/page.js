@@ -3,19 +3,19 @@ import Footer from "@/components/Footer";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Privacy Policy — Md Kanok Miah — SEO Expert Dhaka",
-  description: "Privacy Policy for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh. Learn how we collect, use, and protect your information.",
+  title: "Privacy Policy — Kanok Miah — SEO Expert Dhaka",
+  description: "Privacy Policy for Kanok Miah — SEO Expert in Dhaka, Bangladesh. Learn how we collect, use, and protect your information.",
   alternates: { canonical: "https://kanokmiah.com.bd/privacy-policy" },
   openGraph: {
-    title: "Privacy Policy — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
-    description: "Privacy Policy for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
+    title: "Privacy Policy — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    description: "Privacy Policy for Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
     url: "https://kanokmiah.com.bd/privacy-policy",
-    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy — Md Kanok Miah | SEO Expert in Dhaka, Bangladesh",
-    description: "Privacy Policy for Md Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
+    title: "Privacy Policy — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    description: "Privacy Policy for Kanok Miah — SEO Expert in Dhaka, Bangladesh.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-bold mt-8 mb-3">1. Introduction</h2>
             <p className="text-gray-600 leading-relaxed">
-              Md Kanok Miah (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates kanokmiah.com.bd. This Privacy Policy explains how we collect,
+              Kanok Miah (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates kanokmiah.com.bd. This Privacy Policy explains how we collect,
               use, disclose, and safeguard your information when you visit our website.
             </p>
           </section>

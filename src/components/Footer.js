@@ -164,7 +164,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400 text-center md:text-left">
-            © 2026 <span className="text-primary font-semibold">Md Kanok Miah</span>. All rights reserved.
+            © 2026 <span className="text-primary font-semibold">Kanok Miah</span>. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm">
             <span className="text-gray-400 text-xs font-medium">🔥 210+ projects completed</span>

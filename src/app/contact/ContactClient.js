@@ -84,7 +84,7 @@ export default function ContactClient() {
 
             {!submitted ? (
               <form className="space-y-5" onSubmit={handleSubmit} method="POST">
-                <input type="hidden" name="_subject" value="New SEO Lead from Md Kanok Miah Website!" />
+                <input type="hidden" name="_subject" value="New SEO Lead from Kanok Miah Website!" />
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1.5">Your Name *</label>
                   <input
@@ -230,11 +230,11 @@ export default function ContactClient() {
               </div>
             </div>
 
-            {/* Free SEO Audit CTA — Branded with Md Kanok Miah */}
+            {/* Free SEO Audit CTA — Branded with Kanok Miah */}
             <div className="bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-6 text-center text-white shadow-lg">
               <p className="text-lg font-bold mb-1">⭐ Free SEO Audit — Worth BDT 5,000</p>
               <p className="text-white/80 text-sm mb-4">
-                Get a complete analysis of your website from <strong className="text-white">Md Kanok Miah</strong>, Dhaka's top SEO expert with <strong className="text-white">210+ successful projects</strong>.
+                Get a complete analysis of your website from <strong className="text-white">Kanok Miah</strong>, Dhaka's top SEO expert with <strong className="text-white">210+ successful projects</strong>.
               </p>
               <a
                 href="https://wa.me/8801604809110?text=Hi%20Md%20Kanok%20Miah!%20I%20need%20SEO%20help%20for%20my%20business."

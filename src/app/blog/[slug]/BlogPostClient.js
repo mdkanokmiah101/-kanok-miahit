@@ -537,14 +537,14 @@ export default function BlogPostClient() {
           <div className="w-16 h-16 rounded-full shrink-0 overflow-hidden border-2 border-primary/20">
             <img
               src="/kanok-miah-profile.webp"
-              alt="Md Kanok Miah — SEO Expert in Dhaka, Bangladesh"
+              alt="Kanok Miah — SEO Expert in Dhaka, Bangladesh"
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <p className="font-bold text-gray-900">Written by <span className="text-primary">Md Kanok Miah</span></p>
-            <p className="text-sm text-gray-600">A proven <Link href="/" className="text-primary font-semibold hover:underline">SEO expert in Dhaka</Link>, Bangladesh — <Link href="/about" className="text-primary font-semibold hover:underline">learn more about Md Kanok Miah →</Link></p>
-            <p className="text-sm text-gray-600 mt-2">Since 2019, Md Kanok Miah has delivered 210+ <Link href="/case-studies" className="text-primary font-semibold hover:underline">SEO projects</Link> for local businesses, e-commerce stores, and international brands. Currently SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech. Certified: Google Digital Garage, HubSpot Academy, SEMrush Academy.</p>
+            <p className="font-bold text-gray-900">Written by <span className="text-primary">Kanok Miah</span></p>
+            <p className="text-sm text-gray-600">A proven <Link href="/" className="text-primary font-semibold hover:underline">SEO expert in Dhaka</Link>, Bangladesh — <Link href="/about" className="text-primary font-semibold hover:underline">learn more about Kanok Miah →</Link></p>
+            <p className="text-sm text-gray-600 mt-2">Since 2019, Kanok Miah has delivered 210+ <Link href="/case-studies" className="text-primary font-semibold hover:underline">SEO projects</Link> for local businesses, e-commerce stores, and international brands. Currently SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech. Certified: Google Digital Garage, HubSpot Academy, SEMrush Academy.</p>
             <p className="text-xs text-gray-500 mt-2">Last updated: July 2026</p>
           </div>
         </div>
@@ -562,7 +562,7 @@ export default function BlogPostClient() {
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Hire{' '}
             <span className="text-amber-300">
-              Md Kanok Miah
+              Kanok Miah
             </span>
           </h2>
           <p className="text-white/80 mb-6 text-lg">

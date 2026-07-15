@@ -35,7 +35,7 @@ export default function Footer() {
           {/* Column 1 - Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="text-2xl font-extrabold tracking-tight text-white">
-              Md <span className="text-primary">Kanok Miah</span>
+              <span className="text-primary">Kanok Miah</span>
             </Link>
             <p className="text-gray-300 text-sm mt-4 leading-relaxed">
               Bangladesh&apos;s trusted SEO expert with 6+ years of experience. Helping local businesses rank higher,

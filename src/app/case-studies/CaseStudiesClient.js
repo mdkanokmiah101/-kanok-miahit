@@ -176,15 +176,15 @@ const caseStudies = [
 ];
 
 const results = [
-  { name: "Das Taxis Scotland", metric: "893/mo Visitors", growth: "+5,853%", img: "/images/case-studies/Das-Taxi.webp", tag: "Transportation", url: "/blog/das-taxis-scotland-seo-case-study" },
-  { name: "Master Racks", metric: "Top Rankings", growth: "B2B SEO", img: "/images/case-studies/Master-racks.webp", tag: "Industrial", url: "/case-studies" },
-  { name: "Allseal Waterproofing", metric: "400+/mo Visitors", growth: "Local SEO", img: "/images/case-studies/Allseal-Waterproofing-.webp", tag: "Construction", url: "/case-studies" },
-  { name: "WatchZoneBD", metric: "Top 10 Rankings", growth: "E-commerce", img: "/images/case-studies/WatchZoneBD-.webp", tag: "E-commerce", url: "/blog/watchzonebd-seo-case-study" },
-  { name: "iTracker", metric: "500+ Keywords", growth: "+21,100%", img: "/images/case-studies/iTracke.webp", tag: "Tech", url: "/case-studies" },
-  { name: "SocialPanel Pro", metric: "27,900/mo Clicks", growth: "Organic", img: "/images/case-studies/SocialPanel-pro-1.webp", tag: "SMM Panel", url: "/blog/smmgen-seo-case-study" },
-  { name: "SMMRX", metric: "15,440% Growth", growth: "CTR 14.2%", img: "/images/case-studies/SMMRX-2.webp", tag: "SMM Panel", url: "/blog/smmsun-seo-case-study" },
-  { name: "SMMSun", metric: "7,700+/mo Clicks", growth: "15,440%", img: "/images/case-studies/SMMSun-2.webp", tag: "SMM Panel", url: "/blog/smmsun-seo-case-study" },
-  { name: "SMMGen", metric: "27,900/mo Clicks", growth: "+87,000%", img: "/images/case-studies/SMMGen-2.webp", tag: "SMM Panel", url: "/blog/smmgen-seo-case-study" },
+  { name: "Das Taxis Scotland", img: "/images/case-studies/Das-Taxi.webp", industry: "Transportation", url: "https://dastaxisscotland.co.uk" },
+  { name: "WatchZoneBD", img: "/images/case-studies/WatchZoneBD-.webp", industry: "E-commerce", url: "https://watchzonebd.com" },
+  { name: "SMMGen", img: "/images/case-studies/SMMGen-2.webp", industry: "SMM Panel", url: "https://smmgen.com" },
+  { name: "SMMSun", img: "/images/case-studies/SMMSun-2.webp", industry: "SMM Panel", url: "https://smmsun.com" },
+  { name: "MoreThanPanel", img: "/images/case-studies/SMMGen-2.webp", industry: "SMM Panel", url: "https://morethanpanel.com" },
+  { name: "Mir Cement", img: "/images/case-studies/Master-racks.webp", industry: "Construction", url: "https://mircement.com" },
+  { name: "Stealth Windshield Repairs", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Auto Glass", url: "https://stealthwindshieldrepairs.co.uk" },
+  { name: "All Landlord Certificates UK", img: "/images/case-studies/Allseal-Waterproofing-.webp", industry: "Property Safety", url: "https://alllandlordcertificates.co.uk" },
+  { name: "Locksmith Dundee", img: "/images/case-studies/Das-Taxi.webp", industry: "Locksmith", url: "https://locksmithdundee.com" },
 ];
 
 export default function CaseStudiesClient() {
@@ -231,16 +231,12 @@ export default function CaseStudiesClient() {
             {results.map((r, i) => (
               <a key={i} href={r.url} target="_blank" rel="noopener noreferrer" className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="relative h-[180px] bg-gray-50 flex items-center justify-center overflow-hidden">
-                  <img src={r.img} alt={`${r.name} SEO Results`} className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                  <span className="absolute top-3 right-3 bg-primary/85 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">{r.tag}</span>
+                  <img src={r.img} alt={`${r.name} Website`} className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                  <span className="absolute top-3 right-3 bg-primary/85 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">{r.industry}</span>
                 </div>
                 <div className="p-5">
-                  <h3 className="font-bold text-gray-900 mb-2 text-base">{r.name}</h3>
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-lg font-extrabold text-primary">{r.metric}</span>
-                    <span className="text-xs font-semibold bg-red-50 text-red-600 px-2.5 py-1 rounded-full">{r.growth}</span>
-                  </div>
-                  <span className="inline-flex items-center gap-1 text-primary font-semibold text-sm group-hover:gap-2 transition-all">View Case Study →</span>
+                  <h3 className="font-bold text-gray-900 mb-1 text-base group-hover:text-primary transition-colors">{r.name}</h3>
+                  <span className="text-xs text-gray-400">Visit Website →</span>
                 </div>
               </a>
             ))}

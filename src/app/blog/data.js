@@ -25471,11 +25471,11 @@ Whether you run a restaurant in Gulshan, a diagnostic center in Dhanmondi, or an
     excerpt: "Looking for the best SEO expert in Dhaka, Bangladesh? Discover why Md Kanok Miah ranks #1 with experience since 2019, 210+ projects, 108 verified reviews, and proven SEO strategies that deliver real rankings and revenue growth.",
     tags: ["Best SEO Expert Dhaka", "SEO Expert Bangladesh", "Md Kanok Miah", "SEO Results", "Dhaka SEO"],
     imagePlaceholder: "🏆",
-    content: `Bangladesh has approximately **7.8 million small and medium enterprises (SMEs)** — making up **99% of all businesses** in the country. Yet studies show that **less than 20% of these businesses have a proper website or any meaningful online presence**. The remaining **6.2 million+ businesses** remain invisible to the **130 million+ internet users** in Bangladesh who search on Google every single day.
+    content: `Bangladesh has approximately **7.8 million small and medium enterprises (SMEs)** — making up **99% of all businesses** in the country. Yet studies show that **less than 20% of these businesses have a proper website or any meaningful online presence**. The remaining **6.2 million+ businesses** remain invisible to the **[130 million+ internet users](https://datareportal.com/reports/digital-2025-bangladesh)** in Bangladesh who search on Google every single day.
 
 The cost of this invisibility is staggering. Research indicates that **over 60% of Bangladeshi SMEs lose potential customers daily** simply because they cannot be found online. In Dhaka alone, an estimated **85% of consumers** search online before visiting a local store — checking Google Maps, reading reviews, comparing prices. A business without SEO is effectively **turning away 8 out of 10 potential customers**.
 
-Meanwhile, Bangladesh's **e-commerce market crossed US$9 billion in 2024** and is projected to hit **$13 billion by 2027**. The number of online shoppers has grown from **30 million in 2020 to over 70 million in 2025**. But here is the problem: most e-commerce stores in Bangladesh operate on Daraz, Facebook Shops, or basic websites with **zero SEO optimization**. They depend entirely on paid ads, which means:
+Meanwhile, Bangladesh's **[e-commerce market crossed US$9 billion in 2024](https://www.statista.com/statistics/importance-ecommerce-bangladesh/)** and is projected to hit **$13 billion by 2027**. The number of online shoppers has grown from **30 million in 2020 to [over 70 million in 2025](https://datareportal.com/reports/digital-2025-bangladesh)**. But here is the problem: most e-commerce stores in Bangladesh operate on Daraz, Facebook Shops, or basic websites with **zero SEO optimization**. They depend entirely on paid ads, which means:
 - **70–80% of their monthly revenue** goes to Facebook and Google ad costs
 - When ad spend stops, traffic **drops by 90%+ within days**
 - **Average profit margin** after ad costs: only **5–15%**
@@ -25483,9 +25483,11 @@ Meanwhile, Bangladesh's **e-commerce market crossed US$9 billion in 2024** and i
 
 Compare that to SEO-optimized businesses: organic traffic compounds over time. An e-commerce store ranking on page 1 of Google for even **5–10 high-intent keywords** can generate **40–60% of its revenue from free organic traffic** — with **3–5x higher profit margins** than ad-dependent competitors.
 
-For local businesses, the situation is equally critical. A restaurant, clinic, or repair shop ranking in **Google Maps Top 3** in its area receives **70%+ of all location-based search clicks**. A business on **page 2 or beyond gets less than 5%**. In Dhaka's competitive markets — Gulshan, Banani, Uttara, Dhanmondi, Mirpur — the gap between **#1 and #10 on Google Maps can mean the difference between 100+ daily customers and 5**.
+For local businesses, the situation is equally critical. A restaurant, clinic, or repair shop ranking in **[Google Maps Top 3](https://moz.com/learn/seo/local-seo)** in its area receives **70%+ of all location-based search clicks**. A business on **page 2 or beyond gets less than 5%**. In Dhaka's competitive markets — Gulshan, Banani, Uttara, Dhanmondi, Mirpur — the gap between **#1 and #10 on Google Maps can mean the difference between 100+ daily customers and 5**.
 
 This is the **Bangladesh digital divide**: millions of businesses with quality products and services are invisible online, while their competitors — often with **inferior products but better SEO** — capture all the traffic, calls, and sales.
+
+I am **Md Kanok Miah** — the SEO expert businesses in Dhaka trust for page 1 rankings since 2019. With **210+ completed projects** and **108 verified 5-star reviews** on Google Business Profile, I help Bangladeshi businesses dominate local search results and grow revenue through organic traffic.
 
 I am **Md Kanok Miah**, and since **2019**, I have been bridging this gap. With **210+ SEO projects** across **8+ Dhaka neighborhoods** and a **95%+ client retention rate**, I help Bangladeshi businesses — from local shops to e-commerce brands — achieve **page 1 Google rankings** and **measurable revenue growth**:
 

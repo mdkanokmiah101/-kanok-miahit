@@ -328,7 +328,7 @@ export default function HomeClient() {
                 <p>
                   I'm <strong className="text-gray-900">Md Kanok Miah</strong> — a results-driven 
                   <strong className="text-gray-900"> SEO expert in Bangladesh</strong> who has been helping 
-                  local businesses dominate search rankings <strong className="text-gray-900">since 2019</strong>. 
+                  local businesses dominate <a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">search rankings</a> <strong className="text-gray-900">since 2019</strong>. 
                   I've led <strong className="text-gray-900">210+ SEO projects</strong> for clients ranging 
                   from small local shops in Dhaka to international brands.
                 </p>
@@ -337,7 +337,7 @@ export default function HomeClient() {
                   and <strong className="text-gray-900">Head of Digital Marketing at <a href="https://cloudmatrixtech.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CloudMatrix Tech</a></strong>. 
                   Every month I actively manage <strong className="text-gray-900">8–12 live SEO projects</strong> 
                   and <strong className="text-gray-900">2–5 paid ad campaigns</strong> — running real experiments 
-                  on real websites to discover what actually moves rankings.
+                  on real websites to discover <a href="https://developers.google.com/search/docs/fundamentals/ranking-systems" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">what actually moves rankings</a>.
                 </p>
                 <p>
                   Certified by <strong className="text-gray-900">Google Digital Garage, HubSpot Academy, 
@@ -430,7 +430,7 @@ export default function HomeClient() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Why Choose Me</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Why <span className="text-primary">Md Kanok Miah</span>?</h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Why I'm the <span className="text-primary">Best SEO Expert in Dhaka</span></h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">Since 2019, mastering SEO for the Bangladesh market. Here&apos;s what sets me apart.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">

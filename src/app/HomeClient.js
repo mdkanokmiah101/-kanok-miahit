@@ -99,12 +99,7 @@ export default function HomeClient() {
               Your competitors are ranking. You&apos;re not. That&apos;s not bad luck — that&apos;s a fixable problem. I&apos;m <strong className="text-gray-900">Kanok Miah</strong>, <strong className="text-gray-900">the best SEO expert in Dhaka, Bangladesh</strong> who has run <strong className="text-gray-900">210+ SEO campaigns</strong> across e-commerce, local businesses — and I don&apos;t do cookie-cutter strategies. I build what your specific business needs to win on Google, on AI search, and everywhere in between. <strong className="text-gray-900">6 years</strong>. Real results. No vanity metrics. Let&apos;s fix your rankings — starting today.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
-              <span className="inline-flex items-center gap-1.5 bg-green-50 border border-green-200 text-green-700 text-xs font-semibold px-4 py-2 rounded-full">
-                ✅ Google Business Profile verified
-              </span>
-              <span className="inline-flex items-center gap-1.5 bg-amber-50 border border-amber-200 text-amber-700 text-xs font-semibold px-4 py-2 rounded-full">
-                ⭐ 108+ Google reviews, 5.0 stars
-              </span>
+              <a href="https://www.facebook.com/mdkanokmiahweb" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold px-4 py-2 rounded-full hover:bg-blue-100 hover:shadow-sm transition-all">👍 Follow on Facebook</a>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">

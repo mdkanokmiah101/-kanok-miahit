@@ -7130,6 +7130,8 @@ Experience, Expertise, Authoritativeness, Trustworthiness (E-E-A-T) ২০২৬
 - নতুন মেট্রিক: Interaction to Next Paint (INP)
 - ওয়েব অ্যানসেম্বলি পারফরম্যান্স
 
+Core Web Vitals অপটিমাইজেশনের বিস্তারিত গাইডের জন্য আমাদের [টেকনিক্যাল SEO: কোর ওয়েব ভাইটালস অপটিমাইজেশন](/blog/technical-seo-core-web-vitals-optimization) ব্লগটি দেখুন।
+
 ## এই আপডেটগুলোর প্রভাব — বাংলাদেশি ওয়েবসাইটের জন্য
 
 বাংলাদেশি ওয়েবসাইটগুলোর জন্য এই আপডেটগুলো কী অর্থ বহন করে?
@@ -7154,6 +7156,8 @@ Experience, Expertise, Authoritativeness, Trustworthiness (E-E-A-T) ২০২৬
 - গুগল সার্চ কনসোলে এরর মেসেজ চেক করুন
 - বিদ্যমান কন্টেন্ট আপডেট করুন
 - E-A-T ফ্যাক্টর ইমপ্রুভ করুন
+
+একটি সম্পূর্ণ টেকনিক্যাল অডিটের জন্য আমাদের [টেকনিক্যাল SEO চেকলিস্ট](/blog/technical-seo-checklist-bangladeshi-websites) ব্লগটি ফলো করুন।
 
 ### মিড-টার্ম (৩-৬ মাস)
 - AI ফ্রেন্ডলি কন্টেন্ট স্ট্রাটেজি তৈরি করুন

@@ -9923,7 +9923,7 @@ Beyond user experience, speed is a confirmed Google ranking factor since the 202
 
 ## What Are Core Web Vitals and Why They Matter
 
-Core Web Vitals are a set of three specific metrics that Google uses to measure user experience. Websites that pass all three thresholds are rewarded with better search rankings and may qualify for the "Top Stories" carousel and other rich search features.
+Core Web Vitals are a set of three specific metrics that Google uses to measure user experience. Websites that pass all three thresholds are rewarded with better search rankings and may qualify for the "Top Stories" carousel and other rich search features. For a complete technical breakdown of diagnosing and fixing LCP, INP, and CLS, read our dedicated [Core Web Vitals Optimization Guide](/blog/technical-seo-core-web-vitals-optimization).
 
 ### LCP (Largest Contentful Paint)
 
@@ -9999,6 +9999,8 @@ After auditing hundreds of Bangladeshi websites, these are the most frequent spe
 - [ ] Reduce query strings
 - [ ] Use preload and preconnect for critical resources
 - [ ] Optimize font delivery (subset, preload, swap)
+
+If you are launching a new website, our [SEO for New Websites Guide](/blog/seo-for-new-website-bangladesh) provides a comprehensive launch checklist covering speed optimization from day one.
 
 ## How to Measure Core Web Vitals
 

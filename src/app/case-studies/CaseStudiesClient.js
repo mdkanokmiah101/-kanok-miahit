@@ -177,10 +177,10 @@ const caseStudies = [
 
 const results = [
   { name: "Das Taxis Scotland", metric: "893/mo Visitors", growth: "+5,853%", img: "/images/case-studies/Das-Taxi.webp", tag: "Transportation", url: "/blog/das-taxis-scotland-seo-case-study" },
-  { name: "Master Racks", metric: "Top Rankings", growth: "B2B SEO", img: "/images/case-studies/Master-racks.webp", tag: "Industrial", url: "/blog/mir-cement-seo-case-study" },
-  { name: "Allseal Waterproofing", metric: "400+/mo Visitors", growth: "Local SEO", img: "/images/case-studies/Allseal-Waterproofing-.webp", tag: "Construction", url: "/blog/stealth-windshield-repairs-seo-case-study" },
-  { name: "WatchZoneBD", metric: "Top 10 Rankings", growth: "E-commerce", img: "/images/case-studies/WatchZoneBD-.webp", tag: "E-commerce", url: "/blog/dhaka-apparels-seo-case-study" },
-  { name: "iTracker", metric: "500+ Keywords", growth: "+21,100%", img: "/images/case-studies/iTracke.webp", tag: "Tech", url: "/blog/das-taxis-scotland-seo-case-study" },
+  { name: "Master Racks", metric: "Top Rankings", growth: "B2B SEO", img: "/images/case-studies/Master-racks.webp", tag: "Industrial", url: "/case-studies" },
+  { name: "Allseal Waterproofing", metric: "400+/mo Visitors", growth: "Local SEO", img: "/images/case-studies/Allseal-Waterproofing-.webp", tag: "Construction", url: "/case-studies" },
+  { name: "WatchZoneBD", metric: "Top 10 Rankings", growth: "E-commerce", img: "/images/case-studies/WatchZoneBD-.webp", tag: "E-commerce", url: "/blog/watchzonebd-seo-case-study" },
+  { name: "iTracker", metric: "500+ Keywords", growth: "+21,100%", img: "/images/case-studies/iTracke.webp", tag: "Tech", url: "/case-studies" },
   { name: "SocialPanel Pro", metric: "27,900/mo Clicks", growth: "Organic", img: "/images/case-studies/SocialPanel-pro-1.webp", tag: "SMM Panel", url: "/blog/smmgen-seo-case-study" },
   { name: "SMMRX", metric: "15,440% Growth", growth: "CTR 14.2%", img: "/images/case-studies/SMMRX-2.webp", tag: "SMM Panel", url: "/blog/smmsun-seo-case-study" },
   { name: "SMMSun", metric: "7,700+/mo Clicks", growth: "15,440%", img: "/images/case-studies/SMMSun-2.webp", tag: "SMM Panel", url: "/blog/smmsun-seo-case-study" },

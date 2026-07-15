@@ -235,7 +235,7 @@ export default function CaseStudiesClient() {
                   <span className="absolute top-3 right-3 bg-primary/85 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">{r.industry}</span>
                 </div>
                 <div className="p-5">
-                  <h3 className="font-bold text-gray-900 mb-1 text-base group-hover:text-primary transition-colors">{r.name}</h3>
+                  <h3 className="font-bold text-primary mb-1 text-base">{r.name}</h3>
                   <span className="text-xs text-gray-400">Visit Website →</span>
                 </div>
               </a>

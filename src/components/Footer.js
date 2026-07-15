@@ -35,7 +35,7 @@ export default function Footer() {
           {/* Column 1 - Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="text-2xl font-extrabold tracking-tight text-white">
-              <span className="text-primary">Kanok Miah</span>
+              Kanok Miah
             </Link>
             <p className="text-gray-300 text-sm mt-4 leading-relaxed">
               Bangladesh&apos;s trusted SEO expert with 6+ years of experience. Helping local businesses rank higher,
@@ -157,6 +157,13 @@ export default function Footer() {
                   <a href="https://wa.me/8801604809110" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors font-medium">Chat Now</a>
                 </div>
               </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-0.5">👍</span>
+                <div>
+                  <div className="text-gray-300 text-xs">Facebook</div>
+                  <a href="https://www.facebook.com/mdkanokmiahweb" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors font-medium">Follow on Facebook</a>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -164,7 +171,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 pb-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400 text-center md:text-left">
-            © 2026 <span className="text-primary font-semibold">Kanok Miah</span>. All rights reserved.
+            © 2026 <span className="text-white font-semibold">Kanok Miah</span>. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm">
             <span className="text-gray-400 text-xs font-medium">🔥 210+ projects completed</span>

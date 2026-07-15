@@ -490,19 +490,19 @@ export default function HomeClient() {
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full" style={{ color: '#E8F5E9', backgroundColor: 'rgba(232,245,233,0.1)' }}>{item.tag}</span>
-                    <span className="text-xs font-extrabold px-2.5 py-1 rounded-full" style={{ color: '#A5D6A7', backgroundColor: 'rgba(165,214,167,0.1)' }}>{item.growth}</span>
+                    <span className="text-xs font-extrabold px-2.5 py-1 rounded-full" style={{ color: '#FFD230', backgroundColor: 'rgba(255,210,48,0.15)' }}>{item.growth}</span>
                   </div>
                   <h3 className="font-bold text-lg mb-1" style={{ color: '#FFFFFF' }}>{item.name}</h3>
                   <div className="mb-4">
                     <span className="text-2xl font-extrabold" style={{ color: '#81C784' }}>{item.metric}</span>
-                    <span className="block text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.4)' }}>{item.label}</span>
+                    <span className="block text-xs mt-0.5" style={{ color: '#FFFFFF' }}>{item.label}</span>
                   </div>
-                  <div className="flex items-center gap-1.5 text-sm font-semibold transition-all group-hover:gap-2.5" style={{ color: '#A5D6A7' }}>
+                  <div className="flex items-center gap-1.5 text-sm font-semibold transition-all group-hover:gap-2.5" style={{ color: '#FFFFFF' }}>
                     View Case Study
                     <span className="text-base">→</span>
                   </div>
                 </div>
-                <div className="h-[3px] w-0 group-hover:w-full transition-all duration-500" style={{ backgroundColor: '#81C784' }} />
+                <div className="h-[3px] w-0 group-hover:w-full transition-all duration-500" style={{ backgroundColor: '#FFD230' }} />
               </a>
             ))}
           </div>

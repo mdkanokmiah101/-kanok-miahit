@@ -44,13 +44,11 @@ export default function MymensinghClient() {
             Mymensingh SEO Services
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
-            <span className="text-primary">
-              Local SEO Expert in Mymensingh
-            </span>
-            <br />Dominate Google Maps
+            <span className="block text-primary">Local SEO Expert in Mymensingh</span>
+            <span className="block">Dominate Google Maps</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Your trusted local SEO partner in Mymensingh. I help shrimp exporters, industrial businesses, agri-companies, and local service providers dominate Google search and attract more customers online.
+            Your trusted local SEO partner in Mymensingh. I help dairy and poultry farmers, agricultural businesses, educational institutions, and local service providers dominate Google search and attract more customers online.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 transition-all">
@@ -63,7 +61,7 @@ export default function MymensinghClient() {
         </div>
       </section>
 
-      {/* === SEO FOR KHULNA BUSINESSES === */}
+      {/* === SEO FOR MYMENSINGH BUSINESSES === */}
       <section className="relative py-16 px-4 bg-gray-50/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -72,7 +70,7 @@ export default function MymensinghClient() {
               SEO for Mymensingh&apos;s <span className="text-primary">Industries</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Tailored SEO strategies for Mymensingh&apos;s distinctive industrial economy — from shrimp export to manufacturing.
+              Tailored SEO strategies for Mymensingh&apos;s distinctive agricultural and educational economy — from dairy farming to university admissions.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

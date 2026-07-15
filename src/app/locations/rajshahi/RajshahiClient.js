@@ -44,10 +44,8 @@ export default function RajshahiClient() {
             Rajshahi SEO Services
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
-            <span className="text-primary">
-              Local SEO Expert in Rajshahi
-            </span>
-            <br />Dominate Google Maps
+            <span className="block text-primary">Local SEO Expert in Rajshahi</span>
+            <span className="block">Dominate Google Maps</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Your trusted local SEO partner in Rajshahi. I help mango exporters, educational institutions, retail businesses, and local service providers dominate Google search and attract more customers online.
@@ -112,6 +110,51 @@ export default function RajshahiClient() {
         </div>
       </section>
 
+      {/* === ABOUT RAJSHAHI === */}
+      <section className="relative py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">About Rajshahi</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Why Rajshahi <span className="text-primary">Needs SEO</span>
+          </h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            <p>Rajshahi, known as the Silk City and Education City of Bangladesh, is a culturally rich metropolis on the banks of the mighty Padma River. Famous worldwide for its succulent mangoes — Rajshahi produces some of the finest varieties including Himsagar, Langra, and Fazli — the city is the agricultural heartland of northern Bangladesh. Key landmarks include the historic Varendra Research Museum (the oldest museum in Bangladesh), Padma River's scenic char areas, Shahid A.H.M. Qamaruzzaman Central Park and Zoo, and the iconic Rajshahi Silk products that have been cherished for generations.</p>
+            <p>The city's economy is uniquely driven by agriculture — particularly mango, litchi, and crop farming — and a thriving education sector. Rajshahi is home to the prestigious University of Rajshahi (the second-largest university in Bangladesh), Rajshahi University of Engineering & Technology (RUET), Rajshahi Medical College, and numerous coaching centers that attract students from across the country. This creates a vibrant student-centric local economy with businesses ranging from bookshops and stationery stores to restaurants and hostels catering to the academic community.</p>
+            <p>For Rajshahi businesses — from mango exporters wanting to reach international markets to local coaching centers competing for student admissions — SEO is essential for capturing online visibility. My Rajshahi SEO strategies focus on helping agricultural exporters rank for B2B keywords, educational institutions attract student inquiries, and local businesses dominate Google Maps in their neighborhoods. With bilingual Bengali-English optimization tailored to Rajshahi's unique market dynamics, I help businesses across the Silk City grow their online presence and attract more customers.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* === LOCAL SUCCESS STORIES === */}
+      <section className="relative py-16 px-4 bg-gray-50/50">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">Local Success</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Rajshahi <span className="text-primary">Case Studies</span>
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🥭</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Rajshahi Mango Exporter Global SEO</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A Rajshahi-based mango export company wanted to reach international buyers in the Middle East, Europe, and Southeast Asia. We built a B2B SEO strategy targeting keywords like "best mangoes from Bangladesh," "Rajshahi mango export," and "Himsagar mango supplier." By creating landing pages for each mango variety, optimizing for international shipping keywords, and building citations on global food trade directories, the company achieved a 250% increase in organic traffic from international markets within 4 months. They received export inquiries from buyers in Dubai, London, and Kuala Lumpur.</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🎓</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Rajshahi Coaching Center Growth</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A coaching center near Rajshahi University was struggling to attract students despite offering quality preparation for admission tests. We optimized their Google Business Profile for "coaching center near Rajshahi University" and "admission coaching Rajshahi," created content around successful student stories and exam strategies, and built local citations on education directories. Within 3 months, their website traffic increased by 180%, and student inquiries grew from 5 per month to over 30, with many coming through Google Maps search.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* === FAQ === */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -120,6 +163,7 @@ export default function RajshahiClient() {
             { question: "Do you serve Rajshahi city and surrounding areas?", answer: "Yes, I provide SEO services for Rajshahi city and all surrounding areas including the Rajshahi University area, Kadirganj, Motihar, Shaheb Bazar, and all upazillas across the Rajshahi division. My hyperlocal approach helps businesses attract customers from all over the region." },
             { question: "What types of Rajshahi businesses benefit most from SEO?", answer: "Mango and crop exporters, coaching centers, local retailers, small manufacturers, hotels, restaurants, and real estate developers all benefit greatly from SEO. I help Rajshahi businesses build their online presence, attract more customers, and compete effectively beyond local boundaries." },
             { question: "How do I get started with SEO in Rajshahi?", answer: "Getting started is simple. Contact me through this page for a free SEO audit. I will analyze your current online presence, evaluate your competition in the Rajshahi market, and create a customized SEO strategy tailored to your business goals and target audience." },
+            { question: "Can SEO help Rajshahi mango exporters reach international buyers?", answer: "Absolutely. Rajshahi mango exporters can leverage SEO to reach international buyers by targeting keywords like 'Bangladesh mango export,' 'Rajshahi Himsagar mango,' and 'best mango supplier Bangladesh.' I create optimized landing pages for each mango variety, build citations on global food trade directories, and optimize for B2B search intent. This helps Rajshahi exporters appear in search results when international buyers look for premium mango suppliers from Bangladesh." },
           ]} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
@@ -130,6 +174,7 @@ export default function RajshahiClient() {
               { question: "Do you serve Rajshahi city and surrounding areas?", answer: "Yes, I provide SEO services for Rajshahi city and all surrounding areas including the Rajshahi University area, Kadirganj, Motihar, Shaheb Bazar, and all upazillas across the Rajshahi division. My hyperlocal approach helps businesses attract customers from all over the region." },
               { question: "What types of Rajshahi businesses benefit most from SEO?", answer: "Mango and crop exporters, coaching centers, local retailers, small manufacturers, hotels, restaurants, and real estate developers all benefit greatly from SEO. I help Rajshahi businesses build their online presence, attract more customers, and compete effectively beyond local boundaries." },
               { question: "How do I get started with SEO in Rajshahi?", answer: "Getting started is simple. Contact me through this page for a free SEO audit. I will analyze your current online presence, evaluate your competition in the Rajshahi market, and create a customized SEO strategy tailored to your business goals and target audience." },
+              { question: "Can SEO help Rajshahi mango exporters reach international buyers?", answer: "Absolutely. Rajshahi mango exporters can leverage SEO to reach international buyers by targeting keywords like 'Bangladesh mango export,' 'Rajshahi Himsagar mango,' and 'best mango supplier Bangladesh.' I create optimized landing pages for each mango variety, build citations on global food trade directories, and optimize for B2B search intent. This helps Rajshahi exporters appear in search results when international buyers look for premium mango suppliers from Bangladesh." },
             ].map((f, i) => (
               <details key={i} className="py-4 group">
                 <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">

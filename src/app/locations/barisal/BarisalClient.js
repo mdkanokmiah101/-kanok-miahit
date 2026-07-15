@@ -44,13 +44,11 @@ export default function BarisalClient() {
             Barisal SEO Services
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
-            <span className="text-primary">
-              Local SEO Expert in Barisal
-            </span>
-            <br />Dominate Google Maps
+            <span className="block text-primary">Local SEO Expert in Barisal</span>
+            <span className="block">Dominate Google Maps</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Your trusted local SEO partner in Barisal. I help shrimp exporters, industrial businesses, agri-companies, and local service providers dominate Google search and attract more customers online.
+            Your trusted local SEO partner in Barisal. I help agri-businesses, fisheries, river transport companies, and local service providers dominate Google search and attract more customers online.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 transition-all">
@@ -63,7 +61,7 @@ export default function BarisalClient() {
         </div>
       </section>
 
-      {/* === SEO FOR KHULNA BUSINESSES === */}
+      {/* === SEO FOR BARISAL BUSINESSES === */}
       <section className="relative py-16 px-4 bg-gray-50/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -72,7 +70,7 @@ export default function BarisalClient() {
               SEO for Barisal&apos;s <span className="text-primary">Industries</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Tailored SEO strategies for Barisal&apos;s distinctive industrial economy — from shrimp export to manufacturing.
+              Tailored SEO strategies for Barisal&apos;s distinctive river-based economy — from agriculture and fisheries to tourism.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -112,6 +110,51 @@ export default function BarisalClient() {
         </div>
       </section>
 
+      {/* === ABOUT BARISAL === */}
+      <section className="relative py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">About Barisal</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Why Barisal <span className="text-primary">Needs SEO</span>
+          </h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            <p>Barisal, fondly known as the Venice of the East, is a city defined by its intricate network of rivers, canals, and waterways. Located in south-central Bangladesh, Barisal is the gateway to the famous Kuakata Sea Beach — one of the few beaches in the world where you can witness both sunrise and sunset over the Bay of Bengal. Key landmarks include the Oxford Mission Church, the historic Bell's Park, the 250-year-old Guthia Mosque, and the vibrant floating guava markets that are unique to the Barisal region.</p>
+            <p>The city's economy is uniquely shaped by its riverine geography. Agriculture — particularly rice, jute, and pulse cultivation — forms the backbone of the local economy. Fisheries and aquaculture thrive in the countless rivers and beels (wetlands) surrounding Barisal, with freshwater fish like rui, katla, and hilsa being both locally consumed and exported to other parts of Bangladesh. The region is also famous for its guava production, with the floating markets of Barisal drawing tourists from across the country. River transport and boat-building are traditional industries that continue to employ thousands of locals.</p>
+            <p>For Barisal businesses — from rice traders and fish suppliers to hotels serving Kuakata-bound tourists — SEO is essential for capturing online visibility. My Barisal SEO strategies focus on helping local businesses dominate Google Maps, rank for tourism-related keywords like "hotels near Kuakata" and "Barisal river tour," and optimize for both Bengali and English search queries. Whether you are a traditional boat-builder wanting to reach modern customers or a hotel owner wanting to attract more tourists, I create customized SEO strategies tailored to Barisal's unique river-based economy.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* === LOCAL SUCCESS STORIES === */}
+      <section className="relative py-16 px-4 bg-gray-50/50">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">Local Success</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Barisal <span className="text-primary">Case Studies</span>
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🐟</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Barisal Fisheries Wholesaler</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A Barisal-based freshwater fish wholesaler wanted to expand beyond local markets and reach buyers in Dhaka and Chittagong. We created a B2B SEO strategy targeting keywords like "freshwater fish supplier Bangladesh," "Barisal hilsa fish," and "best rui fish Bangladesh." By optimizing their website for wholesale search queries, building citations on food industry directories, and showcasing their sustainable fishing practices through content, the wholesaler saw a 200% increase in organic inquiries from Dhaka-based buyers within 4 months, leading to 8 new wholesale contracts.</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🏖️</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Kuakata Tourism Hotel SEO</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A hotel in Barisal city that serves tourists heading to Kuakata Sea Beach wanted to capture more online bookings. After optimizing their Google Business Profile with Kuakata-related keywords, creating blog content about "how to reach Kuakata from Barisal" and "best time to visit Kuakata," and adding high-quality photos of their rooms and local attractions, the hotel's organic traffic grew by 170% in 3 months. Their direct booking inquiries increased by 60%, with most new customers finding them through Google Maps searches for accommodation in the Barisal-Kuakata corridor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* === FAQ === */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -120,6 +163,7 @@ export default function BarisalClient() {
             { question: "Do you serve Barisal city and surrounding areas?", answer: "Yes, I provide SEO services for Barisal city and all surrounding areas including Barisal Sadar, Banaripara, Gournadi, and all upazillas across the Barisal division. My hyperlocal approach helps businesses in these regions attract more customers both locally and nationally." },
             { question: "What types of Barisal businesses benefit most from SEO?", answer: "Rice and crop traders, river transport companies, educational institutions, local retailers, hotels, restaurants, and real estate developers all benefit from SEO. I help Barisal businesses build a strong online presence and compete beyond their local markets." },
             { question: "How do I get started with SEO in Barisal?", answer: "Getting started is simple. Contact me through this page for a free SEO audit. I will analyze your current online presence, evaluate your competition in the Barisal market, and create a customized SEO strategy tailored to your business goals and target audience." },
+            { question: "How can tourism businesses in Barisal benefit from SEO?", answer: "Barisal's proximity to Kuakata Sea Beach and the Sundarbans creates excellent opportunities for tourism-focused SEO. Hotels, resorts, restaurants, and travel agencies can attract more customers by ranking for keywords like 'hotels near Kuakata,' 'Barisal to Kuakata tour packages,' and 'best resorts in Patuakhali.' I optimize Google Business Profiles, create destination-focused content, and build local citations to help Barisal tourism businesses capture this valuable search traffic." },
           ]} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
@@ -130,6 +174,7 @@ export default function BarisalClient() {
               { question: "Do you serve Barisal city and surrounding areas?", answer: "Yes, I provide SEO services for Barisal city and all surrounding areas including Barisal Sadar, Banaripara, Gournadi, and all upazillas across the Barisal division. My hyperlocal approach helps businesses in these regions attract more customers both locally and nationally." },
               { question: "What types of Barisal businesses benefit most from SEO?", answer: "Rice and crop traders, river transport companies, educational institutions, local retailers, hotels, restaurants, and real estate developers all benefit from SEO. I help Barisal businesses build a strong online presence and compete beyond their local markets." },
               { question: "How do I get started with SEO in Barisal?", answer: "Getting started is simple. Contact me through this page for a free SEO audit. I will analyze your current online presence, evaluate your competition in the Barisal market, and create a customized SEO strategy tailored to your business goals and target audience." },
+              { question: "How can tourism businesses in Barisal benefit from SEO?", answer: "Barisal's proximity to Kuakata Sea Beach and the Sundarbans creates excellent opportunities for tourism-focused SEO. Hotels, resorts, restaurants, and travel agencies can attract more customers by ranking for keywords like 'hotels near Kuakata,' 'Barisal to Kuakata tour packages,' and 'best resorts in Patuakhali.' I optimize Google Business Profiles, create destination-focused content, and build local citations to help Barisal tourism businesses capture this valuable search traffic." },
             ].map((f, i) => (
               <details key={i} className="py-4 group">
                 <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">

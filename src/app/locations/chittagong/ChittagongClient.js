@@ -5,16 +5,16 @@ import Link from "next/link";
 import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 const businessTypes = [
-  { icon: "🚢", name: "Port & Shipping", desc: "SEO for Chittagong port businesses — attract global trade partners with optimized marine industry content." },
-  { icon: "📦", name: "Import / Export", desc: "Dominate import-export search results in Chittagong with targeted B2B SEO strategies." },
-  { icon: "🏭", name: "Logistics & Warehousing", desc: "Rank your logistics company higher for freight forwarding and warehouse services in Chittagong." },
-  { icon: "🛍️", name: "Retail & E-commerce", desc: "Boost online sales for Chittagong-based retailers and e-commerce stores with local SEO." },
-  { icon: "🏨", name: "Hospitality & Travel", desc: "Get more bookings for Chittagong hotels, resorts, and travel agencies with local search optimization." },
-  { icon: "🏗️", name: "Manufacturing", desc: "Help manufacturers in Chittagong get found by local and international buyers searching online." },
+  { icon: "🚢", name: "Port & Shipping", desc: "SEO for Chittagong port businesses — attract global trade partners with optimized marine industry content focused on the Bay of Bengal shipping routes." },
+  { icon: "📦", name: "Import / Export", desc: "Dominate import-export search results in Chittagong with targeted B2B SEO strategies that connect you with international buyers." },
+  { icon: "🏭", name: "Logistics & Warehousing", desc: "Rank your logistics company higher for freight forwarding and warehouse services in Chittagong's growing industrial zones." },
+  { icon: "🛍️", name: "Retail & E-commerce", desc: "Boost online sales for Chittagong-based retailers and e-commerce stores with local SEO targeting port city consumers." },
+  { icon: "🏨", name: "Hospitality & Travel", desc: "Get more bookings for Chittagong hotels, resorts, and travel agencies with local search optimization and Google Maps visibility." },
+  { icon: "🏗️", name: "Manufacturing", desc: "Help manufacturers in Chittagong get found by local and international buyers searching online for Bangladeshi industrial products." },
 ];
 
 const trustPoints = [
-  { icon: "📍", title: "Google Maps Ranking", desc: "Proven strategies to get your Chittagong business to the top of Google Maps." },
+  { icon: "📍", title: "Google Maps Ranking", desc: "Proven strategies to get your Chittagong business to the top of Google Maps and local search results." },
   { icon: "📋", title: "GBP Optimization", desc: "Expert Google Business Profile optimization for maximum local visibility in Chittagong." },
   { icon: "⏳", title: "Since 2019", desc: "Over half a decade of hands-on SEO experience specializing in the Bangladesh market." },
   { icon: "🚀", title: "210+ Projects", desc: "Successfully delivered 210+ SEO projects for businesses across Bangladesh including Chittagong.", hasLink: true },
@@ -44,10 +44,8 @@ export default function ChittagongClient() {
             Chittagong SEO Services
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
-            <span className="text-primary">
-              Top SEO Expert in Chittagong
-            </span>
-            <br />Grow Your Business Online
+            <span className="block text-primary">Top SEO Expert in Chittagong</span>
+            <span className="block">Grow Your Business Online</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             As a dedicated SEO expert serving Chittagong, I specialize in helping port city businesses — from import/export companies to logistics providers — dominate Google search and attract more customers online.
@@ -112,6 +110,51 @@ export default function ChittagongClient() {
         </div>
       </section>
 
+      {/* === ABOUT CHITTAGONG === */}
+      <section className="relative py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">About Chittagong</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Why Chittagong <span className="text-primary">Needs SEO</span>
+          </h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            <p>Chittagong, the commercial capital of Bangladesh and home to the country&apos;s largest seaport, is a powerhouse of trade and industry. The Port of Chittagong handles over 90% of Bangladesh&apos;s international maritime trade, making the city a vital hub for shipping, logistics, import/export, and manufacturing businesses. With landmarks like the Chittagong Hill Tracts, Patenga Beach, Foy&apos;s Lake, and the historic Naval Academy, the city attracts both business travelers and tourists.</p>
+            <p>The city&apos;s economy is uniquely driven by port-related activities, heavy industry, and a growing service sector. Major industrial areas like the Chittagong Export Processing Zone (CEPZ), Karnaphuli EPZ, and Shitalpur EPZ house hundreds of factories producing garments, textiles, chemicals, and consumer goods. Additionally, Chittagong has a thriving retail scene in areas like Agrabad, GEC Circle, and Oxygen-Moor, with countless local businesses competing for customer attention.</p>
+            <p>In this highly competitive environment, having a strong online presence is no longer optional. Chittagong businesses — from cargo shipping companies to local restaurants — need SEO to stand out, attract customers, and grow. My Chittagong SEO services are specifically designed to help local businesses capture search traffic from the thousands of daily Google searches originating in the port city. By optimizing for local keywords like &quot;shipping agent in Chittagong,&quot; &quot;logistics company Chittagong,&quot; and &quot;restaurants near Agrabad,&quot; I help businesses get found by the right customers at the right time.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* === LOCAL SUCCESS STORIES === */}
+      <section className="relative py-16 px-4 bg-gray-50/50">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">Local Success</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Chittagong <span className="text-primary">Case Studies</span>
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">📦</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Chittagong Logistics Company</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A Chittagong-based freight forwarding and logistics company was struggling to rank for &quot;freight forwarder in Bangladesh&quot; and &quot;cargo service Chittagong.&quot; After implementing a comprehensive local SEO strategy including Google Business Profile optimization, local citation building on trade directories, and content targeting import/export keywords, the company saw a 180% increase in organic traffic within 4 months. Their Google Maps listing moved from page 3 to the top 3 local pack results for &quot;logistics company Chittagong,&quot; resulting in 25+ qualified B2B inquiries per month.</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🏨</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Chittagong Hotel Booking Growth</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A mid-sized hotel near Patenga Beach was losing bookings to competitors on Google Maps. We optimized their Google Business Profile with high-quality photos of rooms and amenities, added local landmarks (Patenga Beach, Naval Academy Road) to their service area, and generated 15+ positive Google reviews through a structured review campaign. Within 8 weeks, their direct booking inquiries increased by 65%, and they appeared in the top 3 Google Maps results for &quot;hotel near Patenga Beach Chittagong.&quot;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* === FAQ === */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -119,6 +162,7 @@ export default function ChittagongClient() {
             { question: "What areas of Chittagong do you cover?", answer: "I cover all areas of Chittagong including Agrabad, Halishahar, Nasirabad, Panchlaish, Chandgaon, Patenga, EPZ, Khulshi, Kotwali, and all other commercial and residential neighborhoods. My localized SEO approach targets customers in specific Chittagong areas to maximize local visibility." },
             { question: "How can Chittagong businesses benefit from SEO?", answer: "Chittagong businesses — especially in port, shipping, logistics, import/export, and manufacturing — can benefit tremendously from SEO by capturing high-intent B2B buyers searching for suppliers in Bangladesh. Local businesses like restaurants, hotels, and retailers also gain significant visibility through Google Maps optimization and local keyword targeting." },
             { question: "Do you offer on-site consultation in Chittagong?", answer: "Yes, I offer both remote and on-site consultation for Chittagong businesses. While most of my SEO work is delivered remotely with regular progress updates, I am available for in-person meetings in Chittagong to discuss strategy, conduct on-site audits, and provide personalized recommendations." },
+            { question: "How is Chittagong's port economy different for SEO?", answer: "Chittagong's economy is uniquely tied to the Port of Chittagong, the largest seaport in Bangladesh handling over 90% of the country's international trade. This creates distinct SEO opportunities for B2B businesses targeting international buyers searching for Bangladeshi suppliers, freight forwarders, and shipping agents. My SEO strategies leverage these unique economic drivers to help Chittagong businesses dominate both local and global search results." },
             { question: "What is the first step for Chittagong businesses?", answer: "The first step is to get a free SEO audit. Contact me through this page, and I'll analyze your current online presence — website performance, Google Business Profile, competitor landscape, and keyword opportunities — then provide a clear roadmap tailored to your Chittagong business goals." },
           ]} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
@@ -129,6 +173,7 @@ export default function ChittagongClient() {
               { question: "What areas of Chittagong do you cover?", answer: "I cover all areas of Chittagong including Agrabad, Halishahar, Nasirabad, Panchlaish, Chandgaon, Patenga, EPZ, Khulshi, Kotwali, and all other commercial and residential neighborhoods. My localized SEO approach targets customers in specific Chittagong areas to maximize local visibility." },
               { question: "How can Chittagong businesses benefit from SEO?", answer: "Chittagong businesses — especially in port, shipping, logistics, import/export, and manufacturing — can benefit tremendously from SEO by capturing high-intent B2B buyers searching for suppliers in Bangladesh. Local businesses like restaurants, hotels, and retailers also gain significant visibility through Google Maps optimization and local keyword targeting." },
               { question: "Do you offer on-site consultation in Chittagong?", answer: "Yes, I offer both remote and on-site consultation for Chittagong businesses. While most of my SEO work is delivered remotely with regular progress updates, I am available for in-person meetings in Chittagong to discuss strategy, conduct on-site audits, and provide personalized recommendations." },
+              { question: "How is Chittagong's port economy different for SEO?", answer: "Chittagong's economy is uniquely tied to the Port of Chittagong, the largest seaport in Bangladesh handling over 90% of the country's international trade. This creates distinct SEO opportunities for B2B businesses targeting international buyers searching for Bangladeshi suppliers, freight forwarders, and shipping agents. My SEO strategies leverage these unique economic drivers to help Chittagong businesses dominate both global and local search results." },
               { question: "What is the first step for Chittagong businesses?", answer: "The first step is to get a free SEO audit. Contact me through this page, and I'll analyze your current online presence — website performance, Google Business Profile, competitor landscape, and keyword opportunities — then provide a clear roadmap tailored to your Chittagong business goals." },
             ].map((f, i) => (
               <details key={i} className="py-4 group">

@@ -2,18 +2,18 @@ import RajshahiClient from "./RajshahiClient";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Local SEO Rajshahi — Md Kanok Miah | SEO Expert Dhaka",
-  description: "Professional local SEO services in Rajshahi, Bangladesh. Rank higher on Google Maps and attract more customers with expert local SEO.",
+  title: "Local SEO Rajshahi — Md Kanok Miah | SEO Expert in Rajshahi",
+  description: "Professional local SEO services in Rajshahi, Bangladesh. Help mango exporters, educational institutions, and local businesses rank on Google Maps. Expert Rajshahi SEO solutions.",
   alternates: { canonical: "https://kanokmiah.com.bd/locations/rajshahi" },
   openGraph: {
-    title: "Local SEO Rajshahi — Md Kanok Miah | SEO Expert Dhaka",
-    description: "Professional local SEO services in Rajshahi, Bangladesh. Get found on Google Maps and attract more customers in Rajshahi city.",
+    title: "Local SEO Rajshahi — Md Kanok Miah | SEO Expert in Rajshahi",
+    description: "Professional local SEO services in Rajshahi, Bangladesh. Get found on Google Maps for your Rajshahi business — from mango export to coaching centers.",
     url: "https://kanokmiah.com.bd/locations/rajshahi",
-    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 400, height: 400, alt: "Md Kanok Miah — SEO Expert Dhaka" }],
+    images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 1200, height: 630, alt: "Md Kanok Miah — SEO Expert Rajshahi" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO Rajshahi — Md Kanok Miah | SEO Expert Dhaka",
+    title: "Local SEO Rajshahi — Md Kanok Miah | SEO Expert in Rajshahi",
     description: "Professional local SEO services in Rajshahi, Bangladesh.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
@@ -26,10 +26,10 @@ const locationSchema = {
   url: "https://kanokmiah.com.bd/locations/rajshahi",
   telephone: "+880-1604-809110",
   email: "mdkanokmiah232@gmail.com",
-  description: "Local SEO services in Rajshahi, Bangladesh. Expert SEO solutions for Rajshahi businesses.",
+  description: "Local SEO services in Rajshahi, Bangladesh. Expert SEO solutions for Rajshahi businesses including mango export and educational institutions.",
   image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
   address: { "@type": "PostalAddress", streetAddress: "Rajshahi", addressLocality: "Rajshahi", addressCountry: "BD" },
-  geo: { "@type": "GeoCoordinates", latitude: "24.3745", longitude: "88.6042" },
+  geo: { "@type": "GeoCoordinates", latitude: "24.3733", longitude: "88.6049" },
   areaServed: ["Rajshahi", "Bangladesh"],
   priceRange: "$$",
 };

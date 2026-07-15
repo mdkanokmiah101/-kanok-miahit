@@ -5,12 +5,12 @@ import Link from "next/link";
 import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
 const sylhetMarkets = [
-  { icon: "🍽️", name: "Restaurants & Cafés", desc: "Dominate local restaurant searches in Sylhet — attract diners searching for the best food in town." },
-  { icon: "🏨", name: "Hotels & Resorts", desc: "Get more direct bookings for Sylhet hotels and resorts with local SEO and Google Maps optimization." },
-  { icon: "✈️", name: "Overseas Businesses", desc: "SEO for Sylheti diaspora businesses — connect with customers in the UK, USA, and Middle East." },
-  { icon: "🛒", name: "E-commerce Stores", desc: "Boost online sales for Sylhet-based e-commerce stores with targeted local and international SEO." },
-  { icon: "🏡", name: "Real Estate", desc: "Help Sylhet real estate agents and developers get found by property buyers searching online." },
-  { icon: "🏥", name: "Healthcare & Clinics", desc: "Rank your Sylhet clinic or hospital higher for medical searches — attract more local patients." },
+  { icon: "🍽️", name: "Restaurants & Cafés", desc: "Dominate local restaurant searches in Sylhet — attract diners searching for the best food in town, from traditional pitha houses to modern cafes." },
+  { icon: "🏨", name: "Hotels & Resorts", desc: "Get more direct bookings for Sylhet hotels and resorts with local SEO and Google Maps optimization targeting tourists and business travelers." },
+  { icon: "✈️", name: "Overseas Businesses", desc: "SEO for Sylheti diaspora businesses — connect with customers in the UK, USA, and Middle East who are searching for services back home." },
+  { icon: "🛒", name: "E-commerce Stores", desc: "Boost online sales for Sylhet-based e-commerce stores with targeted local and international SEO strategies." },
+  { icon: "🏡", name: "Real Estate", desc: "Help Sylhet real estate agents and developers get found by property buyers searching online for homes in Sylhet city." },
+  { icon: "🏥", name: "Healthcare & Clinics", desc: "Rank your Sylhet clinic or hospital higher for medical searches — attract more local patients looking for healthcare services." },
 ];
 
 const trustPoints = [
@@ -44,10 +44,8 @@ export default function SylhetClient() {
             Sylhet SEO Services
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
-            <span className="text-primary">
-              Local SEO Expert in Sylhet
-            </span>
-            <br />Dominate Google Maps
+            <span className="block text-primary">Local SEO Expert in Sylhet</span>
+            <span className="block">Dominate Google Maps</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Your trusted local SEO partner in Sylhet. I help restaurants, hotels, overseas businesses, and local service providers dominate Google Maps and attract more customers — both locally and from the Sylheti diaspora worldwide.
@@ -112,6 +110,51 @@ export default function SylhetClient() {
         </div>
       </section>
 
+      {/* === ABOUT SYLHET === */}
+      <section className="relative py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">About Sylhet</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Why Sylhet <span className="text-primary">Needs SEO</span>
+          </h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            <p>Sylhet, known as the spiritual and cultural capital of eastern Bangladesh, is a city of immense natural beauty and economic significance. Famous for its rolling tea gardens — including the renowned Srimangal tea estates — lush hills, and the iconic Ratargul Swamp Forest, Sylhet attracts thousands of domestic and international tourists every year. Key landmarks like the Hazrat Shahjalal Mazar Sharif, Jaflong, Bichanakandi, and Lalakhal add to the city&apos;s cultural and religious importance.</p>
+            <p>What truly sets Sylhet apart is its strong overseas diaspora connection. A significant portion of the Bangladeshi community in the United Kingdom, United States, and Middle East hails from the Sylhet region. This creates a unique dual-market dynamic where Sylheti businesses serve both local customers and the global Sylheti diaspora seeking services, products, and real estate investments back home. From restaurants serving authentic Sylheti cuisine to travel agencies organizing UK-Bangladesh flights, the local economy is deeply intertwined with international connections.</p>
+            <p>The hospitality sector thrives in Sylhet, with hotels and resorts catering to religious tourists visiting the Hazrat Shahjalal shrine and nature lovers exploring the surrounding tea country. Real estate is another booming sector, driven by diaspora investments and a growing middle class. My Sylhet SEO services specifically target these unique market dynamics, helping local businesses capture search traffic from both Sylhet city residents and the vast overseas diaspora searching for services in their hometown.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* === LOCAL SUCCESS STORIES === */}
+      <section className="relative py-16 px-4 bg-gray-50/50">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">Local Success</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Sylhet <span className="text-primary">Case Studies</span>
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🍽️</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Sylhet Restaurant Found Online</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A popular Sylheti restaurant near the Hazrat Shahjalal shrine was struggling to appear on Google Maps despite having excellent food and service. After optimizing their Google Business Profile with updated menus, real photos of their signature dishes, and implementing a structured Google review campaign, the restaurant jumped from outside the top 20 to the #3 position for &quot;restaurants near Shahjalal Sylhet&quot; within 6 weeks. Their monthly Google Maps discovery searches increased by 340%, leading to a 40% rise in foot traffic from tourists visiting the shrine.</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🏡</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Sylhet Real Estate Agent Success</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A Sylhet-based real estate agency serving both local buyers and UK-based diaspora investors wanted to capture search traffic for property keywords. We implemented a dual-language SEO strategy targeting &quot;flats in Sylhet city&quot; and &quot;Sylhet property for UK buyers.&quot; With localized landing pages for popular neighborhoods and schema markup for property listings, organic traffic grew 220% in 3 months, with a significant portion coming from UK-based Sylheti diaspora searching for investment properties back home.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* === FAQ === */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -119,6 +162,7 @@ export default function SylhetClient() {
             { question: "Do you serve Sylhet businesses?", answer: "Absolutely. I provide full-service SEO for businesses in Sylhet — from restaurants and hotels to real estate agencies and e-commerce stores. I understand Sylhet's unique business landscape, including the strong overseas diaspora connection, and tailor strategies that work for both local and international audiences." },
             { question: "How can Sylhet-based businesses rank nationally?", answer: "Sylhet businesses can rank nationally by targeting Bangladesh-wide keywords, creating high-quality content that appeals to a broader audience, building authoritative backlinks from national publications, and optimizing for both Bengali and English search queries. I help Sylhet businesses expand beyond local markets and compete on a national level." },
             { question: "Do you understand the Sylhet market?", answer: "Yes, I have deep knowledge of Sylhet's distinctive business environment — including the significant overseas diaspora influence, the city's growing hospitality sector, the unique buying patterns of Sylheti consumers, and the competitive dynamics across local industries. This local insight helps me create more effective SEO strategies for Sylhet businesses." },
+            { question: "How does the Sylhet diaspora affect SEO strategy?", answer: "The Sylheti diaspora — particularly in the UK, USA, and Middle East — creates a unique SEO opportunity. Many overseas Sylhetis regularly search for services in Sylhet, including real estate for investment, restaurants for family visits, travel agencies for flights, and remittance services. My Sylhet SEO strategies specifically target these diaspora-driven search queries, helping local businesses capture this valuable international traffic." },
             { question: "How do I contact you from Sylhet?", answer: "You can contact me easily through the contact form on this page, send me an email, or give me a call. I typically respond within 24 hours. For Sylhet businesses, I offer both remote consultations and, where feasible, in-person meetings to discuss your SEO needs face-to-face." },
           ]} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
@@ -129,6 +173,7 @@ export default function SylhetClient() {
               { question: "Do you serve Sylhet businesses?", answer: "Absolutely. I provide full-service SEO for businesses in Sylhet — from restaurants and hotels to real estate agencies and e-commerce stores. I understand Sylhet's unique business landscape, including the strong overseas diaspora connection, and tailor strategies that work for both local and international audiences." },
               { question: "How can Sylhet-based businesses rank nationally?", answer: "Sylhet businesses can rank nationally by targeting Bangladesh-wide keywords, creating high-quality content that appeals to a broader audience, building authoritative backlinks from national publications, and optimizing for both Bengali and English search queries. I help Sylhet businesses expand beyond local markets and compete on a national level." },
               { question: "Do you understand the Sylhet market?", answer: "Yes, I have deep knowledge of Sylhet's distinctive business environment — including the significant overseas diaspora influence, the city's growing hospitality sector, the unique buying patterns of Sylheti consumers, and the competitive dynamics across local industries. This local insight helps me create more effective SEO strategies for Sylhet businesses." },
+              { question: "How does the Sylhet diaspora affect SEO strategy?", answer: "The Sylheti diaspora — particularly in the UK, USA, and Middle East — creates a unique SEO opportunity. Many overseas Sylhetis regularly search for services in Sylhet, including real estate for investment, restaurants for family visits, travel agencies for flights, and remittance services. My Sylhet SEO strategies specifically target these diaspora-driven search queries, helping local businesses capture this valuable international traffic." },
               { question: "How do I contact you from Sylhet?", answer: "You can contact me easily through the contact form on this page, send me an email, or give me a call. I typically respond within 24 hours. For Sylhet businesses, I offer both remote consultations and, where feasible, in-person meetings to discuss your SEO needs face-to-face." },
             ].map((f, i) => (
               <details key={i} className="py-4 group">

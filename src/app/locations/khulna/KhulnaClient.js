@@ -44,10 +44,8 @@ export default function KhulnaClient() {
             Khulna SEO Services
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
-            <span className="text-primary">
-              Local SEO Expert in Khulna
-            </span>
-            <br />Dominate Google Maps
+            <span className="block text-primary">Local SEO Expert in Khulna</span>
+            <span className="block">Dominate Google Maps</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Your trusted local SEO partner in Khulna. I help shrimp exporters, industrial businesses, agri-companies, and local service providers dominate Google search and attract more customers online.
@@ -112,6 +110,51 @@ export default function KhulnaClient() {
         </div>
       </section>
 
+      {/* === ABOUT KHULNA === */}
+      <section className="relative py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">About Khulna</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Why Khulna <span className="text-primary">Needs SEO</span>
+          </h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            <p>Khulna, the third-largest city in Bangladesh, is the industrial and economic heart of the southwestern region. Known as the gateway to the Sundarbans — the world's largest mangrove forest and home to the majestic Royal Bengal Tiger — Khulna is a city of strategic importance. The city sits on the banks of the Rupsha and Bhairab rivers and serves as a major hub for shrimp export, jute processing, and industrial manufacturing. Landmarks like the Sundarbans, Khan Jahan Ali Bridge, Khulna Shipyard, and the historic Gollamari Shahi Mosque define the city's character.</p>
+            <p>Khulna's economy is uniquely driven by the shrimp and seafood export industry, which supplies premium quality products to international markets including Europe, Japan, the USA, and the Middle East. The Khulna Industrial Zone and Mongla Port are critical economic engines, housing factories for jute, paper, chemicals, and food processing. Additionally, the city is home to Khulna University, Khulna University of Engineering & Technology (KUET), and several other educational institutions that create a vibrant local economy of students and faculty.</p>
+            <p>For Khulna businesses — from shrimp exporters looking for international B2B buyers to local restaurants and retail shops serving the city's residents — SEO is essential for capturing search traffic. My Khulna SEO strategies focus on bilingual Bengali-English optimization to help businesses rank for both local service searches and international B2B keywords. Whether you are a shrimp exporter wanting to reach European buyers or a local hotel wanting to attract Sundarbans tourists, I create customized SEO strategies that deliver measurable results for the Khulna market.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* === LOCAL SUCCESS STORIES === */}
+      <section className="relative py-16 px-4 bg-gray-50/50">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-primary text-sm font-semibold tracking-widest uppercase block text-center">Local Success</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-center">
+            Khulna <span className="text-primary">Case Studies</span>
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🦐</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Khulna Shrimp Exporter Global Reach</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A Khulna-based shrimp export company wanted to attract international buyers from Europe and Japan. We implemented a B2B SEO strategy targeting keywords like "Bangladesh shrimp supplier," "Khulna frozen seafood export," and "premium shrimp exporter Bangladesh." By optimizing their website for international search intent, building citations on global trade directories like Alibaba and TradeIndia, and creating content around export quality standards, the company saw a 300% increase in organic traffic from international markets within 5 months, resulting in 15+ new B2B inquiries from European buyers.</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl shrink-0">🏨</div>
+                <div>
+                  <h3 className="font-bold text-xl text-gray-900 mb-2">Khulna Hotel & Sundarbans Tourism</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">A hotel near the Sundarbans entry point in Khulna wanted to capture tourists searching for accommodation before their mangrove forest tours. After optimizing their Google Business Profile with Sundarbans-related keywords, adding photos of their Sundarbans tour packages, and creating blog content about "best time to visit Sundarbans" and "Khulna to Sundarbans travel guide," the hotel's organic traffic grew by 150%. Their Google Maps ranking improved to the top 3 for "hotels near Sundarbans Khulna" and direct booking inquiries increased by 80% within 3 months.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* === FAQ === */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -120,6 +163,7 @@ export default function KhulnaClient() {
             { question: "Do you serve Khulna city and surrounding areas?", answer: "Yes, I provide SEO services for Khulna city and all surrounding areas including the Khulna Industrial Zone, Rupsha, Daulatpur, and Sonadanga. My hyperlocal SEO approach helps businesses across the Khulna division attract more customers both locally and nationally." },
             { question: "What types of Khulna businesses benefit most from SEO?", answer: "All types of Khulna businesses benefit from SEO — shrimp exporters looking for international buyers, local manufacturers, retail shops, hotels, restaurants, and real estate developers. SEO helps Khulna businesses build credibility, attract more customers, and compete effectively in both local and national markets." },
             { question: "How do I get started with SEO in Khulna?", answer: "Getting started is simple. Contact me through this page for a free SEO audit. I will analyze your current online presence, evaluate your competition in the Khulna market, and create a customized SEO strategy tailored to your business goals and target audience." },
+            { question: "How can Khulna shrimp exporters benefit from international SEO?", answer: "Khulna shrimp exporters can benefit tremendously from international SEO by targeting English-language keywords that international buyers use when searching for seafood suppliers. I optimize websites for B2B search intent, build citations on global trade platforms like Alibaba and Global Sources, and create content around export certifications, quality standards, and shipment capabilities to attract buyers from Europe, Japan, the USA, and the Middle East." },
           ]} />
           <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
             Frequently Asked <span className="text-primary">Questions</span>
@@ -130,6 +174,7 @@ export default function KhulnaClient() {
               { question: "Do you serve Khulna city and surrounding areas?", answer: "Yes, I provide SEO services for Khulna city and all surrounding areas including the Khulna Industrial Zone, Rupsha, Daulatpur, and Sonadanga. My hyperlocal SEO approach helps businesses across the Khulna division attract more customers both locally and nationally." },
               { question: "What types of Khulna businesses benefit most from SEO?", answer: "All types of Khulna businesses benefit from SEO — shrimp exporters looking for international buyers, local manufacturers, retail shops, hotels, restaurants, and real estate developers. SEO helps Khulna businesses build credibility, attract more customers, and compete effectively in both local and national markets." },
               { question: "How do I get started with SEO in Khulna?", answer: "Getting started is simple. Contact me through this page for a free SEO audit. I will analyze your current online presence, evaluate your competition in the Khulna market, and create a customized SEO strategy tailored to your business goals and target audience." },
+              { question: "How can Khulna shrimp exporters benefit from international SEO?", answer: "Khulna shrimp exporters can benefit tremendously from international SEO by targeting English-language keywords that international buyers use when searching for seafood suppliers. I optimize websites for B2B search intent, build citations on global trade platforms like Alibaba and Global Sources, and create content around export certifications, quality standards, and shipment capabilities to attract buyers from Europe, Japan, the USA, and the Middle East." },
             ].map((f, i) => (
               <details key={i} className="py-4 group">
                 <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">

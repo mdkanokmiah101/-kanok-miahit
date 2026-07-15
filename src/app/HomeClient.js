@@ -93,8 +93,7 @@ export default function HomeClient() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.08] mb-4 lg:mb-6">
               <span className="text-primary">Best SEO Expert</span>
-              <br />
-              <span className="text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
+              <span className="block text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
             </h1>
             <p className="text-gray-700 text-lg mb-8 leading-relaxed">
               Your competitors are ranking. You&apos;re not. That&apos;s not bad luck — that&apos;s a fixable problem. I&apos;m <strong className="text-gray-900">Md Kanok Miah</strong>, <strong className="text-gray-900">the best SEO expert in Dhaka, Bangladesh</strong> who has run <strong className="text-gray-900">210+ SEO campaigns</strong> across e-commerce, local businesses — and I don&apos;t do cookie-cutter strategies. I build what your specific business needs to win on Google, on AI search, and everywhere in between. <strong className="text-gray-900">6 years</strong>. Real results. No vanity metrics. Let&apos;s fix your rankings — starting today.

@@ -531,6 +531,37 @@ export default function BlogPostClient() {
         </div>
       </section>
 
+      {/* Related Posts */}
+      <section className="py-16 px-4 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8">
+            Related <span className="text-primary">Articles</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {(() => {
+              const currentSlug = slug;
+              const related = posts
+                .filter(p => p.slug !== currentSlug)
+                .sort(() => 0.5 - Math.random())
+                .slice(0, 3);
+              return related.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group bg-white rounded-2xl p-6 border border-gray-100 transition-all hover:shadow-lg hover:-translate-y-1"
+                >
+                  <span className="text-3xl mb-3 block">{post.imagePlaceholder || "📝"}</span>
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-xs text-gray-500 mt-2">{post.date}</p>
+                </Link>
+              ));
+            })()}
+          </div>
+        </div>
+      </section>
+
       {/* Author Bio */}
       <div className="bg-gray-50 border-y border-gray-100 py-12 px-4">
         <div className="max-w-4xl mx-auto flex items-start gap-6">

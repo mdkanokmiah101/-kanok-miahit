@@ -92,7 +92,7 @@ export default function HomeClient() {
               #1 SEO Expert in Bangladesh
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.08] mb-4 lg:mb-6">
-              <span className="text-primary">Best SEO Expert</span>
+              <span className="text-primary">Best SEO Expert</span>{' '}
               <span className="block text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
             </h1>
             <p className="text-gray-700 text-lg mb-8 leading-relaxed">

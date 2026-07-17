@@ -39,9 +39,9 @@ export default function DhakaClient() {
       <Navbar />
 
       {/* === HERO === */}
-      <section className="relative pt-32 pb-16 px-4 overflow-hidden">
-        <div className="absolute top-1/3 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-pulse delay-1000" />
+      <section className="relative pt-24 md:pt-32 pb-16 px-4 overflow-hidden">
+        <div className="absolute top-1/3 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse hidden md:block" />
+        <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-pulse delay-1000 hidden md:block" />
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-primary-light border border-primary/20 text-primary text-xs font-semibold px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
@@ -80,7 +80,7 @@ export default function DhakaClient() {
       {/* === DIRECT ANSWER BOX === */}
       <section className="relative py-12 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-3xl p-8 md:p-10 text-center shadow-lg">
+          <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-3xl p-6 md:p-10 text-center shadow-lg">
             <div className="text-5xl mb-4">🎯</div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
               The <span className="text-primary">Best SEO Services in Dhaka 2026</span> — Direct & Transparent
@@ -151,7 +151,7 @@ export default function DhakaClient() {
 
       {/* === SEO INVESTMENT & PACKAGES === */}
       <section className="relative py-16 px-4">
-        <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl hidden md:block" />
         <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">Investment</span>
@@ -207,7 +207,7 @@ export default function DhakaClient() {
                 popular: false,
               },
             ].map((pkg, i) => (
-              <div key={i} className={`relative bg-white border ${pkg.popular ? "border-primary shadow-xl shadow-primary/10 ring-2 ring-primary" : "border-gray-100"} rounded-2xl p-8 hover:shadow-lg transition-all`}>
+              <div key={i} className={`relative bg-white border ${pkg.popular ? "border-primary shadow-xl shadow-primary/10 ring-2 ring-primary" : "border-gray-100"} rounded-2xl p-6 md:p-8 hover:shadow-lg transition-all`}>
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 rounded-full">
                     Most Popular
@@ -304,7 +304,7 @@ export default function DhakaClient() {
 
       {/* === বাংলা সেকশন === */}
       <section className="relative py-16 px-4" lang="bn">
-        <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-primary/10 rounded-full blur-3xl hidden md:block" />
         <div className="relative max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">বাংলা</span>
@@ -313,7 +313,7 @@ export default function DhakaClient() {
             </h2>
           </div>
 
-          <div className="bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-lg mb-8">
+          <div className="bg-white border border-gray-100 rounded-3xl p-6 md:p-10 shadow-lg mb-8">
             <p className="text-gray-700 text-lg leading-relaxed mb-6 text-justify">
               ঢাকা বাংলাদেশের ব্যবসার প্রাণকেন্দ্র। গুলশান, বনানী, মিরপুর, উত্তরা, ধানমন্ডি সহ প্রতিটি এলাকায় অসংখ্য ব্যবসা প্রতিদিন তাদের অনলাইন উপস্থিতি বাড়ানোর জন্য প্রতিযোগিতা করছে। কিন্তু গুগলে ভালো র‌্যাংক করা সহজ নয় — এর জন্য দরকার সঠিক কৌশল, সঠিক পরিকল্পনা এবং স্থানীয় বাজার সম্পর্কে গভীর ধারণা। আমি ঢাকার প্রতিটি এলাকার জন্য আলাদাভাবে এসইও স্ট্র্যাটেজি তৈরি করি, যাতে আপনার ব্যবসা সঠিক গ্রাহকদের কাছে পৌঁছাতে পারে।
             </p>
@@ -375,7 +375,7 @@ export default function DhakaClient() {
 
       {/* === WHY CHOOSE ME === */}
       <section className="relative py-16 px-4">
-        <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl hidden md:block" />
         <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">Why Trust Me</span>
@@ -519,9 +519,9 @@ export default function DhakaClient() {
       </section>
 
       {/* === CTA === */}
-      <section className="relative py-24 px-4 overflow-hidden">
+      <section className="relative py-16 md:py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-primary/20 to-primary/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-primary/20 to-primary/20 rounded-full blur-3xl hidden md:block" />
         <div className="relative max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white">
             Get Free <span className="text-amber-300">Dhaka SEO Audit</span>

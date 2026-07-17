@@ -32,6 +32,22 @@ const locationSchema = {
   geo: { "@type": "GeoCoordinates", latitude: "23.8103", longitude: "90.4125" },
   areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi"],
   priceRange: "$$",
+  dateModified: "2026-07-17",
+  sameAs: [
+    "https://www.facebook.com/mdkanokmiahweb",
+    "https://bd.linkedin.com/in/kanok-miah",
+    "https://www.youtube.com/@kanokmiah"
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    bestRating: "5",
+    ratingCount: "108"
+  },
+  openingHours: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "09:00", closes: "18:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday"], opens: "10:00", closes: "16:00" }
+  ],
 };
 
 export default function DhakaPage() {

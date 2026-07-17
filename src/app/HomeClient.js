@@ -307,7 +307,7 @@ export default function HomeClient({ faqs = [] }) {
               <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">About Me</span>
               <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6 text-gray-900">
                 <span className="text-primary">Kanok Miah</span><br />
-                SEO Expert Since 2019
+                The Best SEO Expert in Dhaka Since 2019
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
@@ -415,7 +415,7 @@ export default function HomeClient({ faqs = [] }) {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Why Choose Me</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Why I'm the <span className="text-primary">Best SEO Expert in Dhaka</span></h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Why Hire the Best SEO Expert in <span className="text-primary">Dhaka</span>?</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">Since 2019, mastering SEO for the Bangladesh market. Here&apos;s what sets me apart.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -433,6 +433,23 @@ export default function HomeClient({ faqs = [] }) {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === বাংলা === */}
+      <section className="py-16 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+            ঢাকার ব্যবসার জন্য <span className="text-primary">সেরা এসইও</span>
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed" lang="bn">
+            আমি কানক মিয়া, ঢাকায় কর্মরত একজন অভিজ্ঞ এসইও বিশেষজ্ঞ। ২০১৯ সাল থেকে ২১০টিরও বেশি প্রকল্পে কাজ করে আমি বাংলাদেশী ব্যবসাগুলোকে গুগলে ভালো র‌্যাংক করতে সাহায্য করছি। আপনার ব্যবসাও কি অনলাইনে ভালো ফলাফল চায়? আজই ফ্রি এসইও অডিটের জন্য যোগাযোগ করুন।
+          </p>
+          <div className="mt-6">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all">
+              ফ্রি এসইও অডিট নিন <span>→</span>
+            </Link>
           </div>
         </div>
       </section>

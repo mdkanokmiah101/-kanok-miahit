@@ -2,6 +2,47 @@ import HomeClient from "./HomeClient";
 import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 import { homepageFaqs } from "./faq-data";
 
+const homePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Md Kanok Miah — SEO Expert Dhaka",
+  url: "https://kanokmiah.com.bd",
+  telephone: "+880-1604-809110",
+  email: "mdkanokmiah232@gmail.com",
+  description:
+    "Best SEO expert in Dhaka, Bangladesh. 6+ years experience, 210+ successful SEO campaigns.",
+  image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Mirpur, Dhaka",
+    addressLocality: "Dhaka",
+    addressCountry: "BD",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: "23.8103", longitude: "90.4125" },
+  priceRange: "$$",
+  areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Bangladesh"],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    bestRating: "5",
+    ratingCount: "108",
+  },
+  openingHours: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday"],
+      opens: "10:00",
+      closes: "16:00",
+    },
+  ],
+};
+
 export const metadata = {
   title: "Best SEO Expert in Dhaka & Bangladesh | Kanok Miah",
   description:
@@ -67,6 +108,10 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema) }}
+      />
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "SEO Expert Dhaka", url: "https://kanokmiah.com.bd" },

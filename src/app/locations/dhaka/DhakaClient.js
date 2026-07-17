@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
 
@@ -189,14 +190,7 @@ export default function DhakaClient() {
       </section>
 
       {/* === FOOTER === */}
-      <footer className="py-8 border-t border-gray-100 text-center text-sm text-gray-500">
-        <p>© 2026 <span className="text-primary font-bold">Kanok Miah</span> — SEO Expert in Bangladesh. All rights reserved.</p>
-        <div className="mt-3 flex items-center justify-center gap-4 text-xs">
-          <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-          <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-          <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

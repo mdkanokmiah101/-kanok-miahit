@@ -166,7 +166,7 @@ export default function DhakaClient() {
             {[
               {
                 name: "Basic",
-                price: "Locale",
+                price: "15,000 BDT",
                 sub: "Perfect for small businesses starting with local SEO",
                 features: [
                   "Google Business Profile optimization",
@@ -179,7 +179,7 @@ export default function DhakaClient() {
               },
               {
                 name: "Standard",
-                price: "Growth",
+                price: "25,000 BDT",
                 sub: "Ideal for businesses ready to scale their online presence",
                 features: [
                   "Everything in Basic, plus:",
@@ -193,7 +193,7 @@ export default function DhakaClient() {
               },
               {
                 name: "Premium",
-                price: "Enterprise",
+                price: "40,000 BDT",
                 sub: "For multi-location businesses & aggressive growth targets",
                 features: [
                   "Everything in Standard, plus:",

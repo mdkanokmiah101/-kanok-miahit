@@ -1,6 +1,45 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   metadataBase: new URL('https://kanokmiah.com.bd'),
+  async redirects() {
+    return [
+      {
+        source: '/locations/chittagong',
+        destination: '/locations/dhaka',
+        permanent: true,
+      },
+      {
+        source: '/locations/sylhet',
+        destination: '/locations/dhaka',
+        permanent: true,
+      },
+      {
+        source: '/locations/khulna',
+        destination: '/locations/dhaka',
+        permanent: true,
+      },
+      {
+        source: '/locations/rajshahi',
+        destination: '/locations/dhaka',
+        permanent: true,
+      },
+      {
+        source: '/locations/barisal',
+        destination: '/locations/dhaka',
+        permanent: true,
+      },
+      {
+        source: '/locations/rangpur',
+        destination: '/locations/dhaka',
+        permanent: true,
+      },
+      {
+        source: '/locations/mymensingh',
+        destination: '/locations/dhaka',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

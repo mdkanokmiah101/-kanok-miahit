@@ -108,19 +108,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 5 - Locations */}
+          {/* Column 5 - Location */}
           <div>
-            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Top Locations</h4>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Service Areas</h4>
             <ul className="space-y-3 text-sm">
               {[
                 { name: "Dhaka", path: "/locations/dhaka" },
-                { name: "Chittagong", path: "/locations/chittagong" },
-                { name: "Sylhet", path: "/locations/sylhet" },
-                { name: "Khulna", path: "/locations/khulna" },
-                { name: "Rajshahi", path: "/locations/rajshahi" },
-                { name: "Barisal", path: "/locations/barisal" },
-                { name: "Rangpur", path: "/locations/rangpur" },
-                { name: "Mymensingh", path: "/locations/mymensingh" },
               ].map((loc, i) => (
                 <li key={i}>
                   <Link href={loc.path} className="text-gray-300 hover:text-primary transition-colors flex items-center gap-2">

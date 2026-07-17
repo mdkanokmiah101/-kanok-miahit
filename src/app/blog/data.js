@@ -5537,7 +5537,7 @@ SEO (Search Engine Optimization) হলো আপনার ওয়েবসা
   - **সময়:** ফলাফল পেতে ৩-৬ মাস সময় লাগে। ধৈর্যের প্রয়োজন।
   - **স্থায়িত্ব:** দীর্ঘমেয়াদী। একবার ভালো র‍্যাংক করলে নিয়মিত রক্ষণাবেক্ষণে মাসে ১০,০০০-২০,০০০ টাকা খরচ হতে পারে।
   - **বিশ্বাসযোগ্যতা:** ব্যবহারকারীরা অর্গানিক রেজাল্ট বেশি বিশ্বাস করে। গবেষণায় দেখা গেছে, অর্গানিক রেজাল্টে ক্লিক করার সম্ভাবনা পেইড এডের চেয়ে ৫-১০ গুণ বেশি।
-  - **CTR:** প্রথম পজিশনের অর্গানিক রেজাল্টের CTR প্রায় ২৮%। গুগলের নিজস্ব তথ্য অনুযায়ী, অর্গানিক রেজাল্টে ব্যবহারকারীদের আস্থা পেইড বিজ্ঞাপনের তুলনায় অনেক বেশি (<a href="https://developers.google.com/search/docs/fundamentals/understanding-search" target="_blank" rel="noopener noreferrer">গুগল সার্চ সেন্ট্রাল</a>)।
+  - **CTR:** প্রথম পজিশনের অর্গানিক রেজাল্টের CTR প্রায় ২৮%। গুগলের নিজস্ব তথ্য অনুযায়ী, অর্গানিক রেজাল্টে ব্যবহারকারীদের আস্থা পেইড বিজ্ঞাপনের তুলনায় অনেক বেশি ([গুগল সার্চ সেন্ট্রাল](https://developers.google.com/search/docs/fundamentals/understanding-search))।
 ### Google Ads: পেইড বিজ্ঞাপন
   - **খরচ:** প্রতি ক্লিকে খরচ (CPC) । বাংলাদেশে গড় CPC ৫-৫০ টাকা, ইন্ডাস্ট্রি অনুযায়ী। মাসিক বাজেট ২০,০০০-২,০০,০০০ টাকা হতে পারে।
   - **সময়:** তাৎক্ষণিক ফলাফল। এড ক্যাম্পেইন সেটআপ করে কয়েক ঘণ্টার মধ্যেই ট্রাফিক পাওয়া যায়।
@@ -24408,7 +24408,6 @@ Create content targeting grant-makers and institutional donors:
 - White papers on development issues in Bangladesh
 - Research and data analysis related to your sector
 - Thought leadership pieces by your executive director
-|
 For sector-specific guidance, see our [SEO for travel and tourism in Bangladesh](/blog/seo-travel-tourism-bangladesh) guide — learn how SEO drives visibility across different mission-driven sectors.
 
 ## Local SEO for NGOs

@@ -179,7 +179,7 @@ export default function Footer() {
 
       {/* Bottom flag line */}
       <div className="bg-gray-950 py-3 text-center">
-        <p className="text-xs text-gray-600">🇧🇩 Serving Dhaka, Chittagong, Sylhet & all of Bangladesh</p>
+        <p className="text-xs text-gray-600">🇧🇩 Serving Dhaka & all of Bangladesh</p>
       </div>
     </footer>
   );

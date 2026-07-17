@@ -34,13 +34,6 @@ export default async function sitemap() {
     { url: `${baseUrl}/case-studies`, lastModified: "2026-07-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/portfolio`, lastModified: "2026-07-10", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/locations/dhaka`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/locations/chittagong`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/locations/sylhet`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/locations/khulna`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/locations/rajshahi`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/locations/barisal`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/locations/rangpur`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/locations/mymensingh`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const industrySlugs = [

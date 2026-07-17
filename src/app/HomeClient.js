@@ -176,13 +176,6 @@ export default function HomeClient({ faqs = [] }) {
           <div className="text-white/60 text-xs font-semibold uppercase tracking-[0.15em] mb-3">📍 Service Areas</div>
           <div className="flex flex-wrap justify-center gap-2">
             <Link href="/locations/dhaka" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Dhaka</Link>
-            <Link href="/locations/chittagong" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Chittagong</Link>
-            <Link href="/locations/sylhet" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Sylhet</Link>
-            <Link href="/locations/khulna" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Khulna</Link>
-            <Link href="/locations/rajshahi" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Rajshahi</Link>
-            <Link href="/locations/barisal" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Barisal</Link>
-            <Link href="/locations/rangpur" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Rangpur</Link>
-            <Link href="/locations/mymensingh" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors">Mymensingh</Link>
           </div>
         </div>
       </section>

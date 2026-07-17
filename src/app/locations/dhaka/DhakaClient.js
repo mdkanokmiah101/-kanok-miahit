@@ -45,7 +45,7 @@ export default function DhakaClient() {
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-primary-light border border-primary/20 text-primary text-xs font-semibold px-5 py-2 rounded-full mb-8 backdrop-blur-sm">
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            Dhaka SEO Services
+            Dhaka SEO Services 2026
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-6">
             <span className="text-primary">
@@ -64,6 +64,16 @@ export default function DhakaClient() {
               View My Work
             </Link>
           </div>
+          <div className="mt-12 flex justify-center">
+            <img 
+              src="/kanok-miah-profile.webp" 
+              alt="Kanok Miah — Best SEO Expert in Dhaka, Bangladesh" 
+              width="120" 
+              height="120" 
+              className="rounded-full border-4 border-white shadow-xl"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 
@@ -73,7 +83,7 @@ export default function DhakaClient() {
           <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-3xl p-8 md:p-10 text-center shadow-lg">
             <div className="text-5xl mb-4">🎯</div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
-              The <span className="text-primary">Best SEO Services in Dhaka</span> — Direct & Transparent
+              The <span className="text-primary">Best SEO Services in Dhaka 2026</span> — Direct & Transparent
             </h2>
             <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
               If you&apos;re looking for the best SEO services in Dhaka, you&apos;ve come to the right place. I specialize in helping Dhaka businesses rank higher on Google Maps, attract local customers through organic search, and grow revenue with data-driven SEO strategies tailored to Bangladesh&apos;s unique digital landscape.

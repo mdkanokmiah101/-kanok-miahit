@@ -3,7 +3,7 @@ import { BreadcrumbSchema, ItemListSchema } from "@/components/Schema";
 import serviceData from "./data";
 
 export const metadata = {
-  title: "Professional SEO Services Bangladesh — Kanok Miah | SEO Expert",
+  title: { absolute: "Professional SEO Services Bangladesh — Kanok Miah | SEO Expert" },
   description: "Complete SEO solutions for Bangladesh — Local SEO, Technical SEO, Link Building, GEO/AI Search and E-commerce SEO. Free audit from Dhaka, Bangladesh.",
   alternates: { canonical: "https://kanokmiah.com.bd/services" },
   openGraph: {

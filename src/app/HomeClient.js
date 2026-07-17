@@ -45,7 +45,11 @@ export default function HomeClient({ faqs = [] }) {
       {/* ===== NAVBAR ===== */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="text-xl font-extrabold tracking-tight">
+          <Link href="/" className="flex items-center gap-2 text-xl font-extrabold tracking-tight">
+            <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="10" fill="#124D1C"/>
+              <text x="32" y="44" text-anchor="middle" fontSize="30" fontWeight="800" fill="white" fontFamily="Arial,sans-serif">KM</text>
+            </svg>
             <span className="text-primary">Kanok Miah</span>
           </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">

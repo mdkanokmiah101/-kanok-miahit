@@ -2,19 +2,19 @@ import DhakaClient from "./DhakaClient";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Local SEO Dhaka — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
-  description: "Professional local SEO services across all Dhaka neighborhoods — Mirpur, Gulshan, Banani, Uttara, Dhanmondi & more. Rank on Google Maps and attract customers in Dhaka with expert local SEO.",
+  title: "Best SEO Services in Dhaka — Kanok Miah | SEO Expert Bangladesh",
+  description: "Get the best SEO services in Dhaka from Kanok Miah — 210+ projects delivered. Rank on Google Maps in Mirpur, Gulshan, Banani, Uttara & across Dhaka with expert local SEO strategies.",
   alternates: { canonical: "https://kanokmiah.com.bd/locations/dhaka" },
   openGraph: {
-    title: "Local SEO Dhaka — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
-    description: "Local SEO services in Dhaka, Bangladesh. Rank on Google Maps in Mirpur, Gulshan, Banani, Uttara & all Dhaka areas with proven SEO strategies.",
+    title: "Best SEO Services in Dhaka — Kanok Miah | SEO Expert Bangladesh",
+    description: "Best SEO services in Dhaka — rank higher on Google Maps across Mirpur, Gulshan, Banani, Uttara & all Dhaka neighborhoods with proven local SEO strategies.",
     url: "https://kanokmiah.com.bd/locations/dhaka",
     images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 1200, height: 630, alt: "Kanok Miah — SEO Expert Dhaka" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO Dhaka — Kanok Miah | SEO Expert in Dhaka",
-    description: "Local SEO services in Dhaka, Bangladesh.",
+    title: "Best SEO Services in Dhaka — Kanok Miah",
+    description: "Best SEO services in Dhaka — rank higher on Google Maps with proven local SEO strategies.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
 };
@@ -26,7 +26,7 @@ const locationSchema = {
   url: "https://kanokmiah.com.bd/locations/dhaka",
   telephone: "+880-1604-809110",
   email: "mdkanokmiah232@gmail.com",
-  description: "Local SEO services in Dhaka, Bangladesh. Expert SEO solutions for Dhaka businesses across all neighborhoods.",
+  description: "Best SEO services in Dhaka, Bangladesh. Expert SEO solutions for Dhaka businesses across all neighborhoods — Mirpur, Gulshan, Banani, Uttara & more.",
   image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
   address: { "@type": "PostalAddress", streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", addressCountry: "BD" },
   geo: { "@type": "GeoCoordinates", latitude: "23.8103", longitude: "90.4125" },

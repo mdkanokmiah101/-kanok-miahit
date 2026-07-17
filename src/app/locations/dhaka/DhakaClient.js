@@ -51,7 +51,7 @@ export default function DhakaClient() {
             <br />Rank Higher in Your Neighborhood
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Your trusted local SEO expert in Dhaka. I help businesses across the capital city dominate Google search results, attract more local customers, and grow revenue with proven, data-driven SEO strategies.
+            Your trusted local SEO expert in Dhaka. I help businesses across the capital city dominate Google search results, attract more local customers, and grow revenue with proven, data-driven SEO strategies. Looking for the <strong>best SEO services in Dhaka</strong>? You&apos;ve found the right expert.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25 transition-all">
@@ -73,7 +73,7 @@ export default function DhakaClient() {
               SEO for Dhaka <span className="text-primary">Neighborhoods</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Targeted SEO strategies for every key area in Dhaka — customized to your local market and competition.
+              Targeted SEO strategies for every key area in Dhaka — customized to your local market and competition. My <strong>best SEO services in Dhaka</strong> cover every neighborhood.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -95,10 +95,10 @@ export default function DhakaClient() {
           <div className="text-center mb-12">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">Why Trust Me</span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4">
-              Why Choose Me for <span className="text-primary">Dhaka SEO</span>
+              Why Choose My <span className="text-primary">Best SEO Services in Dhaka</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              What sets my Dhaka SEO services apart from the competition.
+              What sets my Dhaka SEO services apart from the competition. I deliver results that help your business grow.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -152,7 +152,7 @@ export default function DhakaClient() {
               Discover Our <span className="text-primary">Services</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore our comprehensive SEO services designed to help your business rank higher and grow faster.
+              Explore our comprehensive SEO services — including the <strong>best SEO services in Dhaka</strong> — designed to help your business rank higher and grow faster.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">

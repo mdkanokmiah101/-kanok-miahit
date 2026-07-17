@@ -14,6 +14,11 @@ export default function ServicesClient() {
     { question: "How is your SEO different from other agencies?", answer: "I combine deep local Bangladesh market knowledge with global SEO best practices. My strategies are data-driven, transparent, and focused on real business results — not vanity metrics." },
     { question: "Do you provide monthly SEO reports?", answer: "Absolutely. Every client receives detailed monthly reports showing keyword rankings, organic traffic, backlink growth, conversion data, and actionable recommendations for continued improvement." },
     { question: "Can I see examples of your past SEO work?", answer: "Yes, I have helped over 50 Bangladeshi businesses achieve first-page rankings. Contact me for a free consultation where I can share case studies relevant to your industry." },
+    { question: "What's the difference between Local SEO and Technical SEO?", answer: "Local SEO focuses on optimizing your business for location-based searches (e.g., 'best restaurant in Dhaka') through Google Business Profile, local citations, and reviews. Technical SEO deals with site infrastructure — page speed, crawlability, schema markup, and mobile optimization. Both are essential for a complete strategy." },
+    { question: "How do I know which SEO service my business needs?", answer: "I offer a free initial audit that identifies your site's strengths and weaknesses. Based on that analysis, I recommend the right mix of technical, on-page, off-page, and local SEO services tailored to your goals and industry." },
+    { question: "Do you offer monthly SEO packages or one-time fixes?", answer: "Both. I offer monthly retainer packages for ongoing SEO management and one-time project-based fixes for specific issues like site migration, technical cleanup, or content optimization. The right choice depends on your long-term goals." },
+    { question: "Can you help with Shopify or WooCommerce SEO?", answer: "Absolutely. I have extensive experience optimizing Shopify and WooCommerce stores for Bangladeshi e-commerce businesses — product page optimization, category structure, technical fixes, and local search visibility." },
+    { question: "How do you measure SEO success?", answer: "I track real business metrics: organic traffic growth, keyword rankings for high-intent terms, conversion rate improvements, lead generation, and revenue from organic search. Monthly reports show clear progress against benchmarks." },
   ];
 
   return (
@@ -31,8 +36,7 @@ export default function ServicesClient() {
             <span className="text-gray-900">for Bangladesh Businesses</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-            Complete SEO solutions tailored for Bangladeshi businesses — from local Dhaka SEO 
-            to international optimization. As a <Link href="/" className="text-primary font-semibold hover:underline">best SEO expert in Dhaka</Link>, every strategy I create is data-driven, transparent, and results-focused.
+            Complete SEO solutions tailored for Bangladeshi businesses — from local SEO to international optimization. Every strategy I create is data-driven, transparent, and results-focused.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5">
@@ -124,6 +128,22 @@ export default function ServicesClient() {
         </div>
       </section>
 
+      {/* === Dhaka Local SEO === */}
+      <section className="py-12 px-4 bg-primary/5 border-y border-primary/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="text-4xl mb-4">📍</div>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+            Need SEO Services in <span className="text-primary">Dhaka</span>?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+            I provide specialized local SEO services for businesses in Dhaka — covering Mirpur, Gulshan, Banani, Uttara, Dhanmondi, and all neighborhoods. Get a free audit tailored to your Dhaka business.
+          </p>
+          <Link href="/locations/dhaka" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-xl font-bold transition-all hover:shadow-lg">
+            Dhaka SEO Services →
+          </Link>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -140,6 +160,25 @@ export default function ServicesClient() {
                 </summary>
                 <p className="text-gray-600 mt-3 pl-2">{f.answer}</p>
               </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* === Trust Signals === */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {[
+              { num: "210+", label: "Projects Delivered" },
+              { num: "6+", label: "Years Experience" },
+              { num: "50+", label: "First-Page Rankings" },
+              { num: "4.9", label: "Client Rating" },
+            ].map((s, i) => (
+              <div key={i} className="bg-gray-50 rounded-2xl p-6">
+                <div className="text-3xl md:text-4xl font-black text-primary">{s.num}</div>
+                <div className="text-sm text-gray-500 mt-1 font-medium">{s.label}</div>
+              </div>
             ))}
           </div>
         </div>

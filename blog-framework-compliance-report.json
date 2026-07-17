@@ -1,0 +1,701 @@
+{
+  "meta": {
+    "analyzed_by": "Hermes Agent",
+    "file": "/root/kanok-miahit/src/app/blog/data.js",
+    "date": "2026-07-16",
+    "total_posts_analyzed": 10
+  },
+  "results": {
+    "11_seo_real_estate_developers_dhaka": {
+      "slug": "seo-real-estate-developers-dhaka",
+      "title": "SEO for Real Estate Developers in Dhaka: Generate More Property Leads",
+      "language": "English",
+      "line_range": "2009-2261",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "Real Estate SEO",
+          "occurrences": 35,
+          "flag": false,
+          "detail": "Keyword appears well above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["Dhaka", "Bangladesh", "Real Estate", "Property"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["Real Estate SEO", "Property SEO", "Dhaka Real Estate", "Lead Generation"],
+          "pillar_topic": "Real Estate Industry (/industries/real-estate)",
+          "pillar_links_found": [
+            "/industries/real-estate",
+            "/services/technical-seo",
+            "/services/local-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /industries/real-estate pillar page and /services/* service pages"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 1,
+          "question_headings": ["## Why SEO Matters for Dhaka Real Estate Developers"],
+          "flag": true,
+          "detail": "Only 1 question-based H2 heading (needs ≥2)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 11,
+          "internal_links": [
+            "/services/technical-seo",
+            "/blog/local-seo-tips-dhaka-businesses-google-maps",
+            "/blog/technical-seo-checklist-bangladeshi-websites",
+            "/blog/mobile-seo-optimization-bangladesh-mobile-first-era",
+            "/industries/ecommerce",
+            "/industries/food-restaurant",
+            "/industries/real-estate",
+            "/services/local-seo",
+            "/blog/seo-garments-textile-industry-b2b-lead-generation",
+            "/locations/dhaka",
+            "/"
+          ],
+          "flag": false,
+          "detail": "11 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": true,
+      "flagged_checks": ["D_AEO_GEO_Optimization"]
+    },
+    "12_mobile_seo_optimization_bangladesh_mobile_first_era": {
+      "slug": "mobile-seo-optimization-bangladesh-mobile-first-era",
+      "title": "Mobile SEO for Bangladesh: Optimize for the Mobile-First Era",
+      "language": "English",
+      "line_range": "2268-2481",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "Mobile SEO",
+          "occurrences": 18,
+          "flag": false,
+          "detail": "Keyword appears well above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["Bangladesh", "Mobile", "Mobile-First Indexing", "Core Web Vitals"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["Mobile SEO", "Mobile Optimization", "Bangladesh", "Mobile-First Indexing"],
+          "pillar_topic": "Technical SEO (/services/technical-seo) / Local SEO (/services/local-seo)",
+          "pillar_links_found": [
+            "/services/local-seo",
+            "/services/technical-seo",
+            "/services/on-page-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /services/* service pages (technical-seo, local-seo, on-page-seo)"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 0,
+          "question_headings": [],
+          "flag": true,
+          "detail": "No question-based H2 headings found (needs ≥2)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 15,
+          "internal_links": [
+            "/blog/geo-optimization-prepare-business-ai-search",
+            "/services/local-seo",
+            "/services/technical-seo",
+            "/services/on-page-seo",
+            "/industries/ecommerce",
+            "/industries/food-restaurant",
+            "/industries/real-estate",
+            "/blog/mobile-seo-bangladesh-ranking-strategy",
+            "/blog/technical-seo-checklist-bangladeshi-websites",
+            "/",
+            "/about/",
+            "/blog/local-seo-tips-dhaka-businesses-google-maps",
+            "/blog/complete-seo-guide-bangladesh-businesses-2026",
+            "/blog/why-ecommerce-store-needs-seo-bangladesh"
+          ],
+          "flag": false,
+          "detail": "15 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": true,
+      "flagged_checks": ["D_AEO_GEO_Optimization"]
+    },
+    "13_content_marketing_strategy_bangladeshi_brands_seo": {
+      "slug": "content-marketing-strategy-bangladeshi-brands-seo",
+      "title": "Content Marketing Strategy for Bangladeshi Brands: Drive SEO Growth",
+      "language": "English",
+      "line_range": "2488-2663",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "Content Marketing",
+          "occurrences": 25,
+          "flag": false,
+          "detail": "Keyword appears well above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["Bangladesh", "Content Marketing", "SEO Strategy", "Digital Marketing"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["Content Marketing", "Bangladesh", "SEO Strategy", "Digital Marketing"],
+          "pillar_topic": "SEO Services (/services) / Semantic SEO (/services/semantic-seo)",
+          "pillar_links_found": [
+            "/services",
+            "/services/semantic-seo",
+            "/services/on-page-seo",
+            "/services/technical-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /services main page and service sub-pages"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 1,
+          "question_headings": ["## Why Content Marketing is the Engine of SEO in Bangladesh"],
+          "flag": true,
+          "detail": "Only 1 question-based H2 heading (needs ≥2)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 12,
+          "internal_links": [
+            "/about/",
+            "/",
+            "/blog/technical-seo-checklist-bangladeshi-websites",
+            "/services",
+            "/contact",
+            "/services/technical-seo",
+            "/blog/keyword-research-bangladesh-market",
+            "/services/on-page-seo",
+            "/blog/content-marketing-seo-friendly-content-writing",
+            "/blog/local-seo-tips-dhaka-businesses-google-maps",
+            "/blog/complete-seo-guide-bangladesh-businesses-2026"
+          ],
+          "flag": false,
+          "detail": "12 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": true,
+      "flagged_checks": ["D_AEO_GEO_Optimization"]
+    },
+    "14_international_seo_bangladesh_exporters_global_buyers": {
+      "slug": "international-seo-bangladesh-exporters-global-buyers",
+      "title": "International SEO for Bangladesh Exporters: Attract Global Buyers",
+      "language": "English",
+      "line_range": "2670-2828",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "International SEO",
+          "occurrences": 22,
+          "flag": false,
+          "detail": "Keyword appears well above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["Bangladesh", "Exporters", "International SEO", "Global Buyers"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["International SEO", "Bangladesh Exporters", "B2B SEO", "Global SEO"],
+          "pillar_topic": "Garments & Textile Industry (/industries/garments-textile) / SEO Services (/services)",
+          "pillar_links_found": [
+            "/industries/garments-textile",
+            "/services/semantic-seo",
+            "/services",
+            "/services/technical-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /industries/garments-textile pillar and /services/* pages"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 1,
+          "question_headings": ["## Why Standard SEO Isn't Enough for Exporters"],
+          "flag": true,
+          "detail": "Only 1 question-based H2 heading (needs ≥2)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 12,
+          "internal_links": [
+            "/",
+            "/industries/garments-textile",
+            "/blog/technical-seo-checklist-bangladeshi-websites",
+            "/services/semantic-seo",
+            "/blog/local-seo-tips-dhaka-businesses-google-maps",
+            "/blog/complete-seo-guide-bangladesh-businesses-2026",
+            "/services",
+            "/services/technical-seo",
+            "/blog/how-to-choose-right-seo-agency-bangladesh",
+            "/contact"
+          ],
+          "flag": false,
+          "detail": "12 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": true,
+      "flagged_checks": ["D_AEO_GEO_Optimization"]
+    },
+    "15_seo_bangla_beginners_guide_google_ranking": {
+      "slug": "seo-bangla-beginners-guide-google-ranking",
+      "title": "সহজ ভাষায় SEO: কীভাবে গুগলে প্রথম পেজে আসবেন (২০২৬ গাইড)",
+      "language": "Bengali",
+      "line_range": "2835-3092",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "SEO",
+          "occurrences": 40,
+          "flag": false,
+          "detail": "Keyword appears well above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ (Bangladesh)", "গুগল (Google)", "SEO"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present in Bengali content"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["SEO Basics", "Bangla SEO", "Google Ranking", "Beginner Guide", "Bangladesh"],
+          "pillar_topic": "SEO Services (/services/*)",
+          "pillar_links_found": [
+            "/services/on-page-seo",
+            "/services/technical-seo",
+            "/services/local-seo",
+            "/services/ecommerce-seo",
+            "/services/semantic-seo"
+          ],
+          "flag": false,
+          "detail": "Links to multiple /services/* pillar pages"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 1,
+          "question_headings": [
+            "## কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে? (starts with 'কেন' / Why)"
+          ],
+          "flag": true,
+          "detail": "Only 1 question-based H2 heading starting with Bengali question word (needs ≥2)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 13,
+          "internal_links": [
+            "/blog/why-ecommerce-store-needs-seo-bangladesh",
+            "/blog/link-building-strategies-bangladesh-market",
+            "/blog/local-seo-tips-dhaka-businesses-google-maps",
+            "/blog/seo-consultant-dhaka-bangladesh",
+            "/blog/keyword-research-bangladesh-market",
+            "/services/on-page-seo",
+            "/blog/seo-bangla-blog-content-writing",
+            "/",
+            "/services/technical-seo",
+            "/services/local-seo",
+            "/services/ecommerce-seo",
+            "/services/semantic-seo",
+            "/blog"
+          ],
+          "flag": false,
+          "detail": "13 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": true,
+      "flagged_checks": ["D_AEO_GEO_Optimization"]
+    },
+    "16_local_seo_dhaka_google_maps_ranking": {
+      "slug": "local-seo-dhaka-google-maps-ranking",
+      "title": "স্থানীয় SEO: ঢাকায় আপনার ব্যবসা কীভাবে গুগল ম্যাপে শীর্ষে দেখাবেন",
+      "language": "Bengali",
+      "line_range": "3099-3347",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "স্থানীয় SEO (Local SEO)",
+          "occurrences": 12,
+          "flag": false,
+          "detail": "Keyword appears above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["ঢাকা (Dhaka)", "বাংলাদেশ (Bangladesh)", "গুগল ম্যাপ (Google Maps)", "স্থানীয় SEO (Local SEO)"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present in Bengali content"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["Local SEO", "Dhaka", "Google Maps", "GBP Optimization", "Bangladesh Business"],
+          "pillar_topic": "Local SEO Services (/services/local-seo)",
+          "pillar_links_found": [
+            "/services/local-seo",
+            "/services/technical-seo",
+            "/services/ecommerce-seo",
+            "/services/semantic-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /services/local-seo pillar page and related service pages"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 2,
+          "question_headings": [
+            "## কেন স্থানীয় SEO ঢাকার ব্যবসার জন্য জরুরি? (starts with 'কেন' / Why)",
+            "## কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে? (starts with 'কেন' / Why)"
+          ],
+          "flag": false,
+          "detail": "2 question-based H2 headings found (meets ≥2 threshold)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 14,
+          "internal_links": [
+            "/blog/seo-bangla-beginners-guide-google-ranking",
+            "/blog/seo-local-citations-bangladesh",
+            "/blog/google-business-profile-optimization-guide-bangladesh",
+            "/services/local-seo",
+            "/blog/complete-seo-guide-bangladesh-businesses-2026",
+            "/",
+            "/blog/seo-consultant-dhaka-bangladesh",
+            "/services/technical-seo",
+            "/services/ecommerce-seo",
+            "/services/semantic-seo"
+          ],
+          "flag": false,
+          "detail": "14 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": false,
+      "flagged_checks": []
+    },
+    "17_seo_trends_2026_ai_geo_future": {
+      "slug": "seo-trends-2026-ai-geo-future",
+      "title": "২০২৬ সালের SEO ট্রেন্ডস: AI, GEO ও জিরো-ক্লিক সার্চের যুগে কীভাবে প্রস্তুত থাকবেন",
+      "language": "Bengali",
+      "line_range": "3354-3565",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "SEO ট্রেন্ডস (SEO Trends)",
+          "occurrences": 30,
+          "flag": false,
+          "detail": "Keyword 'SEO' appears extensively; 'SEO ট্রেন্ডস' appears multiple times (>5)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ (Bangladesh)", "AI", "GEO", "SEO"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present in Bengali content"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["SEO Trends 2026", "AI SEO", "GEO", "Generative Engine Optimization", "Bangladesh"],
+          "pillar_topic": "GEO & AI Search (/services/geo-ai-search) / Semantic SEO (/services/semantic-seo)",
+          "pillar_links_found": [
+            "/services/semantic-seo",
+            "/services/geo-ai-search",
+            "/services/technical-seo",
+            "/services/local-seo",
+            "/services/ecommerce-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /services/geo-ai-search (GEO/AI pillar) and multiple /services/* pages"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 1,
+          "question_headings": [
+            "## কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে? (starts with 'কেন' / Why)"
+          ],
+          "flag": true,
+          "detail": "Only 1 question-based H2 heading starting with Bengali question word (needs ≥2)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 14,
+          "internal_links": [
+            "/blog/technical-seo-checklist-bangladeshi-websites",
+            "/blog/seo-consultant-dhaka-bangladesh",
+            "/blog/geo-optimization-prepare-business-ai-search",
+            "/services/semantic-seo",
+            "/services/geo-ai-search",
+            "/blog/complete-seo-guide-bangladesh-businesses-2026",
+            "/",
+            "/services/technical-seo",
+            "/services/local-seo",
+            "/services/ecommerce-seo"
+          ],
+          "flag": false,
+          "detail": "14 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": true,
+      "flagged_checks": ["D_AEO_GEO_Optimization"]
+    },
+    "18_technical_seo_core_web_vitals_optimization": {
+      "slug": "technical-seo-core-web-vitals-optimization",
+      "title": "টেকনিক্যাল SEO: ওয়েবসাইট স্পিড ও কোর ওয়েব ভাইটালস অপটিমাইজেশন",
+      "language": "Bengali",
+      "line_range": "3572-3750",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "টেকনিক্যাল SEO (Technical SEO)",
+          "occurrences": 15,
+          "flag": false,
+          "detail": "Keyword appears above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ (Bangladesh)", "Core Web Vitals", "টেকনিক্যাল SEO", "ওয়েবসাইট স্পিড"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present in Bengali content"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["টেকনিক্যাল SEO", "Core Web Vitals", "ওয়েবসাইট স্পিড", "Page Speed Optimization", "Bangladesh"],
+          "pillar_topic": "Technical SEO Services (/services/technical-seo)",
+          "pillar_links_found": [
+            "/services/technical-seo",
+            "/services/on-page-seo",
+            "/services/local-seo",
+            "/services/ecommerce-seo",
+            "/services/semantic-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /services/technical-seo pillar page and related service pages"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 4,
+          "question_headings": [
+            "## কীভাবে এলসিপি (LCP) অপটিমাইজ করবেন (starts with 'কীভাবে' / How)",
+            "## কীভাবে আইএনপি (INP) অপটিমাইজ করবেন (starts with 'কীভাবে' / How)",
+            "## কীভাবে সিএলএস (CLS) অপটিমাইজ করবেন (starts with 'কীভাবে' / How)",
+            "## কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে? (starts with 'কেন' / Why)"
+          ],
+          "flag": false,
+          "detail": "4 question-based H2 headings found (meets ≥2 threshold)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 10,
+          "internal_links": [
+            "/blog/mobile-seo-optimization-bangladesh-mobile-first-era",
+            "/services/technical-seo",
+            "/blog/technical-seo-checklist-bangladeshi-websites",
+            "/services/on-page-seo",
+            "/",
+            "/blog/seo-consultant-dhaka-bangladesh",
+            "/services/local-seo",
+            "/services/ecommerce-seo",
+            "/services/semantic-seo"
+          ],
+          "flag": false,
+          "detail": "10 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": false,
+      "flagged_checks": []
+    },
+    "19_ecommerce_seo_daraz_shopify_guide": {
+      "slug": "ecommerce-seo-daraz-shopify-guide",
+      "title": "ই-কমার্স SEO: দারাজ ও শপিফাই স্টোরের জন্য সম্পূর্ণ গাইড",
+      "language": "Bengali",
+      "line_range": "3757-3967",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "ই-কমার্স SEO (E-commerce SEO)",
+          "occurrences": 14,
+          "flag": false,
+          "detail": "Keyword appears above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ (Bangladesh)", "দারাজ (Daraz)", "শপিফাই (Shopify)", "ই-কমার্স SEO"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present in Bengali content"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["ই-কমার্স SEO", "Daraz", "Shopify", "E-commerce Bangladesh", "অনলাইন স্টোর"],
+          "pillar_topic": "E-commerce SEO Services (/services/ecommerce-seo) / E-commerce Industry (/industries/ecommerce)",
+          "pillar_links_found": [
+            "/services/ecommerce-seo",
+            "/industries/ecommerce",
+            "/services/technical-seo",
+            "/services/local-seo",
+            "/services/semantic-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /services/ecommerce-seo pillar and /industries/ecommerce page"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 1,
+          "question_headings": [
+            "## কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে? (starts with 'কেন' / Why)"
+          ],
+          "flag": true,
+          "detail": "Only 1 question-based H2 heading starting with Bengali question word (needs ≥2)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 15,
+          "internal_links": [
+            "/blog/seo-for-facebook-marketplace",
+            "/services/ecommerce-seo",
+            "/blog/why-ecommerce-store-needs-seo-bangladesh",
+            "/industries/ecommerce",
+            "/services",
+            "/",
+            "/about",
+            "/services/technical-seo",
+            "/services/local-seo",
+            "/services/semantic-seo",
+            "/contact"
+          ],
+          "flag": false,
+          "detail": "15 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": true,
+      "flagged_checks": ["D_AEO_GEO_Optimization"]
+    },
+    "20_link_building_bangladesh_strategies": {
+      "slug": "link-building-bangladesh-strategies",
+      "title": "লিংক বিল্ডিং: বাংলাদেশি ওয়েবসাইটের জন্য কার্যকরী কৌশল",
+      "language": "Bengali",
+      "line_range": "3974-4170",
+      "checks": {
+        "A_TFIDF_Coverage": {
+          "primary_keyword": "লিংক বিল্ডিং (Link Building)",
+          "occurrences": 16,
+          "flag": false,
+          "detail": "Keyword appears above threshold (>5 occurrences)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ (Bangladesh)", "ব্যাকলিংক (Backlinks)", "লিংক বিল্ডিং", "গেস্ট পোস্টিং"],
+          "missing_entities": [],
+          "flag": false,
+          "detail": "All key entities present in Bengali content"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "tags": ["লিংক বিল্ডিং", "Backlinks", "SEO Bangladesh", "গেস্ট পোস্টিং", "Digital PR"],
+          "pillar_topic": "Link Building Services (/services/link-building)",
+          "pillar_links_found": [
+            "/services/link-building",
+            "/services/on-page-seo",
+            "/services/geo-ai-search",
+            "/services/technical-seo",
+            "/services/local-seo",
+            "/services/ecommerce-seo",
+            "/services/semantic-seo"
+          ],
+          "flag": false,
+          "detail": "Links to /services/link-building pillar page and multiple /services/* pages"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_heading_count": 2,
+          "question_headings": [
+            "## কীভাবে ব্যাকলিংকের গুণমান মূল্যায়ন করবেন (starts with 'কীভাবে' / How)",
+            "## কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে? (starts with 'কেন' / Why)"
+          ],
+          "flag": false,
+          "detail": "2 question-based H2 headings found (meets ≥2 threshold)"
+        },
+        "E_Internal_Linking": {
+          "internal_link_count": 11,
+          "internal_links": [
+            "/services/link-building",
+            "/blog/link-building-strategies-bangladesh-market",
+            "/services/on-page-seo",
+            "/services/geo-ai-search",
+            "/",
+            "/services/technical-seo",
+            "/services/local-seo",
+            "/services/ecommerce-seo",
+            "/services/semantic-seo"
+          ],
+          "flag": false,
+          "detail": "11 internal links found (≥3 required)"
+        },
+        "F_Schema": {
+          "title_set": true,
+          "excerpt_set": true,
+          "date_set": true,
+          "flag": false,
+          "detail": "All schema fields present"
+        }
+      },
+      "overall_flag": false,
+      "flagged_checks": []
+    }
+  },
+  "summary": {
+    "total_analyzed": 10,
+    "passed_all_checks": 3,
+    "flagged_posts": 7,
+    "flags_by_check": {
+      "A_TFIDF_Coverage": 0,
+      "B_Semantic_Entity_Coverage": 0,
+      "C_Pillar_Cluster_Alignment": 0,
+      "D_AEO_GEO_Optimization": 7,
+      "E_Internal_Linking": 0,
+      "F_Schema": 0
+    },
+    "flags_detail": {
+      "A_TFIDF_Coverage": "All posts pass — primary keywords appear >5 times in content",
+      "B_Semantic_Entity_Coverage": "All posts pass — location and industry entities present",
+      "C_Pillar_Cluster_Alignment": "All posts pass — each links to relevant /services/* or /industries/* pillar pages",
+      "D_AEO_GEO_Optimization": "7 posts fail — insufficient question-based H2 headings (<2). Only posts 16 (Local SEO), 18 (Technical SEO), and 20 (Link Building) pass with ≥2 question headings",
+      "E_Internal_Linking": "All posts pass — each has 10-15+ internal links (≥3 required)",
+      "F_Schema": "All posts pass — title, excerpt, and date are set"
+    }
+  }
+}

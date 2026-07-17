@@ -1,0 +1,490 @@
+{
+  "report_metadata": {
+    "analyzed_file": "/root/kanok-miahit/src/app/blog/data.js",
+    "analysis_date": "2026-07-16",
+    "posts_analyzed": 11,
+    "checks_performed": ["A. TF-IDF Coverage", "B. Semantic Entity Coverage", "C. Pillar-Cluster Alignment", "D. AEO/GEO Optimization", "E. Internal Linking", "F. Schema Ready"]
+  },
+  "results": [
+    {
+      "slug": "keyword-research-bangladesh-market",
+      "title": "কীওয়ার্ড রিসার্চ: বাংলাদেশি মার্কেটের জন্য সঠিক কীওয়ার্ড নির্বাচন",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "কীওয়ার্ড রিসার্চ",
+          "occurrences": 20,
+          "flagged": false,
+          "note": "Keyword appears well-distributed throughout content (headings, body, conclusion)"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "SEO"],
+          "missing_entities": [],
+          "flagged": false,
+          "note": "Bangladesh, Dhaka, SEO all present multiple times"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "Keyword Research / SEO Strategy",
+          "pillar_links_found": ["/", "/services/on-page-seo", "/services/semantic-seo", "/about", "/contact", "/services/technical-seo", "/services/local-seo", "/services/ecommerce-seo"],
+          "flagged": false,
+          "note": "Multiple pillar links to /services/*, /about, /contact present"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 1,
+          "flagged": true,
+          "note": "Only 1 question-based H2 heading; needs at least 2"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 18,
+          "flagged": false,
+          "note": "Abundant internal links to other blog posts and service pages"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ Title, excerpt and date all set"
+        }
+      }
+    },
+    {
+      "slug": "content-marketing-seo-friendly-content-writing",
+      "title": "কন্টেন্ট মার্কেটিং: SEO-ফ্রেন্ডলি কন্টেন্ট কীভাবে লিখবেন",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "কন্টেন্ট মার্কেটিং",
+          "occurrences": 7,
+          "flagged": false,
+          "note": "Keyword appears 7+ times in headings and body"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "Content Writing", "SEO Content"],
+          "missing_entities": [],
+          "flagged": false,
+          "note": "All key entities present"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "Content Marketing / SEO Content",
+          "pillar_links_found": ["/services/on-page-seo", "/services/semantic-seo", "/services/technical-seo", "/services/local-seo", "/services/ecommerce-seo", "/"],
+          "flagged": false,
+          "note": "Links to multiple service pages present"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 1,
+          "flagged": true,
+          "note": "Only 1 question-based H2 heading; needs at least 2"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 15,
+          "flagged": false,
+          "note": "Multiple internal links to blog posts and services"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All schema-required fields set"
+        }
+      }
+    },
+    {
+      "slug": "google-search-console-performance-guide",
+      "title": "গুগল সার্চ কনসোল: আপনার ওয়েবসাইটের পারফরমেন্স বুঝুন",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "গুগল সার্চ কনসোল",
+          "occurrences": 25,
+          "flagged": false,
+          "note": "Very high keyword density throughout"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "Google Search Console", "SEO"],
+          "missing_entities": [],
+          "flagged": false,
+          "note": "All entities present"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "SEO Tools / Technical SEO",
+          "pillar_links_found": ["/services/technical-seo", "/services/on-page-seo", "/services/geo-ai-search", "/services/local-seo", "/services/ecommerce-seo", "/services/semantic-seo", "/"],
+          "flagged": false,
+          "note": "Multiple service page links"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 1,
+          "flagged": true,
+          "note": "Only 1 question-based H2 heading; needs at least 2"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 18,
+          "flagged": false,
+          "note": "Abundant internal links"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    },
+    {
+      "slug": "mobile-seo-bangladesh-ranking-strategy",
+      "title": "মোবাইল SEO: বাংলাদেশের মোবাইল-ফার্স্ট মার্কেটে কীভাবে র‍্যাঙ্ক করবেন",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "মোবাইল SEO",
+          "occurrences": 15,
+          "flagged": false,
+          "note": "Well distributed"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "Mobile First", "ভয়েস সার্চ"],
+          "missing_entities": [],
+          "flagged": false
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "Mobile SEO / Technical SEO",
+          "pillar_links_found": ["/services/technical-seo", "/services/on-page-seo", "/services/local-seo", "/services/ecommerce-seo", "/services/semantic-seo", "/", "/contact"],
+          "flagged": false,
+          "note": "Multiple service links present"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 1,
+          "flagged": true,
+          "note": "Only 1 question-based H2 heading; needs at least 2"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 17,
+          "flagged": false,
+          "note": "Rich internal linking"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    },
+    {
+      "slug": "schema-markup-rich-snippets-techniques",
+      "title": "স্কিমা মার্কআপ: সার্চ রেজাল্টে রিচ স্নিপেট পাওয়ার কৌশল",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "স্কিমা মার্কআপ",
+          "occurrences": 22,
+          "flagged": false,
+          "note": "Very well covered"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "Schema Markup", "Rich Snippets", "Structured Data"],
+          "missing_entities": [],
+          "flagged": false
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "Technical SEO / Schema Markup",
+          "pillar_links_found": ["/services/technical-seo", "/services/local-seo", "/services/ecommerce-seo", "/services/semantic-seo", "/", "/about", "/contact"],
+          "flagged": false,
+          "note": "Links to services, about, contact"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কীভাবে স্কিমা মার্কআপ ইমপ্লিমেন্ট করবেন", "কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 2,
+          "flagged": false,
+          "note": "✅ 2 question-based H2 headings (কীভাবে, কেন)"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 16,
+          "flagged": false,
+          "note": "Multiple internal links"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    },
+    {
+      "slug": "youtube-seo-bangladesh-ranking-tips",
+      "title": "ইউটিউব SEO: বাংলাদেশি ইউটিউবারদের জন্য র‍্যাংকিং কৌশল",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "ইউটিউব SEO",
+          "occurrences": 18,
+          "flagged": false,
+          "note": "Well covered throughout"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "YouTube", "ভিডিও অপটিমাইজেশন"],
+          "missing_entities": [],
+          "flagged": false
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "YouTube SEO / Video Marketing",
+          "pillar_links_found": ["/services/on-page-seo", "/services/technical-seo", "/services/local-seo", "/services/ecommerce-seo", "/services/semantic-seo", "/", "/services/geo-ai-search"],
+          "flagged": false,
+          "note": "Services links present"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 1,
+          "flagged": true,
+          "note": "Only 1 question-based H2 heading; needs at least 2"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 14,
+          "flagged": false,
+          "note": "Good internal linking to blogs and services"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    },
+    {
+      "slug": "seo-vs-google-ads-bangladesh-business",
+      "title": "এসইও বনাম গুগল অ্যাডস: বাংলাদেশি ব্যবসার জন্য কোনটি সঠিক",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "গুগল অ্যাডস",
+          "occurrences": 12,
+          "flagged": false,
+          "note": "Google Ads is mentioned extensively throughout"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "SEO", "Google Ads", "PPC"],
+          "missing_entities": [],
+          "flagged": false
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "SEO vs PPC / Digital Marketing Strategy",
+          "pillar_links_found": ["/services/local-seo", "/services/technical-seo", "/services/", "/contact", "/services/semantic-seo", "/services/ecommerce-seo"],
+          "flagged": false,
+          "note": "Multiple pillar links"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কখন SEO বেছে নেবেন", "কখন Google Ads বেছে নেবেন", "কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 3,
+          "flagged": false,
+          "note": "✅ 3 question-based H2 headings (কখন, কখন, কেন)"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 16,
+          "flagged": false,
+          "note": "Abundant internal links"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    },
+    {
+      "slug": "seo-bangla-blog-content-writing",
+      "title": "SEO ফ্রেন্ডলি ব্লগ কন্টেন্ট লেখার নিয়ম: বাংলা ব্লগিং টিপস",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "SEO ফ্রেন্ডলি ব্লগ কন্টেন্ট",
+          "occurrences": 8,
+          "flagged": false,
+          "note": "Adequate coverage"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "বাংলা ব্লগিং", "কন্টেন্ট অপটিমাইজেশন"],
+          "missing_entities": [],
+          "flagged": false
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "Content Writing / Bengali Blogging",
+          "pillar_links_found": ["/services/on-page-seo", "/services/technical-seo", "/services/local-seo", "/services/ecommerce-seo", "/services/semantic-seo", "/"],
+          "flagged": false,
+          "note": "Good coverage of service links"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 1,
+          "flagged": true,
+          "note": "Only 1 question-based H2 heading; needs at least 2"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 16,
+          "flagged": false,
+          "note": "Multiple internal links to other blog posts and services"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    },
+    {
+      "slug": "seo-tips-for-business-owners-bd",
+      "title": "ব্যবসায়ীদের জন্য SEO টিপস: নিজেই SEO করুন",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "SEO",
+          "occurrences": 35,
+          "flagged": false,
+          "note": "Very heavily covered"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "DIY SEO", "ব্যবসা"],
+          "missing_entities": [],
+          "flagged": false
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "DIY SEO / Local Business SEO",
+          "pillar_links_found": ["/services/on-page-seo", "/services/technical-seo", "/services/local-seo", "/services/ecommerce-seo", "/services/semantic-seo", "/", "/about", "/contact"],
+          "flagged": false,
+          "note": "Rich pillar linking"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কখন প্রফেশনাল সাহায্য নেওয়া উচিত?", "কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 2,
+          "flagged": false,
+          "note": "✅ 2 question-based H2 headings (কখন, কেন)"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 20,
+          "flagged": false,
+          "note": "Excellent internal linking"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    },
+    {
+      "slug": "long-tail-keywords-bangladesh",
+      "title": "লং-টেল কীওয়ার্ড: বাংলাদেশি মার্কেটে কম প্রতিযোগিতার কীওয়ার্ড",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "লং-টেল কীওয়ার্ড",
+          "occurrences": 30,
+          "flagged": false,
+          "note": "Extremely well covered"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "কীওয়ার্ড রিসার্চ", "SEO"],
+          "missing_entities": [],
+          "flagged": false
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "Keyword Research / Long-Tail Strategy",
+          "pillar_links_found": ["/services/on-page-seo", "/services/semantic-seo", "/services/technical-seo", "/services/local-seo", "/services/ecommerce-seo", "/"],
+          "flagged": false,
+          "note": "Good service page links"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কেন লং-টেল কীওয়ার্ড বাংলাদেশি মার্কেটে কার্যকরী?", "কীভাবে লং-টেল কীওয়ার্ড খুঁজবেন?", "কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?"],
+          "count": 3,
+          "flagged": false,
+          "note": "✅ 3 question-based H2 headings (কেন, কীভাবে, কেন)"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 16,
+          "flagged": false,
+          "note": "Multiple internal links"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    },
+    {
+      "slug": "seo-for-facebook-marketplace",
+      "title": "ফেসবুক মার্কেটপ্লেস SEO: বাংলায় প্রোডাক্ট বিক্রির কৌশল",
+      "checks": {
+        "A_TF_IDF_Coverage": {
+          "primary_keyword": "ফেসবুক মার্কেটপ্লেস SEO",
+          "occurrences": 8,
+          "flagged": false,
+          "note": "Adequate coverage"
+        },
+        "B_Semantic_Entity_Coverage": {
+          "entities_checked": ["বাংলাদেশ", "ঢাকা", "প্রোডাক্ট SEO", "অনলাইন বিক্রি"],
+          "missing_entities": [],
+          "flagged": false,
+          "note": "All key entities present"
+        },
+        "C_Pillar_Cluster_Alignment": {
+          "pillar_topic": "e-commerce SEO / Facebook Marketplace",
+          "pillar_links_found": ["/services/local-seo", "/services/on-page-seo", "/services/technical-seo", "/services/ecommerce-seo", "/services/semantic-seo", "/services/geo-ai-search", "/about", "/blog/why-ecommerce-store-needs-seo-bangladesh", "/blog/how-to-choose-right-seo-agency-bangladesh"],
+          "flagged": false,
+          "note": "Multiple pillar links"
+        },
+        "D_AEO_GEO_Optimization": {
+          "question_headings": ["কেন মোঃ কনক মিঞার সাথে কাজ করবেন?"],
+          "count": 1,
+          "flagged": true,
+          "note": "Only 1 question-based H2 heading; needs at least 2"
+        },
+        "E_Internal_Linking": {
+          "internal_links_count": 22,
+          "flagged": false,
+          "note": "Very strong internal linking"
+        },
+        "F_Schema_Ready": {
+          "has_title": true,
+          "has_excerpt": true,
+          "has_date": true,
+          "flagged": false,
+          "note": "✅ All set"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_posts_analyzed": 11,
+    "posts_passing_all_checks": 4,
+    "posts_with_flags": 7,
+    "flag_breakdown": {
+      "TF_IDF_Coverage": {"flagged": 0, "passing": 11},
+      "Semantic_Entity_Coverage": {"flagged": 0, "passing": 11},
+      "Pillar_Cluster_Alignment": {"flagged": 0, "passing": 11},
+      "AEO_GEO_Optimization": {"flagged": 7, "passing": 4},
+      "Internal_Linking": {"flagged": 0, "passing": 11},
+      "Schema_Ready": {"flagged": 0, "passing": 11}
+    },
+    "key_findings": [
+      "All 11 posts have excellent TF-IDF coverage for their primary keywords (≥5 occurrences each)",
+      "All 11 posts have full semantic entity coverage (Bangladesh, Dhaka, industry terms all present)",
+      "All 11 posts have strong pillar-cluster alignment with multiple /services/* links",
+      "All 11 posts have ≥3 internal links (passing threshold)",
+      "All 11 posts have title, excerpt, and date set (Schema Ready ✅)",
+      "CRITICAL GAP: 7 out of 11 posts (64%) have fewer than 2 question-based H2 headings — they each only have the boilerplate 'কেন বিশ্বাস করবেন মোঃ কনক মিঞাকে?' section heading. The 4 passing posts (schema-markup, seo-vs-google-ads, seo-tips-for-business-owners, long-tail-keywords) have additional topic-relevant question headings like 'কীভাবে...ইমপ্লিমেন্ট করবেন', 'কখন...বেছে নেবেন', 'কেন...কার্যকরী'"
+    ],
+    "recommendations": [
+      "Add topic-specific question headings (starting with কী, কেন, কীভাবে, কোথায়, কখন) to each post. Aim for at least 2 per post beyond the boilerplate credibility section.",
+      "Posts needing immediate attention: keyword-research-bangladesh-market, content-marketing-seo-friendly-content-writing, google-search-console-performance-guide, mobile-seo-bangladesh-ranking-strategy, youtube-seo-bangladesh-ranking-tips, seo-bangla-blog-content-writing, seo-for-facebook-marketplace"
+    ]
+  }
+}

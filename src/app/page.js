@@ -1,10 +1,11 @@
 import HomeClient from "./HomeClient";
-import { LocalBusinessSchema, BreadcrumbSchema } from "@/components/Schema";
+import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import { homepageFaqs } from "./faq-data";
 
 export const metadata = {
   title: "Best SEO Expert in Dhaka & Bangladesh | Kanok Miah",
   description:
-    "Rank higher with Kanok Miah, the best SEO expert in Dhaka & Bangladesh. 6+ years, 210+ SEO wins. Free SEO audit — Call 01604-809110.",
+    "Rank higher with Kanok Miah, the best SEO expert in Dhaka & Bangladesh. 6+ years, 210+ proven SEO wins. Free SEO audit for your business — Call 01604-809110.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",
@@ -66,12 +67,12 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
-      {LocalBusinessSchema()}
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "SEO Expert Dhaka", url: "https://kanokmiah.com.bd" },
       ])}
-      <HomeClient />
+      <FAQSchema faqs={homepageFaqs} />
+      <HomeClient faqs={homepageFaqs} />
     </>
   );
 }

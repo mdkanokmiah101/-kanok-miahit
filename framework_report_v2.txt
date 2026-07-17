@@ -1,0 +1,899 @@
+CONTENT FRAMEWORK ENFORCEMENT REPORT v2
+Posts: 128 | All passed: 65/128
+
+✅ complete-seo-guide-bangladesh-businesses-2026 [EN]
+  TF-IDF: PASS | 35 occurrences of "bangladesh"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/local-seo-tips-dhaka-businesses-google-maps
+  AEO/GEO: PASS | 12 AEO elements (9 question headings, 3 FAQ sections)
+  Int. Links: PASS | 18 internal links (7 blog, 4 service, 7 industry)
+  Schema: PASS | Missing: all fields set
+✅ local-seo-tips-dhaka-businesses-google-maps [EN]
+  TF-IDF: PASS | 63 occurrences of "local"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 12 AEO elements (7 question headings, 5 FAQ sections)
+  Int. Links: PASS | 15 internal links (4 blog, 5 service, 6 industry)
+  Schema: PASS | Missing: all fields set
+✅ why-ecommerce-store-needs-seo-bangladesh [EN]
+  TF-IDF: PASS | 50 occurrences of "commerce"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 15 AEO elements (7 question headings, 8 FAQ sections)
+  Int. Links: PASS | 10 internal links (3 blog, 4 service, 3 industry)
+  Schema: PASS | Missing: all fields set
+✅ technical-seo-checklist-bangladeshi-websites [EN]
+  TF-IDF: PASS | 34 occurrences of "technical"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 12 AEO elements (7 question headings, 5 FAQ sections)
+  Int. Links: PASS | 15 internal links (4 blog, 5 service, 6 industry)
+  Schema: PASS | Missing: all fields set
+❌ how-to-choose-right-seo-agency-bangladesh [EN]
+  TF-IDF: FAIL | 1 occurrences of "choose"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 12 AEO elements (7 question headings, 5 FAQ sections)
+  Int. Links: PASS | 12 internal links (4 blog, 2 service, 6 industry)
+  Schema: PASS | Missing: all fields set
+✅ link-building-strategies-bangladesh-market [EN]
+  TF-IDF: PASS | 54 occurrences of "link"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 12 AEO elements (7 question headings, 5 FAQ sections)
+  Int. Links: PASS | 18 internal links (6 blog, 4 service, 8 industry)
+  Schema: PASS | Missing: all fields set
+✅ geo-optimization-prepare-business-ai-search [EN]
+  TF-IDF: PASS | 40 occurrences of "geo"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 14 AEO elements (8 question headings, 6 FAQ sections)
+  Int. Links: PASS | 16 internal links (4 blog, 6 service, 6 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-garments-textile-industry-b2b-lead-generation [EN]
+  TF-IDF: PASS | 16 occurrences of "garments"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/link-building-strategies-bangladesh-market
+  AEO/GEO: PASS | 13 AEO elements (7 question headings, 6 FAQ sections)
+  Int. Links: PASS | 15 internal links (6 blog, 4 service, 5 industry)
+  Schema: PASS | Missing: all fields set
+✅ google-business-profile-optimization-guide-bangladesh [EN]
+  TF-IDF: PASS | 47 occurrences of "google"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 14 AEO elements (8 question headings, 6 FAQ sections)
+  Int. Links: PASS | 10 internal links (5 blog, 3 service, 2 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-vs-google-ads-whats-best-bangladesh-businesses [EN]
+  TF-IDF: PASS | 66 occurrences of "google"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 15 AEO elements (9 question headings, 6 FAQ sections)
+  Int. Links: PASS | 13 internal links (8 blog, 3 service, 2 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-real-estate-developers-dhaka [EN]
+  TF-IDF: PASS | 46 occurrences of "real"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/local-seo-tips-dhaka-businesses-google-maps
+  AEO/GEO: PASS | 9 AEO elements (5 question headings, 4 FAQ sections)
+  Int. Links: PASS | 9 internal links (4 blog, 2 service, 3 industry)
+  Schema: PASS | Missing: all fields set
+✅ mobile-seo-optimization-bangladesh-mobile-first-era [EN]
+  TF-IDF: PASS | 105 occurrences of "mobile"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 14 AEO elements (6 question headings, 8 FAQ sections)
+  Int. Links: PASS | 12 internal links (6 blog, 3 service, 3 industry)
+  Schema: PASS | Missing: all fields set
+✅ content-marketing-strategy-bangladeshi-brands-seo [EN]
+  TF-IDF: PASS | 143 occurrences of "content"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 10 AEO elements (6 question headings, 4 FAQ sections)
+  Int. Links: PASS | 7 internal links (5 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ international-seo-bangladesh-exporters-global-buyers [EN]
+  TF-IDF: PASS | 65 occurrences of "international"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 9 AEO elements (6 question headings, 3 FAQ sections)
+  Int. Links: PASS | 7 internal links (4 blog, 2 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-bangla-beginners-guide-google-ranking [BN]
+  TF-IDF: FAIL | 3 occurrences of "সহজ"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/local-seo-tips-dhaka-businesses-google-maps
+  AEO/GEO: PASS | 48 AEO elements (26 question headings, 22 FAQ sections)
+  Int. Links: PASS | 11 internal links (6 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ local-seo-dhaka-google-maps-ranking [BN]
+  TF-IDF: PASS | 21 occurrences of "স্থানীয়"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 40 AEO elements (27 question headings, 13 FAQ sections)
+  Int. Links: PASS | 10 internal links (6 blog, 4 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-trends-2026-ai-geo-future [BN]
+  TF-IDF: PASS | 16 occurrences of "২০২৬"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 55 AEO elements (26 question headings, 29 FAQ sections)
+  Int. Links: PASS | 10 internal links (5 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ technical-seo-core-web-vitals-optimization [BN]
+  TF-IDF: PASS | 23 occurrences of "টেকনিক্যাল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/technical-seo-checklist-bangladeshi-websites
+  AEO/GEO: PASS | 37 AEO elements (23 question headings, 14 FAQ sections)
+  Int. Links: PASS | 9 internal links (4 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ ecommerce-seo-daraz-shopify-guide [BN]
+  TF-IDF: PASS | 17 occurrences of "কমার্স"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/why-ecommerce-store-needs-seo-bangladesh
+  AEO/GEO: PASS | 37 AEO elements (23 question headings, 14 FAQ sections)
+  Int. Links: PASS | 7 internal links (2 blog, 4 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+✅ link-building-bangladesh-strategies [BN]
+  TF-IDF: PASS | 79 occurrences of "লিংক"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/link-building-strategies-bangladesh-market
+  AEO/GEO: PASS | 32 AEO elements (21 question headings, 11 FAQ sections)
+  Int. Links: PASS | 8 internal links (1 blog, 7 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ keyword-research-bangladesh-market [BN]
+  TF-IDF: PASS | 84 occurrences of "কীওয়ার্ড"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 43 AEO elements (27 question headings, 16 FAQ sections)
+  Int. Links: PASS | 9 internal links (4 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ content-marketing-seo-friendly-content-writing [BN]
+  TF-IDF: PASS | 91 occurrences of "কন্টেন্ট"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/keyword-research-bangladesh-market
+  AEO/GEO: PASS | 33 AEO elements (17 question headings, 16 FAQ sections)
+  Int. Links: PASS | 8 internal links (3 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ google-search-console-performance-guide [BN]
+  TF-IDF: PASS | 30 occurrences of "গুগল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/technical-seo-checklist-bangladeshi-websites
+  AEO/GEO: PASS | 25 AEO elements (14 question headings, 11 FAQ sections)
+  Int. Links: PASS | 10 internal links (4 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ mobile-seo-bangladesh-ranking-strategy [BN]
+  TF-IDF: PASS | 46 occurrences of "মোবাইল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/technical-seo-checklist-bangladeshi-websites
+  AEO/GEO: PASS | 33 AEO elements (13 question headings, 20 FAQ sections)
+  Int. Links: PASS | 9 internal links (4 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ schema-markup-rich-snippets-techniques [BN]
+  TF-IDF: PASS | 45 occurrences of "স্কিমা"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/technical-seo-checklist-bangladeshi-websites
+  AEO/GEO: PASS | 36 AEO elements (17 question headings, 19 FAQ sections)
+  Int. Links: PASS | 9 internal links (5 blog, 4 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ youtube-seo-bangladesh-ranking-tips [BN]
+  TF-IDF: PASS | 51 occurrences of "ইউটিউব"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/geo-optimization-prepare-business-ai-search
+  AEO/GEO: PASS | 26 AEO elements (14 question headings, 12 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-vs-google-ads-bangladesh-business [BN]
+  TF-IDF: FAIL | 0 occurrences of "এসইও"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/keyword-research-bangladesh-market
+  AEO/GEO: PASS | 29 AEO elements (16 question headings, 13 FAQ sections)
+  Int. Links: PASS | 6 internal links (2 blog, 4 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-bangla-blog-content-writing [BN]
+  TF-IDF: PASS | 15 occurrences of "ফ্রেন্ডলি"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/keyword-research-bangladesh-market
+  AEO/GEO: PASS | 33 AEO elements (18 question headings, 15 FAQ sections)
+  Int. Links: PASS | 8 internal links (3 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-tips-for-business-owners-bd [BN]
+  TF-IDF: PASS | 6 occurrences of "ব্যবসায়ীদের"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 33 AEO elements (19 question headings, 14 FAQ sections)
+  Int. Links: PASS | 10 internal links (5 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ long-tail-keywords-bangladesh [BN]
+  TF-IDF: PASS | 56 occurrences of "টেল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 54 AEO elements (29 question headings, 25 FAQ sections)
+  Int. Links: PASS | 9 internal links (4 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-for-facebook-marketplace [BN]
+  TF-IDF: PASS | 41 occurrences of "ফেসবুক"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 23 AEO elements (16 question headings, 7 FAQ sections)
+  Int. Links: PASS | 13 internal links (7 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-for-youtube-channel-bangla [BN]
+  TF-IDF: PASS | 31 occurrences of "ইউটিউব"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 23 AEO elements (15 question headings, 8 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-google-updates-2026 [BN]
+  TF-IDF: PASS | 43 occurrences of "গুগল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 27 AEO elements (18 question headings, 9 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-semantic-search-bangla [BN]
+  TF-IDF: PASS | 34 occurrences of "সেম্যান্টিক"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 42 AEO elements (25 question headings, 17 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-for-hotel-resort-bangladesh [BN]
+  TF-IDF: PASS | 37 occurrences of "হোটেল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 27 AEO elements (19 question headings, 8 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-google-business-profile-posts [BN]
+  TF-IDF: PASS | 20 occurrences of "গুগল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 25 AEO elements (18 question headings, 7 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-local-citations-bangladesh [BN]
+  TF-IDF: PASS | 16 occurrences of "লোকাল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 29 AEO elements (22 question headings, 7 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-for-ngo-bangladesh [BN]
+  TF-IDF: PASS | 48 occurrences of "এনজিও"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 30 AEO elements (22 question headings, 8 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-career-guide-bangladesh-2026 [BN]
+  TF-IDF: PASS | 11 occurrences of "ক্যারিয়ার"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 28 AEO elements (20 question headings, 8 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-consultant-dhaka-bangladesh [BN]
+  TF-IDF: PASS | 13 occurrences of "ঢাকায়"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 27 AEO elements (17 question headings, 10 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ google-my-business-optimization-bangladesh [BN]
+  TF-IDF: PASS | 14 occurrences of "গুগল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 26 AEO elements (19 question headings, 7 FAQ sections)
+  Int. Links: PASS | 12 internal links (5 blog, 6 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-for-new-website-bangladesh [BN]
+  TF-IDF: PASS | 8 occurrences of "নতুন"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 25 AEO elements (17 question headings, 8 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ website-speed-optimization-bangladesh [BN]
+  TF-IDF: PASS | 12 occurrences of "ওয়েবসাইট"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 24 AEO elements (17 question headings, 7 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-audit-checklist-bangladesh [BN]
+  TF-IDF: PASS | 14 occurrences of "অডিট"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 27 AEO elements (18 question headings, 9 FAQ sections)
+  Int. Links: PASS | 11 internal links (5 blog, 6 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ affiliate-seo-bangladesh [BN]
+  TF-IDF: PASS | 9 occurrences of "অ্যাফিলিয়েট"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 26 AEO elements (18 question headings, 8 FAQ sections)
+  Int. Links: PASS | 13 internal links (6 blog, 7 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ voice-search-seo-bangladesh [BN]
+  TF-IDF: FAIL | 0 occurrences of "ভয়েস"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 11 AEO elements (3 question headings, 8 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-legal-compliance-bangladesh [BN]
+  TF-IDF: FAIL | 0 occurrences of "আইনি"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/voice-search-seo-bangladesh)
+  AEO/GEO: PASS | 3 AEO elements (3 question headings, 0 FAQ sections)
+  Int. Links: FAIL | 2 internal links (2 blog, 0 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-for-restaurants-cafe-dhaka [BN]
+  TF-IDF: FAIL | 0 occurrences of "রেস্টুরেন্ট"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/google-my-business-optimization-bangladesh)
+  AEO/GEO: PASS | 3 AEO elements (3 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 1 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-for-cleaning-services-bangladesh [BN]
+  TF-IDF: FAIL | 0 occurrences of "ক্লিনিং"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/google-my-business-optimization-bangladesh)
+  AEO/GEO: PASS | 4 AEO elements (3 question headings, 1 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-dashboard-tools-bangladesh [BN]
+  TF-IDF: FAIL | 0 occurrences of "ড্যাশবোর্ড"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-google-analytics-4-bangladesh)
+  AEO/GEO: PASS | 3 AEO elements (3 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-mistakes-to-avoid-bangladesh [BN]
+  TF-IDF: FAIL | 0 occurrences of "ভুল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 3 AEO elements (3 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-website-migration-guide-bd [BN]
+  TF-IDF: PASS | 11 occurrences of "ওয়েবসাইট"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-redirects-guide-bangladesh)
+  AEO/GEO: PASS | 3 AEO elements (3 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ google-tag-manager-seo-bd [BN]
+  TF-IDF: PASS | 13 occurrences of "গুগল"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-google-analytics-4-bangladesh)
+  AEO/GEO: PASS | 5 AEO elements (3 question headings, 2 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-google-analytics-4-bangladesh [BN]
+  TF-IDF: PASS | 12 occurrences of "গুগল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/google-tag-manager-seo-bd)
+  AEO/GEO: PASS | 4 AEO elements (4 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-keyword-clustering-bangladesh [BN]
+  TF-IDF: PASS | 37 occurrences of "কীওয়ার্ড"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/keyword-research-bangladesh-market
+  AEO/GEO: PASS | 11 AEO elements (9 question headings, 2 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-competitor-analysis-bangladesh [BN]
+  TF-IDF: PASS | 13 occurrences of "কম্পিটিটর"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 3 AEO elements (3 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-landing-page-optimization-bd [BN]
+  TF-IDF: PASS | 22 occurrences of "ল্যান্ডিং"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/keyword-research-bangladesh-market
+  AEO/GEO: PASS | 4 AEO elements (3 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-for-mobile-apps-bangladesh [BN]
+  TF-IDF: FAIL | 4 occurrences of "মোবাইল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 4 AEO elements (4 question headings, 0 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ google-discover-seo-bangladesh [BN]
+  TF-IDF: PASS | 21 occurrences of "গুগল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 3 AEO elements (3 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-for-podcast-bangladesh [BN]
+  TF-IDF: PASS | 12 occurrences of "পডকাস্টের"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: /blog/keyword-research-bangladesh-market
+  AEO/GEO: PASS | 2 AEO elements (2 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-pillar-content-strategy-bd [BN]
+  TF-IDF: PASS | 36 occurrences of "পিলার"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-keyword-clustering-bangladesh)
+  AEO/GEO: PASS | 11 AEO elements (6 question headings, 5 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-skyscraper-technique-bangladesh [BN]
+  TF-IDF: PASS | 13 occurrences of "স্কাইস্ক্র্যাপার"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/link-building-strategies-bangladesh-market
+  AEO/GEO: PASS | 4 AEO elements (2 question headings, 2 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-content-repurposing-bangladesh [BN]
+  TF-IDF: PASS | 33 occurrences of "কন্টেন্ট"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 11 AEO elements (3 question headings, 8 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-hubspot-vs-wordpress-bd [BN]
+  TF-IDF: PASS | 17 occurrences of "প্ল্যাটফর্ম"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026
+  AEO/GEO: PASS | 5 AEO elements (4 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-domain-authority-bangladesh [BN]
+  TF-IDF: PASS | 6 occurrences of "ডোমেইন"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-page-authority-bangladesh)
+  AEO/GEO: PASS | 4 AEO elements (4 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-page-authority-bangladesh [BN]
+  TF-IDF: PASS | 16 occurrences of "পেজ"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-domain-authority-bangladesh)
+  AEO/GEO: PASS | 6 AEO elements (5 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-referral-traffic-bangladesh [BN]
+  TF-IDF: PASS | 31 occurrences of "রেফারেল"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-direct-traffic-bangladesh)
+  AEO/GEO: PASS | 6 AEO elements (4 question headings, 2 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-direct-traffic-bangladesh [BN]
+  TF-IDF: PASS | 30 occurrences of "ডাইরেক্ট"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-branded-vs-non-branded-bd)
+  AEO/GEO: PASS | 5 AEO elements (4 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-branded-vs-non-branded-bd [BN]
+  TF-IDF: PASS | 52 occurrences of "ব্র্যান্ডেড"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/keyword-research-bangladesh-market
+  AEO/GEO: PASS | 18 AEO elements (18 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-search-intent-optimization [BN]
+  TF-IDF: PASS | 27 occurrences of "সার্চ"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-keyword-clustering-bangladesh)
+  AEO/GEO: PASS | 12 AEO elements (5 question headings, 7 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-information-gain-optimization [BN]
+  TF-IDF: PASS | 66 occurrences of "ইনফরমেশন"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-passage-ranking-bangladesh)
+  AEO/GEO: PASS | 33 AEO elements (18 question headings, 15 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-passage-ranking-bangladesh [BN]
+  TF-IDF: PASS | 83 occurrences of "প্যাসেজ"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-featured-snippet-bangladesh)
+  AEO/GEO: PASS | 35 AEO elements (14 question headings, 21 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-people-also-ask-optimization [BN]
+  TF-IDF: FAIL | 1 occurrences of "পিপল"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-featured-snippet-bangladesh)
+  AEO/GEO: PASS | 84 AEO elements (17 question headings, 67 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-featured-snippet-bangladesh [BN]
+  TF-IDF: PASS | 59 occurrences of "ফিচার্ড"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-people-also-ask-optimization)
+  AEO/GEO: PASS | 50 AEO elements (16 question headings, 34 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-knowledge-panel-bangladesh [BN]
+  TF-IDF: PASS | 69 occurrences of "নলেজ"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-zero-click-search-bangladesh)
+  AEO/GEO: PASS | 32 AEO elements (17 question headings, 15 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-zero-click-search-bangladesh [BN]
+  TF-IDF: PASS | 66 occurrences of "জিরো"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-knowledge-panel-bangladesh)
+  AEO/GEO: PASS | 37 AEO elements (16 question headings, 21 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-google-penalty-recovery-bd [BN]
+  TF-IDF: PASS | 66 occurrences of "গুগল"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-audit-checklist-bangladesh)
+  AEO/GEO: PASS | 29 AEO elements (15 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-https-ssl-impact-bangladesh [BN]
+  TF-IDF: PASS | 5 occurrences of "উপর"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-website-migration-guide-bd)
+  AEO/GEO: PASS | 32 AEO elements (18 question headings, 14 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-redirects-guide-bangladesh [BN]
+  TF-IDF: PASS | 94 occurrences of "রিডাইরেক্ট"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-canonical-url-guide-bd)
+  AEO/GEO: PASS | 30 AEO elements (16 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-canonical-url-guide-bd [BN]
+  TF-IDF: PASS | 80 occurrences of "ক্যানোনিকাল"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-redirects-guide-bangladesh)
+  AEO/GEO: PASS | 33 AEO elements (19 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-robots-txt-guide-bangladesh [BN]
+  TF-IDF: FAIL | 1 occurrences of "রোবটস"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-xml-sitemap-guide-bd)
+  AEO/GEO: PASS | 31 AEO elements (17 question headings, 14 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-xml-sitemap-guide-bd [BN]
+  TF-IDF: PASS | 82 occurrences of "সাইটম্যাপ"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-robots-txt-guide-bangladesh)
+  AEO/GEO: PASS | 31 AEO elements (17 question headings, 14 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-hreflang-guide-bangladesh [BN]
+  TF-IDF: PASS | 57 occurrences of "ট্যাগ"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-xml-sitemap-guide-bd)
+  AEO/GEO: PASS | 31 AEO elements (17 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-structured-data-guide-bd [BN]
+  TF-IDF: PASS | 51 occurrences of "স্ট্রাকচারড"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-json-ld-schema-bangladesh)
+  AEO/GEO: PASS | 36 AEO elements (15 question headings, 21 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-json-ld-schema-bangladesh [BN]
+  TF-IDF: PASS | 33 occurrences of "স্কিমা"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/article-slug)
+  AEO/GEO: PASS | 35 AEO elements (15 question headings, 20 FAQ sections)
+  Int. Links: PASS | 5 internal links (5 blog, 0 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-breadcrumb-schema-bd [BN]
+  TF-IDF: PASS | 79 occurrences of "ব্রেডক্রাম্ব"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-guide)
+  AEO/GEO: PASS | 34 AEO elements (17 question headings, 17 FAQ sections)
+  Int. Links: PASS | 4 internal links (3 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-faq-schema-bangladesh [BN]
+  TF-IDF: PASS | 70 occurrences of "স্কিমা"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/geo-optimization-prepare-business-ai-search
+  AEO/GEO: PASS | 164 AEO elements (15 question headings, 149 FAQ sections)
+  Int. Links: PASS | 3 internal links (3 blog, 0 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-howto-schema-bangladesh [BN]
+  TF-IDF: PASS | 69 occurrences of "স্কিমা"
+  Entities: FAIL | Missing: location_dhaka
+  Pillar Link: PASS | Links to: (exists: /blog/seo-faq-schema-bangladesh)
+  AEO/GEO: PASS | 34 AEO elements (15 question headings, 19 FAQ sections)
+  Int. Links: PASS | 3 internal links (3 blog, 0 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-for-startups-bangladesh [EN]
+  TF-IDF: PASS | 7 occurrences of "startups"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 24 AEO elements (10 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 3 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ b2b-lead-generation-seo-bangladesh [EN]
+  TF-IDF: PASS | 44 occurrences of "b2b"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 26 AEO elements (12 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 2 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-for-law-firms-bangladesh [EN]
+  TF-IDF: PASS | 7 occurrences of "law"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 26 AEO elements (12 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 2 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-for-fitness-gyms-bangladesh [EN]
+  TF-IDF: PASS | 15 occurrences of "fitness"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 24 AEO elements (10 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 2 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-services-cost-bangladesh-pricing-guide [EN]
+  TF-IDF: FAIL | 2 occurrences of "cost"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 24 AEO elements (10 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 3 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-vs-ppc-advertising-bangladesh [EN]
+  TF-IDF: PASS | 52 occurrences of "ppc"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-services-cost-bangladesh-pricing-guide)
+  AEO/GEO: PASS | 33 AEO elements (19 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ how-to-track-measure-seo-roi-bangladesh [EN]
+  TF-IDF: FAIL | 2 occurrences of "track"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 26 AEO elements (12 question headings, 14 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 3 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-healthcare-medical-clinics-bangladesh [EN]
+  TF-IDF: PASS | 31 occurrences of "healthcare"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 28 AEO elements (12 question headings, 16 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 2 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-educational-institutions-bangladesh [EN]
+  TF-IDF: PASS | 16 occurrences of "educational"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 25 AEO elements (10 question headings, 15 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 2 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-travel-tourism-bangladesh [EN]
+  TF-IDF: PASS | 48 occurrences of "travel"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 25 AEO elements (10 question headings, 15 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 2 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-event-management-companies-bangladesh [EN]
+  TF-IDF: PASS | 80 occurrences of "event"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-wedding-event-planners-bangladesh)
+  AEO/GEO: PASS | 25 AEO elements (10 question headings, 15 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-real-estate-agents-property-developers-bangladesh [EN]
+  TF-IDF: PASS | 39 occurrences of "real"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 27 AEO elements (10 question headings, 17 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 2 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ local-seo-multiple-business-locations-bangladesh [EN]
+  TF-IDF: PASS | 29 occurrences of "local"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/landlord-certificates-seo-case-study)
+  AEO/GEO: FAIL | 0 AEO elements (0 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ enterprise-seo-large-organizations-bangladesh [EN]
+  TF-IDF: PASS | 26 occurrences of "enterprise"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/local-seo-multiple-business-locations-bangladesh)
+  AEO/GEO: FAIL | 0 AEO elements (0 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-photographers-videographers-bangladesh [EN]
+  TF-IDF: PASS | 7 occurrences of "photographers"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-wedding-event-planners-bangladesh)
+  AEO/GEO: FAIL | 0 AEO elements (0 question headings, 0 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-wedding-event-planners-bangladesh [EN]
+  TF-IDF: PASS | 28 occurrences of "wedding"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-event-management-companies-bangladesh)
+  AEO/GEO: FAIL | 0 AEO elements (0 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ blogging-strategy-seo-frequency-topics-bangladesh [EN]
+  TF-IDF: PASS | 8 occurrences of "blogging"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/backlink-outreach-templates-strategies-bangladesh)
+  AEO/GEO: FAIL | 1 AEO elements (1 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ backlink-outreach-templates-strategies-bangladesh [EN]
+  TF-IDF: PASS | 5 occurrences of "backlink"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: /blog/link-building-strategies-bangladesh-market
+  AEO/GEO: FAIL | 0 AEO elements (0 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-non-profit-organizations-bangladesh [EN]
+  TF-IDF: PASS | 15 occurrences of "non"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/blogging-strategy-seo-frequency-topics-bangladesh)
+  AEO/GEO: FAIL | 1 AEO elements (0 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ recovering-google-penalties-bangladesh-guide [EN]
+  TF-IDF: FAIL | 2 occurrences of "recovering"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: FAIL | 0 AEO elements (0 question headings, 0 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 3 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ building-seo-roadmap-bangladesh-business [EN]
+  TF-IDF: PASS | 5 occurrences of "building"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/recovering-google-penalties-bangladesh-guide)
+  AEO/GEO: PASS | 2 AEO elements (0 question headings, 2 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ voice-search-seo-bengali-bangladesh [EN]
+  TF-IDF: PASS | 69 occurrences of "voice"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 7 AEO elements (0 question headings, 7 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 3 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh [EN]
+  TF-IDF: PASS | 10 occurrences of "kanok"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/locksmith-dundee-seo-case-study)
+  AEO/GEO: PASS | 18 AEO elements (16 question headings, 2 FAQ sections)
+  Int. Links: PASS | 11 internal links (4 blog, 7 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ locksmith-dundee-seo-case-study [EN]
+  TF-IDF: PASS | 44 occurrences of "locksmith"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/landlord-certificates-seo-case-study)
+  AEO/GEO: FAIL | 1 AEO elements (0 question headings, 1 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ landlord-certificates-seo-case-study [EN]
+  TF-IDF: FAIL | 3 occurrences of "landlord"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/das-taxis-scotland-seo-case-study)
+  AEO/GEO: FAIL | 1 AEO elements (0 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ das-taxis-scotland-seo-case-study [EN]
+  TF-IDF: FAIL | 3 occurrences of "das"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/locksmith-dundee-seo-case-study)
+  AEO/GEO: FAIL | 0 AEO elements (0 question headings, 0 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ morethanpanel-seo-case-study [EN]
+  TF-IDF: FAIL | 4 occurrences of "morethanpanel"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/smmgen-seo-case-study)
+  AEO/GEO: FAIL | 1 AEO elements (0 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ smmgen-seo-case-study [EN]
+  TF-IDF: PASS | 5 occurrences of "smmgen"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/morethanpanel-seo-case-study)
+  AEO/GEO: PASS | 3 AEO elements (0 question headings, 3 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 2 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ smmsun-seo-case-study [EN]
+  TF-IDF: FAIL | 4 occurrences of "smmsun"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/smmgen-seo-case-study)
+  AEO/GEO: FAIL | 1 AEO elements (0 question headings, 1 FAQ sections)
+  Int. Links: PASS | 4 internal links (1 blog, 3 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ mir-cement-seo-case-study [EN]
+  TF-IDF: FAIL | 3 occurrences of "mir"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/b2b-lead-generation-seo-bangladesh)
+  AEO/GEO: FAIL | 1 AEO elements (0 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (1 blog, 1 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ dhaka-apparels-seo-case-study [EN]
+  TF-IDF: FAIL | 4 occurrences of "dhaka"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/b2b-lead-generation-seo-bangladesh)
+  AEO/GEO: FAIL | 1 AEO elements (0 question headings, 1 FAQ sections)
+  Int. Links: PASS | 3 internal links (2 blog, 0 service, 1 industry)
+  Schema: PASS | Missing: all fields set
+❌ stealth-windshield-repairs-seo-case-study [EN]
+  TF-IDF: FAIL | 4 occurrences of "stealth"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/locksmith-dundee-seo-case-study)
+  AEO/GEO: FAIL | 0 AEO elements (0 question headings, 0 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ how-to-choose-best-seo-expert-dhaka-15-things [EN]
+  TF-IDF: FAIL | 2 occurrences of "choose"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/google-business-profile-optimization-guide-bangladesh)
+  AEO/GEO: FAIL | 1 AEO elements (0 question headings, 1 FAQ sections)
+  Int. Links: PASS | 15 internal links (8 blog, 1 service, 6 industry)
+  Schema: PASS | Missing: all fields set
+✅ seo-expert-vs-seo-agency-dhaka-which-is-right [EN]
+  TF-IDF: PASS | 42 occurrences of "expert"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/how-to-choose-best-seo-expert-dhaka-15-things)
+  AEO/GEO: PASS | 5 AEO elements (5 question headings, 0 FAQ sections)
+  Int. Links: PASS | 5 internal links (2 blog, 0 service, 3 industry)
+  Schema: PASS | Missing: all fields set
+✅ top-10-seo-mistakes-dhaka-businesses-fix [EN]
+  TF-IDF: PASS | 16 occurrences of "mistakes"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-mistakes-to-avoid-bangladesh)
+  AEO/GEO: PASS | 10 AEO elements (5 question headings, 5 FAQ sections)
+  Int. Links: PASS | 6 internal links (1 blog, 5 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ what-does-seo-expert-do-guide-business-owners [EN]
+  TF-IDF: PASS | 52 occurrences of "expert"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-tips-for-business-owners-bd)
+  AEO/GEO: PASS | 16 AEO elements (12 question headings, 4 FAQ sections)
+  Int. Links: FAIL | 2 internal links (1 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ seo-case-study-dhaka-businesses-increased-organic-traffic [EN]
+  TF-IDF: PASS | 28 occurrences of "case"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-direct-traffic-bangladesh)
+  AEO/GEO: PASS | 18 AEO elements (10 question headings, 8 FAQ sections)
+  Int. Links: FAIL | 2 internal links (2 blog, 0 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ hiring-seo-expert-dhaka-better-roi-than-paid-ads [EN]
+  TF-IDF: FAIL | 3 occurrences of "hiring"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 10 AEO elements (9 question headings, 1 FAQ sections)
+  Int. Links: FAIL | 1 internal links (0 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+✅ ai-seo-2026-dhaka-experts-optimize-google-ai-chatgpt [EN]
+  TF-IDF: PASS | 9 occurrences of "2026"
+  Entities: PASS | Missing: none
+  Pillar Link: PASS | Links to: (exists: /blog/seo-vs-google-ads-whats-best-bangladesh-businesses)
+  AEO/GEO: PASS | 16 AEO elements (8 question headings, 8 FAQ sections)
+  Int. Links: PASS | 4 internal links (3 blog, 1 service, 0 industry)
+  Schema: PASS | Missing: all fields set
+❌ watchzonebd-seo-case-study [EN]
+  TF-IDF: PASS | 14 occurrences of "watchzonebd"
+  Entities: PASS | Missing: none
+  Pillar Link: FAIL | Links to: NO pillar link found
+  AEO/GEO: PASS | 6 AEO elements (0 question headings, 6 FAQ sections)
+  Int. Links: PASS | 3 internal links (0 blog, 3 service, 0 industry)
+  Schema: PASS | Missing: all fields set

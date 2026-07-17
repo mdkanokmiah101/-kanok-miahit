@@ -1,0 +1,1 @@
+chmod +x /root/kanok-miahit/check_post.py && /root/kanok-miahit/check_post.py

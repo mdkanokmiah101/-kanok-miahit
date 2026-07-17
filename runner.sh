@@ -1,0 +1,1 @@
+python3 /root/kanok-miahit/check_post.py

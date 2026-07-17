@@ -1,0 +1,1 @@
+bash -c "cd /root/kanok-miahit && python3 check_post.py"

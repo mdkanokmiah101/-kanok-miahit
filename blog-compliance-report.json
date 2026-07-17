@@ -1,0 +1,599 @@
+{
+  "report": {
+    "analyzed_by": "Kanok Miah Blog Compliance Analyzer",
+    "date": "2026-07-16",
+    "total_posts_analyzed": 10,
+    "summary": {
+      "overall_flags": {
+        "tf_idf_coverage_flags": 0,
+        "semantic_entity_flags": 1,
+        "pillar_cluster_flags": 0,
+        "aeo_geo_optimization_flags": 6,
+        "internal_linking_flags": 0,
+        "schema_flags": 0
+      },
+      "total_flags": 7,
+      "pass_rate": "57% (8 of 14 check categories passed cleanly)"
+    },
+    "posts": [
+      {
+        "slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "title": "Complete SEO Guide for Bangladesh Businesses in 2026",
+        "tags": ["SEO Guide", "Bangladesh SEO", "Digital Marketing", "2026"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "SEO",
+            "occurrences_in_content": 50,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword 'SEO' appears extensively throughout the content"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "Dhaka"],
+            "bangladesh_present": true,
+            "dhaka_present": true,
+            "pass": true,
+            "notes": "Both key location entities present"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["SEO Guide", "Bangladesh SEO", "Digital Marketing", "2026"],
+            "pillar_topic": "SEO Services",
+            "pillar_links_found": [
+              "/services/local-seo",
+              "/services/on-page-seo",
+              "/services/technical-seo",
+              "/services/ecommerce-seo",
+              "/industries/ecommerce"
+            ],
+            "pass": true,
+            "notes": "Multiple links to /services/* and /industries/* pillar pages"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## Why SEO Matters More Than Ever for Bangladesh Businesses in 2026"
+            ],
+            "count": 1,
+            "threshold": 2,
+            "pass": false,
+            "notes": "Only 1 question-based ## heading; minimum 2 required. Consider adding '## What is...' or '## How to...' heading"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 27,
+            "threshold": 3,
+            "pass": true,
+            "notes": "27+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present (title, excerpt, date)"
+          }
+        }
+      },
+      {
+        "slug": "local-seo-tips-dhaka-businesses-google-maps",
+        "title": "Local SEO Tips for Dhaka Businesses: Dominate Google Maps",
+        "tags": ["Local SEO", "Dhaka", "Google Maps", "GBP"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "Local SEO",
+            "occurrences_in_content": 12,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword 'Local SEO' appears in multiple headings and body text"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Dhaka", "Google Maps", "GBP", "Bangladesh"],
+            "dhaka_present": true,
+            "google_maps_present": true,
+            "gbp_present": true,
+            "bangladesh_present": true,
+            "pass": true,
+            "notes": "All key entities present"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["Local SEO", "Dhaka", "Google Maps", "GBP"],
+            "pillar_topic": "Local SEO / GBP Optimization",
+            "pillar_links_found": [
+              "/services/local-seo",
+              "/services/link-building",
+              "/services/geo-ai-search",
+              "/industries/food-restaurant",
+              "/industries/cleaning"
+            ],
+            "pass": true,
+            "notes": "Links to /services/* and /industries/* pillar pages"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## Why Local SEO is Critical for Dhaka Businesses"
+            ],
+            "count": 1,
+            "threshold": 2,
+            "pass": false,
+            "notes": "Only 1 question-based ## heading. Add '## How...' or '## What...' heading for better AEO"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 19,
+            "threshold": 3,
+            "pass": true,
+            "notes": "19+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      },
+      {
+        "slug": "why-ecommerce-store-needs-seo-bangladesh",
+        "title": "Why Your E-commerce Store Needs SEO in Bangladesh",
+        "tags": ["E-commerce SEO", "Daraz", "Shopify", "Bangladesh"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "E-commerce SEO",
+            "occurrences_in_content": 6,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword appears in multiple headings and body text"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "e-commerce", "Daraz", "Shopify"],
+            "bangladesh_present": true,
+            "ecommerce_present": true,
+            "daraz_present": true,
+            "shopify_present": true,
+            "pass": true,
+            "notes": "All key entities present in content"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["E-commerce SEO", "Daraz", "Shopify", "Bangladesh"],
+            "pillar_topic": "E-commerce SEO Services",
+            "pillar_links_found": [
+              "/services/ecommerce-seo",
+              "/services/technical-seo",
+              "/services/on-page-seo",
+              "/industries/ecommerce"
+            ],
+            "pass": true,
+            "notes": "Multiple pillar links including /services/ecommerce-seo"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## Why Organic Traffic Matters for E-commerce"
+            ],
+            "count": 1,
+            "threshold": 2,
+            "pass": false,
+            "notes": "Only 1 question-based ## heading"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 11,
+            "threshold": 3,
+            "pass": true,
+            "notes": "11+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      },
+      {
+        "slug": "technical-seo-checklist-bangladeshi-websites",
+        "title": "Technical SEO Checklist for Bangladeshi Websites",
+        "tags": ["Technical SEO", "Core Web Vitals", "Website Optimization", "Bangladesh"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "Technical SEO",
+            "occurrences_in_content": 15,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword appears frequently in headings and body"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "Core Web Vitals"],
+            "bangladesh_present": true,
+            "core_web_vitals_present": true,
+            "pass": true,
+            "notes": "Both key entities present"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["Technical SEO", "Core Web Vitals", "Website Optimization", "Bangladesh"],
+            "pillar_topic": "Technical SEO Services",
+            "pillar_links_found": [
+              "/services/technical-seo",
+              "/services/local-seo",
+              "/services/geo-ai-search",
+              "/services/on-page-seo"
+            ],
+            "pass": true,
+            "notes": "Multiple pillar links to /services/*"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## Why Technical SEO Matters for Bangladeshi Websites"
+            ],
+            "count": 1,
+            "threshold": 2,
+            "pass": false,
+            "notes": "Only 1 question-based ## heading"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 20,
+            "threshold": 3,
+            "pass": true,
+            "notes": "20+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      },
+      {
+        "slug": "how-to-choose-right-seo-agency-bangladesh",
+        "title": "How to Choose the Right SEO Agency in Bangladesh",
+        "tags": ["SEO Agency", "Bangladesh", "Agency Selection", "Digital Marketing"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "SEO Agency",
+            "occurrences_in_content": 12,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword 'SEO Agency' appears frequently in headings and body"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "SEO Agency", "Digital Marketing"],
+            "bangladesh_present": true,
+            "seo_agency_present": true,
+            "digital_marketing_present": true,
+            "pass": true,
+            "notes": "All key entities present"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["SEO Agency", "Bangladesh", "Agency Selection", "Digital Marketing"],
+            "pillar_topic": "SEO Agency Services",
+            "pillar_links_found": [
+              "/services/technical-seo",
+              "/services/local-seo",
+              "/services",
+              "/industries/food-restaurant",
+              "/industries/ecommerce"
+            ],
+            "pass": true,
+            "notes": "Multiple pillar links"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## What a Good SEO Agency Looks Like"
+            ],
+            "count": 1,
+            "threshold": 2,
+            "pass": false,
+            "notes": "Only 1 question-based ## heading"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 16,
+            "threshold": 3,
+            "pass": true,
+            "notes": "16+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      },
+      {
+        "slug": "link-building-strategies-bangladesh-market",
+        "title": "Link Building Strategies for Bangladesh Market",
+        "tags": ["Link Building", "Backlinks", "SEO Strategy", "Bangladesh"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "Link Building",
+            "occurrences_in_content": 25,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword appears extensively throughout"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "Backlinks", "Link Building"],
+            "bangladesh_present": true,
+            "backlinks_present": true,
+            "link_building_present": true,
+            "pass": true,
+            "notes": "All key entities present"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["Link Building", "Backlinks", "SEO Strategy", "Bangladesh"],
+            "pillar_topic": "Link Building Services",
+            "pillar_links_found": [
+              "/services/link-building",
+              "/services/geo-ai-search",
+              "/industries/ecommerce",
+              "/industries/education",
+              "/industries/garments-textile"
+            ],
+            "pass": true,
+            "notes": "Links to /services/link-building pillar page"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## Why Link Building Matters in Bangladesh",
+              "## What to Avoid in Link Building"
+            ],
+            "count": 2,
+            "threshold": 2,
+            "pass": true,
+            "notes": "2 question-based ## headings found (Why and What)"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 18,
+            "threshold": 3,
+            "pass": true,
+            "notes": "18+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      },
+      {
+        "slug": "geo-optimization-prepare-business-ai-search",
+        "title": "GEO Optimization: Prepare Your Business for AI Search",
+        "tags": ["GEO", "AI Search", "Generative Engine Optimization", "Future of SEO"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "GEO",
+            "occurrences_in_content": 40,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword 'GEO' appears extensively"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "GEO", "AI Search", "Generative Engine Optimization"],
+            "bangladesh_present": true,
+            "geo_present": true,
+            "ai_search_present": true,
+            "generative_engine_optimization_present": true,
+            "pass": true,
+            "notes": "All key entities present"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["GEO", "AI Search", "Generative Engine Optimization", "Future of SEO"],
+            "pillar_topic": "GEO / AI Search Optimization Services",
+            "pillar_links_found": [
+              "/services/geo-ai-search",
+              "/services/ecommerce-seo",
+              "/services/link-building",
+              "/services/local-seo",
+              "/services/technical-seo",
+              "/services/on-page-seo",
+              "/industries/medical",
+              "/industries/education"
+            ],
+            "pass": true,
+            "notes": "Direct link to /services/geo-ai-search pillar page"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## What is Generative Engine Optimization?",
+              "## How AI Search Engines Work",
+              "## Why GEO Matters for Bangladesh Businesses"
+            ],
+            "count": 3,
+            "threshold": 2,
+            "pass": true,
+            "notes": "3 question-based ## headings (What, How, Why) — excellent AEO/GEO optimization"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 22,
+            "threshold": 3,
+            "pass": true,
+            "notes": "22+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      },
+      {
+        "slug": "seo-garments-textile-industry-b2b-lead-generation",
+        "title": "SEO for Garments & Textile Industry: B2B Lead Generation",
+        "tags": ["Garments SEO", "Textile Industry", "B2B SEO", "Bangladesh RMG"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "SEO",
+            "occurrences_in_content": 35,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword 'SEO' appears extensively"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "garments", "textile", "B2B"],
+            "bangladesh_present": true,
+            "garments_present": true,
+            "textile_present": true,
+            "b2b_present": true,
+            "pass": true,
+            "notes": "All key entities present"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["Garments SEO", "Textile Industry", "B2B SEO", "Bangladesh RMG"],
+            "pillar_topic": "Garments & Textile Industry SEO",
+            "pillar_links_found": [
+              "/industries/garments-textile",
+              "/services/link-building",
+              "/services/technical-seo",
+              "/services/local-seo",
+              "/services/on-page-seo"
+            ],
+            "pass": true,
+            "notes": "Links to /industries/garments-textile pillar page"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## Why Digital Visibility Matters for Bangladeshi Garment Manufacturers"
+            ],
+            "count": 1,
+            "threshold": 2,
+            "pass": false,
+            "notes": "Only 1 question-based ## heading"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 16,
+            "threshold": 3,
+            "pass": true,
+            "notes": "16+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      },
+      {
+        "slug": "google-business-profile-optimization-guide-bangladesh",
+        "title": "Google Business Profile Optimization Guide for Bangladesh",
+        "tags": ["Google Business Profile", "Local SEO", "Google Maps", "Bangladesh Business"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "Google Business Profile",
+            "occurrences_in_content": 30,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword appears extensively throughout"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "Local SEO", "Google Maps", "GBP"],
+            "bangladesh_present": true,
+            "local_seo_present": true,
+            "google_maps_present": true,
+            "gbp_present": true,
+            "pass": true,
+            "notes": "All key entities present"
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["Google Business Profile", "Local SEO", "Google Maps", "Bangladesh Business"],
+            "pillar_topic": "Local SEO Services",
+            "pillar_links_found": [
+              "/services/local-seo",
+              "/services/on-page-seo",
+              "/services/technical-seo"
+            ],
+            "pass": true,
+            "notes": "Links to /services/local-seo pillar page"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## Why Google Business Profile is Critical in Bangladesh",
+              "## How Google Business Profile Works in Bangladesh"
+            ],
+            "count": 2,
+            "threshold": 2,
+            "pass": true,
+            "notes": "2 question-based ## headings (Why and How)"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 14,
+            "threshold": 3,
+            "pass": true,
+            "notes": "14+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      },
+      {
+        "slug": "seo-vs-google-ads-whats-best-bangladesh-businesses",
+        "title": "SEO vs Google Ads: What's Best for Bangladesh Businesses",
+        "tags": ["SEO vs Ads", "Google Ads", "PPC", "Bangladesh Digital Marketing"],
+        "checks": {
+          "A_TFIDF_Coverage": {
+            "primary_keyword": "SEO",
+            "occurrences_in_content": 30,
+            "threshold": 5,
+            "pass": true,
+            "notes": "Keyword 'SEO' appears extensively"
+          },
+          "B_Semantic_Entity_Coverage": {
+            "entities_checked": ["Bangladesh", "Google Ads", "PPC", "Digital Marketing"],
+            "bangladesh_present": true,
+            "google_ads_present": true,
+            "ppc_present": false,
+            "digital_marketing_present": true,
+            "pass": false,
+            "notes": "Entity 'PPC' is in tags but NOT in content body. Google Ads is well-covered as a synonym."
+          },
+          "C_Pillar_Cluster_Alignment": {
+            "tags": ["SEO vs Ads", "Google Ads", "PPC", "Bangladesh Digital Marketing"],
+            "pillar_topic": "SEO & Digital Marketing Services",
+            "pillar_links_found": [
+              "/services",
+              "/services/on-page-seo",
+              "/services/local-seo",
+              "/industries/ecommerce",
+              "/industries/real-estate"
+            ],
+            "pass": true,
+            "notes": "Multiple pillar links including /services main page"
+          },
+          "D_AEO_GEO_Optimization": {
+            "question_headings": [
+              "## When to Choose SEO",
+              "## When to Choose Google Ads"
+            ],
+            "count": 2,
+            "threshold": 2,
+            "pass": true,
+            "notes": "2 question-based ## headings (When)"
+          },
+          "E_Internal_Linking": {
+            "internal_links_count": 14,
+            "threshold": 3,
+            "pass": true,
+            "notes": "14+ internal links found"
+          },
+          "F_Schema": {
+            "title_set": true,
+            "excerpt_set": true,
+            "date_set": true,
+            "pass": true,
+            "notes": "All ArticleSchema fields present"
+          }
+        }
+      }
+    ]
+  }
+}

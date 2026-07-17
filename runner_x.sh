@@ -1,0 +1,1 @@
+bash -c 'python3 /root/kanok-miahit/chk.py'

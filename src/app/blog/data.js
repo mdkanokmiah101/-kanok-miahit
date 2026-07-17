@@ -24933,12 +24933,20 @@ Whether you run a restaurant in Gulshan, a diagnostic center in Dhanmondi, or an
   },
   {
     slug: "why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh",
-    title: "Why MD Kanok Miah is the best SEO expert in Dhaka, Bangladesh",
+    title: "Why Kanok Miah Is the Best SEO Expert in Dhaka 2026",
     date: "2026-07-09",
+    dateModified: "2026-07-17",
     author: "Kanok Miah",
-    excerpt: "Looking for the best SEO expert in Dhaka, Bangladesh? Discover why Kanok Miah ranks #1 with experience since 2019, 210+ projects, 108 verified reviews, and proven SEO strategies that deliver real rankings and revenue growth.",
+    excerpt: "Looking for the best SEO expert in Dhaka, Bangladesh? Discover why Kanok Miah ranks #1 with 210+ projects, 108 verified reviews, and proven SEO strategies that deliver rankings and revenue growth.",
     tags: ["Best SEO Expert Dhaka", "SEO Expert Bangladesh", "Kanok Miah", "SEO Results", "Dhaka SEO"],
     imagePlaceholder: "🏆",
+    faqs: [
+      { question: "What SEO Services Does Kanok Miah Offer in Dhaka?", answer: "I offer a complete range of white-hat SEO services including Local SEO, Technical SEO, E-commerce SEO, Link Building, On-Page SEO, Semantic SEO, and GEO / AI Search Optimisation. Each service is tailored to the Bangladesh market and aligned with Google Webmaster Guidelines." },
+      { question: "How Is Kanok Miah Different from Other SEO Experts in Bangladesh?", answer: "I have a proven track record of 210+ SEO projects with 108 verified reviews and a 4.9/5 rating, current corporate roles as SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech, and hands-on leadership where I personally manage every client." },
+      { question: "How Long Does It Take to See SEO Results in Dhaka?", answer: "Local SEO improvements appear in 4-8 weeks, top 3 Google Maps rankings in 2-4 months, content and on-page SEO improvements in 3-6 months, and comprehensive SEO growth in 4-8 months. Competitive keywords may take 6-12 months." },
+      { question: "What Is the Cost of SEO Services in Dhaka?", answer: "One-time SEO audits start from BDT 10,000. Monthly retainers range from BDT 15,000-30,000 for local businesses, BDT 25,000-50,000 for e-commerce, and custom quotes for enterprise. Every package includes detailed monthly reporting." },
+      { question: "Does Kanok Miah Guarantee #1 Rankings?", answer: "No ethical SEO professional can guarantee #1 rankings. I guarantee 100% white-hat Google-compliant strategies, transparent monthly reporting, dedicated personal attention, proven methodology from 210+ projects, and continuous optimisation based on real data." },
+    ],
     content: `Bangladesh has approximately **7.8 million small and medium enterprises (SMEs)** — making up **99% of all businesses** in the country. Yet studies show that **less than 20% of these businesses have a proper website or any meaningful online presence**. The remaining **6.2 million+ businesses** remain invisible to the **[130 million+ internet users](https://datareportal.com/reports/digital-2025-bangladesh)** in Bangladesh who search on Google every single day.
 
 The cost of this invisibility is staggering. Research indicates that **over 60% of Bangladeshi SMEs lose potential customers daily** simply because they cannot be found online. In Dhaka alone, an estimated **85% of consumers** search online before visiting a local store — checking Google Maps, reading reviews, comparing prices. A business without SEO is effectively **turning away 8 out of 10 potential customers**.
@@ -24972,7 +24980,7 @@ I am **Kanok Miah**, and since **2019**, I have been bridging this gap. With **2
 
 I currently serve as **SEO Project Manager at Khan IT** and **Head of Digital Marketing at CloudMatrix Tech**, and previously worked with **Walton Plaza** and **Solus Corporation**. Every month I personally manage **8–12 active SEO campaigns** and **2–5 paid ad campaigns** — roughly **250+ hours of direct client work**.
 
-**[View My Google Business Profile](https://maps.google.com/?cid=YOUR_GBP_ID)** | **[Connect on LinkedIn](https://linkedin.com/in/md-kanok-miah)** | **4.9/5 ★ from 108+ verified reviews**
+**[View My Google Business Profile](https://maps.google.com/?cid=13108408111625983125)** | **[Connect on LinkedIn](https://www.linkedin.com/in/kanok-miah-454283300/)** | **4.9/5 ★ from 108+ verified reviews**
 
 ---
 
@@ -25014,7 +25022,7 @@ Today, I manage **8–12 live SEO projects** every month alongside **2–5 paid 
 - **2–3 GBP optimization tasks** (photo uploads, posts, review responses)
 - **Monthly reporting** with **15+ data points** per client
 
-Every client gets a minimum of **4–6 hours of dedicated attention per week** with **48-hour maximum response time**.
+Every client gets a minimum of **4–6 hours of dedicated attention per week** with **48-hour maximum response time**. **[See all Dhaka neighborhoods we serve](/locations/dhaka)**.
 
 ## Certifications & Education
 
@@ -25316,7 +25324,7 @@ Your business deserves to be found by the customers who are searching for it rig
 
 ---
 
-*Want to check my credentials? [View my LinkedIn profile](https://linkedin.com/in/md-kanok-miah) | [See my Google Business Profile reviews](https://maps.google.com/?cid=YOUR_GBP_ID) | Read my [full blog](/blog) for more case studies and SEO insights*`,
+*Want to check my credentials? [View my LinkedIn profile](https://www.linkedin.com/in/kanok-miah-454283300/) | [See my Google Business Profile reviews](https://maps.google.com/?cid=13108408111625983125) | Read my [full blog](/blog) for more case studies and SEO insights*`,
   },
   {
     slug: "locksmith-dundee-seo-case-study",

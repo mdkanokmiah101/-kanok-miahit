@@ -1,14 +1,14 @@
 import posts from "../data";
 import BlogPostClient from "./BlogPostClient";
-import { BreadcrumbSchema, ArticleSchema } from "@/components/Schema";
+import { BreadcrumbSchema, ArticleSchema, FAQSchema } from "@/components/Schema";
 import { notFound } from "next/navigation";
 
-function truncateMeta(str, maxLen = 155) {
+function truncateMeta(str, maxLen = 160) {
   if (!str) return "";
   if (str.length <= maxLen) return str;
   const truncated = str.slice(0, maxLen);
   const lastSpace = truncated.lastIndexOf(" ");
-  return (lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated) + "…";
+  return (lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated);
 }
 
 export function generateStaticParams() {
@@ -59,6 +59,7 @@ export default async function BlogPostPage({ params }) {
         { name: post?.title || slug, url: `https://kanokmiah.com.bd/blog/${slug}` },
       ])}
       {post && ArticleSchema(post)}
+      {post?.faqs && post.faqs.length > 0 && <FAQSchema faqs={post.faqs} />}
       <BlogPostClient />
     </>
   );

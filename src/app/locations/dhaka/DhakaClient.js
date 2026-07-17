@@ -307,27 +307,7 @@ export default function DhakaClient() {
             </div>
           </div>
 
-          {/* === Premium CTA === */}
-          <div className="text-center mt-16 md:mt-20">
-            <div className="relative inline-block max-w-lg mx-auto w-full">
-              {/* Glow bg */}
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-primary/[0.01] rounded-[24px] blur-xl" />
-              <div className="relative bg-white/90 backdrop-blur-sm border border-primary/[0.06] rounded-[24px] p-8 md:p-10 shadow-[0_0_0_1px_rgba(18,77,28,0.03),0_4px_20px_-8px_rgba(18,77,28,0.06)] hover:shadow-[0_0_0_1px_rgba(18,77,28,0.06),0_8px_30px_-8px_rgba(18,77,28,0.10)] transition-all duration-300">
-                <p className="text-gray-900 font-bold text-xl md:text-2xl mb-6 tracking-[-0.02em]">
-                  Ready to Start Your SEO Growth?
-                </p>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2.5 bg-primary hover:bg-primary-dark text-white px-9 py-4 rounded-xl font-bold text-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/25 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 group/btn"
-                  aria-label="Get your free SEO audit and start growing"
-                >
-                  <span>Get Free SEO Audit</span>
-                  <span className="text-lg transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
-                </Link>
-                <p className="text-gray-400 text-xs mt-4 font-medium">No commitment. Worth 5,000 BDT.</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 

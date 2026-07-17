@@ -340,7 +340,7 @@ export function ArticleSchema(post) {
       },
     },
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.dateModified || post.date,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://kanokmiah.com.bd/blog/${post.slug}`,

@@ -2,12 +2,12 @@ import DhakaClient from "./DhakaClient";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata = {
-  title: "Best SEO Services in Dhaka — Kanok Miah | SEO Expert Bangladesh",
-  description: "Get the best SEO services in Dhaka from Kanok Miah — 210+ projects delivered. Rank on Google Maps in Mirpur, Gulshan, Banani, Uttara & across Dhaka with expert local SEO strategies.",
+  title: "Best SEO Services in Dhaka",
+  description: "Get the best SEO services in Dhaka from Kanok Miah — 210+ projects delivered. Rank on Google Maps across Mirpur, Gulshan, Banani, Uttara & all Dhaka with expert local SEO.",
   alternates: { canonical: "https://kanokmiah.com.bd/locations/dhaka" },
   openGraph: {
-    title: "Best SEO Services in Dhaka — Kanok Miah | SEO Expert Bangladesh",
-    description: "Best SEO services in Dhaka — rank higher on Google Maps across Mirpur, Gulshan, Banani, Uttara & all Dhaka neighborhoods with proven local SEO strategies.",
+    title: "Best SEO Services in Dhaka — Kanok Miah",
+    description: "Best SEO services in Dhaka — rank on Google Maps across Mirpur, Gulshan, Banani, Uttara & all Dhaka neighborhoods with proven local SEO.",
     url: "https://kanokmiah.com.bd/locations/dhaka",
     images: [{ url: "https://kanokmiah.com.bd/kanok-miah-profile.webp", width: 1200, height: 630, alt: "Kanok Miah — SEO Expert Dhaka" }],
   },

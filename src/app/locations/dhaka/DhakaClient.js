@@ -88,7 +88,7 @@ export default function DhakaClient() {
           <div className="text-center mb-12">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">How I Work</span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4">
-              My Dhaka <span className="text-primary">SEO Process</span>
+              How Does My <span className="text-primary">Dhaka SEO Process</span> Work?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               A proven, data-driven 5-step process that delivers real results for Dhaka businesses. No shortcuts, no guesswork — just consistent execution.
@@ -146,7 +146,7 @@ export default function DhakaClient() {
           <div className="text-center mb-12">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">Investment</span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4">
-              SEO Investment & <span className="text-primary">Packages</span>
+              What Are My <span className="text-primary">SEO Packages</span> &amp; Pricing?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Transparent pricing for Dhaka SEO services. Every package includes a free initial audit and strategy consultation.
@@ -236,7 +236,7 @@ export default function DhakaClient() {
           <div className="text-center mb-12">
             <span className="text-primary text-sm font-semibold tracking-widest uppercase">Real Results</span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4">
-              Client Success <span className="text-primary">Stories</span>
+              What Results Have Dhaka <span className="text-primary">Businesses</span> Achieved?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Real Dhaka businesses that ranked higher, got more customers, and grew their revenue with my SEO services.

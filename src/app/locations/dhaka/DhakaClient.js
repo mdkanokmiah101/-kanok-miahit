@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -25,6 +26,25 @@ const trustPoints = [
 ];
 
 export default function DhakaClient() {
+
+  // Scroll-triggered animation for process cards
+  useEffect(() => {
+    const cards = document.querySelectorAll(".process-card");
+    if (!cards.length) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
+    );
+    cards.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -92,62 +112,243 @@ export default function DhakaClient() {
         </div>
       </section>
 
-      {/* === MY DHAKA SEO PROCESS === */}
-      <section className="relative py-16 px-4 bg-gray-50/50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-primary text-sm font-semibold tracking-widest uppercase">How I Work</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-3 mb-4">
-              How Does My <span className="text-primary">Dhaka SEO Process</span> Work?
+      {/* === MY DHAKA SEO PROCESS — Apple/Stripe/Linear Level Premium Redesign === */}
+      <section className="relative py-32 md:py-36 px-4 overflow-hidden">
+        {/* Background — layered premium gradient with subtle geometric pattern */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-50/40 via-white to-gray-50/30" />
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: `radial-gradient(circle at 1px 1px, #124D1C 1px, transparent 0)`, backgroundSize: '32px 32px' }} aria-hidden="true" />
+        <div className="absolute top-1/3 -left-40 w-[600px] h-[600px] bg-primary/[0.06] rounded-full blur-[140px] hidden md:block" />
+        <div className="absolute bottom-1/3 -right-40 w-[550px] h-[550px] bg-primary/[0.04] rounded-full blur-[130px] hidden md:block" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-amber-400/[0.02] rounded-full blur-[160px] hidden md:block" />
+        {/* Subtle top border line */}
+        <div className="absolute top-0 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent" />
+
+        <div className="relative max-w-7xl mx-auto">
+          {/* Section Label — premium pill badge */}
+          <div className="text-center mb-16 md:mb-20">
+            <span className="inline-flex items-center gap-2 text-[10px] md:text-[11px] font-bold tracking-[0.3em] uppercase px-6 py-2.5 rounded-full bg-primary/[0.05] border border-primary/[0.08] text-primary/80 backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+              How I Work
+            </span>
+            <h2 className="text-[clamp(2rem,4.5vw,3.75rem)] font-extrabold mt-8 mb-6 text-gray-900 leading-[1.08] tracking-[-0.03em]">
+              How Does My{' '}
+              <span className="text-primary relative inline-block">
+                Dhaka SEO Process
+                <span className="absolute -bottom-1 left-0 right-0 h-[3px] bg-primary/20 rounded-full hidden md:block" />
+              </span>{' '}
+              Work?
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-400 text-base md:text-lg max-w-[600px] mx-auto leading-relaxed font-[450]">
               A proven, data-driven 5-step process that delivers real results for Dhaka businesses. No shortcuts, no guesswork — just consistent execution.
             </p>
           </div>
-          <div className="grid md:grid-cols-5 gap-6">
-            {[
-              {
-                step: "01",
-                title: "SEO Audit & Analysis",
-                desc: "Deep dive into your current rankings, competitor landscape, website health, and technical SEO issues to identify what's working and what needs fixing.",
-                color: "bg-primary text-white",
-              },
-              {
-                step: "02",
-                title: "Strategy & Keyword Research",
-                desc: "Identify high-value keyword opportunities specific to Dhaka — including Bengali-English bilingual queries, local intent keywords, and neighborhood-specific phrases.",
-                color: "bg-[#FFD230] text-gray-900",
-              },
-              {
-                step: "03",
-                title: "On-Page & Technical Optimization",
-                desc: "Fix critical SEO issues, optimize page titles, meta descriptions, headers, content structure, and site speed — ensuring your website is fully search-engine friendly.",
-                color: "bg-primary text-white",
-              },
-              {
-                step: "04",
-                title: "Local SEO & Google Maps",
-                desc: "Optimize your Google Business Profile, build high-quality local citations, manage reviews, and implement hyperlocal strategies to dominate Google Maps results in Dhaka.",
-                color: "bg-[#FFD230] text-gray-900",
-              },
-              {
-                step: "05",
-                title: "Monitoring & Reporting",
-                desc: "Track rankings, traffic, leads, and conversions with transparent reporting. I continuously refine your strategy based on real data to maximize ROI.",
-                color: "bg-primary text-white",
-              },
-            ].map((s, i) => (
-              <div key={i} className="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all relative">
-                <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl text-lg font-bold mb-4 ${s.color}`}>
-                  {s.step}
-                </div>
-                <h3 className="font-bold text-lg mb-3 text-gray-900">{s.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+
+          {/* Connector + Cards Container */}
+          <div className="relative">
+            {/* Premium connector — solid green line with animated glowing dot */}
+            <div className="hidden lg:block absolute top-[76px] left-[7%] right-[7%] z-0" aria-hidden="true">
+              {/* Main line */}
+              <div className="h-[2px] bg-gradient-to-r from-primary/10 via-primary/25 to-primary/10 rounded-full" />
+              {/* Animated pulse dot */}
+              <div className="absolute -top-[5px] left-0 w-3 h-3 animate-pulse">
+                <div className="w-full h-full rounded-full bg-primary/30" />
+                <div className="absolute inset-0 rounded-full bg-primary/10 animate-ping" />
               </div>
-            ))}
+            </div>
+
+            {/* Step indicators on the connector line */}
+            <div className="hidden lg:flex absolute top-[70px] left-[7%] right-[7%] justify-between z-[1] pointer-events-none" aria-hidden="true">
+              {[1,2,3,4,5].map((dot) => (
+                <div key={dot} className="w-3 h-3 rounded-full bg-white border-2 border-primary/30 shadow-sm" />
+              ))}
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-6 items-stretch">
+              {[
+                {
+                  step: "01",
+                  title: "SEO Audit & Analysis",
+                  desc: "Deep dive into your current rankings, competitor landscape, website health, and technical SEO issues to identify what's working and what needs fixing.",
+                  icon: (
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="11" cy="11" r="8" />
+                      <path d="M16.5 16.5L21 21" />
+                      <path d="M11 8v6" />
+                      <path d="M8 11h6" />
+                    </svg>
+                  ),
+                },
+                {
+                  step: "02",
+                  title: "Strategy & Keyword Research",
+                  desc: "Identify high-value keyword opportunities specific to Dhaka — including Bengali-English bilingual queries, local intent keywords, and neighborhood-specific phrases.",
+                  icon: (
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle cx="12" cy="12" r="1" />
+                      <path d="M12 2v4" />
+                      <path d="M12 18v4" />
+                      <path d="M2 12h4" />
+                      <path d="M18 12h4" />
+                    </svg>
+                  ),
+                },
+                {
+                  step: "03",
+                  title: "On-Page & Technical Optimization",
+                  desc: "Fix critical SEO issues, optimize page titles, meta descriptions, headers, content structure, and site speed — ensuring your website is fully search-engine friendly.",
+                  icon: (
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="4" y="4" width="16" height="16" rx="2" />
+                      <path d="M4 9h16" />
+                      <path d="M9 4v16" />
+                      <circle cx="14" cy="14" r="2" />
+                      <path d="M17 11l2 2-2 2" />
+                    </svg>
+                  ),
+                },
+                {
+                  step: "04",
+                  title: "Local SEO & Google Maps",
+                  desc: "Optimize your Google Business Profile, build high-quality local citations, manage reviews, and implement hyperlocal strategies to dominate Google Maps results in Dhaka.",
+                  icon: (
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                      <path d="M12 2v2" />
+                      <path d="M12 16v2" />
+                      <path d="M4.22 5.22l1.42 1.42" />
+                      <path d="M18.36 6.64l1.42-1.42" />
+                    </svg>
+                  ),
+                },
+                {
+                  step: "05",
+                  title: "Monitoring & Reporting",
+                  desc: "Track rankings, traffic, leads, and conversions with transparent reporting. I continuously refine your strategy based on real data to maximize ROI.",
+                  icon: (
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
+                      <path d="M7 16l3-4 3 4 4-6" />
+                      <path d="M7 10h.01" />
+                      <path d="M17 14h.01" />
+                    </svg>
+                  ),
+                },
+              ].map((s, i) => (
+                <div
+                  key={i}
+                  className={`process-card group relative bg-white/95 backdrop-blur-sm border rounded-[24px] p-7 md:p-8 lg:p-9 flex flex-col transition-all duration-500 ease-out
+                    ${i === 2
+                      ? "border-primary/15 shadow-[0_0_0_1px_rgba(18,77,28,0.06),0_8px_30px_-6px_rgba(18,77,28,0.08)] hover:shadow-[0_0_0_1px_rgba(18,77,28,0.15),0_20px_60px_-12px_rgba(18,77,28,0.15)]"
+                      : "border-gray-100/90 shadow-[0_0_0_1px_rgba(0,0,0,0.02),0_1px_3px_rgba(0,0,0,0.02)] hover:shadow-[0_0_0_1px_rgba(18,77,28,0.08),0_12px_40px_-8px_rgba(18,77,28,0.10)]"
+                    }
+                    hover:border-primary/20 hover:-translate-y-2`}
+                  style={{
+                    transitionDelay: `${i * 100}ms`,
+                    background: `linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(249,250,251,0.5) 100%)`,
+                  }}
+                >
+                  {/* Step Number Badge — Premium circular with inner gradient */}
+                  <div className="relative mb-6 inline-flex">
+                    <div className={`
+                      relative z-10 w-[60px] h-[60px] rounded-full flex items-center justify-center font-bold text-lg
+                      transition-all duration-500 ease-out group-hover:scale-110 group-hover:shadow-xl
+                      ${i % 2 === 0
+                        ? "bg-gradient-to-br from-primary via-[#0f6b20] to-[#0a3d13] text-white shadow-[0_4px_20px_-2px_rgba(18,77,28,0.3)] group-hover:shadow-[0_8px_30px_-4px_rgba(18,77,28,0.4)]"
+                        : "bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 text-gray-900 shadow-[0_4px_20px_-2px_rgba(255,210,48,0.3)] group-hover:shadow-[0_8px_30px_-4px_rgba(255,210,48,0.4)]"
+                      }
+                    `}>
+                      <span className="relative z-10">{s.step}</span>
+                      {/* Inner shine */}
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-b from-white/15 to-transparent opacity-50" />
+                    </div>
+                    {/* Outer glow ring */}
+                    <div className={`
+                      absolute -inset-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 blur-lg
+                      ${i % 2 === 0 ? "bg-primary/15" : "bg-amber-400/15"}
+                      group-hover:scale-110
+                    `} />
+                    {/* Subtle ring border */}
+                    <div className={`
+                      absolute -inset-[3px] rounded-full border opacity-0 group-hover:opacity-100 transition-all duration-500
+                      ${i % 2 === 0 ? "border-primary/10" : "border-amber-400/10"}
+                    `} />
+                  </div>
+
+                  {/* Icon — larger, with premium bg transition */}
+                  <div className={`
+                    w-[44px] h-[44px] rounded-2xl flex items-center justify-center mb-5
+                    transition-all duration-300 ease-out
+                    ${i % 2 === 0
+                      ? "text-primary bg-primary/[0.06] group-hover:bg-primary group-hover:text-white group-hover:shadow-lg group-hover:shadow-primary/20"
+                      : "text-amber-500 bg-amber-400/[0.08] group-hover:bg-amber-400 group-hover:text-white group-hover:shadow-lg group-hover:shadow-amber-400/20"
+                    }
+                  `}>
+                    {s.icon}
+                  </div>
+
+                  {/* Content */}
+                  <h3 className="font-bold text-[17px] lg:text-[18px] text-gray-900 mb-3 leading-snug tracking-[-0.01em]">
+                    {s.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed flex-1 font-[450]">
+                    {s.desc}
+                  </p>
+
+                  {/* Bottom accent line on hover */}
+                  <div className={`
+                    mt-6 h-[2px] rounded-full w-0 group-hover:w-full transition-all duration-500 ease-out
+                    ${i % 2 === 0 ? "bg-gradient-to-r from-primary/30 to-primary/10" : "bg-gradient-to-r from-amber-400/30 to-amber-400/10"}
+                  `} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* === Premium CTA === */}
+          <div className="text-center mt-16 md:mt-20">
+            <div className="relative inline-block max-w-lg mx-auto w-full">
+              {/* Glow bg */}
+              <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-primary/[0.01] rounded-[24px] blur-xl" />
+              <div className="relative bg-white/90 backdrop-blur-sm border border-primary/[0.06] rounded-[24px] p-8 md:p-10 shadow-[0_0_0_1px_rgba(18,77,28,0.03),0_4px_20px_-8px_rgba(18,77,28,0.06)] hover:shadow-[0_0_0_1px_rgba(18,77,28,0.06),0_8px_30px_-8px_rgba(18,77,28,0.10)] transition-all duration-300">
+                <p className="text-gray-900 font-bold text-xl md:text-2xl mb-6 tracking-[-0.02em]">
+                  Ready to Start Your SEO Growth?
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2.5 bg-primary hover:bg-primary-dark text-white px-9 py-4 rounded-xl font-bold text-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/25 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 group/btn"
+                  aria-label="Get your free SEO audit and start growing"
+                >
+                  <span>Get Free SEO Audit</span>
+                  <span className="text-lg transition-transform duration-300 group-hover/btn:translate-x-1">→</span>
+                </Link>
+                <p className="text-gray-400 text-xs mt-4 font-medium">No commitment. Worth 5,000 BDT.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Inline Scroll Animation — GPU accelerated, staggered, no layout shift */}
+      <style jsx>{`
+        .process-card {
+          opacity: 0;
+          transform: translateY(40px) scale(0.97);
+          will-change: transform, opacity;
+        }
+        .process-card.in-view {
+          animation: processCardIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes processCardIn {
+          0% { opacity: 0; transform: translateY(40px) scale(0.97); }
+          100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .process-card.in-view .process-step-ring {
+          animation: ringPulse 1.5s ease-out forwards;
+        }
+      `}</style>
 
       {/* === SEO INVESTMENT & PACKAGES === */}
       <section className="relative py-16 px-4">

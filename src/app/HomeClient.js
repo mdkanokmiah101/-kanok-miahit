@@ -548,6 +548,106 @@ export default function HomeClient({ faqs = [] }) {
         </div>
       </section>
 
+      {/* ===== PRICING ===== */}
+      <section id="pricing" className="py-24 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Pricing</span>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">
+              SEO Packages — <span className="text-primary">Starting 15,000 BDT</span>
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+              Transparent pricing for Dhaka businesses. No hidden fees. Every plan includes a <strong className="text-primary">free audit</strong>.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {/* Starter */}
+            <div className="group bg-white rounded-2xl border border-gray-200 p-8 hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="mb-6">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-2xl mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">🌱</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Starter</h3>
+                <p className="text-gray-500 text-sm">Perfect for new websites & local businesses</p>
+              </div>
+              <div className="mb-6">
+                <span className="text-4xl font-extrabold text-gray-900">15,000</span>
+                <span className="text-gray-500 text-sm"> BDT</span>
+                <div className="text-xs text-gray-400 mt-1">/month</div>
+              </div>
+              <ul className="space-y-3 mb-8 flex-1">
+                {["10 Keywords Tracking", "On-Page SEO (5 Pages)", "Monthly Report", "Google My Business Setup", "Basic Keyword Research", "Email Support"].map((f, i) => (
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-600">
+                    <span className="text-primary shrink-0 mt-0.5">✅</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/contact" className="block w-full text-center border-2 border-gray-200 text-gray-700 font-bold py-3.5 rounded-xl hover:border-primary/30 hover:text-primary hover:bg-primary-light transition-all">
+                Get Started
+              </Link>
+            </div>
+
+            {/* Growth — Most Popular */}
+            <div className="group bg-white rounded-2xl border-2 border-primary shadow-xl shadow-primary/10 p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col relative">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-5 py-1.5 rounded-full shadow-lg">
+                🔥 Most Popular
+              </div>
+              <div className="mb-6">
+                <div className="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center text-2xl mb-5 shadow-md">📈</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Growth</h3>
+                <p className="text-gray-500 text-sm">Best for growing businesses & e-commerce</p>
+              </div>
+              <div className="mb-6">
+                <span className="text-4xl font-extrabold text-gray-900">25,000</span>
+                <span className="text-gray-500 text-sm"> BDT</span>
+                <div className="text-xs text-gray-400 mt-1">/month</div>
+              </div>
+              <ul className="space-y-3 mb-8 flex-1">
+                {["25 Keywords Tracking", "On-Page SEO (15 Pages)", "Technical SEO Audit", "Content Writing (2 Posts)", "Link Building (5 Links)", "Google Ads Audit", "WhatsApp Support"].map((f, i) => (
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-600">
+                    <span className="text-primary shrink-0 mt-0.5">✅</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/contact" className="block w-full text-center bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-xl hover:shadow-lg hover:shadow-primary/25 transition-all">
+                Most Popular →
+              </Link>
+            </div>
+
+            {/* Enterprise */}
+            <div className="group bg-white rounded-2xl border border-gray-200 p-8 hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="mb-6">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-2xl mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">🚀</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Enterprise</h3>
+                <p className="text-gray-500 text-sm">Full-scale SEO for agencies & brands</p>
+              </div>
+              <div className="mb-6">
+                <span className="text-4xl font-extrabold text-gray-900">40,000</span>
+                <span className="text-gray-500 text-sm"> BDT</span>
+                <div className="text-xs text-gray-400 mt-1">/month</div>
+              </div>
+              <ul className="space-y-3 mb-8 flex-1">
+                {["50+ Keywords Tracking", "On-Page SEO (Unlimited Pages)", "Technical SEO + Core Web Vitals", "Content Writing (4 Posts)", "Link Building (10 Links)", "GEO / AI Search Optimization", "Priority WhatsApp & Phone Support"].map((f, i) => (
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-gray-600">
+                    <span className="text-primary shrink-0 mt-0.5">✅</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/contact" className="block w-full text-center border-2 border-gray-200 text-gray-700 font-bold py-3.5 rounded-xl hover:border-primary/30 hover:text-primary hover:bg-primary-light transition-all">
+                Let's Talk
+              </Link>
+            </div>
+          </div>
+          <div className="text-center mt-10">
+            <p className="text-gray-500 text-sm">
+              💡 All prices include <strong className="text-gray-700">Free SEO Audit</strong> (Worth 5,000 BDT).{' '}
+              <Link href="/contact" className="text-primary font-semibold hover:underline">Claim yours →</Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ===== CTA BANNER ===== */}
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />

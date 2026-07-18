@@ -1,0 +1,4 @@
+  File "<string>", line 99
+    fixes.append('- **AEO/GEO:** Add 2+ question-based subheadings (e.g., কীভাবে...?, কেন...?, What
+                 ^
+SyntaxError: unterminated string literal (detected at line 99)

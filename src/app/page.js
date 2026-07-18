@@ -44,9 +44,9 @@ const homePageSchema = {
 };
 
 export const metadata = {
-  title: "Best SEO Expert in Dhaka & Bangladesh | Kanok Miah",
+  title: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah",
   description:
-    "Rank higher with Kanok Miah, the best SEO expert in Dhaka & Bangladesh. 6+ years, 210+ proven SEO wins. Free SEO audit for your business — Call 01604-809110.",
+    "Rank higher with Kanok Miah, the best SEO expert in Dhaka, Bangladesh. 6+ years, 210+ proven SEO wins. Free SEO audit for your business — Call 01604-809110.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",

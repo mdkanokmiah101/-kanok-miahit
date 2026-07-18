@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
-        <meta name="deploy-version" content="2026-07-16-v21-onpage-fix" />
+        <meta name="deploy-version" content="2026-07-18-v22-homepage-seo-fix" />
         {/* Bing Webmaster Tools — add your msvalidate.01 content="" here */}
       </head>
       <body className="min-h-full flex flex-col">

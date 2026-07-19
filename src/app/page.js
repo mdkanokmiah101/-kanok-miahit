@@ -1,47 +1,12 @@
 import HomeClient from "./HomeClient";
-import { BreadcrumbSchema, FAQSchema } from "@/components/Schema";
+import {
+  BreadcrumbSchema,
+  FAQSchema,
+  AggregateRatingSchema,
+  ReviewSchema,
+  VideoObjectSchema,
+} from "@/components/Schema";
 import { homepageFaqs } from "./faq-data";
-
-const homePageSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Md Kanok Miah — SEO Expert Dhaka",
-  url: "https://kanokmiah.com.bd",
-  telephone: "+880-1604-809110",
-  email: "mdkanokmiah232@gmail.com",
-  description:
-    "Best SEO expert in Dhaka, Bangladesh. 6+ years experience, 210+ successful SEO campaigns.",
-  image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Mirpur, Dhaka",
-    addressLocality: "Dhaka",
-    addressCountry: "BD",
-  },
-  geo: { "@type": "GeoCoordinates", latitude: "23.8103", longitude: "90.4125" },
-  priceRange: "$$",
-  areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Bangladesh"],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    bestRating: "5",
-    ratingCount: "108",
-  },
-  openingHours: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "18:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Saturday"],
-      opens: "10:00",
-      closes: "16:00",
-    },
-  ],
-};
 
 export const metadata = {
   title: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah",
@@ -106,12 +71,47 @@ export const metadata = {
 };
 
 export default function HomePage() {
+  const homepageReviews = [
+    {
+      author: "Client (Google Review)",
+      rating: "5",
+      body: "Excellent SEO services! Highly recommended for local SEO in Dhaka.",
+      datePublished: "2025-06-15",
+    },
+    {
+      author: "Client (Google Review)",
+      rating: "5",
+      body: "Kanok helped my business rank on Google Maps. Great results and professional service.",
+      datePublished: "2025-05-20",
+    },
+    {
+      author: "Client (Google Review)",
+      rating: "5",
+      body: "Professional SEO expert with deep knowledge of technical SEO and link building.",
+      datePublished: "2025-04-10",
+    },
+  ];
+
+  const homepageVideos = [
+    {
+      name: "Client Review 1 - Kanok Miah SEO Services",
+      description: "Client testimonial about SEO services provided by Kanok Miah",
+      embedUrl: "https://www.youtube.com/embed/eIyD-ugY7_0",
+      uploadDate: "2024-06-01",
+    },
+    {
+      name: "Client Review 2 - Kanok Miah SEO Services",
+      description: "Client testimonial about SEO services provided by Kanok Miah",
+      embedUrl: "https://www.youtube.com/embed/hqtG7FM_ZAY",
+      uploadDate: "2024-06-01",
+    },
+  ];
+
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema) }}
-      />
+      {AggregateRatingSchema({ ratingValue: "4.9", bestRating: "5", ratingCount: "108" })}
+      <ReviewSchema reviews={homepageReviews} />
+      <VideoObjectSchema videos={homepageVideos} />
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
         { name: "SEO Expert Dhaka", url: "https://kanokmiah.com.bd" },

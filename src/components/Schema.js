@@ -320,6 +320,116 @@ export function CollectionPageSchema({ name, description, url }) {
   );
 }
 
+export function AggregateRatingSchema({ ratingValue = "4.9", bestRating = "5", ratingCount = "108", itemName = "Md Kanok Miah — SEO Expert" }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "AggregateRating",
+    itemReviewed: {
+      "@type": "LocalBusiness",
+      name: itemName,
+    },
+    ratingValue,
+    bestRating,
+    ratingCount,
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function ReviewSchema({ reviews }) {
+  if (!reviews || reviews.length === 0) return null;
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": reviews.map((r) => ({
+      "@type": "Review",
+      itemReviewed: {
+        "@type": "LocalBusiness",
+        name: "Md Kanok Miah — SEO Expert",
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: r.rating || "5",
+        bestRating: "5",
+      },
+      author: {
+        "@type": "Person",
+        name: r.author,
+      },
+      reviewBody: r.body,
+      ...(r.datePublished ? { datePublished: r.datePublished } : {}),
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function ProfessionalServiceSchema({ service }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: service?.name || "Md Kanok Miah — SEO Expert",
+    url: "https://kanokmiah.com.bd",
+    telephone: "+880-1604-809110",
+    email: "mdkanokmiah232@gmail.com",
+    description:
+      service?.description ||
+      "Professional SEO services in Dhaka, Bangladesh since 2019. 210+ projects completed. Local SEO, technical SEO, link building, GEO optimization.",
+    image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Mirpur, Dhaka",
+      addressLocality: "Dhaka",
+      addressCountry: "BD",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "23.8103",
+      longitude: "90.4125",
+    },
+    priceRange: "$$",
+    areaServed: ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Chittagong", "Sylhet", "Bangladesh"],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function VideoObjectSchema({ videos }) {
+  if (!videos || videos.length === 0) return null;
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": videos.map((v) => ({
+      "@type": "VideoObject",
+      name: v.name,
+      description: v.description || "",
+      thumbnailUrl: v.thumbnailUrl || "https://kanokmiah.com.bd/kanok-miah-profile.webp",
+      embedUrl: v.embedUrl,
+      uploadDate: v.uploadDate || "2024-01-01",
+      publisher: {
+        "@type": "Person",
+        name: "Md Kanok Miah",
+      },
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export function ArticleSchema(post) {
   const schema = {
     "@context": "https://schema.org",

@@ -373,6 +373,23 @@ export default function HomeClient({ faqs = [] }) {
         </div>
       </section>
 
+      {/* ===== WHAT SEO SERVICES? (AEO) ===== */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-gray-900 mb-6">
+            What SEO Services Does Kanok Miah Offer in Dhaka?
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            As the <strong className="text-gray-900">best SEO expert in Dhaka</strong>, I offer a full range of search engine optimization services tailored for the Bangladesh market. My core services include <strong className="text-gray-900">Local SEO</strong> (Google Business Profile optimization, Maps ranking, near-me search), <strong className="text-gray-900">On-Page SEO</strong> (keyword research, meta tags, content optimization), <strong className="text-gray-900">Technical SEO</strong> (Core Web Vitals, site speed, crawl optimization), <strong className="text-gray-900">Link Building</strong> (quality backlinks from Bangladeshi and international sources), <strong className="text-gray-900">E-commerce SEO</strong> (Shopify, Daraz, WooCommerce), and <strong className="text-gray-900">GEO / AI Search Optimization</strong> for ChatGPT, Gemini, and Google AI Overviews. Every service begins with a <strong className="text-gray-900">free SEO audit</strong> — no commitment, no hidden fees.
+          </p>
+          <div className="text-center">
+            <Link href="/services" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors">
+              View All Services <span>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ===== INDUSTRIES ===== */}
       <section id="industries" className="py-24 px-4">
         <div className="max-w-6xl mx-auto">
@@ -433,6 +450,64 @@ export default function HomeClient({ faqs = [] }) {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== WHY BEST / WHAT MAKES ME BEST (AEO) ===== */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Why Best</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold mt-3 mb-4 text-gray-900">
+              What Makes Kanok Miah the <span className="text-primary">Best SEO Expert in Dhaka</span>?
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
+              Here&apos;s why businesses across Bangladesh trust me over every other SEO specialist.
+            </p>
+          </div>
+          <div className="bg-primary/[0.04] border border-primary/10 rounded-2xl p-8 md:p-10">
+            <h3 className="text-xl md:text-2xl font-extrabold text-gray-900 mb-6 text-center">
+              Why Kanok Miah Is the Best SEO Expert in Dhaka
+            </h3>
+            <div className="grid md:grid-cols-2 gap-5 text-sm text-gray-700 leading-relaxed">
+              <div className="flex items-start gap-3">
+                <span className="text-lg shrink-0 mt-0.5">⏳</span>
+                <div><strong className="text-gray-900">6+ Years Experience</strong> — Practicing SEO since 2019, through every Google algorithm update.</div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg shrink-0 mt-0.5">📈</span>
+                <div><strong className="text-gray-900">210+ Projects Completed</strong> — From local Dhaka businesses to international brands, across every industry.</div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg shrink-0 mt-0.5">⭐</span>
+                <div><strong className="text-gray-900">108 Verified 5-Star Reviews</strong> — <strong className="text-primary">4.9/5</strong> average rating from real clients.</div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg shrink-0 mt-0.5">🏢</span>
+                <div><strong className="text-gray-900">Corporate Leadership</strong> — SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech.</div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg shrink-0 mt-0.5">🎓</span>
+                <div><strong className="text-gray-900">Industry Certifications</strong> — Google Digital Garage, HubSpot Academy, SEMrush Academy, LinkedIn Learning, Coursera.</div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg shrink-0 mt-0.5">⚡</span>
+                <div><strong className="text-gray-900">Hands-On Execution</strong> — Personally manages <strong className="text-gray-900">8-12 projects/month</strong> with 250+ hours/month dedicated to client work.</div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg shrink-0 mt-0.5">🤖</span>
+                <div><strong className="text-gray-900">SEO + GEO + AEO</strong> — Future-proof optimization for Google, ChatGPT, Gemini, Perplexity, and AI Overviews.</div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg shrink-0 mt-0.5">💰</span>
+                <div><strong className="text-gray-900">Affordable Pricing</strong> — Packages starting from <strong className="text-primary">15,000 BDT</strong> to 40,000 BDT for enterprise-level SEO.</div>
+              </div>
+              <div className="flex items-start gap-3 md:col-span-2">
+                <span className="text-lg shrink-0 mt-0.5">👤</span>
+                <div><strong className="text-gray-900">Personal Attention</strong> — I personally handle every single client. No account managers, no outsourcing. When you work with me, you work directly with Kanok Miah.</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -548,6 +623,23 @@ export default function HomeClient({ faqs = [] }) {
         </div>
       </section>
 
+      {/* ===== HOW LONG DOES SEO TAKE? (AEO) ===== */}
+      <section className="py-16 px-4 bg-gray-50/50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-gray-900 mb-6">
+            How Long Does SEO Take to Show Results in Dhaka?
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            In my experience as the <strong className="text-gray-900">best SEO expert in Dhaka</strong>, most clients start seeing measurable improvements within <strong className="text-gray-900">4-8 weeks</strong>. Quick wins — such as fixing technical errors, optimizing Google Business Profile, and improving on-page content — can move the needle almost immediately. However, sustainable rankings for competitive keywords in Bangladesh typically take <strong className="text-gray-900">3-6 months</strong> of consistent effort. For highly competitive industries like e-commerce, real estate, or SMM panels, expect <strong className="text-gray-900">6-12 months</strong> to dominate top positions. I provide transparent monthly reports so you can see exactly what&apos;s working and what&apos;s improving — every step of the way.
+          </p>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:shadow-lg">
+              Start Your SEO Journey <span>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ===== PRICING ===== */}
       <section id="pricing" className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -648,6 +740,23 @@ export default function HomeClient({ faqs = [] }) {
         </div>
       </section>
 
+      {/* ===== HOW MUCH DOES SEO COST? (AEO) ===== */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-gray-900 mb-6">
+            How Much Does SEO Cost in Bangladesh?
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            As a leading <strong className="text-gray-900">SEO expert in Dhaka</strong>, I offer transparent, affordable pricing designed for Bangladeshi businesses. My packages start at <strong className="text-primary">15,000 BDT/month</strong> (Starter — ideal for new websites and local businesses), <strong className="text-primary">25,000 BDT/month</strong> (Growth — best for growing businesses and e-commerce, also the most popular choice), and <strong className="text-primary">40,000 BDT/month</strong> (Enterprise — full-scale SEO for agencies and brands). Every single package includes a <strong className="text-gray-900">free SEO audit</strong> worth 5,000 BDT. Compared to agencies charging 50,000-100,000 BDT, you get premium, personalized SEO at a fraction of the cost — because I work directly with you, no middlemen.
+          </p>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:shadow-lg">
+              Get Your Free Audit <span>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ===== CTA BANNER ===== */}
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-dark" />
@@ -668,6 +777,27 @@ export default function HomeClient({ faqs = [] }) {
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all">
               💬 WhatsApp Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== HOW CAN I HIRE? (AEO) ===== */}
+      <section className="py-16 px-4 bg-gray-50/50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-gray-900 mb-6">
+            How Can I Hire the Best SEO Expert in Dhaka?
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Hiring the <strong className="text-gray-900">best SEO expert in Bangladesh</strong> is simple. Just follow these three steps: <strong className="text-gray-900">1) Book a free SEO audit</strong> — fill out the form below or WhatsApp me at <strong className="text-primary">01604809110</strong> and I&apos;ll analyze your website within 24 hours. <strong className="text-gray-900">2) Review your personalized proposal</strong> — after the audit, I&apos;ll send you a custom strategy with clear pricing and expected outcomes. <strong className="text-gray-900">3) Start ranking</strong> — once you approve, I begin working immediately on your site. No long-term contracts required. I personally handle every client, which means you get direct access to the expert himself — not an account manager.
+          </p>
+          <div className="flex justify-center gap-4 flex-wrap">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:shadow-lg">
+              Hire Kanok Miah Now <span>→</span>
+            </Link>
+            <a href="https://wa.me/8801604809110?text=Hi%20Kanok%20Miah!%20I%20want%20to%20hire%20you%20for%20SEO." target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border-2 border-green-500 text-green-600 px-6 py-3 rounded-xl font-semibold text-sm hover:bg-green-50 transition-all">
+              💬 WhatsApp to Start
             </a>
           </div>
         </div>

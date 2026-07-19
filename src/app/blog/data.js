@@ -9625,7 +9625,9 @@ When a user asks ChatGPT, "Where can I get authentic Bangladeshi biryani in Guls
 
 
 
-For a complete understanding of how local citations impact your GBP ranking, see our guide on [local citations for Bangladeshi businesses](/blog/seo-local-citations-bangladesh).## Common Mistakes to Avoid
+For a complete understanding of how local citations impact your GBP ranking, see our guide on [local citations for Bangladeshi businesses](/blog/seo-local-citations-bangladesh).
+
+## Common Mistakes to Avoid
 
 **Keyword Stuffing in Business Name:** Adding keywords like "Best Pizza — Dhaka Restaurant" to your business name violates Google guidelines and can lead to suspension.
 
@@ -25106,7 +25108,8 @@ Looking for the best SEO expert in Bangladesh.`,
       "How Locksmith Dundee went from zero organic visibility — no GBP, no citations, no reviews — to 1,000+ monthly visitors, 65+ reviews, 14 top-3 keywords, and 200+ ranking keywords in 6 months with zero ad spend.",
     tags: ["Case Study", "SEO", "Local SEO", "Locksmith"],
     imagePlaceholder: "📊",
-    content: `## Project Snapshot
+    content: `
+## Project Snapshot
 
 | Detail | Value |
 |--------|-------|

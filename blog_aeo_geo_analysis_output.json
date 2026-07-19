@@ -1,0 +1,42 @@
+{
+  "analysis_date": "2026-07-19",
+  "file_analyzed": "/root/kanok-miahit/src/app/blog/data.js",
+  "total_posts": 128,
+  "summary": {
+    "geo_ready_count": 98,
+    "geo_ready_pct": 76.6,
+    "not_geo_ready_count": 30,
+    "total_entity_count": 2003,
+    "total_question_headings": 716,
+    "total_words": 439537,
+    "avg_entity_per_post": 15.6,
+    "avg_question_headings_per_post": 5.6,
+    "avg_entity_density": 0.551,
+    "entity_density_range": {"min": 0.103, "max": 2.041},
+    "word_count_range": {"min": 517, "max": 6180},
+    "posts_with_most_entities": [
+      {"slug": "complete-seo-guide-bangladesh-businesses-2026", "entity_count": 40},
+      {"slug": "why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh", "entity_count": 34},
+      {"slug": "seo-case-study-dhaka-businesses-increased-organic-traffic", "entity_count": 33},
+      {"slug": "seo-career-guide-bangladesh-2026", "entity_count": 29},
+      {"slug": "seo-for-fitness-gyms-bangladesh", "entity_count": 27}
+    ],
+    "posts_with_most_question_headings": [
+      {"slug": "why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh", "question_headings": 17},
+      {"slug": "google-my-business-optimization-bangladesh", "question_headings": 15},
+      {"slug": "seo-bangla-beginners-guide-google-ranking", "question_headings": 15},
+      {"slug": "google-business-profile-optimization-guide-bangladesh", "question_headings": 14},
+      {"slug": "hiring-seo-expert-dhaka-better-roi-than-paid-ads", "question_headings": 14}
+    ],
+    "highest_entity_density": [
+      {"slug": "seo-photographers-videographers-bangladesh", "entity_density": 2.041, "word_count": 931},
+      {"slug": "seo-wedding-event-planners-bangladesh", "entity_density": 1.519, "word_count": 1119},
+      {"slug": "blogging-strategy-seo-frequency-topics-bangladesh", "entity_density": 1.405, "word_count": 1210},
+      {"slug": "seo-for-cleaning-services-bangladesh", "entity_density": 1.404, "word_count": 1068},
+      {"slug": "seo-for-restaurants-cafe-dhaka", "entity_density": 1.333, "word_count": 1200}
+    ]
+  },
+  "geo_ready_posts": ["complete-seo-guide-bangladesh-businesses-2026", "local-seo-tips-dhaka-businesses-google-maps", "why-ecommerce-store-needs-seo-bangladesh", "technical-seo-checklist-bangladeshi-websites", "how-to-choose-right-seo-agency-bangladesh", "link-building-strategies-bangladesh-market", "geo-optimization-prepare-business-ai-search", "seo-garments-textile-industry-b2b-lead-generation", "google-business-profile-optimization-guide-bangladesh", "seo-vs-google-ads-whats-best-bangladesh-businesses", "seo-real-estate-developers-dhaka", "mobile-seo-optimization-bangladesh-mobile-first-era", "content-marketing-strategy-bangladeshi-brands-seo", "international-seo-bangladesh-exporters-global-buyers", "seo-bangla-beginners-guide-google-ranking", "local-seo-dhaka-google-maps-ranking", "seo-trends-2026-ai-geo-future", "technical-seo-core-web-vitals-optimization", "ecommerce-seo-daraz-shopify-guide", "link-building-bangladesh-strategies", "keyword-research-bangladesh-market", "content-marketing-seo-friendly-content-writing", "google-search-console-performance-guide", "mobile-seo-bangladesh-ranking-strategy", "schema-markup-rich-snippets-techniques", "youtube-seo-bangladesh-ranking-tips", "seo-vs-google-ads-bangladesh-business", "seo-bangla-blog-content-writing", "seo-tips-for-business-owners-bd", "long-tail-keywords-bangladesh", "seo-for-facebook-marketplace", "seo-for-youtube-channel-bangla", "seo-google-updates-2026", "seo-semantic-search-bangla", "seo-for-hotel-resort-bangladesh", "seo-google-business-profile-posts", "seo-local-citations-bangladesh", "seo-for-ngo-bangladesh", "seo-career-guide-bangladesh-2026", "seo-consultant-dhaka-bangladesh", "google-my-business-optimization-bangladesh", "seo-for-new-website-bangladesh", "website-speed-optimization-bangladesh", "seo-audit-checklist-bangladesh", "affiliate-seo-bangladesh", "voice-search-seo-bangladesh", "seo-legal-compliance-bangladesh", "seo-for-restaurants-cafe-dhaka", "seo-for-cleaning-services-bangladesh", "seo-dashboard-tools-bangladesh", "seo-mistakes-to-avoid-bangladesh", "seo-search-intent-optimization", "seo-information-gain-optimization", "seo-passage-ranking-bangladesh", "seo-people-also-ask-optimization", "seo-featured-snippet-bangladesh", "seo-knowledge-panel-bangladesh", "seo-google-penalty-recovery-bd", "seo-https-ssl-impact-bangladesh", "seo-redirects-guide-bangladesh", "seo-canonical-url-guide-bd", "seo-robots-txt-guide-bangladesh", "seo-xml-sitemap-guide-bd", "seo-hreflang-guide-bangladesh", "seo-structured-data-guide-bd", "seo-json-ld-schema-bangladesh", "seo-faq-schema-bangladesh", "seo-howto-schema-bangladesh", "seo-for-startups-bangladesh", "b2b-lead-generation-seo-bangladesh", "seo-for-law-firms-bangladesh", "seo-for-fitness-gyms-bangladesh", "seo-services-cost-bangladesh-pricing-guide", "seo-vs-ppc-advertising-bangladesh", "how-to-track-measure-seo-roi-bangladesh", "seo-healthcare-medical-clinics-bangladesh", "seo-educational-institutions-bangladesh", "seo-travel-tourism-bangladesh", "seo-event-management-companies-bangladesh", "seo-real-estate-agents-property-developers-bangladesh", "local-seo-multiple-business-locations-bangladesh", "seo-wedding-event-planners-bangladesh", "seo-non-profit-organizations-bangladesh", "recovering-google-penalties-bangladesh-guide", "building-seo-roadmap-bangladesh-business", "voice-search-seo-bengali-bangladesh", "smmgen-seo-case-study", "mir-cement-seo-case-study", "locksmith-dundee-seo-case-study", "how-to-choose-best-seo-expert-dhaka-15-things", "seo-expert-vs-seo-agency-dhaka-which-is-right", "top-10-seo-mistakes-dhaka-businesses-fix", "what-does-seo-expert-do-guide-business-owners", "seo-case-study-dhaka-businesses-increased-organic-traffic", "hiring-seo-expert-dhaka-better-roi-than-paid-ads", "ai-seo-2026-dhaka-experts-optimize-google-ai-chatgpt", "watchzonebd-seo-case-study", "why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh"],
+  "not_geo_ready_posts": ["seo-website-migration-guide-bd", "google-tag-manager-seo-bd", "seo-google-analytics-4-bangladesh", "seo-keyword-clustering-bangladesh", "seo-competitor-analysis-bangladesh", "seo-landing-page-optimization-bd", "seo-for-mobile-apps-bangladesh", "google-discover-seo-bangladesh", "seo-for-podcast-bangladesh", "seo-pillar-content-strategy-bd", "seo-skyscraper-technique-bangladesh", "seo-content-repurposing-bangladesh", "seo-hubspot-vs-wordpress-bd", "seo-domain-authority-bangladesh", "seo-page-authority-bangladesh", "seo-referral-traffic-bangladesh", "seo-direct-traffic-bangladesh", "seo-branded-vs-non-branded-bd", "seo-zero-click-search-bangladesh", "seo-breadcrumb-schema-bd", "enterprise-seo-large-organizations-bangladesh", "seo-photographers-videographers-bangladesh", "blogging-strategy-seo-frequency-topics-bangladesh", "backlink-outreach-templates-strategies-bangladesh", "landlord-certificates-seo-case-study", "das-taxis-scotland-seo-case-study", "morethanpanel-seo-case-study", "smmsun-seo-case-study", "dhaka-apparels-seo-case-study", "stealth-windshield-repairs-seo-case-study"],
+  "post_details": []
+}

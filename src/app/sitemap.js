@@ -33,8 +33,19 @@ export default async function sitemap() {
     { url: `${baseUrl}/faq`, lastModified: "2026-07-10", changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/case-studies`, lastModified: "2026-07-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/portfolio`, lastModified: "2026-07-10", changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/locations/dhaka`, lastModified: "2026-07-14", changeFrequency: "monthly", priority: 0.8 },
   ];
+
+  const locationSlugs = [
+    "dhaka", "chittagong", "sylhet", "khulna",
+    "rajshahi", "barisal", "rangpur", "mymensingh",
+  ];
+
+  const locationPages = locationSlugs.map((slug) => ({
+    url: `${baseUrl}/locations/${slug}`,
+    lastModified: "2026-07-20",
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
 
   const industrySlugs = [
     "garments-textile", "ecommerce", "smm-panel", "real-estate",
@@ -88,5 +99,5 @@ export default async function sitemap() {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...industriesPages, ...servicePages, ...blogPages];
+  return [...staticPages, ...industriesPages, ...locationPages, ...servicePages, ...blogPages];
 }

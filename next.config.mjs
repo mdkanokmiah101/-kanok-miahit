@@ -2,41 +2,17 @@
 const nextConfig = {
   async redirects() {
     return [
-      {
-        source: '/locations/chittagong',
-        destination: '/locations/dhaka',
-        permanent: true,
-      },
-      {
-        source: '/locations/sylhet',
-        destination: '/locations/dhaka',
-        permanent: true,
-      },
-      {
-        source: '/locations/khulna',
-        destination: '/locations/dhaka',
-        permanent: true,
-      },
-      {
-        source: '/locations/rajshahi',
-        destination: '/locations/dhaka',
-        permanent: true,
-      },
-      {
-        source: '/locations/barisal',
-        destination: '/locations/dhaka',
-        permanent: true,
-      },
-      {
-        source: '/locations/rangpur',
-        destination: '/locations/dhaka',
-        permanent: true,
-      },
-      {
-        source: '/locations/mymensingh',
-        destination: '/locations/dhaka',
-        permanent: true,
-      },
+      // Service prefix redirects
+      { source: '/seo', destination: '/seo-services', permanent: true },
+      { source: '/seo/', destination: '/seo-services', permanent: true },
+      { source: '/seo-agency', destination: '/seo-services', permanent: true },
+      { source: '/seo-agency/', destination: '/seo-services', permanent: true },
+      { source: '/social-media', destination: '/social-media-marketing', permanent: true },
+      { source: '/social-media/', destination: '/social-media-marketing', permanent: true },
+      { source: '/google-ads', destination: '/ppc-google-ads', permanent: true },
+      { source: '/google-ads/', destination: '/ppc-google-ads', permanent: true },
+      { source: '/web-design', destination: '/web-design-development', permanent: true },
+      { source: '/web-design/', destination: '/web-design-development', permanent: true },
     ];
   },
   async headers() {

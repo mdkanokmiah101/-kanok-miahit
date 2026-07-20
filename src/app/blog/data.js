@@ -15183,7 +15183,9 @@ PAA বক্সে আপনার কন্টেন্ট দেখানো 
 
 পেশাদার PAA অপটিমাইজেশনের মাধ্যমে আপনার ওয়েবসাইটের অর্গানিক ট্রাফিক বাড়ান — প্রমাণিত [ডেটা-চালিত SEO](/services/technical-seo) পদ্ধতি ব্যবহার করে যা ক্লায়েন্ট সাফল্যের প্রমাণিত ট্র্যাক রেকর্ডের উপর ভিত্তি করে তৈরি।
 
-Looking for the [কানক মিয়া](/about)-কে`,
+Looking for the [কানক মিয়া](/about)-কে
+
+Looking for the [কানক মিয়া](/),`,
   },
   {
     slug: "seo-featured-snippet-bangladesh",
@@ -15477,7 +15479,9 @@ AEO-র জন্য কৌশল:
 
 এছাড়াও আমাদের [PAA অপটিমাইজেশন গাইড](/blog/seo-people-also-ask-optimization) সম্পর্কে জানতে পারেন।
 
-Looking for the [কানক মিয়া](/about),`,
+Looking for the [কানক মিয়া](/about),
+
+Looking for the [কানক মিয়া](/)-কে`,
   },
   {
     slug: "seo-knowledge-panel-bangladesh",
@@ -17260,7 +17264,7 @@ Sitemap: https://example.com/sitemap.xml
 ### সাধারণ ভুল ও সমাধান
 
 **ভুল ১: Noindex-এর পরিবর্তে Disallow ব্যবহার:**
-Disallow শুধু ক্রল ব্লক করে, কিন্তু পেজ ইনডেক্স হতে বাধা দেয় না। যদি অন্য কোনো পেজ থেকে লিংক থাকে, তাহলে পেজটি ইনডেক্স হতে পারে। পেজ ইনডেক্স থেকে সরাতে noindex ট্যাগ ব্যবহার করুন। এছাড়াও, [ক্যানোনিকাল ইউআরএল](/blog/seo-canonical-url-guide-bd) ব্যবহার করেও ডুপ্লিকেট কন্টেন্ট সমস্যা সমাধান করতে পারেন।
+Disallow শুধু ক্রল ব্লক করে, কিন্তু পেজ ইনডেক্স হতে বাধা দেয় না। যদি অন্য কোনো পেজ থেকে লিংক থাকে, তাহলে পেজটি ইনডেক্স হতে পারে। পেজ ইনডেক্স থেকে সরাতে noindex ট্যাগ ব্যবহার করুন। এছাড়াও, ক্যানোনিকাল ইউআরএল ব্যবহার করেও ডুপ্লিকেট কন্টেন্ট সমস্যা সমাধান করতে পারেন।
 
 **ভুল ২: পুরো সাইট Disallow:**
 \`\`\`
@@ -17292,7 +17296,7 @@ Allow: /admin/
 ### Robots.txt চেক করার উপায়
 
 **১. গুগল সার্চ কনসোল:**
-[গুগল সার্চ কনসোল](/blog/google-search-console-performance-guide)-এর robots.txt টেস্টার টুল ব্যবহার করে আপনার robots.txt ফাইল টেস্ট করুন।
+গুগল সার্চ কনসোল-এর robots.txt টেস্টার টুল ব্যবহার করে আপনার robots.txt ফাইল টেস্ট করুন।
 
 **২. ব্রাউজার দিয়ে:**
 \`https://your-site.com/robots.txt\` ব্রাউজারে ওপেন করে দেখুন।
@@ -18530,7 +18534,7 @@ JSON-LD কোড পেজের \`<head>\` বা \`<body>\`-তে \`<script 
   "image": "https://kanokmiah.com.bd/images/article.jpg",
   "author": {
     "@type": "Person",
-    "name": "[মোঃ কনক মিঞা](/about)",
+    "name": "মোঃ কনক মিঞা",
     "url": "https://kanokmiah.com.bd/author/kanok-miah"
   },
   "publisher": {
@@ -18944,7 +18948,7 @@ item ফিল্ড ঐচ্ছিক হলেও এটি যোগ কর�
 প্রোডাক্ট পেজের জন্য ক্যাটাগরি ব্রেডক্রাম্ব ব্যবহার করুন:
 \`হোম > ইলেকট্রনিক্স > মোবাইল ফোন > Samsung Galaxy\`
 
-- [স্ট্রাকচারড ডাটা](/blog/seo-structured-data-guide-bd) — স্ট্রাকচারড ডাটা গাইড
+- স্ট্রাকচারড ডাটা — স্ট্রাকচারড ডাটা গাইড
 
 ১. **স্থানীয় প্রাসঙ্গিকতা**: বাংলাদেশি উদাহরণ, ডেটা, এবং কেস স্টাডি ব্যবহার করুন
 ২. **বাংলা ভাষা সমর্থন**: বাংলা ভাষায় কন্টেন্ট তৈরি করে কম প্রতিযোগিতার সুযোগ নিন
@@ -19062,7 +19066,7 @@ FAQ রিচ রেজাল্ট সাধারণ রেজাল্টে�
 গুগলের অফিশিয়াল রিসার্চ অনুযায়ী, স্ট্রাকচারড ডাটা ব্যবহার করলে SERP-তে ক্লিক-থ্রু রেট (CTR) গড়ে ৩০% পর্যন্ত বাড়তে পারে। FAQ রিচ রেজাল্ট সাধারণত ২০-৩০% বেশি CTR পায়। ব্যবহারকারীরা সরাসরি SERP-তে প্রশ্নের উত্তর দেখে আকৃষ্ট হয়।
 
 **৩. ফিচার্ড স্নিপেটের সুযোগ:**
-FAQ স্কিমা আপনার কন্টেন্টকে ফিচার্ড স্নিপেট পাওয়ার সম্ভাবনা বাড়ায়। গবেষণায় দেখা গেছে, সঠিক স্কিমা মার্কআপ ব্যবহার করলে অর্গানিক ক্লিক-থ্রু রেট ২০-৮০% পর্যন্ত বাড়তে পারে, যা আপনার [স্কিমা মার্কআপ কৌশল](/blog/schema-markup-rich-snippets-techniques)-কে আরও কার্যকর করে তোলে।
+FAQ স্কিমা আপনার কন্টেন্টকে ফিচার্ড স্নিপেট পাওয়ার সম্ভাবনা বাড়ায়। গবেষণায় দেখা গেছে, সঠিক স্কিমা মার্কআপ ব্যবহার করলে অর্গানিক ক্লিক-থ্রু রেট ২০-৮০% পর্যন্ত বাড়তে পারে, যা আপনার স্কিমা মার্কআপ কৌশল-কে আরও কার্যকর করে তোলে।
 
 **৪. ভয়েস সার্চ অপটিমাইজেশন:**
 FAQ স্কিমা ভয়েস সার্চের উত্তরে ব্যবহৃত হতে পারে, কারণ এটি প্রশ্ন-উত্তর ফরম্যাটে থাকে।
@@ -19216,8 +19220,8 @@ FAQ সেকশন পেজের নিচের দিকে রাখা �
 **৩. দ্বিভাষিক FAQ:**
 বাংলা এবং ইংরেজি উভয় ভাষায় FAQ তৈরি করলে বৃহত্তর অডিয়েন্সে পৌঁছানো যায়।
 
-- [JSON-LD স্কিমা](/blog/seo-json-ld-schema-bangladesh) — JSON-LD স্কিমা গাইড
-- [HowTo স্কিমা](/blog/seo-howto-schema-bangladesh) — HowTo স্কিমা গাইড
+- JSON-LD স্কিমা — JSON-LD স্কিমা গাইড
+- HowTo স্কিমা — HowTo স্কিমা গাইড
 - [GEO অপটিমাইজেশন](/blog/geo-optimization-prepare-business-ai-search) — GEO অপটিমাইজেশন গাইড
 
 
@@ -25097,7 +25101,9 @@ Your business deserves to be found by the customers who are searching for it rig
 
 *Want to check my credentials? [View my LinkedIn profile](https://www.linkedin.com/in/kanok-miah-454283300/) | [See my Google Business Profile reviews](https://maps.google.com/?cid=13108408111625983125) | Read my [full blog](/blog) for more case studies and SEO insights*
 
-Looking for the best SEO expert in Bangladesh.`,
+Looking for the best SEO expert in Bangladesh.
+
+Looking for the [SEO consultant](/),`,
   },
   {
     slug: "locksmith-dundee-seo-case-study",
@@ -25359,7 +25365,9 @@ All Landlord Certificates UK reached 200+ monthly organic leads in just five mon
     
 আপনার সাইটের জন্য [লোকাল SEO সেবা](/services/local-seo)-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। আপনার সার্ভিস-ভিত্তিক ব্যবসার জন্য পার্সোনালাইজড লোকাল SEO সল্যুশন পেতে আমাদের সাথে যোগাযোগ করুন।
 
-Looking for the professional SEO services.`,
+Looking for the professional SEO services.
+
+Looking for the [SEO consultant](/),`,
   },
   {
     slug: "das-taxis-scotland-seo-case-study",
@@ -25427,7 +25435,9 @@ Das Taxis Scotland 5,853% traffic increase proves that local transportation busi
     
 আপনার সাইটের জন্য [লোকাল SEO ও গুগল ম্যাপস অপটিমাইজেশন](/services/local-seo)-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। ট্যাক্সি এবং পরিবহন ব্যবসার জন্য লোকাল SEO অপটিমাইজেশন সম্পর্কে জানতে আমাদের সেবা দেখুন।
 
-Looking for the best SEO expert in Bangladesh.`,
+Looking for the best SEO expert in Bangladesh.
+
+Looking for the [best SEO expert in Bangladesh](/).`,
   },
   {
     slug: "morethanpanel-seo-case-study",
@@ -25488,7 +25498,9 @@ MoreThanPanel's journey from 1,700 to 58,466 daily visitors proves that even pla
     
 আপনার সাইটের জন্য [অন-পেজ SEO সেবা](/services/on-page-seo)-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। আপনার ব্যবসার জন্য সম্পূর্ণ অন-পেজ SEO অপটিমাইজেশন পেতে আমাদের সাথে যোগাযোগ করুন।
 
-Looking for the SEO expert in Dhaka.`,
+Looking for the SEO expert in Dhaka.
+
+Looking for the [best SEO expert in Bangladesh](/).`,
   },
   {
     slug: "smmgen-seo-case-study",
@@ -25549,7 +25561,9 @@ SMMGen 27,900 monthly clicks represent a 87,000% increase from their starting po
     
 আপনার সাইটের জন্য [ই-কমার্স SEO সেবা](/services/ecommerce-seo)-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। সোশ্যাল মিডিয়া মার্কেটিং টুলের জন্য ই-কমার্স SEO এবং কন্টেন্ট অপটিমাইজেশন সম্পর্কে জানুন।
 
-Looking for the SEO expert in Dhaka.`,
+Looking for the SEO expert in Dhaka.
+
+Looking for the [best SEO expert in Bangladesh](/).`,
   },
   {
     slug: "smmsun-seo-case-study",
@@ -25616,7 +25630,9 @@ SMMSun 15,440% traffic growth in just 13 months proves that a well-structured co
 
 Looking for the SEO expert in Dhaka.
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [best SEO expert in Bangladesh](/).`,
   },
   {
     slug: "mir-cement-seo-case-study",
@@ -25689,7 +25705,9 @@ Mir Cement journey from zero visibility to 500+ monthly organic visitors proves 
 
 Looking for the SEO expert in Dhaka.
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [Kanok Miah](/).`,
   },
   {
     slug: "dhaka-apparels-seo-case-study",
@@ -25759,7 +25777,9 @@ Dhaka Apparels achievement of #1 ranking in 90 days on a brand new domain demons
 
 Looking for the professional SEO services.
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [best SEO expert in Bangladesh](/).`,
   },
   {
     slug: "stealth-windshield-repairs-seo-case-study",
@@ -25826,7 +25846,9 @@ Stealth Windshield Repairs transformation from zero visibility to 400+ monthly v
     
 আপনার সাইটের জন্য [লোকাল SEO সেবা](/services/local-seo)-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। আপনার স্থানীয় অটো সার্ভিস ব্যবসার জন্য কার্যকর লোকাল SEO স্ট্র্যাটেজি পেতে আমাদের সাথে যোগাযোগ করুন।
 
-Looking for the best SEO expert in Bangladesh.`,
+Looking for the best SEO expert in Bangladesh.
+
+Looking for the [SEO expert in Dhaka](/).`,
   },
 
 {
@@ -26030,7 +26052,9 @@ Your competitors are ranking. You can too—with the right SEO expert by your si
 
 Looking for the [How to Choose the Right SEO Agency in Bangladesh](/blog/how-to-choose-right-seo-agency-bangladesh).
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [Kanok Miah](/).`,
   },
 {
     slug: "seo-expert-vs-seo-agency-dhaka-which-is-right",
@@ -26258,7 +26282,9 @@ Your business deserves to be found. Let us make that happen together.
 
 Looking for the [How to Choose the Right SEO Agency in Bangladesh](/blog/how-to-choose-right-seo-agency-bangladesh).
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [SEO consultant](/),`,
   },
   {
     slug: "top-10-seo-mistakes-dhaka-businesses-fix",
@@ -26453,7 +26479,9 @@ Your customers in Dhaka are searching for your services right now. Make sure the
 
 Looking for the [SEO ভুল যা এড়িয়ে চলবেন: বাংলাদেশি ওয়েবসাইটের সাধারণ ](/blog/seo-mistakes-to-avoid-bangladesh).
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [SEO consultant](/),`,
   },
 
   /* ---- AUTO-INSERTED BY CRON ---- */
@@ -26794,7 +26822,9 @@ Your customers are searching right now. Make sure they find you.
 
 Looking for the [ব্যবসায়ীদের জন্য SEO টিপস: নিজেই SEO করুন](/blog/seo-tips-for-business-owners-bd),
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [best SEO expert in Bangladesh](/).`,
   },
   {
     slug: "seo-case-study-dhaka-businesses-increased-organic-traffic",
@@ -27121,7 +27151,9 @@ Let us write your success story together.
 
 Looking for the [রেফারেল ট্রাফিক: লিংক বিল্ডিং ছাড়া ট্রাফিক বাড়ান](/blog/seo-referral-traffic-bangladesh).
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [SEO consultant](/),`,
   },
   {
     slug: "hiring-seo-expert-dhaka-better-roi-than-paid-ads",
@@ -27397,7 +27429,9 @@ Your customers are searching for your services on Google right now. Make sure th
 
 Looking for the Kanok Miah.
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [Kanok Miah](/).`,
   },
 
   {
@@ -27687,7 +27721,9 @@ Ready to make your business the AI's top recommendation? Let us build your GEO s
 
 Looking for the [২০২৬ সালের SEO ট্রেন্ডস: AI, GEO ও জিরো-ক্লিক সার্চের য](/blog/seo-trends-2026-ai-geo-future),
 
-**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
+**[SEO services in Dhaka neighborhoods](/locations/dhaka)**.
+
+Looking for the [SEO consultant](/),`,
   },
   {
     slug: "watchzonebd-seo-case-study",

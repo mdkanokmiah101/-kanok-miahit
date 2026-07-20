@@ -25347,7 +25347,7 @@ The most important lesson? For local service businesses, SEO is not about rankin
 
 আপনার সাইটের জন্য [লোকাল SEO সেবা](/services/local-seo)-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। আপনার লোকাল ব্যবসার জন্যও একইরকম ফলপ্রসূ লোকাল SEO স্ট্র্যাটেজি বাস্তবায়নে আমাদের সেবা নিতে পারেন.
 
-Looking for the [Kanok Miah](/).`,
+Looking for the [Kanok Miah](/about).`,
   },
   {
     slug: "landlord-certificates-seo-case-study",
@@ -27166,7 +27166,7 @@ Let us write your success story together.
 
 *About the Author: **Kanok Miah** is a leading **[Best SEO Expert in Dhaka](https://kanokmiah.com.bd/)** with 7+ years of experience helping Bangladeshi businesses achieve top Google rankings. His case-study-driven approach combines technical SEO, local optimization, content strategy, GEO, and AEO to deliver measurable, long-term results for clients across Dhaka, Chittagong, Sylhet, and beyond.*
 
-Looking for the [Kanok Miah](/).
+Looking for the [Kanok Miah](/about).
 
 **[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
   },
@@ -27442,7 +27442,7 @@ Your customers are searching for your services on Google right now. Make sure th
 
 *About the Author: Kanok Miah is the **Best SEO Consultant in Dhaka** with 7+ years of experience helping Bangladeshi businesses achieve top Google rankings. He specializes in local SEO, technical SEO, e-commerce SEO, and GEO/AEO optimization for the Bangladesh market. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to schedule your free consultation.*
 
-Looking for the [Kanok Miah](/).
+Looking for the [Kanok Miah](/about).
 
 **[SEO services in Dhaka neighborhoods](/locations/dhaka)**.`,
   },

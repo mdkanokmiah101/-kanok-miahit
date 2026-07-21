@@ -25721,7 +25721,7 @@ The comprehensive strategy delivered impressive results:
 
 B2B SEO requires a different approach than B2C. Decision-makers in construction and manufacturing conduct extensive research before purchasing, and being visible at every stage of that research journey is critical.
 
-As the **best SEO expert in Dhaka**, I specialize in B2B SEO strategies that help Bangladeshi manufacturers and suppliers dominate search results. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can transform your B2B brand's online visibility.
+As the **best SEO expert in Dhaka**, I specialize in B2B SEO strategies that help Bangladeshi manufacturers and suppliers dominate search results. Visit [kanokmiah.com.bd](/about) to learn how [we can transform your B2B brand's online visibility](/contact).
 
 - [B2B SEO](/blog/b2b-lead-generation-seo-bangladesh) — B2B Lead Generation SEO
 - [technical SEO](/services/technical-seo) — Technical SEO Services

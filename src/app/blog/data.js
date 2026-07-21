@@ -25437,8 +25437,9 @@ As the **best SEO expert in Dhaka**, I apply this same data-driven approach to t
 
 Das Taxis Scotland 5,853% traffic increase proves that local transportation businesses can achieve remarkable growth through organic SEO. With zero ad spend and a focus on keyword research, content, and local optimization, any taxi company can dominate its local market.
     
-আপনার সাইটের জন্য [লোকাল SEO ও গুগল ম্যাপস অপটিমাইজেশন](/services/local-seo)-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। ট্যাক্সি এবং পরিবহন ব্যবসার জন্য লোকাল SEO অপটিমাইজেশন সম্পর্কে জানতে আমাদের সেবা দেখুন।
-Looking for the [best SEO expert in Bangladesh](/). [Contact us](/contact) for a free consultation.`,
+আপনার সাইটের জন্য [লোকাল SEO ও গুগল ম্যাপস অপটিমাইজেশন](/services/local-seo)-এর মাধ্যমে আরও উন্নত SEO ফলাফল পেতে পারেন। আপনার ট্যাক্সি ব্যবসার জন্য কাস্টমাইজড SEO সমাধান দিতে কানক মিঃ এবং তার টিম প্রস্তুত।
+
+Led by [Kanok Miah](/about), this case study demonstrates how expert SEO strategies drive measurable results for transport businesses. Looking for the [best SEO expert in Bangladesh](/). [Contact us](/contact) for a free consultation.`,
   },
   {
     slug: "morethanpanel-seo-case-study",

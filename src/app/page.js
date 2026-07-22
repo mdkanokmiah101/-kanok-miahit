@@ -11,7 +11,7 @@ import { homepageFaqs } from "./faq-data";
 export const metadata = {
   title: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah",
   description:
-    "Rank higher with Kanok Miah, the best SEO expert in Dhaka, Bangladesh. 6+ years, 210+ proven SEO wins. Free SEO audit for your business — Call 01604-809110.",
+    "Best SEO expert in Bangladesh? Kanok Miah is a top-rated SEO specialist in Dhaka. 6+ years, 210+ wins, 350+ clients. Free SEO audit — Call 01604-809110.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",
@@ -38,7 +38,7 @@ export const metadata = {
     siteName: "Kanok Miah",
     title: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah",
     description:
-      "Rank higher on Google & AI Search with Kanok Miah, a trusted SEO expert in Dhaka, Bangladesh. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
+      "Rank higher on Google & AI Search with Kanok Miah, the best SEO expert in Bangladesh and a trusted SEO specialist in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
     url: "https://kanokmiah.com.bd",
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah",
     description:
-      "Rank higher on Google & AI Search with Kanok Miah, a trusted SEO expert in Dhaka, Bangladesh. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
+      "Rank higher on Google & AI Search with Kanok Miah, the best SEO expert in Bangladesh and a trusted SEO specialist in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
   robots: {
@@ -114,7 +114,7 @@ export default function HomePage() {
       <VideoObjectSchema videos={homepageVideos} />
       {BreadcrumbSchema([
         { name: "Home", url: "https://kanokmiah.com.bd" },
-        { name: "SEO Expert Dhaka", url: "https://kanokmiah.com.bd" },
+        { name: "Best SEO Expert in Dhaka", url: "https://kanokmiah.com.bd" },
       ])}
       <FAQSchema faqs={homepageFaqs} />
       <HomeClient faqs={homepageFaqs} />

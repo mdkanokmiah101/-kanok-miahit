@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL("https://kanokmiah.com.bd"),
   title: {
-    default: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah — #1 SEO Specialist",
-    template: "%s — Kanok Miah | SEO Expert in Dhaka, Bangladesh",
+    default: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah",
+    template: "%s — Kanok Miah",
   },
   description:
     "Looking for the best SEO expert in Dhaka, Bangladesh? Kanok Miah is a top-rated SEO specialist with 6+ years of experience. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
-        <meta name="deploy-version" content="2026-07-18-v22-homepage-seo-fix" />
+        <meta name="deploy-version" content="2026-07-22-v23-homepage-seo-fix" />
         {/* Bing Webmaster Tools — add your msvalidate.01 content="" here */}
       </head>
       <body className="min-h-full flex flex-col">

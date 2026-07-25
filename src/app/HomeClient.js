@@ -192,7 +192,7 @@ export default function HomeClient({ faqs = [] }) {
           <div className="text-center mb-12">
             <span className="inline-block text-primary text-sm font-semibold tracking-[0.2em] uppercase px-4 py-1.5 bg-primary-light/60 rounded-full border border-primary/10">Social Proof</span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-5 mb-4 text-gray-900">
-              Reviews & <span className="text-primary">Training</span>
+              Reviews and <span className="text-primary">Training</span>
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">
               See what clients say about my work and explore free SEO training content.
@@ -351,7 +351,7 @@ export default function HomeClient({ faqs = [] }) {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">What We Do</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Best SEO Services in <span className="text-primary">Dhaka, Bangladesh</span> — Local, Technical & GEO</h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Best SEO Services in <span className="text-primary">Dhaka, Bangladesh</span> — Local, Technical and GEO</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">Complete SEO solutions tailored for the Bangladesh market — from local Dhaka SEO to international optimization.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -658,7 +658,7 @@ export default function HomeClient({ faqs = [] }) {
               <div className="mb-6">
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-2xl mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">🌱</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Starter</h3>
-                <p className="text-gray-500 text-sm">Perfect for new websites & local businesses</p>
+                <p className="text-gray-500 text-sm">Perfect for new websites and local businesses</p>
               </div>
               <div className="mb-6">
                 <span className="text-4xl font-extrabold text-gray-900">15,000</span>
@@ -686,7 +686,7 @@ export default function HomeClient({ faqs = [] }) {
               <div className="mb-6">
                 <div className="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center text-2xl mb-5 shadow-md">📈</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Growth</h3>
-                <p className="text-gray-500 text-sm">Best for growing businesses & e-commerce</p>
+                <p className="text-gray-500 text-sm">Best for growing businesses and e-commerce</p>
               </div>
               <div className="mb-6">
                 <span className="text-4xl font-extrabold text-gray-900">25,000</span>
@@ -711,7 +711,7 @@ export default function HomeClient({ faqs = [] }) {
               <div className="mb-6">
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-2xl mb-5 group-hover:bg-primary group-hover:text-white transition-all duration-300">🚀</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Enterprise</h3>
-                <p className="text-gray-500 text-sm">Full-scale SEO for agencies & brands</p>
+                <p className="text-gray-500 text-sm">Full-scale SEO for agencies and brands</p>
               </div>
               <div className="mb-6">
                 <span className="text-4xl font-extrabold text-gray-900">40,000</span>

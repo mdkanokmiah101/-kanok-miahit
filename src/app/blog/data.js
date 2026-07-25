@@ -24783,7 +24783,7 @@ For local businesses, the situation is equally critical. A restaurant, clinic, o
 
 This is the **Bangladesh digital divide**: millions of businesses with quality products and services are invisible online, while their competitors — often with **inferior products but better SEO** — capture all the traffic, calls, and sales.
 
-I am **Kanok Miah** — the SEO expert businesses in Dhaka trust for page 1 rankings since 2019. With **210+ completed projects** and **108 verified 5-star reviews** on Google Business Profile, I help Bangladeshi businesses dominate local search results and grow revenue through organic traffic.
+I am **[Kanok Miah](/about)** — the SEO expert businesses in Dhaka trust for page 1 rankings since 2019. With **210+ completed projects** and **108 verified 5-star reviews** on Google Business Profile, I help Bangladeshi businesses dominate local search results and grow revenue through organic traffic.
 
 I am **Kanok Miah**, and since **2019**, I have been bridging this gap. With **210+ SEO projects** across **8+ Dhaka neighborhoods** and a **95%+ client retention rate**, I help Bangladeshi businesses — from local shops to e-commerce brands — achieve **page 1 Google rankings** and **measurable revenue growth**:
 

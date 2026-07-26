@@ -25524,11 +25524,12 @@ After 24 months of consistent execution:
 
 The key insight from this case study is that technical SEO fixes unlock the foundation, but content is what drives exponential growth. MoreThanPanel's blog became an engine for attracting new users at every stage of their journey — from awareness to purchase.
 
-As the **best SEO expert in Dhaka**, I apply these same content-driven SEO strategies to digital platforms in Bangladesh and globally. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how content SEO can transform your platform's organic growth.
+As the **best SEO expert in Dhaka**, [Kanok Miah](/about) applies these same content-driven SEO strategies to digital platforms in Bangladesh and globally. Visit kanokmiah.com.bd to learn how content SEO can transform your platform's organic growth. For a free consultation, [contact us](/contact) today.
 
 - [technical SEO](/services/technical-seo) — Technical SEO Services
-- on-page SEO — On-Page SEO Services
+- [on-page SEO](/services/on-page-seo) — On-Page SEO Services
 - [SMMGen case study](/blog/smmgen-seo-case-study) — SMMGen Case Study
+- [SMMSun case study](/blog/smmsun-seo-case-study) — SMMSun Case Study
 
 
 ## Conclusion

@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "slug": "seo-for-fitness-gyms-bangladesh",
+    "title": "SEO for Fitness and Gym Businesses in Bangladesh",
+    "excerpt": "How gyms, fitness studios, and personal trainers in Bangladesh can attract more members using local SEO, content marketing, and Google Business Profile optimisation tailored to the fitness industry.",
+    "tags": [
+      "Fitness SEO",
+      "Gym Marketing",
+      "Local SEO",
+      "Bangladesh Fitness"
+    ],
+    "author": "Kanok Miah",
+    "date": "2026-07-08"
+  },
+  "overall_score": 77.2,
+  "aeo": {
+    "language": "Bengali",
+    "question_words_checked": [
+      "কী",
+      "কেন",
+      "কিভাবে",
+      "কি",
+      "কখন",
+      "কোথায়",
+      "কীভাবে"
+    ],
+    "questions_found": [
+      {
+        "question_word": "কী",
+        "text": "### ফিটনেস SEO কী?"
+      },
+      {
+        "question_word": "কী",
+        "text": "### ফিটনেস ইন্ডাস্ট্রির জন্য কোন কীওয়ার্ড ভালো?"
+      },
+      {
+        "question_word": "কী",
+        "text": "### SEO-র খরচ কীভাবে নির্ধারিত হয়?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### শিক্ষাপ্রতিষ্ঠানের জন্য SEO কেন গুরুত্বপূর্ণ?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### ইভেন্ট ম্যানেজমেন্ট কোম্পানির জন্য SEO কেন গুরুত্বপূর্ণ?"
+      },
+      {
+        "question_word": "কখন",
+        "text": "### কখন SEO ব্যবহার করবেন?"
+      },
+      {
+        "question_word": "কখন",
+        "text": "### কখন PPC ব্যবহার করবেন?"
+      },
+      {
+        "question_word": "কীভাবে",
+        "text": "### SEO-র খরচ কীভাবে নির্ধারিত হয়?"
+      },
+      {
+        "question_word": "কীভাবে",
+        "text": "### SEO ROI কীভাবে মাপবেন?"
+      }
+    ],
+    "has_faq_section": true,
+    "has_qa_markup_section": false,
+    "has_direct_answers": false,
+    "score": 33,
+    "issues": [
+      "No structured Q&A markup section found"
+    ],
+    "schema_mention": true
+  },
+  "tfidf": {
+    "key_terms": [
+      "bangladesh",
+      "businesses",
+      "fitness",
+      "gym",
+      "gyms",
+      "local",
+      "marketing",
+      "seo"
+    ],
+    "term_frequencies": {
+      "bangladesh": {
+        "frequency": 375,
+        "density_pct": 1.0962
+      },
+      "businesses": {
+        "frequency": 92,
+        "density_pct": 0.2689
+      },
+      "fitness": {
+        "frequency": 28,
+        "density_pct": 0.0819
+      },
+      "gym": {
+        "frequency": 27,
+        "density_pct": 0.0789
+      },
+      "gyms": {
+        "frequency": 8,
+        "density_pct": 0.0234
+      },
+      "local": {
+        "frequency": 169,
+        "density_pct": 0.494
+      },
+      "marketing": {
+        "frequency": 43,
+        "density_pct": 0.1257
+      },
+      "seo": {
+        "frequency": 948,
+        "density_pct": 2.7713
+      }
+    },
+    "density_ok": true,
+    "missing_terms": [],
+    "coverage_pct": 100.0,
+    "issues": []
+  },
+  "structure": {
+    "title": "SEO for Fitness and Gym Businesses in Bangladesh",
+    "first_h1": "",
+    "title_in_h1": false,
+    "h1_count": 0,
+    "h2_count": 156,
+    "h3_count": 349,
+    "paragraph_count": 723,
+    "list_count": 256,
+    "numbered_list_count": 41,
+    "internal_links": 227,
+    "external_links": 20,
+    "gutenberg_blocks": {
+      "cover": 0,
+      "columns": 0,
+      "buttons": 0,
+      "group": 0,
+      "separator": 0,
+      "table": 0,
+      "accordion": 0
+    },
+    "total_gutenberg_blocks": 0,
+    "char_count": 247333,
+    "word_count": 34518,
+    "issues": [
+      "No H1 heading found",
+      "Title not clearly reflected in first H1 heading"
+    ]
+  },
+  "quality": {
+    "readability_indicators": {
+      "avg_words_per_sentence": 10.1,
+      "total_sentences": 3432,
+      "total_words": 34518
+    },
+    "has_meta_description": true,
+    "has_keyword_in_title": true,
+    "has_keyword_in_first_100_words": true,
+    "has_keyword_in_h1": false,
+    "image_count": 0,
+    "alt_text_count": 0,
+    "issues": [
+      "No images found in content"
+    ],
+    "positives": [
+      "Good sentence length (10.1 words avg)",
+      "Comprehensive length (34518 words) — good for in-depth coverage"
+    ]
+  }
+}

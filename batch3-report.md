@@ -1,169 +1,146 @@
-# Content Framework Check Report — Batch 3 of 3
-**Date**: 2026-07-17
-**Project**: /root/kanok-miahit
-**Data Source**: src/app/blog/data.js
-**Checks Performed**: TF-IDF (A), Entities (B), Pillar Link (C), AEO/GEO (D), Internal Links (E), Schema (F)
+# Batch 3 – Content Framework Checks Report
+## /root/kanok-miahit/src/app/blog/data.js
 
 ---
 
-## Post: local-seo-tips-dhaka-businesses-google-maps
+## Post: content-marketing-strategy-bangladeshi-brands-seo
+**Title:** Content Marketing Strategy for Bangladeshi Brands: Drive SEO Growth
+**Line:** 2470
+
 | Check | Status | Details |
 |-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'local' found 66 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 7 question-based headings found (≥2): Why, How(×4), What(×2) |
-| **E. Internal Links** | ✅ PASS | 18 internal links found (blog:4, services:7, locations:1, industries:6) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
-
----
-
-## Post: why-ecommerce-store-needs-seo-bangladesh
-| Check | Status | Details |
-|-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'e-commerce' found 49 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 7 question-based headings found (≥2): Why, How(×3), Is, How, How |
-| **E. Internal Links** | ✅ PASS | 11 internal links found (blog:3, services:5, locations:0, industries:3) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
-
----
-
-## Post: technical-seo-checklist-bangladeshi-websites
-| Check | Status | Details |
-|-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'technical' found 36 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 7 question-based headings found (≥2): Why, What(×2), How(×3), What |
-| **E. Internal Links** | ✅ PASS | 25 internal links found (blog:5, services:7, locations:0, industries:13) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
-
----
-
-## Post: how-to-choose-right-seo-agency-bangladesh
-| Check | Status | Details |
-|-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'agency' found 40 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 7 question-based headings found (≥2): What(×2), How(×2), Can, What, How |
-| **E. Internal Links** | ✅ PASS | 14 internal links found (blog:4, services:4, locations:0, industries:6) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
-
----
-
-## Post: link-building-strategies-bangladesh-market
-| Check | Status | Details |
-|-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'link' found 141 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 8 question-based headings found (≥2): Why, What, How(×3), Is, Are, How |
-| **E. Internal Links** | ✅ PASS | 18 internal links found (blog:6, services:4, locations:0, industries:8) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
-
----
-
-## Post: geo-optimization-prepare-business-ai-search
-| Check | Status | Details |
-|-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'optimization' found 19 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 10 question-based headings found (≥2): What(×4), How(×3), Why, How, What |
-| **E. Internal Links** | ✅ PASS | 28 internal links found (blog:6, services:9, locations:0, industries:13) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
-
----
-
-## Post: seo-garments-textile-industry-b2b-lead-generation
-| Check | Status | Details |
-|-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'seo' found 60 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ❌ FAIL | No pillar or related pillar link found |
-| **D. AEO/GEO** | ✅ PASS | 7 question-based headings found (≥2): Why, How(×2), Is, How, What, How |
-| **E. Internal Links** | ✅ PASS | 20 internal links found (blog:6, services:7, locations:0, industries:7) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
+| A. TF-IDF Coverage | ✅ PASS | Primary keyword 'content marketing' appears 33× (≥5 threshold) |
+| B. Semantic Entity Coverage | ✅ PASS | Entities found: Dhaka, Bangladesh, SEO, Brand |
+| C. Pillar-Cluster Alignment | ✅ PASS | Links to /services, /about, /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| D. AEO/GEO Optimization | ✅ PASS | 8 question-based headings found (What, Why, How, etc.) — well above 2 minimum |
+| E. Internal Linking | ✅ PASS | 13 internal links (≥3): /blog/, /services/, /locations/ all covered |
+| F. Schema Fields | ✅ PASS | title ✓, excerpt ✓, date ✓ all set |
 
 ### Fix instructions:
-- **Add a link** to the master pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` in the conclusion or related reading section.
-- Suggested anchor text: "For a complete SEO strategy, see my comprehensive SEO guide for Bangladesh businesses."
+- ✅ All checks passed. No fixes needed.
 
 ---
 
-## Post: google-business-profile-optimization-guide-bangladesh
+## Post: international-seo-bangladesh-exporters-global-buyers
+**Title:** International SEO for Bangladesh Exporters: Attract Global Buyers
+**Line:** 2655
+
 | Check | Status | Details |
 |-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'business' found 86 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 13 question-based headings found (≥2): Why(×3), How(×7), What(×2), How |
-| **E. Internal Links** | ✅ PASS | 13 internal links found (blog:6, services:4, locations:1, industries:2) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
-
----
-
-## Post: seo-vs-google-ads-whats-best-bangladesh-businesses
-| Check | Status | Details |
-|-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'seo' found 100 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 9 question-based headings found (≥2): When(×2), How(×2), Can, How, What, How, How |
-| **E. Internal Links** | ✅ PASS | 13 internal links found (blog:8, services:3, locations:0, industries:2) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
-
----
-
-## Post: seo-real-estate-developers-dhaka
-| Check | Status | Details |
-|-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'seo' found 44 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ❌ FAIL | No pillar or related pillar link found |
-| **D. AEO/GEO** | ✅ PASS | 6 question-based headings found (≥2): Why, How(×3), What, Can |
-| **E. Internal Links** | ✅ PASS | 10 internal links found (blog:4, services:2, locations:1, industries:3) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
+| A. TF-IDF Coverage | ✅ PASS | Primary keyword 'international seo' appears 25× (≥5 threshold) |
+| B. Semantic Entity Coverage | ✅ PASS | Entities found: Dhaka, Bangladesh, SEO, Export; mentions RMG, garment, manufacturing |
+| C. Pillar-Cluster Alignment | ✅ PASS | Links to /services, /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| D. AEO/GEO Optimization | ✅ PASS | 6 question-based headings found (Why, How, What, etc.) |
+| E. Internal Linking | ✅ PASS | 12 internal links (≥3): /blog/, /services/, /industries/, /locations/ |
+| F. Schema Fields | ✅ PASS | title ✓, excerpt ✓, date ✓ all set |
 
 ### Fix instructions:
-- **Add a link** to the master pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` in the conclusion or related reading section.
-- Suggested anchor text: "For a complete SEO strategy, read my comprehensive SEO guide for Bangladesh businesses."
+- ✅ All checks passed. No fixes needed.
 
 ---
 
-## Post: mobile-seo-optimization-bangladesh-mobile-first-era
+## Post: seo-bangla-beginners-guide-google-ranking
+**Title:** সহজ ভাষায় SEO: কীভাবে গুগলে প্রথম পেজে আসবেন (২০২৬ গাইড)
+**Line:** 2821
+
 | Check | Status | Details |
 |-------|--------|---------|
-| **A. TF-IDF** | ✅ PASS | Keyword 'mobile' found 106 times (≥5) |
-| **B. Entities** | ✅ PASS | All required entities present (location, service type, industry terms) |
-| **C. Pillar Link** | ✅ PASS | Links to pillar page: /blog/complete-seo-guide-bangladesh-businesses-2026 |
-| **D. AEO/GEO** | ✅ PASS | 7 question-based headings found (≥2): What, How, How, Is, What, What, Does |
-| **E. Internal Links** | ✅ PASS | 14 internal links found (blog:6, services:5, locations:0, industries:3) |
-| **F. Schema** | ✅ PASS | title, excerpt, date all set |
+| A. TF-IDF Coverage | ✅ PASS | Primary keyword 'SEO' appears 96× (≥5 threshold) |
+| B. Semantic Entity Coverage | ✅ PASS | Entities found: ঢাকা/Dhaka, বাংলাদেশ/Bangladesh, SEO, Business |
+| C. Pillar-Cluster Alignment | ✅ PASS | Links to /services, /blog/complete-seo-guide-bangladesh-businesses-2026, /blog/why-ecommerce-store-needs-seo-bangladesh |
+| D. AEO/GEO Optimization | ✅ PASS | 2 question-based headings found (কীভাবে, কেন — Bengali question words) |
+| E. Internal Linking | ✅ PASS | 16 internal links (≥3): /blog/, /services/, /locations/, /about/ |
+| F. Schema Fields | ✅ PASS | title ✓, excerpt ✓, date ✓ all set |
+
+### Fix instructions:
+- ✅ All checks passed. No fixes needed.
+
+---
+
+## Post: local-seo-dhaka-google-maps-ranking
+**Title:** স্থানীয় SEO: ঢাকায় আপনার ব্যবসা কীভাবে গুগল ম্যাপে শীর্ষে দেখাবেন
+**Line:** 3079
+
+| Check | Status | Details |
+|-------|--------|---------|
+| A. TF-IDF Coverage | ✅ PASS | Primary keyword 'স্থানীয় SEO' (local SEO) appears 14× (≥5 threshold) |
+| B. Semantic Entity Coverage | ✅ PASS | Entities found: ঢাকা/Dhaka, বাংলাদেশ/Bangladesh, SEO, Business; mentions restaurant, dentist, salon as industry references |
+| C. Pillar-Cluster Alignment | ✅ PASS | Links to /services, /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| D. AEO/GEO Optimization | ✅ PASS | 3 question-based headings found (কীভাবে, কীভাবে, কেন) |
+| E. Internal Linking | ✅ PASS | 14 internal links (≥3): /blog/, /services/, /locations/ |
+| F. Schema Fields | ✅ PASS | title ✓, excerpt ✓, date ✓ all set |
+
+### Fix instructions:
+- ✅ All checks passed. No fixes needed.
+
+---
+
+## Post: seo-trends-2026-ai-geo-future
+**Title:** ২০২৬ সালের SEO ট্রেন্ডস: AI, GEO ও জিরো-ক্লিক সার্চের যুগে কীভাবে প্রস্তুত থাকবেন
+**Line:** 3324
+
+| Check | Status | Details |
+|-------|--------|---------|
+| A. TF-IDF Coverage | ⚠️ FLAG | Full title phrase '২০২৬ সালের SEO ট্রেন্ডস' appears only 1× in body. However 'SEO' appears ~50× and 'ট্রেন্ড'/'trend' appears across section headings covering 7 named trends. Consider adding the exact title phrase a few more times. |
+| B. Semantic Entity Coverage | ✅ PASS | Entities found: ঢাকা/Dhaka, বাংলাদেশ/Bangladesh, SEO, AI/GEO/search |
+| C. Pillar-Cluster Alignment | ✅ PASS | Links to /services, /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| D. AEO/GEO Optimization | ✅ PASS | 2 question-based headings found (কীভাবে, কেন) |
+| E. Internal Linking | ✅ PASS | 16 internal links (≥3): /blog/, /services/, /locations/ |
+| F. Schema Fields | ✅ PASS | title ✓, excerpt ✓, date ✓ all set |
+
+### Fix instructions:
+- **TF-IDF**: Sprinkle the phrase "২০২৬ সালের SEO ট্রেন্ডস" or "SEO trends 2026" into 3–4 more places in the body text (e.g., intro paragraph, section intros, conclusion) to reach the 5-occurrence threshold.
+
+---
+
+## Post: technical-seo-core-web-vitals-optimization
+**Title:** টেকনিক্যাল SEO: ওয়েবসাইট স্পিড ও কোর ওয়েব ভাইটালস অপটিমাইজেশন
+**Line:** 3533
+
+| Check | Status | Details |
+|-------|--------|---------|
+| A. TF-IDF Coverage | ✅ PASS | Primary keyword 'টেকনিক্যাল SEO' appears 23× (≥5 threshold) |
+| B. Semantic Entity Coverage | ✅ PASS | Entities found: ঢাকা/Dhaka, বাংলাদেশ/Bangladesh, SEO, Core Web Vitals/Web |
+| C. Pillar-Cluster Alignment | ✅ PASS | Links to /services, /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| D. AEO/GEO Optimization | ✅ PASS | 5 question-based headings found (কীভাবে, কীভাবে, কীভাবে, কীভাবে, কেন) |
+| E. Internal Linking | ✅ PASS | 13 internal links (≥3): /blog/, /services/, /locations/ |
+| F. Schema Fields | ✅ PASS | title ✓, excerpt ✓, date ✓ all set |
+
+### Fix instructions:
+- ✅ All checks passed. No fixes needed.
+
+---
+
+## Post: ecommerce-seo-daraz-shopify-guide
+**Title:** ই-কমার্স SEO: দারাজ ও শপিফাই স্টোরের জন্য সম্পূর্ণ গাইড
+**Line:** 3709
+
+| Check | Status | Details |
+|-------|--------|---------|
+| A. TF-IDF Coverage | ✅ PASS | Primary keyword 'ই-কমার্স SEO' (ecommerce SEO) appears 11× (≥5 threshold) |
+| B. Semantic Entity Coverage | ✅ PASS | Entities found: ঢাকা/Dhaka, বাংলাদেশ/Bangladesh, SEO, Daraz/Shopify/ecommerce |
+| C. Pillar-Cluster Alignment | ✅ PASS | Links to /services, /about, /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| D. AEO/GEO Optimization | ✅ PASS | 2 question-based headings found (কীভাবে, কেন) |
+| E. Internal Linking | ✅ PASS | 20 internal links (≥3): /blog/, /services/, /locations/, /industries/ |
+| F. Schema Fields | ✅ PASS | title ✓, excerpt ✓, date ✓ all set |
+
+### Fix instructions:
+- ✅ All checks passed. No fixes needed.
 
 ---
 
 ## Summary
 
-| Post | A | B | C | D | E | F | Score |
-|------|---|---|---|---|---|---|-------|
-| 1. local-seo-tips-dhaka-businesses-google-maps | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| 2. why-ecommerce-store-needs-seo-bangladesh | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| 3. technical-seo-checklist-bangladeshi-websites | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| 4. how-to-choose-right-seo-agency-bangladesh | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| 5. link-building-strategies-bangladesh-market | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| 6. geo-optimization-prepare-business-ai-search | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| 7. seo-garments-textile-industry-b2b-lead-generation | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| 8. google-business-profile-optimization-guide-bangladesh | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| 9. seo-vs-google-ads-whats-best-bangladesh-businesses | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| 10. seo-real-estate-developers-dhaka | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| 11. mobile-seo-optimization-bangladesh-mobile-first-era | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
+| # | Slug | A. TF-IDF | B. Entities | C. Pillar | D. AEO/GEO | E. Int. Links | F. Schema |
+|---|------|-----------|-------------|-----------|-------------|---------------|-----------|
+| 1 | content-marketing-strategy-bangladeshi-brands-seo | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 2 | international-seo-bangladesh-exporters-global-buyers | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 3 | seo-bangla-beginners-guide-google-ranking | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 4 | local-seo-dhaka-google-maps-ranking | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 5 | seo-trends-2026-ai-geo-future | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 6 | technical-seo-core-web-vitals-optimization | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 7 | ecommerce-seo-daraz-shopify-guide | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Overall: 64/66 checks passing (out of 11 posts × 6 checks)**
+**Overall: 6/7 posts pass all checks. 1 post has a minor TF-IDF flag.**
 
-**Failing: 2 posts missing pillar links (C):**
-- `seo-garments-textile-industry-b2b-lead-generation` — add link to `/blog/complete-seo-guide-bangladesh-businesses-2026`
-- `seo-real-estate-developers-dhaka` — add link to `/blog/complete-seo-guide-bangladesh-businesses-2026`
+The single flag is for **seo-trends-2026-ai-geo-future** — the exact title-derived Bengali phrase "২০২৬ সালের SEO ট্রেন্ডস" appears only once in the body content. The post comprehensively covers SEO trends content-wise (7 named trends, ~50× "SEO" usage), but the specific headline keyword needs a few more mentions to satisfy the mechanical TF-IDF threshold.

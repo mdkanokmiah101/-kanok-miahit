@@ -1,0 +1,742 @@
+======================================================================
+CONTENT FRAMEWORK AUDIT REPORT
+File: /root/kanok-miahit/src/app/blog/data.js
+Posts to audit: 35 (recently modified)
+======================================================================
+
+Parsing blog posts...
+Found 35/35 target slugs in file.
+  Parsed: technical-seo-checklist-bangladeshi-websites (content: ~21956 chars)
+  Parsed: google-business-profile-optimization-guide-bangladesh (content: ~23311 chars)
+  Parsed: seo-vs-google-ads-whats-best-bangladesh-businesses (content: ~24418 chars)
+  Parsed: seo-real-estate-developers-dhaka (content: ~17131 chars)
+  Parsed: content-marketing-strategy-bangladeshi-brands-seo (content: ~19145 chars)
+  Parsed: local-seo-dhaka-google-maps-ranking (content: ~15167 chars)
+  Parsed: seo-trends-2026-ai-geo-future (content: ~15176 chars)
+  Parsed: seo-vs-google-ads-bangladesh-business (content: ~15094 chars)
+  Parsed: seo-bangla-blog-content-writing (content: ~14520 chars)
+  Parsed: seo-for-youtube-channel-bangla (content: ~16611 chars)
+  Parsed: seo-for-hotel-resort-bangladesh (content: ~16565 chars)
+  Parsed: seo-google-business-profile-posts (content: ~15853 chars)
+  Parsed: seo-local-citations-bangladesh (content: ~15636 chars)
+  Parsed: seo-for-ngo-bangladesh (content: ~16581 chars)
+  Parsed: seo-career-guide-bangladesh-2026 (content: ~17586 chars)
+  Parsed: seo-for-new-website-bangladesh (content: ~19704 chars)
+  Parsed: website-speed-optimization-bangladesh (content: ~2060 chars)
+  Parsed: affiliate-seo-bangladesh (content: ~20218 chars)
+  Parsed: seo-legal-compliance-bangladesh (content: ~9515 chars)
+  Parsed: seo-for-restaurants-cafe-dhaka (content: ~8434 chars)
+  Parsed: seo-google-analytics-4-bangladesh (content: ~6405 chars)
+  Parsed: google-discover-seo-bangladesh (content: ~7059 chars)
+  Parsed: seo-pillar-content-strategy-bd (content: ~8631 chars)
+  Parsed: seo-skyscraper-technique-bangladesh (content: ~6467 chars)
+  Parsed: seo-referral-traffic-bangladesh (content: ~8465 chars)
+  Parsed: seo-direct-traffic-bangladesh (content: ~7684 chars)
+  Parsed: seo-branded-vs-non-branded-bd (content: ~8667 chars)
+  Parsed: seo-https-ssl-impact-bangladesh (content: ~13987 chars)
+  Parsed: seo-hreflang-guide-bangladesh (content: ~1371 chars)
+  Parsed: seo-breadcrumb-schema-bd (content: ~981 chars)
+  Parsed: seo-faq-schema-bangladesh (content: ~3354 chars)
+  Parsed: das-taxis-scotland-seo-case-study (content: ~3520 chars)
+  Parsed: stealth-windshield-repairs-seo-case-study (content: ~4017 chars)
+  Parsed: seo-expert-vs-seo-agency-dhaka-which-is-right (content: ~15426 chars)
+  Parsed: hiring-seo-expert-dhaka-better-roi-than-paid-ads (content: ~25419 chars)
+
+Successfully parsed: 35/35 posts
+
+
+============================================================
+## Post: affiliate-seo-bangladesh
+  Title: অ্যাফিলিয়েট মার্কেটিং SEO: বাংলাদেশি মার্কেটে সফল হওয়ার কৌশল...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: অ্যাফিলিয়েট মার্কেটিং seo: বাংলাদেশি মার্কেটে সফল | ❌ | 0 occurrences of "অ্যাফিলিয়েট মার্কেটিং seo: বাংলাদেশি মার্কেটে সফল হওয়ার" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ✅ | 3 question headings: Why Affiliate SEO Is a Powerful Combination for Ba, How long does affiliate SEO take to show results?, Do I need a website for affiliate SEO? |
+| Internal Links | ✅ | 23 total: /blog/local-seo-tips-dhaka-businesses-google-maps, /blog/seo-competitor-analysis-bangladesh, /blog/how-to-choose-right-seo-agency-bangladesh, /services/local-seo, /services/geo-ai-search... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "অ্যাফিলিয়েট মার্কেটিং seo: বাংলাদেশি মার্কেটে সফল হওয়ার" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+
+============================================================
+## Post: content-marketing-strategy-bangladeshi-brands-seo
+  Title: Content Marketing Strategy for Bangladeshi Brands: Drive SEO Growth...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: content marketing | ✅ | 33 occurrences of "content marketing" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ✅ | 8 question headings: What is Content Marketing?, Why Content Marketing is the Engine of SEO in Bang, How to Optimize Content for AI Search Engines (+5 more) |
+| Internal Links | ✅ | 13 total: /blog/technical-seo-checklist-bangladeshi-websites, /blog/content-marketing-seo-friendly-content-writing, /blog/local-seo-tips-dhaka-businesses-google-maps, /locations/chittagong, /locations/sylhet... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- All checks passed. No fixes needed.
+
+============================================================
+## Post: das-taxis-scotland-seo-case-study
+  Title: Das Taxis Scotland SEO: From 15 to 893 Monthly Visitors (+5,853%)...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: das taxis scotland seo | ❌ | 0 occurrences of "das taxis scotland seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 2 total: /blog/locksmith-dundee-seo-case-study, /services/local-seo |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "das taxis scotland seo" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+- **Internal Links**: Add at least 1 more internal links to /blog/..., /services/..., /locations/..., or /industries/... pages. Current: 2
+
+============================================================
+## Post: google-business-profile-optimization-guide-bangladesh
+  Title: Google Business Profile Optimization Guide for Bangladesh...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: google business profile optimization | ❌ | 3 occurrences of "google business profile optimization" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ✅ | 13 question headings: Why Google Business Profile is Critical in Banglad, How Google Business Profile Works in Bangladesh, How GBP Rankings Are Determined (+10 more) |
+| Internal Links | ✅ | 14 total: /blog/technical-seo-checklist-bangladeshi-websites, /blog/local-seo-tips-dhaka-businesses-google-maps, /locations/chittagong, /locations/sylhet, /industries/food-restaurant... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "google business profile optimization" at least 2 more times in the content (currently 3 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+
+============================================================
+## Post: google-discover-seo-bangladesh
+  Title: গুগল ডিসকভার SEO: ট্রাফিক বাড়ান নতুন উপায়ে...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: গুগল ডিসকভার seo | ❌ | 0 occurrences of "গুগল ডিসকভার seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 10 total: /blog/seo-trends-2026-ai-geo-future, /blog/technical-seo-core-web-vitals-optimization, /locations/dhaka, /blog/geo-optimization-prepare-business-ai-search, /services/technical-seo... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "গুগল ডিসকভার seo" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: hiring-seo-expert-dhaka-better-roi-than-paid-ads
+  Title: Why Hiring an SEO Expert in Dhaka Delivers Better ROI Than Paid Ads...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: why hiring an seo expert | ❌ | 0 occurrences of "why hiring an seo expert" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ✅ | 13 question headings: Why the Bangladesh Market Favors SEO Over Ads, How to Optimize for AEO, When Paid Ads Make Sense (And When They Don\\'t) (+10 more) |
+| Internal Links | ❌ | 2 total: /services/local-seo, /locations/dhaka |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "why hiring an seo expert" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **Internal Links**: Add at least 1 more internal links to /blog/..., /services/..., /locations/..., or /industries/... pages. Current: 2
+
+============================================================
+## Post: local-seo-dhaka-google-maps-ranking
+  Title: স্থানীয় SEO: ঢাকায় আপনার ব্যবসা কীভাবে গুগল ম্যাপে শীর্ষে দেখাবেন...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: স্থানীয় seo | ✅ | 14 occurrences of "স্থানীয় seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 14 total: /blog/seo-local-citations-bangladesh, /blog/technical-seo-checklist-bangladeshi-websites, /locations/chittagong, /blog/google-business-profile-optimization-guide-bangladesh, /locations/sylhet... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-bangla-blog-content-writing
+  Title: SEO ফ্রেন্ডলি ব্লগ কন্টেন্ট লেখার নিয়ম: বাংলা ব্লগিং টিপস...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: seo ফ্রেন্ডলি ব্লগ কন্টেন্ট লেখার নিয়ম | ❌ | 1 occurrences of "seo ফ্রেন্ডলি ব্লগ কন্টেন্ট লেখার নিয়ম" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 13 total: /blog/content-marketing-seo-friendly-content-writing, /locations/chittagong, /locations/khulna, /locations/sylhet, /locations/rajshahi... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "seo ফ্রেন্ডলি ব্লগ কন্টেন্ট লেখার নিয়ম" at least 4 more times in the content (currently 1 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-branded-vs-non-branded-bd
+  Title: ব্র্যান্ডেড বনাম নন-ব্র্যান্ডেড কীওয়ার্ড: SEO স্ট্র্যাটেজি...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: ব্র্যান্ডেড বনাম নন-ব্র্যান্ডেড কীওয়ার্ড | ❌ | 2 occurrences of "ব্র্যান্ডেড বনাম নন-ব্র্যান্ডেড কীওয়ার্ড" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 13 total: /locations/chittagong, /locations/barisal, /blog/seo-competitor-analysis-bangladesh, /locations/khulna, /locations/sylhet... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "ব্র্যান্ডেড বনাম নন-ব্র্যান্ডেড কীওয়ার্ড" at least 3 more times in the content (currently 2 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-breadcrumb-schema-bd
+  Title: ব্রেডক্রাম্ব স্কিমা: নেভিগেশন ও সার্চ রেজাল্ট উন্নত করুন...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: ব্রেডক্রাম্ব স্কিমা | ❌ | 4 occurrences of "ব্রেডক্রাম্ব স্কিমা" |
+| Entities | ❌ | Missing: "Dhaka" / "ঢাকা" |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 total:  |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "ব্রেডক্রাম্ব স্কিমা" at least 1 more times in the content (currently 4 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Entities**: Add location entity "Dhaka" or "ঢাকা" at least once in the content.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+- **Internal Links**: Add at least 3 more internal links to /blog/..., /services/..., /locations/..., or /industries/... pages. Current: 0
+
+============================================================
+## Post: seo-career-guide-bangladesh-2026
+  Title: SEO ক্যারিয়ার গাইড ২০২৬: বাংলাদেশে SEO পেশা শুরু করুন...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: seo ক্যারিয়ার | ✅ | 7 occurrences of "seo ক্যারিয়ার" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 21 total: /blog/content-marketing-seo-friendly-content-writing, /blog/local-seo-tips-dhaka-businesses-google-maps, /blog/how-to-choose-right-seo-agency-bangladesh, /services/local-seo, /services/geo-ai-search... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-direct-traffic-bangladesh
+  Title: ডাইরেক্ট ট্রাফিক: ব্র্যান্ড সার্চ বাড়ানোর কৌশল...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: ডাইরেক্ট ট্রাফিক: ব্র্যান্ড সার্চ বাড়ানোর | ❌ | 1 occurrences of "ডাইরেক্ট ট্রাফিক: ব্র্যান্ড সার্চ বাড়ানোর" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 10 total: /blog/google-search-console-performance-guide, /locations/chittagong, /locations/sylhet, /blog/seo-referral-traffic-bangladesh, /locations/dhaka... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "ডাইরেক্ট ট্রাফিক: ব্র্যান্ড সার্চ বাড়ানোর" at least 4 more times in the content (currently 1 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-expert-vs-seo-agency-dhaka-which-is-right
+  Title: SEO Expert vs SEO Agency in Dhaka: Which One is Right for Your Business?...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: seo expert vs seo agency in dhaka: which one is ri | ❌ | 0 occurrences of "seo expert vs seo agency in dhaka: which one is right" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ✅ | 4 question headings: What Is an SEO Expert?, What Is an SEO Agency?, When Should You Hire an SEO Expert in Dhaka? (+1 more) |
+| Internal Links | ✅ | 6 total: /industries/real-estate, /locations/dhaka, /blog/how-to-choose-best-seo-expert-dhaka-15-things, /industries/medical, /blog/how-to-choose-right-seo-agency-bangladesh... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "seo expert vs seo agency in dhaka: which one is right" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+
+============================================================
+## Post: seo-faq-schema-bangladesh
+  Title: FAQ স্কিমা: গুগলে প্রশ্নোত্তর দেখান...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: faq স্কিমা | ✅ | 15 occurrences of "faq স্কিমা" |
+| Entities | ❌ | Missing: "Dhaka" / "ঢাকা" |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 total:  |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **Entities**: Add location entity "Dhaka" or "ঢাকা" at least once in the content.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+- **Internal Links**: Add at least 3 more internal links to /blog/..., /services/..., /locations/..., or /industries/... pages. Current: 0
+
+============================================================
+## Post: seo-for-hotel-resort-bangladesh
+  Title: হোটেল ও রিসোর্টের জন্য SEO: বাংলাদেশি পর্যটন মার্কেট...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: হোটেল ও রিসোর্টের জন্য seo | ❌ | 3 occurrences of "হোটেল ও রিসোর্টের জন্য seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 21 total: /blog/local-seo-tips-dhaka-businesses-google-maps, /blog/seo-travel-tourism-bangladesh, /blog/how-to-choose-right-seo-agency-bangladesh, /services/local-seo, /services/geo-ai-search... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "হোটেল ও রিসোর্টের জন্য seo" at least 2 more times in the content (currently 3 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-for-new-website-bangladesh
+  Title: নতুন ওয়েবসাইটের জন্য SEO: প্রথম দিন থেকে র‍্যাঙ্কিং শুরু করুন...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: নতুন ওয়েবসাইটের জন্য seo | ❌ | 1 occurrences of "নতুন ওয়েবসাইটের জন্য seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ✅ | 3 question headings: Why SEO for a New Website Requires a Different App, How long does SEO take for a new website in Bangla, Can I do SEO myself for my new website? |
+| Internal Links | ✅ | 12 total: /blog/technical-seo-checklist-bangladeshi-websites, /blog/local-seo-tips-dhaka-businesses-google-maps, /blog/why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh, /blog/keyword-research-bangladesh-market, /services/technical-seo... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "নতুন ওয়েবসাইটের জন্য seo" at least 4 more times in the content (currently 1 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+
+============================================================
+## Post: seo-for-ngo-bangladesh
+  Title: এনজিও ও সামাজিক সংস্থার জন্য SEO: সচেতনতা বাড়ান...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: এনজিও ও সামাজিক সংস্থার জন্য seo | ❌ | 1 occurrences of "এনজিও ও সামাজিক সংস্থার জন্য seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 17 total: /blog/seo-real-estate-developers-dhaka, /blog/seo-for-hotel-resort-bangladesh, /blog/local-seo-tips-dhaka-businesses-google-maps, /blog/technical-seo-checklist-bangladeshi-websites, /blog/why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "এনজিও ও সামাজিক সংস্থার জন্য seo" at least 4 more times in the content (currently 1 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-for-restaurants-cafe-dhaka
+  Title: রেস্টুরেন্ট ও ক্যাফের জন্য SEO: ঢাকায় অনলাইন দৃশ্যমানতা...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: রেস্টুরেন্ট ও ক্যাফের জন্য seo | ❌ | 0 occurrences of "রেস্টুরেন্ট ও ক্যাফের জন্য seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ✅ | 5 question headings: Why SEO Is Critical for Dhaka's Restaurant Scene, How to Optimize Your Menu Page, How to Get More Reviews (+2 more) |
+| Internal Links | ✅ | 5 total: /blog/seo-real-estate-developers-dhaka, /blog/seo-for-hotel-resort-bangladesh, /blog/google-my-business-optimization-bangladesh, /services/local-seo, /industries/food-restaurant |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "রেস্টুরেন্ট ও ক্যাফের জন্য seo" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+
+============================================================
+## Post: seo-for-youtube-channel-bangla
+  Title: ইউটিউব চ্যানেলের জন্য SEO: বাংলা ভিডিও র‍্যাঙ্কিং...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: ইউটিউব চ্যানেলের জন্য seo | ❌ | 1 occurrences of "ইউটিউব চ্যানেলের জন্য seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 18 total: /blog/technical-seo-checklist-bangladeshi-websites, /blog/local-seo-tips-dhaka-businesses-google-maps, /blog/seo-trends-2026-ai-geo-future, /locations/chittagong, /blog/why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "ইউটিউব চ্যানেলের জন্য seo" at least 4 more times in the content (currently 1 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-google-analytics-4-bangladesh
+  Title: গুগল অ্যানালিটিক্স ৪: বাংলাদেশি মার্কেটারের জন্য গাইড...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: গুগল অ্যানালিটিক্স ৪: বাংলাদেশি মার্কেটারের জন্য | ❌ | 0 occurrences of "গুগল অ্যানালিটিক্স ৪: বাংলাদেশি মার্কেটারের জন্য" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 3 total: /blog/seo-dashboard-tools-bangladesh, /services/technical-seo, /blog/google-tag-manager-seo-bd |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "গুগল অ্যানালিটিক্স ৪: বাংলাদেশি মার্কেটারের জন্য" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-google-business-profile-posts
+  Title: গুগল বিজনেস প্রোফাইল পোস্ট: স্থানীয় SEO-র শক্তিশালী টুল...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: গুগল বিজনেস প্রোফাইল পোস্ট | ✅ | 5 occurrences of "গুগল বিজনেস প্রোফাইল পোস্ট" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 23 total: /blog/local-seo-tips-dhaka-businesses-google-maps, /blog/mobile-seo-optimization-bangladesh-mobile-first-era, /blog/how-to-choose-right-seo-agency-bangladesh, /services/local-seo, /services/geo-ai-search... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-hreflang-guide-bangladesh
+  Title: Hreflang ট্যাগ: মাল্টিলিঙ্গুয়াল ওয়েবসাইটের জন্য গাইড...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: hreflang ট্যাগ: মাল্টিলিঙ্গুয়াল ওয়েবসাইটের জন্য | ❌ | 1 occurrences of "hreflang ট্যাগ: মাল্টিলিঙ্গুয়াল ওয়েবসাইটের জন্য" |
+| Entities | ❌ | Missing: "Dhaka" / "ঢাকা" |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 0 total:  |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "hreflang ট্যাগ: মাল্টিলিঙ্গুয়াল ওয়েবসাইটের জন্য" at least 4 more times in the content (currently 1 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Entities**: Add location entity "Dhaka" or "ঢাকা" at least once in the content.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+- **Internal Links**: Add at least 3 more internal links to /blog/..., /services/..., /locations/..., or /industries/... pages. Current: 0
+
+============================================================
+## Post: seo-https-ssl-impact-bangladesh
+  Title: HTTPS ও SSL: SEO-র উপর প্রভাব ও সেটআপ গাইড...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: https ও ssl: seo-র উপর প্রভাব ও সেটআপ | ❌ | 1 occurrences of "https ও ssl: seo-র উপর প্রভাব ও সেটআপ" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 14 total: /blog/google-search-console-performance-guide, /blog/seo-canonical-url-guide-bd, /locations/chittagong, /locations/barisal, /locations/rangpur... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "https ও ssl: seo-র উপর প্রভাব ও সেটআপ" at least 4 more times in the content (currently 1 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-legal-compliance-bangladesh
+  Title: SEO আইনি দিক: বাংলাদেশি ওয়েবসাইটের জন্য প্রয়োজনীয় জ্ঞান...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: seo আইনি দিক | ❌ | 0 occurrences of "seo আইনি দিক" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ✅ | 4 question headings: Why Legal Compliance Matters in SEO, Can I use competitor names in my SEO content?, Do I need a Privacy Policy for my Bangladeshi webs (+1 more) |
+| Internal Links | ✅ | 5 total: /blog/seo-real-estate-developers-dhaka, /blog/seo-for-hotel-resort-bangladesh, /blog/seo-garments-textile-industry-b2b-lead-generation, /blog/affiliate-seo-bangladesh, /blog/voice-search-seo-bangladesh |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "seo আইনি দিক" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+
+============================================================
+## Post: seo-local-citations-bangladesh
+  Title: লোকাল সাইটেশন: বাংলাদেশি ডিরেক্টরিতে ব্যবসা তালিকাভুক্তির নিয়ম...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: লোকাল সাইটেশন | ✅ | 6 occurrences of "লোকাল সাইটেশন" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 22 total: /blog/local-seo-tips-dhaka-businesses-google-maps, /blog/geo-optimization-prepare-business-ai-search, /blog/how-to-choose-right-seo-agency-bangladesh, /services/local-seo, /services/geo-ai-search... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-pillar-content-strategy-bd
+  Title: পিলার কন্টেন্ট স্ট্র্যাটেজি: টপিক্যাল অথরিটি বাড়ান...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: পিলার কন্টেন্ট স্ট্র্যাটেজি | ✅ | 15 occurrences of "পিলার কন্টেন্ট স্ট্র্যাটেজি" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 14 total: /blog/content-marketing-seo-friendly-content-writing, /locations/chittagong, /locations/barisal, /locations/khulna, /locations/sylhet... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-real-estate-developers-dhaka
+  Title: SEO for Real Estate Developers in Dhaka: Generate More Property Leads...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: seo for real estate developers | ❌ | 2 occurrences of "seo for real estate developers" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ✅ | 6 question headings: Why SEO Matters for Dhaka Real Estate Developers, How long does real estate SEO take to show results, What is the monthly cost of SEO for a real estate  (+3 more) |
+| Internal Links | ✅ | 16 total: /blog/technical-seo-checklist-bangladeshi-websites, /blog/local-seo-tips-dhaka-businesses-google-maps, /locations/chittagong, /blog/seo-travel-tourism-bangladesh, /locations/sylhet... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "seo for real estate developers" at least 3 more times in the content (currently 2 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+
+============================================================
+## Post: seo-referral-traffic-bangladesh
+  Title: রেফারেল ট্রাফিক: লিংক বিল্ডিং ছাড়া ট্রাফিক বাড়ান...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: রেফারেল ট্রাফিক | ✅ | 27 occurrences of "রেফারেল ট্রাফিক" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 13 total: /blog/google-search-console-performance-guide, /locations/chittagong, /locations/barisal, /locations/khulna, /locations/sylhet... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-skyscraper-technique-bangladesh
+  Title: স্কাইস্ক্র্যাপার টেকনিক: সেরা কন্টেন্ট তৈরি ও র‍্যাঙ্কিং...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: স্কাইস্ক্র্যাপার টেকনিক | ✅ | 12 occurrences of "স্কাইস্ক্র্যাপার টেকনিক" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 13 total: /blog/content-marketing-seo-friendly-content-writing, /locations/chittagong, /locations/barisal, /locations/khulna, /locations/sylhet... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-trends-2026-ai-geo-future
+  Title: ২০২৬ সালের SEO ট্রেন্ডস: AI, GEO ও জিরো-ক্লিক সার্চের যুগে কীভাবে প্রস্তুত থাকবে...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: ২০২৬ সালের seo ট্রেন্ডস | ❌ | 1 occurrences of "২০২৬ সালের seo ট্রেন্ডস" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 16 total: /blog/technical-seo-checklist-bangladeshi-websites, /locations/chittagong, /locations/sylhet, /blog/seo-consultant-dhaka-bangladesh, /blog/link-building-strategies-bangladesh-market... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "২০২৬ সালের seo ট্রেন্ডস" at least 4 more times in the content (currently 1 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-vs-google-ads-bangladesh-business
+  Title: এসইও বনাম গুগল অ্যাডস: বাংলাদেশি ব্যবসার জন্য কোনটি সঠিক...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: এসইও বনাম গুগল অ্যাডস | ❌ | 0 occurrences of "এসইও বনাম গুগল অ্যাডস" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ✅ | 12 total: /locations/dhaka, /blog/keyword-research-bangladesh-market, /services/technical-seo, /blog/seo-vs-google-ads-whats-best-bangladesh-businesses, /services/local-seo... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "এসইও বনাম গুগল অ্যাডস" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+
+============================================================
+## Post: seo-vs-google-ads-whats-best-bangladesh-businesses
+  Title: SEO vs Google Ads: What's Best for Bangladesh Businesses...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: seo vs google ads: what's best | ❌ | 0 occurrences of "seo vs google ads: what's best" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ✅ | 11 question headings: When to Choose SEO, When to Choose Google Ads, How to Optimize for AI Search in Bangladesh (+8 more) |
+| Internal Links | ✅ | 15 total: /blog/technical-seo-checklist-bangladeshi-websites, /locations/chittagong, /industries/ecommerce, /industries/real-estate, /blog/link-building-strategies-bangladesh-market... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "seo vs google ads: what's best" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+
+============================================================
+## Post: stealth-windshield-repairs-seo-case-study
+  Title: Stealth Windshield Repairs SEO: From 0 to 400+ Monthly Visitors in 6 Months...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: stealth windshield repairs seo: from 0 to 400+ mon | ❌ | 0 occurrences of "stealth windshield repairs seo: from 0 to 400+ monthly visitors" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ❌ | 0 question headings |
+| Internal Links | ❌ | 2 total: /blog/locksmith-dundee-seo-case-study, /services/local-seo |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "stealth windshield repairs seo: from 0 to 400+ monthly visitors" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **AEO/GEO**: Add at least 2 more question-based headings (starting with How, What, Why, When, Where, Can, Do, Is, Are). Current: 0
+- **Internal Links**: Add at least 1 more internal links to /blog/..., /services/..., /locations/..., or /industries/... pages. Current: 2
+
+============================================================
+## Post: technical-seo-checklist-bangladeshi-websites
+  Title: Technical SEO Checklist for Bangladeshi Websites...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: technical seo | ✅ | 27 occurrences of "technical seo" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ✅ | Links to: /blog/complete-seo-guide-bangladesh-businesses-2026 |
+| AEO/GEO | ✅ | 8 question headings: What is Technical SEO?, Why Technical SEO Matters for Bangladeshi Websites, What is the most common technical SEO issue on Ban (+5 more) |
+| Internal Links | ✅ | 24 total: /blog/local-seo-tips-dhaka-businesses-google-maps, /services/seo-audit, /industries/real-estate, /industries/cleaning, /blog/why-ecommerce-store-needs-seo-bangladesh... |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- All checks passed. No fixes needed.
+
+============================================================
+## Post: website-speed-optimization-bangladesh
+  Title: ওয়েবসাইট স্পিড অপটিমাইজেশন: কোর ওয়েব ভাইটালস...
+============================================================
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: ওয়েবসাইট স্পিড অপটিমাইজেশন | ❌ | 0 occurrences of "ওয়েবসাইট স্পিড অপটিমাইজেশন" |
+| Entities | ✅ | All required entities found |
+| Pillar Link | ❌ | No pillar link found |
+| AEO/GEO | ✅ | 2 question headings: Why Website Speed Matters Most for Bangladeshi Web, What Are Core Web Vitals and Why They Matter |
+| Internal Links | ❌ | 1 total: /blog/technical-seo-core-web-vitals-optimization |
+| Schema Ready | ✅ | All fields set |
+
+### Fix instructions:
+- **TF-IDF**: Add the primary keyword "ওয়েবসাইট স্পিড অপটিমাইজেশন" at least 5 more times in the content (currently 0 occurrences). Ensure keyword appears naturally in headings, intro, and body.
+- **Pillar Link**: Add an internal link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026` to strengthen pillar-cluster alignment.
+- **Internal Links**: Add at least 2 more internal links to /blog/..., /services/..., /locations/..., or /industries/... pages. Current: 1
+
+======================================================================
+OVERALL SUMMARY
+======================================================================
+
+Total posts: 35
+Total checks: 210
+Checks passed: 133
+Checks failed: 77
+Overall pass rate: 133/210 (63%)
+
+Per-post results:
+Slug                                                    Passed   Total  Status
+---------------------------------------------------------------------------
+affiliate-seo-bangladesh                                5        6      WARN ⚠️
+content-marketing-strategy-bangladeshi-brands-seo       6        6      PASS ✅
+das-taxis-scotland-seo-case-study                       2        6      FAIL ❌
+google-business-profile-optimization-guide-bangladesh   5        6      WARN ⚠️
+google-discover-seo-bangladesh                          4        6      WARN ⚠️
+hiring-seo-expert-dhaka-better-roi-than-paid-ads        3        6      WARN ⚠️
+local-seo-dhaka-google-maps-ranking                     5        6      WARN ⚠️
+seo-bangla-blog-content-writing                         3        6      WARN ⚠️
+seo-branded-vs-non-branded-bd                           3        6      WARN ⚠️
+seo-breadcrumb-schema-bd                                1        6      FAIL ❌
+seo-career-guide-bangladesh-2026                        5        6      WARN ⚠️
+seo-direct-traffic-bangladesh                           3        6      WARN ⚠️
+seo-expert-vs-seo-agency-dhaka-which-is-right           4        6      WARN ⚠️
+seo-faq-schema-bangladesh                               2        6      FAIL ❌
+seo-for-hotel-resort-bangladesh                         4        6      WARN ⚠️
+seo-for-new-website-bangladesh                          5        6      WARN ⚠️
+seo-for-ngo-bangladesh                                  4        6      WARN ⚠️
+seo-for-restaurants-cafe-dhaka                          4        6      WARN ⚠️
+seo-for-youtube-channel-bangla                          4        6      WARN ⚠️
+seo-google-analytics-4-bangladesh                       3        6      WARN ⚠️
+seo-google-business-profile-posts                       5        6      WARN ⚠️
+seo-hreflang-guide-bangladesh                           1        6      FAIL ❌
+seo-https-ssl-impact-bangladesh                         3        6      WARN ⚠️
+seo-legal-compliance-bangladesh                         4        6      WARN ⚠️
+seo-local-citations-bangladesh                          5        6      WARN ⚠️
+seo-pillar-content-strategy-bd                          4        6      WARN ⚠️
+seo-real-estate-developers-dhaka                        5        6      WARN ⚠️
+seo-referral-traffic-bangladesh                         4        6      WARN ⚠️
+seo-skyscraper-technique-bangladesh                     4        6      WARN ⚠️
+seo-trends-2026-ai-geo-future                           4        6      WARN ⚠️
+seo-vs-google-ads-bangladesh-business                   3        6      WARN ⚠️
+seo-vs-google-ads-whats-best-bangladesh-businesses      5        6      WARN ⚠️
+stealth-windshield-repairs-seo-case-study               2        6      FAIL ❌
+technical-seo-checklist-bangladeshi-websites            6        6      PASS ✅
+website-speed-optimization-bangladesh                   3        6      WARN ⚠️
+
+Posts needing attention (33 of 35):
+  ❌ seo-breadcrumb-schema-bd (1/6 passed) - Failed: TF-IDF, Entities, Pillar, AEO/GEO, Internal Links
+  ❌ seo-hreflang-guide-bangladesh (1/6 passed) - Failed: TF-IDF, Entities, Pillar, AEO/GEO, Internal Links
+  ❌ das-taxis-scotland-seo-case-study (2/6 passed) - Failed: TF-IDF, Pillar, AEO/GEO, Internal Links
+  ❌ seo-faq-schema-bangladesh (2/6 passed) - Failed: Entities, Pillar, AEO/GEO, Internal Links
+  ❌ stealth-windshield-repairs-seo-case-study (2/6 passed) - Failed: TF-IDF, Pillar, AEO/GEO, Internal Links
+  ❌ hiring-seo-expert-dhaka-better-roi-than-paid-ads (3/6 passed) - Failed: TF-IDF, Pillar, Internal Links
+  ❌ seo-bangla-blog-content-writing (3/6 passed) - Failed: TF-IDF, Pillar, AEO/GEO
+  ❌ seo-branded-vs-non-branded-bd (3/6 passed) - Failed: TF-IDF, Pillar, AEO/GEO
+  ❌ seo-direct-traffic-bangladesh (3/6 passed) - Failed: TF-IDF, Pillar, AEO/GEO
+  ❌ seo-google-analytics-4-bangladesh (3/6 passed) - Failed: TF-IDF, Pillar, AEO/GEO
+  ❌ seo-https-ssl-impact-bangladesh (3/6 passed) - Failed: TF-IDF, Pillar, AEO/GEO
+  ❌ seo-vs-google-ads-bangladesh-business (3/6 passed) - Failed: TF-IDF, Pillar, AEO/GEO
+  ❌ website-speed-optimization-bangladesh (3/6 passed) - Failed: TF-IDF, Pillar, Internal Links
+  ❌ google-discover-seo-bangladesh (4/6 passed) - Failed: TF-IDF, AEO/GEO
+  ❌ seo-expert-vs-seo-agency-dhaka-which-is-right (4/6 passed) - Failed: TF-IDF, Pillar
+  ❌ seo-for-hotel-resort-bangladesh (4/6 passed) - Failed: TF-IDF, AEO/GEO
+  ❌ seo-for-ngo-bangladesh (4/6 passed) - Failed: TF-IDF, AEO/GEO
+  ❌ seo-for-restaurants-cafe-dhaka (4/6 passed) - Failed: TF-IDF, Pillar
+  ❌ seo-for-youtube-channel-bangla (4/6 passed) - Failed: TF-IDF, AEO/GEO
+  ❌ seo-legal-compliance-bangladesh (4/6 passed) - Failed: TF-IDF, Pillar
+  ❌ seo-pillar-content-strategy-bd (4/6 passed) - Failed: Pillar, AEO/GEO
+  ❌ seo-referral-traffic-bangladesh (4/6 passed) - Failed: Pillar, AEO/GEO
+  ❌ seo-skyscraper-technique-bangladesh (4/6 passed) - Failed: Pillar, AEO/GEO
+  ❌ seo-trends-2026-ai-geo-future (4/6 passed) - Failed: TF-IDF, AEO/GEO
+  ❌ affiliate-seo-bangladesh (5/6 passed) - Failed: TF-IDF
+  ❌ google-business-profile-optimization-guide-bangladesh (5/6 passed) - Failed: TF-IDF
+  ❌ local-seo-dhaka-google-maps-ranking (5/6 passed) - Failed: AEO/GEO
+  ❌ seo-career-guide-bangladesh-2026 (5/6 passed) - Failed: AEO/GEO
+  ❌ seo-for-new-website-bangladesh (5/6 passed) - Failed: TF-IDF
+  ❌ seo-google-business-profile-posts (5/6 passed) - Failed: AEO/GEO
+  ❌ seo-local-citations-bangladesh (5/6 passed) - Failed: AEO/GEO
+  ❌ seo-real-estate-developers-dhaka (5/6 passed) - Failed: TF-IDF
+  ❌ seo-vs-google-ads-whats-best-bangladesh-businesses (5/6 passed) - Failed: TF-IDF
+
+Posts passing all checks (2 of 35):
+  ✅ content-marketing-strategy-bangladeshi-brands-seo
+  ✅ technical-seo-checklist-bangladeshi-websites
+
+======================================================================
+END OF REPORT
+======================================================================

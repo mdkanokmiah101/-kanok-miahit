@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "slug": "b2b-lead-generation-seo-bangladesh",
+    "title": "B2B Lead Generation through SEO in Bangladesh",
+    "excerpt": "A complete guide to generating high-quality B2B leads in Bangladesh using SEO — targeting manufacturers, importers, exporters, and service buyers through strategic organic search content.",
+    "tags": [
+      "B2B SEO",
+      "Lead Generation",
+      "Bangladesh Business",
+      "Industrial SEO"
+    ],
+    "author": "Kanok Miah",
+    "date": "2026-07-08"
+  },
+  "overall_score": 77.8,
+  "aeo": {
+    "language": "Bengali",
+    "question_words_checked": [
+      "কী",
+      "কেন",
+      "কিভাবে",
+      "কি",
+      "কখন",
+      "কোথায়",
+      "কীভাবে"
+    ],
+    "questions_found": [
+      {
+        "question_word": "কী",
+        "text": "### B2B SEO কী?"
+      },
+      {
+        "question_word": "কী",
+        "text": "### B2B SEO-র মূল পার্থক্য কী?"
+      },
+      {
+        "question_word": "কী",
+        "text": "### আইন ফার্মের জন্য কোন কীওয়ার্ড টার্গেট করবেন?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### আইন ফার্মের জন্য SEO কেন আলাদা?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### আইন ফার্মের জন্য Google Business Profile কেন গুরুত্বপূর্ণ?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### শিক্ষাপ্রতিষ্ঠানের জন্য SEO কেন গুরুত্বপূর্ণ?"
+      },
+      {
+        "question_word": "কখন",
+        "text": "### কখন SEO ব্যবহার করবেন?"
+      },
+      {
+        "question_word": "কখন",
+        "text": "### কখন PPC ব্যবহার করবেন?"
+      },
+      {
+        "question_word": "কীভাবে",
+        "text": "### SEO-র খরচ কীভাবে নির্ধারিত হয়?"
+      },
+      {
+        "question_word": "কীভাবে",
+        "text": "### SEO ROI কীভাবে মাপবেন?"
+      }
+    ],
+    "has_faq_section": true,
+    "has_qa_markup_section": false,
+    "has_direct_answers": false,
+    "score": 35,
+    "issues": [
+      "No structured Q&A markup section found"
+    ],
+    "schema_mention": true
+  },
+  "tfidf": {
+    "key_terms": [
+      "b2b",
+      "bangladesh",
+      "business",
+      "generation",
+      "industrial",
+      "lead",
+      "seo",
+      "through"
+    ],
+    "term_frequencies": {
+      "b2b": {
+        "frequency": 61,
+        "density_pct": 0.1607
+      },
+      "bangladesh": {
+        "frequency": 429,
+        "density_pct": 1.1301
+      },
+      "business": {
+        "frequency": 139,
+        "density_pct": 0.3662
+      },
+      "generation": {
+        "frequency": 21,
+        "density_pct": 0.0553
+      },
+      "industrial": {
+        "frequency": 3,
+        "density_pct": 0.0079
+      },
+      "lead": {
+        "frequency": 30,
+        "density_pct": 0.079
+      },
+      "seo": {
+        "frequency": 1080,
+        "density_pct": 2.8451
+      },
+      "through": {
+        "frequency": 49,
+        "density_pct": 0.1291
+      }
+    },
+    "density_ok": true,
+    "missing_terms": [],
+    "coverage_pct": 100.0,
+    "issues": []
+  },
+  "structure": {
+    "title": "B2B Lead Generation through SEO in Bangladesh",
+    "first_h1": "",
+    "title_in_h1": false,
+    "h1_count": 0,
+    "h2_count": 170,
+    "h3_count": 391,
+    "paragraph_count": 806,
+    "list_count": 282,
+    "numbered_list_count": 49,
+    "internal_links": 262,
+    "external_links": 23,
+    "gutenberg_blocks": {
+      "cover": 0,
+      "columns": 0,
+      "buttons": 0,
+      "group": 0,
+      "separator": 0,
+      "table": 0,
+      "accordion": 0
+    },
+    "total_gutenberg_blocks": 0,
+    "char_count": 273865,
+    "word_count": 38261,
+    "issues": [
+      "No H1 heading found",
+      "Title not clearly reflected in first H1 heading"
+    ]
+  },
+  "quality": {
+    "readability_indicators": {
+      "avg_words_per_sentence": 10.1,
+      "total_sentences": 3794,
+      "total_words": 38261
+    },
+    "has_meta_description": true,
+    "has_keyword_in_title": true,
+    "has_keyword_in_first_100_words": true,
+    "has_keyword_in_h1": false,
+    "image_count": 0,
+    "alt_text_count": 0,
+    "issues": [
+      "No images found in content"
+    ],
+    "positives": [
+      "Good sentence length (10.1 words avg)",
+      "Comprehensive length (38261 words) — good for in-depth coverage"
+    ]
+  }
+}

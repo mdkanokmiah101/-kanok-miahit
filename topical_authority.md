@@ -1,271 +1,230 @@
-# Topical Authority Analysis: kanokmiah.com.bd
-## Target Topics: "Best SEO Expert in Dhaka" & "Best SEO Expert in Bangladesh"
+# Topical Authority Audit: "Best SEO Expert in Dhaka" & "Best SEO Expert in Bangladesh"
 
-**Analysis Date:** July 14, 2026
-**Analyst:** Hermes Agent (Automated Audit)
-
----
-
-## Executive Summary
-
-The site has a strong foundation with 120+ blog posts, 7 service pages, 8 location pages, and 9 industry pages. However, **critical internal linking gaps** prevent the site from fully capitalizing on its "Best SEO Expert in Dhaka" and "Best SEO Expert in Bangladesh" topical authority. The blog content heavily mentions Dhaka (426 mentions across data.js) and many posts reference "best SEO expert in Dhaka" with a link to `/` — but almost **none link to `/locations/dhaka`** or the Dhaka-specific location page. The location pages themselves have **no blog cross-references**. This analysis breaks down the gaps and provides actionable recommendations.
+**Site:** kanokmiah.com.bd
+**Audit Date:** 2026-07-21
+**Auditor:** Hermes Agent
 
 ---
 
-## PART 1: Blog Posts Mentioning Dhaka / Bangladesh / SEO Expert
+## 1. Executive Summary
 
-### Key: 7 posts have "Dhaka" in the slug/URL, ~30+ posts mention Dhaka heavily in content
+| Keyword | Search Volume (Est.) | Current Coverage | Score |
+|---------|---------------------|------------------|-------|
+| Best SEO Expert in Dhaka | High | ✅ Strong (2 primary posts + tags + content) | 8/10 |
+| Best SEO Expert in Bangladesh | High | ❌ Weak (zero primary content, only anchor text) | 3/10 |
 
-| # | Post Title (Slug) | Dhaka / Bangladesh Focus | Links to / (Homepage)? | Links to Services? | Links to /locations/dhaka? | Links to Case Studies? | Links to Industries? | Links to Other Blog Posts? |
-|---|---|---|---|---|---|---|---|---|
-| 1 | Complete SEO Guide for Bangladesh Businesses 2026 (`complete-seo-guide-bangladesh-businesses-2026`) | ✅ Heavy — Dhaka, Chittagong, Sylhet, Bangladesh throughout | ✅ "best SEO expert in Dhaka" → `/` | ✅ local-seo, on-page-seo, technical-seo | ❌ **MISSING** | ❌ | ✅ ecommerce, food-restaurant, real-estate, medical, cleaning, education | ✅ schema-markup, technical-seo-checklist, local-seo-tips-dhaka |
-| 2 | Local SEO Tips for Dhaka Businesses (`local-seo-tips-dhaka-businesses-google-maps`) | ✅ Heavy — entire post about Dhaka | ✅ "best SEO expert in Dhaka" → `/` | ✅ local-seo, on-page-seo, technical-seo | ❌ **MISSING** | ❌ | ✅ food-restaurant, spa-salon, cleaning, real-estate, ecommerce, medical | ✅ schema-markup, technical-seo-checklist, gbp-optimization, complete-seo-guide |
-| 3 | Why Your E-commerce Store Needs SEO in Bangladesh (`why-ecommerce-store-needs-seo-bangladesh`) | ✅ Heavy — Bangladesh focus, mentions Dhaka | ✅ "SEO expert in Dhaka" → `/` | ✅ ecommerce-seo | ❌ **MISSING** | ❌ | ✅ ecommerce, food-restaurant, garments-textile | ✅ ecommerce-seo-daraz-guide |
-| 4 | Technical SEO Checklist for Bangladeshi Websites (`technical-seo-checklist-bangladeshi-websites`) | ✅ Heavy — Bangladesh focus, mentions Dhaka | ✅ "SEO expert in Dhaka" → `/` | ✅ technical-seo, on-page-seo, ecommerce-seo | ❌ **MISSING** | ❌ | ❌ | ✅ complete-seo-guide, why-ecommerce-needs-seo, core-web-vitals |
-| 5 | How to Choose the Right SEO Agency in Bangladesh (`how-to-choose-right-seo-agency-bangladesh`) | ✅ Strong — Bangladesh focus, Dhaka context | ✅ "best SEO expert in Dhaka" → `/` | ✅ technical-seo | ❌ **MISSING** | ❌ | ❌ | ✅ seo-consultant-dhaka, local-seo-tips |
-| 6 | Link Building Strategies for Bangladesh Market (`link-building-strategies-bangladesh-market`) | ✅ Strong — Bangladesh + Dhaka examples | ✅ "best SEO expert in Dhaka" → `/` | ✅ link-building | ❌ **MISSING** | ❌ | ❌ | ✅ seo-local-citations, complete-seo-guide |
-| 7 | GEO Optimization for AI Search (`geo-optimization-prepare-business-ai-search`) | ✅ Strong — Bangladesh + Dhaka focus | ✅ "best SEO expert in Dhaka" → `/` | ✅ geo-ai-search | ❌ **MISSING** | ❌ | ❌ | ✅ seo-trends-2026, complete-seo-guide |
-| 8 | SEO for Garments & Textile Industry (`seo-garments-textile-industry-b2b-lead-generation`) | ✅ Strong — Bangladesh + Dhaka focus | ✅ "best SEO expert in Dhaka" → `/` | ✅ technical-seo | ❌ **MISSING** | ❌ | ✅ garments-textile | ✅ international-seo-exporters |
-| 9 | Google Business Profile Optimization Guide (`google-business-profile-optimization-guide-bangladesh`) | ✅ Strong — Dhaka throughout | ✅ "best SEO expert in Dhaka" → `/` | ✅ local-seo, on-page-seo | ❌ **MISSING** | ❌ | ❌ | ✅ local-seo-tips-dhaka, complete-seo-guide |
-| 10 | SEO vs Google Ads for Bangladesh Businesses (`seo-vs-google-ads-whats-best-bangladesh-businesses`) | ✅ Strong — Bangladesh + Dhaka | ✅ "best SEO expert in Dhaka" → `/` | ✅ local-seo, on-page-seo | ❌ **MISSING** | ❌ | ❌ | ✅ keyword-research, complete-seo-guide |
-| 11 | SEO for Real Estate Developers in Dhaka (`seo-real-estate-developers-dhaka`) | ✅✅ Critical — Dhaka real estate focus | ✅ "best SEO expert in Dhaka" → `/` | ✅ technical-seo | ❌ **MISSING** | ❌ | ❌ | ✅ local-seo-tips-dhaka |
-| 12 | Local SEO Dhaka — Google Maps Ranking (`local-seo-dhaka-google-maps-ranking`) | ✅✅ Critical — Bengali, Dhaka-specific | ❌ (Bengali, no homepage link found) | ❌ (doesn't appear to link services) | ❌ **MISSING** | ❌ | ❌ | ❌ |
-| 13 | SEO Consultant in Dhaka Bangladesh (`seo-consultant-dhaka-bangladesh`) | ✅✅ Critical — Bengali, Dhaka-specific | ❌ (Bengali, no homepage link) | ✅ geo-ai-search | ❌ **MISSING** | ❌ | ❌ | ❌ |
-| 14 | SEO for Restaurants & Cafe Dhaka (`seo-for-restaurants-cafe-dhaka`) | ✅✅ Critical — Bengali, Dhaka-specific | ❌ (Bengali, no homepage link) | ❌ | ❌ **MISSING** | ❌ | ❌ | ❌ |
-| 15 | Why Md Kanok Miah is the Best SEO Expert in Dhaka (`why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh`) | ✅✅✅ **THE PILLAR** — Entire post about Dhaka SEO expertise | ✅ ✅ ✅ Links to `/` | ✅ ✅ ✅ Links to ALL 7 services | ❌ **MISSING** — Links case studies via `/blog` | ✅ Links to `/blog` (portfolio), specific case studies | ❌ | ❌ Links to specific blog posts (but has `/blog` general) |
-| 16 | Dhaka Apparels SEO Case Study (`dhaka-apparels-seo-case-study`) | ✅✅ Dhaka-specific case study | ❌ (case study, limited links) | ❌ | ❌ **MISSING** | N/A (it is one) | ❌ | ❌ |
-
-### CRITICAL FINDING: 
-**Not a single blog post links to `/locations/dhaka`.** Despite 426 mentions of "Dhaka" and 7 posts with Dhaka in the slug, the dedicated Dhaka location page is never referenced from blog content. Every blog post that says "best SEO expert in Dhaka" links to `/` (homepage) instead of `/locations/dhaka` or a dedicated hero page. This is a massive missed internal linking opportunity.
+**Bottom line:** The site is well-positioned for "Best SEO Expert in Dhaka" with two dedicated pillar-quality posts and strong on-page signals. However, **"Best SEO Expert in Bangladesh" has no dedicated content** — it only appears as anchor text linking to the homepage. This is a critical missed opportunity.
 
 ---
 
-## PART 2: Supporting Topics That Should Link Together
+## 2. Content Inventory — Key Posts
 
-### Location Pages (8 exist)
-| Location | Slug | Links to Services? | Links to Blog? | Links to Other Locations? | Links to Industries? | Links to Case Studies? |
-|---|---|---|---|---|---|---|
-| Dhaka | `/locations/dhaka` | ✅ All 7 services | ✅ `/blog` (general) | ❌ **No cross-links to other locations** | ✅ `/industries` | ❌ |
-| Chittagong | `/locations/chittagong` | ❌ Unknown (uses ChittagongClient) | ❌ Unknown | ❌ | ❌ | ❌ |
-| Sylhet | `/locations/sylhet` | ❌ Unknown | ❌ Unknown | ❌ | ❌ | ❌ |
-| Khulna | `/locations/khulna` | ❌ Unknown | ❌ Unknown | ❌ | ❌ | ❌ |
-| Rajshahi | `/locations/rajshahi` | ❌ Unknown | ❌ Unknown | ❌ | ❌ | ❌ |
-| Barisal | `/locations/barisal` | ❌ Unknown | ❌ Unknown | ❌ | ❌ | ❌ |
-| Rangpur | `/locations/rangpur` | ❌ Unknown | ❌ Unknown | ❌ | ❌ | ❌ |
-| Mymensingh | `/locations/mymensingh` | ❌ Unknown | ❌ Unknown | ❌ | ❌ | ❌ |
+### Primary Pilars for "Best SEO Expert in Dhaka"
 
-**Note:** Only DhakaClient.js was reviewed in full. It has excellent service links but missing blog/case study cross-references. Other location clients (ChittagongClient, etc.) should follow the same pattern.
+| # | Post Slug | Title | Type | Lines |
+|---|-----------|-------|------|-------|
+| 1 | `why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh` | Why Kanok Miah Is the Best SEO Expert in Dhaka 2026 | **Pillar** | 24044-24440+ |
+| 2 | `how-to-choose-best-seo-expert-dhaka-15-things` | How to Choose the Best SEO Expert in Dhaka: 15 Things to Check | **Cluster** | 25163-25355 |
+| 3 | `seo-expert-vs-seo-agency-dhaka-which-is-right` | SEO Expert vs SEO Agency in Dhaka: Which One is Right for Your Business? | **Cluster** | 25366-25591 |
+| 4 | `top-10-seo-mistakes-dhaka-businesses-fix` | Top 10 SEO Mistakes Dhaka Businesses Make (And How to Fix Them) | **Supporting** | 25594-26127+ |
+| 5 | `ai-seo-2026-dhaka-experts-optimize-google-ai-chatgpt` | AI SEO in 2026: How SEO Experts in Dhaka Optimize for Google AI & ChatGPT | **Supporting** | 26735-27021 |
+| 6 | `seo-consultant-dhaka-bangladesh` (Bangla) | ঢাকায় SEO কনসালট্যান্ট: সঠিক বিশেষজ্ঞ নির্বাচনের গাইড | **Bangla Pillar** | 8928-9122 |
+| 7 | `seo-bangla-beginners-guide-google-ranking` (Bangla) | সহজ ভাষায় SEO: কীভাবে গুগলে প্রথম পেজে আসবেন | **Bangla Support** | 2821-3321 |
+| 8 | `local-seo-dhaka-google-maps-ranking` (Bangla) | স্থানীয় SEO: ঢাকায় গুগল ম্যাপস র‍্যাঙ্কিংয়ের সম্পূর্ণ গাইড | **Bangla Support** | 3079-3313+ |
 
-### Service Pages (7 exist)
-| Service | Slug | Links to /? | Links to Locations? | Links to Blog? | Links to Other Services? | Links to Industries? |
-|---|---|---|---|---|---|---|
-| Local SEO | `/services/local-seo` | ✅ "best SEO expert in Dhaka" | ❌ **No location links** | ❌ | ✅ 3 random related services | ✅ `/industries` |
-| On-Page SEO | `/services/on-page-seo` | ✅ Same pattern | ❌ | ❌ | ✅ 3 random related services | ✅ |
-| Technical SEO | `/services/technical-seo` | ✅ Same pattern | ❌ | ❌ | ✅ 3 random related services | ✅ |
-| Link Building | `/services/link-building` | ✅ Same pattern | ❌ | ❌ | ✅ 3 random related services | ✅ |
-| Semantic SEO | `/services/semantic-seo` | ✅ Same pattern | ❌ | ❌ | ✅ 3 random related services | ✅ |
-| E-commerce SEO | `/services/ecommerce-seo` | ✅ Same pattern | ❌ | ❌ | ✅ 3 random related services | ✅ |
-| GEO & AI Search | `/services/geo-ai-search` | ✅ Same pattern | ❌ | ❌ | ✅ 3 random related services | ✅ |
+### Tags Analysis
 
-**All service pages (via ServicePageClient.js) share the same template.** They all link to `/` as "best SEO expert in Dhaka" and to `/industries`, but **none link to any location page or blog post.**
+| Post | Tags |
+|------|------|
+| Why Kanok Miah Is the Best SEO Expert... | `["Best SEO Expert Dhaka", "SEO Expert Bangladesh", "Kanok Miah", "SEO Results", "Dhaka SEO"]` |
+| How to Choose the Best SEO Expert... | `["SEO Expert Dhaka", "Hire SEO Expert", "SEO Services Bangladesh", "Best SEO Expert"]` |
+| SEO Expert vs SEO Agency... | `["SEO Expert Dhaka", "SEO Agency Dhaka", "SEO Services Bangladesh", "Hire SEO"]` |
+| Top 10 SEO Mistakes Dhaka... | `["SEO Mistakes", "Dhaka SEO", "SEO Tips Bangladesh", "SEO Expert Dhaka"]` |
+| AI SEO in 2026... | `["AI SEO", "GEO Optimization", "Dhaka SEO Expert", "Google AI Overview Bangladesh"]` |
+| SEO Consultant Dhaka (Bangla) | `["SEO Consultant", "Dhaka SEO", "SEO Expert", "Bangladesh Digital Marketing", "SEO Specialist"]` |
 
-### Industry Pages (9 exist)
-| Industry | Slug |
-|---|---|
-| Garments & Textile | `/industries/garments-textile` |
-| E-commerce Retail | `/industries/ecommerce` |
-| SMM Panel | `/industries/smm-panel` |
-| Real Estate | `/industries/real-estate` |
-| Cleaning | `/industries/cleaning` |
-| Spa & Salon | `/industries/spa-salon` |
-| Medical / Healthcare | `/industries/medical` |
-| Education | `/industries/education` |
-| Food & Restaurant | `/industries/food-restaurant` |
+---
 
-### OPTIMAL LINKING STRUCTURE (What Should Exist)
+## 3. Internal Linking Audit
+
+### 3.1 Links to Homepage (`/`)
+
+| Anchor Text | Count | Posts |
+|-------------|-------|-------|
+| `[best SEO expert in Bangladesh](/)` | **14** | ~14 posts (standard footer) |
+| `[SEO expert in Dhaka](/)` | **5** | Various posts |
+| `[SEO consultant](/)` | **7** | Various posts |
+| `best SEO expert in Dhaka` (BlogListClient.js) | **1** | Blog listing page (line 49) |
+
+**Observation:** 14 posts link to `/` with "best SEO expert in Bangladesh" — but **no post actually targets that keyword in its title, meta title, or tags.** This is the biggest gap.
+
+### 3.2 Links to `/locations/dhaka`
+
+| Anchor Text | Count |
+|-------------|-------|
+| `[SEO services in Dhaka neighborhoods](/locations/dhaka)` | **24** |
+
+✅ **Strong.** 24 blog posts link to the Dhaka location page. The `/locations/dhaka` page metadata title is "Best SEO Services in Dhaka 2026 — Kanok Miah | SEO Expert, Dhaka" which aligns well.
+
+### 3.3 Links to Service Pages
+
+| Service Page | Approx. Link Count | Notes |
+|--------------|-------------------:|-------|
+| `/services/local-seo` | ~15 | Good coverage |
+| `/services/technical-seo` | ~12 | Good coverage |
+| `/services/ecommerce-seo` | ~8 | Decent coverage |
+| `/services/geo-ai-search` | ~6 | Decent coverage |
+| `/services/on-page-seo` | ~5 | Could be better |
+| `/services/link-building` | ~3 | Low — needs improvement |
+| `/services/semantic-seo` | ~3 | Low — needs improvement |
+| `/services` (main) | ~10 | Decent |
+
+### 3.4 SEO Expert Cluster — Internal Cross-Links
+
+| From \ To | Why Kanok Miah Is Best | How to Choose | Expert vs Agency | Top 10 Mistakes | AI SEO Post | SEO Consultant (BN) |
+|-----------|:---------------------:|:-------------:|:----------------:|:---------------:|:-----------:|:-------------------:|
+| Why Kanok Miah Is Best | — | ❌ | ❌ | ❌ | ❌ | ❌ |
+| How to Choose Best | Links to case studies page | — | ✅ (linked in FAQ) | ❌ | ❌ | ❌ |
+| Expert vs Agency | ❌ | ✅ (linked in FAQ) | — | ❌ | ❌ | ❌ |
+| Top 10 Mistakes | ❌ | ❌ | ❌ | — | ❌ | ❌ |
+| AI SEO Post | ❌ | ❌ | ❌ | ❌ | — | ❌ |
+| SEO Consultant (BN) | ✅ (linked in Related Resources) | ❌ | ❌ | ❌ | ❌ | — |
+
+**Critical gap:** The primary pillar post "Why Kanok Miah Is the Best SEO Expert in Dhaka" does NOT link to any of the other cluster posts. The cluster posts are not linked to each other.
+
+### 3.5 Bangla Posts — Bold Text Without Links
+
+Found **50+ occurrences** of `**best seo expert in dhaka**` in Bangla posts where the keyword is bold text but **NOT hyperlinked**. Example pattern:
 ```
-Blog Posts (Dhaka-focused)
-    │
-    ├──► /locations/dhaka  ← CRITICALLY MISSING
-    ├──► /locations/chittagong, /sylhet, etc.
-    ├──► /services/local-seo, /services/on-page-seo, etc.
-    ├──► /industries/food-restaurant, /industries/real-estate, etc.
-    ├──► /blog/relevant-post  (cross-linking)
-    └──► / (homepage)
-
-Location Pages (e.g., /locations/dhaka)
-    │
-    ├──► /services/*  (exists ✅)
-    ├──► /blog/dhaka-specific-posts  ← MISSING
-    ├──► /locations/chittagong, /sylhet  ← MISSING (cross-locations)
-    ├──► /industries/*  (exists ✅)
-    └──► /case-studies  ← MISSING
-
-Service Pages
-    │
-    ├──► / (exists ✅)
-    ├──► /locations/dhaka, /chittagong, etc.  ← MISSING
-    ├──► /blog/relevant-posts  ← MISSING
-    └──► /industries  (exists ✅)
+এন্টিটি-ভিত্তিক কন্টেন্ট: AI মডেলগুলো এন্টিটি... যেমন — **Kanok Miah** একজন **best seo expert in dhaka** হিসেবে...
 ```
 
----
-
-## PART 3: Content Gaps
-
-### GAP A: Missing Pillar Pages
-1. **No "Best SEO Expert in Bangladesh" pillar page** — The `why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh` post serves this role for Dhaka specifically, but there's no equivalent for Bangladesh nationwide (which would link to all 8 location pages).
-2. **No "Dhaka SEO Services" landing page** with aggregation of all Dhaka-related content.
-3. **No "SEO for [Industry] in Dhaka" pillar pages** — There are industry pages but no Dhaka × Industry intersection pages.
-
-### GAP B: Missing Dhaka Neighborhood Content (Hyperlocal)
-The Dhaka page mentions 6 neighborhoods (Mirpur, Gulshan, Banani, Uttara, Dhanmondi, Motijheel), but there are **zero individual blog posts** about:
-- "SEO for Mirpur Businesses" 
-- "SEO for Gulshan Businesses"
-- "SEO for Banani Businesses"
-- "SEO for Uttara Businesses"
-- "SEO for Dhanmondi Businesses"
-- "SEO for Old Dhaka Businesses"
-- "SEO for Bashundhara R/A Businesses"
-- "SEO for Mohammadpur Businesses"
-- "SEO for Farmgate Businesses"
-- "SEO for Badda Businesses"
-
-Each of these could be a dedicated post linking to `/locations/dhaka` and relevant service pages.
-
-### GAP C: Missing Location × Service Intersection Content
-- "Local SEO for Restaurants in Gulshan"
-- "Technical SEO for Dhaka E-commerce Stores"
-- "Link Building for Chittagong Businesses"
-- "Google Maps Ranking for Sylhet Hotels"
-- "Why [Location] Businesses Need [Service]"
-
-### GAP D: Missing Dhaka-Specific FAQ Topics
-The `why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh` post has a great FAQ, but it could be expanded with:
-- "What's the best SEO strategy for a small business in Mirpur?"
-- "How much does SEO cost in Dhaka vs. Chittagong?"
-- "Which Dhaka neighborhoods have the most SEO competition?"
-- "How is SEO different for Dhaka vs. rural Bangladesh businesses?"
-- "What Bengali SEO keywords should Dhaka businesses target?"
-- "How do I find a reliable SEO expert in Gulshan/Banani/Uttara?"
-
-### GAP E: Missing Internal Linking in Blog Posts to Location Pages
-**Every blog post mentioning Dhaka should link to `/locations/dhaka`.** Currently, NONE do. Posts mentioning Chittagong should link to `/locations/chittagong`. Posts mentioning Sylhet should link to `/locations/sylhet`. This is the single highest-impact fix.
-
-### GAP F: Missing Internal Linking in Service Pages to Location Pages
-**Every service page should link to relevant location pages.** E.g., Local SEO page should link to `/locations/dhaka`, `/locations/chittagong`, `/locations/sylhet`. Currently, NONE do.
-
-### GAP G: No Location × Location Cross-Linking
-- `/locations/dhaka` should link to `/locations/chittagong`, `/locations/sylhet`, etc.
-- `/locations/chittagong` should link to `/locations/dhaka`, etc.
-- This creates a location cluster that builds topical authority for "Best SEO Expert in Bangladesh"
-
-### GAP H: Missing Case Study Integration
-- Case studies (`dhaka-apparels-seo-case-study`, etc.) should be linked from `/locations/dhaka`
-- Location pages should feature a "Success Stories" section linking to relevant case studies
-- Blog posts about Dhaka SEO should link to the Dhaka Apparels case study
-
-### GAP I: Content Ideas for Missing Blog Posts (Targeting "Best SEO Expert in Dhaka")
-
-| Priority | Topic Idea | Target Keyword | Should Link To |
-|---|---|---|---|
-| 🔴 P0 | Dhaka SEO Services: Complete Guide 2026 | "SEO services Dhaka" | `/locations/dhaka`, all services |
-| 🔴 P0 | How to Choose the Best SEO Expert in Dhaka | "best SEO expert Dhaka" | `/locations/dhaka`, why-md-kanok-miah post |
-| 🔴 P0 | SEO Cost in Dhaka: Complete Pricing Guide 2026 | "SEO cost Dhaka" | `/locations/dhaka`, `/services/*` |
-| 🟠 P1 | SEO for Mirpur Businesses: Local Guide | "SEO Mirpur" | `/locations/dhaka`, `/services/local-seo` |
-| 🟠 P1 | SEO for Gulshan Businesses: Google Maps Guide | "SEO Gulshan" | `/locations/dhaka`, `/services/local-seo` |
-| 🟠 P1 | SEO for Banani Businesses: Complete Strategy | "SEO Banani" | `/locations/dhaka`, `/services/local-seo` |
-| 🟠 P1 | SEO for Uttara Businesses: Rank Higher Locally | "SEO Uttara" | `/locations/dhaka`, `/services/local-seo` |
-| 🟠 P1 | SEO for Dhanmondi Businesses: Hyperlocal Tips | "SEO Dhanmondi" | `/locations/dhaka`, `/services/local-seo` |
-| 🟠 P1 | Local SEO for Old Dhaka Businesses | "Old Dhaka SEO" | `/locations/dhaka`, `/services/local-seo` |
-| 🟠 P1 | Bengali SEO Keywords for Dhaka Businesses | "Bengali SEO Dhaka" | `/locations/dhaka`, `/services/semantic-seo` |
-| 🟠 P1 | Google Maps Ranking for Dhaka Restaurants | "Google Maps Dhaka restaurant" | `/locations/dhaka`, `/industries/food-restaurant` |
-| 🟡 P2 | How Dhaka Businesses Can Rank in Google AI Overviews | "AI search Dhaka" | `/locations/dhaka`, `/services/geo-ai-search` |
-| 🟡 P2 | Voice Search SEO for Dhaka Businesses in Bengali | "voice search Bengali Dhaka" | `/locations/dhaka`, `/services/semantic-seo` |
-| 🟡 P2 | E-commerce SEO for Dhaka-based Shopify Stores | "ecommerce SEO Dhaka" | `/locations/dhaka`, `/services/ecommerce-seo` |
-| 🟡 P2 | Link Building for Dhaka Businesses: Bangladeshi Directories | "link building Dhaka" | `/locations/dhaka`, `/services/link-building` |
-| 🟡 P2 | Technical SEO Audit for Dhaka Websites | "technical SEO Dhaka" | `/locations/dhaka`, `/services/technical-seo` |
-| 🟡 P2 | Real Estate SEO in Dhaka: Complete Guide | "real estate SEO Dhaka" | `/locations/dhaka`, `/industries/real-estate`, seo-real-estate-developers post |
-| 🟡 P2 | Healthcare SEO for Dhaka Clinics & Hospitals | "healthcare SEO Dhaka" | `/locations/dhaka`, `/industries/medical` |
-| 🟢 P3 | SEO for Dhaka Spas & Salons: Google Maps Strategy | "salon SEO Dhaka" | `/locations/dhaka`, `/industries/spa-salon` |
-| 🟢 P3 | SEO for Dhaka Educational Institutions | "education SEO Dhaka" | `/locations/dhaka`, `/industries/education` |
-| 🟢 P3 | Dhaka SEO Case Studies: 10 Real Results | "Dhaka SEO results" | `/locations/dhaka`, specific case studies |
-| 🟢 P3 | Google Business Profile Optimization for Dhaka Multi-Location Brands | "GBP Dhaka multiple locations" | `/locations/dhaka`, gbp-optimization post |
-
-### GAP J: Missing "Best SEO Expert in Bangladesh" Cluster
-There is no dedicated content cluster targeting "Best SEO Expert in Bangladesh" as a national-level concept. The existing `why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh` post covers Dhaka, but a broader cluster is missing:
-
-1. **Pillar Page:** `/best-seo-expert-bangladesh` — aggregation page linking all 8 locations, 7 services, and key testimonials
-2. **Cluster Post:** "Why [City] Businesses Choose MD Kanok Miah as Their SEO Expert" × 8 cities
-3. **Cluster Post:** "Top SEO Expert in Bangladesh: What to Look For"
-4. **Cluster Post:** "Best SEO Expert in Dhaka, Chittagong, Sylhet & Beyond"
-5. **Cluster Post:** "How MD Kanok Miah Became the Best SEO Expert in Bangladesh"
+❌ These are entity-rich mentions but they are missing hyperlinks to the homepage or service pages. Only a few (`/about` link at lines 4239 and 4836) are linked.
 
 ---
 
-## PART 4: Recommended Link Actions (Immediate)
+## 4. Content Gap Analysis
 
-### Action 1: Add `/locations/dhaka` Links to All Dhaka-Mentioning Blog Posts
-**Target:** All 15+ blog posts that mention Dhaka
-**Change:** Add a contextual link to `/locations/dhaka` where "Dhaka" is first mentioned, or in a "Related Services" section at the end.
-**Example (post 1 - complete-seo-guide):**
-```
-I am Md Kanok Miah, and I have been helping businesses in [Dhaka](/locations/dhaka), Chittagong, and Sylhet rank on Google for 7+ years.
-```
+### 4.1 "Best SEO Expert in Bangladesh" — Critical Gap
 
-### Action 2: Add Blog → Location Cross-Links in DhakaClient
-**Target:** `/locations/dhaka/DhakaClient.js`
-**Change:** Add a "Latest Dhaka SEO Insights" section with links to the top 3-5 Dhaka-related blog posts. Add a "Success Stories" section linking to `dhaka-apparels-seo-case-study` and other relevant case studies.
+**Status:** ❌ NO dedicated content exists
+**Current usage:** Only used as anchor text in 14 posts' footer linking to `/`
+**Need:** Create a dedicated SEO pillar post targeting this keyword
+**Suggested content:**
+- "Why Kanok Miah Is the Best SEO Expert in Bangladesh 2026" (English)
+- "কেন মোঃ কনক মিঞা বাংলাদেশের সেরা SEO বিশেষজ্ঞ" (Bangla)
+- This post should also target `/locations/dhaka` and other location pages
 
-### Action 3: Add Location Links to ServicePageClient
-**Target:** `/services/[slug]/ServicePageClient.js`
-**Change:** In the FAQ section or "Other Services" section, add links to relevant location pages. For Local SEO specifically, add "Learn more about [Local SEO in Dhaka](/locations/dhaka)" type links.
+### 4.2 Missing Topical Content
 
-### Action 4: Cross-Link Location Pages
-**Target:** `DhakaClient.js` and other location clients
-**Change:** Add a "See also" section: "I also offer SEO services in [Chittagong](/locations/chittagong), [Sylhet](/locations/sylhet), [Khulna](/locations/khulna)..."
+| Missing Topic | Priority | Rationale |
+|--------------|----------|-----------|
+| Best SEO Expert in Bangladesh (dedicated title) | 🔴 High | Zero content exists; only anchor text |
+| Top 10 SEO Experts in Dhaka (comparison) | 🟡 Medium | Could position Kanok Miah at #1 with comparison data |
+| How to Become an SEO Expert in Bangladesh | 🟡 Medium | Career guidance content for topical breadth |
+| SEO Expert Cost in Dhaka / Bangladesh | 🟡 Medium | Price transparency page for conversion |
+| Best SEO Expert for Small Business Bangladesh | 🟢 Low | Niche targeting |
+| Best SEO Expert for E-commerce Bangladesh | 🟢 Low | Industry-specific |
 
-### Action 5: Add Location Tags/References in Service Data
-**Target:** `/services/data.js`
-**Change:** In each service description/FAQ, add explicit links to location pages. E.g., "I help businesses rank on Google Maps in [Dhaka](/locations/dhaka), [Chittagong](/locations/chittagong), and [Sylhet](/locations/sylhet)."
+### 4.3 Service Pages Missing "SEO Expert" Focus
+
+| Current Service Page | Has "SEO Expert" in Content? |
+|---------------------|:---------------------------:|
+| `/services/local-seo` | ❌ Needs check |
+| `/services/technical-seo` | ❌ Needs check |
+| `/services/ecommerce-seo` | ❌ Needs check |
+| `/services/link-building` | ❌ Needs check |
+| `/services/on-page-seo` | ❌ Needs check |
+| `/services/semantic-seo` | ❌ Needs check |
+| `/services/geo-ai-search` | ❌ Needs check |
+
+**Recommendation:** Add a small "About the SEO Expert" section to each service page with an internal link to the "Why Kanok Miah Is the Best SEO Expert in Dhaka" post.
+
+### 4.4 Missing Bengali Cluster Posts
+
+| English Post Exists? | Bengali Equivalent | Status |
+|:-------------------:|:------------------:|:------:|
+| ✅ How to Choose Best SEO Expert | ❌ Missing | 🔴 High need |
+| ✅ SEO Expert vs SEO Agency | ❌ Missing | 🟡 Medium need |
+| ✅ Top 10 SEO Mistakes | ❌ Missing | 🟡 Medium need |
+| ✅ AI SEO in 2026 | ❌ Missing | 🟢 Low need |
 
 ---
 
-## PART 5: Summary Statistics
+## 5. Tag/Taxonomy Issues
 
-| Metric | Count |
-|---|---|
-| Total Blog Posts | 120+ |
-| Posts with "Dhaka" in slug | 7 |
-| Posts mentioning Dhaka in content | ~30+ |
-| Total "Dhaka" mentions in data.js | 426 |
-| Location Pages | 8 (dhaka, chittagong, sylhet, khulna, rajshahi, barisal, rangpur, mymensingh) |
-| Service Pages | 7 |
-| Industry Pages | 9+ |
-| Blog posts linking to `/locations/dhaka` | **0** ❌ |
-| Location pages linking to specific blog posts | **0** ❌ |
-| Service pages linking to location pages | **0** ❌ |
-| Location pages linking to case studies | **0** ❌ |
-| Posts with "best SEO expert in Dhaka" anchor → `/` | ~25+ ✅ |
-| Missing Dhaka neighborhood blog posts | ~10 |
+### 5.1 Inconsistent Tag Naming
+
+| Tag Variant | Count | Posts |
+|-------------|:-----:|-------|
+| `"Best SEO Expert Dhaka"` | 1 | why-md-kanok-miah... |
+| `"SEO Expert Dhaka"` | 3 | how-to-choose, expert-vs-agency, top-10-mistakes |
+| `"Dhaka SEO Expert"` | 1 | ai-seo-2026 |
+| `"SEO Expert Bangladesh"` | 1 | why-md-kanok-miah... |
+| `"SEO Expert"` (in Bangla post) | 1 | seo-consultant-dhaka |
+
+❌ **Issue:** Four different tag strings for essentially the same concept. This fragments topical authority signals. Google aggregates tags loosely, but consistent naming would strengthen the cluster.
+
+### 5.2 Tag "Best SEO Expert" vs "SEO Expert Dhaka"
+
+- `"Best SEO Expert Dhaka"` only appears on ONE post
+- `"Best SEO Expert"` only appears as a tag on ONE post (how-to-choose)
+- These should be consolidated and applied to ALL posts in the cluster
 
 ---
 
-## Conclusion
+## 6. Recommendations (Prioritized)
 
-**Strengths:**
-- Excellent blog volume (120+ posts) with strong topical coverage of SEO for Bangladesh
-- Good use of "best SEO expert in Dhaka" anchor text pointing to homepage
-- Service pages have clear schema markup and well-structured content
-- Location pages cover all 8 major divisions of Bangladesh
-- Strong content in both Bengali and English
+### 🔴 Critical (Do Now)
 
-**Critical Weaknesses:**
-1. **No blog post links to any location page** — this is the biggest gap
-2. **Service pages don't link to location pages** despite mentioning Dhaka, Chittagong, Sylhet
-3. **Location pages don't link to specific blog posts or case studies**
-4. **No Dhaka neighborhood hyperlocal content** (Mirpur, Gulshan, Banani, etc.)
-5. **No "Best SEO Expert in Bangladesh" nationwide pillar page**
-6. **No location × location cross-linking** (Dhaka page doesn't link to Chittagong)
+1. **Create a dedicated "Best SEO Expert in Bangladesh" post** — This is the single biggest gap. The phrase is used 14 times as anchor text linking to the homepage, but no content actually targets it.
 
-**The #1 Quick Win:** Add `/locations/dhaka` links to the 15+ blog posts that mention Dhaka. This alone would dramatically improve the internal linking topology for the "Best SEO Expert in Dhaka" topic.
+2. **Add internal links from "Why Kanok Miah Is the Best SEO Expert in Dhaka" to other cluster posts** — The main pillar post has ZERO links to related content. Add links to "How to Choose Best SEO Expert", "SEO Expert vs Agency", "AI SEO 2026".
+
+3. **Hyperlink bold "best seo expert in dhaka" mentions in Bangla posts** — The 50+ occurrences across Bangla posts are rich entity text but lack links. Add `[**best seo expert in dhaka**](/why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh)` or `(/)`.
+
+4. **Consolidate tags** — Use one consistent tag (`"Best SEO Expert Dhaka"`) across all posts in this cluster. Currently using 4+ variants.
+
+### 🟡 High Priority (This Week)
+
+5. **Cross-link "How to Choose Best SEO Expert" ↔ "SEO Expert vs SEO Agency"** — These two posts are closely related but don't link to each other.
+
+6. **Add "Best SEO Expert in Dhaka" / "Best SEO Expert in Bangladesh" to the metadata of /locations/dhaka page** — The page title currently targets "SEO Services" not "SEO Expert".
+
+7. **Create Bengali version of "How to Choose the Best SEO Expert in Dhaka"** — The Bangla audience is underserved; the existing `seo-consultant-dhaka-bangladesh` post is similar but doesn't explicitly target the keyword.
+
+8. **Add "SEO Expert" section to each service page** — A brief author credentials section linking to the pillar post.
+
+### 🟢 Medium Priority
+
+9. **Create "Top 10 SEO Experts in Dhaka" content** — Can serve as a comparison/roundup post positioning Kanok Miah at #1.
+
+10. **Add "Best SEO Expert in Bangladesh" to the H1 / meta title of the homepage** — Currently the homepage doesn't explicitly claim this.
+
+11. **Link from industry pages (`/industries/[slug]`) to the SEO expert cluster** — Currently no industry pages link to "Why Kanok Miah Is the Best SEO Expert in Dhaka".
+
+---
+
+## 7. Summary of Findings
+
+### What's Working Well ✅
+- Two high-quality pillar/cluster posts targeting "Best SEO Expert in Dhaka"
+- Strong internal links to `/locations/dhaka` (24 posts)
+- Good anchor text diversity linking to homepage: "best SEO expert in Bangladesh" (14x), "SEO expert in Dhaka" (5x), "SEO consultant" (7x)
+- Blog listing page has inline `<Link href="/">best SEO expert in Dhaka</Link>`
+- Bangla posts have entity-rich content with the target keyword in bold
+
+### What Needs Fixing ❌
+- **Zero content targeting "Best SEO Expert in Bangladesh"** as a primary keyword
+- **No cross-links** between posts in the SEO Expert topical cluster
+- **50+ unlinked** bold keyword mentions in Bangla posts
+- **Inconsistent tags** (4 variants for same concept)
+- **Pillar post** ("Why Kanok Miah Is...") has no links to other cluster posts
+- **No Bengali version** of the "How to Choose" guide
+- **Service pages** lack "SEO Expert" authority signals
+
+### Key Opportunities 💡
+1. Creating a "Best SEO Expert in Bangladesh" post would immediately capitalize on 14 existing internal links pointing to `/` with that exact anchor text
+2. Cross-linking within the cluster would create a strong topical authority signal for Google
+3. Adding Bengali translations would double the reach for the Dhaka market
+4. Service pages adding "About the SEO Expert" sections would strengthen entity-authority throughout the site

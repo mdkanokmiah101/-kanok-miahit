@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "slug": "seo-for-law-firms-bangladesh",
+    "title": "SEO for Law Firms and Legal Services in Bangladesh",
+    "excerpt": "A specialised guide to SEO for Bangladeshi law firms, chambers, and legal consultants — covering local search, practice area content, and Google Business Profile strategies to attract clients.",
+    "tags": [
+      "Legal SEO",
+      "Law Firm Marketing",
+      "Bangladesh Lawyers",
+      "Legal Services"
+    ],
+    "author": "Kanok Miah",
+    "date": "2026-07-08"
+  },
+  "overall_score": 77.8,
+  "aeo": {
+    "language": "Bengali",
+    "question_words_checked": [
+      "কী",
+      "কেন",
+      "কিভাবে",
+      "কি",
+      "কখন",
+      "কোথায়",
+      "কীভাবে"
+    ],
+    "questions_found": [
+      {
+        "question_word": "কী",
+        "text": "### আইন ফার্মের জন্য কোন কীওয়ার্ড টার্গেট করবেন?"
+      },
+      {
+        "question_word": "কী",
+        "text": "### ফিটনেস SEO কী?"
+      },
+      {
+        "question_word": "কী",
+        "text": "### ফিটনেস ইন্ডাস্ট্রির জন্য কোন কীওয়ার্ড ভালো?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### আইন ফার্মের জন্য SEO কেন আলাদা?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### আইন ফার্মের জন্য Google Business Profile কেন গুরুত্বপূর্ণ?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### শিক্ষাপ্রতিষ্ঠানের জন্য SEO কেন গুরুত্বপূর্ণ?"
+      },
+      {
+        "question_word": "কখন",
+        "text": "### কখন SEO ব্যবহার করবেন?"
+      },
+      {
+        "question_word": "কখন",
+        "text": "### কখন PPC ব্যবহার করবেন?"
+      },
+      {
+        "question_word": "কীভাবে",
+        "text": "### SEO-র খরচ কীভাবে নির্ধারিত হয়?"
+      },
+      {
+        "question_word": "কীভাবে",
+        "text": "### SEO ROI কীভাবে মাপবেন?"
+      }
+    ],
+    "has_faq_section": true,
+    "has_qa_markup_section": false,
+    "has_direct_answers": false,
+    "score": 35,
+    "issues": [
+      "No structured Q&A markup section found"
+    ],
+    "schema_mention": true
+  },
+  "tfidf": {
+    "key_terms": [
+      "bangladesh",
+      "firm",
+      "firms",
+      "law",
+      "lawyers",
+      "legal",
+      "marketing",
+      "seo",
+      "services"
+    ],
+    "term_frequencies": {
+      "bangladesh": {
+        "frequency": 402,
+        "density_pct": 1.1158
+      },
+      "firm": {
+        "frequency": 7,
+        "density_pct": 0.0194
+      },
+      "firms": {
+        "frequency": 7,
+        "density_pct": 0.0194
+      },
+      "law": {
+        "frequency": 12,
+        "density_pct": 0.0333
+      },
+      "lawyers": {
+        "frequency": 3,
+        "density_pct": 0.0083
+      },
+      "legal": {
+        "frequency": 26,
+        "density_pct": 0.0722
+      },
+      "marketing": {
+        "frequency": 46,
+        "density_pct": 0.1277
+      },
+      "seo": {
+        "frequency": 1013,
+        "density_pct": 2.8117
+      },
+      "services": {
+        "frequency": 158,
+        "density_pct": 0.4385
+      }
+    },
+    "density_ok": true,
+    "missing_terms": [],
+    "coverage_pct": 100.0,
+    "issues": []
+  },
+  "structure": {
+    "title": "SEO for Law Firms and Legal Services in Bangladesh",
+    "first_h1": "",
+    "title_in_h1": false,
+    "h1_count": 0,
+    "h2_count": 163,
+    "h3_count": 370,
+    "paragraph_count": 764,
+    "list_count": 271,
+    "numbered_list_count": 45,
+    "internal_links": 240,
+    "external_links": 21,
+    "gutenberg_blocks": {
+      "cover": 0,
+      "columns": 0,
+      "buttons": 0,
+      "group": 0,
+      "separator": 0,
+      "table": 0,
+      "accordion": 0
+    },
+    "total_gutenberg_blocks": 0,
+    "char_count": 260238,
+    "word_count": 36374,
+    "issues": [
+      "No H1 heading found",
+      "Title not clearly reflected in first H1 heading"
+    ]
+  },
+  "quality": {
+    "readability_indicators": {
+      "avg_words_per_sentence": 10.0,
+      "total_sentences": 3620,
+      "total_words": 36374
+    },
+    "has_meta_description": true,
+    "has_keyword_in_title": true,
+    "has_keyword_in_first_100_words": true,
+    "has_keyword_in_h1": false,
+    "image_count": 0,
+    "alt_text_count": 0,
+    "issues": [
+      "No images found in content"
+    ],
+    "positives": [
+      "Good sentence length (10.0 words avg)",
+      "Comprehensive length (36374 words) — good for in-depth coverage"
+    ]
+  }
+}

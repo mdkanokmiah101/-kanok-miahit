@@ -1,78 +1,71 @@
-import re
-import sys
+#!/usr/bin/env python3
+"""Quick heading depth check for all posts."""
+import re, sys
 
-with open('src/app/blog/data.js', 'r') as f:
-    content = f.read()
+filepath = '/root/kanok-miahit/src/app/blog/data.js'
+with open(filepath, 'r') as f:
+    text = f.read()
 
-lines = content.split('\n')
-in_code_block = False
+lines = text.split('\n')
+n = len(lines)
+i = 0
+total = 0
 issues = []
 
-for i, line in enumerate(lines, 1):
+while i < n:
+    line = lines[i]
     stripped = line.strip()
+    if stripped == '{' and i + 1 < n and 'slug:' in lines[i + 1]:
+        slug_m = re.search(r'slug:\s*"([^"]*)"', lines[i + 1])
+        if not slug_m:
+            i += 1
+            continue
+        slug = slug_m.group(1)
+        total += 1
+        
+        content_start = None
+        j = i + 2
+        while j < min(i + 30, n):
+            if 'content:' in lines[j] and '`' in lines[j]:
+                content_start = j
+                break
+            j += 1
+        
+        if content_start is not None:
+            parts = []
+            start_line = lines[content_start]
+            bt = start_line.find('`')
+            after = start_line[bt + 1:]
+            if after.strip():
+                parts.append(after)
+            k = content_start + 1
+            while k < n:
+                cl = lines[k]
+                bt2 = cl.find('`')
+                if bt2 >= 0:
+                    after2 = cl[bt2 + 1:].strip()
+                    if after2 == '' or after2.startswith(',') or after2.startswith('//'):
+                        before = cl[:bt2]
+                        if before.strip():
+                            parts.append(before)
+                        break
+                parts.append(cl)
+                k += 1
+            content = '\n'.join(parts)
+            
+            h_levels = [len(m.group(1)) for m in re.finditer(r'^(#{1,6})\s+', content, re.MULTILINE)]
+            relevant = [h for h in h_levels if h in (2,3,4)]
+            for idx in range(1, len(relevant)):
+                if relevant[idx] > relevant[idx-1] + 1:
+                    issues.append(f"{slug}: H{relevant[idx-1]}->H{relevant[idx]} at level H{relevant[idx-1]}->H{relevant[idx]}")
+                    break
+            i = k
+            continue
+    i += 1
 
-    # Toggle code block detection
-    if stripped.startswith('```') or stripped.startswith('`' * 3):
-        in_code_block = not in_code_block
-        continue
-
-    if in_code_block:
-        continue
-
-    # Check for HTML heading/formatting tags NOT in code blocks
-    html_tags = re.findall(r'<(/?)(h[1-6]|p|strong|em|b|i|u|br|ul|ol|li|div|span|a)\b', stripped)
-    for _, tag in html_tags:
-        issues.append(('html', i, f'Found HTML tag <{tag}>: {stripped[:120]}'))
-
-    # Check heading format
-    m = re.match(r'^(#+)\s', stripped)
-    if m:
-        hashes = m.group(1)
-        if hashes not in ('##', '###'):
-            issues.append(('heading', i, f'Non-standard heading format "{hashes}": {stripped[:120]}'))
-
-    # Check for # with no space
-    m2 = re.match(r'^#{2,3}[^#\s]', stripped)
-    if m2:
-        issues.append(('heading', i, f'No space after hashes: {stripped[:120]}'))
-
-    # Check for empty heading (## followed by nothing or just whitespace)
-    if re.match(r'^#{2,3}\s*$', stripped):
-        issues.append(('heading', i, f'Empty heading found'))
-
-    # Check for bold/italic markdown issues inside template content
-    # Look for single asterisk bold (should be **)
-    # This is harder to detect without false positives
-
-if issues:
-    print(f"Found {len(issues)} issue(s):")
-    for typ, line_num, msg in issues:
-        print(f"  [{typ.upper()}] Line {line_num}: {msg}")
-else:
-    print("No issues found - all headings use proper format, no raw HTML tags in content.")
-
-# Also let's check the overall heading structure per post
-# Extract post slugs and check each post's heading hierarchy
-print("\n--- Checking heading hierarchy per post ---")
-posts = content.split("slug:")
-for idx, post in enumerate(posts[1:], 1):
-    slug_match = re.search(r'"([^"]+)"', post.split(',')[0])
-    slug = slug_match.group(1) if slug_match else f'unknown_{idx}'
-    
-    # Find all headings in this post (lines starting with ## or ###)
-    post_lines = post.split('\n')
-    prev_level = 1  # Start at H1 level expectation
-    had_issue = False
-    for pl in post_lines:
-        pl_stripped = pl.strip()
-        hm = re.match(r'^(#{2,3})\s', pl_stripped)
-        if hm:
-            level = len(hm.group(1))
-            if level > prev_level + 1:
-                print(f"  Post '{slug}': Heading jump from H{prev_level} to H{level} at: {pl_stripped[:80]}")
-                had_issue = True
-            prev_level = level
-    
-    if not had_issue:
-        heading_count = len([l for l in post_lines if re.match(r'^#{2,3}\s', l.strip())])
-        print(f"  Post '{slug}': OK ({heading_count} headings)")
+print(f"Total posts checked: {total}")
+print(f"Issues found: {len(issues)}")
+for iss in issues[:20]:
+    print(f"  {iss}")
+if not issues:
+    print("  None - all posts have proper heading hierarchy!")

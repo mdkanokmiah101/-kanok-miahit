@@ -1,242 +1,308 @@
 #!/usr/bin/env python3
-"""Refined analysis of 4 blog posts for content framework checks."""
+"""Comprehensive check of blog data.js formatting issues."""
 
 import re
+import sys
 
-with open('src/app/blog/data.js', 'r', encoding='utf-8') as f:
+with open('/root/kanok-miahit/src/app/blog/data.js', 'r', encoding='utf-8') as f:
     content = f.read()
+    lines = content.split('\n')
 
-slugs = [
-    'seo-for-law-firms-bangladesh',
-    'b2b-lead-generation-seo-bangladesh',
-    'seo-for-startups-bangladesh',
-    'seo-howto-schema-bangladesh'
-]
+# =====================================================================
+# 1. Find all post objects and verify metadata
+# =====================================================================
+print("=" * 70)
+print("SECTION 1: POST METADATA COMPLETENESS")
+print("=" * 70)
 
-def get_post_by_slug(content, slug):
-    """Extract post object by slug from JS array."""
-    # Find the slug line
-    pattern = rf'    slug: "{slug}"'
-    idx = content.find(pattern)
-    if idx == -1:
-        return None
+# Find all post objects by locating opening braces at object level
+# A post starts with `  {` (2 spaces + opening brace) preceded by `]` or `},`
+post_starts = []
+for i, line in enumerate(lines, 1):
+    stripped = line.strip()
+    # Post object starts at indent level 2 with `{`
+    if stripped == '{' and line.startswith('  {'):
+        post_starts.append(i)
+
+print(f"Total post objects found: {len(post_starts)}")
+print()
+
+# For each post, extract the slug and check metadata
+required_fields = {
+    'slug': False,
+    'title': False, 
+    'date': False,
+    'author': False,
+    'tags': False
+}
+
+metadata_issues = []
+
+for start_line in post_starts:
+    # Find end of this post object (matching brace)
+    brace_depth = 0
+    end_line = start_line - 1
+    for j in range(start_line - 1, len(lines)):
+        brace_depth += lines[j].count('{') - lines[j].count('}')
+        end_line = j + 1
+        if brace_depth == 0:
+            break
     
-    # Go backwards to find opening {
-    post_start = content.rfind('{', idx - 200, idx)
-    if post_start == -1:
-        post_start = idx - 50
+    post_lines = lines[start_line-1:end_line]
+    post_text = '\n'.join(post_lines)
     
-    # Go forwards to find closing }, (end of this post object)
-    search_start = idx + len(pattern)
-    
-    # The content field uses backticks. We need to find the closing `,
-    # that matches the opening content: ` ... `,
-    
-    # Find the content: ` marker
-    content_marker = 'content: `'
-    cm_idx = content.find(content_marker, search_start)
-    if cm_idx == -1:
-        # Try with no space
-        content_marker = 'content:`'
-        cm_idx = content.find(content_marker, search_start)
-    
-    if cm_idx != -1:
-        # Content starts after the marker
-        content_start = cm_idx + len(content_marker)
-        # Find the closing backtick followed by comma
-        # The content ends with `,
-        backtick_close = content.find('`,\n', content_start)
-        if backtick_close != -1:
-            post_end = backtick_close + 3  # Include `,\n
-            # Then find the closing } of the post object
-            close_brace = content.find('\n  }', post_end)
-            if close_brace != -1:
-                post_end = close_brace + 4  # Include \n  }
-            return content[post_start:post_end]
-    
-    return None
-
-def parse_field(post_text, field_name):
-    patterns = [
-        rf'{field_name}:\s*"([^"]*)"',
-        rf"{field_name}:\s*'([^']*)'",
-    ]
-    for pattern in patterns:
-        m = re.search(pattern, post_text, re.DOTALL)
-        if m:
-            return m.group(1)
-    return None
-
-def parse_tags(post_text):
-    m = re.search(r'tags:\s*\[(.*?)\]', post_text, re.DOTALL)
-    if m:
-        tags_str = m.group(1)
-        tags = re.findall(r'"([^"]*)"', tags_str)
-        return tags
-    return []
-
-def extract_content(post_text):
-    """Extract the content field between backticks."""
-    m = re.search(r'content:\s*`\n(.*?)`,\n', post_text, re.DOTALL)
-    if m:
-        return m.group(1)
-    return ''
-
-def count_question_headings(text):
-    """Count question-based headings (How/What/Why/When/Where/Can/Do/Is/Are)."""
-    # Match headings that start with question words
-    headings = re.findall(r'^(#{2,6})\s+(How|What|Why|When|Where|Can|Do|Is|Are)\b', text, re.MULTILINE)
-    return len(headings), [h[1] + '...' for h in headings]
-
-def check_pillar_link(text):
-    return '/blog/complete-seo-guide-bangladesh-businesses-2026' in text
-
-def keyword_occurrences(text, keyword):
-    """Count how many times the core keyword appears."""
-    return text.lower().count(keyword.lower())
-
-def extract_primary_keyword_phrase(title):
-    """Extract primary keyword phrases from title."""
-    if not title:
-        return "", ""
-    # Remove common prefixes
-    kw = title.replace("Complete ", "").replace("Why ", "").replace("How ", "")
-    # Take first meaningful part
-    return title, kw
-
-def get_tfidf_keyword(tags, title):
-    """Get the best keyword to check TF-IDF based on tags and title."""
-    # Use the first tag as keyword, or the title's main subject
-    return title
-
-# Analyze each post
-for slug in slugs:
-    print(f"\n{'='*70}")
-    print(f"## Post: {slug}")
-    print(f"{'='*70}")
-    
-    post_text = get_post_by_slug(content, slug)
-    if not post_text:
-        print(f"ERROR: Could not extract post for {slug}")
-        continue
-    
-    # Basic fields
-    title = parse_field(post_text, 'title') or 'N/A'
-    date = parse_field(post_text, 'date') or 'N/A'
-    excerpt = parse_field(post_text, 'excerpt') or 'N/A'
-    tags = parse_tags(post_text)
-    content_text = extract_content(post_text)
-    
-    # Get content field directly from the raw post text
-    # Clean up any HTML-like artifacts
-    print(f"Title: {title}")
-    print(f"Tags: {tags}")
-    print(f"Content length: {len(content_text)} chars")
-    
-    # ---------- A. TF-IDF Coverage ----------
-    print(f"\n### A. TF-IDF Coverage")
-    # Use the first tag as primary keyword if available, or key part of title
-    if tags:
-        primary_kw = tags[0]
+    # Extract slug
+    slug = None
+    slug_m = re.search(r'slug:\s*"([^"]+)"', post_text)
+    if slug_m:
+        slug = slug_m.group(1)
     else:
-        primary_kw = title.split(':')[0].strip() if ':' in title else title
+        slug_m = re.search(r"slug:\s*'([^']+)'", post_text)
+        if slug_m:
+            slug = slug_m.group(1)
+        else:
+            slug = f"POST_AT_LINE_{start_line}"
     
-    kw_count = content_text.lower().count(primary_kw.lower())
-    kw_flag = '✅' if kw_count >= 5 else '❌'
-    print(f"TF-IDF: [{primary_kw}] | {kw_flag} | {kw_count} occurrences")
+    # Check each required field
+    missing = []
+    for field in ['title:', 'date:', 'author:', 'tags:']:
+        if not re.search(r'\b' + re.escape(field), post_text):
+            missing.append(field.rstrip(':'))
     
-    # Also check other tag-based keywords
-    for t in tags[1:]:
-        c = content_text.lower().count(t.lower())
-        print(f"  Tag '{t}': {c} occurrences")
-    
-    # ---------- B. Semantic Entity Coverage ----------
-    print(f"\n### B. Semantic Entity Coverage")
-    entity_checks = {
-        'Dhaka': 'Dhaka' in content_text,
-        'Bangladesh': 'Bangladesh' in content_text,
-        'Chittagong': 'Chittagong' in content_text,
-        'Sylhet': 'Sylhet' in content_text,
-    }
-    
-    # Determine service type from tags
-    service_found = []
-    for tag in tags:
-        if tag.lower() in content_text.lower():
-            service_found.append(tag)
-    
-    missing_entities = [k for k, v in entity_checks.items() if not v]
-    
-    # Check for service type mentions
-    service_check_passed = len(service_found) > 0
-    
-    print(f"  Dhaka/Bangladesh: {'✅' if entity_checks['Dhaka'] and entity_checks['Bangladesh'] else '❌'}")
-    print(f"  Other cities (CTG/Sylhet): {'✅' if entity_checks['Chittagong'] or entity_checks['Sylhet'] else '❌'}")
-    print(f"  Service type from tags in text: {'✅' if service_check_passed else '❌'}")
-    if missing_entities:
-        print(f"  Missing: {missing_entities}")
-    
-    # ---------- C. Pillar-Cluster Alignment ----------
-    print(f"\n### C. Pillar-Cluster Alignment")
-    has_pillar = check_pillar_link(content_text)
-    print(f"  Links to pillar: {'✅' if has_pillar else '❌'}")
-    if not has_pillar:
-        print(f"  Missing: link to /blog/complete-seo-guide-bangladesh-businesses-2026")
-    
-    # ---------- D. AEO/GEO Optimization ----------
-    print(f"\n### D. AEO/GEO Optimization")
-    q_count, q_headings = count_question_headings(content_text)
-    aeo_flag = '✅' if q_count >= 2 else '❌'
-    print(f"  Question headings: {aeo_flag} | {q_count} found")
-    for qh in q_headings:
-        print(f"    - {qh}")
-    
-    # Also check for FAQ section
-    has_faq = 'FAQ' in content_text or 'Frequently Asked' in content_text
-    print(f"  FAQ section: {'✅' if has_faq else '❌'}")
-    
-    # ---------- E. Internal Linking ----------
-    print(f"\n### E. Internal Linking")
-    # Count all links starting with /
-    all_internal = re.findall(r'(?<="|\(|\[)/[a-z][^)\s"\'<>]*', content_text)
-    blog_links = re.findall(r'/blog/[^)\s"\'<>]+', content_text)
-    services_links = re.findall(r'/services/[^)\s"\'<>]+', content_text)
-    locations_links = re.findall(r'/locations/[^)\s"\'<>]+', content_text)
-    other_links = re.findall(r'/industries/[^)\s"\'<>]+', content_text)
-    
-    total_internal = len(blog_links) + len(services_links) + len(locations_links) + len(other_links)
-    
-    flag_int = '✅' if total_internal >= 3 else '❌'
-    print(f"  Internal links: {flag_int} | {total_internal} total")
-    print(f"    /blog/: {len(blog_links)}")
-    print(f"    /services/: {len(services_links)}")
-    print(f"    /locations/: {len(locations_links)}")
-    print(f"    /industries/: {len(other_links)}")
-    
-    # ---------- F. Schema Readiness ----------
-    print(f"\n### F. Schema Readiness")
-    title_ok = title != 'N/A' and len(title) > 0
-    excerpt_ok = excerpt != 'N/A' and len(excerpt) > 0
-    date_ok = date != 'N/A' and len(date) > 0
-    
-    # Check for author
-    author = parse_field(post_text, 'author') or ''
-    author_ok = len(author) > 0
-    
-    # Check for imagePlaceholder
-    image = parse_field(post_text, 'imagePlaceholder') or ''
-    image_ok = len(image) > 0
-    
-    all_schema_ok = title_ok and excerpt_ok and date_ok and author_ok and image_ok
-    schema_flag = '✅' if all_schema_ok else '❌'
-    
-    print(f"  Schema Ready: {schema_flag}")
-    print(f"    Title: {'✅' if title_ok else '❌'}")
-    print(f"    Excerpt: {'✅' if excerpt_ok else '❌'}")
-    print(f"    Date: {'✅' if date_ok else '❌'}")
-    print(f"    Author: {'✅' if author_ok else '❌'}")
-    print(f"    imagePlaceholder: {'✅' if image_ok else '❌'}")
-    
-    print()
+    if missing:
+        metadata_issues.append({
+            'post_slug': slug,
+            'issue_type': 'Missing metadata field',
+            'issue_description': f"Missing: {', '.join(missing)}",
+            'line_number': start_line,
+            'severity': 'HIGH'
+        })
 
-print("=== DONE ===")
+if metadata_issues:
+    print("ISSUES FOUND:")
+    for iss in metadata_issues:
+        print(f"  {iss['post_slug']} (line {iss['line_number']}): {iss['issue_description']}")
+else:
+    print("PASS: All posts have required metadata fields (slug, title, date, author, tags) ✓")
+
+# =====================================================================
+# 2. Check for raw HTML comments
+# =====================================================================
+print()
+print("=" * 70)
+print("SECTION 2: RAW HTML COMMENTS")
+print("=" * 70)
+
+html_comment_issues = []
+for i, line in enumerate(lines, 1):
+    if '<!--' in line or '-->' in line:
+        html_comment_issues.append({
+            'post_slug': 'N/A',
+            'issue_type': 'Raw HTML comment',
+            'issue_description': line.strip()[:100],
+            'line_number': i,
+            'severity': 'HIGH'
+        })
+
+if html_comment_issues:
+    print("ISSUES FOUND:")
+    for iss in html_comment_issues:
+        print(f"  Line {iss['line_number']}: {iss['issue_description']}")
+else:
+    print("PASS: No raw HTML comments found ✓")
+
+# =====================================================================
+# 3. Check for raw <script> tags (not in code blocks)
+# =====================================================================
+print()
+print("=" * 70)
+print("SECTION 3: RAW <script> TAGS")
+print("=" * 70)
+
+def is_in_code_block(lines_list, line_idx):
+    """Check if line at line_idx is inside a fenced code block."""
+    code_block_depth = 0
+    for j in range(line_idx):
+        if lines_list[j].strip().startswith('```'):
+            code_block_depth ^= 1  # toggle
+    return code_block_depth == 1
+
+script_tag_issues = []
+for i, line in enumerate(lines, 1):
+    m = re.search(r'<script\b', line, re.IGNORECASE)
+    if m and not is_in_code_block(lines, i - 1):
+        # Also check if it's just a code example reference like `<script>` in text
+        if '`' in line:
+            continue  # inline code reference
+        script_tag_issues.append({
+            'post_slug': 'N/A',
+            'issue_type': 'Raw <script> tag',
+            'issue_description': line.strip()[:120],
+            'line_number': i,
+            'severity': 'HIGH'
+        })
+
+# Also check </script> tags
+for i, line in enumerate(lines, 1):
+    m = re.search(r'</script\b', line, re.IGNORECASE)
+    if m and not is_in_code_block(lines, i - 1):
+        if '`' in line:
+            continue
+        script_tag_issues.append({
+            'post_slug': 'N/A',
+            'issue_type': 'Raw </script> tag',
+            'issue_description': line.strip()[:120],
+            'line_number': i,
+            'severity': 'HIGH'
+        })
+
+if script_tag_issues:
+    print("ISSUES FOUND:")
+    for iss in script_tag_issues:
+        print(f"  Line {iss['line_number']}: {iss['issue_description']}")
+else:
+    print("PASS: No raw <script> tags outside code blocks found ✓")
+
+# =====================================================================
+# 4. Check for stray markdown artifacts
+# =====================================================================
+print()
+print("=" * 70)
+print("SECTION 4: STRAY MARKDOWN ARTIFACTS")
+print("=" * 70)
+
+all_stray_issues = []
+
+# 4a. Check unmatched ** (odd count per line, not inside code blocks)
+print("--- 4a. Unmatched ** (bold markers) ---")
+for i, line in enumerate(lines, 1):
+    if is_in_code_block(lines, i - 1):
+        continue
+    # Count ** occurrences
+    matches = list(re.finditer(r'\*\*', line))
+    count = len(matches)
+    if count % 2 == 1:
+        # Check if this is a multi-line bold that spans lines (starting with ** on this line)
+        # Or if it's a false positive like "** Item" list syntax
+        # Look at context: if next lines have ** closing, it's fine
+        # For now, flag it as MEDIUM
+        all_stray_issues.append({
+            'post_slug': 'N/A',
+            'issue_type': 'Unmatched ** marker',
+            'issue_description': f"Odd number of ** ({count}) on line: {line.strip()[:120]}",
+            'line_number': i,
+            'severity': 'LOW'
+        })
+
+if any(iss['issue_type'] == 'Unmatched ** marker' for iss in all_stray_issues):
+    for iss in all_stray_issues:
+        if iss['issue_type'] == 'Unmatched ** marker':
+            print(f"  Line {iss['line_number']}: {iss['issue_description']}")
+else:
+    print("  PASS: No unmatched ** markers found ✓")
+
+# 4b. Check for stray --- that might indicate unintended horizontal rules
+print()
+print("--- 4b. --- horizontal rules in content ---")
+
+# Check if --- lines are used legitimately as section separators
+# The --- at line 27231 is before "## Conclusion" - that's intentional
+# Let's just count and note them
+hr_count = len(list(re.finditer(r'^---$', content, re.MULTILINE)))
+print(f"  Total '---' lines in file: {hr_count}")
+print(f"  Note: These appear to be intentional horizontal rules in markdown content ✓")
+
+# 4c. Check for potential broken markdown links with {target="_blank"} or similar
+print()
+print("--- 4c. Unusual markdown link syntax ---")
+for i, line in enumerate(lines, 1):
+    if is_in_code_block(lines, i - 1):
+        continue
+    # Check for {target= in markdown links [text](url){target=...}
+    if '{target=' in line or '{rel=' in line:
+        m = re.search(r'\[([^\]]+)\]\(([^)]+)\)\{[^}]+\}', line)
+        if m:
+            all_stray_issues.append({
+                'post_slug': 'N/A',
+                'issue_type': 'Non-standard markdown link syntax',
+                'issue_description': f"Link with attributes: [{m.group(1)}]({m.group(2)}){{...}} -> {line.strip()[:100]}",
+                'line_number': i,
+                'severity': 'LOW'
+            })
+            print(f"  Line {i}: {line.strip()[:120]}")
+
+if not any(iss['issue_type'] == 'Non-standard markdown link syntax' for iss in all_stray_issues):
+    print("  PASS: No unusual markdown link syntax found ✓")
+
+# 4d. Check for lines with raw `[text](url)` that might be formatting errors
+print()
+print("--- 4d. Raw markdown link bracket balance ---")
+for i, line in enumerate(lines, 1):
+    if is_in_code_block(lines, i - 1):
+        continue
+    if '`' in line and line.strip().startswith('`'):
+        continue
+    # Check for unmatched brackets
+    opensq = len(re.findall(r'\[', line))
+    closesq = len(re.findall(r'\]', line))
+    openp = len(re.findall(r'\(', line))
+    closep = len(re.findall(r'\)', line))
+    
+    if opensq != closesq or openp != closep:
+        # Filter false positives: JSON objects, arrays, code references
+        # Skip lines that look like JSON/JS arrays (sameAs, itemListElement, etc.)
+        if re.search(r'"(?:sameAs|itemListElement|mainEntity|tool|step|faq|headline|description)s?":\s*\[', line):
+            continue
+        if re.search(r'const\s+\w+\s*=', line):
+            continue
+        if line.strip().startswith('//') or line.strip().startswith('/*'):
+            continue
+        if line.strip() == '};' or line.strip() == '];':
+            continue
+        if line.strip().startswith('{') and line.strip().endswith('},'):
+            continue
+        
+        # It's a potential issue
+        desc = f"Bracket mismatch: [={opensq}]={closesq} (={openp})={closep} -> {line.strip()[:100]}"
+        all_stray_issues.append({
+            'post_slug': 'N/A',
+            'issue_type': 'Broken markdown link syntax',
+            'issue_description': desc,
+            'line_number': i,
+            'severity': 'MEDIUM'
+        })
+
+bracket_issues = [iss for iss in all_stray_issues if iss['issue_type'] == 'Broken markdown link syntax']
+if bracket_issues:
+    print(f"  Found {len(bracket_issues)} lines with bracket mismatches (some may be false positives):")
+    for iss in bracket_issues[:15]:
+        print(f"  Line {iss['line_number']}: {iss['issue_description']}")
+    if len(bracket_issues) > 15:
+        print(f"  ... and {len(bracket_issues) - 15} more")
+else:
+    print("  PASS: No bracket mismatches found ✓")
+
+# =====================================================================
+# FINAL SUMMARY
+# =====================================================================
+print()
+print("=" * 70)
+print("FINAL RESULTS TABLE")
+print("=" * 70)
+
+all_issues = metadata_issues + html_comment_issues + script_tag_issues + all_stray_issues
+
+if not all_issues:
+    print("ALL CLEAN — No issues found across all checks")
+else:
+    print(f"Total issues found: {len(all_issues)}")
+    print()
+    print(f"{'Post Slug':<55} {'Issue Type':<35} {'Description':<60} {'Line':<7} {'Severity':<8}")
+    print("-" * 195)
+    for iss in all_issues:
+        slug = iss['post_slug'][:54]
+        itype = iss['issue_type'][:34]
+        desc = iss['issue_description'][:59]
+        line = str(iss['line_number'])
+        sev = iss['severity']
+        print(f"{slug:<55} {itype:<35} {desc:<60} {line:<7} {sev:<8}")

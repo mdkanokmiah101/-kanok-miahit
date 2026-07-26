@@ -1,227 +1,280 @@
-# On-Page SEO & AEO/GEO Audit — kanokmiah.com.bd Homepage
+# Homepage SEO/AEO/GEO Audit — kanokmiah.com.bd
 
+**Date:** 2026-07-21  
+**Auditor:** Automated agent  
 **Target Keywords:** "Best SEO Expert in Dhaka", "Best SEO Expert in Bangladesh"  
-**URL:** https://kanokmiah.com.bd  
-**Date:** 2026-07-14  
-**Auditor:** Hermes Agent
+**Scanned Files:** `page.js`, `layout.js`, `HomeClient.js`, `faq-data.js`, `Schema.js`
 
 ---
 
-## 1. TITLE TAG
+## 1. Title Tag
 
-**Current title:**
-```
-Best SEO Expert in Dhaka | Md Kanok Miah | 210+ SEO Successes
-```
+**Source:** `page.js` line 12 exports a flat `title` string. In Next.js 14+, the layout (`layout.js` line 23-26) has `title: { default: "...", template: "%s — Kanok Miah | SEO Expert in Dhaka, Bangladesh" }`. The page title replaces the `default`, then the layout `template` is applied.
 
-| Check | Result | Detail |
-|-------|--------|--------|
-| Contains exact/close variant of "Best SEO Expert in Dhaka" | ✅ PASS | Exact match present |
-| Contains "Best SEO Expert in Bangladesh" | ❌ FAIL | Missing entirely. Only "Dhaka" is in the title. |
-| Under 60 characters | ❌ FAIL | **61 chars** — 1 character over. Google may truncate on SERP. |
+**Resulting title:**  
+`Best SEO Expert in Dhaka, Bangladesh | Kanok Miah — Kanok Miah | SEO Expert in Dhaka, Bangladesh`
 
-**Improvement suggestion — shorten and add Bangladesh:**
+| Keyword | Present? | Detail |
+|---------|----------|--------|
+| "Best SEO Expert in Dhaka" | ✅ **Yes** | Exact substring found in page title |
+| "Best SEO Expert in Bangladesh" | ❌ **No** | Title says "Best SEO Expert in **Dhaka, Bangladesh**" — not the isolated phrase "Bangladesh" without "Dhaka" |
 
-Replace in `page.js`:
-```js
-title: "Best SEO Expert in Dhaka & Bangladesh | Md Kanok Miah",
-```
-→ **58 characters**, includes both target keywords, under 60 chars.
+**Recommendation:**
+- Add a variant targeting "Best SEO Expert in Bangladesh" as a standalone phrase.  
+  Suggested title templates:
+  - `Best SEO Expert in Dhaka & Bangladesh | Kanok Miah — #1 SEO Specialist`
+  - Or use the layout template more effectively. Since layout template appends `— Kanok Miah | SEO Expert in Dhaka, Bangladesh`, the current page title already ends with "Kanok Miah" and then the template repeats it. Consider removing the "| Kanok Miah" from the page title to reduce redundancy:
+    - `page.js` title → `"Best SEO Expert in Dhaka, Bangladesh"`
+    - Final would be `"Best SEO Expert in Dhaka, Bangladesh — Kanok Miah | SEO Expert in Dhaka, Bangladesh"`
+- Better yet, craft a title alternating the keywords on different pages (homepage can target both).
 
 ---
 
-## 2. H1 HEADING
+## 2. H1 Heading
 
-**Current H1 (HomeClient.js lines 95–99):**
+**Source:** `HomeClient.js` lines 91-94
 ```jsx
 <h1>
-  <span className="text-primary">Best SEO Expert</span>
-  <br />
-  <span className="text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
+  <span className="text-primary">Best SEO Expert</span>{' '}
+  <span className="block text-gray-900 whitespace-nowrap">in Dhaka, Bangladesh</span>
 </h1>
 ```
+**Rendered text:** `Best SEO Expert in Dhaka, Bangladesh`
 
-| Check | Result | Detail |
-|-------|--------|--------|
-| Contains "Best SEO Expert" + "Dhaka" | ✅ PASS | Renders as "Best SEO Expert in Dhaka, Bangladesh" |
-| Also includes "Bangladesh" | ✅ PASS | Visible in full H1 text |
+| Keyword | Present? | Detail |
+|---------|----------|--------|
+| "Best SEO Expert in Dhaka" | ✅ **Yes** | Substring found in continuous text |
+| "Best SEO Expert in Bangladesh" | ❌ **No** | Text reads "Dhaka, Bangladesh" — the comma and "Dhaka" break the exact phrase |
 
----
-
-## 3. META DESCRIPTION
-
-**Current description:**
-```
-Rank higher on Google & AI Search with Md Kanok Miah, a trusted SEO expert in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.
-```
-
-| Check | Result | Detail |
-|-------|--------|--------|
-| Contains "SEO expert in Dhaka" | ✅ PASS | Exact match: "SEO expert in Dhaka" |
-| Compelling with CTA and phone number | ✅ PASS | CTA: "Free SEO audit", Phone: "01604-809110" |
-| Length 120–158 characters | ❌ FAIL | **159 characters** — 1 char over the recommended max |
-
-**Improvement suggestion — trim 2–3 chars:**
-
-Replace in `page.js`:
-```js
-description:
-  "Rank higher on Google & AI Search with Md Kanok Miah, a trusted SEO expert in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit — Call 01604-809110.",
-```
-→ **157 characters** (changed em dash to spaced en dash, removed period at end, or shorten "successful SEO campaigns" to "SEO campaigns").
-
-Or shorter version incorporating Bangladesh:
-```js
-description:
-  "Rank higher with Md Kanok Miah, the best SEO expert in Dhaka & Bangladesh. 6+ years, 210+ SEO wins. Free audit — Call 01604-809110.",
-```
-→ **149 characters**, includes both keywords.
+**Recommendation:**
+- The H1 is strong for Dhaka but misses the Bangladesh-only variant. Consider:
+  - `Best SEO Expert in Dhaka & Bangladesh` (covers both in one H1)
+  - Or keep as-is but ensure "Best SEO Expert in Bangladesh" appears in an H2 or strong paragraph on the page (it does — see below).
 
 ---
 
-## 4. CONTENT — FIRST 200 WORDS
+## 3. Meta Description
 
-**Hero paragraph (HomeClient.js lines 100–102):**
-> "Your competitors are ranking. You're not. That's not bad luck — that's a fixable problem. I'm Md Kanok Miah, a best SEO expert in Dhaka, Bangladesh who has run 210+ SEO campaigns across e-commerce, local businesses — and I don't do cookie-cutter strategies. I build what your specific business needs to win on Google, on AI search, and everywhere in between. 6 years. Real results. No vanity metrics. Let's fix your rankings — starting today."
-
-| Check | Result | Detail |
-|-------|--------|--------|
-| Mentions Dhaka/Bangladesh in hero | ✅ PASS | "best SEO expert in Dhaka, Bangladesh" in the first paragraph |
-| Target keyword naturally integrated | ✅ PASS | Reads naturally as part of the introduction |
-| Grammar note | ⚠️ INFO | Uses "a best SEO expert" — grammatically should be "the best SEO expert". Low priority but worth fixing. |
-
-**Improvement suggestion — grammar fix in HomeClient.js line 101:**
-```jsx
-I&apos;m <strong className="text-gray-900">Md Kanok Miah</strong>, <strong className="text-gray-900">the best SEO expert in Dhaka, Bangladesh</strong> who has run
+**Source:** `page.js` lines 13-14 (page-level overrides layout.js lines 27-28)
 ```
-(Change "a" to "the")
+"Rank higher with Kanok Miah, the best SEO expert in Dhaka, Bangladesh. 6+ years, 210+ proven SEO wins. Free SEO audit for your business — Call 01604-809110."
+```
+
+| Keyword | Present? | Detail |
+|---------|----------|--------|
+| "Best SEO Expert in Dhaka" | ✅ **Yes** | "the best SEO expert in Dhaka, Bangladesh" contains the phrase (case-insensitive match) |
+| "Best SEO Expert in Bangladesh" | ❌ **No** | Same issue — "Dhaka, Bangladesh" breaks the exact phrase |
+
+**Recommendation:**
+- Add a description variant that isolates "Best SEO Expert in Bangladesh":  
+  `"Kanok Miah — the best SEO expert in Bangladesh and Dhaka. 6+ years, 210+ SEO wins. Free audit — Call 01604-809110."`
+- The layout.js description is actually stronger semantically but is overridden by page.js. Consider merging the best of both.
 
 ---
 
-## 5. SCHEMA (STRUCTURED DATA)
+## 4. First 200 Words of Visible Content
 
-Schemas are rendered in `layout.js` (lines 177–180) for Organization, LocalBusiness, WebSite, and Person.  
-FAQSchema is rendered in `HomeClient.js` (line 51).
+**Hero paragraph** (`HomeClient.js` lines 95-97):
+> *"Your competitors are ranking. You're not. That's not bad luck — that's a fixable problem. I'm Kanok Miah, the best SEO expert in Bangladesh and a top-rated SEO strategist in Dhaka. I've run 210+ SEO campaigns across e-commerce, local businesses — and I don't do cookie-cutter strategies..."*
 
-| Check | Result | Detail |
-|-------|--------|--------|
-| **OrganizationSchema** exists | ✅ PASS | Defined in layout.js with name, url, logo, address, contactPoint, sameAs |
-| **LocalBusinessSchema** exists | ✅ PASS | Defined in layout.js with Dhaka address, coordinates (23.8103, 90.4125), areaServed |
-| LocalBusiness has Dhaka address & coords | ✅ PASS | streetAddress: "Mirpur, Dhaka", addressLocality: "Dhaka", GeoCoordinates: 23.8103, 90.4125 |
-| LocalBusiness has areaServed | ✅ PASS | ["Dhaka", "Mirpur", "Gulshan", "Banani", "Uttara", "Dhanmondi", "Chittagong", "Sylhet", "Bangladesh"] |
-| **PersonSchema** exists | ✅ PASS | Defined in layout.js with jobTitle "Founder & SEO Consultant" |
-| PersonSchema targets Dhaka/Bangladesh | ✅ PASS | knowsAbout covers SEO, local SEO, GEO |
-| **WebSiteSchema** exists | ✅ PASS | Includes SearchAction for blog search |
-| **FAQSchema** exists | ✅ PASS | 6 questions on homepage (HomeClient.js lines 40–47) |
-| FAQSchema has Dhaka/Bangladesh questions | ✅ PASS | Includes "How do I rank my business on Google Maps in Dhaka?", "What is the best SEO strategy for a new website in Bangladesh?" |
-| **aggregateRating or review schema** | ⚠️ FAIL (inconsistent data) | LocalBusinessSchema has `aggregateRating` with ratingCount "50", but the hero UI text says "108+ Google reviews, 5.0 stars". Data mismatch. |
+| Keyword | Present? | Detail |
+|---------|----------|--------|
+| "Best SEO Expert in Dhaka" | ✅ **Yes** | "a top-rated SEO strategist in Dhaka" — semantic match, not exact phrase |
+| "Best SEO Expert in Bangladesh" | ✅ **Yes** | Exact phrase: "the **best SEO expert in Bangladesh**" (lowercase, but matches) |
 
-**Improvement suggestion — fix aggregateRating count in layout.js:**
-```js
-aggregateRating: {
-  "@type": "AggregateRating", ratingValue: "4.9", bestRating: "5", ratingCount: "108",
-},
-```
-Change from "50" to "108" to match the visible UI badge.
+**Also:** The hero badge (line 89) says `#1 SEO Expert in Bangladesh` — strong semantic signal.
+
+**Recommendation:** ✅ No change needed here. The first 100 words nail both keywords.
 
 ---
 
-## 6. INTERNAL LINKS
+## 5. Schema Markup
 
-| Check | Result | Detail |
-|-------|--------|--------|
-| Links to /services/local-seo | ✅ PASS | Present in services grid (HomeClient.js line 362) |
-| Links to /services/on-page-seo | ✅ PASS | Present in services grid |
-| Links to /services/technical-seo | ✅ PASS | Present in services grid |
-| Links to /services/link-building | ✅ PASS | Present in services grid |
-| Links to /services/geo-ai-search | ✅ PASS | Present in services grid |
-| Links to /services/ecommerce-seo | ✅ PASS | Present in services grid |
-| Links to /locations/dhaka | ❌ FAIL | **No links to any /locations/ pages exist on the homepage.** Despite /locations/dhaka, /locations/chittagong, etc. existing, none are linked from the homepage. |
-| Links to blog posts about Dhaka SEO | ❌ FAIL | Only a generic /blog nav link exists. No specific Dhaka SEO blog posts are linked. |
+### Global schemas in `layout.js` (applied to every page):
+| Schema | Target Keyword in name/description? |
+|--------|-------------------------------------|
+| OrganizationSchema | ❌ name: "Md Kanok Miah", description: "SEO expert since 2019..." |
+| LocalBusinessSchema | ❌ name: "Md Kanok Miah — SEO Expert", description: "SEO expert since 2019..." |
+| WebSiteSchema | ❌ name: "Md Kanok Miah" |
+| PersonSchema | ❌ name: "Md Kanok Miah", description: "SEO expert since 2019..." |
+| Inline Service `@graph` | ❌ Service.name: "Local SEO", "On-Page SEO", etc. |
 
-**Improvement suggestion — add location links:**
+### Page-specific schemas in `page.js`:
+| Schema | Target Keyword in name/description? |
+|--------|-------------------------------------|
+| AggregateRatingSchema | ❌ itemReviewed.name: "Md Kanok Miah — SEO Expert" |
+| ReviewSchema | ❌ itemReviewed.name: "Md Kanok Miah — SEO Expert" |
+| VideoObjectSchema | ❌ name describes video content |
+| BreadcrumbSchema | ⚠️ `{ name: "SEO Expert Dhaka", url: "..." }` — partial match only |
+| FAQSchema | ⚠️ Questions target Dhaka/Bangladesh SEO but none use exact target keywords as question text |
 
-**a) Add a "Service Areas" section after the services grid, or add location links into the Local SEO service card (HomeClient.js line 362):**
-```jsx
-{ icon: "🔍", title: "Local SEO", desc: "Rank your business on Google Maps across Dhaka, Chittagong, Sylhet and beyond. GBP optimization, local citations, near-me SEO for Bangladeshi audiences.",
-  slug: "local-seo", locations: ["dhaka", "chittagong", "sylhet"] },
-```
-And render location links under the service card description:
-```jsx
-<div className="mt-3 flex flex-wrap gap-1.5">
-  {s.locations?.map(loc => (
-    <Link key={loc} href={`/locations/${loc}`} className="text-[11px] bg-primary/5 text-primary font-semibold px-2 py-0.5 rounded-full hover:bg-primary hover:text-white transition-colors">
-      {loc.charAt(0).toUpperCase() + loc.slice(1)}
-    </Link>
-  ))}
-</div>
-```
+| Keyword | Present in any schema? |
+|---------|----------------------|
+| "Best SEO Expert in Dhaka" | ❌ Not in any schema name or description field |
+| "Best SEO Expert in Bangladesh" | ❌ Not in any schema name or description field |
 
-**b) Add a "Service Areas" row in the stats band or as a standalone badge section:**
-```jsx
-<div className="flex flex-wrap justify-center gap-2 mt-6">
-  <Link href="/locations/dhaka" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20">📍 Dhaka</Link>
-  <Link href="/locations/chittagong" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20">📍 Chittagong</Link>
-  <Link href="/locations/sylhet" className="text-xs bg-white/10 text-white px-3 py-1.5 rounded-full hover:bg-white/20">📍 Sylhet</Link>
-</div>
-```
-
-**c) Link to Dhaka-relevant blog posts in the "People Also Ask" section or create a "Latest SEO Tips for Dhaka" section.**
+**Recommendation:**
+- **OrganizationSchema**: Add `alternateName: "Best SEO Expert in Dhaka, Bangladesh"` or include it in `description`.  
+  E.g., `description: "Best SEO Expert in Dhaka, Bangladesh — SEO since 2019, 210+ projects."`
+- **LocalBusinessSchema**: Change `name` to `"Kanok Miah — Best SEO Expert in Dhaka, Bangladesh"` or add `alternateName`.
+- **WebSiteSchema**: Add `alternateName` or include the keyword in `description`.
+- **BreadcrumbSchema**: Change second item name from `"SEO Expert Dhaka"` to `"Best SEO Expert in Dhaka, Bangladesh"`.
+- **FAQSchema**: Add a FAQ question that uses the target keyword, e.g.,  
+  Q: `"Why is Kanok Miah considered the best SEO expert in Bangladesh?"`
+- **AggregateRatingSchema**: Change `itemName` prop default to `"Best SEO Expert in Dhaka, Bangladesh"`.
 
 ---
 
-## 7. AEO (ANSWER ENGINE OPTIMIZATION) / GEO (GENERATIVE ENGINE OPTIMIZATION) READINESS
+## 6. Internal Links
 
-| Check | Result | Detail |
-|-------|--------|--------|
-| Question-based headings | ✅ PASS | "Why Md Kanok Miah?" (Why Choose Me section), "People Also Ask About SEO in Bangladesh" |
-| FAQ schema with Dhaka/Bangladesh SEO questions | ✅ PASS | 6 questions, 2 are Dhaka/Bangladesh specific |
-| Conversational phrasing used | ✅ PASS | "Your competitors are ranking. You're not. That's not bad luck — that's a fixable problem." |
-| Clear entity signals (name, location, area) | ✅ PASS | Business name (Md Kanok Miah), locations (Dhaka, Bangladesh), service areas well-established |
-| "People Also Ask" section | ✅ PASS | Dedicated section (lines 565–588) with H2 "People Also Ask About SEO in Bangladesh" and expandable FAQ accordion |
-| Question-based H2s beyond FAQ | ⚠️ LIGHT | "Why Md Kanok Miah?" is question-adjacent. Could add more. |
+### Navbar links (`HomeClient.js` lines 55-59):
+✅ `/services`, `/case-studies`, `/industries`, `/blog`, `/about`, `/contact`
 
-**Improvement suggestion — add more question-based subheadings:**
+### Services section (lines 358-371):
+✅ Links to:
+- `/services/local-seo`
+- `/services/on-page-seo`
+- `/services/link-building`
+- `/services/technical-seo`
+- `/services/geo-ai-search`
+- `/services/ecommerce-seo`
 
-Add a "What Makes Me Different?" heading or "How Do I Rank Your Business?" to the Why Choose Me section (HomeClient.js around line 420):
+### Location page link:
+✅ Stats band (line 182): `<Link href="/locations/dhaka">Dhaka</Link>`
 
-```jsx
-<h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">
-  What Makes <span className="text-primary">Md Kanok Miah</span> the Best SEO Expert in Bangladesh?
-</h2>
-```
+### Industries section (lines 402-420):
+✅ Links to industry subpages (garments-textile, ecommerce, smm-panel, real-estate, etc.)
 
-Also consider adding a "How Do I Rank Your Business?" subheading before the 5-Step Process section.
+### Other internal links:
+✅ Case study links to blog posts  
+✅ "View All Services/Industries/Case Studies" links  
+✅ Contact form → `/contact`  
+✅ About → `/about`
+
+| Criteria | Status |
+|----------|--------|
+| Links to `/services/*` | ✅ Present |
+| Link to `/locations/dhaka` | ✅ Present |
+| Links to blog/case studies | ✅ Present |
+
+**Recommendation:** Consider adding an anchor link from the H1 or hero to the `/locations/dhaka` page for stronger topical relevance.
 
 ---
 
-## 8. SUMMARY & PRIORITY ACTIONS
+## 7. AEO/GEO Readiness
 
-### ❌ FAILURES (fix order by priority)
+### Question-based H2 headings (excellent AEO practice):
 
-| Priority | Issue | File | Fix |
-|----------|-------|------|-----|
-| 🔴 High | **Title missing "Bangladesh" keyword** | `page.js:4` | Replace with "Best SEO Expert in Dhaka & Bangladesh \| Md Kanok Miah" (58 chars) |
-| 🔴 High | **No /locations/ links on homepage** | `HomeClient.js` | Add location tags to Local SEO card or add a Service Areas section |
-| 🟡 Medium | **Meta description 1 char over limit** | `page.js:5-6` | Trim em dash or shorten text |
-| 🟡 Medium | **aggregateRating count mismatch (50 vs 108+)** | `layout.js:87` | Change ratingCount from "50" to "108" |
-| 🟡 Medium | **Grammar: "a best SEO expert" → "the best SEO expert"** | `HomeClient.js:101` | Change "a" to "the" in hero paragraph |
-| 🟢 Low | **Title is 61 chars (1 over 60)** | `page.js:4` | Will be fixed by the title rewrite above |
-| 🟢 Low | **No specific Dhaka SEO blog links** | `HomeClient.js` | Add links to Dhaka-relevant blog posts |
+| H2 Text | Location (line) | Quality |
+|---------|-----------------|---------|
+| "What SEO Services Does Kanok Miah Offer in Dhaka?" | 379-380 | ✅ Excellent — question format, location-specific |
+| "What Makes Kanok Miah the Best SEO Expert in Dhaka?" | 462-463 | ✅ **Contains target keyword** in question |
+| "How Long Does SEO Take to Show Results in Dhaka?" | 629-630 | ✅ Question format, location-specific, high search volume |
+| "How Much Does SEO Cost in Bangladesh?" | 746-747 | ✅ Question format, country-specific |
+| "How Can I Hire the Best SEO Expert in Dhaka?" | 788-789 | ✅ **Contains target keyword** in question |
+| "People Also Ask About SEO in Bangladesh" | 810-811 | ✅ Mimics Google PAA feature |
 
-### ✅ PASSES (strengths to maintain)
+### FAQ Schema:
+✅ **Present** — `FAQSchema` on page.js line 119 with 10 questions from `faq-data.js`  
+✅ Questions cover: Maps ranking (Dhaka), new website strategy (Bangladesh), timeline, pricing, Daraz, GEO vs SEO, why hire local, one-time vs monthly, measuring success, Bengali-language SEO  
+✅ Single source of truth (`faq-data.js` used by both schema and accordion) — no schema/content drift
 
-- H1 perfectly includes both Dhaka and Bangladesh with primary keyword
-- Meta description is compelling with CTA and phone number
-- First 200 words naturally integrate target keyword with location
-- All four core schemas (Organization, LocalBusiness, Person, WebSite) exist with correct data
-- LocalBusiness schema has precise coordinates, full areaServed including Dhaka zones
-- FAQSchema includes Dhaka/Bangladesh-specific questions
-- Services grid has comprehensive internal links to all service pages
-- Conversational opening sentence is excellent for AEO
-- Dedicated "People Also Ask" section exists and uses FAQ accordion
-- Strong entity signals throughout (name, location, social proof, certifications)
+### Conversational phrasing:
+✅ Hero paragraph uses direct, second-person conversational tone ("Your competitors are ranking. You're not.")  
+✅ All AEO sections use natural language answers (100-200 words each)  
+✅ FAQ answers are detailed, conversational, and include local specifics (BDT pricing, Dhaka neighborhoods)
 
-### AEO/GEO Score: 8/10 ✅ (strong)
+### AEO/GEO Score: **85/100** — Strong but improvable
 
-The homepage is well-positioned for AI search engines with FAQ schema, conversational tone, entity-rich content, and a dedicated "People Also Ask" section. The main gaps are the missing "Bangladesh" keyword in the title tag and the lack of location page links.
+**Recommendations:**
+- Add an H2: `"How Does Kanok Miah Rank as the Best SEO Expert in Bangladesh?"`
+- Add a FAQ question that explicitly uses the target keyword in question text
+- Include a "tl;dr" or "Quick Answer" summary box at the top of each AEO section (Google AI Overviews favor concise, structured answers)
+- Add entity-rich lists (location names, service names, certifications) within AEO answer paragraphs
+
+---
+
+## 8. Content Gap Analysis
+
+### AEO Section Review:
+
+| Section | Target Keyword in Content? | Effectiveness for AEO |
+|---------|---------------------------|----------------------|
+| "What SEO Services Does Kanok Miah Offer in Dhaka?" | ✅ "best SEO expert in Dhaka" | ⭐⭐⭐⭐ — Lists all services, location-specific |
+| "What Makes Kanok Miah the Best SEO Expert in Dhaka?" | ✅ "Best SEO Expert in Dhaka" in H2 | ⭐⭐⭐⭐⭐ — Perfect keyword placement, detailed bullet points |
+| "How Long Does SEO Take to Show Results in Dhaka?" | ✅ "best SEO expert in Dhaka" | ⭐⭐⭐⭐ — Specific timeline, location |
+| "How Much Does SEO Cost in Bangladesh?" | ⚠️ "SEO expert in Dhaka" (not Bangladesh) | ⭐⭐⭐ — Missing exact Bangladesh keyword in content |
+| "How Can I Hire the Best SEO Expert in Dhaka?" | ✅ Both keywords in content | ⭐⭐⭐⭐⭐ — Both target keywords, clear 3-step process |
+
+### Missing Content Opportunities:
+
+| Gap | Severity | Suggestion |
+|-----|----------|------------|
+| No standalone "Best SEO Expert in Bangladesh" in title | 🔴 High | Add to title tag |
+| No standalone "Best SEO Expert in Bangladesh" in H1 | 🔴 High | Add to H1 or use "Best SEO Expert in Dhaka & Bangladesh" |
+| "Best SEO Expert in Bangladesh" not in meta description | 🟡 Medium | Add to meta description |
+| Schema items lack target keywords as formal names | 🟡 Medium | Add `alternateName` or keyword-rich descriptions |
+| No blog link from homepage to "best SEO expert" articles | 🟢 Low | Add a "Read my SEO insights" link in the about section |
+| Bengali section (line 518) doesn't translate the target keywords | 🟢 Low | Add Bengali translation: "ঢাকা ও বাংলাদেশের সেরা SEO বিশেষজ্ঞ" |
+| No testimonial quote containing target keyword | 🟢 Low | Ask clients to use "best SEO expert in Dhaka" in reviews |
+
+---
+
+## 9. Summary Scorecard
+
+| # | Check | Status | Score |
+|---|-------|--------|-------|
+| 1 | Title contains "Best SEO Expert in Dhaka" | ✅ | 10/10 |
+| 1b | Title contains "Best SEO Expert in Bangladesh" | ❌ | 0/10 |
+| 2 | H1 contains "Best SEO Expert in Dhaka" | ✅ | 10/10 |
+| 2b | H1 contains "Best SEO Expert in Bangladesh" | ❌ | 0/10 |
+| 3 | Meta description contains target keywords | ⚠️ Partial | 5/10 |
+| 4 | First 200 words mention Dhaka/Bangladesh SEO | ✅ | 10/10 |
+| 5 | Schema includes target keywords | ❌ | 0/10 |
+| 6 | Internal links to services + /locations/dhaka | ✅ | 10/10 |
+| 7a | Question-based AEO headings (5 found) | ✅ | 10/10 |
+| 7b | FAQ schema present with Dhaka/Bangladesh Qs | ✅ | 10/10 |
+| 7c | Conversational phrasing used | ✅ | 10/10 |
+| 8 | Content covers both keywords meaningfully | ✅ | 8/10 |
+
+### Overall Score: **72/110** (~65%)
+
+---
+
+## 10. Priority Action Items
+
+### 🔴 Critical (fix ASAP):
+1. **Add "Best SEO Expert in Bangladesh" to the title tag** — modify `page.js` metadata.title or restructure layout/page title relationship
+2. **Add "Best SEO Expert in Bangladesh" to the H1** — change from "Best SEO Expert in Dhaka, Bangladesh" to "Best SEO Expert in Dhaka & Bangladesh" or use a two-line H1
+3. **Add both target keywords to schema descriptions** — especially `OrganizationSchema`, `LocalBusinessSchema`, `WebSiteSchema`, and `AggregateRatingSchema`
+
+### 🟡 Important (fix this week):
+4. **Update meta description** to include "Best SEO Expert in Bangladesh" as an exact phrase
+5. **Add a FAQ question** that uses the target keyword: "Why choose Kanok Miah as the best SEO expert in Bangladesh?"
+6. **Update BreadcrumbSchema** item name from "SEO Expert Dhaka" to "Best SEO Expert in Dhaka"
+
+### 🟢 Nice to have:
+7. Add Bengali translation of target keywords in the বাংলা section
+8. Add a dedicated testiominal/expertise box highlighting "Best SEO Expert in Bangladesh" credential
+9. Consider adding a `<link rel="alternate" hreflang="bn" />` for Bengali version
+
+---
+
+## 11. Files to Modify
+
+| File | Line(s) | Change |
+|------|---------|--------|
+| `src/app/page.js` | 12 | `title: "Best SEO Expert in Dhaka & Bangladesh \| Kanok Miah"` |
+| `src/app/page.js` | 13-14 | Update description to include "Best SEO Expert in Bangladesh" as exact phrase |
+| `src/app/page.js` | 115-118 | `BreadcrumbSchema` item name → "Best SEO Expert in Dhaka" |
+| `src/app/page.js` | 112 | `AggregateRatingSchema` itemName → "Kanok Miah — Best SEO Expert in Dhaka" |
+| `src/components/Schema.js` | 7, 11 | `OrganizationSchema` description — add target keyword |
+| `src/components/Schema.js` | 64, 69 | `LocalBusinessSchema` name/description — add target keyword |
+| `src/components/Schema.js` | 110, 113 | `WebSiteSchema` description — add target keyword |
+| `src/components/Schema.js` | 323, 328-329 | `AggregateRatingSchema` default itemName — add target keyword |
+| `src/app/HomeClient.js` | 91-94 | H1: change to "Best SEO Expert in Dhaka & Bangladesh" or similar |
+| `src/app/faq-data.js` | ~54 | Add a FAQ with explicit target keyword in question |
+
+---
+
+*Audit generated by Hermes Agent. All findings based on static analysis of source files at `/root/kanok-miahit/`.*

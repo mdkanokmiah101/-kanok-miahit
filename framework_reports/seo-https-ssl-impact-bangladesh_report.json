@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "slug": "seo-https-ssl-impact-bangladesh",
+    "title": "HTTPS ও SSL: SEO-র উপর প্রভাব ও সেটআপ গাইড",
+    "excerpt": "",
+    "tags": [
+      "HTTPS",
+      "SSL",
+      "ওয়েবসাইট সিকিউরিটি",
+      "SEO",
+      "বাংলাদেশ"
+    ],
+    "author": "মোঃ কনক মিঞা",
+    "date": "2026-07-08"
+  },
+  "overall_score": 68.6,
+  "aeo": {
+    "language": "Bengali",
+    "question_words_checked": [
+      "কী",
+      "কেন",
+      "কিভাবে",
+      "কি",
+      "কখন",
+      "কোথায়",
+      "কীভাবে"
+    ],
+    "questions_found": [
+      {
+        "question_word": "কী",
+        "text": "### HTTPS এবং SSL কী?"
+      },
+      {
+        "question_word": "কী",
+        "text": "### HTTPS মাইগ্রেশনের সময় কী সতর্কতা নেবেন?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### কেন HTTPS SEO-র জন্য গুরুত্বপূর্ণ?"
+      },
+      {
+        "question_word": "কেন",
+        "text": "### HTTPS কেন SEO-র জন্য গুরুত্বপূর্ণ?"
+      }
+    ],
+    "has_faq_section": true,
+    "has_qa_markup_section": false,
+    "has_direct_answers": false,
+    "score": 23,
+    "issues": [
+      "No structured Q&A markup section found"
+    ],
+    "schema_mention": true
+  },
+  "tfidf": {
+    "key_terms": [
+      "bangladesh",
+      "https",
+      "impact",
+      "seo",
+      "ssl",
+      "উপর",
+      "ওয়েবসাইট",
+      "গাইড",
+      "প্রভাব",
+      "বাংলাদেশ",
+      "সিকিউরিটি",
+      "সেটআপ"
+    ],
+    "term_frequencies": {
+      "bangladesh": {
+        "frequency": 1,
+        "density_pct": 0.0489
+      },
+      "https": {
+        "frequency": 62,
+        "density_pct": 3.0348
+      },
+      "impact": {
+        "frequency": 0,
+        "density_pct": 0.0
+      },
+      "seo": {
+        "frequency": 32,
+        "density_pct": 1.5663
+      },
+      "ssl": {
+        "frequency": 52,
+        "density_pct": 2.5453
+      },
+      "উপর": {
+        "frequency": 3,
+        "density_pct": 0.1468
+      },
+      "ওয়েবসাইট": {
+        "frequency": 7,
+        "density_pct": 0.3426
+      },
+      "গাইড": {
+        "frequency": 8,
+        "density_pct": 0.3916
+      },
+      "প্রভাব": {
+        "frequency": 2,
+        "density_pct": 0.0979
+      },
+      "বাংলাদেশ": {
+        "frequency": 1,
+        "density_pct": 0.0489
+      },
+      "সিকিউরিটি": {
+        "frequency": 0,
+        "density_pct": 0.0
+      },
+      "সেটআপ": {
+        "frequency": 8,
+        "density_pct": 0.3916
+      }
+    },
+    "density_ok": false,
+    "missing_terms": [
+      "impact",
+      "সিকিউরিটি"
+    ],
+    "coverage_pct": 83.3,
+    "issues": [
+      "Keyword 'https' appears 62 times (3.03%) — possible keyword stuffing",
+      "Missing key terms from content: impact, সিকিউরিটি"
+    ]
+  },
+  "structure": {
+    "title": "HTTPS ও SSL: SEO-র উপর প্রভাব ও সেটআপ গাইড",
+    "first_h1": "",
+    "title_in_h1": false,
+    "h1_count": 0,
+    "h2_count": 1,
+    "h3_count": 20,
+    "paragraph_count": 68,
+    "list_count": 7,
+    "numbered_list_count": 4,
+    "internal_links": 17,
+    "external_links": 1,
+    "gutenberg_blocks": {
+      "cover": 0,
+      "columns": 0,
+      "buttons": 0,
+      "group": 0,
+      "separator": 0,
+      "table": 0,
+      "accordion": 0
+    },
+    "total_gutenberg_blocks": 0,
+    "char_count": 14030,
+    "word_count": 1975,
+    "issues": [
+      "No H1 heading found",
+      "Title not clearly reflected in first H1 heading",
+      "Only 1 H2 headings — consider more sub-sections"
+    ]
+  },
+  "quality": {
+    "readability_indicators": {
+      "avg_words_per_sentence": 10.4,
+      "total_sentences": 189,
+      "total_words": 1975
+    },
+    "has_meta_description": true,
+    "has_keyword_in_title": true,
+    "has_keyword_in_first_100_words": true,
+    "has_keyword_in_h1": false,
+    "image_count": 0,
+    "alt_text_count": 0,
+    "issues": [
+      "No images found in content"
+    ],
+    "positives": [
+      "Good sentence length (10.4 words avg)"
+    ]
+  }
+}

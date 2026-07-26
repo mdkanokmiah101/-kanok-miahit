@@ -5,10 +5,11 @@ export function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Md Kanok Miah",
+    alternateName: "Best SEO Expert in Dhaka, Bangladesh",
     url: "https://kanokmiah.com.bd",
     logo: "https://kanokmiah.com.bd/favicon.ico",
     description:
-      "SEO expert since 2019 — 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
+      "Best SEO expert in Dhaka, Bangladesh — SEO since 2019, 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Mirpur, Dhaka",
@@ -61,12 +62,13 @@ export function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Md Kanok Miah — SEO Expert",
+    name: "Kanok Miah — Best SEO Expert in Dhaka, Bangladesh",
+    alternateName: "Best SEO Expert in Dhaka, Bangladesh",
     url: "https://kanokmiah.com.bd",
     telephone: "+880-1604-809110",
     email: "mdkanokmiah232@gmail.com",
     description:
-      "SEO expert since 2019 — 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
+      "Best SEO expert in Dhaka, Bangladesh — SEO since 2019, 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
     image: "https://kanokmiah.com.bd/kanok-miah-profile.webp",
     address: {
       "@type": "PostalAddress",
@@ -110,7 +112,7 @@ export function WebSiteSchema() {
     name: "Md Kanok Miah",
     url: "https://kanokmiah.com.bd",
     description:
-      "SEO expert since 2019 — 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
+      "Best SEO expert in Dhaka, Bangladesh — SEO since 2019, 210+ projects. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Get higher rankings, more traffic, and qualified leads with proven SEO strategies.",
     inLanguage: ["en"],
     potentialAction: {
       "@type": "SearchAction",
@@ -185,7 +187,7 @@ export function PersonSchema() {
       "GEO / AI Search Optimization",
     ],
     description:
-      "SEO expert since 2019 — 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Ex-Walton Plaza, Solus Corp. Local SEO, technical SEO, link building, GEO optimization.",
+      "Best SEO expert in Dhaka, Bangladesh — SEO since 2019, 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Ex-Walton Plaza, Solus Corp. Local SEO, technical SEO, link building, GEO optimization.",
   };
   return (
     <script
@@ -320,7 +322,7 @@ export function CollectionPageSchema({ name, description, url }) {
   );
 }
 
-export function AggregateRatingSchema({ ratingValue = "4.9", bestRating = "5", ratingCount = "108", itemName = "Md Kanok Miah — SEO Expert" }) {
+export function AggregateRatingSchema({ ratingValue = "4.9", bestRating = "5", ratingCount = "108", itemName = "Kanok Miah — Best SEO Expert in Dhaka, Bangladesh" }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "AggregateRating",

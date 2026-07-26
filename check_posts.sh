@@ -1,128 +1,105 @@
 #!/bin/bash
-FILE="/root/kanok-miahit/src/app/blog/data.js"
 
-echo "============================================"
-echo " CHECK A: PRIMARY KEYWORD COUNTS "
-echo "============================================"
+analyze_post() {
+  local start=$1
+  local end=$2
+  local slug=$3
+  local title_kw=$4
+  local entity_check=$5  # "location:service:industry"
+  
+  echo "=== SLUG: $slug ==="
+  
+  # Extract content range
+  local content=$(sed -n "${start},${end}p" /root/kanok-miahit/src/app/blog/data.js)
+  
+  # A. TF-IDF - count keyword
+  local kw_count=$(echo "$content" | grep -oi "$title_kw" | wc -l)
+  echo "TFIDF_COUNT:$kw_count"
+  
+  # B. Entities
+  local has_bd=$(echo "$content" | grep -oi "বাংলাদেশ\|Bangladesh\|Dhaka\|ঢাকা" | wc -l)
+  # Extract service from entity_check
+  local service=$(echo "$entity_check" | cut -d: -f2)
+  local industry=$(echo "$entity_check" | cut -d: -f3)
+  local has_service=$(echo "$content" | grep -oi "$service" | wc -l)
+  local has_industry=$(echo "$content" | grep -oi "$industry" | wc -l)
+  echo "ENTITIES:bd:$has_bd:service:$service:$has_service:industry:$industry:$has_industry"
+  
+  # C. Tags from the post - extract tags array
+  local tags=$(echo "$content" | grep -oP '"tags":\s*\[.*?\]' | head -1)
+  echo "TAGS:$tags"
+  
+  # D. Pillar - count internal links to blog/services/locations
+  local pillar_links=$(echo "$content" | grep -oP '/blog/|/services/|/locations/' | wc -l)
+  echo "PILLAR_LINKS:$pillar_links"
+  
+  # E. AEO/GEO - count question headings
+  local qheadings=$(echo "$content" | grep -cP '^### (কেন|কী|কখন|কোথায়|কীভাবে|কি|How|What|Why|When|Where|Can|Do|Is|Are)' 2>/dev/null)
+  echo "QHEADINGS:$qheadings"
+  
+  # F. Internal Links - count ALL / links
+  local all_links=$(echo "$content" | grep -oP '/[a-z][a-zA-Z0-9_/-]*' | sort -u | wc -l)
+  echo "ALL_LINKS:$all_links"
+  
+  # G. Schema check
+  local has_title=$(echo "$content" | grep -c '"title":')
+  local has_excerpt=$(echo "$content" | grep -c '"excerpt":')
+  local has_date=$(echo "$content" | grep -c '"date":')
+  local has_datemod=$(echo "$content" | grep -c '"dateModified":')
+  local has_metatitle=$(echo "$content" | grep -c '"metaTitle":')
+  local has_metadesc=$(echo "$content" | grep -c '"metaDescription":')
+  echo "SCHEMA:title:$has_title:excerpt:$has_excerpt:date:$has_date:dateModified:$has_datemod:metaTitle:$has_metatitle:metaDescription:$has_metadesc"
+  
+  echo "=== END:$slug ==="
+}
 
-echo "P1: complete-seo-guide"
-sed -n '14,158p' "$FILE" | grep -coi 'SEO guide\|Bangladesh.*SEO\|Bangladesh.*business.*SEO'
+# Post 1
+analyze_post 15917 16227 "seo-google-penalty-recovery-bd" "গুগল পেনাল্টি" "বাংলাদেশ:পেনাল্টি রিকভারি:ওয়েবসাইট"
 
-echo "P2: local-seo-tips"
-sed -n '169,320p' "$FILE" | grep -coi 'local seo\|local.*SEO\|Google Maps\|Dominate Google'
+# Post 2  
+analyze_post 16229 16463 "seo-https-ssl-impact-bangladesh" "HTTPS" "বাংলাদেশ:HTTPS:SSL"
 
-echo "P3: why-ecommerce"
-sed -n '331,463p' "$FILE" | grep -coi 'ecommerce.*seo\|e-commerce.*SEO\|SEO for\|Daraz.*SEO\|Shopify.*SEO'
+# Post 3
+analyze_post 16465 16797 "seo-redirects-guide-bangladesh" "রিডাইরেক্ট" "বাংলাদেশ:রিডাইরেক্ট:SEO"
 
-echo "P4: technical-seo"
-sed -n '474,626p' "$FILE" | grep -coi 'technical seo\|Technical SEO\|Core Web Vitals\|site structure\|crawlability'
+# Post 4
+analyze_post 16799 17093 "seo-canonical-url-guide-bd" "ক্যানোনিকাল" "বাংলাদেশ:ক্যানোনিকাল:SEO"
 
-echo "P5: how-to-choose-agency"
-sed -n '637,803p' "$FILE" | grep -coi 'SEO agency\|agency.*SEO\|choose.*agency\|red flag'
+# Post 5
+analyze_post 17095 17445 "seo-robots-txt-guide-bangladesh" "robots.txt" "বাংলাদেশ:robots.txt:SEO"
 
-echo "P6: link-building"
-sed -n '814,1022p' "$FILE" | grep -coi 'link building\|backlink\|Link Building\|guest post'
+# Post 6
+analyze_post 17447 17774 "seo-xml-sitemap-guide-bd" "সাইটম্যাপ" "বাংলাদেশ:সাইটম্যাপ:SEO"
 
-echo "P7: geo-optimization"
-sed -n '1033,1205p' "$FILE" | grep -coi 'GEO\|Generative Engine\|AI search\|AI-powered'
+# Post 7
+analyze_post 17776 18061 "seo-hreflang-guide-bangladesh" "hreflang" "বাংলাদেশ:hreflang:SEO"
 
-echo "P8: garments-textile"
-sed -n '1216,1453p' "$FILE" | grep -coi 'garment.*SEO\|textile.*SEO\|RMG\|B2B.*lead\|export.*SEO'
+# Post 8
+analyze_post 18063 18389 "seo-structured-data-guide-bd" "স্ট্রাকচারড ডাটা" "বাংলাদেশ:স্ট্রাকচারড ডাটা:Schema"
 
-echo "P9: google-business-profile"
-sed -n '1464,1718p' "$FILE" | grep -coi 'Google Business Profile\|GBP\|local pack\|Google Maps.*optim'
+# Post 9
+analyze_post 18391 18750 "seo-json-ld-schema-bangladesh" "JSON-LD" "বাংলাদেশ:JSON-LD:Schema"
 
-echo "P10: seo-vs-ads"
-sed -n '1729,2002p' "$FILE" | grep -coi 'SEO vs\|Google Ads\|PPC\|paid.*advertising\|cost.*SEO.*Ads'
+# Post 10
+analyze_post 18752 19028 "seo-breadcrumb-schema-bd" "ব্রেডক্রাম্ব" "বাংলাদেশ:ব্রেডক্রাম্ব:Schema"
 
-echo "P11: real-estate"
-sed -n '2013,2261p' "$FILE" | grep -coi 'real estate.*SEO\|property.*SEO\|developer.*lead\|property search.*SEO'
+# Post 11
+analyze_post 19030 19371 "seo-faq-schema-bangladesh" "FAQ স্কিমা" "বাংলাদেশ:FAQ:Schema"
 
-echo "P12: mobile-seo"
-sed -n '2272,2481p' "$FILE" | grep -coi 'mobile seo\|mobile.*optimiz\|mobile-first\|voice search\|smartphone.*SEO'
+# Post 12
+analyze_post 19373 19732 "seo-howto-schema-bangladesh" "HowTo স্কিমা" "বাংলাদেশ:HowTo:Schema"
 
-echo "P13: content-marketing"
-sed -n '2492,2663p' "$FILE" | grep -coi 'content marketing\|content.*strategy\|blog.*SEO\|storytelling.*SEO'
+# Post 13
+analyze_post 19734 19902 "seo-for-startups-bangladesh" "startup" "Bangladesh:SEO:startup"
 
-echo "P14: international-seo"
-sed -n '2674,2828p' "$FILE" | grep -coi 'international seo\|global.*SEO\|hreflang\|multilingual\|export.*SEO\|buyer.*SEO'
+# Post 14
+analyze_post 19904 20110 "b2b-lead-generation-seo-bangladesh" "B2B" "Bangladesh:SEO:B2B"
 
-echo ""
-echo "============================================"
-echo " CHECK B: ENTITY CHECK (Dhaka/Bangladesh) "
-echo "============================================"
-for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14; do
-  case $i in
-    1) L1=14; L2=158 ;; 2) L1=169; L2=320 ;; 3) L1=331; L2=463 ;; 4) L1=474; L2=626 ;;
-    5) L1=637; L2=803 ;; 6) L1=814; L2=1022 ;; 7) L1=1033; L2=1205 ;; 8) L1=1216; L2=1453 ;;
-    9) L1=1464; L2=1718 ;; 10) L1=1729; L2=2002 ;; 11) L1=2013; L2=2261 ;; 12) L1=2272; L2=2481 ;;
-    13) L1=2492; L2=2663 ;; 14) L1=2674; L2=2828 ;;
-  esac
-  DH=$(sed -n "${L1},${L2}p" "$FILE" | grep -co 'Dhaka')
-  BD=$(sed -n "${L1},${L2}p" "$FILE" | grep -co 'Bangladesh\|Bangladeshi')
-  echo "P${i}: Dhaka=${DH}, BD=${BD}"
-done
+# Post 15
+analyze_post 20112 20347 "seo-for-law-firms-bangladesh" "law firm" "Bangladesh:SEO:law"
 
-echo ""
-echo "============================================"
-echo " CHECK C: INTERNAL LINKS "
-echo "============================================"
-for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14; do
-  case $i in
-    1) L1=14; L2=158 ;; 2) L1=169; L2=320 ;; 3) L1=331; L2=463 ;; 4) L1=474; L2=626 ;;
-    5) L1=637; L2=803 ;; 6) L1=814; L2=1022 ;; 7) L1=1033; L2=1205 ;; 8) L1=1216; L2=1453 ;;
-    9) L1=1464; L2=1718 ;; 10) L1=1729; L2=2002 ;; 11) L1=2013; L2=2261 ;; 12) L1=2272; L2=2481 ;;
-    13) L1=2492; L2=2663 ;; 14) L1=2674; L2=2828 ;;
-  esac
-  BLOG=$(sed -n "${L1},${L2}p" "$FILE" | grep -co '/blog/')
-  SVC=$(sed -n "${L1},${L2}p" "$FILE" | grep -co '/services/')
-  echo "P${i}: /blog/=${BLOG}, /services/=${SVC}"
-done
+# Post 16
+analyze_post 20349 20571 "seo-for-fitness-gyms-bangladesh" "fitness" "Bangladesh:SEO:fitness"
 
-echo ""
-echo "============================================"
-echo " CHECK D: QUESTION MARKS IN HEADINGS "
-echo "============================================"
-for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14; do
-  case $i in
-    1) L1=14; L2=158 ;; 2) L1=169; L2=320 ;; 3) L1=331; L2=463 ;; 4) L1=474; L2=626 ;;
-    5) L1=637; L2=803 ;; 6) L1=814; L2=1022 ;; 7) L1=1033; L2=1205 ;; 8) L1=1216; L2=1453 ;;
-    9) L1=1464; L2=1718 ;; 10) L1=1729; L2=2002 ;; 11) L1=2013; L2=2261 ;; 12) L1=2272; L2=2481 ;;
-    13) L1=2492; L2=2663 ;; 14) L1=2674; L2=2828 ;;
-  esac
-  Q=$(sed -n "${L1},${L2}p" "$FILE" | grep -c '##.*?')
-  echo "P${i}: headings_with_?=${Q}"
-done
-
-echo ""
-echo "============================================"
-echo " CHECK E: MARKDOWN LINK COUNT [/ "
-echo "============================================"
-for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14; do
-  case $i in
-    1) L1=14; L2=158 ;; 2) L1=169; L2=320 ;; 3) L1=331; L2=463 ;; 4) L1=474; L2=626 ;;
-    5) L1=637; L2=803 ;; 6) L1=814; L2=1022 ;; 7) L1=1033; L2=1205 ;; 8) L1=1216; L2=1453 ;;
-    9) L1=1464; L2=1718 ;; 10) L1=1729; L2=2002 ;; 11) L1=2013; L2=2261 ;; 12) L1=2272; L2=2481 ;;
-    13) L1=2492; L2=2663 ;; 14) L1=2674; L2=2828 ;;
-  esac
-  L=$(sed -n "${L1},${L2}p" "$FILE" | grep -co '\[')
-  echo "P${i}: [ links = ${L}"
-done
-
-echo ""
-echo "============================================"
-echo " CHECK F: METADATA SET "
-echo "============================================"
-for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14; do
-  case $i in
-    1) L1=2; L2=12 ;; 2) L1=160; L2=168 ;; 3) L1=322; L2=330 ;; 4) L1=465; L2=473 ;;
-    5) L1=628; L2=636 ;; 6) L1=805; L2=813 ;; 7) L1=1024; L2=1032 ;; 8) L1=1207; L2=1215 ;;
-    9) L1=1455; L2=1463 ;; 10) L1=1720; L2=1728 ;; 11) L1=2004; L2=2012 ;; 12) L1=2263; L2=2271 ;;
-    13) L1=2483; L2=2491 ;; 14) L1=2665; L2=2673 ;;
-  esac
-  TITLE=$(sed -n "${L1},${L2}p" "$FILE" | grep -c 'title:')
-  D=$(sed -n "${L1},${L2}p" "$FILE" | grep -c 'date:')
-  A=$(sed -n "${L1},${L2}p" "$FILE" | grep -c 'author:')
-  E=$(sed -n "${L1},${L2}p" "$FILE" | grep -c 'excerpt:')
-  echo "P${i}: title=${TITLE} date=${D} author=${A} excerpt=${E}"
-done
+# Post 17
+analyze_post 24703 25101 "why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh" "SEO expert" "Dhaka:SEO:Bangladesh"

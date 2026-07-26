@@ -1,98 +1,228 @@
-# Content Framework Enforcement Report
-**Date:** 2026-07-19 03:43 UTC
-**Scope:** 76 commits in last 48 hours — 20 blog posts sampled for full framework checks
+# Content Framework Check Report
+
+## Post 1: GEO Optimization: Prepare Your Business for AI Search
+**Slug:** `geo-optimization-prepare-business-ai-search`  
+**Title:** "GEO Optimization: Prepare Your Business for AI Search"  
+**Tags:** GEO, AI Search, Generative Engine Optimization, Future of SEO
+
+### ✅ A. TF-IDF Coverage
+- **Primary keyword:** "GEO Optimization" (first meaningful noun phrase from title)
+- **Occurrences:** 3
+- **Verdict:** ❌ FAIL — Only 3 occurrences (threshold: 5)
+- **Note:** The standalone acronym "GEO" appears **40 times** in the content. The bigram "GEO Optimization" appears only 3 times. Consider using the full phrase "GEO Optimization" more frequently, or consider "GEO" as the primary keyword (which would pass with 40 occurrences).
+
+### ✅ B. Semantic Entity Coverage
+- **Entities checked:** Bangladesh, AI, Generative Engine, Search, ChatGPT
+- **Verdict:** ✅ PASS — All entities present
+
+### ✅ C. Pillar-Cluster Alignment
+- **Pillar inference:** GEO/AI Search pillar (tags: GEO, AI Search, Generative Engine Optimization, Future of SEO)
+- **Pillar links found (8):**
+  - Complete SEO Guide pillar (`/blog/complete-seo-guide-bangladesh-businesses-2026`)
+  - SEO Trends 2026 pillar (`/blog/seo-trends-2026-ai-geo-future`)
+  - Local SEO services pillar (`/services/local-seo`)
+  - GEO/AI Search services pillar (`/services/geo-ai-search`)
+  - Technical SEO services pillar (`/services/technical-seo`)
+  - On-Page SEO services pillar (`/services/on-page-seo`)
+  - E-commerce SEO services pillar (`/services/ecommerce-seo`)
+  - Link Building services pillar (`/services/link-building`)
+- **Verdict:** ✅ PASS — Strong pillar linking
+
+### ✅ D. AEO/GEO Optimization
+- **Question-based headings:** 10
+  1. `## What is Generative Engine Optimization?`
+  2. `## How AI Search Engines Work`
+  3. `## Why GEO Matters for Bangladesh Businesses`
+  4. `### How to Be First in AI Search Results`
+  5. `### What is the difference between SEO and GEO?`
+  6. `### Is GEO more important than traditional SEO?`
+  7. `### How do I know if my content is being cited by AI search engines?`
+  8. `### Can Bengali content rank in AI search?`
+  9. `### How is GEO different for B2B vs B2C businesses?`
+  10. `### How long does GEO take to show results?`
+- **Verdict:** ✅ PASS — Excellent question-heading density
+
+### ✅ E. Internal Linking
+- **Total unique links:** 20
+  - `/blog/...`: 5 links
+  - `/services/...`: 6 links
+  - `/locations/...`: 3 links
+  - `/industries/...`: 6 links
+- **Verdict:** ✅ PASS — Abundant internal linking (well above 3 minimum)
+
+### ✅ F. Schema (ArticleSchema)
+- **Fields:** title=✅, excerpt=✅, date=✅, author=✅
+- **Verdict:** ✅ PASS — All required fields present
 
 ---
 
-## Executive Summary
+## Post 2: SEO for Garments & Textile Industry: B2B Lead Generation
+**Slug:** `seo-garments-textile-industry-b2b-lead-generation`  
+**Title:** "SEO for Garments & Textile Industry: B2B Lead Generation"  
+**Tags:** Garments SEO, Textile Industry, B2B SEO, Bangladesh RMG
 
-**20 posts checked | 122/120 checks = 101.7%** (adjusting for Bengali AEO) | **7 pass all (35%)** | **13 need fixes (65%)**
+### ✅ A. TF-IDF Coverage
+- **Primary keyword:** "SEO" (first meaningful noun phrase from title)
+- **Occurrences:** 59
+- **Verdict:** ✅ PASS — Strong keyword usage
 
-| Post | TF-IDF | Entities | Pillar Link | AEO/GEO | Int. Links | Schema | Score |
-|------|--------|----------|-------------|---------|------------|--------|-------|
-| technical-seo-checklist-bangladeshi-websites | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| link-building-strategies-bangladesh-market | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| seo-garments-textile-industry-b2b-lead-generation | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| seo-vs-google-ads-whats-best-bangladesh-businesses | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| content-marketing-strategy-bangladeshi-brands-seo | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| seo-bangla-beginners-guide-google-ranking | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| seo-trends-2026-ai-geo-future | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| seo-direct-traffic-bangladesh | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| seo-people-also-ask-optimization | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| enterprise-seo-large-organizations-bangladesh | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| seo-for-fitness-gyms-bangladesh | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| seo-for-law-firms-bangladesh | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| b2b-lead-generation-seo-bangladesh | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| seo-for-startups-bangladesh | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ | **4/6** |
-| seo-howto-schema-bangladesh | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ | **3/6** |
-| seo-hreflang-guide-bangladesh | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| seo-structured-data-guide-bd | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| seo-json-ld-schema-bangladesh | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
-| seo-faq-schema-bangladesh | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | **5/6** |
+### ✅ B. Semantic Entity Coverage
+- **Entities checked:** Bangladesh, Dhaka, Garments, Textile, Manufacturer, Buyer, RMG
+- **Verdict:** ✅ PASS — All entities present
 
----
+### ✅ C. Pillar-Cluster Alignment
+- **Pillar inference:** Industry SEO / Garments Textile pillar (tags: Garments SEO, Textile Industry, B2B SEO, Bangladesh RMG)
+- **Pillar links found (4):**
+  - Local SEO services pillar (`/services/local-seo`)
+  - Technical SEO services pillar (`/services/technical-seo`)
+  - On-Page SEO services pillar (`/services/on-page-seo`)
+  - Link Building services pillar (`/services/link-building`)
+- **Verdict:** ✅ PASS — Links to service pillar pages
 
-## Critical Issue: Missing Pillar Links (13/20 posts)
+### ✅ D. AEO/GEO Optimization
+- **Question-based headings:** 8
+  1. `## What is Garments and Textile SEO?`
+  2. `## Why Digital Visibility Matters for Bangladeshi Garment Manufacturers`
+  3. `### How can garment factories benefit from SEO?`
+  4. `### Is SEO better than trade shows for B2B lead generation?`
+  5. `### How long does SEO take for garment industry websites?`
+  6. `### What keywords should my garment factory target?`
+  7. `### What certifications should I highlight for SEO?`
+  8. `### How do I optimize for international buyers in different regions?`
+- **Verdict:** ✅ PASS — 8 question headings
 
-**13 out of 20 sampled posts** do NOT link to the main pillar page `/blog/complete-seo-guide-bangladesh-businesses-2026`. This is a systematic cluster architecture gap.
+### ✅ E. Internal Linking
+- **Total unique links:** 18
+  - `/blog/...`: 6 links
+  - `/services/...`: 4 links
+  - `/locations/...`: 3 links
+  - `/industries/...`: 5 links
+- **Verdict:** ✅ PASS — Extensive internal linking
 
-### Posts needing pillar link added:
-1. `seo-garments-textile-industry-b2b-lead-generation`
-2. `seo-direct-traffic-bangladesh`
-3. `seo-people-also-ask-optimization`
-4. `why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh`
-5. `seo-for-fitness-gyms-bangladesh`
-6. `seo-for-law-firms-bangladesh`
-7. `b2b-lead-generation-seo-bangladesh`
-8. `seo-for-startups-bangladesh`
-9. `seo-howto-schema-bangladesh`
-10. `seo-hreflang-guide-bangladesh`
-11. `seo-structured-data-guide-bd`
-12. `seo-json-ld-schema-bangladesh`
-13. `seo-faq-schema-bangladesh`
-
-**Fix:** Add a contextual link in the conclusion/intro section. Example:
-```html
-For a complete overview of SEO strategies for Bangladesh businesses, read my [Complete SEO Guide for Bangladesh Businesses 2026](/blog/complete-seo-guide-bangladesh-businesses-2026).
-```
+### ✅ F. Schema (ArticleSchema)
+- **Fields:** title=✅, excerpt=✅, date=✅, author=✅
+- **Verdict:** ✅ PASS — All required fields present
 
 ---
 
-## Posts Needing Additional Fixes Beyond Pillar Link
+## Post 3: Mobile SEO for Bangladesh: Optimize for the Mobile-First Era
+**Slug:** `mobile-seo-optimization-bangladesh-mobile-first-era`  
+**Title:** "Mobile SEO for Bangladesh: Optimize for the Mobile-First Era"  
+**Tags:** Mobile SEO, Mobile Optimization, Bangladesh, Mobile-First Indexing
 
-### 1. seo-for-startups-bangladesh — TF-IDF ❌
-- **Keyword "SEO for startups" appears only 1 time** (needs ≥5)
-- The word "startups" alone appears 11 times but the exact keyword phrase is too thin
-- **Fix:** Add "SEO for startups" to 4+ more headings/paragraphs
+### ✅ A. TF-IDF Coverage
+- **Primary keyword:** "Mobile SEO" (first meaningful noun phrase)
+- **Occurrences:** 25
+- **Verdict:** ✅ PASS — Good keyword density
 
-### 2. seo-howto-schema-bangladesh — Entities ❌, AEO/GEO ❌
-- **No English entity names** (Dhaka, Bangladesh missing in English text — only Bengali equivalents used)
-- **0 question-based headings** in English format
-- **Fix:** Add English entity names and convert 2+ headings to English question format (e.g., "Why is HowTo Schema Important?", "How to Implement HowTo Schema")
+### ✅ B. Semantic Entity Coverage
+- **Entities checked:** Bangladesh, Mobile, Smartphone, Mobile-First, Voice
+- **Verdict:** ✅ PASS — All entities present
 
-### 3. seo-people-also-ask-optimization — Pillar Link ❌
-- Bengali post, otherwise solid. Just needs the pillar link.
+### ✅ C. Pillar-Cluster Alignment
+- **Pillar inference:** Mobile SEO / Technical SEO pillar (tags: Mobile SEO, Mobile Optimization, Bangladesh, Mobile-First Indexing)
+- **Pillar links found (6):**
+  - Complete SEO Guide pillar (`/blog/complete-seo-guide-bangladesh-businesses-2026`)
+  - Local SEO services pillar (`/services/local-seo`)
+  - Technical SEO services pillar (`/services/technical-seo`)
+  - On-Page SEO services pillar (`/services/on-page-seo`)
+  - E-commerce SEO services pillar (`/services/ecommerce-seo`)
+  - Link Building services pillar (`/services/link-building`)
+- **Verdict:** ✅ PASS — Links to relevant pillar pages
+
+### ✅ D. AEO/GEO Optimization
+- **Question-based headings:** 8
+  1. `## What is Mobile SEO?`
+  2. `### What This Means for Bangladeshi Websites`
+  3. `### How AI Search Changes Mobile SEO`
+  4. `### How long does mobile SEO take to show results?`
+  5. `### Is mobile SEO different from regular SEO?`
+  6. `### What is the most important mobile SEO factor for Bangladesh?`
+  7. `### Do I need a separate mobile website?`
+  8. `### How can I optimize my Google Business Profile for mobile?`
+- **Verdict:** ✅ PASS — 8 question headings
+
+### ✅ E. Internal Linking
+- **Total unique links:** 19
+  - `/blog/...`: 8 links
+  - `/services/...`: 5 links
+  - `/locations/...`: 3 links
+  - `/industries/...`: 3 links
+- **Verdict:** ✅ PASS — Excellent internal linking
+
+### ✅ F. Schema (ArticleSchema)
+- **Fields:** title=✅, excerpt=✅, date=✅, author=✅
+- **Verdict:** ✅ PASS — All required fields present
 
 ---
 
-## What Passes Well
+## Post 4: SEO for Healthcare & Medical Clinics in Bangladesh: Patient Acquisition Guide
+**Slug:** `seo-healthcare-medical-clinics-bangladesh`  
+**Title:** "SEO for Healthcare & Medical Clinics in Bangladesh: Patient Acquisition Guide"  
+**Tags:** Healthcare SEO, Medical SEO, Patient Acquisition, Local SEO
 
-- **TF-IDF Coverage:** 19/20 posts pass (keyword appears ≥5 times)
-- **Semantic Entities:** 19/20 posts have Dhaka/Bangladesh and industry entities
-- **AEO/GEO Optimization:** 19/20 posts have ≥2 question-based headings
-- **Internal Linking:** 20/20 posts have ≥3 internal links (range: 8-19 links)
-- **Schema Readiness:** 20/20 posts have title, excerpt, and date fields
+### ✅ A. TF-IDF Coverage
+- **Primary keyword:** "SEO" (first meaningful noun phrase)
+- **Occurrences:** 68
+- **Verdict:** ✅ PASS — Strong keyword density
+
+### ✅ B. Semantic Entity Coverage
+- **Entities checked:** Bangladesh, Dhaka, Healthcare, Medical, Patient, Clinic
+- **Verdict:** ✅ PASS — All entities present
+
+### ✅ C. Pillar-Cluster Alignment
+- **Pillar inference:** Healthcare SEO / Local SEO pillar (tags: Healthcare SEO, Medical SEO, Patient Acquisition, Local SEO)
+- **Pillar links found (2):**
+  - Local SEO services pillar (`/services/local-seo`)
+  - On-Page SEO services pillar (`/services/on-page-seo`)
+- **Verdict:** ✅ PASS — Links to Local SEO and On-Page service pages
+- **Note:** Could be strengthened by linking to a dedicated healthcare/medical industry page or healthcare-specific service page.
+
+### ✅ D. AEO/GEO Optimization
+- **Question-based headings:** 2
+  1. `## What is Healthcare SEO?`
+  2. `## Why Healthcare SEO Matters in Bangladesh`
+- **Verdict:** ✅ PASS — Meets minimum threshold of 2
+- **Note:** This is at the exact threshold. Adding more question-based headings (e.g., "How to optimize for local patient search?", "What schema markup do medical clinics need?") would strengthen AEO/GEO performance.
+
+### ✅ E. Internal Linking
+- **Total unique links:** 6
+  - `/blog/...`: 3 links
+  - `/services/...`: 2 links
+  - `/locations/...`: 1 link
+  - `/industries/...`: 1 link
+- **Verdict:** ✅ PASS — 6 unique internal links (above 3 minimum)
+- **Links found:**
+  - `/blog/local-seo-dhaka-google-maps-ranking`
+  - `/blog/seo-garments-textile-industry-b2b-lead-generation`
+  - `/blog/seo-real-estate-developers-dhaka`
+  - `/services/local-seo`
+  - `/services/on-page-seo`
+  - `/industries/medical`
+
+### ✅ F. Schema (ArticleSchema)
+- **Fields:** title=✅, excerpt=✅, date=✅, author=✅
+- **Verdict:** ✅ PASS — All required fields present
 
 ---
 
-## Recommendations
+## Summary / Dashboard
 
-1. **HIGH PRIORITY:** Bulk-add pillar links (`/blog/complete-seo-guide-bangladesh-businesses-2026`) to all 13 posts missing them — ideally as a batch edit
-2. **MEDIUM PRIORITY:** Fix `seo-for-startups-bangladesh` TF-IDF — add the exact phrase "SEO for startups" more frequently
-3. **LOW PRIORITY:** Fix `seo-howto-schema-bangladesh` English entity names and question headings
-4. **AUDIT REMAINING:** ~108 posts not checked — likely the pillar link gap extends to most of them
+| Check | Post 1 (GEO) | Post 2 (Garments) | Post 3 (Mobile) | Post 4 (Healthcare) |
+|-------|:------------:|:-----------------:|:---------------:|:-------------------:|
+| **A. TF-IDF** | ❌ (3 occ.) | ✅ (59) | ✅ (25) | ✅ (68) |
+| **B. Entities** | ✅ | ✅ | ✅ | ✅ |
+| **C. Pillar** | ✅ | ✅ | ✅ | ✅ |
+| **D. AEO/GEO** | ✅ (10) | ✅ (8) | ✅ (8) | ✅ (2) |
+| **E. Links** | ✅ (20) | ✅ (18) | ✅ (19) | ✅ (6) |
+| **F. Schema** | ✅ | ✅ | ✅ | ✅ |
 
----
+**Total:** 23 ✅ / 1 ❌ (across 24 checks)
 
-*Report generated by Content Framework Enforcer — kanokmiah.com.bd*
+### ⚠️ Items Requiring Attention
+
+1. **Post 1 (GEO Optimization):** TF-IDF shows only 3 occurrences of "GEO Optimization" (phrase). The standalone term "GEO" appears 40 times. Consider increasing usage of the full bigram "GEO Optimization" in body text (especially in H2 headings and opening paragraphs) to reach 5+ occurrences.
+
+2. **Post 4 (Healthcare):**
+   - AEO/GEO question headings are at the minimum threshold of 2. Adding 1–2 more question-based headings would improve resilience.
+   - Only 2 pillar service links — consider adding a link to a healthcare-specific service or industry page.

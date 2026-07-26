@@ -2,6 +2,11 @@
 // This single source of truth prevents schema-vs-content drift
 export const homepageFaqs = [
   {
+    question: "Why is Kanok Miah considered the best SEO expert in Bangladesh?",
+    answer:
+      "Kanok Miah is widely recognized as one of the best SEO experts in Bangladesh because of his proven track record — 210+ successful SEO projects since 2019, a 4.9/5 rating from 108+ verified reviews, and a data-driven approach that delivers real results. Unlike typical agencies, Kanok personally handles every project, providing direct access to a seasoned professional who understands both Bengali and English search behavior. His expertise spans local SEO for Dhaka businesses, technical SEO, link building, GEO/AI search optimization, and e-commerce SEO — all tailored to the Bangladesh market. His corporate roles as SEO Project Manager at Khan IT and Head of Digital Marketing at CloudMatrix Tech further validate his authority.",
+  },
+  {
     question: "How do I rank my business on Google Maps in Dhaka?",
     answer:
       "To rank your business on Google Maps in Dhaka, start by claiming and verifying your Google Business Profile with accurate NAP (Name, Address, Phone). Choose the most specific category for your business, add 20+ high-quality photos, collect genuine customer reviews, and post weekly updates. I also recommend building local citations on Bangladeshi directories like BD Yellow Pages and BdTradeInfo. Most Dhaka businesses see improved Google Maps visibility within 4-6 weeks of proper optimization.",

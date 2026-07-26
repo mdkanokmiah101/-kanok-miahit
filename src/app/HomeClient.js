@@ -286,8 +286,8 @@ export default function HomeClient({ faqs = [] }) {
               <div className="relative">
                 <div className="w-full h-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl border-[4px] border-white">
                   <img
-                    src="/kanok-miah-about.webp"
-                    alt="Kanok Miah — SEO Expert in Dhaka, Bangladesh"
+                    src="https://i.postimg.cc/pd9jSMF4/best-seo-expert-in-dhaka-kanok-miah.webp"
+                    alt="Kanok Miah — Best SEO Expert in Dhaka, Bangladesh"
                     width="1024"
                     height="682"
                     className="w-full h-full object-cover"

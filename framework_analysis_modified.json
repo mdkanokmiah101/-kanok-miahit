@@ -1,0 +1,1121 @@
+{
+  "posts_analyzed": 17,
+  "total_flags": 45,
+  "flagged_posts": [
+    "geo-optimization-prepare-business-ai-search",
+    "seo-garments-textile-industry-b2b-lead-generation",
+    "seo-healthcare-medical-clinics-bangladesh",
+    "locksmith-dundee-seo-case-study",
+    "landlord-certificates-seo-case-study",
+    "das-taxis-scotland-seo-case-study",
+    "morethanpanel-seo-case-study",
+    "smmgen-seo-case-study",
+    "smmsun-seo-case-study",
+    "mir-cement-seo-case-study",
+    "dhaka-apparels-seo-case-study",
+    "stealth-windshield-repairs-seo-case-study",
+    "seo-expert-vs-seo-agency-dhaka-which-is-right",
+    "top-10-seo-mistakes-dhaka-businesses-fix",
+    "seo-case-study-dhaka-businesses-increased-organic-traffic",
+    "hiring-seo-expert-dhaka-better-roi-than-paid-ads",
+    "watchzonebd-seo-case-study"
+  ],
+  "all_pass": false,
+  "posts": [
+    {
+      "slug": "geo-optimization-prepare-business-ai-search",
+      "title": "GEO Optimization: Prepare Your Business for AI Search",
+      "checks": {
+        "tfidf": {
+          "keyword": "geo optimization",
+          "occurrences": 6,
+          "passed": true,
+          "details": "Primary keyword 'geo optimization' appears 6 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "chittagong",
+            "sylhet"
+          ],
+          "industries": [
+            "garment",
+            "healthcare",
+            "ecommerce",
+            "real_estate",
+            "education",
+            "seo",
+            "local"
+          ],
+          "service_count": 4,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'chittagong', 'sylhet'], Industries: ['garment', 'healthcare', 'ecommerce', 'real_estate', 'education', 'seo', 'local'], Services: 4",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "geo-optimization-prepare-business-ai-search",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: geo-optimization-prepare-business-ai-search, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 8,
+          "question_marks_in_content": 13,
+          "passed": true,
+          "details": "8 question-based headings, 13 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 5,
+          "services_links": 6,
+          "industries_links": 6,
+          "locations_links": 3,
+          "total_links": 20,
+          "unique_links": 20,
+          "passed": true,
+          "details": "20 unique internal links (5 blog, 6 services, 6 industries, 3 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 1
+    },
+    {
+      "slug": "seo-garments-textile-industry-b2b-lead-generation",
+      "title": "SEO for Garments & Textile Industry: B2B Lead Generation",
+      "checks": {
+        "tfidf": {
+          "keyword": "seo garments",
+          "occurrences": 0,
+          "passed": false,
+          "details": "Primary keyword 'seo garments' appears 0 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "chittagong",
+            "sylhet"
+          ],
+          "industries": [
+            "garment",
+            "healthcare",
+            "ecommerce",
+            "real_estate",
+            "education",
+            "seo",
+            "local"
+          ],
+          "service_count": 4,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'chittagong', 'sylhet'], Industries: ['garment', 'healthcare', 'ecommerce', 'real_estate', 'education', 'seo', 'local'], Services: 4",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "seo-garments-textile-industry-b2b-lead-generation",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: seo-garments-textile-industry-b2b-lead-generation, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 8,
+          "question_marks_in_content": 11,
+          "passed": true,
+          "details": "8 question-based headings, 11 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 7,
+          "services_links": 4,
+          "industries_links": 5,
+          "locations_links": 3,
+          "total_links": 19,
+          "unique_links": 19,
+          "passed": true,
+          "details": "19 unique internal links (7 blog, 4 services, 5 industries, 3 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 2
+    },
+    {
+      "slug": "seo-healthcare-medical-clinics-bangladesh",
+      "title": "SEO for Healthcare & Medical Clinics in Bangladesh: Patient Acquisition Guide",
+      "checks": {
+        "tfidf": {
+          "keyword": "seo healthcare",
+          "occurrences": 0,
+          "passed": false,
+          "details": "Primary keyword 'seo healthcare' appears 0 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "chittagong",
+            "sylhet",
+            "gulshan"
+          ],
+          "industries": [
+            "garment",
+            "healthcare",
+            "real_estate",
+            "education",
+            "seo",
+            "local"
+          ],
+          "service_count": 4,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'chittagong', 'sylhet', 'gulshan'], Industries: ['garment', 'healthcare', 'real_estate', 'education', 'seo', 'local'], Services: 4",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "seo-healthcare-medical-clinics-bangladesh",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: seo-healthcare-medical-clinics-bangladesh, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 4,
+          "question_marks_in_content": 4,
+          "passed": true,
+          "details": "4 question-based headings, 4 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 4,
+          "services_links": 2,
+          "industries_links": 1,
+          "locations_links": 1,
+          "total_links": 8,
+          "unique_links": 8,
+          "passed": true,
+          "details": "8 unique internal links (4 blog, 2 services, 1 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 2
+    },
+    {
+      "slug": "locksmith-dundee-seo-case-study",
+      "title": "Locksmith Dundee SEO Case Study: How We Generated 1,000+ Monthly Visitors from Local Search",
+      "checks": {
+        "tfidf": {
+          "keyword": "locksmith dundee",
+          "occurrences": 27,
+          "passed": true,
+          "details": "Primary keyword 'locksmith dundee' appears 27 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "gulshan"
+          ],
+          "industries": [
+            "ecommerce",
+            "education",
+            "seo",
+            "local"
+          ],
+          "service_count": 5,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'gulshan'], Industries: ['ecommerce', 'education', 'seo', 'local'], Services: 5",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 2,
+          "passed": false,
+          "details": "0 question-based headings, 2 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 1,
+          "services_links": 1,
+          "industries_links": 0,
+          "locations_links": 0,
+          "total_links": 2,
+          "unique_links": 2,
+          "passed": false,
+          "details": "2 unique internal links (1 blog, 1 services, 0 industries, 0 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 3
+    },
+    {
+      "slug": "landlord-certificates-seo-case-study",
+      "title": "All Landlord Certificates UK: 0 to 200+ Monthly Organic Leads in 5 Months",
+      "checks": {
+        "tfidf": {
+          "keyword": "all landlord",
+          "occurrences": 3,
+          "passed": false,
+          "details": "Primary keyword 'all landlord' appears 3 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh"
+          ],
+          "industries": [
+            "real_estate",
+            "seo",
+            "local"
+          ],
+          "service_count": 2,
+          "passed": false,
+          "details": "Locations: ['dhaka', 'bangladesh'], Industries: ['real_estate', 'seo', 'local'], Services: 2",
+          "missing": [
+            "Service entities (found 2, need >=3)"
+          ]
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 0,
+          "passed": false,
+          "details": "0 question-based headings, 0 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 2,
+          "services_links": 1,
+          "industries_links": 0,
+          "locations_links": 0,
+          "total_links": 3,
+          "unique_links": 3,
+          "passed": true,
+          "details": "3 unique internal links (2 blog, 1 services, 0 industries, 0 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 4
+    },
+    {
+      "slug": "das-taxis-scotland-seo-case-study",
+      "title": "Das Taxis Scotland SEO: From 15 to 893 Monthly Visitors (+5,853%)",
+      "checks": {
+        "tfidf": {
+          "keyword": "das taxis",
+          "occurrences": 3,
+          "passed": false,
+          "details": "Primary keyword 'das taxis' appears 3 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh"
+          ],
+          "industries": [
+            "seo",
+            "local"
+          ],
+          "service_count": 3,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh'], Industries: ['seo', 'local'], Services: 3",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 0,
+          "passed": false,
+          "details": "0 question-based headings, 0 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 1,
+          "services_links": 1,
+          "industries_links": 0,
+          "locations_links": 0,
+          "total_links": 2,
+          "unique_links": 2,
+          "passed": false,
+          "details": "2 unique internal links (1 blog, 1 services, 0 industries, 0 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 4
+    },
+    {
+      "slug": "morethanpanel-seo-case-study",
+      "title": "MoreThanPanel SEO Case Study: From 1,700 to 58,466 Daily Visitors in 24 Months",
+      "checks": {
+        "tfidf": {
+          "keyword": "morethanpanel seo",
+          "occurrences": 0,
+          "passed": false,
+          "details": "Primary keyword 'morethanpanel seo' appears 0 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh"
+          ],
+          "industries": [
+            "seo"
+          ],
+          "service_count": 3,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh'], Industries: ['seo'], Services: 3",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 0,
+          "passed": false,
+          "details": "0 question-based headings, 0 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 1,
+          "services_links": 2,
+          "industries_links": 0,
+          "locations_links": 0,
+          "total_links": 3,
+          "unique_links": 3,
+          "passed": true,
+          "details": "3 unique internal links (1 blog, 2 services, 0 industries, 0 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 3
+    },
+    {
+      "slug": "smmgen-seo-case-study",
+      "title": "SMMGen SEO Case Study: From 32 to 27,900 Monthly Organic Clicks",
+      "checks": {
+        "tfidf": {
+          "keyword": "smmgen seo",
+          "occurrences": 0,
+          "passed": false,
+          "details": "Primary keyword 'smmgen seo' appears 0 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh"
+          ],
+          "industries": [
+            "ecommerce",
+            "seo"
+          ],
+          "service_count": 5,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh'], Industries: ['ecommerce', 'seo'], Services: 5",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 0,
+          "passed": false,
+          "details": "0 question-based headings, 0 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 1,
+          "services_links": 2,
+          "industries_links": 0,
+          "locations_links": 0,
+          "total_links": 3,
+          "unique_links": 3,
+          "passed": true,
+          "details": "3 unique internal links (1 blog, 2 services, 0 industries, 0 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 3
+    },
+    {
+      "slug": "smmsun-seo-case-study",
+      "title": "SMMSun SEO Case Study: 15,440% Traffic Growth in 13 Months",
+      "checks": {
+        "tfidf": {
+          "keyword": "smmsun seo",
+          "occurrences": 0,
+          "passed": false,
+          "details": "Primary keyword 'smmsun seo' appears 0 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh"
+          ],
+          "industries": [
+            "ecommerce",
+            "seo"
+          ],
+          "service_count": 4,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh'], Industries: ['ecommerce', 'seo'], Services: 4",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 0,
+          "passed": false,
+          "details": "0 question-based headings, 0 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 1,
+          "services_links": 3,
+          "industries_links": 0,
+          "locations_links": 1,
+          "total_links": 5,
+          "unique_links": 5,
+          "passed": true,
+          "details": "5 unique internal links (1 blog, 3 services, 0 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 3
+    },
+    {
+      "slug": "mir-cement-seo-case-study",
+      "title": "Mir Cement SEO Case Study: 0 to 500+ Monthly Organic Visitors for a B2B Brand",
+      "checks": {
+        "tfidf": {
+          "keyword": "mir cement",
+          "occurrences": 3,
+          "passed": false,
+          "details": "Primary keyword 'mir cement' appears 3 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh"
+          ],
+          "industries": [
+            "garment",
+            "education",
+            "seo",
+            "local"
+          ],
+          "service_count": 4,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh'], Industries: ['garment', 'education', 'seo', 'local'], Services: 4",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "seo-garments-textile-industry-b2b-lead-generation",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: seo-garments-textile-industry-b2b-lead-generation, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 0,
+          "passed": false,
+          "details": "0 question-based headings, 0 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 1,
+          "services_links": 1,
+          "industries_links": 1,
+          "locations_links": 1,
+          "total_links": 4,
+          "unique_links": 4,
+          "passed": true,
+          "details": "4 unique internal links (1 blog, 1 services, 1 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 3
+    },
+    {
+      "slug": "dhaka-apparels-seo-case-study",
+      "title": "Dhaka Apparels SEO Case Study: Zero to #1 Ranking in 90 Days",
+      "checks": {
+        "tfidf": {
+          "keyword": "dhaka apparels",
+          "occurrences": 3,
+          "passed": false,
+          "details": "Primary keyword 'dhaka apparels' appears 3 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh"
+          ],
+          "industries": [
+            "garment",
+            "seo",
+            "local"
+          ],
+          "service_count": 3,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh'], Industries: ['garment', 'seo', 'local'], Services: 3",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "seo-garments-textile-industry-b2b-lead-generation",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: seo-garments-textile-industry-b2b-lead-generation, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 0,
+          "passed": false,
+          "details": "0 question-based headings, 0 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 2,
+          "services_links": 0,
+          "industries_links": 1,
+          "locations_links": 1,
+          "total_links": 4,
+          "unique_links": 4,
+          "passed": true,
+          "details": "4 unique internal links (2 blog, 0 services, 1 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 3
+    },
+    {
+      "slug": "stealth-windshield-repairs-seo-case-study",
+      "title": "Stealth Windshield Repairs SEO: From 0 to 400+ Monthly Visitors in 6 Months",
+      "checks": {
+        "tfidf": {
+          "keyword": "stealth windshield",
+          "occurrences": 2,
+          "passed": false,
+          "details": "Primary keyword 'stealth windshield' appears 2 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh"
+          ],
+          "industries": [
+            "seo",
+            "local"
+          ],
+          "service_count": 4,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh'], Industries: ['seo', 'local'], Services: 4",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 0,
+          "passed": false,
+          "details": "0 question-based headings, 0 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 1,
+          "services_links": 1,
+          "industries_links": 0,
+          "locations_links": 0,
+          "total_links": 2,
+          "unique_links": 2,
+          "passed": false,
+          "details": "2 unique internal links (1 blog, 1 services, 0 industries, 0 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 4
+    },
+    {
+      "slug": "seo-expert-vs-seo-agency-dhaka-which-is-right",
+      "title": "SEO Expert vs SEO Agency in Dhaka: Which One is Right for Your Business?",
+      "checks": {
+        "tfidf": {
+          "keyword": "seo expert",
+          "occurrences": 23,
+          "passed": true,
+          "details": "Primary keyword 'seo expert' appears 23 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "gulshan",
+            "dhanmondi"
+          ],
+          "industries": [
+            "healthcare",
+            "ecommerce",
+            "real_estate",
+            "seo",
+            "local"
+          ],
+          "service_count": 5,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'gulshan', 'dhanmondi'], Industries: ['healthcare', 'ecommerce', 'real_estate', 'seo', 'local'], Services: 5",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 5,
+          "question_marks_in_content": 13,
+          "passed": true,
+          "details": "5 question-based headings, 13 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 3,
+          "services_links": 0,
+          "industries_links": 3,
+          "locations_links": 1,
+          "total_links": 7,
+          "unique_links": 6,
+          "passed": true,
+          "details": "6 unique internal links (3 blog, 0 services, 3 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 1
+    },
+    {
+      "slug": "top-10-seo-mistakes-dhaka-businesses-fix",
+      "title": "Top 10 SEO Mistakes Dhaka Businesses Make (And How to Fix Them)",
+      "checks": {
+        "tfidf": {
+          "keyword": "seo mistakes",
+          "occurrences": 8,
+          "passed": true,
+          "details": "Primary keyword 'seo mistakes' appears 8 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "gulshan",
+            "dhanmondi",
+            "banani"
+          ],
+          "industries": [
+            "healthcare",
+            "ecommerce",
+            "real_estate",
+            "seo",
+            "local"
+          ],
+          "service_count": 5,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'gulshan', 'dhanmondi', 'banani'], Industries: ['healthcare', 'ecommerce', 'real_estate', 'seo', 'local'], Services: 5",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 5,
+          "question_marks_in_content": 11,
+          "passed": true,
+          "details": "5 question-based headings, 11 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 2,
+          "services_links": 5,
+          "industries_links": 0,
+          "locations_links": 1,
+          "total_links": 8,
+          "unique_links": 7,
+          "passed": true,
+          "details": "7 unique internal links (2 blog, 5 services, 0 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 1
+    },
+    {
+      "slug": "seo-case-study-dhaka-businesses-increased-organic-traffic",
+      "title": "SEO Case Study: How Businesses in Dhaka Increased Organic Traffic",
+      "checks": {
+        "tfidf": {
+          "keyword": "seo case",
+          "occurrences": 9,
+          "passed": true,
+          "details": "Primary keyword 'seo case' appears 9 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "chittagong",
+            "sylhet",
+            "gulshan",
+            "dhanmondi",
+            "banani"
+          ],
+          "industries": [
+            "garment",
+            "ecommerce",
+            "real_estate",
+            "seo",
+            "local"
+          ],
+          "service_count": 6,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'chittagong', 'sylhet', 'gulshan', 'dhanmondi', 'banani'], Industries: ['garment', 'ecommerce', 'real_estate', 'seo', 'local'], Services: 6",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 10,
+          "question_marks_in_content": 13,
+          "passed": true,
+          "details": "10 question-based headings, 13 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 2,
+          "services_links": 0,
+          "industries_links": 0,
+          "locations_links": 1,
+          "total_links": 3,
+          "unique_links": 2,
+          "passed": false,
+          "details": "2 unique internal links (2 blog, 0 services, 0 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 2
+    },
+    {
+      "slug": "hiring-seo-expert-dhaka-better-roi-than-paid-ads",
+      "title": "Why Hiring an SEO Expert in Dhaka Delivers Better ROI Than Paid Ads",
+      "checks": {
+        "tfidf": {
+          "keyword": "hiring seo",
+          "occurrences": 0,
+          "passed": false,
+          "details": "Primary keyword 'hiring seo' appears 0 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "gulshan",
+            "dhanmondi",
+            "banani"
+          ],
+          "industries": [
+            "healthcare",
+            "ecommerce",
+            "real_estate",
+            "education",
+            "seo",
+            "local"
+          ],
+          "service_count": 5,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'gulshan', 'dhanmondi', 'banani'], Industries: ['healthcare', 'ecommerce', 'real_estate', 'education', 'seo', 'local'], Services: 5",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 9,
+          "question_marks_in_content": 15,
+          "passed": true,
+          "details": "9 question-based headings, 15 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 0,
+          "services_links": 1,
+          "industries_links": 0,
+          "locations_links": 1,
+          "total_links": 2,
+          "unique_links": 2,
+          "passed": false,
+          "details": "2 unique internal links (0 blog, 1 services, 0 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 3
+    },
+    {
+      "slug": "watchzonebd-seo-case-study",
+      "title": "WatchZoneBD SEO Case Study: How We Scaled Organic Traffic from 1,004 to 40,000+ Monthly Visits",
+      "checks": {
+        "tfidf": {
+          "keyword": "watchzonebd seo",
+          "occurrences": 0,
+          "passed": false,
+          "details": "Primary keyword 'watchzonebd seo' appears 0 times"
+        },
+        "entities": {
+          "locations": [
+            "dhaka",
+            "bangladesh",
+            "chittagong"
+          ],
+          "industries": [
+            "ecommerce",
+            "education",
+            "seo",
+            "local"
+          ],
+          "service_count": 4,
+          "passed": true,
+          "details": "Locations: ['dhaka', 'bangladesh', 'chittagong'], Industries: ['ecommerce', 'education', 'seo', 'local'], Services: 4",
+          "missing": []
+        },
+        "pillar": {
+          "expected_pillar": "complete-seo-guide-bangladesh-businesses-2026",
+          "pillar_links_found": [],
+          "passed": false,
+          "details": "Expected pillar: complete-seo-guide-bangladesh-businesses-2026, Links found: []"
+        },
+        "aeo_geo": {
+          "question_headings": 0,
+          "question_marks_in_content": 4,
+          "passed": false,
+          "details": "0 question-based headings, 4 total question marks"
+        },
+        "internal_links": {
+          "blog_links": 0,
+          "services_links": 3,
+          "industries_links": 0,
+          "locations_links": 1,
+          "total_links": 4,
+          "unique_links": 4,
+          "passed": true,
+          "details": "4 unique internal links (0 blog, 3 services, 0 industries, 1 locations)"
+        },
+        "schema": {
+          "checks": {
+            "title": true,
+            "excerpt": true,
+            "date": true,
+            "author": true,
+            "tags": true
+          },
+          "missing_fields": [],
+          "passed": true,
+          "details": "All fields set"
+        }
+      },
+      "total_flags": 3
+    }
+  ]
+}

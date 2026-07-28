@@ -127,7 +127,7 @@ export default function HomeClient({ faqs = [] }) {
             {/* ===== LEAD FORM - Replaces Image ===== */}
             <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 max-w-sm mx-auto">
               <h3 className="text-lg font-bold text-center text-gray-900 mb-3">
-                🚀 Get <span className="text-primary">Free SEO Audit</span> & Proposal
+                🚀 Get <span className="text-primary">Free SEO Audit</span> and Proposal
               </h3>
               <form onSubmit={handleSubmit} className="space-y-3">
                 <input type="text" name="name" placeholder="Your Name" required
@@ -192,7 +192,7 @@ export default function HomeClient({ faqs = [] }) {
           <div className="text-center mb-12">
             <span className="inline-block text-primary text-sm font-semibold tracking-[0.2em] uppercase px-4 py-1.5 bg-primary-light/60 rounded-full border border-primary/10">Social Proof</span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-5 mb-4 text-gray-900">
-              Reviews and <span className="text-primary">Training</span>
+              SEO Reviews and Training from <span className="text-primary">Best SEO Expert in Dhaka</span>
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">
               See what clients say about my work and explore free SEO training content.
@@ -400,15 +400,15 @@ export default function HomeClient({ faqs = [] }) {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { icon: "👕", title: "Garments & Textile", desc: "RMG exporters, textile mills — B2B SEO for international buyers", slug: "garments-textile" },
+              { icon: "👕", title: "Garments and Textile", desc: "RMG exporters, textile mills — B2B SEO for international buyers", slug: "garments-textile" },
               { icon: "🛒", title: "E-commerce", desc: "Daraz sellers, Shopify stores — product SEO for higher sales", slug: "ecommerce" },
               { icon: "📱", title: "SMM Panel", desc: "Social media agencies — local SEO to attract Dhaka businesses", slug: "smm-panel" },
               { icon: "🏢", title: "Real Estate", desc: "Developers, agents — rank for property keywords", slug: "real-estate" },
-              { icon: "🧹", title: "Cleaning Services", desc: "Office & home cleaning — dominate Google Maps", slug: "cleaning" },
-              { icon: "💆", title: "Spa & Salon", desc: "Beauty parlours — near-me SEO for foot traffic", slug: "spa-salon" },
-              { icon: "🏥", title: "Medical & Healthcare", desc: "Hospitals, clinics — E-E-A-T healthcare SEO", slug: "medical" },
+              { icon: "🧹", title: "Cleaning Services", desc: "Office and home cleaning — dominate Google Maps", slug: "cleaning" },
+              { icon: "💆", title: "Spa and Salon", desc: "Beauty parlours — near-me SEO for foot traffic", slug: "spa-salon" },
+              { icon: "🏥", title: "Medical and Healthcare", desc: "Hospitals, clinics — E-E-A-T healthcare SEO", slug: "medical" },
               { icon: "🎓", title: "Education", desc: "Universities, coaching — student inquiry generation", slug: "education" },
-              { icon: "🍽️", title: "Food & Restaurant", desc: "Restaurants — Google Maps dominance for dining", slug: "food-restaurant" },
+              { icon: "🍽️", title: "Food and Restaurant", desc: "Restaurants — Google Maps dominance for dining", slug: "food-restaurant" },
             ].map((ind, i) => (
               <Link key={i} href={`/industries/${ind.slug}`}
                 className="group bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-primary/20 hover:bg-primary-light hover:-translate-y-1 transition-all duration-300">
@@ -539,7 +539,7 @@ export default function HomeClient({ faqs = [] }) {
               Proven Results
             </span>
             <h2 className="text-3xl md:text-5xl font-extrabold mt-5 mb-4" style={{ color: '#FFFFFF' }}>
-              SEO <span style={{ color: '#E8F5E9' }}>Success Stories</span>
+              Real SEO Success Stories by <span style={{ color: '#E8F5E9' }}>#1 SEO Expert in Bangladesh</span>
             </h2>
             <p className="max-w-2xl mx-auto text-lg" style={{ color: 'rgba(255,255,255,0.5)' }}>
               Real case studies with verified metrics — no fluff, no guesswork.
@@ -597,7 +597,7 @@ export default function HomeClient({ faqs = [] }) {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">How We Work</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">My <span className="text-primary">5-Step</span> Process</h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">My <span className="text-primary">5-Step SEO Process</span> for Dhaka Businesses</h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg">A proven system that delivers measurable SEO results for Bangladeshi businesses.</p>
           </div>
           <div className="relative">
@@ -719,7 +719,7 @@ export default function HomeClient({ faqs = [] }) {
                 <div className="text-xs text-gray-400 mt-1">/month</div>
               </div>
               <ul className="space-y-3 mb-8 flex-1">
-                {["50+ Keywords Tracking", "On-Page SEO (Unlimited Pages)", "Technical SEO + Core Web Vitals", "Content Writing (4 Posts)", "Link Building (10 Links)", "GEO / AI Search Optimization", "Priority WhatsApp & Phone Support"].map((f, i) => (
+                {["50+ Keywords Tracking", "On-Page SEO (Unlimited Pages)", "Technical SEO + Core Web Vitals", "Content Writing (4 Posts)", "Link Building (10 Links)", "GEO / AI Search Optimization", "Priority WhatsApp and Phone Support"].map((f, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-sm text-gray-600">
                     <span className="text-primary shrink-0 mt-0.5">✅</span>
                     {f}
@@ -833,7 +833,7 @@ export default function HomeClient({ faqs = [] }) {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Get In Touch</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Let&apos;s Grow Your <span className="text-primary">Business</span></h2>
+            <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-4 text-gray-900">Let&apos;s Grow Your <span className="text-primary">Business with Best SEO Expert in Bangladesh</span></h2>
             <p className="text-gray-500 max-w-xl mx-auto text-lg">Fill out the form and I&apos;ll get back to you within 24 hours.</p>
           </div>
           <div className="grid lg:grid-cols-2 gap-10 items-start">

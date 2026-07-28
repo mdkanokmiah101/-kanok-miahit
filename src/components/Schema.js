@@ -7,7 +7,7 @@ export function OrganizationSchema() {
     name: "Md Kanok Miah",
     alternateName: "Best SEO Expert in Dhaka, Bangladesh",
     url: "https://kanokmiah.com.bd",
-    logo: "https://kanokmiah.com.bd/favicon.ico",
+    logo: "https://kanokmiah.com.bd/favicon.svg",
     description:
       "Best SEO expert in Dhaka, Bangladesh — SEO since 2019, 210+ projects completed. Founder of kanokmiah.com, SEO PM at Khan IT, Head of Digital Marketing at CloudMatrix Tech. Local SEO, technical SEO, link building, GEO optimization.",
     address: {
@@ -448,7 +448,7 @@ export function ArticleSchema(post) {
       name: "Md Kanok Miah",
       logo: {
         "@type": "ImageObject",
-        url: "https://kanokmiah.com.bd/favicon.ico",
+        url: "https://kanokmiah.com.bd/favicon.svg",
       },
     },
     datePublished: post.date,

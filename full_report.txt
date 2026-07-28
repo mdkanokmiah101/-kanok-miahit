@@ -1,0 +1,1017 @@
+
+================================================================================
+Analyzing: complete-seo-guide-bangladesh-businesses-2026
+Title: Complete SEO Guide for Bangladesh Businesses in 2026
+
+================================================================================
+Analyzing: local-seo-tips-dhaka-businesses-google-maps
+Title: Local SEO Tips for Dhaka Businesses: Dominate Google Maps
+
+================================================================================
+Analyzing: why-ecommerce-store-needs-seo-bangladesh
+Title: Why Your E-commerce Store Needs SEO in Bangladesh
+
+================================================================================
+Analyzing: technical-seo-checklist-bangladeshi-websites
+Title: Technical SEO Checklist for Bangladeshi Websites
+
+================================================================================
+Analyzing: how-to-choose-right-seo-agency-bangladesh
+Title: How to Choose the Right SEO Agency in Bangladesh
+
+================================================================================
+Analyzing: link-building-strategies-bangladesh-market
+Title: Link Building Strategies for Bangladesh Market
+
+================================================================================
+Analyzing: geo-optimization-prepare-business-ai-search
+Title: GEO Optimization: Prepare Your Business for AI Search
+
+================================================================================
+Analyzing: seo-garments-textile-industry-b2b-lead-generation
+Title: SEO for Garments & Textile Industry: B2B Lead Generation
+
+================================================================================
+Analyzing: google-business-profile-optimization-guide-bangladesh
+Title: Google Business Profile Optimization Guide for Bangladesh
+
+================================================================================
+Analyzing: seo-vs-google-ads-whats-best-bangladesh-businesses
+Title: SEO vs Google Ads: What's Best for Bangladesh Businesses
+
+================================================================================
+Analyzing: seo-real-estate-developers-dhaka
+Title: SEO for Real Estate Developers in Dhaka: Generate More Property Leads
+
+================================================================================
+Analyzing: mobile-seo-optimization-bangladesh-mobile-first-era
+Title: Mobile SEO for Bangladesh: Optimize for the Mobile-First Era
+
+================================================================================
+Analyzing: content-marketing-strategy-bangladeshi-brands-seo
+Title: Content Marketing Strategy for Bangladeshi Brands: Drive SEO Growth
+
+================================================================================
+Analyzing: international-seo-bangladesh-exporters-global-buyers
+Title: International SEO for Bangladesh Exporters: Attract Global Buyers
+
+================================================================================
+Analyzing: seo-bangla-beginners-guide-google-ranking
+Title: সহজ ভাষায় SEO: কীভাবে গুগলে প্রথম পেজে আসবেন (২০২৬ গাইড)
+
+================================================================================
+Analyzing: local-seo-dhaka-google-maps-ranking
+Title: স্থানীয় SEO: ঢাকায় আপনার ব্যবসা কীভাবে গুগল ম্যাপে শীর্ষে দেখাবেন
+
+================================================================================
+Analyzing: seo-trends-2026-ai-geo-future
+Title: ২০২৬ সালের SEO ট্রেন্ডস: AI, GEO ও জিরো-ক্লিক সার্চের যুগে কীভাবে প্রস্তুত থাকবেন
+
+====================================================================================================
+CONTENT FRAMEWORK ENFORCEMENT ANALYSIS REPORT
+====================================================================================================
+
+Total Posts Analyzed: 17
+Date: 2026-07-26
+====================================================================================================
+
+====================================================================================================
+SUMMARY - PASS/FLAG PER CHECK
+====================================================================================================
+Post                                          TF-IDF   Entities  Pillar   AEO/GEO   IntLinks  Schema   FLAGS 
+----------------------------------------------------------------------------------------------------
+complete-seo-guide-bangladesh-businesses-202                                                           1     
+                                              ❌        ✅         ✅        ✅         ✅         ✅       
+local-seo-tips-dhaka-businesses-google-maps                                                            0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+why-ecommerce-store-needs-seo-bangladesh                                                               0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+technical-seo-checklist-bangladeshi-websites                                                           0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+how-to-choose-right-seo-agency-bangladesh                                                              1     
+                                              ❌        ✅         ✅        ✅         ✅         ✅       
+link-building-strategies-bangladesh-market                                                             0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+geo-optimization-prepare-business-ai-search                                                            0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+seo-garments-textile-industry-b2b-lead-gener                                                           0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+google-business-profile-optimization-guide-b                                                           0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+seo-vs-google-ads-whats-best-bangladesh-busi                                                           0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+seo-real-estate-developers-dhaka                                                                       0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+mobile-seo-optimization-bangladesh-mobile-fi                                                           0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+content-marketing-strategy-bangladeshi-brand                                                           0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+international-seo-bangladesh-exporters-globa                                                           0     
+                                              ✅        ✅         ✅        ✅         ✅         ✅       
+seo-bangla-beginners-guide-google-ranking                                                              2     
+                                              ❌        ✅         ✅        ✅         ✅         ❌       
+local-seo-dhaka-google-maps-ranking                                                                    1     
+                                              ✅        ✅         ✅        ✅         ✅         ❌       
+seo-trends-2026-ai-geo-future                                                                          1     
+                                              ✅        ✅         ✅        ✅         ✅         ❌       
+----------------------------------------------------------------------------------------------------
+TOTAL FLAGS                                                                                            6     
+
+
+====================================================================================================
+POSTS RANKED BY ISSUES (MOST FLAGS FIRST)
+====================================================================================================
+  🟡 seo-bangla-beginners-guide-google-ranking - 2/6 flags
+  🟡 complete-seo-guide-bangladesh-businesses-2026 - 1/6 flags
+  🟡 how-to-choose-right-seo-agency-bangladesh - 1/6 flags
+  🟡 local-seo-dhaka-google-maps-ranking - 1/6 flags
+  🟡 seo-trends-2026-ai-geo-future - 1/6 flags
+  🟢 local-seo-tips-dhaka-businesses-google-maps - 0/6 flags
+  🟢 why-ecommerce-store-needs-seo-bangladesh - 0/6 flags
+  🟢 technical-seo-checklist-bangladeshi-websites - 0/6 flags
+  🟢 link-building-strategies-bangladesh-market - 0/6 flags
+  🟢 geo-optimization-prepare-business-ai-search - 0/6 flags
+  🟢 seo-garments-textile-industry-b2b-lead-generation - 0/6 flags
+  🟢 google-business-profile-optimization-guide-bangladesh - 0/6 flags
+  🟢 seo-vs-google-ads-whats-best-bangladesh-businesses - 0/6 flags
+  🟢 seo-real-estate-developers-dhaka - 0/6 flags
+  🟢 mobile-seo-optimization-bangladesh-mobile-first-era - 0/6 flags
+  🟢 content-marketing-strategy-bangladeshi-brands-seo - 0/6 flags
+  🟢 international-seo-bangladesh-exporters-global-buyers - 0/6 flags
+
+====================================================================================================
+DETAILED PER-POST ANALYSIS
+====================================================================================================
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Complete SEO Guide for Bangladesh Businesses in 2026
+  Slug: complete-seo-guide-bangladesh-businesses-2026
+  Date: 2026-06-15
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 1/6 checks flagged
+
+  A. TF-IDF COVERAGE: ❌ FLAGGED
+     Primary keyword: "complete seo guide"
+     Occurrences in content: 0 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, garment, ecommerce, food, real-estate, healthcare, education
+     Service entities count: 18
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: True
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 10 (threshold: 3)
+     Question marks in content: 9
+     FAQ subsections: 9
+       - why seo matters more than ever for bangladesh businesses in 2026
+       - how long does seo take to show results in bangladesh?
+       - what is the cost of seo services in bangladesh?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 7
+     /services/ links: 1
+     /industries/ links: 2
+     /locations/ links: 2
+     Total internal links: 12 (threshold: 3)
+     Unique links: 12
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 184)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['SEO Guide', 'Bangladesh SEO', 'Digital Marketing', '2026']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Local SEO Tips for Dhaka Businesses: Dominate Google Maps
+  Slug: local-seo-tips-dhaka-businesses-google-maps
+  Date: 2026-06-10
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "local"
+     Occurrences in content: 71 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: dhaka, bangladesh, chittagong, sylhet
+     Industry entities: seo, food, healthcare, ecommerce, real-estate, education
+     Service entities count: 14
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 9 (threshold: 3)
+     Question marks in content: 8
+     FAQ subsections: 6
+       - what is local seo?
+       - why local seo is critical for dhaka businesses
+       - how long does local seo take to show results in dhaka?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 5
+     /services/ links: 5
+     /industries/ links: 6
+     /locations/ links: 1
+     Total internal links: 17 (threshold: 3)
+     Unique links: 17
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 160)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Local SEO', 'Dhaka', 'Google Maps', 'GBP']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Why Your E-commerce Store Needs SEO in Bangladesh
+  Slug: why-ecommerce-store-needs-seo-bangladesh
+  Date: 2026-06-05
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "e-commerce"
+     Occurrences in content: 50 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: ecommerce, seo, garment, food, real-estate
+     Service entities count: 15
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 8 (threshold: 3)
+     Question marks in content: 8
+     FAQ subsections: 6
+       - why organic traffic matters for e-commerce
+       - how long does e-commerce seo take to show results?
+       - is seo better than google ads for e-commerce?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 4
+     /services/ links: 5
+     /industries/ links: 3
+     /locations/ links: 3
+     Total internal links: 15 (threshold: 3)
+     Unique links: 15
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 158)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['E-commerce SEO', 'Daraz', 'Shopify', 'Bangladesh']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Technical SEO Checklist for Bangladeshi Websites
+  Slug: technical-seo-checklist-bangladeshi-websites
+  Date: 2026-05-28
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "technical"
+     Occurrences in content: 39 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce, education, healthcare, food, real-estate
+     Service entities count: 13
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 9 (threshold: 3)
+     Question marks in content: 9
+     FAQ subsections: 6
+       - what is technical seo?
+       - why technical seo matters for bangladeshi websites
+       - what is the most common technical seo issue on bangladeshi websites?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 5
+     /services/ links: 5
+     /industries/ links: 6
+     /locations/ links: 8
+     Total internal links: 24 (threshold: 3)
+     Unique links: 24
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 170)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Technical SEO', 'Core Web Vitals', 'Website Optimization', 'Bangladesh']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  How to Choose the Right SEO Agency in Bangladesh
+  Slug: how-to-choose-right-seo-agency-bangladesh
+  Date: 2026-05-20
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 1/6 checks flagged
+
+  A. TF-IDF COVERAGE: ❌ FLAGGED
+     Primary keyword: "choose right seo"
+     Occurrences in content: 0 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce, food, education, real-estate
+     Service entities count: 16
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 9 (threshold: 3)
+     Question marks in content: 14
+     FAQ subsections: 6
+       - how to choose the right seo agency in bangladesh
+       - what a good seo agency looks like
+       - how much should i pay for seo in bangladesh?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 6
+     /services/ links: 4
+     /industries/ links: 6
+     /locations/ links: 3
+     Total internal links: 19 (threshold: 3)
+     Unique links: 19
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 151)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['SEO Agency', 'Bangladesh', 'Agency Selection', 'Digital Marketing']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Link Building Strategies for Bangladesh Market
+  Slug: link-building-strategies-bangladesh-market
+  Date: 2026-05-15
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "link"
+     Occurrences in content: 153 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, garment, education, ecommerce, real-estate, food, healthcare
+     Service entities count: 11
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 10 (threshold: 3)
+     Question marks in content: 10
+     FAQ subsections: 6
+       - what is link building?
+       - why link building matters in bangladesh
+       - what to avoid in link building
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 7
+     /services/ links: 4
+     /industries/ links: 8
+     /locations/ links: 3
+     Total internal links: 22 (threshold: 3)
+     Unique links: 22
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 185)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Link Building', 'Backlinks', 'SEO Strategy', 'Bangladesh']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  GEO Optimization: Prepare Your Business for AI Search
+  Slug: geo-optimization-prepare-business-ai-search
+  Date: 2026-05-08
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "geo"
+     Occurrences in content: 43 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce, garment, healthcare, education, real-estate, food
+     Service entities count: 9
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: geo-optimization-prepare-business-ai-search
+     Is self pillar: True
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 11 (threshold: 3)
+     Question marks in content: 13
+     FAQ subsections: 7
+       - what is generative engine optimization?
+       - how ai search engines work
+       - why geo matters for bangladesh businesses
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 5
+     /services/ links: 6
+     /industries/ links: 6
+     /locations/ links: 3
+     Total internal links: 20 (threshold: 3)
+     Unique links: 20
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 180)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['GEO', 'AI Search', 'Generative Engine Optimization', 'Future of SEO']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  SEO for Garments & Textile Industry: B2B Lead Generation
+  Slug: seo-garments-textile-industry-b2b-lead-generation
+  Date: 2026-05-01
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "seo"
+     Occurrences in content: 62 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: garment, seo, ecommerce, real-estate, healthcare, education
+     Service entities count: 13
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: seo-garments-textile-industry-b2b-lead-generation
+     Is self pillar: True
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 9 (threshold: 3)
+     Question marks in content: 11
+     FAQ subsections: 7
+       - what is garments and textile seo?
+       - why digital visibility matters for bangladeshi garment manufacturers
+       - how can garment factories benefit from seo?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 7
+     /services/ links: 4
+     /industries/ links: 5
+     /locations/ links: 3
+     Total internal links: 19 (threshold: 3)
+     Unique links: 19
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 170)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Garments SEO', 'Textile Industry', 'B2B SEO', 'Bangladesh RMG']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Google Business Profile Optimization Guide for Bangladesh
+  Slug: google-business-profile-optimization-guide-bangladesh
+  Date: 2026-04-22
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "google"
+     Occurrences in content: 48 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, food, healthcare, ecommerce
+     Service entities count: 12
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 14 (threshold: 3)
+     Question marks in content: 8
+     FAQ subsections: 11
+       - why google business profile is critical in bangladesh
+       - how google business profile works in bangladesh
+       - how gbp rankings are determined
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 6
+     /services/ links: 3
+     /industries/ links: 2
+     /locations/ links: 3
+     Total internal links: 14 (threshold: 3)
+     Unique links: 14
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 155)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Google Business Profile', 'Local SEO', 'Google Maps', 'Bangladesh Business']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  SEO vs Google Ads: What's Best for Bangladesh Businesses
+  Slug: seo-vs-google-ads-whats-best-bangladesh-businesses
+  Date: 2026-04-15
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "seo"
+     Occurrences in content: 107 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce, real-estate, food, garment, healthcare
+     Service entities count: 16
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 12 (threshold: 3)
+     Question marks in content: 9
+     FAQ subsections: 7
+       - the great debate: seo or google ads?
+       - when to choose seo
+       - when to choose google ads
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 8
+     /services/ links: 3
+     /industries/ links: 2
+     /locations/ links: 2
+     Total internal links: 15 (threshold: 3)
+     Unique links: 15
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 165)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['SEO vs Ads', 'Google Ads', 'PPC', 'Bangladesh Digital Marketing']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  SEO for Real Estate Developers in Dhaka: Generate More Property Leads
+  Slug: seo-real-estate-developers-dhaka
+  Date: 2026-06-27
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "seo"
+     Occurrences in content: 51 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: dhaka, bangladesh, chittagong, sylhet
+     Industry entities: real-estate, seo, garment, food, ecommerce, education, healthcare
+     Service entities count: 11
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 6 (threshold: 3)
+     Question marks in content: 15
+     FAQ subsections: 5
+       - why seo matters for dhaka real estate developers
+       - how long does real estate seo take to show results in dhaka?
+       - what is the monthly cost of seo for a real estate developer in bangladesh?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 8
+     /services/ links: 2
+     /industries/ links: 3
+     /locations/ links: 3
+     Total internal links: 16 (threshold: 3)
+     Unique links: 16
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 183)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Real Estate SEO', 'Property SEO', 'Dhaka Real Estate', 'Lead Generation']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Mobile SEO for Bangladesh: Optimize for the Mobile-First Era
+  Slug: mobile-seo-optimization-bangladesh-mobile-first-era
+  Date: 2026-06-30
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "mobile"
+     Occurrences in content: 115 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce, food, real-estate
+     Service entities count: 17
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 9 (threshold: 3)
+     Question marks in content: 9
+     FAQ subsections: 8
+       - what is mobile seo?
+       - what this means for bangladeshi websites
+       - how ai search changes mobile seo
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 8
+     /services/ links: 5
+     /industries/ links: 3
+     /locations/ links: 3
+     Total internal links: 19 (threshold: 3)
+     Unique links: 19
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 216)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Mobile SEO', 'Mobile Optimization', 'Bangladesh', 'Mobile-First Indexing']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  Content Marketing Strategy for Bangladeshi Brands: Drive SEO Growth
+  Slug: content-marketing-strategy-bangladeshi-brands-seo
+  Date: 2026-07-03
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "content"
+     Occurrences in content: 150 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce, garment, education, real-estate, food
+     Service entities count: 13
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 9 (threshold: 3)
+     Question marks in content: 7
+     FAQ subsections: 6
+       - what is content marketing?
+       - why content marketing is the engine of seo in bangladesh
+       - how to optimize content for ai search engines
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 8
+     /services/ links: 2
+     /industries/ links: 0
+     /locations/ links: 3
+     Total internal links: 13 (threshold: 3)
+     Unique links: 13
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 213)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Content Marketing', 'Bangladesh', 'SEO Strategy', 'Digital Marketing']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  International SEO for Bangladesh Exporters: Attract Global Buyers
+  Slug: international-seo-bangladesh-exporters-global-buyers
+  Date: 2026-07-06
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 0/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "international"
+     Occurrences in content: 68 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: garment, seo, ecommerce, real-estate
+     Service entities count: 11
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 8 (threshold: 3)
+     Question marks in content: 6
+     FAQ subsections: 5
+       - why standard seo isn't enough for exporters
+       - how to optimize export content for ai search
+       - how long does international seo take to show results for bangladeshi exporters?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 6
+     /services/ links: 2
+     /industries/ links: 1
+     /locations/ links: 3
+     Total internal links: 12 (threshold: 3)
+     Unique links: 12
+
+  F. SCHEMA READINESS: ✅ PASS
+     Title present: True
+     Excerpt present: True (length: 259)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['International SEO', 'Bangladesh Exporters', 'B2B SEO', 'Global SEO']
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  সহজ ভাষায় SEO: কীভাবে গুগলে প্রথম পেজে আসবেন (২০২৬ গাইড)
+  Slug: seo-bangla-beginners-guide-google-ranking
+  Date: 2026-07-08
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 2/6 checks flagged
+
+  A. TF-IDF COVERAGE: ❌ FLAGGED
+     Primary keyword: "সহজ"
+     Occurrences in content: 3 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce, real-estate
+     Service entities count: 5
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 15 (threshold: 3)
+     Question marks in content: 18
+     FAQ subsections: 0
+       - seo কী?
+       - seo কী এবং কেন এটি বাংলাদেশি ব্যবসার জন্য অপরিহার্য?
+       - গুগল কীভাবে ওয়েবসাইট র‍্যাংক করে?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 8
+     /services/ links: 5
+     /industries/ links: 0
+     /locations/ links: 3
+     Total internal links: 16 (threshold: 3)
+     Unique links: 16
+
+  F. SCHEMA READINESS: ❌ FLAGGED
+     Title present: True
+     Excerpt present: False (length: 0)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['SEO Basics', 'Bangla SEO', 'Google Ranking', 'Beginner Guide', 'Bangladesh']
+     ❌ MISSING: excerpt
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  স্থানীয় SEO: ঢাকায় আপনার ব্যবসা কীভাবে গুগল ম্যাপে শীর্ষে দেখাবেন
+  Slug: local-seo-dhaka-google-maps-ranking
+  Date: 2026-07-08
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 1/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "স্থানীয়"
+     Occurrences in content: 26 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce
+     Service entities count: 5
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 11 (threshold: 3)
+     Question marks in content: 14
+     FAQ subsections: 0
+       - গুগল ম্যাপে র‍্যাংক করতে কতদিন লাগে?
+       - গুগল ম্যাপে র‍্যাংকিংয়ের জন্য সবচেয়ে গুরুত্বপূর্ণ ফ্যাক্টর কী?
+       - একাধিক শাখার জন্য আলাদা জিবিপি তৈরি করা যাবে?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 7
+     /services/ links: 4
+     /industries/ links: 0
+     /locations/ links: 3
+     Total internal links: 14 (threshold: 3)
+     Unique links: 14
+
+  F. SCHEMA READINESS: ❌ FLAGGED
+     Title present: True
+     Excerpt present: False (length: 0)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['Local SEO', 'Dhaka', 'Google Maps', 'GBP Optimization', 'Bangladesh Business']
+     ❌ MISSING: excerpt
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ২০২৬ সালের SEO ট্রেন্ডস: AI, GEO ও জিরো-ক্লিক সার্চের যুগে কীভাবে প্রস্তুত থাকবেন
+  Slug: seo-trends-2026-ai-geo-future
+  Date: 2026-07-08
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  OVERALL: 1/6 checks flagged
+
+  A. TF-IDF COVERAGE: ✅ PASS
+     Primary keyword: "২০২৬"
+     Occurrences in content: 18 (threshold: 5)
+
+  B. ENTITY COVERAGE: ✅ PASS
+     Location entities: bangladesh, dhaka, chittagong, sylhet
+     Industry entities: seo, ecommerce, real-estate
+     Service entities count: 3
+     Has BD/Dhaka location: True
+     Has industry entities: True
+     Has service entities (>=3): True
+
+  C. PILLAR LINK: ✅ PASS
+     Expected pillar: complete-seo-guide-bangladesh-businesses-2026
+     Is self pillar: False
+     Has pillar link: True
+     Has main pillar link: True
+
+  D. AEO/GEO (Question Headings): ✅ PASS
+     Question-based headings: 12 (threshold: 3)
+     Question marks in content: 18
+     FAQ subsections: 0
+       - ২০২৬ সালে seo কি এখনও কাজ করে?
+       - geo এবং ঐতিহ্যবাহী seo-র মধ্যে পার্থক্য কী?
+       - ai কি seo বিশেষজ্ঞের চাকরি নেবে না?
+
+  E. INTERNAL LINKS: ✅ PASS
+     /blog/ links: 6
+     /services/ links: 7
+     /industries/ links: 0
+     /locations/ links: 3
+     Total internal links: 16 (threshold: 3)
+     Unique links: 16
+
+  F. SCHEMA READINESS: ❌ FLAGGED
+     Title present: True
+     Excerpt present: False (length: 0)
+     Date present: True
+     Author present: True
+     Tags present (>=2): True - ['SEO Trends 2026', 'AI SEO', 'GEO', 'Generative Engine Optimization', 'Bangladesh']
+     ❌ MISSING: excerpt
+
+
+====================================================================================================
+FINAL SUMMARY
+====================================================================================================
+Total posts analyzed: 17
+Total flags across all posts: 6
+Average flags per post: 0.4
+
+Per-check pass rates:
+  TF_IDF              : 14/17 passed (82%)
+  Entities            : 17/17 passed (100%)
+  Pillar_Link         : 17/17 passed (100%)
+  AEO_GEO             : 17/17 passed (100%)
+  Internal_Links      : 17/17 passed (100%)
+  Schema              : 14/17 passed (82%)
+
+✅ Posts with NO flags (all checks pass): 12
+   - local-seo-tips-dhaka-businesses-google-maps
+   - why-ecommerce-store-needs-seo-bangladesh
+   - technical-seo-checklist-bangladeshi-websites
+   - link-building-strategies-bangladesh-market
+   - geo-optimization-prepare-business-ai-search
+   - seo-garments-textile-industry-b2b-lead-generation
+   - google-business-profile-optimization-guide-bangladesh
+   - seo-vs-google-ads-whats-best-bangladesh-businesses
+   - seo-real-estate-developers-dhaka
+   - mobile-seo-optimization-bangladesh-mobile-first-era
+   - content-marketing-strategy-bangladeshi-brands-seo
+   - international-seo-bangladesh-exporters-global-buyers
+
+Posts needing most attention (3+ flags):
+
+====================================================================================================
+END OF REPORT
+====================================================================================================
+
+Results also saved to framework_analysis_results.json

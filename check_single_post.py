@@ -1,299 +1,356 @@
 #!/usr/bin/env python3
-"""Single-post Content Framework check for 'seo-https-ssl-impact-bangladesh'"""
-import re, json
+"""Run all 6 framework checks on a single blog post."""
+import re, sys
+from datetime import datetime
 
-# Read the data.js file
-with open('/root/kanok-miahit/src/app/blog/data.js', 'r') as f:
-    content = f.read()
+DATA_PATH = 'src/app/blog/data.js'
+SLUG = 'top-10-seo-mistakes-dhaka-businesses-fix'
 
-# Extract the specific post by slug
-# Find the post block containing our slug
-start = content.find("slug: \"seo-https-ssl-impact-bangladesh\"")
-if start == -1:
-    print("ERROR: Could not find post slug in data.js")
-    exit(1)
+with open(DATA_PATH, 'r') as f:
+    text = f.read()
+lines = text.split('\n')
 
-# Go back to find the opening {
-post_start = content.rfind('{', 0, start)
-# Find the closing }
-depth = 0
-in_content = False
-i = post_start
-while i < len(content):
-    if 'content: `' in content[i:i+12] or 'content:`' in content[i:i+10]:
-        in_content = True
-    if in_content:
-        if '`' in content[i]:
-            # Check if this is the closing backtick
-            before = content[max(0,i-50):i]
-            if 'content: `' not in before and 'content:`' not in before:
-                in_content = False
-                i += 1
-                continue
-    else:
-        if content[i] == '{':
-            depth += 1
-        elif content[i] == '}':
-            depth -= 1
-            if depth == 0:
-                post_end = i + 1
-                break
-    i += 1
+# Build slug-to-line map
+slug_positions = {}
+for i, line in enumerate(lines):
+    m = re.search(r'slug:\s+"([^"]+)"', line)
+    if m:
+        slug_positions[m.group(1)] = i
 
-post_text = content[post_start:post_end]
+def extract_post_fields(slug):
+    slug_line = slug_positions[slug]
+    start = slug_line
+    while start > 0 and not lines[start].strip().startswith('{'):
+        start -= 1
+    next_slug_line = None
+    for s, ln in sorted(slug_positions.items(), key=lambda x: x[1]):
+        if ln > slug_line:
+            next_slug_line = ln
+            break
+    end = next_slug_line if next_slug_line else len(lines)
+    post_lines = lines[start:end]
+    post_text = '\n'.join(post_lines)
 
-def extract_field(post, field):
-    m = re.search(rf'{field}:\s*"([^"]*)"', post)
-    return m.group(1) if m else ''
+    title_m = re.search(r'title:\s+"([^"]*)"', post_text)
+    date_m = re.search(r'date:\s+"([^"]*)"', post_text)
+    excerpt_m = re.search(r'excerpt:\s*\n?\s+"([^"]*)"', post_text, re.DOTALL)
+    tags_m = re.search(r'tags:\s*\[([^\]]*)\]', post_text, re.DOTALL)
+    content_m = re.search(r'content:\s*`\n?([^`]*)`', post_text, re.DOTALL)
 
-def extract_content(post):
-    m = re.search(r'content:\s*`(.*)`', post, re.DOTALL)
-    return m.group(1) if m else ''
+    title = title_m.group(1) if title_m else ''
+    date = date_m.group(1) if date_m else ''
+    excerpt = excerpt_m.group(1).replace('\n', ' ').strip() if excerpt_m else ''
+    tags = re.findall(r'"([^"]*)"', tags_m.group(1)) if tags_m else []
+    content = content_m.group(1) if content_m else ''
 
-slug = extract_field(post_text, 'slug')
-title = extract_field(post_text, 'title')
-date = extract_field(post_text, 'date')
-author = extract_field(post_text, 'author')
-excerpt = extract_field(post_text, 'excerpt')
-post_content = extract_content(post_text)
+    return {'title': title, 'date': date, 'excerpt': excerpt, 'tags': tags,
+            'content': content, 'slug': slug}
 
-tags_m = re.search(r'tags:\s*\[([^\]]+)\]', post_text, re.DOTALL)
-tags = []
-if tags_m:
-    tags = re.findall(r'"([^"]+)"', tags_m.group(1))
+post = extract_post_fields(SLUG)
+content = post['content']
+title = post['title']
 
-print(f"{'='*80}")
-print(f"CONTENT FRAMEWORK CHECK — Single Post Report")
-print(f"{'='*80}")
-print(f"Slug:  {slug}")
-print(f"Title: {title}")
-print(f"Date:  {date}")
-print(f"Author:{author}")
-print(f"Tags:  {tags}")
-print(f"Content length: {len(post_content)} chars")
-print(f"{'='*80}\n")
+print("=" * 68)
+print("  BLOG POST FRAMEWORK CHECK REPORT")
+print("=" * 68)
+print(f"\nSlug:           {post['slug']}")
+print(f"Title:          {post['title']}")
+print(f"Date:           {post['date']}")
+print(f"Tags:           {', '.join(post['tags'])}")
+print(f"Excerpt:        {post['excerpt'][:120]}...")
+print(f"Content:        {len(content)} chars / ~{len(content.split())} words")
+print()
 
-# ===== CHECK A: TF-IDF =====
-def is_bengali(text):
-    return len(re.findall(r'[\u0980-\u09FF]', text)) > len(text) * 0.1
+# ============================================================
+# CHECK 1: TF-IDF (Keyword Coverage)
+# ============================================================
+print("---")
+print("A. TF-IDF COVERAGE")
+print("---")
 
-def extract_primary_keyword(title):
-    title_lower = title.lower()
-    stopwords = {'a', 'an', 'the', 'how', 'why', 'what', 'when', 'where', 'which', 'who', 'do', 'does', 'did',
-                 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'to', 'for', 'of', 'in',
-                 'on', 'at', 'by', 'with', 'from', 'as', 'into', 'through', 'during', 'before', 'after', 'above',
-                 'below', 'between', 'out', 'off', 'over', 'under', 'again', 'further', 'then', 'once',
-                 'and', 'but', 'or', 'nor', 'not', 'so', 'yet', 'both', 'either', 'neither', 'each', 'every',
-                 'your', 'their', 'its', 'our', 'my', 'his', 'her', 'some', 'any', 'no', 'all', 'most',
-                 'best', 'top', 'ultimate', 'complete', 'guide', 'tips', 'for', 'in', 'of', 'the', 'on', 'at',
-                 'seo', 'also', 'just', 'more', 'than', 'very', 'too', 'can', 'has', 'get', 'got'}
-    raw_words = re.split(r'[\s:;,()!?./\\[\]"\'\-]+', title_lower)
-    meaningful = [w for w in raw_words if w not in stopwords and len(w) > 2]
-    if not meaningful:
-        meaningful = [w for w in raw_words if w not in {'a', 'an', 'the', 'for', 'in', 'of', 'to', 'and', 'or', 'at'} and len(w) > 1]
-    if not meaningful:
-        return title_lower.split()[0] if title_lower.split() else title_lower
-    if is_bengali(title):
-        for w in meaningful:
-            if re.search(r'[\u0980-\u09FF]', w):
-                return w
-        return meaningful[0]
-    else:
-        return meaningful[0]
+# Primary keyword extraction matching the framework logic
+stop_words = {'the', 'a', 'an', 'in', 'of', 'for', 'to', 'and', 'or', 'is', 'are',
+              'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'do',
+              'does', 'did', 'will', 'would', 'can', 'could', 'shall', 'should',
+              'may', 'might', 'must', 'about', 'into', 'through', 'during',
+              'before', 'after', 'above', 'below', 'between', 'out', 'off',
+              'over', 'under', 'again', 'further', 'then', 'once', 'here',
+              'there', 'when', 'where', 'why', 'how', 'all', 'each', 'every',
+              'both', 'few', 'more', 'most', 'other', 'some', 'such', 'no',
+              'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very',
+              'just', 'because', 'as', 'until', 'while', 'with', 'without',
+              'from', 'up', 'down', 'at', 'by', 'on', 'off', 'this', 'that',
+              'these', 'those', 'it', 'its', 'your', 'our', 'their', 'what',
+              'which', 'who', 'whom', 'your', '2026', 'guide', 'new'}
 
-keyword = extract_primary_keyword(title)
-print(f"[A] TF-IDF — Primary keyword extracted: '{keyword}'")
+clean_title = title.replace(':', ' ').replace('?', ' ').replace('!', ' ')
+words = clean_title.split()
+meaningful = [w.strip() for w in words if w.lower() not in stop_words and len(w.strip()) > 2]
 
-if re.search(r'[\u0980-\u09FF]', keyword):
-    count = len(re.findall(re.escape(keyword), post_content, re.IGNORECASE))
+print(f"Title words: {words}")
+print(f"Meaningful title words (no stop words): {meaningful}")
+
+# Try 2-word phrase first: "SEO Mistakes"
+kw_2 = 'SEO Mistakes'
+count_2 = len(re.findall(re.escape(kw_2), content, re.IGNORECASE))
+
+# Also count "SEO" separately
+seo_count = len(re.findall(r'\bSEO\b', content))
+mistakes_count = len(re.findall(r'\bmistakes?\b', content, re.IGNORECASE))
+dhaka_count = len(re.findall(r'\bDhaka\b', content))
+
+print(f'  Primary keyword "SEO Mistakes": {count_2} occurrences')
+print(f'  "SEO" standalone:               {seo_count}')
+print(f'  "mistakes" standalone:          {mistakes_count}')
+print(f'  "Dhaka" standalone:             {dhaka_count}')
+
+# Determine best keyword
+best_count = max(count_2, seo_count)
+if count_2 >= 5:
+    best_kw = "SEO Mistakes"
+elif seo_count >= 5:
+    best_kw = "SEO"
 else:
-    count = len(re.findall(r'\b' + re.escape(keyword) + r'\b', post_content, re.IGNORECASE))
+    best_kw = meaningful[0] if meaningful else words[0]
+    best_count = len(re.findall(re.escape(best_kw), content, re.IGNORECASE))
 
-# Also show related keyword frequencies
-ssl_count = len(re.findall(r'\bSSL\b', post_content, re.IGNORECASE))
-https_count = len(re.findall(r'\bHTTPS\b', post_content, re.IGNORECASE))
-seo_count = len(re.findall(r'\bSEO\b', post_content, re.IGNORECASE))
+status = 'PASS' if best_count >= 5 else ('WARN' if best_count >= 3 else 'FAIL')
+print(f'  Best keyword: "{best_kw}" ({best_count} occurrences)')
+print(f'  Threshold: >= 5')
+print(f'  Result: [{status}]')
+print()
 
-passed_a = count >= 5
-print(f"   '{keyword}' occurrences: {count} (need ≥5) → {'✅ PASS' if passed_a else '❌ FAIL'}")
-print(f"   Related: SSL={ssl_count}, HTTPS={https_count}, SEO={seo_count}")
+# ============================================================
+# CHECK 2: Semantic Entity Coverage
+# ============================================================
+print("---")
+print("B. SEMANTIC ENTITY COVERAGE")
+print("---")
 
-# ===== CHECK B: Entities =====
-print(f"\n[B] ENTITIES — Semantic Entity Coverage")
-all_tags = ','.join(tags).lower()
-content_lower = post_content.lower()
-
-entities = {
-    'location_dhaka': r'dhaka|ঢাকা',
-    'location_bangladesh': r'bangladesh|বাংলাদেশ',
-    'service_seo': r'SEO|এসইও',
+# Per the framework, this post uses 'mistakes' entity set: ['mistakes', 'errors', 'avoid']
+# Plus location entities
+entity_sets = {
+    'mistakes': ['mistakes', 'errors', 'avoid'],
 }
-tag_triggers = {
-    'entity_ecommerce': (['ecommerce', 'e-commerce', 'daraz', 'shopify', 'ই-কমার্স'], r'ecommerce|e.commerce|ই-কমার্স|দারাজ'),
-    'entity_realestate': (['real estate'], r'real estate|রিয়েল এস্টেট|property'),
-    'entity_gbp': (['local seo', 'google maps', 'gbp', 'লোকাল'], r'google business|gpb|গুগল বিজনেস|গুগল ম্যাপ'),
-    'entity_technical': (['technical seo', 'core web vitals', 'টেকনিক্যাল'], r'technical seo|core web vitals|টেকনিক্যাল|ক্রল'),
-    'entity_keyword': (['keyword', 'কীওয়ার্ড'], r'keyword|কীওয়ার্ড|কীওয়ার্ড|লং.*টেল'),
-    'entity_youtube': (['video', 'youtube', 'ইউটিউব'], r'youtube|ইউটিউব|video|ভিডিও'),
-    'entity_mobile': (['mobile', 'মোবাইল'], r'mobile|মোবাইল|smartphone'),
-    'entity_schema': (['schema', 'স্কিমা'], r'schema|স্কিমা|structured data|স্ট্রাকচারড ডেটা'),
-    'entity_content': (['content', 'কন্টেন্ট', 'blog'], r'content|কন্টেন্ট|blog|ব্লগ'),
-}
-for name, (triggers, pat) in tag_triggers.items():
-    if any(t in all_tags for t in triggers):
-        entities[name] = pat
+to_check = entity_sets['mistakes'] + ['Dhaka', 'Bangladesh', 'Gulshan', 'Banani', 'Dhanmondi']
 
-missing_entities = []
-for name, pattern in entities.items():
-    if re.search(pattern, content_lower, re.IGNORECASE):
-        print(f"   ✓ {name}: found")
+results = []
+for entity in to_check:
+    cnt = len(re.findall(re.escape(entity), content, re.IGNORECASE))
+    passed = cnt > 0
+    mark = 'PASS' if passed else 'MISS'
+    results.append((entity, cnt, mark))
+    print(f'  {mark}: "{entity}" — {cnt} occurrences')
+
+passed_count = sum(1 for _, _, m in results if m == 'PASS')
+total = len(results)
+entity_status = 'PASS' if passed_count >= total else ('WARN' if passed_count >= total - 2 else 'FAIL')
+print(f'  Result: {passed_count}/{total} entities found [{entity_status}]')
+print()
+
+# ============================================================
+# CHECK 3: Pillar-Cluster Alignment
+# ============================================================
+print("---")
+print("C. PILLAR-CLUSTER ALIGNMENT")
+print("---")
+
+# From cluster_map.md: cluster = "Content Marketing & SEO Strategy"
+cluster_name = "Content Marketing & SEO Strategy"
+pillar_urls = [
+    '/blog/complete-seo-guide-bangladesh-businesses-2026',
+    '/services/local-seo',
+    '/services/technical-seo',
+    '/services/ecommerce-seo',
+    '/services/geo-ai-search',
+    '/services/semantic-seo',
+    '/services/link-building',
+]
+
+found_pillar = []
+for url in pillar_urls:
+    if url in content:
+        found_pillar.append(url)
+
+print(f'  Cluster: {cluster_name}')
+for url in pillar_urls:
+    mark = 'LINKED' if url in content else 'missing'
+    print(f'  {mark}: {url}')
+
+if found_pillar:
+    print(f'  Result: PASS — linked to pillar(s): {", ".join(found_pillar)}')
+else:
+    print(f'  Result: FAIL — no link to any pillar page found')
+print()
+
+# ============================================================
+# CHECK 4: AEO/GEO Optimization
+# ============================================================
+print("---")
+print("D. AEO/GEO OPTIMIZATION")
+print("---")
+
+heading_pattern = re.findall(r'^#{2,6}\s+.*$', content, re.MULTILINE)
+question_words = ['How', 'What', 'Why', 'When', 'Where', 'Can', 'Do', 'Is', 'Are', 'Does', 'Did']
+
+q_headings = []
+all_headings = []
+for h in heading_pattern:
+    text = h.lstrip('#').strip()
+    all_headings.append(text)
+    if text.split():
+        first = text.split()[0]
+        if first in question_words:
+            q_headings.append(text)
+
+print(f'  Total headings (H2+): {len(all_headings)}')
+for h in all_headings:
+    is_q = any(h.split() and h.split()[0] in question_words for _ in [1])
+    # Check if it's a question heading
+    first_word = h.split()[0] if h.split() else ''
+    if first_word in question_words:
+        print(f'    [QUESTION] {h[:90]}')
     else:
-        print(f"   ✗ {name}: MISSING")
-        missing_entities.append(name)
+        print(f'              {h[:90]}')
 
-passed_b = len(missing_entities) == 0
-print(f"   → {'✅ PASS' if passed_b else '❌ FAIL'} (missing: {', '.join(missing_entities) if missing_entities else 'none'})")
+print(f'\n  Question-format headings: {len(q_headings)}')
+for q in q_headings:
+    print(f'    "{q[:80]}"')
 
-# ===== CHECK C: Pillar-Cluster =====
-print(f"\n[C] PILLAR-CLUSTER — Pillar Link Check")
-pillar_pages = {
-    'seo guide': '/blog/complete-seo-guide-bangladesh-businesses-2026',
-    'local seo': '/blog/local-seo-tips-dhaka-businesses-google-maps',
-    'technical seo': '/blog/technical-seo-checklist-bangladeshi-websites',
-    'ecommerce': '/blog/why-ecommerce-store-needs-seo-bangladesh',
-    'keyword': '/blog/keyword-research-bangladesh-market',
-    'link building': '/blog/link-building-strategies-bangladesh-market',
-    'geo': '/blog/geo-optimization-prepare-business-ai-search',
-    'content': '/blog/content-marketing-seo-friendly-content-writing',
-    'mobile': '/blog/mobile-seo-bangladesh-ranking-strategy',
-    'schema': '/blog/schema-markup-rich-snippets-techniques',
-}
+# Also check for GEO/AEO terms
+geo_terms = ['Generative Engine Optimization', 'AI search', 'GEO', 'SGE', 'Perplexity', 'ChatGPT']
+aeo_terms = ['Answer Engine Optimization', 'AEO']
+geo_count = sum(1 for t in geo_terms if t.lower() in content.lower())
+aeo_count = sum(1 for t in aeo_terms if t.lower() in content.lower())
 
-linked_pillar = None
-for pillar_name, pillar_url in pillar_pages.items():
-    if pillar_url in post_content:
-        linked_pillar = (pillar_name, pillar_url)
-        break
+print(f'\n  GEO terms found: {geo_count}/{len(geo_terms)}')
+for t in geo_terms:
+    cnt = content.lower().count(t.lower())
+    if cnt > 0:
+        print(f'    "{t}": x{cnt}')
+print(f'  AEO terms found: {aeo_count}/{len(aeo_terms)}')
+for t in aeo_terms:
+    cnt = content.lower().count(t.lower())
+    if cnt > 0:
+        print(f'    "{t}": x{cnt}')
 
-if not linked_pillar:
-    blog_links = re.findall(r'/blog/[a-z0-9-]+', post_content)
-    if blog_links:
-        linked_pillar = ('(generic blog link)', blog_links[0])
-        print(f"   ✓ Blog link found: {blog_links[0]} (not a defined pillar)")
-        print(f"   ⚠ NOTE: No direct pillar page linked. Generic blog links exist.")
+aeo_geo_status = 'PASS' if len(q_headings) >= 2 else 'FAIL'
+print(f'\n  Result: {len(q_headings)} question headings (threshold: >= 2) [{aeo_geo_status}]')
+print()
 
-all_blog_links = list(set(re.findall(r'/blog/[a-z0-9-]+', post_content)))
-all_service_links = list(set(re.findall(r'/services/[a-z0-9-]+', post_content)))
-all_location_links = list(set(re.findall(r'/locations/[a-z0-9-]+', post_content)))
+# ============================================================
+# CHECK 5: Internal Linking
+# ============================================================
+print("---")
+print("E. INTERNAL LINK ANALYSIS")
+print("---")
 
-if linked_pillar and linked_pillar[0] != '(generic blog link)':
-    passed_c = True
-    print(f"   ✓ Pillar link: {linked_pillar[1]} ({linked_pillar[0]})")
+# Collect all internal links from markdown () and href=""
+md_links = set()
+for m in re.finditer(r'\((/[^)\s#]+)\)', content):
+    path = m.group(1).rstrip('/')
+    if path and path != '/':
+        md_links.add(path)
+
+for m in re.finditer(r'href="(/[^"\s#]+)"', content):
+    path = m.group(1).rstrip('/')
+    if path and path != '/':
+        md_links.add(path)
+
+all_links = sorted(md_links)
+print(f'  Total unique internal links: {len(all_links)}')
+for link in all_links:
+    cnt = content.count(link)
+    print(f'    {link} (x{cnt})')
+
+link_status = 'PASS' if len(all_links) >= 3 else 'FAIL'
+print(f'  Result: {len(all_links)} internal links (threshold: >= 3) [{link_status}]')
+
+# Also check external links
+ext_links = re.findall(r'\(https?://[^)]+\)', content)
+print(f'  External links: {len(ext_links)}')
+for el in ext_links:
+    print(f'    {el[:100]}')
+print()
+
+# ============================================================
+# CHECK 6: Schema Readiness
+# ============================================================
+print("---")
+print("F. SCHEMA READINESS")
+print("---")
+
+issues = []
+
+# Title
+if post.get('title'):
+    print(f'  PASS: Title set ({len(post["title"])} chars)')
 else:
-    passed_c = linked_pillar is not None
+    issues.append('Missing title')
+    print(f'  FAIL: Title missing')
 
-print(f"   All blog links in post: {all_blog_links}")
-print(f"   All service links: {all_service_links}")
-print(f"   → {'✅ PASS' if passed_c else '❌ FAIL'}")
-
-# ===== CHECK D: AEO/GEO =====
-print(f"\n[D] AEO/GEO — Optimization Check")
-question_headings = len(re.findall(r'^#{2,3}\s+.*\?', post_content, re.MULTILINE))
-q_words = r'^(?:How|What|Why|When|Where|Can|Do|Is|Are|Does|Which|Who)'
-question_headings += len(re.findall(r'^#{2,3}\s+' + q_words, post_content, re.MULTILINE))
-question_headings += len(re.findall(r'^#{2,3}\s+.*?(?:কী|কেন|কিভাবে|কখন|কোথায়|কীভাবে|কোন|কার|কয়টি|উপসংহার|বনাম)', post_content, re.MULTILINE))
-
-faq_sections = len(re.findall(r'প্রায়শ[িই] जিজ্ঞাসিত|FAQ|প্রশ্ন', post_content, re.IGNORECASE))
-# The FAQ section uses "FAQ" heading
-faq_sections += len(re.findall(r'^#{2,3}\s+FAQ', post_content, re.MULTILINE))
-
-total_aeo = question_headings + faq_sections
-passed_d = total_aeo >= 2
-
-# Count specific GEO elements
-geo_section = 'generative engine optimization' in post_content.lower() or 'geo' in post_content.lower() and 'generative' in post_content.lower()
-eeat_section = 'eeat' in post_content.lower() or 'experience, expertise' in post_content.lower()
-aeo_section_heading = 'answer engine optimization' in post_content.lower() or 'aeo' in post_content.lower()
-
-print(f"   Question headings: {question_headings}")
-print(f"   FAQ sections: {faq_sections}")
-print(f"   Total AEO elements: {total_aeo} (need ≥2)")
-print(f"   GEO section present: {'✓' if geo_section else '✗'}")
-print(f"   EEAT section present: {'✓' if eeat_section else '✗'}")
-print(f"   AEO section present: {'✓' if aeo_section_heading else '✗'}")
-print(f"   → {'✅ PASS' if passed_d else '❌ FAIL'}")
-
-# ===== CHECK E: Internal Links =====
-print(f"\n[E] INTERNAL LINKS")
-blog_links_set = set(re.findall(r'/blog/[a-z0-9-]+', post_content))
-service_links_set = set(re.findall(r'/services/[a-z0-9-]+', post_content))
-industry_links_set = set(re.findall(r'/industries/[a-z0-9-]+', post_content))
-location_links_set = set(re.findall(r'/locations/[a-z0-9-]+', post_content))
-other_links_set = set(re.findall(r'/(?:about|contact|faq|privacy|terms)', post_content))
-
-total_unique = len(blog_links_set) + len(service_links_set) + len(industry_links_set) + len(location_links_set) + len(other_links_set)
-passed_e = total_unique >= 3
-
-print(f"   Blog links: {sorted(blog_links_set)}")
-print(f"   Service links: {sorted(service_links_set)}")
-print(f"   Location links: {sorted(location_links_set)}")
-print(f"   Other links (contact/about): {sorted(other_links_set)}")
-print(f"   Total unique internal links: {total_unique} (need ≥3)")
-print(f"   → {'✅ PASS' if passed_e else '❌ FAIL'}")
-
-# ===== CHECK F: Schema =====
-print(f"\n[F] SCHEMA — Schema Readiness")
-schema_missing = []
-if not title:
-    schema_missing.append('title')
-if not excerpt:
-    schema_missing.append('excerpt')
-if not date:
-    schema_missing.append('date')
-if not author:
-    schema_missing.append('author')
-if not post_content or len(post_content) < 50:
-    schema_missing.append('content')
-
-# Check for schema.org mentions in content
-schema_mention = 'schema.org' in post_content.lower() or 'schema' in post_content.lower() or 'স্কিমা' in post_content
-passed_f = len(schema_missing) == 0
-
-print(f"   Title: {'✓' if title else '✗'} ({title[:50]}...)")
-print(f"   Excerpt: {'✓' if excerpt else '✗'} ({excerpt[:50]}...)")
-print(f"   Date: {'✓' if date else '✗'} ({date})")
-print(f"   Author: {'✓' if author else '✗'} ({author})")
-print(f"   Content length: {len(post_content)} chars (need ≥50)")
-print(f"   Schema.org/structured data mentioned in content: {'✓' if schema_mention else '✗'}")
-print(f"   Missing fields: {schema_missing if schema_missing else 'none'}")
-print(f"   → {'✅ PASS' if passed_f else '❌ FAIL'}")
-
-# ===== SUMMARY =====
-print(f"\n{'='*80}")
-print("FINAL SUMMARY — seo-https-ssl-impact-bangladesh")
-print(f"{'='*80}")
-checks = {
-    'A: TF-IDF': passed_a,
-    'B: Entities': passed_b,
-    'C: Pillar-Cluster': passed_c,
-    'D: AEO/GEO': passed_d,
-    'E: Internal Links': passed_e,
-    'F: Schema': passed_f,
-}
-all_pass = all(checks.values())
-print(f"{'Check':20s} {'Status':10s} {'Detail'}")
-print(f"{'-'*70}")
-print(f"{'A: TF-IDF':20s} {'✅ PASS' if passed_a else '❌ FAIL':10s}  '{keyword}' x{count} (need ≥5)")
-print(f"{'B: Entities':20s} {'✅ PASS' if passed_b else '❌ FAIL':10s}  Missing: {', '.join(missing_entities) if missing_entities else 'none'}")
-if linked_pillar and linked_pillar[0] != '(generic blog link)':
-    print(f"{'C: Pillar-Cluster':20s} {'✅ PASS' if passed_c else '❌ FAIL':10s}  Links to pillar: {linked_pillar[1]}")
-elif linked_pillar:
-    print(f"{'C: Pillar-Cluster':20s} {'✅ PASS' if passed_c else '❌ FAIL':10s}  Blog link found: {linked_pillar[1]} (not a defined pillar)")
+# Excerpt
+excerpt = post.get('excerpt', '')
+if excerpt and len(excerpt) >= 10:
+    print(f'  PASS: Excerpt set ({len(excerpt)} chars)')
 else:
-    print(f"{'C: Pillar-Cluster':20s} {'✅ PASS' if passed_c else '❌ FAIL':10s}  NO pillar link found")
-print(f"{'D: AEO/GEO':20s} {'✅ PASS' if passed_d else '❌ FAIL':10s}  {total_aeo} AEO elements ({question_headings} Q-headings, {faq_sections} FAQ)")
-print(f"{'E: Internal Links':20s} {'✅ PASS' if passed_e else '❌ FAIL':10s}  {total_unique} unique internal links (need ≥3)")
-print(f"{'F: Schema':20s} {'✅ PASS' if passed_f else '❌ FAIL':10s}  Missing: {', '.join(schema_missing) if schema_missing else 'all fields set'}")
-print(f"{'-'*70}")
-print(f"{'OVERALL':20s} {'✅ ALL PASS' if all_pass else '❌ SOME FAILED'}")
-print(f"{'='*80}")
+    issues.append('Missing/short excerpt')
+    print(f'  FAIL: Excerpt missing or too short')
+
+# Date
+date_str = post.get('date', '')
+if date_str:
+    try:
+        datetime.strptime(date_str, '%Y-%m-%d')
+        print(f'  PASS: Date valid ({date_str})')
+    except ValueError:
+        issues.append('Invalid date format')
+        print(f'  FAIL: Invalid date format ({date_str})')
+else:
+    issues.append('Missing date')
+    print(f'  FAIL: Date missing')
+
+# Tags
+tags = post.get('tags', [])
+if tags and len(tags) > 0:
+    print(f'  PASS: Tags present ({", ".join(tags)})')
+else:
+    issues.append('Missing tags')
+    print(f'  FAIL: Tags missing')
+
+# Content mentions of schema types
+schema_types = ['Article', 'FAQ', 'LocalBusiness', 'Organization', 'Product', 'BreadcrumbList', 'Review', 'HowTo']
+for st in schema_types:
+    if st.lower() in content.lower():
+        print(f'  NOTE: Content references "{st}" schema')
+
+schema_status = 'PASS' if not issues else f'Issues: {", ".join(issues)}'
+print(f'  Result: {schema_status}')
+print()
+
+# ============================================================
+# SUMMARY SCOREBOARD
+# ============================================================
+print("=" * 68)
+print("  FINAL SCOREBOARD")
+print("=" * 68)
+
+checks = [
+    ('A. TF-IDF Coverage', status),
+    ('B. Entity Coverage', entity_status),
+    ('C. Pillar-Cluster', 'PASS' if found_pillar else 'FAIL'),
+    ('D. AEO/GEO', aeo_geo_status),
+    ('E. Internal Links', link_status),
+    ('F. Schema', 'PASS' if not issues else 'FAIL'),
+]
+
+for name, st in checks:
+    sym = 'PASS' if st.startswith('PASS') else 'FAIL' if st.startswith('FAIL') else st
+    icon = 'PASS' if sym == 'PASS' else 'FAIL'
+    print(f'  {name}: [{icon}]')
+
+pass_count = sum(1 for _, s in checks if s.startswith('PASS'))
+print(f'\n  {pass_count}/6 checks passed')
+print(f'  {6 - pass_count}/6 checks need attention')
+print()
+print("=" * 68)

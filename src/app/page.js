@@ -38,7 +38,7 @@ export const metadata = {
     siteName: "Kanok Miah",
     title: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah",
     description:
-      "Rank higher on Google & AI Search with Kanok Miah, the best SEO expert in Bangladesh and a trusted SEO specialist in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
+      "Rank higher on Google and AI Search with Kanok Miah, the best SEO expert in Bangladesh and a trusted SEO specialist in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
     url: "https://kanokmiah.com.bd",
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Best SEO Expert in Dhaka, Bangladesh | Kanok Miah",
     description:
-      "Rank higher on Google & AI Search with Kanok Miah, the best SEO expert in Bangladesh and a trusted SEO specialist in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
+      "Rank higher on Google and AI Search with Kanok Miah, the best SEO expert in Bangladesh and a trusted SEO specialist in Dhaka. 6+ years, 210+ successful SEO campaigns. Free SEO audit—Call 01604-809110.",
     images: ["https://kanokmiah.com.bd/kanok-miah-profile.webp"],
   },
   robots: {

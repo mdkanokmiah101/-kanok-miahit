@@ -1,0 +1,1577 @@
+[
+  {
+    "slug": "complete-seo-guide-bangladesh-businesses-2026",
+    "title": "Complete SEO Guide for Bangladesh Businesses in 2026",
+    "date": "2026-06-15",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "complete seo guide",
+        "count": 0,
+        "flag": true,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 81,
+          "dhaka": 30,
+          "chittagong": 4,
+          "sylhet": 2
+        },
+        "industries": {
+          "seo": 102,
+          "garment": 19,
+          "ecommerce": 12,
+          "food": 10,
+          "real-estate": 8,
+          "healthcare": 3,
+          "education": 2
+        },
+        "services_count": 18,
+        "services": [
+          "keyword research",
+          "link building",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "google business profile",
+          "gbp",
+          "schema markup",
+          "structured data"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": true,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 10,
+        "question_marks_in_content": 9,
+        "faq_subsections": 9,
+        "headings_examples": [
+          "why seo matters more than ever for bangladesh businesses in 2026",
+          "how long does seo take to show results in bangladesh?",
+          "what is the cost of seo services in bangladesh?",
+          "does seo work for bengali language content?",
+          "how is geo different from traditional seo?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 7,
+        "services_links": 1,
+        "industries_links": 2,
+        "locations_links": 2,
+        "total_internal_links": 12,
+        "unique_links_count": 12,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "SEO Guide",
+          "Bangladesh SEO",
+          "Digital Marketing",
+          "2026"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "Complete SEO Guide for Bangladesh Businesses in 2026",
+        "excerpt_length": 184
+      }
+    }
+  },
+  {
+    "slug": "local-seo-tips-dhaka-businesses-google-maps",
+    "title": "Local SEO Tips for Dhaka Businesses: Dominate Google Maps",
+    "date": "2026-06-10",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "local",
+        "count": 71,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "dhaka": 66,
+          "bangladesh": 32,
+          "chittagong": 1,
+          "sylhet": 1
+        },
+        "industries": {
+          "seo": 56,
+          "food": 19,
+          "healthcare": 5,
+          "ecommerce": 3,
+          "real-estate": 3,
+          "education": 1
+        },
+        "services_count": 14,
+        "services": [
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "google business profile",
+          "gbp",
+          "structured data",
+          "mobile optimization",
+          "voice search",
+          "geo"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 9,
+        "question_marks_in_content": 8,
+        "faq_subsections": 6,
+        "headings_examples": [
+          "what is local seo?",
+          "why local seo is critical for dhaka businesses",
+          "how long does local seo take to show results in dhaka?",
+          "what is the most important factor for google maps ranking?",
+          "how many reviews do i need to rank higher?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 5,
+        "services_links": 5,
+        "industries_links": 6,
+        "locations_links": 1,
+        "total_internal_links": 17,
+        "unique_links_count": 17,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Local SEO",
+          "Dhaka",
+          "Google Maps",
+          "GBP"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "Local SEO Tips for Dhaka Businesses: Dominate Google Maps",
+        "excerpt_length": 160
+      }
+    }
+  },
+  {
+    "slug": "why-ecommerce-store-needs-seo-bangladesh",
+    "title": "Why Your E-commerce Store Needs SEO in Bangladesh",
+    "date": "2026-06-05",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "e-commerce",
+        "count": 50,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 53,
+          "dhaka": 13,
+          "chittagong": 2,
+          "sylhet": 2
+        },
+        "industries": {
+          "ecommerce": 94,
+          "seo": 73,
+          "garment": 5,
+          "food": 4,
+          "real-estate": 1
+        },
+        "services_count": 15,
+        "services": [
+          "link building",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "google business profile",
+          "structured data",
+          "mobile optimization",
+          "voice search",
+          "geo"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 8,
+        "question_marks_in_content": 8,
+        "faq_subsections": 6,
+        "headings_examples": [
+          "why organic traffic matters for e-commerce",
+          "how long does e-commerce seo take to show results?",
+          "is seo better than google ads for e-commerce?",
+          "how do i optimize product pages for multiple variations?",
+          "should i use bengali or english for my e-commerce seo?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 4,
+        "services_links": 5,
+        "industries_links": 3,
+        "locations_links": 3,
+        "total_internal_links": 15,
+        "unique_links_count": 15,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "E-commerce SEO",
+          "Daraz",
+          "Shopify",
+          "Bangladesh"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "Why Your E-commerce Store Needs SEO in Bangladesh",
+        "excerpt_length": 158
+      }
+    }
+  },
+  {
+    "slug": "technical-seo-checklist-bangladeshi-websites",
+    "title": "Technical SEO Checklist for Bangladeshi Websites",
+    "date": "2026-05-28",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "technical",
+        "count": 39,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 73,
+          "dhaka": 8,
+          "chittagong": 3,
+          "sylhet": 3
+        },
+        "industries": {
+          "seo": 70,
+          "ecommerce": 12,
+          "education": 5,
+          "healthcare": 4,
+          "food": 4,
+          "real-estate": 3
+        },
+        "services_count": 13,
+        "services": [
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "schema markup",
+          "structured data",
+          "core web vitals",
+          "mobile optimization",
+          "voice search",
+          "geo"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 9,
+        "question_marks_in_content": 9,
+        "faq_subsections": 6,
+        "headings_examples": [
+          "what is technical seo?",
+          "why technical seo matters for bangladeshi websites",
+          "what is the most common technical seo issue on bangladeshi websites?",
+          "how do i check core web vitals?",
+          "what is the difference between crawlability and indexability?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 5,
+        "services_links": 5,
+        "industries_links": 6,
+        "locations_links": 8,
+        "total_internal_links": 24,
+        "unique_links_count": 24,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Technical SEO",
+          "Core Web Vitals",
+          "Website Optimization",
+          "Bangladesh"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "Technical SEO Checklist for Bangladeshi Websites",
+        "excerpt_length": 170
+      }
+    }
+  },
+  {
+    "slug": "how-to-choose-right-seo-agency-bangladesh",
+    "title": "How to Choose the Right SEO Agency in Bangladesh",
+    "date": "2026-05-20",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "choose right seo",
+        "count": 0,
+        "flag": true,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 56,
+          "dhaka": 16,
+          "chittagong": 2,
+          "sylhet": 2
+        },
+        "industries": {
+          "seo": 91,
+          "ecommerce": 4,
+          "food": 3,
+          "education": 3,
+          "real-estate": 2
+        },
+        "services_count": 16,
+        "services": [
+          "keyword research",
+          "link building",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "google business profile",
+          "structured data",
+          "site audit",
+          "voice search"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 9,
+        "question_marks_in_content": 14,
+        "faq_subsections": 6,
+        "headings_examples": [
+          "how to choose the right seo agency in bangladesh",
+          "what a good seo agency looks like",
+          "how much should i pay for seo in bangladesh?",
+          "can i trust an agency that guarantees number one rankings?",
+          "what is better \u2014 a freelancer or an agency?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 6,
+        "services_links": 4,
+        "industries_links": 6,
+        "locations_links": 3,
+        "total_internal_links": 19,
+        "unique_links_count": 19,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "SEO Agency",
+          "Bangladesh",
+          "Agency Selection",
+          "Digital Marketing"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "How to Choose the Right SEO Agency in Bangladesh",
+        "excerpt_length": 151
+      }
+    }
+  },
+  {
+    "slug": "link-building-strategies-bangladesh-market",
+    "title": "Link Building Strategies for Bangladesh Market",
+    "date": "2026-05-15",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "link",
+        "count": 153,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 110,
+          "dhaka": 15,
+          "chittagong": 4,
+          "sylhet": 3
+        },
+        "industries": {
+          "seo": 33,
+          "garment": 12,
+          "education": 8,
+          "ecommerce": 7,
+          "real-estate": 7,
+          "food": 4,
+          "healthcare": 3
+        },
+        "services_count": 11,
+        "services": [
+          "link building",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "structured data",
+          "voice search",
+          "geo",
+          "aeo",
+          "analytics",
+          "reporting"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 10,
+        "question_marks_in_content": 10,
+        "faq_subsections": 6,
+        "headings_examples": [
+          "what is link building?",
+          "why link building matters in bangladesh",
+          "what to avoid in link building",
+          "how many backlinks do i need to rank in bangladesh?",
+          "how long does link building take to show results?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 7,
+        "services_links": 4,
+        "industries_links": 8,
+        "locations_links": 3,
+        "total_internal_links": 22,
+        "unique_links_count": 22,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Link Building",
+          "Backlinks",
+          "SEO Strategy",
+          "Bangladesh"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "Link Building Strategies for Bangladesh Market",
+        "excerpt_length": 185
+      }
+    }
+  },
+  {
+    "slug": "geo-optimization-prepare-business-ai-search",
+    "title": "GEO Optimization: Prepare Your Business for AI Search",
+    "date": "2026-05-08",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "geo",
+        "count": 43,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 53,
+          "dhaka": 14,
+          "chittagong": 2,
+          "sylhet": 2
+        },
+        "industries": {
+          "seo": 62,
+          "ecommerce": 13,
+          "garment": 7,
+          "healthcare": 5,
+          "education": 5,
+          "real-estate": 4,
+          "food": 3
+        },
+        "services_count": 9,
+        "services": [
+          "keyword research",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "structured data",
+          "geo",
+          "reporting",
+          "backlink"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "geo-optimization-prepare-business-ai-search",
+        "is_self": true,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 11,
+        "question_marks_in_content": 13,
+        "faq_subsections": 7,
+        "headings_examples": [
+          "what is generative engine optimization?",
+          "how ai search engines work",
+          "why geo matters for bangladesh businesses",
+          "how to be first in ai search results",
+          "what is the difference between seo and geo?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 5,
+        "services_links": 6,
+        "industries_links": 6,
+        "locations_links": 3,
+        "total_internal_links": 20,
+        "unique_links_count": 20,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "GEO",
+          "AI Search",
+          "Generative Engine Optimization",
+          "Future of SEO"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "GEO Optimization: Prepare Your Business for AI Search",
+        "excerpt_length": 180
+      }
+    }
+  },
+  {
+    "slug": "seo-garments-textile-industry-b2b-lead-generation",
+    "title": "SEO for Garments & Textile Industry: B2B Lead Generation",
+    "date": "2026-05-01",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "seo",
+        "count": 62,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 82,
+          "dhaka": 10,
+          "chittagong": 6,
+          "sylhet": 2
+        },
+        "industries": {
+          "garment": 105,
+          "seo": 65,
+          "ecommerce": 6,
+          "real-estate": 3,
+          "healthcare": 2,
+          "education": 2
+        },
+        "services_count": 13,
+        "services": [
+          "link building",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "structured data",
+          "mobile optimization",
+          "voice search",
+          "geo",
+          "aeo"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "seo-garments-textile-industry-b2b-lead-generation",
+        "is_self": true,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 9,
+        "question_marks_in_content": 11,
+        "faq_subsections": 7,
+        "headings_examples": [
+          "what is garments and textile seo?",
+          "why digital visibility matters for bangladeshi garment manufacturers",
+          "how can garment factories benefit from seo?",
+          "is seo better than trade shows for b2b lead generation?",
+          "how long does seo take for garment industry websites?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 7,
+        "services_links": 4,
+        "industries_links": 5,
+        "locations_links": 3,
+        "total_internal_links": 19,
+        "unique_links_count": 19,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Garments SEO",
+          "Textile Industry",
+          "B2B SEO",
+          "Bangladesh RMG"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "SEO for Garments & Textile Industry: B2B Lead Generation",
+        "excerpt_length": 170
+      }
+    }
+  },
+  {
+    "slug": "google-business-profile-optimization-guide-bangladesh",
+    "title": "Google Business Profile Optimization Guide for Bangladesh",
+    "date": "2026-04-22",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "google",
+        "count": 48,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 53,
+          "dhaka": 34,
+          "chittagong": 5,
+          "sylhet": 5
+        },
+        "industries": {
+          "seo": 29,
+          "food": 13,
+          "healthcare": 5,
+          "ecommerce": 2
+        },
+        "services_count": 12,
+        "services": [
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "google business profile",
+          "gbp",
+          "structured data",
+          "voice search",
+          "geo",
+          "aeo"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 14,
+        "question_marks_in_content": 8,
+        "faq_subsections": 11,
+        "headings_examples": [
+          "why google business profile is critical in bangladesh",
+          "how google business profile works in bangladesh",
+          "how gbp rankings are determined",
+          "how to get more reviews",
+          "how to respond to reviews"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 6,
+        "services_links": 3,
+        "industries_links": 2,
+        "locations_links": 3,
+        "total_internal_links": 14,
+        "unique_links_count": 14,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Google Business Profile",
+          "Local SEO",
+          "Google Maps",
+          "Bangladesh Business"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "Google Business Profile Optimization Guide for Bangladesh",
+        "excerpt_length": 155
+      }
+    }
+  },
+  {
+    "slug": "seo-vs-google-ads-whats-best-bangladesh-businesses",
+    "title": "SEO vs Google Ads: What's Best for Bangladesh Businesses",
+    "date": "2026-04-15",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "seo",
+        "count": 107,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 66,
+          "dhaka": 16,
+          "chittagong": 4,
+          "sylhet": 2
+        },
+        "industries": {
+          "seo": 119,
+          "ecommerce": 11,
+          "real-estate": 7,
+          "food": 3,
+          "garment": 2,
+          "healthcare": 1
+        },
+        "services_count": 16,
+        "services": [
+          "keyword research",
+          "link building",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "google business profile",
+          "structured data",
+          "core web vitals",
+          "voice search"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 12,
+        "question_marks_in_content": 9,
+        "faq_subsections": 7,
+        "headings_examples": [
+          "the great debate: seo or google ads?",
+          "when to choose seo",
+          "when to choose google ads",
+          "how to optimize for ai search in bangladesh",
+          "which is cheaper: seo or google ads?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 8,
+        "services_links": 3,
+        "industries_links": 2,
+        "locations_links": 2,
+        "total_internal_links": 15,
+        "unique_links_count": 15,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "SEO vs Ads",
+          "Google Ads",
+          "PPC",
+          "Bangladesh Digital Marketing"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "SEO vs Google Ads: What's Best for Bangladesh Businesses",
+        "excerpt_length": 165
+      }
+    }
+  },
+  {
+    "slug": "seo-real-estate-developers-dhaka",
+    "title": "SEO for Real Estate Developers in Dhaka: Generate More Property Leads",
+    "date": "2026-06-27",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "seo",
+        "count": 51,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "dhaka": 57,
+          "bangladesh": 28,
+          "chittagong": 2,
+          "sylhet": 2
+        },
+        "industries": {
+          "real-estate": 136,
+          "seo": 55,
+          "garment": 5,
+          "food": 4,
+          "ecommerce": 3,
+          "education": 3,
+          "healthcare": 2
+        },
+        "services_count": 11,
+        "services": [
+          "keyword research",
+          "technical seo",
+          "local seo",
+          "google business profile",
+          "gbp",
+          "schema markup",
+          "structured data",
+          "mobile optimization",
+          "geo",
+          "reporting"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 6,
+        "question_marks_in_content": 15,
+        "faq_subsections": 5,
+        "headings_examples": [
+          "why seo matters for dhaka real estate developers",
+          "how long does real estate seo take to show results in dhaka?",
+          "what is the monthly cost of seo for a real estate developer in bangladesh?",
+          "how important is google business profile for real estate developers?",
+          "can seo work for small real estate developers with limited budget?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 8,
+        "services_links": 2,
+        "industries_links": 3,
+        "locations_links": 3,
+        "total_internal_links": 16,
+        "unique_links_count": 16,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Real Estate SEO",
+          "Property SEO",
+          "Dhaka Real Estate",
+          "Lead Generation"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "SEO for Real Estate Developers in Dhaka: Generate More Property Leads",
+        "excerpt_length": 183
+      }
+    }
+  },
+  {
+    "slug": "mobile-seo-optimization-bangladesh-mobile-first-era",
+    "title": "Mobile SEO for Bangladesh: Optimize for the Mobile-First Era",
+    "date": "2026-06-30",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "mobile",
+        "count": 115,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 76,
+          "dhaka": 25,
+          "chittagong": 4,
+          "sylhet": 3
+        },
+        "industries": {
+          "seo": 71,
+          "ecommerce": 13,
+          "food": 7,
+          "real-estate": 2
+        },
+        "services_count": 17,
+        "services": [
+          "link building",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "google business profile",
+          "gbp",
+          "structured data",
+          "core web vitals",
+          "mobile optimization"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 9,
+        "question_marks_in_content": 9,
+        "faq_subsections": 8,
+        "headings_examples": [
+          "what is mobile seo?",
+          "what this means for bangladeshi websites",
+          "how ai search changes mobile seo",
+          "how long does mobile seo take to show results?",
+          "is mobile seo different from regular seo?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 8,
+        "services_links": 5,
+        "industries_links": 3,
+        "locations_links": 3,
+        "total_internal_links": 19,
+        "unique_links_count": 19,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Mobile SEO",
+          "Mobile Optimization",
+          "Bangladesh",
+          "Mobile-First Indexing"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "Mobile SEO for Bangladesh: Optimize for the Mobile-First Era",
+        "excerpt_length": 216
+      }
+    }
+  },
+  {
+    "slug": "content-marketing-strategy-bangladeshi-brands-seo",
+    "title": "Content Marketing Strategy for Bangladeshi Brands: Drive SEO Growth",
+    "date": "2026-07-03",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "content",
+        "count": 150,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 75,
+          "dhaka": 17,
+          "chittagong": 3,
+          "sylhet": 3
+        },
+        "industries": {
+          "seo": 51,
+          "ecommerce": 4,
+          "garment": 3,
+          "education": 2,
+          "real-estate": 1,
+          "food": 1
+        },
+        "services_count": 13,
+        "services": [
+          "keyword research",
+          "link building",
+          "content marketing",
+          "technical seo",
+          "local seo",
+          "on-page seo",
+          "google business profile",
+          "schema markup",
+          "structured data",
+          "geo"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 9,
+        "question_marks_in_content": 7,
+        "faq_subsections": 6,
+        "headings_examples": [
+          "what is content marketing?",
+          "why content marketing is the engine of seo in bangladesh",
+          "how to optimize content for ai search engines",
+          "how often should i publish content for seo?",
+          "what type of content works best for bangladeshi audiences?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 8,
+        "services_links": 2,
+        "industries_links": 0,
+        "locations_links": 3,
+        "total_internal_links": 13,
+        "unique_links_count": 13,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Content Marketing",
+          "Bangladesh",
+          "SEO Strategy",
+          "Digital Marketing"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "Content Marketing Strategy for Bangladeshi Brands: Drive SEO Growth",
+        "excerpt_length": 213
+      }
+    }
+  },
+  {
+    "slug": "international-seo-bangladesh-exporters-global-buyers",
+    "title": "International SEO for Bangladesh Exporters: Attract Global Buyers",
+    "date": "2026-07-06",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "international",
+        "count": 68,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 91,
+          "dhaka": 9,
+          "chittagong": 4,
+          "sylhet": 2
+        },
+        "industries": {
+          "garment": 67,
+          "seo": 58,
+          "ecommerce": 1,
+          "real-estate": 1
+        },
+        "services_count": 11,
+        "services": [
+          "keyword research",
+          "link building",
+          "technical seo",
+          "local seo",
+          "google business profile",
+          "structured data",
+          "voice search",
+          "geo",
+          "aeo",
+          "conversion rate"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 8,
+        "question_marks_in_content": 6,
+        "faq_subsections": 5,
+        "headings_examples": [
+          "why standard seo isn't enough for exporters",
+          "how to optimize export content for ai search",
+          "how long does international seo take to show results for bangladeshi exporters?",
+          "what is the most important technical element for international seo?",
+          "should bangladeshi exporters use .com or .com.bd domains?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 6,
+        "services_links": 2,
+        "industries_links": 1,
+        "locations_links": 3,
+        "total_internal_links": 12,
+        "unique_links_count": 12,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": true,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "International SEO",
+          "Bangladesh Exporters",
+          "B2B SEO",
+          "Global SEO"
+        ],
+        "missing_fields": [],
+        "flag": false,
+        "title": "International SEO for Bangladesh Exporters: Attract Global Buyers",
+        "excerpt_length": 259
+      }
+    }
+  },
+  {
+    "slug": "seo-bangla-beginners-guide-google-ranking",
+    "title": "\u09b8\u09b9\u099c \u09ad\u09be\u09b7\u09be\u09af\u09bc SEO: \u0995\u09c0\u09ad\u09be\u09ac\u09c7 \u0997\u09c1\u0997\u09b2\u09c7 \u09aa\u09cd\u09b0\u09a5\u09ae \u09aa\u09c7\u099c\u09c7 \u0986\u09b8\u09ac\u09c7\u09a8 (\u09e8\u09e6\u09e8\u09ec \u0997\u09be\u0987\u09a1)",
+    "date": "2026-07-08",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "\u09b8\u09b9\u099c",
+        "count": 3,
+        "flag": true,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 11,
+          "dhaka": 7,
+          "chittagong": 1,
+          "sylhet": 1
+        },
+        "industries": {
+          "seo": 96,
+          "ecommerce": 2,
+          "real-estate": 1
+        },
+        "services_count": 5,
+        "services": [
+          "on-page seo",
+          "core web vitals",
+          "geo",
+          "aeo",
+          "backlink"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 15,
+        "question_marks_in_content": 18,
+        "faq_subsections": 0,
+        "headings_examples": [
+          "seo \u0995\u09c0?",
+          "seo \u0995\u09c0 \u098f\u09ac\u0982 \u0995\u09c7\u09a8 \u098f\u099f\u09bf \u09ac\u09be\u0982\u09b2\u09be\u09a6\u09c7\u09b6\u09bf \u09ac\u09cd\u09af\u09ac\u09b8\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u0985\u09aa\u09b0\u09bf\u09b9\u09be\u09b0\u09cd\u09af?",
+          "\u0997\u09c1\u0997\u09b2 \u0995\u09c0\u09ad\u09be\u09ac\u09c7 \u0993\u09af\u09bc\u09c7\u09ac\u09b8\u09be\u0987\u099f \u09b0\u200d\u09cd\u09af\u09be\u0982\u0995 \u0995\u09b0\u09c7?",
+          "seo \u09b6\u09bf\u0996\u09a4\u09c7 \u0995\u09a4\u09a6\u09bf\u09a8 \u09b2\u09be\u0997\u09c7?",
+          "seo \u0995\u09b0\u09a4\u09c7 \u0995\u09bf \u099f\u09be\u0995\u09be \u0996\u09b0\u099a \u09b9\u09af\u09bc?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 8,
+        "services_links": 5,
+        "industries_links": 0,
+        "locations_links": 3,
+        "total_internal_links": 16,
+        "unique_links_count": 16,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": false,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "SEO Basics",
+          "Bangla SEO",
+          "Google Ranking",
+          "Beginner Guide",
+          "Bangladesh"
+        ],
+        "missing_fields": [
+          "excerpt"
+        ],
+        "flag": true,
+        "title": "\u09b8\u09b9\u099c \u09ad\u09be\u09b7\u09be\u09af\u09bc SEO: \u0995\u09c0\u09ad\u09be\u09ac\u09c7 \u0997\u09c1\u0997\u09b2\u09c7 \u09aa\u09cd\u09b0\u09a5\u09ae \u09aa\u09c7\u099c\u09c7 \u0986\u09b8\u09ac\u09c7\u09a8 (\u09e8\u09e6\u09e8\u09ec \u0997\u09be\u0987\u09a1)",
+        "excerpt_length": 0
+      }
+    }
+  },
+  {
+    "slug": "local-seo-dhaka-google-maps-ranking",
+    "title": "\u09b8\u09cd\u09a5\u09be\u09a8\u09c0\u09af\u09bc SEO: \u09a2\u09be\u0995\u09be\u09af\u09bc \u0986\u09aa\u09a8\u09be\u09b0 \u09ac\u09cd\u09af\u09ac\u09b8\u09be \u0995\u09c0\u09ad\u09be\u09ac\u09c7 \u0997\u09c1\u0997\u09b2 \u09ae\u09cd\u09af\u09be\u09aa\u09c7 \u09b6\u09c0\u09b0\u09cd\u09b7\u09c7 \u09a6\u09c7\u0996\u09be\u09ac\u09c7\u09a8",
+    "date": "2026-07-08",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "\u09b8\u09cd\u09a5\u09be\u09a8\u09c0\u09af\u09bc",
+        "count": 26,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 10,
+          "dhaka": 7,
+          "chittagong": 1,
+          "sylhet": 1
+        },
+        "industries": {
+          "seo": 59,
+          "ecommerce": 1
+        },
+        "services_count": 5,
+        "services": [
+          "local seo",
+          "google business profile",
+          "gbp",
+          "geo",
+          "aeo"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 11,
+        "question_marks_in_content": 14,
+        "faq_subsections": 0,
+        "headings_examples": [
+          "\u0997\u09c1\u0997\u09b2 \u09ae\u09cd\u09af\u09be\u09aa\u09c7 \u09b0\u200d\u09cd\u09af\u09be\u0982\u0995 \u0995\u09b0\u09a4\u09c7 \u0995\u09a4\u09a6\u09bf\u09a8 \u09b2\u09be\u0997\u09c7?",
+          "\u0997\u09c1\u0997\u09b2 \u09ae\u09cd\u09af\u09be\u09aa\u09c7 \u09b0\u200d\u09cd\u09af\u09be\u0982\u0995\u09bf\u0982\u09af\u09bc\u09c7\u09b0 \u099c\u09a8\u09cd\u09af \u09b8\u09ac\u099a\u09c7\u09af\u09bc\u09c7 \u0997\u09c1\u09b0\u09c1\u09a4\u09cd\u09ac\u09aa\u09c2\u09b0\u09cd\u09a3 \u09ab\u09cd\u09af\u09be\u0995\u09cd\u099f\u09b0 \u0995\u09c0?",
+          "\u098f\u0995\u09be\u09a7\u09bf\u0995 \u09b6\u09be\u0996\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u0986\u09b2\u09be\u09a6\u09be \u099c\u09bf\u09ac\u09bf\u09aa\u09bf \u09a4\u09c8\u09b0\u09bf \u0995\u09b0\u09be \u09af\u09be\u09ac\u09c7?",
+          "\u0995\u09a4\u099f\u09bf \u09b0\u09bf\u09ad\u09bf\u0989 \u09a6\u09b0\u0995\u09be\u09b0 \u09ad\u09be\u09b2\u09cb \u09b0\u200d\u09cd\u09af\u09be\u0982\u0995 \u0995\u09b0\u09be\u09b0 \u099c\u09a8\u09cd\u09af?",
+          "\u09ad\u09c1\u09af\u09bc\u09be \u09b0\u09bf\u09ad\u09bf\u0989 \u0995\u09bf\u09a8\u09b2\u09c7 \u0995\u09c0 \u09b9\u09af\u09bc?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 7,
+        "services_links": 4,
+        "industries_links": 0,
+        "locations_links": 3,
+        "total_internal_links": 14,
+        "unique_links_count": 14,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": false,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "Local SEO",
+          "Dhaka",
+          "Google Maps",
+          "GBP Optimization",
+          "Bangladesh Business"
+        ],
+        "missing_fields": [
+          "excerpt"
+        ],
+        "flag": true,
+        "title": "\u09b8\u09cd\u09a5\u09be\u09a8\u09c0\u09af\u09bc SEO: \u09a2\u09be\u0995\u09be\u09af\u09bc \u0986\u09aa\u09a8\u09be\u09b0 \u09ac\u09cd\u09af\u09ac\u09b8\u09be \u0995\u09c0\u09ad\u09be\u09ac\u09c7 \u0997\u09c1\u0997\u09b2 \u09ae\u09cd\u09af\u09be\u09aa\u09c7 \u09b6\u09c0\u09b0\u09cd\u09b7\u09c7 \u09a6\u09c7\u0996\u09be\u09ac\u09c7\u09a8",
+        "excerpt_length": 0
+      }
+    }
+  },
+  {
+    "slug": "seo-trends-2026-ai-geo-future",
+    "title": "\u09e8\u09e6\u09e8\u09ec \u09b8\u09be\u09b2\u09c7\u09b0 SEO \u099f\u09cd\u09b0\u09c7\u09a8\u09cd\u09a1\u09b8: AI, GEO \u0993 \u099c\u09bf\u09b0\u09cb-\u0995\u09cd\u09b2\u09bf\u0995 \u09b8\u09be\u09b0\u09cd\u099a\u09c7\u09b0 \u09af\u09c1\u0997\u09c7 \u0995\u09c0\u09ad\u09be\u09ac\u09c7 \u09aa\u09cd\u09b0\u09b8\u09cd\u09a4\u09c1\u09a4 \u09a5\u09be\u0995\u09ac\u09c7\u09a8",
+    "date": "2026-07-08",
+    "checks": {
+      "TF_IDF": {
+        "primary_keyword": "\u09e8\u09e6\u09e8\u09ec",
+        "count": 18,
+        "flag": false,
+        "threshold": 5
+      },
+      "Entities": {
+        "locations": {
+          "bangladesh": 9,
+          "dhaka": 5,
+          "chittagong": 1,
+          "sylhet": 1
+        },
+        "industries": {
+          "seo": 63,
+          "ecommerce": 1,
+          "real-estate": 1
+        },
+        "services_count": 3,
+        "services": [
+          "geo",
+          "aeo",
+          "analytics"
+        ],
+        "has_location_bangladesh_or_dhaka": true,
+        "has_industry_entities": true,
+        "has_service_entities": true,
+        "flag": false
+      },
+      "Pillar_Link": {
+        "pillar_slug": "complete-seo-guide-bangladesh-businesses-2026",
+        "is_self": false,
+        "has_pillar_link": true,
+        "has_main_pillar_link": true,
+        "flag": false
+      },
+      "AEO_GEO": {
+        "question_headings": 12,
+        "question_marks_in_content": 18,
+        "faq_subsections": 0,
+        "headings_examples": [
+          "\u09e8\u09e6\u09e8\u09ec \u09b8\u09be\u09b2\u09c7 seo \u0995\u09bf \u098f\u0996\u09a8\u0993 \u0995\u09be\u099c \u0995\u09b0\u09c7?",
+          "geo \u098f\u09ac\u0982 \u0990\u09a4\u09bf\u09b9\u09cd\u09af\u09ac\u09be\u09b9\u09c0 seo-\u09b0 \u09ae\u09a7\u09cd\u09af\u09c7 \u09aa\u09be\u09b0\u09cd\u09a5\u0995\u09cd\u09af \u0995\u09c0?",
+          "ai \u0995\u09bf seo \u09ac\u09bf\u09b6\u09c7\u09b7\u099c\u09cd\u099e\u09c7\u09b0 \u099a\u09be\u0995\u09b0\u09bf \u09a8\u09c7\u09ac\u09c7 \u09a8\u09be?",
+          "\u099c\u09bf\u09b0\u09cb-\u0995\u09cd\u09b2\u09bf\u0995 \u09b8\u09be\u09b0\u09cd\u099a \u0995\u09bf \u0993\u09af\u09bc\u09c7\u09ac\u09b8\u09be\u0987\u099f\u09c7\u09b0 \u099f\u09cd\u09b0\u09be\u09ab\u09bf\u0995 \u0995\u09ae\u09bf\u09af\u09bc\u09c7 \u09a6\u09c7\u09ac\u09c7?",
+          "\u09ac\u09be\u0982\u09b2\u09be \u0995\u09a8\u09cd\u099f\u09c7\u09a8\u09cd\u099f ai \u09b8\u09be\u09b0\u09cd\u099a\u09c7 \u09ad\u09be\u09b2\u09cb \u0995\u09b0\u09ac\u09c7?"
+        ],
+        "flag": false,
+        "threshold": 3
+      },
+      "Internal_Links": {
+        "blog_links": 6,
+        "services_links": 7,
+        "industries_links": 0,
+        "locations_links": 3,
+        "total_internal_links": 16,
+        "unique_links_count": 16,
+        "flag": false,
+        "threshold": 3
+      },
+      "Schema": {
+        "title_present": true,
+        "excerpt_present": false,
+        "date_present": true,
+        "author_present": true,
+        "tags_present": true,
+        "tags_list": [
+          "SEO Trends 2026",
+          "AI SEO",
+          "GEO",
+          "Generative Engine Optimization",
+          "Bangladesh"
+        ],
+        "missing_fields": [
+          "excerpt"
+        ],
+        "flag": true,
+        "title": "\u09e8\u09e6\u09e8\u09ec \u09b8\u09be\u09b2\u09c7\u09b0 SEO \u099f\u09cd\u09b0\u09c7\u09a8\u09cd\u09a1\u09b8: AI, GEO \u0993 \u099c\u09bf\u09b0\u09cb-\u0995\u09cd\u09b2\u09bf\u0995 \u09b8\u09be\u09b0\u09cd\u099a\u09c7\u09b0 \u09af\u09c1\u0997\u09c7 \u0995\u09c0\u09ad\u09be\u09ac\u09c7 \u09aa\u09cd\u09b0\u09b8\u09cd\u09a4\u09c1\u09a4 \u09a5\u09be\u0995\u09ac\u09c7\u09a8",
+        "excerpt_length": 0
+      }
+    }
+  }
+]

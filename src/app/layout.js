@@ -25,7 +25,7 @@ export const metadata = {
     template: "%s — Kanok Miah",
   },
   description:
-    "Looking for the best SEO expert in Dhaka, Bangladesh? Kanok Miah is a top-rated SEO specialist with 6+ years of experience. Get higher rankings, more traffic, and qualified leads with proven SEO strategies. Local SEO, Technical SEO, Link Building, GEO — Dhaka, Bangladesh.",
+    "Best SEO expert in Dhaka, Bangladesh? Kanok Miah is a top-rated SEO specialist with 6+ years and 210+ campaigns. Get higher rankings and free SEO audit — Call 01604-809110.",
   keywords: [
     "best SEO expert in Dhaka",
     "SEO expert Dhaka",
@@ -71,18 +71,18 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=2", sizes: "32x32" },
-      { url: "/favicons/favicon-16x16.png?v=2", sizes: "16x16", type: "image/png" },
-      { url: "/favicons/favicon-32x32.png?v=2", sizes: "32x32", type: "image/png" },
-      { url: "/favicons/favicon-48x48.png?v=2", sizes: "48x48", type: "image/png" },
-      { url: "/favicons/favicon-192x192.png?v=2", sizes: "192x192", type: "image/png" },
-      { url: "/favicons/favicon-512x512.png?v=2", sizes: "512x512", type: "image/png" },
-      { url: "/favicon.svg?v=2", type: "image/svg+xml" },
+      { url: "/favicon.ico?v=3", sizes: "32x32" },
+      { url: "/favicons/favicon-16x16.png?v=3", sizes: "16x16", type: "image/png" },
+      { url: "/favicons/favicon-32x32.png?v=3", sizes: "32x32", type: "image/png" },
+      { url: "/favicons/favicon-48x48.png?v=3", sizes: "48x48", type: "image/png" },
+      { url: "/favicons/favicon-192x192.png?v=3", sizes: "192x192", type: "image/png" },
+      { url: "/favicons/favicon-512x512.png?v=3", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.svg?v=3", type: "image/svg+xml" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png?v=2", sizes: "180x180" },
-      { url: "/apple-touch-icon-152x152.png?v=2", sizes: "152x152" },
-      { url: "/apple-touch-icon-120x120.png?v=2", sizes: "120x120" },
+      { url: "/apple-touch-icon.png?v=3", sizes: "180x180" },
+      { url: "/favicons/apple-touch-icon-152x152.png?v=3", sizes: "152x152" },
+      { url: "/favicons/apple-touch-icon-120x120.png?v=3", sizes: "120x120" },
     ],
   },
 };
@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="etLH7vKLG9Iph0mFN1a8sOYhxFptpi_h_VYRk3mUFvM" />
-        <meta name="deploy-version" content="2026-07-25-v24-h1-amp-fix" />
+        <meta name="deploy-version" content="2026-07-28-v26-seo-audit" />
         {/* Bing Webmaster Tools — add your msvalidate.01 content="" here */}
       </head>
       <body className="min-h-full flex flex-col">

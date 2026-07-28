@@ -11,15 +11,15 @@ const services = [
 ];
 
 const industries = [
-  { name: "Garments & Textile", path: "/industries/garments-textile" },
+  { name: "Garments and Textile", path: "/industries/garments-textile" },
   { name: "E-commerce", path: "/industries/ecommerce" },
   { name: "SMM Panel", path: "/industries/smm-panel" },
   { name: "Real Estate", path: "/industries/real-estate" },
   { name: "Cleaning Services", path: "/industries/cleaning" },
-  { name: "Spa & Salon", path: "/industries/spa-salon" },
-  { name: "Medical & Healthcare", path: "/industries/medical" },
+  { name: "Spa and Salon", path: "/industries/spa-salon" },
+  { name: "Medical and Healthcare", path: "/industries/medical" },
   { name: "Education", path: "/industries/education" },
-  { name: "Food & Restaurant", path: "/industries/food-restaurant" },
+  { name: "Food and Restaurant", path: "/industries/food-restaurant" },
 ];
 
 export default function Footer() {
@@ -179,7 +179,7 @@ export default function Footer() {
 
       {/* Bottom flag line */}
       <div className="bg-gray-950 py-3 text-center">
-        <p className="text-xs text-gray-600">🇧🇩 Serving Dhaka & all of Bangladesh</p>
+        <p className="text-xs text-gray-600">🇧🇩 Serving Dhaka and all of Bangladesh</p>
       </div>
     </footer>
   );

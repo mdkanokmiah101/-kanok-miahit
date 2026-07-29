@@ -25427,6 +25427,11 @@ Looking for the [Kanok Miah](/).`,
       "Hiring the right SEO expert in Dhaka can transform your business, but choosing wrong wastes time and money. Here are 15 things to check before you hire the best SEO expert in Dhaka.",
     tags: ["SEO Expert Dhaka", "Hire SEO Expert", "SEO Services Bangladesh", "Best SEO Expert"],
     imagePlaceholder: "🔍",
+    metaTitle:
+      "How to Choose the Best SEO Expert in Dhaka: 15 Things to Check | Kanok Miah",
+    metaDescription:
+      "Hiring the right SEO expert in Dhaka can transform your business. Learn 15 proven checks to verify expertise, avoid scammers, and choose the best SEO expert in Dhaka for your business.",
+    dateModified: "2026-07-29",
     content: `
 ## The Day I Realised Most Dhaka Business Owners Are Getting SEO Wrong
 I was sitting in a café in Gulshan, scrolling through my Google Search Console data, when a business owner I'd never met walked up to me. "You're the SEO guy, right?" he asked. "I've paid three different 'SEO experts' in the last two years. My rankings are worse than when I started."

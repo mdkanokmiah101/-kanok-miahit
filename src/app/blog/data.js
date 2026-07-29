@@ -2257,6 +2257,11 @@ Real estate developers in Dhaka, [Chittagong](/locations/chittagong), and [Sylhe
       "A comprehensive mobile SEO guide for Bangladesh — covering mobile-first indexing, Core Web Vitals on mobile, voice search, AMP, and optimization strategies for the 70%+ of Bangladeshi users who search on smartphones.",
     tags: ["Mobile SEO", "Mobile Optimization", "Bangladesh", "Mobile-First Indexing"],
     imagePlaceholder: "🏗️",
+    metaTitle:
+      "Mobile SEO for Bangladesh: Optimize for the Mobile-First Era | Kanok Miah",
+    metaDescription:
+      "Expert mobile SEO guide for Bangladesh — mobile-first indexing, Core Web Vitals, voice search & GEO for the 70%+ of Bangladeshi users on smartphones. Proven strategies from Dhaka's top SEO expert.",
+    dateModified: "2026-06-30",
     content: `
 ## What is Mobile SEO?
 Mobile SEO is the practice of optimizing a website to rank well in search engine results on smartphones and tablets. It encompasses mobile-first indexing, page speed optimization, touch-friendly design, and voice search readiness — all critical for the 70%+ of Bangladeshi users who access the internet exclusively through mobile devices.
@@ -24322,7 +24327,7 @@ I am **Kanok Miah**, and since **2019**, I have been bridging this gap. With **2
 - 🌍 **Dhaka neighborhoods** served: Gulshan, Banani, Uttara, Dhanmondi, Mirpur, Motijheel, Badda, Bashundhara
 - 🎓 **6+ professional certifications** (Google, HubSpot, SEMrush, LinkedIn, Coursera, Skillshare)
 - ⏱️ **48-hour average response time** for all client communications
-- ✍️ **900+ SEO & digital marketing articles** authored and published across [kanokmiah.com](https://kanokmiah.com), [kanokmiah.com.bd](https://kanokmiah.com.bd), Khan IT, [seoexpert.com.bd](https://www.seoexpert.com.bd/), [kagoz.com](https://kagoz.com/), 10+ SMM panel platforms, SEO industry blogs, and other high-authority websites — focused on Bangladesh-specific and international growth strategies
+- ✍️ **900+ SEO & digital marketing articles** authored and published across [kanokmiah.com](https://kanokmiah.com), [kanokmiah.com.bd](/about), Khan IT, [seoexpert.com.bd](https://www.seoexpert.com.bd/), [kagoz.com](https://kagoz.com/), 10+ SMM panel platforms, SEO industry blogs, and other high-authority websites — focused on Bangladesh-specific and international growth strategies
 - 💰 **BDT 15,000–50,000/month** flexible pricing for businesses of all sizes
 
 I currently serve as **SEO Project Manager at Khan IT** and **Head of Digital Marketing at CloudMatrix Tech**, and previously worked with **Walton Plaza** and **Solus Corporation**. Every month I personally manage **8–12 active SEO campaigns** and **2–5 paid ad campaigns** — roughly **250+ hours of direct client work**.
@@ -24921,7 +24926,7 @@ After five months of consistent SEO work:
 
 The combination of comprehensive service pages and location-specific content proved incredibly effective. Every UK city has landlords who need certificates — and by having dedicated pages for each city, we captured search traffic from every major market simultaneously.
 
-As the **best SEO expert in Dhaka**, I bring this same multi-location approach to Bangladeshi businesses serving multiple cities. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to see how I can help your service business generate leads from every location you serve.
+As the **best SEO expert in Dhaka**, I bring this same multi-location approach to Bangladeshi businesses serving multiple cities. Visit [kanokmiah.com.bd](/) to see how I can help your service business generate leads from every location you serve.
 
 - local SEO — Local SEO Services
 - [Das Taxis Scotland case study](/blog/das-taxis-scotland-seo-case-study) — Das Taxis Scotland Case Study
@@ -24990,7 +24995,7 @@ The growth over seven months was extraordinary:
 
 This case study demonstrates that even in highly competitive local markets, a comprehensive SEO strategy can deliver massive returns. The key was combining technical excellence with deep local keyword research and consistent content creation.
 
-As the **best SEO expert in Dhaka**, I apply this same data-driven approach to transportation businesses in Bangladesh. Whether you run taxis in Dhaka or Scotland, visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can transform your online visibility.
+As the **best SEO expert in Dhaka**, I apply this same data-driven approach to transportation businesses in Bangladesh. Whether you run taxis in Dhaka or Scotland, visit [kanokmiah.com.bd](/) to learn how we can transform your online visibility.
 
 - local SEO — Local SEO Services
 - Google Business Profile optimization — Local SEO Services
@@ -25052,7 +25057,7 @@ After 24 months of consistent execution:
 
 The key insight from this case study is that technical SEO fixes unlock the foundation, but content is what drives exponential growth. MoreThanPanel's blog became an engine for attracting new users at every stage of their journey — from awareness to purchase.
 
-As the **best SEO expert in Dhaka**, I apply these same content-driven SEO strategies to digital platforms in Bangladesh and globally. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how content SEO can transform your platform's organic growth.
+As the **best SEO expert in Dhaka**, I apply these same content-driven SEO strategies to digital platforms in Bangladesh and globally. Visit [kanokmiah.com.bd](/) to learn how content SEO can transform your platform's organic growth.
 
 - [technical SEO](/services/technical-seo) — Technical SEO Services
 - on-page SEO — On-Page SEO Services
@@ -25114,7 +25119,7 @@ The 24-month transformation:
 
 SMMGen's growth demonstrates that even in crowded markets, a thorough technical and content overhaul can produce dramatic results. The combination of mobile optimization, in-depth buyer guides, and structured service pages created a comprehensive SEO foundation that competitors could not easily replicate.
 
-As the **best SEO expert in Dhaka**, I bring this comprehensive approach to SMM platforms and digital service businesses in Bangladesh. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can scale your organic traffic.
+As the **best SEO expert in Dhaka**, I bring this comprehensive approach to SMM platforms and digital service businesses in Bangladesh. Visit [kanokmiah.com.bd](/) to learn how we can scale your organic traffic.
 
 - [technical SEO](/services/technical-seo) — Technical SEO Services
 - e-commerce SEO — E-commerce SEO Services
@@ -25180,7 +25185,7 @@ After 13 months of execution:
 
 The 14.2% CTR — double the industry average — was achieved through meticulous meta description optimization and compelling title tags. Every search result was crafted to stand out in the crowded SERP.
 
-As the **best SEO expert in Dhaka**, I use these same content-cluster and technical optimization strategies for SMM panels in Bangladesh and beyond. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to discover how we can drive exponential traffic growth for your platform.
+As the **best SEO expert in Dhaka**, I use these same content-cluster and technical optimization strategies for SMM panels in Bangladesh and beyond. Visit [kanokmiah.com.bd](/) to discover how we can drive exponential traffic growth for your platform.
 
 - [content clusters](/services/on-page-seo) — On-Page SEO Services
 - [technical optimization](/services/technical-seo) — Technical SEO Services
@@ -25254,7 +25259,7 @@ The comprehensive strategy delivered impressive results:
 
 B2B SEO requires a different approach than B2C. Decision-makers in construction and manufacturing conduct extensive research before purchasing, and being visible at every stage of that research journey is critical.
 
-As the **best SEO expert in Dhaka**, I specialize in B2B SEO strategies that help Bangladeshi manufacturers and suppliers dominate search results. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can transform your B2B brand's online visibility.
+As the **best SEO expert in Dhaka**, I specialize in B2B SEO strategies that help Bangladeshi manufacturers and suppliers dominate search results. Visit [kanokmiah.com.bd](/) to learn how we can transform your B2B brand's online visibility.
 
 - [B2B SEO](/blog/b2b-lead-generation-seo-bangladesh) — B2B Lead Generation SEO
 - [technical SEO](/services/technical-seo) — Technical SEO Services
@@ -25325,7 +25330,7 @@ The impact was achieved in just 90 days:
 
 This case study proves that new domains can compete and win against established competitors. The key is a strategic, phased approach that prioritizes technical excellence, conversion-focused content, and AI-readiness from day one.
 
-As the **best SEO expert in Dhaka**, I specialize in helping Bangladeshi garment manufacturers and B2B businesses achieve rapid SEO results on new domains. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how we can take your business from zero to #1 in your market.
+As the **best SEO expert in Dhaka**, I specialize in helping Bangladeshi garment manufacturers and B2B businesses achieve rapid SEO results on new domains. Visit [kanokmiah.com.bd](/) to learn how we can take your business from zero to #1 in your market.
 
 - [B2B SEO](/blog/b2b-lead-generation-seo-bangladesh) — B2B Lead Generation SEO
 - Garments & Textile industry — Garments & Textile SEO
@@ -25395,7 +25400,7 @@ For auto glass repair and similar mobile service businesses, local SEO is the si
 
 The 38 reviews with a 4.9-star average became a powerful competitive advantage, improving local ranking signals while simultaneously convincing potential customers to choose Stealth over competitors. The QR code in the service van was particularly effective, turning every satisfied customer into a marketing asset.
 
-As the **best SEO expert in Dhaka**, I apply the same proven local SEO strategies to auto service businesses in Bangladesh and internationally. Whether you serve Edinburgh or Dhaka, the principles of local search dominance are universal. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn how I can help your automotive business achieve the same results.
+As the **best SEO expert in Dhaka**, I apply the same proven local SEO strategies to auto service businesses in Bangladesh and internationally. Whether you serve Edinburgh or Dhaka, the principles of local search dominance are universal. Visit [kanokmiah.com.bd](/) to learn how I can help your automotive business achieve the same results.
 
 - local SEO — Local SEO Services
 - Google Business Profile — Local SEO Services
@@ -25428,7 +25433,7 @@ I was sitting in a café in Gulshan, scrolling through my Google Search Console 
 
 This wasn't the first time I'd heard this story—and it won't be the last. Dhaka's digital economy is booming, with over 130 million internet users in Bangladesh and over 70% of local business searches happening on mobile. Yet every week, I meet business owners in Mirpur, Banani, Dhanmondi, and Uttara who have been burned by self-proclaimed SEO experts who promised the moon and delivered nothing.
 
-I am Kanok Miah, and over my 7+ years as a best SEO expert in Dhaka, I have audited over 210 websites and worked with 50+ businesses across Bangladesh. I have seen the good, the bad, and the terrifying when it comes to SEO services in this city. This guide shares everything I have learned about choosing an SEO expert who will actually deliver results—not just collect your money.
+I am [Kanok Miah](/about), and over my 7+ years as a best SEO expert in Dhaka, I have audited over 210 websites and worked with 50+ businesses across Bangladesh. I have seen the good, the bad, and the terrifying when it comes to SEO services in this city. This guide shares everything I have learned about choosing an SEO expert who will actually deliver results—not just collect your money.
 
 ## Why Dhaka Businesses Need a Real SEO Expert in 2026
 
@@ -25450,11 +25455,11 @@ The opportunity gap is enormous. While 70%+ of Bangladeshi consumers start their
 
 Any SEO expert in Dhaka can claim they ranked a website number one. The question is: whose website, in what industry, and for how long? Ask for case studies with real data: before-and-after traffic numbers, keyword rankings, specific clients in your industry.
 
-I publish all my [SEO case studies](https://kanokmiah.com.bd/case-studies) publicly—including real traffic data from Das Taxis Scotland (+5,853% growth), SMMGen (27,900 monthly clicks), and Dhaka Apparels (#1 ranking in 90 days). If your potential SEO expert cannot provide verifiable case studies, walk away.
+I publish all my [SEO case studies](/case-studies) publicly—including real traffic data from Das Taxis Scotland (+5,853% growth), SMMGen (27,900 monthly clicks), and Dhaka Apparels (#1 ranking in 90 days). If your potential SEO expert cannot provide verifiable case studies, walk away.
 
 ### 2. Check Their Google Business Profile
 
-A real local SEO expert in Dhaka should have their own Google Business Profile optimized. Check their reviews, response rate, and overall presence. My profile has 108+ reviews with a 5.0-star average—because I practise what I preach.
+A real [local SEO expert in Dhaka](/services/local-seo) should have their own Google Business Profile optimized. Check their reviews, response rate, and overall presence. My profile has 108+ reviews with a 5.0-star average—because I practise what I preach.
 
 ### 3. Test Their Knowledge of Bangladeshi Search Behaviour
 
@@ -25466,11 +25471,11 @@ The best SEO specialist in Dhaka understands that Bangladeshi users search diffe
 
 ### 4. Ensure They Understand Your Industry
 
-SEO is not one-size-fits-all. An e-commerce store needs different strategies than a real estate developer or a [garments factory](https://kanokmiah.com.bd/industries/garments-textile). Ask about their experience in your specific industry and request industry-specific examples.
+SEO is not one-size-fits-all. An e-commerce store needs different strategies than a real estate developer or a [garments factory](/industries/garments-textile). Ask about their experience in your specific industry and request industry-specific examples.
 
 ### 5. Ask About Their Technical SEO Capabilities
 
-Technical SEO is the foundation. Your SEO expert should be able to discuss:
+[Technical SEO](/services/technical-seo) is the foundation. Your SEO expert should be able to discuss:
 - Core Web Vitals (LCP, FID/INP, CLS)
 - Mobile-first indexing
 - Structured data / Schema.org markup
@@ -25500,7 +25505,7 @@ For Dhaka businesses, local SEO is non-negotiable. Your expert should know how t
 
 ### 8. Check Their Understanding of AI and GEO
 
-In 2026, [AI SEO](https://kanokmiah.com.bd/services/geo-ai-search) is no longer optional. Google AI Overviews, ChatGPT, Gemini, and Perplexity are reshaping how users find information. Ask your potential expert about:
+In 2026, [AI SEO](/services/geo-ai-search) is no longer optional. Google AI Overviews, ChatGPT, Gemini, and Perplexity are reshaping how users find information. Ask your potential expert about:
 - Generative Engine Optimization (GEO)
 - Entity-first content structuring
 - AI-friendly FAQ optimisation
@@ -25577,9 +25582,9 @@ Finally, trust your gut. If something feels off about their approach, promises, 
 
 As the founder of kanokmiah.com.bd and a best SEO expert in Dhaka with 7+ years of experience, I have made it my mission to help Bangladeshi businesses navigate the confusing world of SEO.
 
-Every month, I manage 8-12 SEO projects across industries including [e-commerce](https://kanokmiah.com.bd/industries/ecommerce), [real estate](https://kanokmiah.com.bd/industries/real-estate), [SMM panels](https://kanokmiah.com.bd/industries/smm-panel), [healthcare](https://kanokmiah.com.bd/industries/medical), and more. I have seen what works and what doesn't in the Bangladesh market specifically—not imported strategies from Western agencies.
+Every month, I manage 8-12 SEO projects across industries including [e-commerce](/industries/ecommerce), [real estate](/industries/real-estate), [SMM panels](/industries/smm-panel), [healthcare](/industries/medical), and more. I have seen what works and what doesn't in the Bangladesh market specifically—not imported strategies from Western agencies.
 
-My approach is transparent, data-driven, and built on real results. I provide detailed monthly reports, free initial audits, and clear communication throughout our engagement.
+My approach is transparent, data-driven, and built on real results. I provide detailed monthly reports, free initial audits, and clear communication throughout our engagement. Whether you need [on-page SEO](/services/on-page-seo) or [SEO consulting for Dhaka businesses](/blog/seo-consultant-dhaka-bangladesh), my strategies are tailored to the unique challenges of the Bangladesh market.
 
 ## Frequently Asked Questions
 
@@ -25607,7 +25612,7 @@ No legitimate SEO expert can guarantee #1 rankings—Google's algorithm is too c
 
 Choosing the best SEO expert in Dhaka does not have to be overwhelming. By following these 15 checks, you can confidently select a professional who will deliver real results for your business. The key is to verify claims, ask the right questions, and never settle for vague promises.
 
-If you are looking for a [best SEO consultant in Dhaka](https://kanokmiah.com.bd/) with a proven track record, I invite you to [contact me](https://kanokmiah.com.bd/contact) for a free SEO audit. No commitment, no hidden fees—just honest, actionable advice that will help your business grow.
+If you are looking for a best SEO consultant in Dhaka with a proven track record, I invite you to [contact me](/contact) for a free SEO audit. No commitment, no hidden fees—just honest, actionable advice that will help your business grow.
 
 Your competitors are ranking. You can too—with the right SEO expert by your side.
 
@@ -25837,7 +25842,7 @@ If your budget is under BDT 50,000/month and you value direct communication — 
 
 Whatever path you choose, the most important step is to *start*. Your competitors in Dhaka are already investing in SEO. Every month you wait is another month they pull ahead.
 
-I invite you to take the first step today. [Contact me](https://kanokmiah.com.bd/contact) for a **free, no-obligation SEO audit** of your website. I will analyse your current position, identify opportunities, and give you honest, actionable advice — whether or not you choose to work with me. That is the kind of transparency the [Best SEO Expert in Dhaka](https://kanokmiah.com.bd/) should provide.
+I invite you to take the first step today. [Contact me](/contact) for a **free, no-obligation SEO audit** of your website. I will analyse your current position, identify opportunities, and give you honest, actionable advice — whether or not you choose to work with me. That is the kind of transparency the [Best SEO Expert in Dhaka](/) should provide.
 
 Your business deserves to be found. Let us make that happen together.
 
@@ -26032,11 +26037,11 @@ I invite you to take the first step today. **Contact me for a free, no-obligatio
 
 Your customers in Dhaka are searching for your services right now. Make sure they find you — not your competitors.
 
-[Get Your Free SEO Audit →](https://kanokmiah.com.bd/contact)
+[Get Your Free SEO Audit →](/contact)
 
 ---
 
-*About the Author: Kanok Miah is a **Professional SEO Expert in Dhaka** with 7+ years of experience helping Bangladeshi businesses rank on Google. He specializes in local SEO, technical SEO, and GEO/AEO optimization for the Bangladesh market. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to learn more or schedule your free consultation.*
+*About the Author: Kanok Miah is a **Professional SEO Expert in Dhaka** with 7+ years of experience helping Bangladeshi businesses rank on Google. He specializes in local SEO, technical SEO, and GEO/AEO optimization for the Bangladesh market. Visit [kanokmiah.com.bd](/) to learn more or schedule your free consultation.*
 
 Looking for the SEO ভুল যা এড়িয়ে চলবেন: বাংলাদেশি ওয়েবসাইটের সাধারণ .
 
@@ -26375,11 +26380,11 @@ I invite you to take the first step. Whether you are a restaurant in Gulshan wan
 
 Your customers are searching right now. Make sure they find you.
 
-[Get Your Free SEO Consultation →](https://kanokmiah.com.bd/contact)
+[Get Your Free SEO Consultation →](/contact)
 
 ---
 
-*About the Author: **Kanok Miah** is a leading **[SEO Specialist in Dhaka](https://kanokmiah.com.bd/)** with 7+ years of experience helping Bangladeshi businesses achieve top Google rankings. He specializes in local SEO, technical SEO, content strategy, and GEO/AEO optimization for the Bangladesh market. Visit kanokmiah.com.bd to schedule your free consultation.*
+*About the Author: **Kanok Miah** is a leading **[SEO Specialist in Dhaka](/)** with 7+ years of experience helping Bangladeshi businesses achieve top Google rankings. He specializes in local SEO, technical SEO, content strategy, and GEO/AEO optimization for the Bangladesh market. Visit kanokmiah.com.bd to schedule your free consultation.*
 
 Looking for the ব্যবসায়ীদের জন্য SEO টিপস: নিজেই SEO করুন,
 
@@ -26702,13 +26707,13 @@ As the **Best SEO Expert in Dhaka** with 7+ years of experience and a proven tra
 
 Every engagement begins with a thorough audit and a clear, data-backed strategy. No empty promises — just transparent reporting and real results.
 
-**[Book Your Free SEO Consultation Today →](https://kanokmiah.com.bd/contact)**
+**[Book Your Free SEO Consultation Today →](/contact)**
 
 Let us write your success story together.
 
 ---
 
-*About the Author: **Kanok Miah** is a leading **[Best SEO Expert in Dhaka](https://kanokmiah.com.bd/)** with 7+ years of experience helping Bangladeshi businesses achieve top Google rankings. His case-study-driven approach combines technical SEO, local optimization, content strategy, GEO, and AEO to deliver measurable, long-term results for clients across Dhaka, Chittagong, Sylhet, and beyond.*
+*About the Author: **Kanok Miah** is a leading **[Best SEO Expert in Dhaka](/)** with 7+ years of experience helping Bangladeshi businesses achieve top Google rankings. His case-study-driven approach combines technical SEO, local optimization, content strategy, GEO, and AEO to deliver measurable, long-term results for clients across Dhaka, Chittagong, Sylhet, and beyond.*
 
 Looking for the রেফারেল ট্রাফিক: লিংক বিল্ডিং ছাড়া ট্রাফিক বাড়ান.
 
@@ -26983,11 +26988,11 @@ I invite you to take the first step toward sustainable, compounding growth. As t
 
 Your customers are searching for your services on Google right now. Make sure they find you — not your competitors.
 
-[Get Your Free SEO Consultation \u2192](https://kanokmiah.com.bd/contact)
+[Get Your Free SEO Consultation \u2192](/contact)
 
 ---
 
-*About the Author: Kanok Miah is the **Best SEO Consultant in Dhaka** with 7+ years of experience helping Bangladeshi businesses achieve top Google rankings. He specializes in local SEO, technical SEO, e-commerce SEO, and GEO/AEO optimization for the Bangladesh market. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to schedule your free consultation.*
+*About the Author: Kanok Miah is the **Best SEO Consultant in Dhaka** with 7+ years of experience helping Bangladeshi businesses achieve top Google rankings. He specializes in local SEO, technical SEO, e-commerce SEO, and GEO/AEO optimization for the Bangladesh market. Visit [kanokmiah.com.bd](/) to schedule your free consultation.*
 
 Looking for the Kanok Miah.
 
@@ -27275,11 +27280,11 @@ The strategies in this guide are not theoretical — they represent proven appro
 
 Ready to make your business the AI's top recommendation? Let us build your GEO strategy together.
 
-[Get Your Free AI SEO Consultation →](https://kanokmiah.com.bd/contact)
+[Get Your Free AI SEO Consultation →](/contact)
 
 ---
 
-*About the Author: **Kanok Miah** is the leading AI SEO Expert in Dhaka with 7+ years of experience helping Bangladeshi businesses achieve top rankings across Google, AI Overviews, ChatGPT, Gemini, and Perplexity. He specializes in GEO, AEO, entity SEO, and E-E-A-T optimization for the Bangladesh market. Visit [kanokmiah.com.bd](https://kanokmiah.com.bd/) to schedule your free consultation.*
+*About the Author: **Kanok Miah** is the leading AI SEO Expert in Dhaka with 7+ years of experience helping Bangladeshi businesses achieve top rankings across Google, AI Overviews, ChatGPT, Gemini, and Perplexity. He specializes in GEO, AEO, entity SEO, and E-E-A-T optimization for the Bangladesh market. Visit [kanokmiah.com.bd](/) to schedule your free consultation.*
 
 Looking for the ২০২৬ সালের SEO ট্রেন্ডস: AI, GEO ও জিরো-ক্লিক সার্চের য,
 

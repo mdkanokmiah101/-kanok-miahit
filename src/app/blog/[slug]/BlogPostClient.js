@@ -304,8 +304,8 @@ export default function BlogPostClient() {
           </li>
         );
       }
-      if (line.startsWith("| ")) {
-        // Table row — render as simple text
+      if (line.startsWith("| ") || line.startsWith("|-")) {
+        // Table row or separator — return null to hide raw markdown
         return null;
       }
       if (line.startsWith("---")) {

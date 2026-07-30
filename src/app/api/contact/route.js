@@ -1,5 +1,3 @@
-"use server";
-
 const RELAY_URL = process.env.EMAIL_RELAY_URL || "http://[2a02:4780:12:2d4a::1]:3098";
 
 async function sendEmail({ name, email, phone, website, message }) {
@@ -25,18 +23,30 @@ async function sendEmail({ name, email, phone, website, message }) {
 
 export async function POST(request) {
   try {
+    const ct = request.headers.get("content-type") || "";
+
     let name, email, phone, website, message, subject;
 
-    const contentType = request.headers.get("content-type") || "";
-
-    if (contentType.includes("application/json")) {
-      const json = await request.json();
-      name = json.name || "Not provided";
-      email = json.email || "Not provided";
-      phone = json.phone || "Not provided";
-      website = json.website || "Not provided";
-      message = json.message || "Not provided";
-      subject = json._subject || "New SEO Lead";
+    if (ct.includes("application/json")) {
+      const body = await request.text();
+      try {
+        const json = JSON.parse(body);
+        name = json.name || "Not provided";
+        email = json.email || "Not provided";
+        phone = json.phone || "Not provided";
+        website = json.website || "Not provided";
+        message = json.message || "Not provided";
+        subject = json._subject || "New SEO Lead";
+      } catch {
+        // If JSON parsing fails, try as formdata
+        const params = new URLSearchParams(body);
+        name = params.get("name") || "Not provided";
+        email = params.get("email") || "Not provided";
+        phone = params.get("phone") || "Not provided";
+        website = params.get("website") || "Not provided";
+        message = params.get("message") || "Not provided";
+        subject = params.get("_subject") || "New SEO Lead";
+      }
     } else {
       const formData = await request.formData();
       name = formData.get("name") || "Not provided";
@@ -49,20 +59,21 @@ export async function POST(request) {
 
     console.log(`📬 ${subject}: ${name} / ${email} / ${phone}`);
 
-    // Send Email via relay
     const emailSent = await sendEmail({ name, email, phone, website, message });
     console.log(`📧 Email result: ${emailSent ? "✅ SENT" : "❌ FAILED"}`);
 
-    // Telegram notification
+    // Telegram notification (fire & forget)
     const token = process.env.TELEGRAM_BOT_TOKEN;
     if (token) {
-      const text = `🔔 **🔴 NEW SEO LEAD — kanokmiah.com.bd**
-👤 Name: ${name}
-📧 Email: ${email}
-📞 Phone: ${phone}
-🌐 Website: ${website}
-📧 Email: ${emailSent ? "✅ SENT" : "❌ FAILED"}
-⏱ ${new Date().toLocaleString("en-BD", { timeZone: "Asia/Dhaka" })}`;
+      const text = [
+        "🔔 **🔴 NEW SEO LEAD — kanokmiah.com.bd**",
+        `👤 Name: ${name}`,
+        `📧 Email: ${email}`,
+        `📞 Phone: ${phone}`,
+        `🌐 Website: ${website}`,
+        `📧 Email: ${emailSent ? "✅ SENT" : "❌ FAILED"}`,
+        `⏱ ${new Date().toLocaleString("en-BD", { timeZone: "Asia/Dhaka" })}`,
+      ].join("\n");
       fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

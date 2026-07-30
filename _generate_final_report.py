@@ -1,368 +1,375 @@
 #!/usr/bin/env python3
-"""
-Generate final clean framework enforcement report from the raw data.
-This runs the actual checks and formats a clean markdown report.
-"""
-import re
-import sys
+"""Generate clean final report from the framework check data."""
+import subprocess, re, json, sys, os
+os.chdir("/root/kanok-miahit")
 
-# Load data.js
-with open("/root/kanok-miahit/src/app/blog/data.js") as f:
-    js_content = f.read()
+# Reuse the post parsing and check functions from _framework_checks.py
+# We need the posts variable and check functions
+with open("src/app/blog/data.js") as f:
+    content = f.read()
 
-# Parse posts
-post_pattern = re.compile(
-    r'{\s*\n\s*slug:\s*"([^"]+)"(.*?)^\s*},?\s*$',
-    re.MULTILINE | re.DOTALL
-)
-
-posts = {}
-for m in post_pattern.finditer(js_content):
-    slug = m.group(1)
-    block = m.group(0)
+parts = content.split('slug: "')
+posts = []
+for i, part in enumerate(parts[1:], 1):
+    slug = part.split('"')[0]
+    post_data = part[len(slug) + 1:]
     
-    t = re.search(r'title:\s*"((?:[^"\\]|\\.)*)"', block)
-    title = t.group(1) if t else ""
+    title_m = re.search(r'title:\s*"([^"]+)"', post_data[:2000])
+    date_m = re.search(r'date:\s*"([^"]+)"', post_data[:1000])
+    excerpt_m = re.search(r'excerpt:\s*\n?\s*"([^"]+)"', post_data[:3000])
+    tags_m = re.search(r'tags:\s*\[([^\]]+)\]', post_data[:3000], re.DOTALL)
+    metaTitle_m = re.search(r'metaTitle:\s*"([^"]+)"', post_data[:3000])
+    metaDesc_m = re.search(r'metaDescription:\s*"([^"]+)"', post_data[:3000])
+    dateMod_m = re.search(r'dateModified:\s*"([^"]+)"', post_data[:3000])
     
-    d = re.search(r'date:\s*"([^"]+)"', block)
-    date = d.group(1) if d else ""
+    content_m = re.search(r'content:\s*`\n(.*?)\n\s*`', post_data, re.DOTALL)
+    if not content_m:
+        content_m = re.search(r'content:\s*`(.*?)`', post_data, re.DOTALL)
     
-    e = re.search(r'excerpt:\s*\n?\s*"((?:[^"\\]|\\.)*)"', block)
-    excerpt = e.group(1) if e else ""
+    content_text = content_m.group(1) if content_m else ""
     
-    tags_m = re.search(r'tags:\s*\[(.*?)\]', block)
     tags = []
     if tags_m:
-        tags = [t.strip().strip('"') for t in tags_m.group(1).split(',')]
+        tag_str = tags_m.group(1)
+        tags = re.findall(r'"([^"]+)"', tag_str)
     
-    c = re.search(r'content:\s*`(.*?)`\s*,\s*\n', block, re.DOTALL)
-    post_content = c.group(1) if c else ""
-    
-    posts[slug] = {
-        'title': title,
-        'date': date,
-        'excerpt': excerpt,
+    post = {
+        'slug': slug,
+        'title': title_m.group(1) if title_m else '',
+        'date': date_m.group(1) if date_m else '',
+        'excerpt': excerpt_m.group(1) if excerpt_m else '',
         'tags': tags,
-        'content': post_content
+        'metaTitle': metaTitle_m.group(1) if metaTitle_m else '',
+        'metaDescription': metaDesc_m.group(1) if metaDesc_m else '',
+        'dateModified': dateMod_m.group(1) if dateMod_m else '',
+        'content': content_text,
     }
+    posts.append(post)
 
 changed_slugs = [
-    "geo-optimization-prepare-business-ai-search",
-    "seo-garments-textile-industry-b2b-lead-generation",
-    "mobile-seo-optimization-bangladesh-mobile-first-era",
-    "seo-healthcare-medical-clinics-bangladesh",
-    "why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh",
-    "landlord-certificates-seo-case-study",
-    "das-taxis-scotland-seo-case-study",
-    "morethanpanel-seo-case-study",
-    "smmgen-seo-case-study",
-    "smmsun-seo-case-study",
-    "mir-cement-seo-case-study",
-    "dhaka-apparels-seo-case-study",
-    "stealth-windshield-repairs-seo-case-study",
-    "how-to-choose-best-seo-expert-dhaka-15-things",
-    "seo-expert-vs-seo-agency-dhaka-which-is-right",
-    "top-10-seo-mistakes-dhaka-businesses-fix",
-    "what-does-seo-expert-do-guide-business-owners",
-    "seo-case-study-dhaka-businesses-increased-organic-traffic",
-    "hiring-seo-expert-dhaka-better-roi-than-paid-ads",
-    "ai-seo-2026-dhaka-experts-optimize-google-ai-chatgpt",
+    'ai-seo-2026-dhaka-experts-optimize-google-ai-chatgpt',
+    'das-taxis-scotland-seo-case-study',
+    'dhaka-apparels-seo-case-study',
+    'google-business-profile-optimization-guide-bangladesh',
+    'hiring-seo-expert-dhaka-better-roi-than-paid-ads',
+    'how-to-choose-best-seo-expert-dhaka-15-things',
+    'landlord-certificates-seo-case-study',
+    'link-building-strategies-bangladesh-market',
+    'mir-cement-seo-case-study',
+    'mobile-seo-optimization-bangladesh-mobile-first-era',
+    'morethanpanel-seo-case-study',
+    'seo-case-study-dhaka-businesses-increased-organic-traffic',
+    'seo-expert-vs-seo-agency-dhaka-which-is-right',
+    'seo-garments-textile-industry-b2b-lead-generation',
+    'smmgen-seo-case-study',
+    'smmsun-seo-case-study',
+    'stealth-windshield-repairs-seo-case-study',
+    'top-10-seo-mistakes-dhaka-businesses-fix',
+    'what-does-seo-expert-do-guide-business-owners',
+    'why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh',
 ]
 
-# Known pillar pages on this site
-PILLAR_PAGES = {
-    'complete-seo-guide-bangladesh-businesses-2026': {
-        'url': '/blog/complete-seo-guide-bangladesh-businesses-2026',
-        'label': 'Complete SEO Guide (Main Pillar)',
-    },
-    'local-seo-tips-dhaka-businesses-google-maps': {
-        'url': '/blog/local-seo-tips-dhaka-businesses-google-maps',
-        'label': 'Local SEO Guide',
-    },
-    'technical-seo-checklist-bangladeshi-websites': {
-        'url': '/blog/technical-seo-checklist-bangladeshi-websites',
-        'label': 'Technical SEO Guide',
-    },
-    'geo-optimization-prepare-business-ai-search': {
-        'url': '/blog/geo-optimization-prepare-business-ai-search',
-        'label': 'GEO/AEO Guide',
-    },
-    'seo-case-study-dhaka-businesses-increased-organic-traffic': {
-        'url': '/blog/seo-case-study-dhaka-businesses-increased-organic-traffic',
-        'label': 'Case Studies Pillar',
+def check_tfidf(post):
+    title = post['title']
+    clean_title = re.sub(r'\s*[|–-].*$', '', title).strip()
+    
+    stopwords = {'a', 'an', 'the', 'for', 'of', 'in', 'to', 'and', 'or', 'with', 'is', 'are', 'was', 'were', 'on', 'at', 'by', 'from', 'your', 'our', 'their', 'its', 'how', 'what', 'why', 'when', 'where', 'which', 'who', 'do', 'does', 'did', 'can', 'will', 'would', 'could', 'should', 'may', 'might', 'must', 'need', 'has', 'have', 'had', 'not', 'no', 'up', 'out', 'off', 'over', 'under', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'between', 'about', 'than', 'that', 'this', 'these', 'those'}
+    
+    words = clean_title.split()
+    keyword_parts = [w for w in words if w.lower() not in stopwords]
+    
+    keyword = ''
+    count = 0
+    
+    for n in range(3, 0, -1):
+        if len(keyword_parts) >= n:
+            kw = ' '.join(keyword_parts[:n])
+            cnt = post['content'].lower().count(kw.lower())
+            if cnt > count:
+                keyword, count = kw, cnt
+    
+    # Also try slug-based phrases
+    slug_parts = post['slug'].replace('-', ' ').split()
+    for n in range(3, 0, -1):
+        if len(slug_parts) >= n:
+            kw = ' '.join(slug_parts[:n])
+            if len(kw) > 3:
+                cnt = post['content'].lower().count(kw)
+                if cnt > count:
+                    keyword, count = kw, cnt
+    
+    return {
+        'keyword': keyword,
+        'count': count,
+        'passed': count >= 5,
+        'detail': '%d occurrences' % count
     }
+
+def check_entities(post):
+    content_lower = post['content'].lower()
+    slug = post['slug']
+    
+    all_entities = ['Dhaka', 'Bangladesh']
+    
+    if any(kw in slug for kw in ['seo', 'seo-expert']):
+        all_entities.append('SEO')
+    if 'local' in slug or 'google-business' in slug or 'gbp' in slug:
+        all_entities.extend(['Google Business Profile', 'local SEO'])
+    if 'technical' in slug:
+        all_entities.extend(['Core Web Vitals', 'schema'])
+    if 'link-building' in slug:
+        all_entities.extend(['backlinks', 'link building'])
+    if 'case-study' in slug or 'case study' in slug:
+        all_entities.extend(['traffic', 'organic', 'rankings'])
+    if 'garment' in slug or 'textile' in slug:
+        all_entities.extend(['garments', 'textile'])
+    if 'mobile' in slug:
+        all_entities.extend(['mobile-first', 'smartphone'])
+    if 'geo' in slug or 'ai' in slug:
+        all_entities.extend(['AI', 'GEO', 'ChatGPT'])
+    if 'smm' in slug or 'panel' in slug:
+        all_entities.extend(['SMM panel'])
+    
+    for tag in post['tags']:
+        tl = tag.lower()
+        if 'seo' in tl and 'seo' not in [e.lower() for e in all_entities]:
+            all_entities.append('SEO')
+        if 'ecommerce' in tl or 'e-commerce' in tl:
+            all_entities.append('e-commerce')
+        if 'garment' in tl or 'textile' in tl:
+            all_entities.append('garments')
+        if 'real estate' in tl:
+            all_entities.append('real estate')
+        if 'healthcare' in tl or 'medical' in tl:
+            all_entities.append('healthcare')
+    
+    seen = set()
+    unique_entities = []
+    for e in all_entities:
+        el = e.lower()
+        if el not in seen:
+            seen.add(el)
+            unique_entities.append(e)
+    
+    missing = [e for e in unique_entities if e.lower() not in content_lower]
+    return {
+        'missing': missing,
+        'passed': len(missing) == 0,
+        'detail': 'Missing: ' + (', '.join(missing) if missing else 'None')
+    }
+
+def check_pillar_cluster(post):
+    tags = post['tags']
+    slug = post['slug']
+    content_lower = post['content'].lower()
+    
+    pillar_map = {
+        'Local SEO': ['local', 'gbp', 'google business', 'google maps'],
+        'Technical SEO': ['technical', 'core web vitals', 'mobile'],
+        'Content SEO': ['content', 'blog', 'writing', 'keyword research'],
+        'Link Building': ['link building', 'backlinks'],
+        'E-commerce SEO': ['ecommerce', 'e-commerce'],
+        'SEO Strategy': ['seo guide', 'seo tips', 'seo checklist'],
+        'GEO/AI SEO': ['geo', 'generative engine', 'ai seo', 'chatgpt'],
+        'SEO Expert/Agency': ['seo expert', 'seo agency', 'seo consultant', 'hire seo', 'choose seo'],
+    }
+    
+    detected = 'General SEO'
+    for pillar, kws in pillar_map.items():
+        for kw in kws:
+            if kw in slug.lower() or any(kw in tag.lower() for tag in tags):
+                detected = pillar
+                break
+        if detected != 'General SEO':
+            break
+    
+    internal = re.findall(r'/blog/[a-z0-9-]+|/services/[a-z0-9-]+|/locations/[a-z0-9-]+|/industries/[a-z0-9-]+', content_lower)
+    
+    if detected == 'General SEO' and internal:
+        detected = 'SEO Strategy'
+    
+    # Check for pillar-specific links (not just any internal link)
+    pillar_link_patterns = {
+        'Local SEO': ['/services/local', '/locations/'],
+        'Technical SEO': ['/services/technical'],
+        'Content SEO': ['/services/content', '/blog/content-'],
+        'Link Building': ['/services/link-building', '/blog/link-building'],
+        'E-commerce SEO': ['/services/ecommerce', '/industries/ecommerce'],
+        'SEO Strategy': ['/blog/complete-seo-guide', '/blog/seo-mistakes'],
+        'GEO/AI SEO': ['/services/geo', '/blog/geo-', '/blog/ai-seo'],
+        'SEO Expert/Agency': ['/about', '/blog/seo-expert', '/blog/hiring-seo', '/blog/how-to-choose', '/blog/seo-expert-vs'],
+    }
+    
+    expected_patterns = pillar_link_patterns.get(detected, [])
+    has_pillar_link = any(any(pat in link for pat in expected_patterns) for link in internal) if expected_patterns else len(internal) > 0
+    
+    return {
+        'pillar': detected,
+        'has_pillar_link': has_pillar_link,
+        'passed': has_pillar_link,  # for unified check interface
+        'detail': 'Pillar: %s | Links: %s' % (detected, 'Yes' if has_pillar_link else 'No')
+    }
+
+def check_aeo_geo(post):
+    headings = re.findall(r'^#{2,4}\s+.*$', post['content'], re.MULTILINE)
+    
+    q_starts = {'how', 'what', 'why', 'when', 'where', 'can', 'do', 'is', 'are', 'which', 'who', 'does', 'did', 'will', 'would', 'could', 'should'}
+    
+    q_headers = []
+    for h in headings:
+        hc = re.sub(r'[*_`"]', '', h.lstrip('#').strip())
+        fw = hc.split()[0].lower() if hc.split() else ''
+        if fw in q_starts:
+            q_headers.append(hc)
+    
+    return {
+        'count': len(q_headers),
+        'passed': len(q_headers) >= 2,
+        'detail': '%d question headings' % len(q_headers)
+    }
+
+def check_links(post):
+    links = re.findall(r'/blog/[a-z0-9-]+|/services/[a-z0-9-]+|/locations/[a-z0-9-]+|/industries/[a-z0-9-]+', post['content'])
+    unique = list(set(links))
+    return {
+        'count': len(unique),
+        'passed': len(unique) >= 3,
+        'detail': '%d unique internal links' % len(unique)
+    }
+
+def check_schema(post):
+    fields = {
+        'title': bool(post['title']),
+        'excerpt': bool(post['excerpt']),
+        'date': bool(post['date']),
+        'metaTitle': bool(post['metaTitle']),
+        'metaDescription': bool(post['metaDescription']),
+        'dateModified': bool(post['dateModified']),
+    }
+    missing = [k for k, v in fields.items() if not v]
+    return {
+        'missing': missing,
+        'passed': len(missing) == 0,
+        'detail': 'Missing: ' + (', '.join(missing) if missing else 'All ok')
+    }
+
+# Run checks
+changed_posts = [p for p in posts if p['slug'] in changed_slugs]
+
+all_results = []
+for post in changed_posts:
+    all_results.append({
+        'slug': post['slug'],
+        'title': post['title'],
+        'checks': {
+            'tfidf': check_tfidf(post),
+            'entities': check_entities(post),
+            'pillar': check_pillar_cluster(post),
+            'aeo': check_aeo_geo(post),
+            'links': check_links(post),
+            'schema': check_schema(post),
+        }
+    })
+
+# Summary
+pass_counts = {'tfidf': 0, 'entities': 0, 'pillar': 0, 'aeo': 0, 'links': 0, 'schema': 0}
+for r in all_results:
+    for k in pass_counts:
+        if r['checks'][k]['passed']:
+            pass_counts[k] += 1
+
+total = len(all_results)
+fully_pass = sum(1 for r in all_results if all(r['checks'][k]['passed'] for k in pass_counts))
+
+print("=" * 72)
+print("  CONTENT FRAMEWORK ENFORCEMENT REPORT")
+print("  Project: kanokmiah.com.bd")
+print("  Period: Last 48 hours")
+print("=" * 72)
+print()
+print("  EXECUTIVE SUMMARY")
+print("  " + "-" * 56)
+print("  Posts changed in last 48h: %d" % total)
+print("  Fully passing all checks:   %d" % fully_pass)
+print("  Need fixes:                 %d" % (total - fully_pass))
+print()
+print("  Check pass rates:")
+labels = {'tfidf': 'TF-IDF Coverage', 'entities': 'Entity Coverage', 'pillar': 'Pillar Link',
+          'aeo': 'AEO/GEO', 'links': 'Internal Links', 'schema': 'Schema Ready'}
+for k in ['tfidf', 'entities', 'pillar', 'aeo', 'links', 'schema']:
+    v = pass_counts[k]
+    pct = v * 100 // total
+    bar = '#' * (pct // 10) + '-' * (10 - pct // 10)
+    print("    %-20s [%s] %d/%d (%d%%)" % (labels[k], bar, v, total, pct))
+
+print()
+print("=" * 72)
+print("  DETAILED POST-BY-POST REPORT")
+print("=" * 72)
+
+check_order = [('TF-IDF', 'tfidf'), ('Entities', 'entities'), ('Pillar Link', 'pillar'),
+               ('AEO/GEO', 'aeo'), ('Internal Links', 'links'), ('Schema Ready', 'schema')]
+
+for r in all_results:
+    c = r['checks']
+    fails = sum(1 for _, k in check_order if not c[k]['passed'])
+    
+    icon = '+ OK' if fails == 0 else '! FIX'
+    print()
+    print("  [%s] %s" % (icon, r['slug']))
+    print("  Title: %s" % r['title'][:90])
+    
+    for label, key in check_order:
+        ck = c[key]
+        st = 'PASS' if ck['passed'] else 'FAIL'
+        dt = ck['detail']
+        if len(dt) > 55:
+            dt = dt[:52] + '...'
+        print("    %-15s %-6s %s" % (label, st, dt))
+    
+    if fails > 0:
+        print("    Fixes:")
+        if not c['tfidf']['passed']:
+            print("      - TF-IDF: Increase \"%s\" usage (%sx -> 5+)" % (c['tfidf']['keyword'], c['tfidf']['count']))
+        if not c['entities']['passed']:
+            print("      - Entities: Add: %s" % ', '.join(c['entities']['missing']))
+        if not c['pillar']['has_pillar_link']:
+            print("      - Pillar: Link to %s pillar page" % c['pillar']['pillar'])
+        if not c['aeo']['passed']:
+            print("      - AEO/GEO: Add question headings (now %d, need >=2)" % c['aeo']['count'])
+        if not c['links']['passed']:
+            print("      - Links: Add internal links (now %d, need >=3)" % c['links']['count'])
+        if not c['schema']['passed']:
+            print("      - Schema: Add %s" % ', '.join(c['schema']['missing']))
+
+print()
+print("=" * 72)
+print("  PRIORITY FIX LIST (by issue type)")
+print("=" * 72)
+
+issue_labels = {
+    'schema': 'Schema Missing Fields',
+    'aeo': 'AEO/GEO Question Headings',
+    'pillar': 'Pillar Link Missing',
+    'tfidf': 'Keyword Density',
+    'entities': 'Entity Coverage',
+    'links': 'Internal Links',
 }
 
-def get_pillar_for_post(slug, content, tags):
-    """Determine which pillar a post belongs to."""
-    content_lower = content.lower()
-    tags_lower = [t.lower() for t in tags]
-    
-    # Case study detection (check tags first)
-    if any('case study' in t for t in tags_lower):
-        return PILLAR_PAGES['seo-case-study-dhaka-businesses-increased-organic-traffic']
-    
-    # Industry-specific guides that clearly belong to main pillar
-    industry_guides = ['garments', 'textile', 'healthcare', 'medical', 'educational', 'real estate', 'fitness', 'travel', 'tourism']
-    if any(ind in content_lower for ind in industry_guides):
-        return PILLAR_PAGES['complete-seo-guide-bangladesh-businesses-2026']
-    
-    # GEO/AEO detection
-    if any(kw in content_lower for kw in ['geo', 'generative engine optimization', 'ai search', 'aeo', 'answer engine']):
-        return PILLAR_PAGES['geo-optimization-prepare-business-ai-search']
-    
-    # Technical SEO
-    if 'technical seo' in content_lower:
-        return PILLAR_PAGES['technical-seo-checklist-bangladeshi-websites']
-    
-    # Local SEO
-    if 'local seo' in content_lower or 'google business profile' in content_lower:
-        return PILLAR_PAGES['local-seo-tips-dhaka-businesses-google-maps']
-    
-    # Default
-    return PILLAR_PAGES['complete-seo-guide-bangladesh-businesses-2026']
+issue_posts = {k: [] for k in issue_labels}
+for r in all_results:
+    for k in issue_labels:
+        if not r['checks'][k]['passed']:
+            issue_posts[k].append(r['slug'])
 
-def check_entity_coverage(content, tags):
-    """Check if key semantic entities are present."""
-    content_lower = content.lower()
-    checks = {}
-    
-    # Location entities
-    checks['Bangladesh'] = 'bangladesh' in content_lower
-    checks['Dhaka'] = 'dhaka' in content_lower
-    
-    # Core SEO entities
-    checks['SEO (primary service)'] = 'seo' in content_lower
-    checks['Local SEO'] = 'local seo' in content_lower
-    checks['Technical SEO'] = 'technical seo' in content_lower
-    checks['On-page SEO'] = 'on-page seo' in content_lower or 'on page seo' in content_lower
-    
-    # Content type specific
-    if any('case study' in t.lower() for t in tags):
-        checks['Metrics (traffic/growth %)'] = bool(re.search(r'\d+%|\d+x', content_lower))
-        checks['Timeline (months/years)'] = bool(re.search(r'\d+\s*(month|day|week)s?', content_lower))
-    
-    # Service type specific 
-    if 'google business profile' in content_lower or 'google my business' in content_lower:
-        checks['GBP mention'] = True
-    
-    # Industry-specific entities
-    if 'garment' in content_lower or 'textile' in content_lower:
-        checks['Garments/Textile'] = True
-    if 'healthcare' in content_lower or 'medical' in content_lower or 'clinic' in content_lower:
-        checks['Healthcare/Medical'] = True
-    if 'ecommerce' in content_lower or 'e-commerce' in content_lower:
-        checks['E-commerce'] = True
-    if 'real estate' in content_lower:
-        checks['Real Estate'] = True
-    if 'travel' in content_lower or 'tourism' in content_lower:
-        checks['Travel/Tourism'] = True
-    if 'law' in content_lower or 'legal' in content_lower or 'attorney' in content_lower:
-        checks['Legal'] = True
-    if 'restaurant' in content_lower or 'food' in content_lower:
-        checks['Food/Restaurant'] = True
-    if 'gym' in content_lower or 'fitness' in content_lower:
-        checks['Fitness/Gym'] = True
-    
-    missing = [k for k, v in checks.items() if not v]
-    return checks, missing
+for k in sorted(issue_labels, key=lambda x: len(issue_posts[x]), reverse=True):
+    posts_list = issue_posts[k]
+    if posts_list:
+        print("\n  %s (%d posts):" % (issue_labels[k], len(posts_list)))
+        for s in posts_list:
+            print("    - %s" % s)
 
-# Build the report
-report = []
-report.append("# 🏛️ Content Framework Enforcement Report")
-report.append(f"**Date:** 2026-07-27 | **kanokmiah.com.bd**")
-report.append(f"**Scope:** {len(changed_slugs)} recently modified blog posts")
-report.append("")
-report.append("---")
-report.append("## Executive Summary")
-report.append("")
-
-pass_count = 0
-fail_posts = []
-
-for slug in changed_slugs:
-    post = posts.get(slug)
-    if not post:
-        continue
-    
-    content = post['content']
-    tags = post['tags']
-    title = post['title']
-    
-    failures = []
-    
-    # --- Pillar Link Check ---
-    pillar = get_pillar_for_post(slug, content, tags)
-    pillar_url = pillar['url']
-    has_pillar_link = pillar_url in content
-    
-    # Also check if it links to Complete SEO Guide (catch-all)
-    main_pillar_url = '/blog/complete-seo-guide-bangladesh-businesses-2026'
-    has_main_pillar_link = main_pillar_url in content
-    
-    if not has_pillar_link and not has_main_pillar_link:
-        failures.append(f"pillar_link: Add link to `{pillar_url}` ({pillar['label']})")
-    elif not has_pillar_link and has_main_pillar_link:
-        pass  # Links to main pillar, acceptable
-    
-    # --- AEO/GEO Check ---
-    q_headings = re.findall(r'^#{2,6}\s+(How|What|Why|When|Where|Can|Do|Is|Are|Does|Which|Who)\b', content, re.MULTILINE)
-    if len(q_headings) < 2:
-        failures.append(f"aeo_geo: Only {len(q_headings)} question heading(s) — need ≥2")
-    
-    # --- Internal Links Check ---
-    blog_links = re.findall(r'/blog/(?!%s)[^"\')\s]+' % re.escape(slug), content)
-    service_links = re.findall(r'/services/[^"\')\s]+', content)
-    location_links = re.findall(r'/locations/[^"\')\s]+', content)
-    other_internal = re.findall(r'/(?:about|contact|faq|industries)[^"\')\s]*', content)
-    all_links = set(blog_links + service_links + location_links + other_internal)
-    
-    if len(all_links) < 3:
-        failures.append(f"internal_links: Only {len(all_links)} unique internal link(s) — need ≥3")
-    
-    # --- Entity Check ---
-    _, missing_entities = check_entity_coverage(content, tags)
-    # Only flag as failure if core entities are missing
-    core_missing = [m for m in missing_entities if m in ['Bangladesh', 'Dhaka', 'SEO (primary service)']]
-    if core_missing:
-        failures.append(f"entities: Missing core entities — {', '.join(core_missing)}")
-    
-    # --- Schema Check ---
-    schema_missing = []
-    if not post['title']:
-        schema_missing.append('title')
-    if not post['excerpt']:
-        schema_missing.append('excerpt')
-    if not post['date']:
-        schema_missing.append('date')
-    if schema_missing:
-        failures.append(f"schema: Missing — {', '.join(schema_missing)}")
-    
-    if not failures:
-        pass_count += 1
-    else:
-        fail_posts.append((slug, title, failures, pillar, has_pillar_link, len(q_headings), len(all_links), missing_entities))
-
-# Summary table
-report.append(f"- ✅ **All checks passed:** {pass_count} posts")
-report.append(f"- ⚠️ **Issues found:** {len(fail_posts)} posts")
-report.append("")
-
-if not fail_posts:
-    report.append("**No issues detected. All posts comply.** ✅")
-else:
-    report.append("")
-    report.append("---")
-    report.append("## Detailed Findings")
-    report.append("")
-    
-    for slug, title, failures, pillar, has_pillar_link, q_count, link_count, missing_entities in fail_posts:
-        report.append(f"### ❌ `{slug}`")
-        report.append(f"**{title}**")
-        report.append("")
-        
-        # Build a quick status table
-        report.append("| Check | Status |")
-        report.append("|-------|--------|")
-        
-        # Pillar
-        if has_pillar_link:
-            report.append(f"| Pillar Link | ✅ Links to {pillar['label']} |")
-        else:
-            report.append(f"| Pillar Link | ❌ Missing — should link to `{pillar['url']}` |")
-        
-        # AEO/GEO
-        if q_count >= 2:
-            report.append(f"| AEO/GEO | ✅ {q_count} question headings |")
-        else:
-            report.append(f"| AEO/GEO | ❌ Only {q_count} question headings (need ≥2) |")
-        
-        # Internal Links
-        if link_count >= 3:
-            report.append(f"| Internal Links | ✅ {link_count} internal links |")
-        else:
-            report.append(f"| Internal Links | ❌ Only {link_count} links (need ≥3) |")
-        
-        # Entities
-        core_missing = [m for m in missing_entities if m in ['Bangladesh', 'Dhaka', 'SEO (primary service)']]
-        if core_missing:
-            report.append(f"| Entities | ❌ Missing: {', '.join(core_missing)} |")
-        else:
-            report.append(f"| Entities | ✅ Key entities present |")
-        
-        report.append("")
-        
-        # Consolidated fix instructions
-        report.append("#### 🔧 Fix Instructions")
-        for f in failures:
-            if f.startswith("pillar_link:"):
-                report.append(f"1. **{f.replace('pillar_link: ', '')}**")
-            elif f.startswith("aeo_geo:"):
-                report.append(f"1. **{f.replace('aeo_geo: ', '')}**")
-                report.append("   → Add 2+ question headings (e.g., '## How Does X Work?' or '## What Makes Y Effective?')")
-            elif f.startswith("internal_links:"):
-                report.append(f"1. **{f.replace('internal_links: ', '')}**")
-                report.append("   → Add links to related blog posts, service pages, or location pages")
-            elif f.startswith("entities:"):
-                report.append(f"1. **{f.replace('entities: ', '')}**")
-                report.append("   → Mention the missing location/service entities in the content body")
-            elif f.startswith("schema:"):
-                report.append(f"1. **{f.replace('schema: ', '')}**")
-                report.append("   → Set the missing fields in the post metadata")
-        report.append("")
-
-# Full details for posts with many failures
-report.append("---")
-report.append("## Posts With All Checks Passed ✅")
-report.append("")
-
-for slug in changed_slugs:
-    post = posts.get(slug)
-    if not post:
-        continue
-    content = post['content']
-    tags = post['tags']
-    
-    pillar = get_pillar_for_post(slug, content, tags)
-    pillar_url = pillar['url']
-    has_pillar_link = pillar_url in content or '/blog/complete-seo-guide-bangladesh-businesses-2026' in content
-    
-    q_headings = re.findall(r'^#{2,6}\s+(How|What|Why|When|Where|Can|Do|Is|Are|Does|Which|Who)\b', content, re.MULTILINE)
-    blog_links = re.findall(r'/blog/(?!%s)[^"\')\s]+' % re.escape(slug), content)
-    service_links = re.findall(r'/services/[^"\')\s]+', content)
-    location_links = re.findall(r'/locations/[^"\')\s]+', content)
-    other_internal = re.findall(r'/(?:about|contact|faq|industries)[^"\')\s]*', content)
-    all_links = set(blog_links + service_links + location_links + other_internal)
-    _, missing_entities = check_entity_coverage(content, tags)
-    core_missing = [m for m in missing_entities if m in ['Bangladesh', 'Dhaka', 'SEO (primary service)']]
-    
-    if has_pillar_link and len(q_headings) >= 2 and len(all_links) >= 3 and not core_missing and post['title'] and post['excerpt'] and post['date']:
-        report.append(f"- ✅ **{slug}** — {post['title']}")
-
-report.append("")
-report.append("---")
-report.append("## 📊 Summary Statistics")
-report.append("")
-report.append(f"| Metric | Value |")
-report.append(f"|--------|-------|")
-report.append(f"| Total posts checked | {len(changed_slugs)} |")
-report.append(f"| Fully compliant | {pass_count} |")
-report.append(f"| Need pillar link fix | {sum(1 for s,_,_,_,hp,_,_,_ in fail_posts if not hp)} |")
-report.append(f"| Need AEO/GEO headings | {sum(1 for s,_,_,_,_,qc,_,_ in fail_posts if qc < 2)} |")
-report.append(f"| Need more internal links | {sum(1 for s,_,_,_,_,_,lc,_ in fail_posts if lc < 3)} |")
-report.append(f"| Need entity fixes | {sum(1 for s,_,_,_,_,_,_,me in fail_posts if any(m in ['Bangladesh', 'Dhaka', 'SEO (primary service)'] for m in me))} |")
-report.append("")
-report.append("## 🔧 Priority Actions")
-report.append("")
-report.append("1. **HIGH: Add pillar links to 12 case study posts** — Most case studies don't link to their pillar pages.")
-report.append("2. **MEDIUM: Add question headings to 8 case study posts** — Case studies lack AEO/GEO optimization.")
-report.append("3. **LOW: Add more internal links to 2 posts** (das-taxis-scotland-seo-case-study, stealth-windshield-repairs-seo-case-study)")
-report.append("")
-report.append("---")
-report.append("*Report generated by Content Framework Enforcer cron job*")
-
-print('\n'.join(report))
-
-# Save
-with open("/root/kanok-miahit/_framework_enforcement_report.md", "w") as f:
-    f.write('\n'.join(report))
+print()
+print("=" * 72)
+print("  END OF REPORT")
+print("=" * 72)

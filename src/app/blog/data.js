@@ -5038,19 +5038,21 @@ JSON-LD হলো গুগলের সবচেয়ে প্রস্তা
 
 উদাহরণ: Article Schema JSON-LD
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "SEO টিপস: কীভাবে গুগলে প্রথম পেজে আসবেন",
-      "author": {
-        "@type": "Person",
-        "name": "মোঃ কনক মিঞা"
-      },
-      "datePublished": "2026-07-08",
-      "image": "https://kanokmiah.com.bd/image.jpg"
-    }
-    </script>
+\`\`\`html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "SEO টিপস: কীভাবে গুগলে প্রথম পেজে আসবেন",
+  "author": {
+    "@type": "Person",
+    "name": "মোঃ কনক মিঞা"
+  },
+  "datePublished": "2026-07-08",
+  "image": "https://kanokmiah.com.bd/image.jpg"
+}
+</script>
+\`\`\`
 
 ### ২. মাইক্রোডাটা
 মাইক্রোডাটা আপনার HTML এলিমেন্টের মধ্যে স্কিমা প্রোপার্টি যোগ করে। এটি JSON-LD-এর চেয়ে জটিল কিন্তু অনেক CMS এবং থিম এই পদ্ধতি সাপোর্ট করে।

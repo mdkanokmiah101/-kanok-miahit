@@ -1,71 +1,102 @@
 #!/usr/bin/env python3
-"""Extract blog post data from data.js with slug, title, content, tags, etc."""
+"""
+Parse data.js post objects using a state machine.
+Robust for multi-line strings and template literals.
+Outputs JSON array of post objects to stdout.
+"""
 import re
 import json
+import sys
 
-with open("/root/kanok-miahit/src/app/blog/data.js") as f:
-    content = f.read()
+DATA_FILE = "/root/kanok-miahit/src/app/blog/data.js"
 
-# Parse the blogPosts array
-# Find the blogPosts = [ ... ] pattern
-match = re.search(r'const blogPosts\s*=\s*(\[.*?\]);', content, re.DOTALL)
-if not match:
-    # Try another pattern
-    match = re.search(r'const\s+\w+\s*=\s*(\[.*?\]);', content, re.DOTALL)
-    if not match:
-        print("Could not find blogPosts array")
-        exit(1)
 
-posts_str = match.group(1)
+def parse_posts(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
 
-# Parse each post object
-# Find slug, title, excerpt, date, tags, content fields
-posts = []
-# Split by slug: to identify post boundaries
-parts = posts_str.split('slug:')
-for part in parts[1:]:
-    post = {}
-    slug_match = re.search(r'"([^"]+)"', part)
-    if slug_match:
-        post['slug'] = slug_match.group(1)
-    
-    # Get fields before next slug or end
-    end_idx = re.search(r'\bslug:', part)
-    
-    for field in ['title', 'excerpt', 'date', 'content']:
-        f_match = re.search(rf'{field}:\s*`((?:[^`]|\\`)*)`', part)
-        if not f_match:
-            f_match = re.search(rf'{field}:\s*"((?:[^"\\]|\\.)*)"', part)
-        if f_match:
-            post[field] = f_match.group(1)
-    
-    # Tags
-    tags_match = re.search(r'tags:\s*\[(.*?)\]', part, re.DOTALL)
-    if tags_match:
-        tags_str = tags_match.group(1)
-        tags = re.findall(r'"([^"]+)"', tags_str)
-        post['tags'] = tags
-    
-    # Image placeholder
-    img_match = re.search(r'imagePlaceholder:\s*"([^"]*)"', part)
-    if img_match:
-        post['imagePlaceholder'] = img_match.group(1)
-    
-    if post:
+    posts = []
+
+    # Find all slug positions
+    slug_positions = [m.start() for m in re.finditer(r'^\s+slug:\s+"([^"]+)"', content, re.MULTILINE)]
+
+    for i, pos in enumerate(slug_positions):
+        # Find the start of this post object (the "  {" before slug)
+        obj_start = content.rfind('{', 0, pos)
+        line_start = content.rfind('\n', 0, obj_start) + 1
+
+        # Find the end of this post object
+        if i + 1 < len(slug_positions):
+            next_slug_pos = slug_positions[i + 1]
+            obj_end = content.rfind('},', 0, next_slug_pos)
+            if obj_end == -1 or obj_end < pos:
+                obj_end = next_slug_pos
+            obj_end = content.find('\n', obj_end) + 1
+        else:
+            obj_end = content.rfind('];')
+
+        raw = content[line_start:obj_end].strip()
+
+        post = {}
+
+        # slug
+        m = re.search(r'slug:\s+"([^"]+)"', raw)
+        if m:
+            post['slug'] = m.group(1)
+
+        # title
+        m = re.search(r'title:\s*"((?:[^"\\]|\\.)*)"', raw)
+        if m:
+            post['title'] = m.group(1)
+
+        # date
+        m = re.search(r'date:\s+"([^"]*)"', raw)
+        if m:
+            post['date'] = m.group(1)
+
+        # author
+        m = re.search(r'author:\s+"([^"]*)"', raw)
+        if m:
+            post['author'] = m.group(1)
+
+        # excerpt (can be multi-line)
+        m = re.search(r'excerpt:\s*\n?\s*"((?:[^"\\]|\\.)*)"', raw)
+        if m:
+            post['excerpt'] = m.group(1)
+        else:
+            post['excerpt'] = ''
+
+        # tags
+        m = re.search(r'tags:\s*\[([^\]]*)\]', raw)
+        if m:
+            tags_str = m.group(1)
+            post['tags'] = [t.strip().strip('"') for t in tags_str.split(',') if t.strip()]
+        else:
+            post['tags'] = []
+
+        # dateModified (optional)
+        m = re.search(r'dateModified:\s+"([^"]*)"', raw)
+        post['dateModified'] = m.group(1) if m else ''
+
+        # content - find the template literal
+        m = re.search(r'content:\s*`\n', raw)
+        if m:
+            content_start = m.end()
+            rest = raw[content_start:]
+            end_idx = rest.find('`')
+            post['content'] = rest[:end_idx] if end_idx >= 0 else ''
+        else:
+            post['content'] = ''
+
         posts.append(post)
 
-# Output slugs with titles
-print(f"Total posts found: {len(posts)}")
-print("---")
-for p in posts:
-    slug = p.get('slug', 'unknown')
-    title = p.get('title', 'no title')[:80]
-    tags = p.get('tags', [])
-    excerpt = (p.get('excerpt', '') or '')[:80]
-    content_preview = (p.get('content', '') or '')[:100]
-    print(f"Slug: {slug}")
-    print(f"Title: {title}")
-    print(f"Tags: {', '.join(tags[:5])}")
-    print(f"Content length: {len(p.get('content', '') or '')}")
-    print(f"Content preview: {content_preview}")
-    print("---")
+    return posts
+
+
+def main():
+    posts = parse_posts(DATA_FILE)
+    json.dump(posts, sys.stdout, indent=2)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,441 +1,360 @@
 #!/usr/bin/env python3
-"""
-Content Framework Checker for kanokmiah.com.bd blog posts.
-Version 3 - Final with &/and normalization and cleaner output.
-"""
+"""Content Framework Checker for kanokmiah.com.bd blog posts."""
 import re
+import sys
 
-DATA_FILE = "/root/kanok-miahit/src/app/blog/data.js"
+# Read the data.js file
+with open('/root/kanok-miahit/src/app/blog/data.js', 'r') as f:
+    content = f.read()
 
-TARGET_SLUGS = [
-    "geo-optimization-prepare-business-ai-search",
-    "seo-garments-textile-industry-b2b-lead-generation",
-    "mobile-seo-bangladesh-ranking-strategy",
-    "seo-career-guide-bangladesh-2026",
-    "affiliate-seo-bangladesh",
-    "seo-google-penalty-recovery-bd",
-    "b2b-lead-generation-seo-bangladesh",
-    "seo-for-fitness-gyms-bangladesh",
-    "seo-healthcare-medical-clinics-bangladesh",
-    "seo-educational-institutions-bangladesh",
-    "seo-travel-tourism-bangladesh",
-]
+def extract_field(block, pattern):
+    m = re.search(pattern, block)
+    return m.group(1) if m else ''
+
+def get_post_block(content, slug):
+    """Extract the full post object block from data.js."""
+    post_idx = content.find(f'slug: "{slug}"')
+    if post_idx == -1:
+        return None, None
+    open_brace = content.rfind('{', 0, post_idx)
+    if open_brace == -1:
+        return None, None
+    
+    # Find content: `...` end
+    content_start = content.find(f'content: `', open_brace)
+    if content_start == -1:
+        return None, None
+    content_text_start = content_start + len('content: `')
+    # Find the closing backtick
+    nested = 0
+    close_content = -1
+    for i in range(content_text_start, len(content)):
+        if content[i] == '`':
+            if nested == 0:
+                close_content = i
+                break
+        elif content[i:i+2] == '\\`':
+            i += 1
+    if close_content == -1:
+        return None, None
+    
+    # Now find the closing }, of the post object
+    close_brace = content.find('},', close_content)
+    if close_brace == -1:
+        close_brace = content.find('}\n', close_content)
+    if close_brace == -1:
+        close_brace = content.find('}', close_content)
+    
+    post_block = content[open_brace:close_brace+1]
+    return post_block, content[content_text_start:close_content]
 
 
-def read_data_file(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
-
-
-def extract_posts(text):
-    posts = []
-    i = 0
-    length = len(text)
-
-    while i < length:
-        m = re.compile(r'^\s*\{\s*$', re.MULTILINE).search(text, i)
-        if not m:
-            break
-
-        obj_start = m.start()
-        depth = 0
-        in_backtick = False
-        in_single_string = False
-        in_double_string = False
-        escaped = False
-
-        j = obj_start
-        while j < length:
-            ch = text[j]
-            if escaped:
-                escaped = False
-                j += 1
-                continue
-            if ch == '\\' and (in_backtick or in_single_string or in_double_string):
-                escaped = True
-                j += 1
-                continue
-            if in_backtick:
-                if ch == '`':
-                    in_backtick = False
-            elif in_single_string:
-                if ch == "'":
-                    in_single_string = False
-            elif in_double_string:
-                if ch == '"':
-                    in_double_string = False
-            else:
-                if ch == '`':
-                    in_backtick = True
-                elif ch == "'":
-                    in_single_string = True
-                elif ch == '"':
-                    in_double_string = True
-                elif ch == '{':
-                    depth += 1
-                elif ch == '}':
-                    depth -= 1
-                    if depth == 0:
-                        obj_end = j + 1
-                        obj_text = text[obj_start:obj_end]
-                        post = parse_post_object(obj_text)
-                        if post and post.get('slug'):
-                            posts.append(post)
-                        i = obj_end
-                        break
-            j += 1
-        else:
-            i = obj_start + 1
-
+def parse_all_posts(content):
+    """Parse all posts from data.js."""
+    posts = {}
+    
+    # Find all slugs and their content blocks
+    slug_pattern = re.compile(r'slug:\s*"([^"]+)"')
+    for m in slug_pattern.finditer(content):
+        slug = m.group(1)
+        post_block, content_text = get_post_block(content, slug)
+        if post_block is None:
+            continue
+        
+        title = extract_field(post_block, r'title:\s*"([^"]+)"')
+        date = extract_field(post_block, r'date:\s*"([^"]+)"')
+        date_modified = extract_field(post_block, r'dateModified:\s*"([^"]+)"')
+        excerpt = extract_field(post_block, r'excerpt:\s*"([^"]*)"')
+        tags_str = extract_field(post_block, r'tags:\s*\[(.*?)\]')
+        meta_title = extract_field(post_block, r'metaTitle:\s*"([^"]*)"')
+        meta_description = extract_field(post_block, r'metaDescription:\s*"([^"]*)"')
+        
+        tags = re.findall(r'"([^"]+)"', tags_str) if tags_str else []
+        
+        posts[slug] = {
+            'title': title,
+            'date': date or 'unknown',
+            'dateModified': date_modified or '',
+            'excerpt': excerpt or '',
+            'tags': tags,
+            'metaTitle': meta_title or '',
+            'metaDescription': meta_description or '',
+            'content': content_text
+        }
+    
     return posts
 
 
-def parse_post_object(obj_text):
-    post = {}
-    m = re.search(r'slug:\s*"([^"]+)"', obj_text)
-    if m: post['slug'] = m.group(1)
-    m = re.search(r'title:\s*"([^"]+)"', obj_text)
-    if m: post['title'] = m.group(1)
-    m = re.search(r'date:\s*"([^"]+)"', obj_text)
-    if m: post['date'] = m.group(1)
-    m = re.search(r'author:\s*"([^"]+)"', obj_text)
-    if m: post['author'] = m.group(1)
-    m = re.search(r'excerpt:\s*\n?\s*"((?:[^"\\]|\\.)*)"', obj_text)
-    if m: post['excerpt'] = m.group(1)
-    m = re.search(r'tags:\s*\[([^\]]+)\]', obj_text)
-    if m:
-        tags_str = m.group(1)
-        tags = re.findall(r'"([^"]+)"', tags_str)
-        post['tags'] = tags
-    m = re.search(r'metaTitle:\s*"([^"]*)"', obj_text)
-    if m: post['metaTitle'] = m.group(1)
-    m = re.search(r'metaDescription:\s*"([^"]*)"', obj_text)
-    if m: post['metaDescription'] = m.group(1)
-    m = re.search(r'dateModified:\s*"([^"]+)"', obj_text)
-    if m: post['dateModified'] = m.group(1)
-    m = re.search(r'content:\s*`(.*)', obj_text, re.DOTALL)
-    if m:
-        after_content = m.group(1)
-        close_idx = after_content.rfind('`')
-        if close_idx >= 0:
-            post['content'] = after_content[:close_idx]
-    m = re.search(r'imagePlaceholder:\s*"([^"]+)"', obj_text)
-    if m: post['imagePlaceholder'] = m.group(1)
-    m = re.search(r'readTime:\s*"([^"]+)"', obj_text)
-    if m: post['readTime'] = m.group(1)
-    return post
-
-
-def normalize_text(text):
-    """Normalize & ↔ and for matching."""
-    return text.replace(' & ', ' and ').replace(' &amp; ', ' and ')
-
-
-def extract_primary_keyword(title):
-    """
-    Extract primary keyword from title (first meaningful noun phrase).
-    """
-    if not title:
-        return None
-
-    keyword = title.strip()
-    # Split on separator, take first part
-    for sep in [' — ', ' – ', ' - ', ': ', '|', '—', '–', ':']:
-        parts = keyword.split(sep, 1)
-        if len(parts) > 1 and len(parts[0]) > 3:
-            keyword = parts[0].strip()
-            break
-
-    keyword = keyword.rstrip(',;.:!?')
-
-    # For English, strip common prefixes/suffixes
-    if not any('\u0980' <= c <= '\u09FF' for c in keyword):
-        keyword = re.sub(r'\s+in\s+Bangladesh.*$', '', keyword, flags=re.IGNORECASE).strip()
-        keyword = re.sub(r'\s+for\s+Bangladesh.*$', '', keyword, flags=re.IGNORECASE).strip()
-
-        m = re.match(r'^(SEO|Complete|The|A|Your)\s+(for|in|of|to|Guide)\s+(.+)$', keyword, re.IGNORECASE)
-        if m:
-            keyword = m.group(3).strip()
-
-        words = keyword.split()
-        if len(words) > 5:
-            keyword = ' '.join(words[:4])
-
-    keyword = keyword.rstrip(',;.:!?& ')
-    return keyword.strip() if keyword else None
-
-
-# ─── CHECKS ─────────────────────────────────────────────────────────────────
-
 def check_tfidf(title, content):
-    if not title or not content:
-        kw = extract_primary_keyword(title) if title else "N/A"
-        return kw, "❌", "Missing title or content"
-
-    keyword = extract_primary_keyword(title)
-    if not keyword:
-        return "N/A", "❌", "Could not extract keyword"
-
-    # Normalize both for &/and equivalence
-    kw_norm = normalize_text(keyword.lower())
-    content_norm = normalize_text(content.lower())
-
-    count = len(re.findall(re.escape(kw_norm), content_norm))
-
-    if count >= 5:
-        return keyword, "✅", f"{count} occurrences (normalized)"
-    else:
-        return keyword, "❌", f"{count} occurrences (need ≥5, normalized)"
-
-
-def check_entities(title, content, tags):
-    if not content:
-        return "❌", "Missing content"
-
-    missing_entities = []
-
-    location_found = any([
-        re.search(r'\bBangladesh\b', content, re.IGNORECASE),
-        re.search(r'\bঢাকা\b', content),
-        re.search(r'\bDhaka\b', content),
-        re.search(r'বাংলাদেশ', content),
-    ])
-    if not location_found:
-        missing_entities.append('Location (Bangladesh/Dhaka)')
-
-    seo_found = any(re.search(p, content, re.IGNORECASE) for p in [
-        r'\bSEO\b', r'\bGEO\b', r'\bsearch engine\b', r'\branking\b',
-        r'\boptimization\b', r'এসইও', r'সার্চ ইঞ্জিন',
-    ])
-    if not seo_found:
-        missing_entities.append('Service type (SEO/digital marketing)')
-
-    if tags:
-        for tag in tags:
-            tl = tag.lower()
-            if any(kw in tl for kw in ['garment', 'textile', 'rmg']):
-                if not re.search(r'\bgarment|\btextile|\bRMG|\bapparel', content, re.IGNORECASE):
-                    missing_entities.append(f'Industry: {tag}')
-            elif 'b2b' in tl:
-                if not re.search(r'\bB2B\b', content):
-                    missing_entities.append(f'Entity: B2B')
-            elif any(kw in tl for kw in ['health', 'medical', 'clinic', 'healthcare']):
-                if not re.search(r'\bmedical|\bhealthcare|\bclinic|\bdoctor|\bhospital|চিকিৎসা', content, re.IGNORECASE):
-                    missing_entities.append(f'Industry: {tag}')
-            elif any(kw in tl for kw in ['education', 'school', 'educational', 'student', 'university']):
-                if not re.search(r'\beducation|\bschool|\buniversity|\bcollege|শিক্ষা|বিদ্যালয়', content, re.IGNORECASE):
-                    missing_entities.append(f'Industry: {tag}')
-            elif any(kw in tl for kw in ['travel', 'tourism', 'tour', 'hospitality']):
-                if not re.search(r'\btravel|\btourism|\btour|ভ্রমণ|পর্যটন', content, re.IGNORECASE):
-                    missing_entities.append(f'Industry: {tag}')
-            elif any(kw in tl for kw in ['fitness', 'gym']):
-                if not re.search(r'\bfitness|\bgym|\bexercise|\bworkout|ফিটনেস', content, re.IGNORECASE):
-                    missing_entities.append(f'Industry: {tag}')
-            elif any(kw in tl for kw in ['mobile', 'মোবাইল']):
-                if not re.search(r'\bmobile|মোবাইল', content, re.IGNORECASE):
-                    missing_entities.append(f'Entity: Mobile')
-            elif any(kw in tl for kw in ['career', 'job', 'ক্যারিয়ার', 'চাকরি']):
-                if not re.search(r'\bcareer|\bjob|ক্যারিয়ার|চাকরি', content, re.IGNORECASE):
-                    missing_entities.append(f'Entity: {tag}')
-            elif any(kw in tl for kw in ['affiliate', 'অ্যাফিলিয়েট']):
-                if not re.search(r'\baffiliate|অ্যাফিলিয়েট', content, re.IGNORECASE):
-                    missing_entities.append(f'Entity: Affiliate')
-            elif any(kw in tl for kw in ['penalty', 'recovery', 'পেনাল্টি', 'রিকভারি']):
-                if not re.search(r'\bpenalty|\brecovery|পেনাল্টি|রিকভারি', content, re.IGNORECASE):
-                    missing_entities.append(f'Entity: {tag}')
-
-    if missing_entities:
-        return "❌", f"Missing: {', '.join(missing_entities)}"
-    else:
-        return "✅", "All key entities present"
+    """Extract primary keyword from title and count occurrences."""
+    stop_words = {'a', 'an', 'the', 'for', 'in', 'of', 'to', 'and', 'is', 'are', 'your', 'our', 'we', 'how', 'what', 'why', 'when', 'where', 'do', 'does', 'need', 'has', 'been', 'its', 'it', 'at', 'with', 'that', 'this', 'on', 'by', 'not', 'no', 'or', 'be'}
+    
+    words = re.findall(r'[A-Za-z]+', title)
+    meaningful = [w for w in words if w.lower() not in stop_words and len(w) > 2]
+    
+    keyword = ''
+    count = 0
+    
+    if meaningful:
+        # Try the first meaningful word as base
+        keyword = meaningful[0]
+        count = len(re.findall(re.escape(keyword), content, re.IGNORECASE))
+        
+        # Try 2-3 word phrases
+        for n in range(min(3, len(meaningful)), 1, -1):
+            phrase = ' '.join(meaningful[:n])
+            phrase_count = len(re.findall(re.escape(phrase), content, re.IGNORECASE))
+            if phrase_count > 0:
+                keyword = phrase
+                count = phrase_count
+                break
+    
+    return keyword, count
 
 
-def check_pillar_link(content, tags):
-    if not content:
-        return "❌", "No content"
+def check_entities(content, slug):
+    """Check key entities for each post."""
+    missing = []
+    
+    # Universal location entities
+    if not re.search(r'Dhaka', content, re.IGNORECASE):
+        missing.append('Dhaka (location)')
+    if not re.search(r'Bangladesh', content, re.IGNORECASE):
+        missing.append('Bangladesh (country)')
+    
+    # Service type entities based on slug
+    slug_lower = slug.lower()
+    if any(x in slug_lower for x in ['ecommerce', 'e-commerce', 'daraz', 'shopify', 'store']):
+        if not re.search(r'e.?commerce|online store', content, re.IGNORECASE):
+            missing.append('E-commerce (service type)')
+    if any(x in slug_lower for x in ['garment', 'textile', 'b2b', 'lead.generation']):
+        if not re.search(r'B2B|garment|RMG|manufacturer', content, re.IGNORECASE):
+            missing.append('B2B/Garments (industry)')
+    if any(x in slug_lower for x in ['local']):
+        if not re.search(r'Google Business Profile|GBP|local search|Google Maps', content):
+            missing.append('Local SEO (service type)')
+    if any(x in slug_lower for x in ['mobile', 'amp']):
+        if not re.search(r'mobile|smartphone', content, re.IGNORECASE):
+            missing.append('Mobile (topic)')
+    if 'link.building' in slug_lower:
+        if not re.search(r'backlink|link building|guest post', content, re.IGNORECASE):
+            missing.append('Link building (service type)')
+    if 'technical' in slug_lower:
+        if not re.search(r'technical|crawl|core web vitals|page speed', content, re.IGNORECASE):
+            missing.append('Technical SEO (topic)')
+    if 'case.study' in slug_lower:
+        if not re.search(r'organic|traffic|growth|result|increase', content, re.IGNORECASE):
+            missing.append('Results data (case study)')
+    if 'real.estate' in slug_lower or 'property' in slug_lower:
+        if not re.search(r'property|real estate', content, re.IGNORECASE):
+            missing.append('Real estate (industry)')
+    if 'google.business' in slug_lower or 'gbp' in slug_lower or 'google.my.business' in slug_lower:
+        if not re.search(r'Google Business|GBP|Google My Business', content):
+            missing.append('GBP (service type)')
+    if 'geo' in slug_lower or 'ai' in slug_lower:
+        if not re.search(r'GEO|AI|generative|ChatGPT', content):
+            missing.append('GEO/AI (topic)')
+    if 'consultant' in slug_lower or 'expert' in slug_lower or 'agency' in slug_lower:
+        if not re.search(r'expert|consultant|agency|professional', content, re.IGNORECASE):
+            missing.append('Service provider (entity)')
+    if 'seo.optimization' in slug_lower or 'seo.guide' in slug_lower:
+        pass  # broad SEO terms, skip specific checks
+    
+    return missing
 
-    pillar_map = [
-        (['seo guide', 'bangladesh seo', 'digital marketing', '2026'], ['/', '/services'], 'Homepage / Services'),
-        (['geo', 'ai search', 'generative engine optimization', 'future of seo'], ['/', '/services'], 'Homepage / Services'),
-        (['garments', 'textile', 'rmg', 'b2b seo', 'garments seo', 'textile industry', 'bangladesh rmg'],
-         ['/services', '/industries/manufacturing'], 'Services / Manufacturing'),
-        (['মোবাইল', 'mobile first', 'mobile optimization', 'ভয়েস সার্চ', 'bangladesh mobile'], ['/', '/services'], 'Homepage / Mobile SEO'),
-        (['seo ক্যারিয়ার', 'ক্যারিয়ার', 'চাকরি', 'পেশা', 'বাংলাদেশ ২০২৬', 'seo career', 'career'],
-         ['/', '/about', '/services'], 'Homepage / About / Services'),
-        (['affiliate marketing seo', 'affiliate seo bangladesh', 'অ্যাফিলিয়েট মার্কেটিং', 'seo কৌশল', 'bangladesh affiliate', 'affiliate'],
-         ['/services', '/blog', '/'], 'Services / Homepage'),
-        (['গুগল পেনাল্টি', 'পেনাল্টি রিকভারি', 'গুগল অ্যালগরিদম', 'বাংলাদেশ', 'penalty', 'recovery'],
-         ['/services', '/', '/blog'], 'Services / Homepage'),
-        (['b2b seo', 'lead generation', 'bangladesh business', 'industrial seo', 'b2b'], ['/services', '/'], 'Services / Homepage'),
-        (['fitness seo', 'gym marketing', 'local seo', 'bangladesh fitness', 'fitness', 'gym'],
-         ['/industries/fitness', '/industries'], 'Fitness industry page'),
-        (['healthcare seo', 'medical seo', 'patient acquisition', 'health', 'medical', 'clinic', 'healthcare'],
-         ['/industries/medical', '/industries'], 'Medical industry page'),
-        (['education seo', 'student enrollment', 'university seo', 'bangladesh education', 'education', 'school', 'student'],
-         ['/industries/education', '/industries'], 'Education industry page'),
-        (['travel seo', 'tourism marketing', 'hospitality seo', 'bangladesh travel', 'travel', 'tourism', 'tour'],
-         ['/industries/travel', '/industries'], 'Travel industry page'),
+
+def check_pillar_links(content):
+    """Check links to pillar pages."""
+    linked = []
+    
+    pillar_patterns = [
+        ('/blog/complete-seo-guide-bangladesh-businesses-2026', 'Complete SEO Guide pillar'),
+        ('/blog/local-seo-tips-dhaka-businesses-google-maps', 'Local SEO Guide pillar'),
+        ('/blog/technical-seo-checklist-bangladeshi-websites', 'Technical SEO Guide pillar'),
+        ('/services/', 'Services pages'),
+        ('/services/local-seo', 'Local SEO services'),
+        ('/services/technical-seo', 'Technical SEO services'),
+        ('/services/ecommerce-seo', 'E-commerce SEO services'),
+        ('/services/on-page-seo', 'On-page SEO services'),
+        ('/services/geo-ai-search', 'GEO/AI search services'),
+        ('/industries/', 'Industry pages'),
     ]
-
-    tag_lower = [t.lower() for t in (tags or [])]
-
-    matched_pillar = None
-    for keywords, pillar_pages, pillar_name in pillar_map:
-        if any(any(kw in t for kw in keywords) for t in tag_lower):
-            matched_pillar = (pillar_pages, pillar_name)
-            break
-
-    if not matched_pillar:
-        return "⚠️", "Could not determine pillar from tags"
-
-    pillar_pages, pillar_name = matched_pillar
-
-    markdown_links = re.findall(r'\((/[^)]+)\)', content)
-
-    linked_pillars = []
-    for page in pillar_pages:
-        for link in markdown_links:
-            if link == page or link.startswith(page + '/') or (page != '/' and page in link):
-                linked_pillars.append(link)
-
-    if linked_pillars:
-        unique_links = list(set(linked_pillars))
-        return "✅", f"Links to: {', '.join(unique_links[:3])}"
-    else:
-        return "❌", f"No link to pillar page(s): {pillar_name}"
+    
+    for url, label in pillar_patterns:
+        if url in content:
+            linked.append(label)
+    
+    return linked
 
 
 def check_aeo_geo(content):
-    if not content:
-        return "❌", "No content"
-
-    headings = re.findall(r'^#{1,6}\s+(.+)', content, re.MULTILINE)
-
-    question_words = ['How', 'What', 'Why', 'When', 'Where', 'Can', 'Do', 'Is', 'Are',
-                      'Does', 'Will', 'Would', 'Should', 'Could', 'Which', 'Who',
-                      'কিভাবে', 'কী', 'কেন', 'কখন', 'কোথায়', 'কি', 'কে', 'কার', 'কোন', 'কোনটি']
-
-    question_headings = []
-    for h in headings:
-        hs = h.strip()
-        for qw in question_words:
-            if hs.lower().startswith(qw.lower()):
-                question_headings.append(hs)
-                break
-
-    count = len(question_headings)
-    if count >= 2:
-        return "✅", f"{count} question headings"
-    else:
-        return "❌", f"{count} question headings (need ≥2)"
+    """Count question-based headings."""
+    headings = re.findall(
+        r'^#{2,6}\s+(How|What|Why|When|Where|Can|Do|Is|Are|Does|Which|Who)\b',
+        content,
+        re.MULTILINE | re.IGNORECASE
+    )
+    return headings
 
 
 def check_internal_links(content):
-    if not content:
-        return "❌", "No content"
-
-    links = re.findall(r'\((/[^)]+)\)', content)
-    internal_links = [l for l in links if len(l) > 1]
-
-    count = len(internal_links)
-    if count >= 3:
-        return "✅", f"{count} total"
-    else:
-        return "❌", f"{count} total (need ≥3)"
+    """Count and return internal links."""
+    links = re.findall(r'\[([^\]]+)\]\(/([^)]+)\)', content)
+    return links
 
 
 def check_schema(post):
+    """Check ArticleSchema readiness."""
     missing = []
-    if not post.get('title'): missing.append('title')
-    if not post.get('excerpt'): missing.append('excerpt')
-    if not post.get('date'): missing.append('date')
-    if not post.get('author'): missing.append('author')
-    if not post.get('metaTitle'): missing.append('metaTitle')
-    if not post.get('metaDescription'): missing.append('metaDescription')
-    if not missing:
-        return "✅", "All fields set"
-    else:
-        return "❌", f"Missing: {', '.join(missing)}"
+    if not post.get('metaTitle'):
+        missing.append('metaTitle')
+    if not post.get('metaDescription'):
+        missing.append('metaDescription')
+    if not post.get('date'):
+        missing.append('date')
+    if not post.get('excerpt'):
+        missing.append('excerpt')
+    if not post.get('dateModified'):
+        missing.append('dateModified (recommended)')
+    return missing
 
 
-# ─── MAIN ───────────────────────────────────────────────────────────────────
+# Parse all posts
+posts = parse_all_posts(content)
 
-def main():
-    text = read_data_file(DATA_FILE)
-    all_posts = extract_posts(text)
+# Changed posts from git diff analysis
+changed_posts = [
+    'link-building-strategies-bangladesh-market',
+    'seo-garments-textile-industry-b2b-lead-generation',
+    'google-business-profile-optimization-guide-bangladesh',
+    'mobile-seo-optimization-bangladesh-mobile-first-era',
+    'why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh',
+    'landlord-certificates-seo-case-study',
+    'das-taxis-scotland-seo-case-study',
+    'morethanpanel-seo-case-study',
+    'smmgen-seo-case-study',
+    'smmsun-seo-case-study',
+    'mir-cement-seo-case-study',
+    'dhaka-apparels-seo-case-study',
+    'stealth-windshield-repairs-seo-case-study',
+    'how-to-choose-best-seo-expert-dhaka-15-things',
+    'seo-expert-vs-seo-agency-dhaka-which-is-right',
+    'top-10-seo-mistakes-dhaka-businesses-fix',
+    'what-does-seo-expert-do-guide-business-owners',
+    'seo-case-study-dhaka-businesses-increased-organic-traffic',
+    'hiring-seo-expert-dhaka-better-roi-than-paid-ads',
+    'ai-seo-2026-dhaka-experts-optimize-google-ai-chatgpt',
+]
 
-    target_posts = []
-    for slug in TARGET_SLUGS:
-        found = [p for p in all_posts if p.get('slug') == slug]
-        if found:
-            target_posts.append(found[0])
+# Summary stats
+total_posts = len(posts)
+pass_count = 0
+fail_posts = []
 
-    print(f"Checked {len(target_posts)} posts\n")
+print(f"📊 Content Framework Enforcement Report — kanokmiah.com.bd\n")
+print(f"Total posts in database: {total_posts}")
+print(f"Posts modified in last 48h: {len(changed_posts)}\n")
 
-    for post in target_posts:
-        slug = post.get('slug', 'unknown')
-        title = post.get('title', '')
-        content = post.get('content', '')
-        tags = post.get('tags', [])
-        excerpt = post.get('excerpt', '')
-        date = post.get('date', '')
-
-        print(f"## Post: {slug}")
-        print(f"| Check | Status | Details |")
-        print(f"|-------|--------|---------|")
-
-        keyword, tfidf_status, tfidf_detail = check_tfidf(title, content)
-        print(f"| TF-IDF: `{keyword}` | {tfidf_status} | {tfidf_detail} |")
-
-        ent_status, ent_detail = check_entities(title, content, tags)
-        print(f"| Entities | {ent_status} | {ent_detail} |")
-
-        pil_status, pil_detail = check_pillar_link(content, tags)
-        print(f"| Pillar Link | {pil_status} | {pil_detail} |")
-
-        aeo_status, aeo_detail = check_aeo_geo(content)
-        print(f"| AEO/GEO | {aeo_status} | {aeo_detail} |")
-
-        il_status, il_detail = check_internal_links(content)
-        print(f"| Internal Links | {il_status} | {il_detail} |")
-
-        sch_status, sch_detail = check_schema(post)
-        print(f"| Schema Ready | {sch_status} | {sch_detail} |")
-
-        print(f"\n### Fix instructions:")
-        fixes = []
-
-        if tfidf_status == "❌":
-            count_part = tfidf_detail.split()[0]
-            fixes.append(f"- TF-IDF: Add more occurrences of primary keyword `{keyword}` in content (currently {count_part})")
-
-        if ent_status == "❌":
-            missing_str = ent_detail.replace('Missing: ', '')
-            fixes.append(f"- Entities: Add missing entities: {missing_str}")
-
-        if pil_status == "❌":
-            fixes.append(f"- Pillar: {pil_detail}")
-
-        if aeo_status == "❌":
-            fixes.append(f"- AEO/GEO: Add more question-based headings (How, What, Why, etc.) — currently {aeo_detail.split()[0]}")
-
-        if il_status == "❌":
-            fixes.append(f"- Internal Links: Add more internal links — currently {il_detail.split()[0]}")
-
-        if sch_status == "❌":
-            fixes.append(f"- Schema: Set missing fields: {sch_detail.replace('Missing: ', '')}")
-
-        if not fixes:
-            fixes.append("- All checks pass — no fixes needed.")
-
-        for f in fixes:
-            print(f)
-
-        content_len = len(content) if content else 0
-        heading_count = len(re.findall(r'^#{1,6}\s+', content, re.MULTILINE)) if content else 0
-        print(f"\n_~{content_len:,} chars, {heading_count} headings_")
+for slug in changed_posts:
+    if slug not in posts:
+        print(f"\n⚠️  Post '{slug}' not found in data.js")
+        continue
+    
+    post = posts[slug]
+    content = post['content']
+    title = post['title']
+    
+    print(f"---")
+    print(f"## Post: {slug}")
+    print(f"**Title:** {title}")
+    
+    checks = []
+    total_flags = 0
+    
+    # A. TF-IDF Coverage
+    keyword, count = check_tfidf(title, content)
+    if not keyword:
+        keyword = title.split()[0] if title else 'N/A'
+    tfidf_flag = count < 5
+    total_flags += 1 if tfidf_flag else 0
+    tfidf_status = '✅' if not tfidf_flag else '❌'
+    
+    # B. Entity Coverage
+    missing_entities = check_entities(content, slug)
+    entities_flag = len(missing_entities) > 0
+    total_flags += 1 if entities_flag else 0
+    entities_status = '✅' if not entities_flag else '❌'
+    
+    # C. Pillar-Cluster Alignment
+    pillar_links = check_pillar_links(content)
+    pillar_flag = len(pillar_links) == 0
+    total_flags += 1 if pillar_flag else 0
+    pillar_status = '✅' if not pillar_flag else '❌'
+    
+    # D. AEO/GEO Optimization
+    question_headings = check_aeo_geo(content)
+    aeo_flag = len(question_headings) < 2
+    total_flags += 1 if aeo_flag else 0
+    aeo_status = '✅' if not aeo_flag else '❌'
+    
+    # E. Internal Linking
+    internal_links = check_internal_links(content)
+    links_flag = len(internal_links) < 3
+    total_flags += 1 if links_flag else 0
+    links_status = '✅' if not links_flag else '❌'
+    
+    # F. Schema Readiness
+    missing_fields = check_schema(post)
+    schema_flag = len(missing_fields) > 0
+    total_flags += 1 if schema_flag else 0
+    schema_status = '✅' if not schema_flag else '❌'
+    
+    # Output table
+    entity_detail = f"Missing: {', '.join(missing_entities)}" if missing_entities else "All key entities present"
+    pillar_detail = f"Links to: {', '.join(pillar_links)}" if pillar_links else "No pillar link found"
+    aeo_detail = f"{len(question_headings)} question headings: {', '.join(question_headings[:4])}" if question_headings else "None"
+    link_detail = f"{len(internal_links)} total"
+    schema_detail = f"Missing: {', '.join(missing_fields)}" if missing_fields else "All fields set"
+    
+    print(f"""
+| Check | Status | Details |
+|-------|--------|---------|
+| TF-IDF: `{keyword}` | {tfidf_status} | {count} occurrences{' (thin — target ≥5)' if tfidf_flag else ''} |
+| Entities | {entities_status} | {entity_detail} |
+| Pillar Link | {pillar_status} | {pillar_detail} |
+| AEO/GEO | {aeo_status} | {aeo_detail} |
+| Internal Links | {links_status} | {link_detail} |
+| Schema Ready | {schema_status} | {schema_detail} |
+""")
+    
+    # Fix instructions
+    if total_flags > 0:
+        fail_posts.append(slug)
+        print(f"### 🔧 Fix instructions for `{slug}`:")
+        if tfidf_flag:
+            print(f"- **TF-IDF too thin:** Increase `{keyword}` mentions to ≥5 across content")
+        if entities_flag:
+            print(f"- **Missing entities:** Add `{'`, `'.join(missing_entities)}` where relevant")
+        if pillar_flag:
+            print(f"- **No pillar link:** Link to the appropriate pillar page (e.g., `/blog/complete-seo-guide-bangladesh-businesses-2026`, `/services/`, or `/industries/`)")
+        if aeo_flag:
+            print(f"- **AEO/GEO weak:** Add ≥2 question-based headings (How, What, Why, etc.) for AI search optimization")
+        if links_flag:
+            print(f"- **Too few internal links ({len(internal_links)}):** Add more links to other blog posts, service pages, or location pages")
+        if schema_flag:
+            print(f"- **Schema fields missing:** Add `{'`, `'.join(missing_fields)}` to the post object")
         print()
+    else:
+        pass_count += 1
 
-
-if __name__ == "__main__":
-    main()
+# Summary
+print(f"\n{'='*60}")
+print(f"📋 OVERALL SUMMARY")
+print(f"{'='*60}")
+print(f"✅ Posts passing all checks: {pass_count}/{len(changed_posts)}")
+print(f"❌ Posts needing fixes: {len(fail_posts)}")
+if fail_posts:
+    print(f"   Affected: {', '.join(fail_posts)}")
+print(f"\nNote: Most changes this cycle were automated (URL normalization, heading cleanup).")
+print(f"The primary substantive change was silo optimization for `how-to-choose-best-seo-expert-dhaka-15-things`")
+print(f"and meta field additions to `mobile-seo-optimization-bangladesh-mobile-first-era`.")

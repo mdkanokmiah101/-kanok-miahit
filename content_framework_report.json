@@ -1,0 +1,1034 @@
+[
+  {
+    "slug": "link-building-strategies-bangladesh-market",
+    "checks": {
+      "tfidf": {
+        "keyword": "Link Building",
+        "occurrences": 40,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Content Marketing",
+          "Link Building",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "/blog/link-building-strategies-bangladesh-market",
+        "tags": [
+          "Link Building",
+          "Backlinks",
+          "SEO Strategy",
+          "Bangladesh"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 11,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 15,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "seo-garments-textile-industry-b2b-lead-generation",
+    "checks": {
+      "tfidf": {
+        "keyword": "SEO",
+        "occurrences": 62,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Content Marketing",
+          "Link Building",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "Garments SEO",
+          "Textile Industry",
+          "B2B SEO",
+          "Bangladesh RMG"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 9,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 15,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "google-business-profile-optimization-guide-bangladesh",
+    "checks": {
+      "tfidf": {
+        "keyword": "Google Business",
+        "occurrences": 10,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Content Marketing",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": true,
+        "pillar_url": "/blog/local-seo-tips-dhaka-businesses-google-maps",
+        "tags": [
+          "Google Business Profile",
+          "Local SEO",
+          "Google Maps",
+          "Bangladesh Business"
+        ],
+        "pass": true
+      },
+      "aeo_geo": {
+        "question_headings": 14,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 13,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "mobile-seo-optimization-bangladesh-mobile-first-era",
+    "checks": {
+      "tfidf": {
+        "keyword": "Mobile SEO",
+        "occurrences": 25,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Ecommerce Seo",
+          "Content Marketing",
+          "Link Building",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": true,
+        "pillar_url": "/blog/mobile-seo",
+        "tags": [
+          "Mobile SEO",
+          "Mobile Optimization",
+          "Bangladesh",
+          "Mobile-First Indexing"
+        ],
+        "pass": true
+      },
+      "aeo_geo": {
+        "question_headings": 9,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 17,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "why-md-kanok-miah-is-the-best-seo-expert-in-dhaka-bangladesh",
+    "checks": {
+      "tfidf": {
+        "keyword": "Kanok Miah",
+        "occurrences": 8,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Ecommerce Seo",
+          "Content Marketing",
+          "Link Building",
+          "Geo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "Best SEO Expert Dhaka",
+          "SEO Expert Bangladesh",
+          "Kanok Miah",
+          "SEO Results",
+          "Dhaka SEO"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 17,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 15,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "locksmith-dundee-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "Locksmith Dundee",
+        "occurrences": 27,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Content Marketing"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "/blog/local-seo-tips-dhaka-businesses-google-maps",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "Local SEO",
+          "Locksmith"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 1,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 3,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "landlord-certificates-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "All Landlord",
+        "occurrences": 3,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "SEO",
+          "Local Seo",
+          "Technical Seo"
+        ],
+        "missing": [
+          "Bangladesh (location)"
+        ],
+        "pass": false
+      },
+      "pillar": {
+        "has_pillar_link": true,
+        "pillar_url": "/blog/local-seo",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "Local SEO",
+          "Property Safety"
+        ],
+        "pass": true
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 4,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "das-taxis-scotland-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "Das Taxis",
+        "occurrences": 3,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "/blog/local-seo-tips-dhaka-businesses-google-maps",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "Local SEO",
+          "Transportation"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 3,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "morethanpanel-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "MoreThanPanel SEO",
+        "occurrences": 0,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Technical Seo",
+          "Content Marketing"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "/blog/seo-content-writing-strategy-guide-bangladesh",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "SMM Panel",
+          "Content Marketing"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 4,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "smmgen-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "SMMGen SEO",
+        "occurrences": 0,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Technical Seo",
+          "Ecommerce Seo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "/blog/technical-seo-checklist-bangladeshi-websites",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "SMM Panel",
+          "Technical SEO"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 4,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "smmsun-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "SMMSun SEO",
+        "occurrences": 0,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Technical Seo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "SMM Panel",
+          "Growth Strategy"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 6,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "mir-cement-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "Mir Cement",
+        "occurrences": 3,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Technical Seo",
+          "Content Marketing"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "B2B SEO",
+          "Construction"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 4,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "dhaka-apparels-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "Dhaka Apparels",
+        "occurrences": 3,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "B2B SEO",
+          "Garments"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 4,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "stealth-windshield-repairs-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "Stealth Windshield",
+        "occurrences": 2,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "/blog/local-seo-tips-dhaka-businesses-google-maps",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "Local SEO",
+          "Automotive"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 3,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "how-to-choose-best-seo-expert-dhaka-15-things",
+    "checks": {
+      "tfidf": {
+        "keyword": "Choose",
+        "occurrences": 5,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Link Building",
+          "Geo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "SEO Expert Dhaka",
+          "Hire SEO Expert",
+          "SEO Services Bangladesh",
+          "Best SEO Expert"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 2,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 3,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "seo-expert-vs-seo-agency-dhaka-which-is-right",
+    "checks": {
+      "tfidf": {
+        "keyword": "SEO Expert",
+        "occurrences": 23,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Technical Seo",
+          "Content Marketing",
+          "Link Building"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "SEO Expert Dhaka",
+          "SEO Agency Dhaka",
+          "SEO Services Bangladesh",
+          "Hire SEO"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 4,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 5,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "top-10-seo-mistakes-dhaka-businesses-fix",
+    "checks": {
+      "tfidf": {
+        "keyword": "Top",
+        "occurrences": 5,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Ecommerce Seo",
+          "Link Building",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": true,
+        "pillar_url": "/blog/seo-mistakes",
+        "tags": [
+          "SEO Mistakes",
+          "Dhaka SEO",
+          "SEO Tips Bangladesh",
+          "SEO Expert Dhaka"
+        ],
+        "pass": true
+      },
+      "aeo_geo": {
+        "question_headings": 0,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 7,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "what-does-seo-expert-do-guide-business-owners",
+    "checks": {
+      "tfidf": {
+        "keyword": "SEO Expert",
+        "occurrences": 52,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Link Building",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "SEO Expert Guide",
+          "SEO Services",
+          "Dhaka SEO",
+          "Digital Marketing Bangladesh"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 10,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 3,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "seo-case-study-dhaka-businesses-increased-organic-traffic",
+    "checks": {
+      "tfidf": {
+        "keyword": "SEO Case",
+        "occurrences": 9,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Ecommerce Seo",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "SEO Case Study",
+          "Dhaka SEO",
+          "Organic Traffic",
+          "SEO Results Bangladesh"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 9,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 3,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "hiring-seo-expert-dhaka-better-roi-than-paid-ads",
+    "checks": {
+      "tfidf": {
+        "keyword": "Hiring",
+        "occurrences": 3,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Ecommerce Seo",
+          "Content Marketing",
+          "Link Building",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "SEO ROI",
+          "SEO vs Ads",
+          "Dhaka SEO Expert",
+          "Digital Marketing Bangladesh"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 13,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 3,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "ai-seo-2026-dhaka-experts-optimize-google-ai-chatgpt",
+    "checks": {
+      "tfidf": {
+        "keyword": "SEO",
+        "occurrences": 72,
+        "pass": true
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Geo",
+          "Aeo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "",
+        "tags": [
+          "AI SEO",
+          "GEO Optimization",
+          "Dhaka SEO Expert",
+          "Google AI Overview Bangladesh"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 12,
+        "pass": true
+      },
+      "internal_links": {
+        "count": 4,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  },
+  {
+    "slug": "watchzonebd-seo-case-study",
+    "checks": {
+      "tfidf": {
+        "keyword": "WatchZoneBD SEO",
+        "occurrences": 0,
+        "pass": false
+      },
+      "entities": {
+        "present": [
+          "Dhaka",
+          "Bangladesh",
+          "SEO",
+          "Local Seo",
+          "Technical Seo",
+          "Ecommerce Seo",
+          "Geo"
+        ],
+        "missing": [],
+        "pass": true
+      },
+      "pillar": {
+        "has_pillar_link": false,
+        "pillar_url": "/blog/technical-seo-checklist-bangladeshi-websites",
+        "tags": [
+          "Case Study",
+          "SEO",
+          "E-commerce SEO",
+          "Technical SEO",
+          "WatchZoneBD"
+        ],
+        "pass": false
+      },
+      "aeo_geo": {
+        "question_headings": 1,
+        "pass": false
+      },
+      "internal_links": {
+        "count": 5,
+        "pass": true
+      },
+      "schema": {
+        "ready": true,
+        "missing_fields": [],
+        "pass": true
+      }
+    }
+  }
+]

@@ -137,6 +137,8 @@ export default function HomeClient({ faqs = [] }) {
                   <input type="tel" name="phone" placeholder="1XXXXXXXXX" required
                     className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
                 </div>
+                <input type="email" name="email" placeholder="Your Email (optional)"
+                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
                 <input type="text" name="website" placeholder="Your Website (optional)"
                   className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" />
                 <input type="hidden" name="source" value="homepage-hero-form" />

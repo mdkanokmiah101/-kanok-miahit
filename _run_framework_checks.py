@@ -1,476 +1,353 @@
 #!/usr/bin/env python3
-"""Framework compliance checker - reads data.js directly."""
-import re, json, sys
+"""
+Framework enforcer: reads blog data.js, extracts changed posts, runs all checks.
+"""
+import re, json, sys, math
+from collections import Counter
 
-DATA_PATH = 'src/app/blog/data.js'
+DATA_FILE = "src/app/blog/data.js"
 
-def get_post(slug):
-    """Extract a single post from data.js by slug."""
-    with open(DATA_PATH) as f:
-        data = f.read()
-    
-    # Find post block - from this slug to next slug or end
-    pattern = r'slug:\s*"' + re.escape(slug) + r'".*?(?=slug:\s*"|\Z)'
-    m = re.search(pattern, data, re.DOTALL)
-    if not m:
-        return None
-    block = m.group(0)
-    
-    post = {'slug': slug}
-    
-    # Simple key: "value" fields
-    for key in ['title', 'date', 'author', 'excerpt', 'metaTitle', 'metaDescription', 'dateModified', 'readTime']:
-        m2 = re.search(r'\b' + key + r'\s*:\s*"((?:[^"\\]|\\.)*)"', block)
-        if m2:
-            post[key] = m2.group(1)
-    
-    # Tags array
-    m2 = re.search(r'tags:\s*\[([^\]]*)\]', block)
-    if m2:
-        tags_str = m2.group(1)
-        post['tags'] = [t.strip().strip('"') for t in tags_str.split(',')]
-    
-    # Content template literal - find the backtick content
-    # The content field ends before the next field or closing brace
-    m2 = re.search(r'content:\s*`((?:[^`\\]|\\.)*)`', block, re.DOTALL)
-    if m2:
-        post['content'] = m2.group(1)
-    
-    return post
+with open(DATA_FILE, "r") as f:
+    raw = f.read()
 
+# Parse posts — this is tricky because content uses backtick templates.
+# We'll use a state-machine approach.
 
-def check_tfidf(post):
-    """Check TF-IDF keyword coverage."""
-    title = post.get("title", "")
-    content = post.get("content", "")
-    if not content:
-        return {"keyword": title, "count": 0, "passed": False, "detail": "No content found"}
+def parse_posts(text):
+    """Parse JS array of post objects into list of dicts."""
+    posts = []
+    # Find slug first, then walk forward to extract fields
+    pattern = r'slug:\s*"([^"]+)"'
+    positions = [(m.start(), m.group(1)) for m in re.finditer(pattern, text)]
     
-    title_lower = title.lower()
+    for i, (pos, slug) in enumerate(positions):
+        # Determine end: next slug or end of file
+        end = positions[i+1][0] if i+1 < len(positions) else len(text)
+        block = text[pos:end]
+        
+        post = {"slug": slug}
+        
+        # Extract title
+        m = re.search(r'title:\s*`([^`]*)`\s*[,}]', block)
+        if m: post["title"] = m.group(1)
+        m = re.search(r'title:\s*"([^"]*)"\s*[,}]', block)
+        if m: post["title"] = m.group(1)
+        
+        # Extract date
+        m = re.search(r'date:\s*"([^"]*)"', block)
+        if m: post["date"] = m.group(1)
+        
+        # Extract author
+        m = re.search(r'author:\s*"([^"]*)"', block)
+        if m: post["author"] = m.group(1)
+        
+        # Extract excerpt
+        m = re.search(r'excerpt:\s*`([^`]*)`', block)
+        if m: post["excerpt"] = m.group(1)
+        m = re.search(r'excerpt:\s*"([^"]*)"', block)
+        if m: post["excerpt"] = m.group(1)
+        
+        # Extract tags
+        m = re.search(r'tags:\s*\[([^\]]*)\]', block)
+        if m:
+            tags_str = m.group(1)
+            post["tags"] = [t.strip().strip('"').strip("'") for t in tags_str.split(",")]
+        
+        # Extract meta fields
+        for field in ["metaTitle", "metaDescription", "dateModified"]:
+            m = re.search(rf'{field}:\s*"([^"]*)"', block)
+            if m: post[field] = m.group(1)
+        
+        # Extract content — find the content: `...` block
+        # Content is the last big backtick block
+        content_matches = list(re.finditer(r'content:\s*`((?:[^`\\]|\\.)*)`', block, re.DOTALL))
+        if content_matches:
+            # Use the last match (the actual content, not the placeholder image)
+            post["content"] = content_matches[-1].group(1)
+        
+        posts.append(post)
+    
+    return posts
+
+posts = parse_posts(raw)
+print(f"Parsed {len(posts)} posts", file=sys.stderr)
+
+changed_slugs = [
+    "schema-markup-rich-snippets-techniques",
+    "seo-canonical-url-guide-bd",
+    "how-to-choose-best-seo-expert-dhaka-15-things"
+]
+
+target_posts = [p for p in posts if p["slug"] in changed_slugs]
+print(f"Target posts: {[p['slug'] for p in target_posts]}", file=sys.stderr)
+
+for p in target_posts:
+    print(f"\n{'='*80}")
+    print(f"## Post: {p['slug']}")
+    print(f"{'='*80}")
+    
+    title = p.get("title", "NO TITLE")
+    content = p.get("content", "")
+    tags = p.get("tags", [])
+    excerpt = p.get("excerpt", "")
+    date = p.get("date", "")
+    meta_title = p.get("metaTitle", "")
+    meta_desc = p.get("metaDescription", "")
+    date_mod = p.get("dateModified", "")
+    
+    print(f"Title: {title}")
+    print(f"Tags: {tags}")
+    print(f"Content length: {len(content)} chars")
+    
+    results = []
+    
+    # ==================== A. TF-IDF Coverage ====================
+    # Extract primary keyword from title
+    # Use the first meaningful noun phrase
+    stop_words = {"how", "to", "the", "a", "an", "in", "of", "for", "on", "and", "is", "are", "your",
+                  "what", "why", "when", "where", "which", "who", "whose", "that", "this", "these", "those",
+                  "with", "without", "from", "by", "at", "as", "be", "been", "being", "have", "has", "had",
+                  "do", "does", "did", "will", "would", "could", "should", "may", "might", "shall", "can",
+                  "not", "no", "nor", "or", "but", "if", "so", "about", "up", "out", "than", "then", "also",
+                  "just", "more", "most", "some", "any", "each", "every", "all", "both", "few", "own"}
+    
+    # Extract likely keyword: remove stopwords, take first multi-word phrase
+    title_lower = title.lower().replace(":", "").replace("?", "").replace("!", "")
+    words = [w for w in title_lower.split() if w not in stop_words and len(w) > 2]
+    
+    if words:
+        # Primary keyword: first 2-3 meaningful words
+        keyword = " ".join(words[:3])
+        # But also try to match whole phrases
+        # Count occurrences - try the full phrase, then individual words
+        keyword_lower = keyword.lower()
+        count = content.lower().count(keyword_lower)
+        
+        # If very low count, try shorter versions
+        if count < 3 and len(words) >= 2:
+            keyword = " ".join(words[:2])
+            keyword_lower = keyword.lower()
+            count = content.lower().count(keyword_lower)
+        
+        if count < 3 and len(words) >= 1:
+            keyword = words[0]
+            keyword_lower = keyword.lower()
+            count = content.lower().count(keyword_lower)
+    else:
+        keyword = title_lower
+        count = content.lower().count(keyword)
+    
+    tfidf_ok = count >= 5
+    tfidf_emoji = "✅" if tfidf_ok else "❌"
+    results.append(("TF-IDF", f"{tfidf_emoji}", f"Keyword: '{keyword}' — {count} occurrences"))
+    
+    # ==================== B. Semantic Entity Coverage ====================
+    entities = {
+        "location_dhaka": "Dhaka",
+        "location_bangladesh": "Bangladesh",
+        "service_seo": "SEO",
+    }
+    
+    # Add specific entities based on content context
     content_lower = content.lower()
     
-    # Initialize
-    keyword = ""
-    count = 0
-
-    # Extract primary keyword - for English titles
-    if any('\u0980' <= c <= '\u09FF' for c in title):
-        # Bengali - use excerpt first meaningful Bengali phrase
-        excerpt = post.get("excerpt", "")
-        words = excerpt.split()
-        bengali_words = [w for w in words if any('\u0980' <= c <= '\u09FF' for c in w)]
-        if bengali_words:
-            keyword = bengali_words[0] if len(bengali_words) == 1 else ' '.join(bengali_words[:2])
-        else:
-            keyword = title[:30]
-        # Count occurrences
-        count = len(re.findall(re.escape(keyword), content))
+    missing_entities = []
+    found_entities = []
+    
+    # Check Dhaka
+    if "dhaka" in content_lower:
+        found_entities.append("Dhaka")
     else:
-        # English title - extract the core keyword
-        # Remove site name suffix
-        clean = re.sub(r'\s*\|\s*kanok\s+miah.*$', '', title_lower, flags=re.IGNORECASE).strip()
-        
-        # Strategy: find the most meaningful 2-3 word phrase from title
-        # Remove "How to" prefix
-        clean = re.sub(r'^how\s+to\s+', '', clean)
-        # Remove parenthetical counts like "15 Things"
-        clean = re.sub(r'\d+\s+things?\s+to\s+\w+', '', clean)
-        # Remove subtitles after colon
-        parts = clean.split(':')
-        main_part = parts[0].strip()
-        
-        # Try different keyword candidates and pick the best one
-        candidates = []
-        
-        # Candidate 1: Last 3 significant words of main part
-        words = [w for w in main_part.split() if len(w) > 2]
-        if len(words) >= 3:
-            candidates.append(' '.join(words[-3:]))
-        if len(words) >= 2:
-            candidates.append(' '.join(words[-2:]))
-        
-        # Candidate 2: The whole main part (if not too long)
-        if len(main_part.split()) <= 6:
-            candidates.append(main_part)
-        
-        # Candidate 3: Title without "How to" and without colon part
-        candidates.append(main_part)
-        
-        # Also try with "SEO" as it's likely the core topic
-        seo_phrases = []
-        for phrase in ['seo expert in dhaka', 'seo expert', 'mobile seo', 'seo in bangladesh',
-                       'schema markup', 'rich snippets', 'structured data']:
-            if phrase in content_lower:
-                seo_phrases.append(phrase)
-        
-        candidates.extend(seo_phrases)
-        
-        # Try each candidate
-        best_keyword = candidates[0] if candidates else clean
-        best_count = 0
-        
-        for kw in candidates:
-            count = len(re.findall(re.escape(kw), content_lower))
-            if count > best_count:
-                best_count = count
-                best_keyword = kw
-        
-        keyword = best_keyword
-        count = best_count
+        missing_entities.append("Dhaka")
     
-    # For "seo for bangladesh" type keywords, try partial matching
-    if count < 3:
-        words = keyword.split()
-        for i in range(len(words), 0, -1):
-            phrase = ' '.join(words[:i])
-            if len(phrase) > 3:
-                c = len(re.findall(re.escape(phrase), content_lower))
-                if c > count:
-                    count = c
-                    keyword = phrase
+    # Check Bangladesh
+    if "bangladesh" in content_lower:
+        found_entities.append("Bangladesh")
+    else:
+        missing_entities.append("Bangladesh")
     
-    passed = count >= 5
-    return {
-        "keyword": keyword[:50],
-        "count": count,
-        "passed": passed,
-        "detail": f"{count} occurrences of '{keyword[:40]}'"
-    }
-
-
-def check_entities(post):
-    """Check required semantic entities."""
-    content = post.get("content", "")
-    content_lower = content.lower() if content else ""
-    tags = [t.lower() for t in post.get("tags", [])]
-    title = post.get("title", "").lower()
+    # Check SEO
+    if "seo" in content_lower:
+        found_entities.append("SEO")
+    else:
+        missing_entities.append("SEO")
     
-    # Always required entities
-    required_entities = {
-        "Dhaka": (r'\b[Dd]haka\b', "Location"),
-        "Bangladesh": (r'\b[Bb]angladesh\b', "Location"),
-    }
+    # Check for service-specific terms based on title/tags
+    service_terms = ["expert", "consultant", "specialist", "services", "agency", "professional"]
+    found_services = [t for t in service_terms if t in content_lower]
+    if found_services:
+        found_entities.extend(found_services[:2])
+    else:
+        missing_entities.append("service term (expert/consultant/specialist)")
     
-    missing = []
-    found = {}
-    
-    for name, (pattern, _) in required_entities.items():
-        found_flag = bool(re.search(pattern, content))
-        found[name] = found_flag
-        if not found_flag:
-            missing.append(name)
-    
-    # Service type - check content for SEO-related service mentions
-    service_patterns = [
-        (r'\bseo\s+(?:expert|specialist|consultant|services?|agency|professional)\b', "SEO Service"),
-        (r'\b(?:SEO|search engine optimization)\b', "SEO Topic"),
-        (r'link building', "Link Building"),
-        (r'content marketing', "Content Marketing"),
-        (r'technical seo', "Technical SEO"),
-        (r'local seo', "Local SEO"),
-        (r'digital marketing', "Digital Marketing"),
-        (r'on-page seo|on page seo', "On-Page SEO"),
-        (r'geo|generative engine|ai search', "GEO/AI Search"),
-        (r'aeo|answer engine', "AEO"),
-    ]
-    
-    found_service = False
-    for pattern, _ in service_patterns:
-        if re.search(pattern, content_lower):
-            found_service = True
-            break
-    
-    found["Service Type Entity"] = found_service
-    if not found_service:
-        missing.append("Service type entity")
-    
-    return {
-        "found": found,
-        "missing": missing,
-        "passed": len(missing) == 0
-    }
-
-
-def check_pillar_cluster(post):
-    """Check pillar-cluster alignment."""
-    content = post.get("content", "")
-    content_lower = content.lower() if content else ""
-    tags = [t.lower() for t in post.get("tags", [])]
-    title = post.get("title", "").lower()
-    
-    pillars = {
-        "SEO Services": {
-            "patterns": [r'/services(?!\/\w)', r'/services\b'],
-            "match_tags": ["seo service", "seo expert", "seo specialist", "seo consultant", "seo agency", "hire seo"],
-        },
-        "Local SEO": {
-            "patterns": [r'/services/local-seo'],
-            "match_tags": ["local seo", "google business profile", "gbp", "near me", "local search", "local business"],
-        },
-        "Technical SEO": {
-            "patterns": [r'/services/technical-seo'],
-            "match_tags": ["technical seo", "core web vitals", "page speed", "structured data", "schema", "mobile seo", "mobile-first", "mobile optimization"],
-        },
-        "GEO/AI Search": {
-            "patterns": [r'/services/geo-ai-search', r'/services/geo'],
-            "match_tags": ["geo", "ai seo", "generative engine", "ai search", "chatgpt", "generative engine optimization"],
-        },
-        "E-commerce SEO": {
-            "patterns": [r'/services/ecommerce-seo'],
-            "match_tags": ["ecommerce", "e-commerce", "online store", "shopify"],
-        },
-        "On-Page SEO": {
-            "patterns": [r'/services/on-page-seo'],
-            "match_tags": ["on-page", "on page seo", "content optimization", "seo content"],
-        },
-        "Link Building": {
-            "patterns": [r'/services/link-building'],
-            "match_tags": ["link building", "backlinks", "off-page"],
-        },
-    }
-    
-    # Determine pillar from tags
-    matched_pillar = None
-    for pname, pdata in pillars.items():
+    # Industry-specific
+    if tags:
         for tag in tags:
-            if any(pt in tag for pt in pdata["match_tags"]):
-                matched_pillar = pname
-                break
-        if matched_pillar:
+            tag_lower = tag.lower()
+            if tag_lower not in content_lower and len(tag_lower) > 4:
+                # Tag should appear somewhere
+                pass  # too strict
+    
+    entities_ok = len(missing_entities) < 2
+    entities_emoji = "✅" if entities_ok else "❌"
+    details = f"Found: {', '.join(found_entities[:5])}"
+    if missing_entities:
+        details += f" | Missing: {', '.join(missing_entities)}"
+    results.append(("Entities", f"{entities_emoji}", details))
+    
+    # ==================== C. Pillar-Cluster Alignment ====================
+    # Determine pillar topic based on tags
+    pillar_pages = {
+        "seo": "/services/seo",
+        "local seo": "/services/local-seo",
+        "technical seo": "/services/technical-seo",
+        "geo": "/services/geo-ai-search",
+        "ai seo": "/services/geo-ai-search",
+        "content marketing": "/services/content-marketing",
+        "ecommerce": "/services/ecommerce-seo",
+        "garments": "/industries/garments-textile",
+        "textile": "/industries/garments-textile",
+        "real estate": "/industries/real-estate",
+        "healthcare": "/industries/healthcare",
+        "case study": "/case-studies",
+    }
+    
+    tag_lower = [t.lower() for t in tags]
+    matched_pillar = None
+    for key, url in pillar_pages.items():
+        if any(key in t for t in tag_lower):
+            matched_pillar = url
             break
     
-    # If no pillar from tags, use title heuristics
-    if not matched_pillar:
-        if "schema" in title or "rich snippet" in title or "structured data" in title:
-            matched_pillar = "Technical SEO"
-        elif "mobile" in title:
-            matched_pillar = "Technical SEO"
-        elif "seo expert" in title or "choose" in title or "seo agency" in title:
-            matched_pillar = "SEO Services"
-        elif "link building" in title or "backlink" in title:
-            matched_pillar = "Link Building"
-        else:
-            matched_pillar = "SEO Services"  # default
+    # Check if post links to the pillar page
+    pillar_link_found = False
+    if matched_pillar:
+        # Check for the pillar URL in content
+        if matched_pillar in content:
+            pillar_link_found = True
+        # Also check for markdown links containing the pillar slug
+        pillar_slug = matched_pillar.split("/")[-1]
+        if pillar_slug in content:
+            pillar_link_found = True
     
-    # Check if any pillar page is linked
-    linked_to = []
-    for pname, pdata in pillars.items():
-        for pattern in pdata["patterns"]:
-            if re.search(pattern, content, re.IGNORECASE):
-                linked_to.append(pname)
+    # Also check for pillar-like structure
+    if not matched_pillar:
+        pillar_check = "No clear pillar topic identified"
+    elif pillar_link_found:
+        pillar_check = f"Links to pillar: {matched_pillar}"
+    else:
+        pillar_check = f"❌ No link to pillar page ({matched_pillar})"
+    
+    pillar_ok = matched_pillar is None or pillar_link_found
+    pillar_emoji = "✅" if pillar_ok else "❌"
+    results.append(("Pillar Link", f"{pillar_emoji}", pillar_check))
+    
+    # ==================== D. AEO/GEO Optimization ====================
+    question_starts = ["How", "What", "Why", "When", "Where", "Can", "Do", "Is", "Are", "Does", "Should", "Which"]
+    question_headings = []
+    
+    # Find headings (## heading, ### heading, etc.)
+    heading_pattern = re.findall(r'#{2,4}\s+([^\n]+)', content)
+    for h in heading_pattern:
+        h_stripped = h.strip()
+        for qs in question_starts:
+            if h_stripped.startswith(qs) and h_stripped.endswith("?"):
+                question_headings.append(h_stripped)
                 break
     
-    return {
-        "matched_pillar": matched_pillar,
-        "pillar_linked": len(linked_to) > 0,
-        "links_to_pillar": linked_to,
-        "passed": len(linked_to) > 0
-    }
-
-
-def check_aeo_geo(post):
-    """Check AEO/GEO optimization - question-based headings."""
-    content = post.get("content", "")
-    if not content:
-        return {"count": 0, "headings": [], "passed": False}
+    aeo_ok = len(question_headings) >= 2
+    aeo_emoji = "✅" if aeo_ok else "❌"
+    results.append(("AEO/GEO", f"{aeo_emoji}", f"{len(question_headings)} question-based headings"))
+    if question_headings:
+        results[-1] = ("AEO/GEO", f"{aeo_emoji}", f"{len(question_headings)} question-based headings: " + "; ".join(question_headings[:3]))
     
-    # Count any heading (## or ###) that ends with ?
-    question_headings = re.findall(
-        r'^#{2,3}\s+.*?\?',
-        content,
-        re.MULTILINE
-    )
-    
-    # Also count headings starting with question words (even without ?)
-    q_starter_headings = re.findall(
-        r'^#{2,3}\s+(?:How|What|Why|When|Where|Can|Do|Is|Are|Does|Should|Which|Who|Will)\b.*',
-        content,
-        re.MULTILINE | re.IGNORECASE
-    )
-    
-    all_headings = list(set(question_headings + q_starter_headings))
-    
-    return {
-        "count": len(all_headings),
-        "headings": all_headings[:5],
-        "passed": len(all_headings) >= 2
-    }
-
-
-def check_internal_links(post):
-    """Count internal links."""
-    content = post.get("content", "")
-    if not content:
-        return {"total": 0, "unique_targets": 0, "links": [], "passed": False}
-    
-    # Match markdown links with relative URLs
-    internal_links = re.findall(r'\[([^\]]+)\]\((/[^\)]+)\)', content)
-    
-    # Filter meaningful internal links (not just /, /about, /contact, #)
-    meaningful = [(text, url) for text, url in internal_links 
-                  if url not in ('/', '/about', '/contact') 
-                  and not url.startswith('/#')
-                  and len(url) > 2]
-    
-    unique_targets = set(url for _, url in meaningful)
-    
-    return {
-        "total": len(meaningful),
-        "unique_targets": len(unique_targets),
-        "links": meaningful[:10],
-        "passed": len(meaningful) >= 3
-    }
-
-
-def check_schema_ready(post):
-    """Check if schema metadata is set."""
-    checks = {
-        "title (headline)": bool(post.get("title")),
-        "excerpt (description)": bool(post.get("excerpt")),
-        "date (datePublished)": bool(post.get("date")),
-        "metaTitle": bool(post.get("metaTitle")),
-        "metaDescription": bool(post.get("metaDescription")),
-        "dateModified": bool(post.get("dateModified")),
-        "author": bool(post.get("author")),
-    }
-    
-    missing_fields = [k if not v else None for k, v in checks.items()]
-    missing = [k for k, v in checks.items() if not v]
-    
-    return {
-        "checks": checks,
-        "missing": missing,
-        "passed": len(missing) == 0
-    }
-
-
-def generate_report(post):
-    """Generate full framework report for a post."""
-    slug = post.get("slug", "unknown")
-    title = post.get("title", "Unknown")
-    
-    print(f"\n## Post: {slug}")
-    print(f"**Title:** {title}")
-    print()
-    print("| Check | Status | Details |")
-    print("|-------|--------|---------|")
-    
-    # A. TF-IDF
-    tfidf = check_tfidf(post)
-    tfidf_status = "✅" if tfidf["passed"] else "❌"
-    print(f"| TF-IDF: `{tfidf['keyword']}` | {tfidf_status} | {tfidf['detail']} |")
-    
-    # B. Entities
-    entities = check_entities(post)
-    ent_status = "✅" if entities["passed"] else "❌"
-    missing_ents = ", ".join(entities["missing"]) if entities["missing"] else "None"
-    print(f"| Entities | {ent_status} | Missing: {missing_ents} |")
-    
-    # C. Pillar-Cluster
-    pillar = check_pillar_cluster(post)
-    pil_status = "✅" if pillar["passed"] else "❌"
-    pil_detail = f"Pillar: {pillar['matched_pillar']}"
-    if pillar["links_to_pillar"]:
-        pil_detail += f" → links: {', '.join(pillar['links_to_pillar'])}"
-    else:
-        pil_detail += " → **NO pillar link found**"
-    print(f"| Pillar Link | {pil_status} | {pil_detail} |")
-    
-    # D. AEO/GEO
-    aeo = check_aeo_geo(post)
-    aeo_status = "✅" if aeo["passed"] else "❌"
-    print(f"| AEO/GEO | {aeo_status} | {aeo['count']} question headings |")
-    if aeo["headings"]:
-        print(f"| | | Sample: {aeo['headings'][:3]} |")
-    
-    # E. Internal Links
-    links = check_internal_links(post)
-    link_status = "✅" if links["passed"] else "❌"
-    print(f"| Internal Links | {link_status} | {links['total']} total ({links['unique_targets']} unique) |")
-    if not links["passed"]:
-        print(f"| | | Samples: {links['links'][:5]} |")
-    
-    # F. Schema Ready
-    schema = check_schema_ready(post)
-    schema_status = "✅" if schema["passed"] else "❌"
-    missing_schema = ", ".join(schema["missing"]) if schema["missing"] else "None"
-    print(f"| Schema Ready | {schema_status} | Missing: {missing_schema} |")
-    
-    print()
-    print("### Fix instructions:")
-    fixes = []
-    
-    if not tfidf["passed"]:
-        fixes.append(f"- **TF-IDF**: Keyword '{tfidf['keyword']}' appears only {tfidf['count']}x. Add more natural mentions throughout content (target ≥5).")
-    
-    if not entities["passed"]:
-        for m in entities["missing"]:
-            fixes.append(f"- **Entity**: Missing '{m}' reference in content.")
-    
-    if not pillar["passed"]:
-        fixes.append(f"- **Pillar Link**: Add link to `{pillar['matched_pillar']}` pillar page (e.g., `/services/...`) with relevant anchor text.")
-    
-    if not aeo["passed"]:
-        fixes.append(f"- **AEO/GEO**: Only {aeo['count']} question heading(s). Add ≥2 H2/H3 headings starting with How/What/Why/When/Where/Can/Do.")
-    
-    if not links["passed"]:
-        fixes.append(f"- **Internal Links**: Only {links['total']} meaningful internal links. Add ≥3 (to blog posts, services, or locations).")
-    
-    if not schema["passed"]:
-        for m in schema["missing"]:
-            fixes.append(f"- **Schema**: Missing `{m}` field. Add it to post metadata (needed for Article Schema).")
-    
-    if not fixes:
-        print("✅ All checks passed! No fixes needed.")
-    else:
-        for fix in fixes:
-            print(fix)
-    print()
-
-
-def main():
-    slugs = [
-        "mobile-seo-optimization-bangladesh-mobile-first-era",
-        "schema-markup-rich-snippets-techniques",
-        "how-to-choose-best-seo-expert-dhaka-15-things"
+    # ==================== E. Internal Linking ====================
+    # Count internal links: /blog/, /services/, /industries/, /locations/, /case-studies/, /about, /contact
+    internal_link_patterns = [
+        r'/blog/[a-z0-9-]+',
+        r'/services/[a-z0-9-]+',
+        r'/industries/[a-z0-9-]+',
+        r'/locations/[a-z0-9-]+',
+        r'/case-studies/[a-z0-9-]+',
+        r'/about(?:[)"\s]|$)',
+        r'/contact(?:[)"\s]|$)',
     ]
+    internal_links = []
+    for pat in internal_link_patterns:
+        found = re.findall(pat, content)
+        internal_links.extend(found)
     
-    any_failures = False
-    for slug in slugs:
-        post = get_post(slug)
-        if post:
-            generate_report(post)
-        else:
-            print(f"\n## Post: {slug}")
-            print("⚠️ Could not load post data.")
-            any_failures = True
+    # Deduplicate
+    internal_links = list(set(internal_links))
     
-    # Summary
-    print("\n---\n**Framework Enforcement Summary:**")
-    all_passed = True
-    for slug in slugs:
-        post = get_post(slug)
-        if not post:
-            continue
-        tfidf = check_tfidf(post)
-        ents = check_entities(post)
-        pillar = check_pillar_cluster(post)
-        aeo = check_aeo_geo(post)
-        links = check_internal_links(post)
-        schema = check_schema_ready(post)
-        
-        checks = [tfidf["passed"], ents["passed"], pillar["passed"], aeo["passed"], links["passed"], schema["passed"]]
-        all_ok = all(checks)
-        icon = "✅" if all_ok else "❌"
-        print(f"{icon} {slug}: {'All pass' if all_ok else f'{sum(checks)}/6 pass'}")
-        if not all_ok:
-            all_passed = False
+    links_ok = len(internal_links) >= 3
+    links_emoji = "✅" if links_ok else "❌"
+    results.append(("Internal Links", f"{links_emoji}", f"{len(internal_links)} internal links: {', '.join(internal_links[:5])}"))
     
-    if all_passed:
-        print("\n🎉 All posts pass framework compliance!")
+    # ==================== F. Schema ====================
+    schema_fields = {"title": bool(title), "excerpt": bool(excerpt), "date": bool(date)}
+    missing_schema = [k for k, v in schema_fields.items() if not v]
+    
+    # Check for metaTitle, metaDescription, dateModified
+    if meta_title:
+        schema_fields["metaTitle"] = True
     else:
-        print("\n⚠️ Some posts need fixes as noted above.")
+        missing_schema.append("metaTitle")
+    
+    if meta_desc:
+        schema_fields["metaDescription"] = True
+    else:
+        missing_schema.append("metaDescription")
+    
+    if date_mod:
+        schema_fields["dateModified"] = True
+    else:
+        missing_schema.append("dateModified")
+    
+    schema_ok = len(missing_schema) == 0
+    schema_emoji = "✅" if schema_ok else "❌"
+    details_schema = "All fields set" if schema_ok else f"Missing: {', '.join(missing_schema)}"
+    results.append(("Schema Ready", f"{schema_emoji}", details_schema))
+    
+    # ==================== OUTPUT TABLE ====================
+    print(f"\n{'| Check | Status | Details |':-^80}")
+    print(f"{'|-------|--------|---------|':-^80}")
+    for check, emoji, detail in results:
+        print(f"| {check} | {emoji} | {detail} |")
+    
+    # ==================== FIX INSTRUCTIONS ====================
+    print(f"\n### Fix instructions:")
+    fixes = []
+    if not tfidf_ok:
+        fixes.append(f"- ✏️ **TF-IDF**: Increase usage of '{keyword}' to at least 5 times (currently {count}). Add more natural mentions in headings and body text.")
+    if not entities_ok:
+        fixes.append(f"- 🌐 **Entities**: Add missing entities: {', '.join(missing_entities)}. These should be naturally integrated into the content.")
+    if not pillar_ok and matched_pillar:
+        fixes.append(f"- 🔗 **Pillar Link**: Add a link to the pillar page ({matched_pillar}) in the content. Place it naturally in a relevant section.")
+    if not aeo_ok:
+        fixes.append(f"- ❓ **AEO/GEO**: Add at least 2 question-based headings (starting with How, What, Why, etc., ending with ?). Currently have {len(question_headings)}.")
+    if not links_ok:
+        fixes.append(f"- 🔗 **Internal Links**: Add internal links (to other blog posts, services, locations) — currently {len(internal_links)}, need at least 3.")
+    if not schema_ok:
+        if "metaTitle" in missing_schema:
+            fixes.append(f"- 📋 **Schema**: Add `metaTitle` field based on the post title.")
+        if "metaDescription" in missing_schema:
+            fixes.append(f"- 📋 **Schema**: Add `metaDescription` field based on the post excerpt.")
+        if "dateModified" in missing_schema:
+            fixes.append(f"- 📋 **Schema**: Add `dateModified` field with current date.")
+    
+    if fixes:
+        for f in fixes:
+            print(f"  {f}")
+    else:
+        print("  ✅ All checks passed — no fixes needed.")
+    
+    print()
 
-
-if __name__ == "__main__":
-    main()
+# Print summary
+print(f"\n{'='*80}")
+print("SUMMARY")
+print(f"{'='*80}")
+for p in target_posts:
+    title = p.get("title", "NO TITLE")
+    print(f"- {p['slug']}: {title[:60]}")

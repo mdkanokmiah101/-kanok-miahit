@@ -66,7 +66,6 @@ export default function Footer() {
                 { name: "Blog", path: "/blog" },
                 { name: "FAQ", path: "/faq" },
                 { name: "Portfolio", path: "/portfolio" },
-                { name: "Case Studies", path: "/case-studies" },
                 { name: "Locations", path: "/locations/dhaka" },
                 { name: "About", path: "/about" },
                 { name: "Contact", path: "/contact" },
